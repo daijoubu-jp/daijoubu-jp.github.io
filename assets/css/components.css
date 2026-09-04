@@ -4,6 +4,7 @@
 
 /* --- Site Header & Navigation --- */
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -11,6 +12,7 @@
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transition: background-color var(--transition-base), border-color var(--transition-base);
 }
@@ -1145,6 +1147,7 @@ input[type="search"]::-ms-reveal {
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   height: fit-content;
+  position: -webkit-sticky;
   position: sticky;
   top: calc(var(--header-height) + var(--spacing-md));
   box-shadow: var(--shadow-sm);
@@ -1250,6 +1253,7 @@ input[type="search"]::-ms-reveal {
 
 @media (min-width: 901px) and (min-height: 750px) {
   .detail-char-card {
+    position: -webkit-sticky;
     position: sticky;
     top: 80px;
     z-index: 10;
@@ -1562,6 +1566,7 @@ input[type="search"]::-ms-reveal {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   z-index: 999;
 }
@@ -1636,6 +1641,7 @@ input[type="search"]::-ms-reveal {
   .sidebar-mobile-actions {
     display: flex !important;
     gap: var(--spacing-sm);
+    position: -webkit-sticky;
     position: sticky;
     bottom: -1px;
     left: 0;
@@ -1717,6 +1723,7 @@ input[type="search"]::-ms-reveal {
     z-index: 999;
     max-height: calc(100vh - var(--header-height));
     overflow-y: auto;
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     -webkit-overflow-scrolling: touch;
   }
@@ -3619,6 +3626,11 @@ input[type="search"]::-ms-reveal {
 
 /* Print Rules */
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   @page {
     size: A4 portrait;
     margin: 10mm;

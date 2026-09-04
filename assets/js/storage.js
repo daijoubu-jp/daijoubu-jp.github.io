@@ -219,3 +219,40 @@ export function updateSettings(partial) {
   const current = getSettings();
   writeJSON(KEYS.SETTINGS, { ...current, ...partial });
 }
+
+// ─── Cross-Browser Clipboard Helper ──────────────────────────────────────────
+
+/**
+ * Copies text to the clipboard with robust fallbacks for Safari, iOS, and restricted contexts.
+ * @param {string} text Text to copy
+ * @returns {Promise<boolean>} True if successful, false otherwise
+ */
+export async function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      // Fall through to fallback
+    }
+  }
+
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    ta.style.top = '-9999px';
+    ta.setAttribute('readonly', '');
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    const successful = document.execCommand('copy');
+    ta.remove();
+    return successful;
+  } catch (err) {
+    console.error('Failed to copy text to clipboard:', err);
+    return false;
+  }
+}
+

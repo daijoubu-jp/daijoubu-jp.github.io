@@ -110,7 +110,13 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
   overflow-x: clip;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-surface);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -122,7 +128,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   overflow-x: clip;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-surface);
+  -webkit-tap-highlight-color: transparent;
   transition: background-color var(--transition-slow), color var(--transition-slow);
 }
 
@@ -141,6 +151,7 @@ p {
 a {
   color: var(--color-accent);
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
   transition: color var(--transition-fast);
 }
 
@@ -155,6 +166,7 @@ button {
   background: none;
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all var(--transition-fast);
 }
 
@@ -164,18 +176,29 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 input, select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
   border-radius: var(--border-radius-sm);
   border: 1px solid var(--color-border);
   background-color: var(--color-surface);
+  -webkit-tap-highlight-color: transparent;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 input:focus, select:focus, textarea:focus {
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+/* Clear WebKit search inputs native decorative icons */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
 
 img, svg {
@@ -223,7 +246,13 @@ img, svg {
   border-width: 0;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar (Firefox, Zen Browser & Standards) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-surface);
+}
+
+/* Custom Scrollbar (WebKit / Blink) */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

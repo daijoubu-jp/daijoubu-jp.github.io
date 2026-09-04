@@ -8,7 +8,7 @@
  */
 
 import { getKanji, getKanjiByCodepoint, loadKanjiData } from './search.js';
-import { isFavorite, addFavorite, removeFavorite } from './storage.js';
+import { isFavorite, addFavorite, removeFavorite, copyToClipboard } from './storage.js';
 
 let strokeState = {
   container: null,
@@ -163,8 +163,12 @@ function renderHero(kanji) {
           });
         } catch {}
       } else {
-        await navigator.clipboard.writeText(window.location.href);
-        showToast('คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!');
+        const ok = await copyToClipboard(window.location.href);
+        if (ok) {
+          showToast('คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!');
+        } else {
+          showToast('ไม่สามารถคัดลอกลิงก์ได้', '⚠️');
+        }
       }
     });
   }
@@ -890,6 +894,10 @@ export function speakJapanese(text, targetBtn = null) {
     showToast('เบราว์เซอร์ไม่รองรับการออกเสียง Web Speech API', '⚠️');
     return;
   }
+  // Safari WebKit quirk: resume paused speech synthesis engine
+  if (window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  }
   window.speechSynthesis.cancel();
   const cleanText = text.replace(/<rt>[^<]*<\/rt>/g, '').replace(/<[^>]+>/g, '').replace(/[.・]/g, '').trim();
   if (!cleanText) return;
@@ -897,6 +905,15 @@ export function speakJapanese(text, targetBtn = null) {
   const utterance = new SpeechSynthesisUtterance(cleanText);
   utterance.lang = 'ja-JP';
   utterance.rate = 0.88;
+
+  // On iOS Safari / macOS Safari, matching a specific ja-JP voice if available improves reliability
+  const voices = window.speechSynthesis.getVoices();
+  if (voices && voices.length > 0) {
+    const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || (v.lang && v.lang.startsWith('ja')));
+    if (jaVoice) {
+      utterance.voice = jaVoice;
+    }
+  }
 
   if (targetBtn) {
     targetBtn.classList.add('playing');
@@ -969,8 +986,12 @@ function initAnkiExport(kanji) {
     const exportText = `【漢字】 ${kanji.kanji}\n【音読み】 ${onyomi}\n【訓読み】 ${kunyomi}\n【ความหมาย】 ${meanTh} (${meanEn})\n【ระดับ】 JLPT: ${jlpt} | ขีด: ${strokes} | หมวด: ${radical}\n${vocabLines ? '【คำศัพท์ตัวอย่าง】\n' + vocabLines : ''}`;
 
     try {
-      await navigator.clipboard.writeText(exportText);
-      showToast('คัดลอกข้อมูลสรุปสำหรับการ์ด Anki เรียบร้อยแล้ว!', '📋');
+      const ok = await copyToClipboard(exportText);
+      if (ok) {
+        showToast('คัดลอกข้อมูลสรุปสำหรับการ์ด Anki เรียบร้อยแล้ว!', '📋');
+      } else {
+        showToast('ไม่สามารถคัดลอกได้ กรุณาลองใหม่', '⚠️');
+      }
     } catch (err) {
       showToast('ไม่สามารถคัดลอกได้ กรุณาลองใหม่', '⚠️');
     }

@@ -11,6 +11,8 @@
  * - Anki/Flashcard copy to clipboard
  */
 
+import { copyToClipboard } from './storage.js';
+
 let cachedVocabulary = null;
 let currentCategory = 'all';
 let searchQuery = '';
@@ -45,10 +47,21 @@ export function playPronunciation(text, btnEl) {
     return;
   }
 
+  if (window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  }
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'ja-JP';
   utterance.rate = 0.85; // Slightly slower for clarity
+
+  const voices = window.speechSynthesis.getVoices();
+  if (voices && voices.length > 0) {
+    const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || (v.lang && v.lang.startsWith('ja')));
+    if (jaVoice) {
+      utterance.voice = jaVoice;
+    }
+  }
 
   if (btnEl) {
     btnEl.classList.add('active-playing');
@@ -67,16 +80,18 @@ export function playPronunciation(text, btnEl) {
 export async function copyVocabularyItem(item, btn) {
   const text = `${item.word} [${item.reading}] - ${item.meaning_th}`;
   try {
-    await navigator.clipboard.writeText(text);
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '✓';
-    btn.style.color = '#10b981';
-    btn.style.borderColor = '#10b981';
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.color = '';
-      btn.style.borderColor = '';
-    }, 1500);
+    const ok = await copyToClipboard(text);
+    if (ok) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '✓';
+      btn.style.color = '#10b981';
+      btn.style.borderColor = '#10b981';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.color = '';
+        btn.style.borderColor = '';
+      }, 1500);
+    }
   } catch (err) {
     console.error('Failed to copy to clipboard:', err);
   }
