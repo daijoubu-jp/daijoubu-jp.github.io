@@ -1,389 +1,9 @@
 [
   {
-    "id": "ichigo-ichie",
-    "word": "一期一会",
-    "reading": "いちごいちえ",
-    "romaji": "ichigo ichie",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "การพบกันเพียงครั้งเดียวในชีวิต (จงปฏิบัติต่อผู้อื่นด้วยความจริงใจเสมือนเป็นการพบกันครั้งสุดท้าย)",
-    "meaning_en": "Once-in-a-lifetime encounter; cherish every moment",
-    "ruby_html": "<ruby>一<rt>いち</rt></ruby><ruby>期<rt>ご</rt></ruby><ruby>一<rt>いち</rt></ruby><ruby>会<rt>え</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "一",
-        "meaning": "หนึ่ง"
-      },
-      {
-        "char": "期",
-        "meaning": "ช่วงเวลา / ชั่วชีวิต"
-      },
-      {
-        "char": "一",
-        "meaning": "หนึ่ง"
-      },
-      {
-        "char": "会",
-        "meaning": "การพบปะ / ประสบ"
-      }
-    ],
-    "lore": "มีที่มาจากปรัชญาพิธีชงชาญี่ปุ่น (茶道) โดยปรมาจารย์ เซ็น โนะ ริคิว (千利休) สอนว่าแม้เจ้าบ้านและแขกจะเจอกันบ่อยครั้ง แต่การพบปะใน 'ขณะนี้' จะไม่มีวันเกิดขึ้นซ้ำสองได้อีก",
-    "jlpt": 1,
-    "kanken": "4級",
-    "tags": [
-      "ชงชา",
-      "ปรัชญาชีวิต",
-      "ข้อคิด"
-    ]
-  },
-  {
-    "id": "jakuniku-kyoshoku",
-    "word": "弱肉強食",
-    "reading": "じゃくにくきょうしょく",
-    "romaji": "jakuniku kyoushoku",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "ผู้อ่อนแอย่อมตกเป็นเหยื่อของผู้เข้มแข็ง (กฎแห่งป่าดงพงพี / ปลาใหญ่กินปลาเล็ก)",
-    "meaning_en": "Survival of the fittest; the weak are meat the strong eat",
-    "ruby_html": "<ruby>弱<rt>じゃく</rt></ruby><ruby>肉<rt>にく</rt></ruby><ruby>強<rt>きょう</rt></ruby><ruby>食<rt>しょく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "弱",
-        "meaning": "อ่อนแอ"
-      },
-      {
-        "char": "肉",
-        "meaning": "เนื้อ / เหยื่อ"
-      },
-      {
-        "char": "強",
-        "meaning": "เข้มแข็ง / แข็งแกร่ง"
-      },
-      {
-        "char": "食",
-        "meaning": "กิน / กลืนกิน"
-      }
-    ],
-    "lore": "มาจากข้อเขียนของกวีราชวงศ์ถัง หานอวี่ (韓愈) บรรยายธรรมชาติที่สัตว์ตัวเล็กเนื้อนุ่มมักกลายเป็นอาหารของสัตว์ที่แข็งแกร่งกว่า นิยมใช้เปรียบเทียบการต่อสู้ในสังคมและการทำธุรกิจ",
-    "jlpt": 1,
-    "kanken": "4級",
-    "tags": [
-      "ธรรมชาติ",
-      "การต่อสู้",
-      "สังคม"
-    ]
-  },
-  {
-    "id": "kachou-fuugetsu",
-    "word": "花鳥風月",
-    "reading": "かちょうふうげつ",
-    "romaji": "kachou fuugetsu",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "ความงามตามธรรมชาติ (บุปผา สกุณา สายลม และดวงจันทร์ / การดื่มด่ำความรื่นรมย์ของธรรมชาติ)",
-    "meaning_en": "The beauties of nature; traditional Japanese aesthetic appreciation",
-    "ruby_html": "<ruby>花<rt>か</rt></ruby><ruby>鳥<rt>ちょう</rt></ruby><ruby>風<rt>ふう</rt></ruby><ruby>月<rt>げつ</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "花",
-        "meaning": "ดอกไม้"
-      },
-      {
-        "char": "鳥",
-        "meaning": "นก"
-      },
-      {
-        "char": "風",
-        "meaning": "สายลม"
-      },
-      {
-        "char": "月",
-        "meaning": "ดวงจันทร์"
-      }
-    ],
-    "lore": "คำสัญลักษณ์ตัวแทนแห่งสุนทรียศาสตร์ชั้นสูงของญี่ปุ่นโบราณ กวีและจิตรกรนิยมใช้ 4 สิ่งนี้เป็นตัวแทนแห่งฤดูกาลทั้งสี่และการแต่งบทกวีไฮกุ/วากะ",
-    "jlpt": 1,
-    "kanken": "4級",
-    "tags": [
-      "สุนทรียศาสตร์",
-      "กวี",
-      "ธรรมชาติ"
-    ]
-  },
-  {
-    "id": "shichiten-hakki",
-    "word": "七転八起",
-    "reading": "しちてんはっき",
-    "romaji": "shichiten hakki",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "ล้มเจ็ดครั้ง ลุกแปดครั้ง (ความพยายามไม่ย่อท้อต่ออุปสรรค)",
-    "meaning_en": "Fall seven times, stand up eight; resilience and perseverance",
-    "ruby_html": "<ruby>七<rt>しち</rt></ruby><ruby>転<rt>てん</rt></ruby><ruby>八<rt>はっ</rt></ruby><ruby>起<rt>き</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "七",
-        "meaning": "เจ็ด"
-      },
-      {
-        "char": "転",
-        "meaning": "ล้ม / กลิ้ง"
-      },
-      {
-        "char": "八",
-        "meaning": "แปด"
-      },
-      {
-        "char": "起",
-        "meaning": "ลุกขึ้น / ยืนหยัด"
-      }
-    ],
-    "lore": "เป็นที่มาของตุ๊กตาล้มลุกดารุมะ (達磨) ซึ่งไม่ว่าจะถูกผลักให้ล้มกี่ครั้งก็จะเด้งกลับขึ้นมาตั้งตรงได้เสมอ เป็นสัญลักษณ์แห่งชัยชนะและความมานะบากบั่นของชาวญี่ปุ่น",
-    "jlpt": 2,
-    "kanken": "4級",
-    "tags": [
-      "กำลังใจ",
-      "ดารุมะ",
-      "ความพยายาม"
-    ]
-  },
-  {
-    "id": "meikyou-shisui",
-    "word": "明鏡止水",
-    "reading": "めいきょうしすい",
-    "romaji": "meikyou shisui",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "จิตใจที่สงบนิ่งและบริสุทธิ์ ไร้ความขุ่นมัว (ดั่งกระจกใสและผิวน้ำที่นิ่งสงบ)",
-    "meaning_en": "A clear mirror and still water; serene and untroubled state of mind",
-    "ruby_html": "<ruby>明<rt>めい</rt></ruby><ruby>鏡<rt>きょう</rt></ruby><ruby>止<rt>し</rt></ruby><ruby>水<rt>すい</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "明",
-        "meaning": "กระจ่าง / สว่าง"
-      },
-      {
-        "char": "鏡",
-        "meaning": "กระจกเงา"
-      },
-      {
-        "char": "止",
-        "meaning": "หยุด / นิ่งสงบ"
-      },
-      {
-        "char": "水",
-        "meaning": "น้ำ"
-      }
-    ],
-    "lore": "มาจากคัมภีร์ *จวงจื่อ (荘子)* กล่าวว่าเมื่อน้ำนิ่งสนิท จึงจะสะท้อนภาพทุกสิ่งได้อย่างเที่ยงตรง จิตใจของคนเราเมื่อไร้ซึ่งกิเลสและความฟุ้งซ่าน ย่อมมองเห็นความจริงของสรรพสิ่ง",
-    "jlpt": 1,
-    "kanken": "3級",
-    "tags": [
-      "ปรัชญา",
-      "เซน",
-      "สมาธิ"
-    ]
-  },
-  {
-    "id": "shinra-banshou",
-    "word": "森羅万象",
-    "reading": "しんらばんしょう",
-    "romaji": "shinra banshou",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "สรรพสิ่งทั้งมวลในจักรวาล (ปรากฏการณ์และสิ่งมีชีวิตทุกสิ่งที่ดำรงอยู่)",
-    "meaning_en": "All creation; all things under the sun in the universe",
-    "ruby_html": "<ruby>森<rt>しん</rt></ruby><ruby>羅<rt>ら</rt></ruby><ruby>万<rt>ばん</rt></ruby><ruby>象<rt>しょう</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "森",
-        "meaning": "ป่าดึกดำบรรพ์ / เรียงรายหนาแน่น"
-      },
-      {
-        "char": "羅",
-        "meaning": "แผ่ขยาย / กว้างไกล"
-      },
-      {
-        "char": "万",
-        "meaning": "หมื่น / นับไม่ถ้วน"
-      },
-      {
-        "char": "象",
-        "meaning": "รูปธรรม / สภาพ / ปรากฏการณ์"
-      }
-    ],
-    "lore": "คำศัพท์ทางพุทธศาสนานิกายมหายาน อธิบายความหลากหลายอันไร้ขอบเขตของธรรมชาติ นิยมพบบ่อยในมังงะและแฟนตาซีเมื่อพูดถึงพลังที่ควบคุมทุกสรรพสิ่งในจักรวาล",
-    "jlpt": 1,
-    "kanken": "3級",
-    "tags": [
-      "จักรวาล",
-      "พุทธศาสนา",
-      "ธรรมชาติ"
-    ]
-  },
-  {
-    "id": "shippuu-jinrai",
-    "word": "疾風迅雷",
-    "reading": "しっぷうじんらい",
-    "romaji": "shippuu jinrai",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "รวดเร็วปานลมพายุ ฉับพลันดั่งอสุนีบาต (การเคลื่อนไหวที่ฉับไว รุนแรง และไม่ทันตั้งตัว)",
-    "meaning_en": "Swift as a gale, sudden as lightning; with lightning speed and fierce intensity",
-    "ruby_html": "<ruby>疾<rt>しっ</rt></ruby><ruby>風<rt>ぷう</rt></ruby><ruby>迅<rt>じん</rt></ruby><ruby>雷<rt>らい</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "疾",
-        "meaning": "รวดเร็ว / ฉับพลัน"
-      },
-      {
-        "char": "風",
-        "meaning": "สายลม"
-      },
-      {
-        "char": "迅",
-        "meaning": "รวดเร็ว / ว่องไว"
-      },
-      {
-        "char": "雷",
-        "meaning": "สายฟ้า / ฟ้าร้อง"
-      }
-    ],
-    "lore": "ปรากฏในคัมภีร์ *หลี่จี้ (礼記)* ใช้บรรยายการเคลื่อนทัพหรือความเร็วอันเหนือชั้น เป็นที่มาของชื่อท่าไม้ตายและคาถานินจาในหลายวรรณกรรมร่วมสมัย",
-    "jlpt": 1,
-    "kanken": "2級",
-    "tags": [
-      "ความเร็ว",
-      "สายฟ้า",
-      "กลยุทธ์"
-    ]
-  },
-  {
-    "id": "gashin-shoutan",
-    "word": "臥薪嘗胆",
-    "reading": "がしんしょうたん",
-    "romaji": "gashin shoutan",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "นอนบนฟืน ชิมดีสัตว์ขมขื่น (ยอมทนความยากลำบากแสนสาหัสเพื่อรอคอยวันล้างแค้นหรือประสบความสำเร็จ)",
-    "meaning_en": "Sleeping on brushwood and tasting gall; enduring hardships to achieve vengeance/ambition",
-    "ruby_html": "<ruby>臥<rt>が</rt></ruby><ruby>薪<rt>しん</rt></ruby><ruby>嘗<rt>しょう</rt></ruby><ruby>胆<rt>たん</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "臥",
-        "meaning": "นอนทอดกาย"
-      },
-      {
-        "char": "薪",
-        "meaning": "ท่อนฟืน / หนามฟืน"
-      },
-      {
-        "char": "嘗",
-        "meaning": "ชิม / ลิ้มรส"
-      },
-      {
-        "char": "胆",
-        "meaning": "ถุงน้ำดี (รสขม)"
-      }
-    ],
-    "lore": "จากพงศาวดารศึกระหว่างแคว้นอู๋และแคว้นเยว่ในยุคชุนชิว ฟูชาทนนอนบนฟืนหนามเพื่อไม่ให้ลืมความแค้น ส่วนโกวเจี้ยนแขวนถุงน้ำดีไว้ชิมรสขมก่อนนอนทุกคืนเพื่อเตือนใจตนเอง",
-    "jlpt": 1,
-    "kanken": "2級",
-    "tags": [
-      "ประวัติศาสตร์",
-      "ความมุ่งมั่น",
-      "ความแค้น"
-    ]
-  },
-  {
-    "id": "onko-chishin",
-    "word": "温故知新",
-    "reading": "おんこちしん",
-    "romaji": "onko chishin",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "ทบทวนเรื่องเก่าเพื่อเข้าใจสิ่งใหม่ (ศึกษาประวัติศาสตร์และรากเหง้าเพื่อพัฒนาองค์ความรู้ใหม่)",
-    "meaning_en": "Learning from the past to develop new perspectives",
-    "ruby_html": "<ruby>温<rt>おん</rt></ruby><ruby>故<rt>こ</rt></ruby><ruby>知<rt>ち</rt></ruby><ruby>新<rt>しん</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "温",
-        "meaning": "อุ่น / ทบทวนสิ่งเดิม"
-      },
-      {
-        "char": "故",
-        "meaning": "เรื่องเก่า / ประวัติศาสตร์"
-      },
-      {
-        "char": "知",
-        "meaning": "ล่วงรู้ / เข้าใจ"
-      },
-      {
-        "char": "新",
-        "meaning": "สิ่งใหม่ / นวัตกรรม"
-      }
-    ],
-    "lore": "คำสอนอันทรงคุณค่าจาก *คัมภีร์หลุนอวี่ (論語)* ของขงจื๊อ กล่าวว่า 'ผู้ที่สามารถทบทวนอดีตจนต่อยอดสู่ความรู้ใหม่ได้ ผู้นั้นจึงคู่ควรเป็นอาจารย์'",
-    "jlpt": 2,
-    "kanken": "4級",
-    "tags": [
-      "การเรียนรู้",
-      "ขงจื๊อ",
-      "ประวัติศาสตร์"
-    ]
-  },
-  {
-    "id": "juunin-toiro",
-    "word": "十人十色",
-    "reading": "じゅうにんといろ",
-    "romaji": "juunin toiro",
-    "category": "yojijukugo",
-    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
-    "series": null,
-    "meaning_th": "สิบคนสิบสี (ต่างคนต่างความคิด จิตใจและรสนิยมของแต่ละคนย่อมแตกต่างกัน)",
-    "meaning_en": "Ten people, ten colors; everyone has their own distinct personality",
-    "ruby_html": "<ruby>十<rt>じゅう</rt></ruby><ruby>人<rt>にん</rt></ruby><ruby>十<rt>と</rt></ruby><ruby>色<rt>いろ</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "十",
-        "meaning": "สิบ"
-      },
-      {
-        "char": "人",
-        "meaning": "คน / มนุษย์"
-      },
-      {
-        "char": "十",
-        "meaning": "สิบ"
-      },
-      {
-        "char": "色",
-        "meaning": "สี / บุคลิกภาพ"
-      }
-    ],
-    "lore": "สุภาษิตยอดนิยมที่คนญี่ปุ่นใช้พูดถึงการเคารพความหลากหลายและความเป็นปัจเจกของแต่ละบุคคล โดย 'สิบสี' สื่อถึงบุคลิกและเฉดความคิดที่มีเอกลักษณ์เฉพาะตัว",
-    "jlpt": 2,
-    "kanken": "5級",
-    "tags": [
-      "จิตวิทยา",
-      "ความหลากหลาย",
-      "ชีวิตประจำวัน"
-    ]
-  },
-  {
     "id": "animal-panda",
     "word": "熊猫",
     "reading": "パンダ",
-    "romaji": "panda",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -413,7 +33,7 @@
     "id": "animal-dolphin",
     "word": "海豚",
     "reading": "いるか",
-    "romaji": "iruka",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -443,7 +63,7 @@
     "id": "animal-whale",
     "word": "鯨",
     "reading": "くじら",
-    "romaji": "kujira",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -473,7 +93,7 @@
     "id": "animal-squid",
     "word": "烏賊",
     "reading": "いか",
-    "romaji": "ika",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -503,7 +123,7 @@
     "id": "animal-octopus",
     "word": "蛸",
     "reading": "たこ",
-    "romaji": "tako",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -533,7 +153,7 @@
     "id": "animal-bat",
     "word": "蝙蝠",
     "reading": "こうもり",
-    "romaji": "koumori",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -563,7 +183,7 @@
     "id": "animal-giraffe",
     "word": "麒麟",
     "reading": "きりん",
-    "romaji": "kirin",
+    "romaji": "",
     "category": "animals",
     "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
@@ -590,382 +210,160 @@
     ]
   },
   {
-    "id": "plant-sunflower",
-    "word": "向日葵",
-    "reading": "ひまわり",
-    "romaji": "himawari",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "id": "animal-fox",
+    "word": "狐",
+    "reading": "きつね",
+    "romaji": "",
+    "category": "animals",
+    "category_th": "สัตว์ในคันจิ (動物)",
     "series": null,
-    "meaning_th": "ดอกทานตะวัน",
-    "meaning_en": "Sunflower",
-    "ruby_html": "<ruby>向<rt>ひ</rt></ruby><ruby>日<rt>ま</rt></ruby><ruby>葵<rt>わり</rt></ruby>",
+    "meaning_th": "จิ้งจอก (สัญลักษณ์ผู้ส่งสารแห่งเทพเจ้าอินาริ)",
+    "meaning_en": "Fox; Kitsune",
+    "ruby_html": "<ruby>狐<rt>きつね</rt></ruby>",
     "literal_breakdown": [
       {
-        "char": "向",
-        "meaning": "หันหน้าเข้าหา"
+        "char": "犭",
+        "meaning": "หมวดสัตว์สี่เท้า"
       },
       {
-        "char": "日",
-        "meaning": "ดวงอาทิตย์"
-      },
-      {
-        "char": "葵",
-        "meaning": "ดอกชบา / ดอกไม้ตระกูลมาลโลว์"
+        "char": "瓜",
+        "meaning": "แตง / ผลไม้ทรงกลมรี (เสียง Ko)"
       }
     ],
-    "lore": "คำอ่านพิเศษ (熟字訓) สื่อถึงลักษณะเด่นของดอกไม้ชนิดนี้ที่จะ 'หันหน้า (向) เข้าหาดวงอาทิตย์ (日)' ตลอดเวลาในยามกลางวัน",
+    "lore": "ในความเชื่อชินโต จิ้งจอกสีขาว (白狐: เบียกโกะ) เป็นสัตว์รับใช้ประจำศาลเจ้าอินาริ มีพลังแปลงกายและบันดาลความอุดมสมบูรณ์ในการเกษตรและการค้า",
     "jlpt": 2,
-    "kanken": "準1級",
-    "tags": [
-      "ฤดูร้อน",
-      "ดอกไม้",
-      "Jukujikun"
-    ]
-  },
-  {
-    "id": "plant-dandelion",
-    "word": "蒲公英",
-    "reading": "たんぽぽ",
-    "romaji": "tanpopo",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "ดอกแดนดิไลออน (ทันโปโปะ)",
-    "meaning_en": "Dandelion",
-    "ruby_html": "<ruby>蒲<rt>たん</rt></ruby><ruby>公<rt>ぽ</rt></ruby><ruby>英<rt>ぽ</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "蒲",
-        "meaning": "ต้นกก / ธูปฤาษี"
-      },
-      {
-        "char": "公",
-        "meaning": "คุณธรรม / เป็นทางการ"
-      },
-      {
-        "char": "英",
-        "meaning": "ดอกบานสะพรั่ง / ดีเลิศ"
-      }
-    ],
-    "lore": "ชื่อคันจิมาจากชื่อสมุนไพรโบราณในคัมภีร์แพทย์แผนจีน ปัจจุบันในชีวิตประจำวันนิยมเขียนด้วยฮิรางานะ たんぽぽ หรือคาตาคานะ タンポポ",
-    "jlpt": 1,
-    "kanken": "1級",
-    "tags": [
-      "ฤดูใบไม้ผลิ",
-      "ดอกไม้ป่า",
-      "สมุนไพร"
-    ]
-  },
-  {
-    "id": "plant-hydrangea",
-    "word": "紫陽花",
-    "reading": "あじさい",
-    "romaji": "ajisai",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "ดอกไฮเดรนเยีย (อาจิไซ - ดอกไม้แห่งฤดูฝน)",
-    "meaning_en": "Hydrangea",
-    "ruby_html": "<ruby>紫<rt>あじ</rt></ruby><ruby>陽<rt>さ</rt></ruby><ruby>花<rt>い</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "紫",
-        "meaning": "สีม่วง"
-      },
-      {
-        "char": "陽",
-        "meaning": "แสงตะวัน / พลังหยาง"
-      },
-      {
-        "char": "花",
-        "meaning": "ดอกไม้"
-      }
-    ],
-    "lore": "ดอกไม้สัญลักษณ์แห่งฤดูฝน (梅雨) ของญี่ปุ่น สามารถเปลี่ยนสีกลีบดอกได้ตามความเป็นกรดด่างของดิน กวีราชวงศ์ถัง ป๋ายจวีอี้ เป็นผู้ตั้งชื่อคันจิ 'ดอกไม้สีม่วงสะท้อนแดด' นี้",
-    "jlpt": 1,
-    "kanken": "準1級",
-    "tags": [
-      "ฤดูฝน",
-      "ดอกไม้",
-      "โตเกียว"
-    ]
-  },
-  {
-    "id": "plant-rose",
-    "word": "薔薇",
-    "reading": "ばら",
-    "romaji": "bara",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "ดอกกุหลาบ",
-    "meaning_en": "Rose",
-    "ruby_html": "<ruby>薔<rt>ば</rt></ruby><ruby>薇<rt>ら</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "薔",
-        "meaning": "กุหลาบป่า (16 ขีด)"
-      },
-      {
-        "char": "薇",
-        "meaning": "เถากุหลาบ / ผักกูด (16 ขีด)"
-      }
-    ],
-    "lore": "ถือเป็นหนึ่งในคันจิที่เขียนยากและมีจำนวนขีดเยอะที่สุดที่คนญี่ปุ่นมักนำมาเล่นเกมทายคำ (รวมสองตัว 32 ขีด!) ปัจจุบันจึงเขียนด้วย バラ เป็นหลัก",
-    "jlpt": 1,
-    "kanken": "1級",
-    "tags": [
-      "กุหลาบ",
-      "ความรัก",
-      "คันจิขีดเยอะ"
-    ]
-  },
-  {
-    "id": "plant-apple",
-    "word": "林檎",
-    "reading": "りんご",
-    "romaji": "ringo",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "แอปเปิล (ริงโกะ)",
-    "meaning_en": "Apple",
-    "ruby_html": "<ruby>林<rt>りん</rt></ruby><ruby>檎<rt>ご</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "林",
-        "meaning": "ป่าโปร่ง"
-      },
-      {
-        "char": "檎",
-        "meaning": "ผลไม้ป่า / นกชอบกิน"
-      }
-    ],
-    "lore": "ตัว 檎 ในอักษรจีนโบราณแปลว่าผลไม้ที่มีนก (禽) บินมาชุมนุมกันกินในป่า (林) จึงนำมาตั้งเป็นชื่อผลแอปเปิลป่า",
-    "jlpt": 2,
-    "kanken": "準1級",
-    "tags": [
-      "ผลไม้",
-      "อาโอโมริ",
-      "ฤดูหนาว"
-    ]
-  },
-  {
-    "id": "plant-lemon",
-    "word": "檸檬",
-    "reading": "レモン",
-    "romaji": "remon",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "เลมอน (มะนาวเหลือง)",
-    "meaning_en": "Lemon",
-    "ruby_html": "<ruby>檸<rt>レ</rt></ruby><ruby>檬<rt>モン</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "檸",
-        "meaning": "ต้นเลมอน (17 ขีด)"
-      },
-      {
-        "char": "檬",
-        "meaning": "ผลเลมอน (17 ขีด)"
-      }
-    ],
-    "lore": "โด่งดังในหมู่นักอ่านชาวญี่ปุ่นจากวรรณกรรมชิ้นเอกเรื่อง *檸檬 (Lemon)* ของ คาจิอิ โมโตจิโร่ (梶井基次郎) ซึ่งบรรยายความสดชื่นของเลมอนที่ช่วยเยียวยาจิตใจที่หดหู่",
-    "jlpt": 1,
-    "kanken": "1級",
-    "tags": [
-      "ผลไม้",
-      "วรรณกรรม",
-      "Ateji"
-    ]
-  },
-  {
-    "id": "country-thailand",
-    "word": "泰国",
-    "reading": "タイこく",
-    "romaji": "taikoku",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "ประเทศไทย (อักษรย่อในข่าว: 泰 เช่น 日泰 = ญี่ปุ่น-ไทย)",
-    "meaning_en": "Thailand (Abbreviation: 泰, e.g., Japan-Thailand relations: 日泰)",
-    "ruby_html": "<ruby>泰<rt>タイ</rt></ruby><ruby>国<rt>こく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "泰",
-        "meaning": "สงบสุข / ยิ่งใหญ่ / สันติ (ไท)"
-      },
-      {
-        "char": "国",
-        "meaning": "ประเทศ"
-      }
-    ],
-    "lore": "ทางการญี่ปุ่นเลือกใช้ตัว 泰 (Tai/Yutaka) ซึ่งเป็นคันจิมงคลมีความหมายว่า 'ความสงบสุข ร่มเย็น และมั่นคงดั่งภูผา' มาทับศัพท์คำว่า 'ไทย' พาดหัวข่าวญี่ปุ่นจึงมักใช้ 泰 เช่น 日泰修好 (ความสัมพันธ์ทางการทูตญี่ปุ่น-ไทย)",
-    "jlpt": 2,
-    "kanken": "2級",
-    "tags": [
-      "ประเทศไทย",
-      "Ateji",
-      "การทูต"
-    ]
-  },
-  {
-    "id": "country-usa",
-    "word": "米国",
-    "reading": "アメリカ / べいこく",
-    "romaji": "beikoku",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "สหรัฐอเมริกา (อักษรย่อในข่าว: 米 เช่น 日米 = ญี่ปุ่น-สหรัฐฯ)",
-    "meaning_en": "United States of America (Abbreviation: 米)",
-    "ruby_html": "<ruby>米<rt>べい</rt></ruby><ruby>国<rt>こく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "米",
-        "meaning": "เมล็ดข้าว / อะเมะ (America)"
-      },
-      {
-        "char": "国",
-        "meaning": "ประเทศ"
-      }
-    ],
-    "lore": "ในยุคเอโดะตอนปลาย ญี่ปุ่นทับศัพท์คำว่า America เป็น 亜米利加 (อะ-เม-ริ-กะ) และเลือกตัดตัวกลางคือ 米 (เมะ/เบย์) มาใช้เป็นตัวย่อของประเทศจนถึงปัจจุบัน",
-    "jlpt": 3,
-    "kanken": "8級",
-    "tags": [
-      "สหรัฐอเมริกา",
-      "ข่าว",
-      "คำย่อพาดหัว"
-    ]
-  },
-  {
-    "id": "country-uk",
-    "word": "英国",
-    "reading": "イギリス / えいこく",
-    "romaji": "eikoku",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "สหราชอาณาจักร / ประเทศอังกฤษ (อักษรย่อในข่าว: 英)",
-    "meaning_en": "United Kingdom / Great Britain (Abbreviation: 英)",
-    "ruby_html": "<ruby>英<rt>えい</rt></ruby><ruby>国<rt>こく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "英",
-        "meaning": "ยอดเยี่ยม / ฉลาดปราดเปรื่อง (Eng)"
-      },
-      {
-        "char": "国",
-        "meaning": "ประเทศ"
-      }
-    ],
-    "lore": "ทับศัพท์มาจากคำว่า 英吉利 (อิง-กิ-ริส) และนำตัว 英 มาใช้เป็นตัวแทนของภาษาอังกฤษ (英語) และประเทศอังกฤษ (英国)",
-    "jlpt": 4,
-    "kanken": "7級",
-    "tags": [
-      "อังกฤษ",
-      "ยุโรป",
-      "ภาษา"
-    ]
-  },
-  {
-    "id": "country-france",
-    "word": "仏国",
-    "reading": "フランス / ふっこく",
-    "romaji": "fukkoku",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "ประเทศฝรั่งเศส (อักษรย่อในข่าว: 仏 เช่น 仏語 = ภาษาฝรั่งเศส)",
-    "meaning_en": "France (Abbreviation: 仏)",
-    "ruby_html": "<ruby>仏<rt>ふつ</rt></ruby><ruby>国<rt>こく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "仏",
-        "meaning": "พระพุทธเจ้า / ฟุตสึ (France)"
-      },
-      {
-        "char": "国",
-        "meaning": "ประเทศ"
-      }
-    ],
-    "lore": "ทับศัพท์มาจาก 仏蘭西 (ฟุ-รัง-ซึ) และตัดเหลือตัว 仏 (ฟุตสึ) ตัวเดียว แม้ตัวอักษรจะแปลว่า 'พระพุทธ' แต่เมื่อใช้เรียกประเทศจะหมายถึงฝรั่งเศส",
-    "jlpt": 2,
-    "kanken": "6級",
-    "tags": [
-      "ฝรั่งเศส",
-      "ยุโรป",
-      "Ateji"
-    ]
-  },
-  {
-    "id": "country-germany",
-    "word": "独国",
-    "reading": "ドイツ / どっこく",
-    "romaji": "dokkoku",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "ประเทศเยอรมนี (อักษรย่อในข่าว: 独 เช่น 独語 = ภาษาเยอรมัน)",
-    "meaning_en": "Germany (Abbreviation: 独, from Deutsch)",
-    "ruby_html": "<ruby>独<rt>どく</rt></ruby><ruby>国<rt>こく</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "独",
-        "meaning": "โดดเดี่ยว / ดอยต์ช์ (Deutsch)"
-      },
-      {
-        "char": "国",
-        "meaning": "ประเทศ"
-      }
-    ],
-    "lore": "ทับศัพท์จากคำภาษาเยอรมัน 'Deutsch' เป็น 獨逸 (โดะ-อิ-สึ) และย่อเหลือ 独 คำว่า 独逸車 จึงแปลว่ารถยนต์สัญชาติเยอรมัน",
-    "jlpt": 2,
-    "kanken": "6級",
-    "tags": [
-      "เยอรมัน",
-      "ยุโรป",
-      "Ateji"
-    ]
-  },
-  {
-    "id": "country-australia",
-    "word": "豪州",
-    "reading": "ごうしゅう",
-    "romaji": "goushuu",
-    "category": "countries",
-    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
-    "series": null,
-    "meaning_th": "ประเทศออสเตรเลีย (ทวีปออสเตรเลีย / ตัวย่อ: 豪 เช่น 豪ドル = ดอลลาร์ออสเตรเลีย)",
-    "meaning_en": "Australia (Abbreviation: 豪)",
-    "ruby_html": "<ruby>豪<rt>ごう</rt></ruby><ruby>州<rt>しゅう</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "豪",
-        "meaning": "หรูหรา / กล้าหาญ / ออส (Aus)"
-      },
-      {
-        "char": "州",
-        "meaning": "ทวีป / รัฐ"
-      }
-    ],
-    "lore": "ทับศัพท์มาจาก 濠太剌利 (โก-ตะ-ระ-ริ) ต่อมาปรับเป็นตัว 豪 (Gou) ซึ่งมีความหมายมงคลว่าความสง่างามโอ่อ่า",
-    "jlpt": 1,
     "kanken": "3級",
     "tags": [
-      "ออสเตรเลีย",
-      "โอเชียเนีย",
-      "Ateji"
+      "ชินโต",
+      "ศาลเจ้า",
+      "อินาริ"
+    ]
+  },
+  {
+    "id": "animal-tanuki",
+    "word": "狸",
+    "reading": "たぬき",
+    "romaji": "",
+    "category": "animals",
+    "category_th": "สัตว์ในคันจิ (動物)",
+    "series": null,
+    "meaning_th": "ทานุกิ (จิ้งจอกแรคคูนญี่ปุ่น - เจ้าแห่งการแปลงกายและโชคลาภ)",
+    "meaning_en": "Japanese Raccoon Dog; Tanuki",
+    "ruby_html": "<ruby>狸<rt>たぬき</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "犭",
+        "meaning": "หมวดสัตว์สี่เท้า"
+      },
+      {
+        "char": "里",
+        "meaning": "หมู่บ้าน / ชนบท"
+      }
+    ],
+    "lore": "ประกอบด้วยคันจิ สัตว์สี่เท้า (犭) + หมู่บ้าน (里) สื่อถึงสัตว์ป่าที่อาศัยอยู่ใกล้ชิดกับหมู่บ้านมนุษย์ หน้าร้านอาหารญี่ปุ่นมักตั้งรูปปั้นดินเผาทานุกิพุงพลุ้ยสวมหมวกฟางเพื่อเรียกทรัพย์",
+    "jlpt": 1,
+    "kanken": "準1級",
+    "tags": [
+      "โชคลาภ",
+      "รูปปั้น",
+      "นิทานพื้นบ้าน"
+    ]
+  },
+  {
+    "id": "animal-owl",
+    "word": "梟",
+    "reading": "ふくろう",
+    "romaji": "",
+    "category": "animals",
+    "category_th": "สัตว์ในคันจิ (動物)",
+    "series": null,
+    "meaning_th": "นกฮูก (สัญลักษณ์แห่งปัญญาและไร้ความทุกข์ยาก 不苦労)",
+    "meaning_en": "Owl",
+    "ruby_html": "<ruby>梟<rt>ふくろう</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "鳥",
+        "meaning": "นก"
+      },
+      {
+        "char": "木",
+        "meaning": "ต้นไม้"
+      }
+    ],
+    "lore": "คนญี่ปุ่นนิยมเลี้ยงและมอบเครื่องรางนกฮูกให้กัน เพราะคำว่า Fukurou พ้องเสียงกับ 不苦労 (ฟุคุโร = ปราศจากความทุกข์ยากลำบาก) และ 福来朗 (ฟุคุไรโร = โชคลาภเข้ามาสู่ชีวิต)",
+    "jlpt": 1,
+    "kanken": "準1級",
+    "tags": [
+      "นกฮูก",
+      "โชคลาภ",
+      "ความสุข"
+    ]
+  },
+  {
+    "id": "animal-frog",
+    "word": "蛙",
+    "reading": "かえる",
+    "romaji": "",
+    "category": "animals",
+    "category_th": "สัตว์ในคันจิ (動物)",
+    "series": null,
+    "meaning_th": "กบ (สัญลักษณ์แห่งการเดินทางกลับอย่างปลอดภัย 帰る)",
+    "meaning_en": "Frog",
+    "ruby_html": "<ruby>蛙<rt>かえる</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "虫",
+        "meaning": "หมวดสัตว์เล็ก"
+      },
+      {
+        "char": "圭",
+        "meaning": "หยกมงคล / ดินทับถม"
+      }
+    ],
+    "lore": "คำว่ากบในภาษาญี่ปุ่น (Kaeru) พ้องเสียงกับกริยา 帰る (กลับบ้าน) ชาวญี่ปุ่นจึงนิยมพกเครื่องรางรูปกบติดตัวเมื่อต้องเดินทางไกล เพื่ออวยพรให้ 'กลับบ้านอย่างปลอดภัย' และเงินทองที่จ่ายไป 'ไหลกลับมา'",
+    "jlpt": 2,
+    "kanken": "3級",
+    "tags": [
+      "เดินทางปลอดภัย",
+      "เครื่องราง",
+      "เล่นคำพ้องเสียง"
+    ]
+  },
+  {
+    "id": "animal-butterfly",
+    "word": "蝶",
+    "reading": "ちょう",
+    "romaji": "",
+    "category": "animals",
+    "category_th": "สัตว์ในคันจิ (動物)",
+    "series": null,
+    "meaning_th": "ผีเสื้อ (สัญลักษณ์แห่งการเปลี่ยนผ่านและดวงวิญญาณ)",
+    "meaning_en": "Butterfly",
+    "ruby_html": "<ruby>蝶<rt>ちょう</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "虫",
+        "meaning": "หมวดแมลง"
+      },
+      {
+        "char": "枼",
+        "meaning": "ใบไม้บางแบน / แผ่กว้าง"
+      }
+    ],
+    "lore": "ในวรรณคดีและอนิเมะญี่ปุ่น (เช่น ดาบพิฆาตอสูรของชิโนบุ หรือบลีชของผีเสื้อนรก) ผีเสื้อเป็นสัญลักษณ์เชื่อมโยงระหว่างโลกมนุษย์และปรโลก รวมถึงการกำเนิดใหม่",
+    "jlpt": 1,
+    "kanken": "2級",
+    "tags": [
+      "แมลง",
+      "ผีเสื้อ",
+      "ความงาม"
     ]
   },
   {
     "id": "bleach-zanpakuto",
     "word": "斬魄刀",
     "reading": "ざんぱくとう",
-    "romaji": "zanpakutou",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -999,7 +397,7 @@
     "id": "bleach-bankai",
     "word": "卍解",
     "reading": "ばんかい",
-    "romaji": "bankai",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -1029,7 +427,7 @@
     "id": "bleach-kyoka-suigetsu",
     "word": "鏡花水月",
     "reading": "きょうかすいげつ",
-    "romaji": "kyouka suigetsu",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -1067,7 +465,7 @@
     "id": "bleach-senbonzakura",
     "word": "千本桜",
     "reading": "せんぼんざくら",
-    "romaji": "senbonzakura",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -1101,7 +499,7 @@
     "id": "naruto-rasengan",
     "word": "螺旋丸",
     "reading": "らせんがん",
-    "romaji": "rasengan",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1135,7 +533,7 @@
     "id": "naruto-sharingan",
     "word": "写輪眼",
     "reading": "しゃりんがん",
-    "romaji": "sharingan",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1169,7 +567,7 @@
     "id": "naruto-mangekyo",
     "word": "万華鏡",
     "reading": "まんげきょう",
-    "romaji": "mangekyou",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1203,7 +601,7 @@
     "id": "naruto-chidori",
     "word": "千鳥",
     "reading": "ちどり",
-    "romaji": "chidori",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1233,7 +631,7 @@
     "id": "kny-kimetsu",
     "word": "鬼滅",
     "reading": "きめつ",
-    "romaji": "kimetsu",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1263,7 +661,7 @@
     "id": "kny-hashira",
     "word": "柱",
     "reading": "はしら",
-    "romaji": "hashira",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1293,7 +691,7 @@
     "id": "kny-rengoku",
     "word": "煉獄",
     "reading": "れんごく",
-    "romaji": "rengoku",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1323,7 +721,7 @@
     "id": "kny-nichirin",
     "word": "日輪刀",
     "reading": "にちりんとう",
-    "romaji": "nichirintou",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1357,7 +755,7 @@
     "id": "jjk-ryoiki-tenkai",
     "word": "領域展開",
     "reading": "りょういきてんかい",
-    "romaji": "ryouiki tenkai",
+    "romaji": "",
     "category": "anime-jjk",
     "category_th": "มังงะและอนิเมะ (Jujutsu Kaisen)",
     "series": "Jujutsu Kaisen (มหาเวทย์ผนึกมาร)",
@@ -1395,7 +793,7 @@
     "id": "jjk-muryo-kusho",
     "word": "無量空処",
     "reading": "むりょうくうしょ",
-    "romaji": "muryou kuusho",
+    "romaji": "",
     "category": "anime-jjk",
     "category_th": "มังงะและอนิเมะ (Jujutsu Kaisen)",
     "series": "Jujutsu Kaisen (มหาเวทย์ผนึกมาร)",
@@ -1433,7 +831,7 @@
     "id": "jjk-fukuma-mizushi",
     "word": "伏魔御廚子",
     "reading": "ふくまみづし",
-    "romaji": "fukuma mizushi",
+    "romaji": "",
     "category": "anime-jjk",
     "category_th": "มังงะและอนิเมะ (Jujutsu Kaisen)",
     "series": "Jujutsu Kaisen (มหาเวทย์ผนึกมาร)",
@@ -1471,7 +869,7 @@
     "id": "jjk-kokusen",
     "word": "黒閃",
     "reading": "こくせん",
-    "romaji": "kokusen",
+    "romaji": "",
     "category": "anime-jjk",
     "category_th": "มังงะและอนิเมะ (Jujutsu Kaisen)",
     "series": "Jujutsu Kaisen (มหาเวทย์ผนึกมาร)",
@@ -1498,224 +896,10 @@
     ]
   },
   {
-    "id": "animal-fox",
-    "word": "狐",
-    "reading": "きつね",
-    "romaji": "kitsune",
-    "category": "animals",
-    "category_th": "สัตว์ในคันจิ (動物)",
-    "series": null,
-    "meaning_th": "จิ้งจอก (สัญลักษณ์ผู้ส่งสารแห่งเทพเจ้าอินาริ)",
-    "meaning_en": "Fox; Kitsune",
-    "ruby_html": "<ruby>狐<rt>きつね</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "犭",
-        "meaning": "หมวดสัตว์สี่เท้า"
-      },
-      {
-        "char": "瓜",
-        "meaning": "แตง / ผลไม้ทรงกลมรี (เสียง Ko)"
-      }
-    ],
-    "lore": "ในความเชื่อชินโต จิ้งจอกสีขาว (白狐: เบียกโกะ) เป็นสัตว์รับใช้ประจำศาลเจ้าอินาริ มีพลังแปลงกายและบันดาลความอุดมสมบูรณ์ในการเกษตรและการค้า",
-    "jlpt": 2,
-    "kanken": "3級",
-    "tags": [
-      "ชินโต",
-      "ศาลเจ้า",
-      "อินาริ"
-    ]
-  },
-  {
-    "id": "animal-tanuki",
-    "word": "狸",
-    "reading": "たぬき",
-    "romaji": "tanuki",
-    "category": "animals",
-    "category_th": "สัตว์ในคันจิ (動物)",
-    "series": null,
-    "meaning_th": "ทานุกิ (จิ้งจอกแรคคูนญี่ปุ่น - เจ้าแห่งการแปลงกายและโชคลาภ)",
-    "meaning_en": "Japanese Raccoon Dog; Tanuki",
-    "ruby_html": "<ruby>狸<rt>たぬき</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "犭",
-        "meaning": "หมวดสัตว์สี่เท้า"
-      },
-      {
-        "char": "里",
-        "meaning": "หมู่บ้าน / ชนบท"
-      }
-    ],
-    "lore": "ประกอบด้วยคันจิ สัตว์สี่เท้า (犭) + หมู่บ้าน (里) สื่อถึงสัตว์ป่าที่อาศัยอยู่ใกล้ชิดกับหมู่บ้านมนุษย์ หน้าร้านอาหารญี่ปุ่นมักตั้งรูปปั้นดินเผาทานุกิพุงพลุ้ยสวมหมวกฟางเพื่อเรียกทรัพย์",
-    "jlpt": 1,
-    "kanken": "準1級",
-    "tags": [
-      "โชคลาภ",
-      "รูปปั้น",
-      "นิทานพื้นบ้าน"
-    ]
-  },
-  {
-    "id": "animal-owl",
-    "word": "梟",
-    "reading": "ふくろう",
-    "romaji": "fukurou",
-    "category": "animals",
-    "category_th": "สัตว์ในคันจิ (動物)",
-    "series": null,
-    "meaning_th": "นกฮูก (สัญลักษณ์แห่งปัญญาและไร้ความทุกข์ยาก 不苦労)",
-    "meaning_en": "Owl",
-    "ruby_html": "<ruby>梟<rt>ふくろう</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "鳥",
-        "meaning": "นก"
-      },
-      {
-        "char": "木",
-        "meaning": "ต้นไม้"
-      }
-    ],
-    "lore": "คนญี่ปุ่นนิยมเลี้ยงและมอบเครื่องรางนกฮูกให้กัน เพราะคำว่า Fukurou พ้องเสียงกับ 不苦労 (ฟุคุโร = ปราศจากความทุกข์ยากลำบาก) และ 福来朗 (ฟุคุไรโร = โชคลาภเข้ามาสู่ชีวิต)",
-    "jlpt": 1,
-    "kanken": "準1級",
-    "tags": [
-      "นกฮูก",
-      "โชคลาภ",
-      "ความสุข"
-    ]
-  },
-  {
-    "id": "animal-frog",
-    "word": "蛙",
-    "reading": "かえる",
-    "romaji": "kaeru",
-    "category": "animals",
-    "category_th": "สัตว์ในคันจิ (動物)",
-    "series": null,
-    "meaning_th": "กบ (สัญลักษณ์แห่งการเดินทางกลับอย่างปลอดภัย 帰る)",
-    "meaning_en": "Frog",
-    "ruby_html": "<ruby>蛙<rt>かえる</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "虫",
-        "meaning": "หมวดสัตว์เล็ก"
-      },
-      {
-        "char": "圭",
-        "meaning": "หยกมงคล / ดินทับถม"
-      }
-    ],
-    "lore": "คำว่ากบในภาษาญี่ปุ่น (Kaeru) พ้องเสียงกับกริยา 帰る (กลับบ้าน) ชาวญี่ปุ่นจึงนิยมพกเครื่องรางรูปกบติดตัวเมื่อต้องเดินทางไกล เพื่ออวยพรให้ 'กลับบ้านอย่างปลอดภัย' และเงินทองที่จ่ายไป 'ไหลกลับมา'",
-    "jlpt": 2,
-    "kanken": "3級",
-    "tags": [
-      "เดินทางปลอดภัย",
-      "เครื่องราง",
-      "เล่นคำพ้องเสียง"
-    ]
-  },
-  {
-    "id": "animal-butterfly",
-    "word": "蝶",
-    "reading": "ちょう",
-    "romaji": "chou",
-    "category": "animals",
-    "category_th": "สัตว์ในคันจิ (動物)",
-    "series": null,
-    "meaning_th": "ผีเสื้อ (สัญลักษณ์แห่งการเปลี่ยนผ่านและดวงวิญญาณ)",
-    "meaning_en": "Butterfly",
-    "ruby_html": "<ruby>蝶<rt>ちょう</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "虫",
-        "meaning": "หมวดแมลง"
-      },
-      {
-        "char": "枼",
-        "meaning": "ใบไม้บางแบน / แผ่กว้าง"
-      }
-    ],
-    "lore": "ในวรรณคดีและอนิเมะญี่ปุ่น (เช่น ดาบพิฆาตอสูรของชิโนบุ หรือบลีชของผีเสื้อนรก) ผีเสื้อเป็นสัญลักษณ์เชื่อมโยงระหว่างโลกมนุษย์และปรโลก รวมถึงการกำเนิดใหม่",
-    "jlpt": 1,
-    "kanken": "2級",
-    "tags": [
-      "แมลง",
-      "ผีเสื้อ",
-      "ความงาม"
-    ]
-  },
-  {
-    "id": "plant-watermelon",
-    "word": "西瓜",
-    "reading": "すいか",
-    "romaji": "suika",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "แตงโม (แตงจากทิศตะวันตก)",
-    "meaning_en": "Watermelon",
-    "ruby_html": "<ruby>西<rt>すい</rt></ruby><ruby>瓜<rt>か</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "西",
-        "meaning": "ทิศตะวันตก"
-      },
-      {
-        "char": "瓜",
-        "meaning": "แตง"
-      }
-    ],
-    "lore": "ในอดีตแตงโมเดินทางจากทวีปแอฟริกาผ่านเส้นทางสายไหมเข้าสู่ประเทศจีนทางทิศตะวันตก จึงได้ชื่อว่า 'แตงตะวันตก' เป็นผลไม้สัญลักษณ์คู่กับกิจกรรมตีแตงโม (スイカ割り) ในฤดูร้อนญี่ปุ่น",
-    "jlpt": 2,
-    "kanken": "準1級",
-    "tags": [
-      "ฤดูร้อน",
-      "แตงโม",
-      "ผลไม้"
-    ]
-  },
-  {
-    "id": "plant-cherry-blossom",
-    "word": "桜",
-    "reading": "さくら",
-    "romaji": "sakura",
-    "category": "plants",
-    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
-    "series": null,
-    "meaning_th": "ดอกซากุระ (ดอกไม้ประจำชาติและสัญลักษณ์แห่งการเริ่มต้นใหม่)",
-    "meaning_en": "Cherry Blossom; Sakura",
-    "ruby_html": "<ruby>桜<rt>さくら</rt></ruby>",
-    "literal_breakdown": [
-      {
-        "char": "木",
-        "meaning": "ต้นไม้"
-      },
-      {
-        "char": "ツ",
-        "meaning": "กลีบดอกไม้เรียงราย"
-      },
-      {
-        "char": "女",
-        "meaning": "หญิงงาม / อ่อนช้อย"
-      }
-    ],
-    "lore": "ซากุระจะบานสะพรั่งในช่วงปลายเดือนมีนาคมถึงเมษายน ซึ่งตรงกับช่วงเปิดเทอมและเริ่มต้นปีงบประมาณใหม่ของญี่ปุ่น กลีบดอกที่ร่วงโรยเร็วเป็นตัวแทนของแนวคิด 'มุโจ' (無常) ความไม่เที่ยงแท้ของชีวิต",
-    "jlpt": 3,
-    "kanken": "6級",
-    "tags": [
-      "ฤดูใบไม้ผลิ",
-      "ฮานามิ",
-      "ดอกไม้ประจำชาติ"
-    ]
-  },
-  {
     "id": "bleach-kido",
     "word": "鬼道",
     "reading": "きどう",
-    "romaji": "kidou",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -1745,7 +929,7 @@
     "id": "bleach-arrancar",
     "word": "破面",
     "reading": "アランカル / はめん",
-    "romaji": "arankaru",
+    "romaji": "",
     "category": "anime-bleach",
     "category_th": "มังงะและอนิเมะ (Bleach)",
     "series": "Bleach (บลีช เทพมรณะ)",
@@ -1775,7 +959,7 @@
     "id": "naruto-kagebunshin",
     "word": "影分身",
     "reading": "かげぶんしん",
-    "romaji": "kage bunshin",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1809,7 +993,7 @@
     "id": "naruto-akatsuki",
     "word": "暁",
     "reading": "あかつき",
-    "romaji": "akatsuki",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1839,7 +1023,7 @@
     "id": "naruto-rinnegan",
     "word": "輪廻眼",
     "reading": "りんねがん",
-    "romaji": "rinnegan",
+    "romaji": "",
     "category": "anime-naruto",
     "category_th": "มังงะและอนิเมะ (Naruto)",
     "series": "Naruto (นินจาคาถา นารูโตะ)",
@@ -1873,7 +1057,7 @@
     "id": "kny-zen-shuchu",
     "word": "全集中",
     "reading": "ぜんしゅうちゅう",
-    "romaji": "zen shuuchuu",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1907,7 +1091,7 @@
     "id": "kny-akaza",
     "word": "猗窩座",
     "reading": "あかざ",
-    "romaji": "akaza",
+    "romaji": "",
     "category": "anime-kny",
     "category_th": "มังงะและอนิเมะ (Kimetsu no Yaiba)",
     "series": "Kimetsu no Yaiba (ดาบพิฆาตอสูร)",
@@ -1941,7 +1125,7 @@
     "id": "jjk-sukuna",
     "word": "両面宿儺",
     "reading": "りょうめんすくな",
-    "romaji": "ryoumen sukuna",
+    "romaji": "",
     "category": "anime-jjk",
     "category_th": "มังงะและอนิเมะ (Jujutsu Kaisen)",
     "series": "Jujutsu Kaisen (มหาเวทย์ผนึกมาร)",
@@ -1979,7 +1163,7 @@
     "id": "hxh-nen",
     "word": "念能力",
     "reading": "ねんのうりょく",
-    "romaji": "nen nouryoku",
+    "romaji": "",
     "category": "anime-other",
     "category_th": "มังงะและอนิเมะยอดฮิต",
     "series": "Hunter x Hunter (ฮันเตอร์ x ฮันเตอร์)",
@@ -2013,7 +1197,7 @@
     "id": "fma-toka-kokan",
     "word": "等価交換",
     "reading": "とうかこうかん",
-    "romaji": "touka koukan",
+    "romaji": "",
     "category": "anime-other",
     "category_th": "มังงะและอนิเมะยอดฮิต",
     "series": "Fullmetal Alchemist (แขนกลคนแปรธาตุ)",
@@ -2045,6 +1229,822 @@
       "แปรธาตุ",
       "เอ็ดเวิร์ด",
       "ปรัชญา"
+    ]
+  },
+  {
+    "id": "country-thailand",
+    "word": "泰国",
+    "reading": "タイこく",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "ประเทศไทย (อักษรย่อในข่าว: 泰 เช่น 日泰 = ญี่ปุ่น-ไทย)",
+    "meaning_en": "Thailand (Abbreviation: 泰, e.g., Japan-Thailand relations: 日泰)",
+    "ruby_html": "<ruby>泰<rt>タイ</rt></ruby><ruby>国<rt>こく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "泰",
+        "meaning": "สงบสุข / ยิ่งใหญ่ / สันติ (ไท)"
+      },
+      {
+        "char": "国",
+        "meaning": "ประเทศ"
+      }
+    ],
+    "lore": "ทางการญี่ปุ่นเลือกใช้ตัว 泰 (Tai/Yutaka) ซึ่งเป็นคันจิมงคลมีความหมายว่า 'ความสงบสุข ร่มเย็น และมั่นคงดั่งภูผา' มาทับศัพท์คำว่า 'ไทย' พาดหัวข่าวญี่ปุ่นจึงมักใช้ 泰 เช่น 日泰修好 (ความสัมพันธ์ทางการทูตญี่ปุ่น-ไทย)",
+    "jlpt": 2,
+    "kanken": "2級",
+    "tags": [
+      "ประเทศไทย",
+      "Ateji",
+      "การทูต"
+    ]
+  },
+  {
+    "id": "country-usa",
+    "word": "米国",
+    "reading": "アメリカ / べいこく",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "สหรัฐอเมริกา (อักษรย่อในข่าว: 米 เช่น 日米 = ญี่ปุ่น-สหรัฐฯ)",
+    "meaning_en": "United States of America (Abbreviation: 米)",
+    "ruby_html": "<ruby>米<rt>べい</rt></ruby><ruby>国<rt>こく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "米",
+        "meaning": "เมล็ดข้าว / อะเมะ (America)"
+      },
+      {
+        "char": "国",
+        "meaning": "ประเทศ"
+      }
+    ],
+    "lore": "ในยุคเอโดะตอนปลาย ญี่ปุ่นทับศัพท์คำว่า America เป็น 亜米利加 (อะ-เม-ริ-กะ) และเลือกตัดตัวกลางคือ 米 (เมะ/เบย์) มาใช้เป็นตัวย่อของประเทศจนถึงปัจจุบัน",
+    "jlpt": 3,
+    "kanken": "8級",
+    "tags": [
+      "สหรัฐอเมริกา",
+      "ข่าว",
+      "คำย่อพาดหัว"
+    ]
+  },
+  {
+    "id": "country-uk",
+    "word": "英国",
+    "reading": "イギリス / えいこく",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "สหราชอาณาจักร / ประเทศอังกฤษ (อักษรย่อในข่าว: 英)",
+    "meaning_en": "United Kingdom / Great Britain (Abbreviation: 英)",
+    "ruby_html": "<ruby>英<rt>えい</rt></ruby><ruby>国<rt>こく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "英",
+        "meaning": "ยอดเยี่ยม / ฉลาดปราดเปรื่อง (Eng)"
+      },
+      {
+        "char": "国",
+        "meaning": "ประเทศ"
+      }
+    ],
+    "lore": "ทับศัพท์มาจากคำว่า 英吉利 (อิง-กิ-ริส) และนำตัว 英 มาใช้เป็นตัวแทนของภาษาอังกฤษ (英語) และประเทศอังกฤษ (英国)",
+    "jlpt": 4,
+    "kanken": "7級",
+    "tags": [
+      "อังกฤษ",
+      "ยุโรป",
+      "ภาษา"
+    ]
+  },
+  {
+    "id": "country-france",
+    "word": "仏国",
+    "reading": "フランス / ふっこく",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "ประเทศฝรั่งเศส (อักษรย่อในข่าว: 仏 เช่น 仏語 = ภาษาฝรั่งเศส)",
+    "meaning_en": "France (Abbreviation: 仏)",
+    "ruby_html": "<ruby>仏<rt>ふつ</rt></ruby><ruby>国<rt>こく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "仏",
+        "meaning": "พระพุทธเจ้า / ฟุตสึ (France)"
+      },
+      {
+        "char": "国",
+        "meaning": "ประเทศ"
+      }
+    ],
+    "lore": "ทับศัพท์มาจาก 仏蘭西 (ฟุ-รัง-ซึ) และตัดเหลือตัว 仏 (ฟุตสึ) ตัวเดียว แม้ตัวอักษรจะแปลว่า 'พระพุทธ' แต่เมื่อใช้เรียกประเทศจะหมายถึงฝรั่งเศส",
+    "jlpt": 2,
+    "kanken": "6級",
+    "tags": [
+      "ฝรั่งเศส",
+      "ยุโรป",
+      "Ateji"
+    ]
+  },
+  {
+    "id": "country-germany",
+    "word": "独国",
+    "reading": "ドイツ / どっこく",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "ประเทศเยอรมนี (อักษรย่อในข่าว: 独 เช่น 独語 = ภาษาเยอรมัน)",
+    "meaning_en": "Germany (Abbreviation: 独, from Deutsch)",
+    "ruby_html": "<ruby>独<rt>どく</rt></ruby><ruby>国<rt>こく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "独",
+        "meaning": "โดดเดี่ยว / ดอยต์ช์ (Deutsch)"
+      },
+      {
+        "char": "国",
+        "meaning": "ประเทศ"
+      }
+    ],
+    "lore": "ทับศัพท์จากคำภาษาเยอรมัน 'Deutsch' เป็น 獨逸 (โดะ-อิ-สึ) และย่อเหลือ 独 คำว่า 独逸車 จึงแปลว่ารถยนต์สัญชาติเยอรมัน",
+    "jlpt": 2,
+    "kanken": "6級",
+    "tags": [
+      "เยอรมัน",
+      "ยุโรป",
+      "Ateji"
+    ]
+  },
+  {
+    "id": "country-australia",
+    "word": "豪州",
+    "reading": "ごうしゅう",
+    "romaji": "",
+    "category": "countries",
+    "category_th": "ชื่อประเทศในคันจิ (国名・当て字)",
+    "series": null,
+    "meaning_th": "ประเทศออสเตรเลีย (ทวีปออสเตรเลีย / ตัวย่อ: 豪 เช่น 豪ドル = ดอลลาร์ออสเตรเลีย)",
+    "meaning_en": "Australia (Abbreviation: 豪)",
+    "ruby_html": "<ruby>豪<rt>ごう</rt></ruby><ruby>州<rt>しゅう</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "豪",
+        "meaning": "หรูหรา / กล้าหาญ / ออส (Aus)"
+      },
+      {
+        "char": "州",
+        "meaning": "ทวีป / รัฐ"
+      }
+    ],
+    "lore": "ทับศัพท์มาจาก 濠太剌利 (โก-ตะ-ระ-ริ) ต่อมาปรับเป็นตัว 豪 (Gou) ซึ่งมีความหมายมงคลว่าความสง่างามโอ่อ่า",
+    "jlpt": 1,
+    "kanken": "3級",
+    "tags": [
+      "ออสเตรเลีย",
+      "โอเชียเนีย",
+      "Ateji"
+    ]
+  },
+  {
+    "id": "plant-sunflower",
+    "word": "向日葵",
+    "reading": "ひまわり",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "ดอกทานตะวัน",
+    "meaning_en": "Sunflower",
+    "ruby_html": "<ruby>向<rt>ひ</rt></ruby><ruby>日<rt>ま</rt></ruby><ruby>葵<rt>わり</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "向",
+        "meaning": "หันหน้าเข้าหา"
+      },
+      {
+        "char": "日",
+        "meaning": "ดวงอาทิตย์"
+      },
+      {
+        "char": "葵",
+        "meaning": "ดอกชบา / ดอกไม้ตระกูลมาลโลว์"
+      }
+    ],
+    "lore": "คำอ่านพิเศษ (熟字訓) สื่อถึงลักษณะเด่นของดอกไม้ชนิดนี้ที่จะ 'หันหน้า (向) เข้าหาดวงอาทิตย์ (日)' ตลอดเวลาในยามกลางวัน",
+    "jlpt": 2,
+    "kanken": "準1級",
+    "tags": [
+      "ฤดูร้อน",
+      "ดอกไม้",
+      "Jukujikun"
+    ]
+  },
+  {
+    "id": "plant-dandelion",
+    "word": "蒲公英",
+    "reading": "たんぽぽ",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "ดอกแดนดิไลออน (ทันโปโปะ)",
+    "meaning_en": "Dandelion",
+    "ruby_html": "<ruby>蒲<rt>たん</rt></ruby><ruby>公<rt>ぽ</rt></ruby><ruby>英<rt>ぽ</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "蒲",
+        "meaning": "ต้นกก / ธูปฤาษี"
+      },
+      {
+        "char": "公",
+        "meaning": "คุณธรรม / เป็นทางการ"
+      },
+      {
+        "char": "英",
+        "meaning": "ดอกบานสะพรั่ง / ดีเลิศ"
+      }
+    ],
+    "lore": "ชื่อคันจิมาจากชื่อสมุนไพรโบราณในคัมภีร์แพทย์แผนจีน ปัจจุบันในชีวิตประจำวันนิยมเขียนด้วยฮิรางานะ たんぽぽ หรือคาตาคานะ タンポポ",
+    "jlpt": 1,
+    "kanken": "1級",
+    "tags": [
+      "ฤดูใบไม้ผลิ",
+      "ดอกไม้ป่า",
+      "สมุนไพร"
+    ]
+  },
+  {
+    "id": "plant-hydrangea",
+    "word": "紫陽花",
+    "reading": "あじさい",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "ดอกไฮเดรนเยีย (อาจิไซ - ดอกไม้แห่งฤดูฝน)",
+    "meaning_en": "Hydrangea",
+    "ruby_html": "<ruby>紫<rt>あじ</rt></ruby><ruby>陽<rt>さ</rt></ruby><ruby>花<rt>い</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "紫",
+        "meaning": "สีม่วง"
+      },
+      {
+        "char": "陽",
+        "meaning": "แสงตะวัน / พลังหยาง"
+      },
+      {
+        "char": "花",
+        "meaning": "ดอกไม้"
+      }
+    ],
+    "lore": "ดอกไม้สัญลักษณ์แห่งฤดูฝน (梅雨) ของญี่ปุ่น สามารถเปลี่ยนสีกลีบดอกได้ตามความเป็นกรดด่างของดิน กวีราชวงศ์ถัง ป๋ายจวีอี้ เป็นผู้ตั้งชื่อคันจิ 'ดอกไม้สีม่วงสะท้อนแดด' นี้",
+    "jlpt": 1,
+    "kanken": "準1級",
+    "tags": [
+      "ฤดูฝน",
+      "ดอกไม้",
+      "โตเกียว"
+    ]
+  },
+  {
+    "id": "plant-rose",
+    "word": "薔薇",
+    "reading": "ばら",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "ดอกกุหลาบ",
+    "meaning_en": "Rose",
+    "ruby_html": "<ruby>薔<rt>ば</rt></ruby><ruby>薇<rt>ら</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "薔",
+        "meaning": "กุหลาบป่า (16 ขีด)"
+      },
+      {
+        "char": "薇",
+        "meaning": "เถากุหลาบ / ผักกูด (16 ขีด)"
+      }
+    ],
+    "lore": "ถือเป็นหนึ่งในคันจิที่เขียนยากและมีจำนวนขีดเยอะที่สุดที่คนญี่ปุ่นมักนำมาเล่นเกมทายคำ (รวมสองตัว 32 ขีด!) ปัจจุบันจึงเขียนด้วย バラ เป็นหลัก",
+    "jlpt": 1,
+    "kanken": "1級",
+    "tags": [
+      "กุหลาบ",
+      "ความรัก",
+      "คันจิขีดเยอะ"
+    ]
+  },
+  {
+    "id": "plant-apple",
+    "word": "林檎",
+    "reading": "りんご",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "แอปเปิล (ริงโกะ)",
+    "meaning_en": "Apple",
+    "ruby_html": "<ruby>林<rt>りん</rt></ruby><ruby>檎<rt>ご</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "林",
+        "meaning": "ป่าโปร่ง"
+      },
+      {
+        "char": "檎",
+        "meaning": "ผลไม้ป่า / นกชอบกิน"
+      }
+    ],
+    "lore": "ตัว 檎 ในอักษรจีนโบราณแปลว่าผลไม้ที่มีนก (禽) บินมาชุมนุมกันกินในป่า (林) จึงนำมาตั้งเป็นชื่อผลแอปเปิลป่า",
+    "jlpt": 2,
+    "kanken": "準1級",
+    "tags": [
+      "ผลไม้",
+      "อาโอโมริ",
+      "ฤดูหนาว"
+    ]
+  },
+  {
+    "id": "plant-lemon",
+    "word": "檸檬",
+    "reading": "レモン",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "เลมอน (มะนาวเหลือง)",
+    "meaning_en": "Lemon",
+    "ruby_html": "<ruby>檸<rt>レ</rt></ruby><ruby>檬<rt>モン</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "檸",
+        "meaning": "ต้นเลมอน (17 ขีด)"
+      },
+      {
+        "char": "檬",
+        "meaning": "ผลเลมอน (17 ขีด)"
+      }
+    ],
+    "lore": "โด่งดังในหมู่นักอ่านชาวญี่ปุ่นจากวรรณกรรมชิ้นเอกเรื่อง *檸檬 (Lemon)* ของ คาจิอิ โมโตจิโร่ (梶井基次郎) ซึ่งบรรยายความสดชื่นของเลมอนที่ช่วยเยียวยาจิตใจที่หดหู่",
+    "jlpt": 1,
+    "kanken": "1級",
+    "tags": [
+      "ผลไม้",
+      "วรรณกรรม",
+      "Ateji"
+    ]
+  },
+  {
+    "id": "plant-watermelon",
+    "word": "西瓜",
+    "reading": "すいか",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "แตงโม (แตงจากทิศตะวันตก)",
+    "meaning_en": "Watermelon",
+    "ruby_html": "<ruby>西<rt>すい</rt></ruby><ruby>瓜<rt>か</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "西",
+        "meaning": "ทิศตะวันตก"
+      },
+      {
+        "char": "瓜",
+        "meaning": "แตง"
+      }
+    ],
+    "lore": "ในอดีตแตงโมเดินทางจากทวีปแอฟริกาผ่านเส้นทางสายไหมเข้าสู่ประเทศจีนทางทิศตะวันตก จึงได้ชื่อว่า 'แตงตะวันตก' เป็นผลไม้สัญลักษณ์คู่กับกิจกรรมตีแตงโม (スイカ割り) ในฤดูร้อนญี่ปุ่น",
+    "jlpt": 2,
+    "kanken": "準1級",
+    "tags": [
+      "ฤดูร้อน",
+      "แตงโม",
+      "ผลไม้"
+    ]
+  },
+  {
+    "id": "plant-cherry-blossom",
+    "word": "桜",
+    "reading": "さくら",
+    "romaji": "",
+    "category": "plants",
+    "category_th": "พืช ดอกไม้ ผลไม้ (植物・花・果物)",
+    "series": null,
+    "meaning_th": "ดอกซากุระ (ดอกไม้ประจำชาติและสัญลักษณ์แห่งการเริ่มต้นใหม่)",
+    "meaning_en": "Cherry Blossom; Sakura",
+    "ruby_html": "<ruby>桜<rt>さくら</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "木",
+        "meaning": "ต้นไม้"
+      },
+      {
+        "char": "ツ",
+        "meaning": "กลีบดอกไม้เรียงราย"
+      },
+      {
+        "char": "女",
+        "meaning": "หญิงงาม / อ่อนช้อย"
+      }
+    ],
+    "lore": "ซากุระจะบานสะพรั่งในช่วงปลายเดือนมีนาคมถึงเมษายน ซึ่งตรงกับช่วงเปิดเทอมและเริ่มต้นปีงบประมาณใหม่ของญี่ปุ่น กลีบดอกที่ร่วงโรยเร็วเป็นตัวแทนของแนวคิด 'มุโจ' (無常) ความไม่เที่ยงแท้ของชีวิต",
+    "jlpt": 3,
+    "kanken": "6級",
+    "tags": [
+      "ฤดูใบไม้ผลิ",
+      "ฮานามิ",
+      "ดอกไม้ประจำชาติ"
+    ]
+  },
+  {
+    "id": "ichigo-ichie",
+    "word": "一期一会",
+    "reading": "いちごいちえ",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "การพบกันเพียงครั้งเดียวในชีวิต (จงปฏิบัติต่อผู้อื่นด้วยความจริงใจเสมือนเป็นการพบกันครั้งสุดท้าย)",
+    "meaning_en": "Once-in-a-lifetime encounter; cherish every moment",
+    "ruby_html": "<ruby>一<rt>いち</rt></ruby><ruby>期<rt>ご</rt></ruby><ruby>一<rt>いち</rt></ruby><ruby>会<rt>え</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "一",
+        "meaning": "หนึ่ง"
+      },
+      {
+        "char": "期",
+        "meaning": "ช่วงเวลา / ชั่วชีวิต"
+      },
+      {
+        "char": "一",
+        "meaning": "หนึ่ง"
+      },
+      {
+        "char": "会",
+        "meaning": "การพบปะ / ประสบ"
+      }
+    ],
+    "lore": "มีที่มาจากปรัชญาพิธีชงชาญี่ปุ่น (茶道) โดยปรมาจารย์ เซ็น โนะ ริคิว (千利休) สอนว่าแม้เจ้าบ้านและแขกจะเจอกันบ่อยครั้ง แต่การพบปะใน 'ขณะนี้' จะไม่มีวันเกิดขึ้นซ้ำสองได้อีก",
+    "jlpt": 1,
+    "kanken": "4級",
+    "tags": [
+      "ชงชา",
+      "ปรัชญาชีวิต",
+      "ข้อคิด"
+    ]
+  },
+  {
+    "id": "jakuniku-kyoshoku",
+    "word": "弱肉強食",
+    "reading": "じゃくにくきょうしょく",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "ผู้อ่อนแอย่อมตกเป็นเหยื่อของผู้เข้มแข็ง (กฎแห่งป่าดงพงพี / ปลาใหญ่กินปลาเล็ก)",
+    "meaning_en": "Survival of the fittest; the weak are meat the strong eat",
+    "ruby_html": "<ruby>弱<rt>じゃく</rt></ruby><ruby>肉<rt>にく</rt></ruby><ruby>強<rt>きょう</rt></ruby><ruby>食<rt>しょく</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "弱",
+        "meaning": "อ่อนแอ"
+      },
+      {
+        "char": "肉",
+        "meaning": "เนื้อ / เหยื่อ"
+      },
+      {
+        "char": "強",
+        "meaning": "เข้มแข็ง / แข็งแกร่ง"
+      },
+      {
+        "char": "食",
+        "meaning": "กิน / กลืนกิน"
+      }
+    ],
+    "lore": "มาจากข้อเขียนของกวีราชวงศ์ถัง หานอวี่ (韓愈) บรรยายธรรมชาติที่สัตว์ตัวเล็กเนื้อนุ่มมักกลายเป็นอาหารของสัตว์ที่แข็งแกร่งกว่า นิยมใช้เปรียบเทียบการต่อสู้ในสังคมและการทำธุรกิจ",
+    "jlpt": 1,
+    "kanken": "4級",
+    "tags": [
+      "ธรรมชาติ",
+      "การต่อสู้",
+      "สังคม"
+    ]
+  },
+  {
+    "id": "kachou-fuugetsu",
+    "word": "花鳥風月",
+    "reading": "かちょうふうげつ",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "ความงามตามธรรมชาติ (บุปผา สกุณา สายลม และดวงจันทร์ / การดื่มด่ำความรื่นรมย์ของธรรมชาติ)",
+    "meaning_en": "The beauties of nature; traditional Japanese aesthetic appreciation",
+    "ruby_html": "<ruby>花<rt>か</rt></ruby><ruby>鳥<rt>ちょう</rt></ruby><ruby>風<rt>ふう</rt></ruby><ruby>月<rt>げつ</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "花",
+        "meaning": "ดอกไม้"
+      },
+      {
+        "char": "鳥",
+        "meaning": "นก"
+      },
+      {
+        "char": "風",
+        "meaning": "สายลม"
+      },
+      {
+        "char": "月",
+        "meaning": "ดวงจันทร์"
+      }
+    ],
+    "lore": "คำสัญลักษณ์ตัวแทนแห่งสุนทรียศาสตร์ชั้นสูงของญี่ปุ่นโบราณ กวีและจิตรกรนิยมใช้ 4 สิ่งนี้เป็นตัวแทนแห่งฤดูกาลทั้งสี่และการแต่งบทกวีไฮกุ/วากะ",
+    "jlpt": 1,
+    "kanken": "4級",
+    "tags": [
+      "สุนทรียศาสตร์",
+      "กวี",
+      "ธรรมชาติ"
+    ]
+  },
+  {
+    "id": "shichiten-hakki",
+    "word": "七転八起",
+    "reading": "しちてんはっき",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "ล้มเจ็ดครั้ง ลุกแปดครั้ง (ความพยายามไม่ย่อท้อต่ออุปสรรค)",
+    "meaning_en": "Fall seven times, stand up eight; resilience and perseverance",
+    "ruby_html": "<ruby>七<rt>しち</rt></ruby><ruby>転<rt>てん</rt></ruby><ruby>八<rt>はっ</rt></ruby><ruby>起<rt>き</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "七",
+        "meaning": "เจ็ด"
+      },
+      {
+        "char": "転",
+        "meaning": "ล้ม / กลิ้ง"
+      },
+      {
+        "char": "八",
+        "meaning": "แปด"
+      },
+      {
+        "char": "起",
+        "meaning": "ลุกขึ้น / ยืนหยัด"
+      }
+    ],
+    "lore": "เป็นที่มาของตุ๊กตาล้มลุกดารุมะ (達磨) ซึ่งไม่ว่าจะถูกผลักให้ล้มกี่ครั้งก็จะเด้งกลับขึ้นมาตั้งตรงได้เสมอ เป็นสัญลักษณ์แห่งชัยชนะและความมานะบากบั่นของชาวญี่ปุ่น",
+    "jlpt": 2,
+    "kanken": "4級",
+    "tags": [
+      "กำลังใจ",
+      "ดารุมะ",
+      "ความพยายาม"
+    ]
+  },
+  {
+    "id": "meikyou-shisui",
+    "word": "明鏡止水",
+    "reading": "めいきょうしすい",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "จิตใจที่สงบนิ่งและบริสุทธิ์ ไร้ความขุ่นมัว (ดั่งกระจกใสและผิวน้ำที่นิ่งสงบ)",
+    "meaning_en": "A clear mirror and still water; serene and untroubled state of mind",
+    "ruby_html": "<ruby>明<rt>めい</rt></ruby><ruby>鏡<rt>きょう</rt></ruby><ruby>止<rt>し</rt></ruby><ruby>水<rt>すい</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "明",
+        "meaning": "กระจ่าง / สว่าง"
+      },
+      {
+        "char": "鏡",
+        "meaning": "กระจกเงา"
+      },
+      {
+        "char": "止",
+        "meaning": "หยุด / นิ่งสงบ"
+      },
+      {
+        "char": "水",
+        "meaning": "น้ำ"
+      }
+    ],
+    "lore": "มาจากคัมภีร์ *จวงจื่อ (荘子)* กล่าวว่าเมื่อน้ำนิ่งสนิท จึงจะสะท้อนภาพทุกสิ่งได้อย่างเที่ยงตรง จิตใจของคนเราเมื่อไร้ซึ่งกิเลสและความฟุ้งซ่าน ย่อมมองเห็นความจริงของสรรพสิ่ง",
+    "jlpt": 1,
+    "kanken": "3級",
+    "tags": [
+      "ปรัชญา",
+      "เซน",
+      "สมาธิ"
+    ]
+  },
+  {
+    "id": "shinra-banshou",
+    "word": "森羅万象",
+    "reading": "しんらばんしょう",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "สรรพสิ่งทั้งมวลในจักรวาล (ปรากฏการณ์และสิ่งมีชีวิตทุกสิ่งที่ดำรงอยู่)",
+    "meaning_en": "All creation; all things under the sun in the universe",
+    "ruby_html": "<ruby>森<rt>しん</rt></ruby><ruby>羅<rt>ら</rt></ruby><ruby>万<rt>ばん</rt></ruby><ruby>象<rt>しょう</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "森",
+        "meaning": "ป่าดึกดำบรรพ์ / เรียงรายหนาแน่น"
+      },
+      {
+        "char": "羅",
+        "meaning": "แผ่ขยาย / กว้างไกล"
+      },
+      {
+        "char": "万",
+        "meaning": "หมื่น / นับไม่ถ้วน"
+      },
+      {
+        "char": "象",
+        "meaning": "รูปธรรม / สภาพ / ปรากฏการณ์"
+      }
+    ],
+    "lore": "คำศัพท์ทางพุทธศาสนานิกายมหายาน อธิบายความหลากหลายอันไร้ขอบเขตของธรรมชาติ นิยมพบบ่อยในมังงะและแฟนตาซีเมื่อพูดถึงพลังที่ควบคุมทุกสรรพสิ่งในจักรวาล",
+    "jlpt": 1,
+    "kanken": "3級",
+    "tags": [
+      "จักรวาล",
+      "พุทธศาสนา",
+      "ธรรมชาติ"
+    ]
+  },
+  {
+    "id": "shippuu-jinrai",
+    "word": "疾風迅雷",
+    "reading": "しっぷうじんらい",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "รวดเร็วปานลมพายุ ฉับพลันดั่งอสุนีบาต (การเคลื่อนไหวที่ฉับไว รุนแรง และไม่ทันตั้งตัว)",
+    "meaning_en": "Swift as a gale, sudden as lightning; with lightning speed and fierce intensity",
+    "ruby_html": "<ruby>疾<rt>しっ</rt></ruby><ruby>風<rt>ぷう</rt></ruby><ruby>迅<rt>じん</rt></ruby><ruby>雷<rt>らい</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "疾",
+        "meaning": "รวดเร็ว / ฉับพลัน"
+      },
+      {
+        "char": "風",
+        "meaning": "สายลม"
+      },
+      {
+        "char": "迅",
+        "meaning": "รวดเร็ว / ว่องไว"
+      },
+      {
+        "char": "雷",
+        "meaning": "สายฟ้า / ฟ้าร้อง"
+      }
+    ],
+    "lore": "ปรากฏในคัมภีร์ *หลี่จี้ (礼記)* ใช้บรรยายการเคลื่อนทัพหรือความเร็วอันเหนือชั้น เป็นที่มาของชื่อท่าไม้ตายและคาถานินจาในหลายวรรณกรรมร่วมสมัย",
+    "jlpt": 1,
+    "kanken": "2級",
+    "tags": [
+      "ความเร็ว",
+      "สายฟ้า",
+      "กลยุทธ์"
+    ]
+  },
+  {
+    "id": "gashin-shoutan",
+    "word": "臥薪嘗胆",
+    "reading": "がしんしょうたん",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "นอนบนฟืน ชิมดีสัตว์ขมขื่น (ยอมทนความยากลำบากแสนสาหัสเพื่อรอคอยวันล้างแค้นหรือประสบความสำเร็จ)",
+    "meaning_en": "Sleeping on brushwood and tasting gall; enduring hardships to achieve vengeance/ambition",
+    "ruby_html": "<ruby>臥<rt>が</rt></ruby><ruby>薪<rt>しん</rt></ruby><ruby>嘗<rt>しょう</rt></ruby><ruby>胆<rt>たん</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "臥",
+        "meaning": "นอนทอดกาย"
+      },
+      {
+        "char": "薪",
+        "meaning": "ท่อนฟืน / หนามฟืน"
+      },
+      {
+        "char": "嘗",
+        "meaning": "ชิม / ลิ้มรส"
+      },
+      {
+        "char": "胆",
+        "meaning": "ถุงน้ำดี (รสขม)"
+      }
+    ],
+    "lore": "จากพงศาวดารศึกระหว่างแคว้นอู๋และแคว้นเยว่ในยุคชุนชิว ฟูชาทนนอนบนฟืนหนามเพื่อไม่ให้ลืมความแค้น ส่วนโกวเจี้ยนแขวนถุงน้ำดีไว้ชิมรสขมก่อนนอนทุกคืนเพื่อเตือนใจตนเอง",
+    "jlpt": 1,
+    "kanken": "2級",
+    "tags": [
+      "ประวัติศาสตร์",
+      "ความมุ่งมั่น",
+      "ความแค้น"
+    ]
+  },
+  {
+    "id": "onko-chishin",
+    "word": "温故知新",
+    "reading": "おんこちしん",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "ทบทวนเรื่องเก่าเพื่อเข้าใจสิ่งใหม่ (ศึกษาประวัติศาสตร์และรากเหง้าเพื่อพัฒนาองค์ความรู้ใหม่)",
+    "meaning_en": "Learning from the past to develop new perspectives",
+    "ruby_html": "<ruby>温<rt>おん</rt></ruby><ruby>故<rt>こ</rt></ruby><ruby>知<rt>ち</rt></ruby><ruby>新<rt>しん</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "温",
+        "meaning": "อุ่น / ทบทวนสิ่งเดิม"
+      },
+      {
+        "char": "故",
+        "meaning": "เรื่องเก่า / ประวัติศาสตร์"
+      },
+      {
+        "char": "知",
+        "meaning": "ล่วงรู้ / เข้าใจ"
+      },
+      {
+        "char": "新",
+        "meaning": "สิ่งใหม่ / นวัตกรรม"
+      }
+    ],
+    "lore": "คำสอนอันทรงคุณค่าจาก *คัมภีร์หลุนอวี่ (論語)* ของขงจื๊อ กล่าวว่า 'ผู้ที่สามารถทบทวนอดีตจนต่อยอดสู่ความรู้ใหม่ได้ ผู้นั้นจึงคู่ควรเป็นอาจารย์'",
+    "jlpt": 2,
+    "kanken": "4級",
+    "tags": [
+      "การเรียนรู้",
+      "ขงจื๊อ",
+      "ประวัติศาสตร์"
+    ]
+  },
+  {
+    "id": "juunin-toiro",
+    "word": "十人十色",
+    "reading": "じゅうにんといろ",
+    "romaji": "",
+    "category": "yojijukugo",
+    "category_th": "สุภาษิต 4 ตัวอักษร (四字熟語)",
+    "series": null,
+    "meaning_th": "สิบคนสิบสี (ต่างคนต่างความคิด จิตใจและรสนิยมของแต่ละคนย่อมแตกต่างกัน)",
+    "meaning_en": "Ten people, ten colors; everyone has their own distinct personality",
+    "ruby_html": "<ruby>十<rt>じゅう</rt></ruby><ruby>人<rt>にん</rt></ruby><ruby>十<rt>と</rt></ruby><ruby>色<rt>いろ</rt></ruby>",
+    "literal_breakdown": [
+      {
+        "char": "十",
+        "meaning": "สิบ"
+      },
+      {
+        "char": "人",
+        "meaning": "คน / มนุษย์"
+      },
+      {
+        "char": "十",
+        "meaning": "สิบ"
+      },
+      {
+        "char": "色",
+        "meaning": "สี / บุคลิกภาพ"
+      }
+    ],
+    "lore": "สุภาษิตยอดนิยมที่คนญี่ปุ่นใช้พูดถึงการเคารพความหลากหลายและความเป็นปัจเจกของแต่ละบุคคล โดย 'สิบสี' สื่อถึงบุคลิกและเฉดความคิดที่มีเอกลักษณ์เฉพาะตัว",
+    "jlpt": 2,
+    "kanken": "5級",
+    "tags": [
+      "จิตวิทยา",
+      "ความหลากหลาย",
+      "ชีวิตประจำวัน"
     ]
   }
 ]
