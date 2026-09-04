@@ -2,7 +2,7 @@
   "name": "Thai-Japanese Kanji Dictionary",
   "short_name": "KanjiThai",
   "description": "พจนานุกรมคันจิออนไลน์สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#FFF9FB",
   "theme_color": "#FFB7C5",
