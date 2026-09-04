@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v2'; // Bumped version
+const CACHE_NAME = 'kanjithai-cache-v3'; // Bumped version for directory restructuring
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

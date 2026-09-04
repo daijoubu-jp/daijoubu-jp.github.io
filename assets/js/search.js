@@ -15,7 +15,8 @@ export async function loadKanjiData() {
 
   try {
     // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)
-    const res = await fetch('./data/kanji.min.json?v=1788410559');
+    const dataUrl = new URL('../../data/kanji.min.json?v=1788410559', import.meta.url).href;
+    const res = await fetch(dataUrl);
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     cachedKanjiData = await res.json();
   } catch (err) {

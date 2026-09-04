@@ -7,7 +7,7 @@
   <meta name="description" content="คู่มือและเกณฑ์ข้อกำหนดการสอบวัดระดับความสามารถคันจิ (日本漢字能力検定) ครบทั้ง 12 ระดับ (10級 ถึง 1級) พร้อมจำนวนคันจิ เกณฑ์ผ่าน และหัวข้อที่ออกสอบ">
   
   <!-- PWA Manifest & Icons -->
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="../manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
   
   <!-- Google Fonts Preconnect -->
@@ -16,14 +16,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/themes/spring.css">
-  <link rel="stylesheet" href="assets/css/themes/summer.css">
-  <link rel="stylesheet" href="assets/css/themes/autumn.css">
-  <link rel="stylesheet" href="assets/css/themes/winter.css">
-  <link rel="stylesheet" href="assets/css/themes/anime.css">
-  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+  <link rel="stylesheet" href="../assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/themes/spring.css">
+  <link rel="stylesheet" href="../assets/css/themes/summer.css">
+  <link rel="stylesheet" href="../assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="../assets/css/themes/winter.css">
+  <link rel="stylesheet" href="../assets/css/themes/anime.css">
+  <link rel="stylesheet" href="../assets/css/themes/ukiyoe.css">
 
   <!-- Theme Setup (Anti-FOUC) -->
   <script>
@@ -50,7 +50,7 @@
       </button>
 
       <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
-      <a href="index.html" class="nav-brand">
+      <a href="../index.html" class="nav-brand">
         <div class="nav-brand-logo">漢</div>
         <div class="nav-brand-text">
           <span class="nav-brand-title">KanjiThai</span>
@@ -59,46 +59,46 @@
       </a>      <!-- Navigation Links -->
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li><a href="../index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
           <li class="nav-dropdown">
-            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <a href="../browse/index.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
             <ul class="dropdown-menu">
-              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li><a href="../browse/index.html">คันจิ (漢字)</a></li>
               <li class="nav-dropdown-submenu">
-                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <a href="../browse/vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
                 <ul class="dropdown-sub-menu">
-                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
-                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
-                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
-                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
-                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
-                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
-                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                  <li><a href="../browse/vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="../browse/special-readings.html">คำอ่านพิเศษ (付表)</a></li>
                 </ul>
               </li>
-              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+              <li><a href="../browse/radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
             </ul>
           </li>
           <li class="nav-dropdown">
-            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <a href="../knowledge/index.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
             <ul class="dropdown-menu">
-              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
-              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
-              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
-              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
-              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
-              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+              <li><a href="../knowledge/index.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="../knowledge/history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="../knowledge/handwriting.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="../knowledge/kanken.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="../knowledge/radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="../knowledge/jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
             </ul>
           </li>
-          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li><a href="../games/index.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
           <li class="nav-dropdown">
-            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <a href="../tools/index.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
             <ul class="dropdown-menu">
-              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
-              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+              <li><a href="../tools/worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="../tools/index.html">เครื่องมือทั้งหมด</a></li>
             </ul>
           </li>
-          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+          <li><a href="../about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
         </ul>
       </nav>
 
@@ -185,7 +185,7 @@
                 <td>150 คะแนน</td>
                 <td>ประมาณ 80% (~120)</td>
                 <td>40 นาที</td>
-                <td><a href="browse.html?kanken=10" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 80 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=10" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 80 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>9級</strong></td>
@@ -194,7 +194,7 @@
                 <td>150 คะแนน</td>
                 <td>ประมาณ 80% (~120)</td>
                 <td>40 นาที</td>
-                <td><a href="browse.html?kanken=9" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 240 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=9" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 240 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>8級</strong></td>
@@ -203,7 +203,7 @@
                 <td>150 คะแนน</td>
                 <td>ประมาณ 80% (~120)</td>
                 <td>40 นาที</td>
-                <td><a href="browse.html?kanken=8" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 440 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=8" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 440 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>7級</strong></td>
@@ -212,7 +212,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=7" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 642 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=7" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 642 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>6級</strong></td>
@@ -221,7 +221,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=6" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 835 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=6" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 835 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>5級</strong></td>
@@ -230,7 +230,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=5" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,026 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=5" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,026 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>4級</strong></td>
@@ -239,7 +239,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=4" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,339 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=4" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,339 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>3級</strong></td>
@@ -248,7 +248,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=3" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,623 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=3" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,623 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>準2級</strong></td>
@@ -257,7 +257,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 70% (~140)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=jun2" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,951 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=jun2" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1,951 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>2級</strong></td>
@@ -266,7 +266,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 80% (~160)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=2" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 2,136 ตัว →</a></td>
+                <td><a href="../browse/index.html?kanken=2" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 2,136 ตัว →</a></td>
               </tr>
               <tr>
                 <td><strong>準1級</strong></td>
@@ -275,7 +275,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 80% (~160)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=jun1" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 準1級 →</a></td>
+                <td><a href="../browse/index.html?kanken=jun1" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 準1級 →</a></td>
               </tr>
               <tr>
                 <td><strong>1級</strong></td>
@@ -284,7 +284,7 @@
                 <td>200 คะแนน</td>
                 <td>ประมาณ 80% (~160)</td>
                 <td>60 นาที</td>
-                <td><a href="browse.html?kanken=1" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1級 →</a></td>
+                <td><a href="../browse/index.html?kanken=1" class="filter-preset-btn" style="padding: 3px 10px; font-size: 0.8rem;">ดูคันจิ 1級 →</a></td>
               </tr>
             </tbody>
           </table>
@@ -367,7 +367,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=10" class="action-btn">
+            <a href="../browse/index.html?kanken=10" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 10級 ทั้งหมด (80 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -433,7 +433,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=9" class="action-btn">
+            <a href="../browse/index.html?kanken=9" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 9級 ทั้งหมด (240 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -505,7 +505,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=8" class="action-btn">
+            <a href="../browse/index.html?kanken=8" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 8級 ทั้งหมด (440 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -578,7 +578,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=7" class="action-btn">
+            <a href="../browse/index.html?kanken=7" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 7級 ทั้งหมด (642 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -652,7 +652,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=6" class="action-btn">
+            <a href="../browse/index.html?kanken=6" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 6級 ทั้งหมด (835 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -726,7 +726,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=5" class="action-btn">
+            <a href="../browse/index.html?kanken=5" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 5級 ทั้งหมด (1,026 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -799,7 +799,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=4" class="action-btn">
+            <a href="../browse/index.html?kanken=4" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 4級 ทั้งหมด (1,339 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -872,7 +872,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=3" class="action-btn">
+            <a href="../browse/index.html?kanken=3" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 3級 ทั้งหมด (1,623 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -945,7 +945,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=jun2" class="action-btn">
+            <a href="../browse/index.html?kanken=jun2" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 準2級 ทั้งหมด (1,951 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -1018,7 +1018,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=2" class="action-btn">
+            <a href="../browse/index.html?kanken=2" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 2級 ทั้งหมด (2,136 ตัว) ในพจนานุกรม →
             </a>
           </div>
@@ -1088,7 +1088,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=jun1" class="action-btn">
+            <a href="../browse/index.html?kanken=jun1" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 準1級 ทั้งหมดในพจนานุกรม →
             </a>
           </div>
@@ -1159,7 +1159,7 @@
           </div>
 
           <div class="kanken-card-footer">
-            <a href="browse.html?kanken=1" class="action-btn">
+            <a href="../browse/index.html?kanken=1" class="action-btn">
               <span>🔍</span> ดูคันจิระดับ 1級 ทั้งหมดในพจนานุกรม →
             </a>
           </div>
@@ -1261,7 +1261,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="../assets/js/main.js"></script>
   
   <!-- Interactive Category Tabs Script -->
   <script>

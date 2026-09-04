@@ -17,7 +17,8 @@ let searchQuery = '';
 export async function loadRadicalsData() {
   if (cachedRadicals) return cachedRadicals;
   try {
-    const res = await fetch('./data/radicals.json?v=1788411000');
+    const dataUrl = new URL('../../data/radicals.json?v=1788411000', import.meta.url).href;
+    const res = await fetch(dataUrl);
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     cachedRadicals = await res.json();
   } catch (err) {
@@ -177,7 +178,7 @@ export async function renderRadicals() {
           </span>
         </div>
 
-        <a href="browse.html?radical=${item.number}" class="radical-browse-btn" title="ดูคันจิทั้งหมดในหมวด ${item.radical}">
+        <a href="index.html?radical=${item.number}" class="radical-browse-btn" title="ดูคันจิทั้งหมดในหมวด ${item.radical}">
           ค้นหาคันจิในหมวดนี้ ➔
         </a>
       </article>

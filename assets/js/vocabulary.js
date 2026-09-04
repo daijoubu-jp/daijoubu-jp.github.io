@@ -23,7 +23,8 @@ let showFurigana = true;
 export async function loadVocabularyData() {
   if (cachedVocabulary) return cachedVocabulary;
   try {
-    const res = await fetch('./data/vocabulary.json?v=1788410900');
+    const dataUrl = new URL('../../data/vocabulary.json?v=1788410900', import.meta.url).href;
+    const res = await fetch(dataUrl);
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     cachedVocabulary = await res.json();
   } catch (err) {

@@ -10,6 +10,14 @@ import { getRecentSearches, addRecentSearch, getFavorites } from './storage.js';
 import { initBrowsePage } from './browse.js';
 import { initDetailPage } from './kanji-detail.js';
 
+export function getSiteRoot() {
+  const isSubdir = window.location.pathname.includes('/browse/') ||
+                   window.location.pathname.includes('/knowledge/') ||
+                   window.location.pathname.includes('/tools/') ||
+                   window.location.pathname.includes('/games/');
+  return isSubdir ? '../' : './';
+}
+
 async function startApp() {
   // 1. Initialise theme system immediately
   initTheme();
@@ -45,7 +53,7 @@ async function startApp() {
     const { initWorksheetPage } = await import('./worksheet.js');
     await initWorksheetPage();
   } else if (pageType === 'favorites') {
-    window.location.replace('browse.html?preset=favorites');
+    window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }
 }
 
@@ -158,7 +166,7 @@ function setupNavSearch() {
     if (e.key === 'Enter') {
       const q = navInput.value.trim();
       if (q) {
-        window.location.href = `browse.html?q=${encodeURIComponent(q)}`;
+        window.location.href = `${getSiteRoot()}browse/index.html?q=${encodeURIComponent(q)}`;
       }
     }
   });
@@ -225,9 +233,9 @@ async function initHomePage() {
         addRecentSearch(q);
         // If single character kanji, go straight to detail page
         if (q.length === 1 && /[\u4E00-\u9FFF\u3400-\u4DBF]/.test(q)) {
-          window.location.href = `kanji.html?k=${encodeURIComponent(q)}`;
+          window.location.href = `${getSiteRoot()}browse/kanji.html?k=${encodeURIComponent(q)}`;
         } else {
-          window.location.href = `browse.html?q=${encodeURIComponent(q)}`;
+          window.location.href = `${getSiteRoot()}browse/index.html?q=${encodeURIComponent(q)}`;
         }
       }
     });
@@ -260,7 +268,7 @@ function renderAutocomplete(dropdown, results) {
     const meaningEn = (k.meanings_en && k.meanings_en[0]) || '';
 
     return `
-      <a href="kanji.html?k=${encodeURIComponent(k.kanji)}" class="autocomplete-item">
+      <a href="${getSiteRoot()}browse/kanji.html?k=${encodeURIComponent(k.kanji)}" class="autocomplete-item">
         <span class="autocomplete-kanji">${k.kanji}</span>
         <div class="autocomplete-details">
           <div class="autocomplete-meaning">${meaningTh || meaningEn}</div>
@@ -315,7 +323,7 @@ async function renderDailyKanji() {
           </div>
         </div>
         <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-sm);">
-          <a href="kanji.html?k=${encodeURIComponent(kanji.kanji)}" class="action-btn" style="background-color: var(--color-accent); color: var(--color-text-inverse); border-color: var(--color-accent);">
+          <a href="${getSiteRoot()}browse/kanji.html?k=${encodeURIComponent(kanji.kanji)}" class="action-btn" style="background-color: var(--color-accent); color: var(--color-text-inverse); border-color: var(--color-accent);">
             ดูรายละเอียดทั้งหมด →
           </a>
         </div>
@@ -337,7 +345,7 @@ function renderFavoriteKanji() {
 
   section.style.display = 'block';
   list.innerHTML = favs.map(char => `
-    <a href="kanji.html?k=${encodeURIComponent(char)}" class="favorite-kanji-chip" title="คันจิ ${char}">
+    <a href="${getSiteRoot()}browse/kanji.html?k=${encodeURIComponent(char)}" class="favorite-kanji-chip" title="คันจิ ${char}">
       <span class="fav-char" lang="ja">${char}</span>
     </a>
   `).join('');
@@ -375,7 +383,7 @@ function renderRecentSearches() {
 
   container.parentElement.style.display = 'block';
   container.innerHTML = recents.map(term => `
-    <a href="browse.html?q=${encodeURIComponent(term)}" class="filter-chip">
+    <a href="${getSiteRoot()}browse/index.html?q=${encodeURIComponent(term)}" class="filter-chip">
       ${term}
     </a>
   `).join('');
@@ -413,7 +421,9 @@ function setupBackToTop() {
 // Register Service Worker for caching and offline support
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').then((registration) => {
+    const swUrl = new URL('../../sw.js', import.meta.url).href;
+    const swScope = new URL('../../', import.meta.url).href;
+    navigator.serviceWorker.register(swUrl, { scope: swScope }).then((registration) => {
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch((err) => {
       console.warn('ServiceWorker registration failed: ', err);

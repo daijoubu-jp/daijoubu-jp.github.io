@@ -62,7 +62,7 @@ function renderNotFound() {
         <div style="font-size: 4rem; margin-bottom: 1rem;">⚠️</div>
         <h2>ไม่พบคันจิที่ระบุ</h2>
         <p style="color: var(--color-text-muted);">กรุณากลับไปหน้าค้นหาเพื่อเลือกตัวอักษรอื่น</p>
-        <a href="browse.html" class="action-btn" style="margin-top: 1rem; display: inline-flex;">ดูรายการคันจิทั้งหมด</a>
+        <a href="index.html" class="action-btn" style="margin-top: 1rem; display: inline-flex;">ดูรายการคันจิทั้งหมด</a>
       </div>
     `;
   }
@@ -79,11 +79,11 @@ async function setupBreadcrumbsAndSeqNav(kanji) {
   if (breadcrumbCurrent) breadcrumbCurrent.textContent = kanji.kanji;
   if (breadcrumbLevel) {
     if (kanji.jlpt) {
-      breadcrumbLevel.innerHTML = `<a href="browse.html?jlpt=${kanji.jlpt}">JLPT N${kanji.jlpt}</a>`;
+      breadcrumbLevel.innerHTML = `<a href="index.html?jlpt=${kanji.jlpt}">JLPT N${kanji.jlpt}</a>`;
     } else if (kanji.grade) {
-      breadcrumbLevel.innerHTML = `<a href="browse.html?grade=${kanji.grade}">ประถมศึกษาปีที่ ${kanji.grade}</a>`;
+      breadcrumbLevel.innerHTML = `<a href="index.html?grade=${kanji.grade}">ประถมศึกษาปีที่ ${kanji.grade}</a>`;
     } else {
-      breadcrumbLevel.innerHTML = `<a href="browse.html">ทั่วไป</a>`;
+      breadcrumbLevel.innerHTML = `<a href="index.html">ทั่วไป</a>`;
     }
   }
 
@@ -406,7 +406,8 @@ let originsCache = null;
 async function loadOriginsData() {
   if (originsCache) return originsCache;
   try {
-    const res = await fetch('./data/kanji-origins.json?v=1788444334');
+    const dataUrl = new URL('../../data/kanji-origins.json?v=1788444334', import.meta.url).href;
+    const res = await fetch(dataUrl);
     if (res.ok) {
       originsCache = await res.json();
     } else {
@@ -562,7 +563,7 @@ function renderHandwritingTip(kanji) {
         <strong>✍️ ข้อแนะนำการเขียนลายมือ (文化庁 指針):</strong><br>
         ${kanji.handwritingTip}
         <div style="margin-top: 4px;">
-          <a href="handwriting-guide.html" style="font-size: var(--font-size-xs); color: var(--color-accent);">อ่านคู่มือลักษณะตัวอักษรและลายมือฉบับเต็ม →</a>
+          <a href="../knowledge/handwriting.html" style="font-size: var(--font-size-xs); color: var(--color-accent);">อ่านคู่มือลักษณะตัวอักษรและลายมือฉบับเต็ม →</a>
         </div>
       </div>
     `;
