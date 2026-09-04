@@ -1,0 +1,77 @@
+/* ==========================================================================
+   UKIYO-E / TRADITIONAL THEME (浮世絵)
+   Aesthetic: Edo woodblock prints, Prussian indigo blue, parchment paper
+   ========================================================================== */
+
+/* --- Light Mode (Default) --- */
+[data-theme="ukiyoe"],
+[data-theme="ukiyoe"][data-mode="light"] {
+  --color-bg: #F4EAD4;
+  --color-surface: #FAF4E6;
+  --color-surface-2: #E8DCC0;
+  --color-surface-hover: #DFD0B0;
+  --color-border: #C8B79B;
+  --color-border-subtle: #DDD0B9;
+  
+  --color-text: #1C2833;
+  --color-text-muted: #566573;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #1B4F72;
+  --color-accent-hover: #154360;
+  --color-accent-light: #D4E6F1;
+  --color-accent-2: #922B21;
+  
+  --color-kanji-display: #17202A;
+  --color-card-border: #1C2833;
+  --color-shadow: rgba(28, 40, 51, 0.12);
+  --color-shadow-hover: rgba(27, 79, 114, 0.25);
+
+  --gradient-hero: linear-gradient(135deg, rgba(27, 79, 114, 0.15) 0%, rgba(244, 234, 212, 0.8) 50%, rgba(146, 43, 33, 0.12) 100%);
+  --theme-banner-bg: #E8DCC0;
+  --theme-icon: '🎨';
+  --theme-name-en: 'Ukiyo-e (Edo)';
+  --theme-name-th: 'ภาพพิมพ์อุคิโยะเอะ';
+  --theme-name-jp: '浮世絵 (江戸)';
+}
+
+/* --- Dark Mode (Edo Lacquer Night / 浮世絵 漆黒) --- */
+[data-theme="ukiyoe"][data-mode="dark"] {
+  --color-bg: #161311;
+  --color-surface: #231F1C;
+  --color-surface-2: #332C28;
+  --color-surface-hover: #453C36;
+  --color-border: #4D423B;
+  --color-border-subtle: #2C2622;
+  
+  --color-text: #F5EFEB;
+  --color-text-muted: #B8AAA0;
+  --color-text-inverse: #161311;
+  
+  --color-accent: #2980B9;
+  --color-accent-hover: #3498DB;
+  --color-accent-light: rgba(41, 128, 185, 0.25);
+  --color-accent-2: #E74C3C;
+  
+  --color-kanji-display: #85C1E9;
+  --color-card-border: #2980B9;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-shadow-hover: rgba(41, 128, 185, 0.35);
+
+  --gradient-hero: linear-gradient(135deg, #231F1C 0%, #161311 60%, #1a252f 100%);
+  --theme-banner-bg: #231F1C;
+  --theme-icon: '🎨';
+  --theme-name-en: 'Edo Lacquer (Night)';
+  --theme-name-th: 'อุคิโยะเอะราตรี (漆黒)';
+  --theme-name-jp: '浮世絵 (漆黒)';
+}
+
+[data-theme="ukiyoe"] .kanji-card {
+  border: 2px solid var(--color-border);
+  box-shadow: 3px 3px 0 var(--color-border);
+}
+
+[data-theme="ukiyoe"] .kanji-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--color-accent);
+}

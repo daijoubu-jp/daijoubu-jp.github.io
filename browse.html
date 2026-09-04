@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ค้นหาและกรองคันจิ (Browse Kanji) | KanjiThai</title>
+  <meta name="description" content="ค้นหาและกรองคันจิตามระดับ JLPT, ระดับการสอบ Kanken, ชั้นเรียนประถมศึกษา และจำนวนขีด">
+  
+  <!-- PWA Manifest & Icons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+
+  <!-- Theme Setup (Anti-FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || 'spring';
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="browse">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- 1. Left: Mobile Navigation Menu Toggle (Hamburger) -->
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Right: Theme Switcher -->
+      <div class="nav-actions">
+                <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Mobile Filter Toggle Bar (Hamburger ☰) -->
+      <div class="mobile-filter-bar">
+        <button type="button" class="mobile-filter-toggle-btn" id="mobile-filter-toggle-btn" aria-label="เปิด/ปิดตัวกรอง">
+          <span class="hamburger-icon">☰</span>
+          <span>ตัวกรอง (Filters)</span>
+          <span id="mobile-filter-badge" class="mobile-filter-badge" style="display: none;">0</span>
+        </button>
+      </div>
+      <div class="mobile-sidebar-backdrop" id="mobile-sidebar-backdrop"></div>
+
+      <div class="browse-container">
+        
+        <!-- Sidebar Filter Panel -->
+        <aside class="filter-sidebar" id="filter-sidebar">
+          <!-- Mobile Drawer Header -->
+          <div class="sidebar-mobile-header">
+            <h2 style="font-size: var(--font-size-md); margin-bottom: 0;">⚙️ ตัวกรอง (Filters)</h2>
+            <button type="button" id="mobile-sidebar-close-btn" aria-label="ปิดตัวกรอง" style="font-size: 1.25rem; background: none; border: none; cursor: pointer; color: var(--color-text); padding: 4px 8px;">✕</button>
+          </div>
+
+          <!-- Desktop Sidebar Header -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-md);">
+            <h2 style="font-size: var(--font-size-md); margin-bottom: 0;" class="hidden-on-mobile">⚙️ ตัวกรอง (Filters)</h2>
+            <button type="button" id="reset-filters-btn" style="font-size: var(--font-size-xs); color: var(--color-accent); font-weight: 600; background: none; border: none; cursor: pointer;">
+              ล้างทั้งหมด
+            </button>
+          </div>
+
+          <!-- 1. Kanji Scope Filter -->
+          <div class="filter-group">
+            <div class="filter-group-title">1. ขอบเขตคันจิ (Kanji Scope)</div>
+            <div class="filter-options">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" id="filter-joyo-only" checked>
+                <span class="badge badge-joyo">常用</span> เฉพาะคันจิใช้ทั่วไป (2,136 ตัว)
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" id="filter-nonjoyo-only">
+                <span class="badge badge-kanken">非常用</span> นอกเกณฑ์โจโย (3,731 ตัว)
+              </label>
+            </div>
+          </div>
+
+          <!-- 2. JLPT Filter -->
+          <div class="filter-group">
+            <div class="filter-group-title">2. ระดับ JLPT (日本語能力試験)</div>
+            <div class="filter-options">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-jlpt" value="5">
+                <span class="badge badge-jlpt-n5">N5</span> พื้นฐาน (103 ตัว)
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-jlpt" value="4">
+                <span class="badge badge-jlpt-n4">N4</span> เบื้องต้น (181 ตัว)
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-jlpt" value="3">
+                <span class="badge badge-jlpt-n3">N3</span> ระดับกลาง (361 ตัว)
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-jlpt" value="2">
+                <span class="badge badge-jlpt-n2">N2</span> ระดับสูง (415 ตัว)
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-jlpt" value="1">
+                <span class="badge badge-jlpt-n1">N1</span> ขั้นสูง (1,076 ตัว)
+              </label>
+            </div>
+          </div>
+
+          <!-- 3. Kanken Filter (漢字検定) -->
+          <div class="filter-group">
+            <div class="filter-group-title">3. 漢字検定 (ระดับสอบคันเค็น)</div>
+            <div class="filter-options">
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="10"> 10級 (ป.1 - 80 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="9"> 9級 (ป.2 - 160 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="8"> 8級 (ป.3 - 200 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="7"> 7級 (ป.4 - 202 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="6"> 6級 (ป.5 - 193 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="5"> 5級 (ป.6 - 191 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="4"> 4級 (ม.ต้น - 313 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="3"> 3級 (ม.ต้น - 284 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="jun2"> 準2級 (ม.ปลาย - 328 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="2"> 2級 (โจโย - 185 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="jun1"> 準1級 (ขั้นสูง - 942 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-kanken" value="1"> 1級 (ระดับสูงสุด - 2,789 ตัว)</label>
+            </div>
+          </div>
+
+          <!-- 4. Grade Level Filter (School Grade) -->
+          <div class="filter-group">
+            <div class="filter-group-title">4. ระดับชั้นเรียน (School Grade)</div>
+            <div class="filter-options">
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="1"> ประถมศึกษาปีที่ 1 (80 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="2"> ประถมศึกษาปีที่ 2 (160 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="3"> ประถมศึกษาปีที่ 3 (200 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="4"> ประถมศึกษาปีที่ 4 (202 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="5"> ประถมศึกษาปีที่ 5 (193 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="6"> ประถมศึกษาปีที่ 6 (191 ตัว)</label>
+              <label class="filter-checkbox-label"><input type="checkbox" name="filter-grade" value="8"> มัธยมศึกษา (1,110 ตัว)</label>
+            </div>
+          </div>
+
+          <!-- 5. Stroke Count Filter (画数) -->
+          <div class="filter-group">
+            <div class="filter-group-title">5. จำนวนขีด (画数 / Strokes)</div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-top: 6px;">
+              <input type="number" id="filter-stroke-min" min="1" max="33" placeholder="1" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
+              <span>ถึง</span>
+              <input type="number" id="filter-stroke-max" min="1" max="33" placeholder="33" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
+              <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">ขีด</span>
+            </div>
+          </div>
+
+          <!-- 6. Radical Filter (部首) -->
+          <div class="filter-group">
+            <div class="filter-group-title">6. หมวดอักษร (部首 / Radicals)</div>
+            <select id="filter-radical" style="width: 100%; padding: 6px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font-size: var(--font-size-sm); margin-top: 6px;">
+              <option value="">ทั้งหมด (All 214 Radicals)</option>
+              <!-- Dynamically populated / Key Kangxi Radicals -->
+              <option value="1">1. 一 (หนึ่ง - 1 ขีด)</option>
+              <option value="2">2. 丨 (ขีดดิ่ง - 1 ขีด)</option>
+              <option value="3">3. 丶 (หยดน้ำ - 1 ขีด)</option>
+              <option value="4">4. 丿 (ขีดปัด - 1 ขีด)</option>
+              <option value="5">5. 乙/⺄ (สอง/คดเคี้ยว - 1 ขีด)</option>
+              <option value="7">7. 二 (สอง - 2 ขีด)</option>
+              <option value="8">8. 亠 (หลังคาเล็ก - 2 ขีด)</option>
+              <option value="9">9. 人/亻 (คน - 2 ขีด)</option>
+              <option value="10">10. 儿 (ขามนุษย์ - 2 ขีด)</option>
+              <option value="11">11. 入 (เข้า - 2 ขีด)</option>
+              <option value="12">12. 八 (แปด - 2 ขีด)</option>
+              <option value="14">14. 冖 (ผ้าคลุม - 2 ขีด)</option>
+              <option value="15">15. 冫 (น้ำแข็ง - 2 ขีด)</option>
+              <option value="18">18. 刀/刂 (ดาบ/มีด - 2 ขีด)</option>
+              <option value="19">19. 力 (กำลัง/พลัง - 2 ขีด)</option>
+              <option value="20">20. 勹 (ห่อหุ้ม - 2 ขีด)</option>
+              <option value="22">22. 匚 (กล่อง - 2 ขีด)</option>
+              <option value="24">24. 十 (สิบ - 2 ขีด)</option>
+              <option value="27">27. 厂 (เพิงผา - 2 ขีด)</option>
+              <option value="29">29. 又 (มือขวา/อีก - 2 ขีด)</option>
+              <option value="30">30. 口 (ปาก - 3 ขีด)</option>
+              <option value="31">31. 囗 (กรอบล้อม - 3 ขีด)</option>
+              <option value="32">32. 土 (ดิน - 3 ขีด)</option>
+              <option value="33">33. 士 (นักปราชญ์/ซามูไร - 3 ขีด)</option>
+              <option value="36">36. 夕 (ยามเย็น - 3 ขีด)</option>
+              <option value="37">37. 大 (ใหญ่ - 3 ขีด)</option>
+              <option value="38">38. 女 (ผู้หญิง - 3 ขีด)</option>
+              <option value="39">39. 子 (เด็ก - 3 ขีด)</option>
+              <option value="40">40. 宀 (หลังคาบ้าน - 3 ขีด)</option>
+              <option value="41">41. 寸 (นิ้ว/ขนาด - 3 ขีด)</option>
+              <option value="42">42. 小 (เล็ก - 3 ขีด)</option>
+              <option value="44">44. 尸 (ร่างกาย - 3 ขีด)</option>
+              <option value="46">46. 山 (ภูเขา - 3 ขีด)</option>
+              <option value="47">47. 川 (แม่น้ำ - 3 ขีด)</option>
+              <option value="48">48. 工 (ช่าง/งาน - 3 ขีด)</option>
+              <option value="49">49. 己 (ตัวเอง - 3 ขีด)</option>
+              <option value="50">50. 巾 (ผ้าเช็ดหน้า - 3 ขีด)</option>
+              <option value="51">51. 干 (แห้ง/โล่ - 3 ขีด)</option>
+              <option value="53">53. 广 (อาคาร - 3 ขีด)</option>
+              <option value="54">54. 廴 (ก้าวยาว - 3 ขีด)</option>
+              <option value="57">57. 弓 (ธนู - 3 ขีด)</option>
+              <option value="60">60. 彳 (ก้าวสั้น - 3 ขีด)</option>
+              <option value="61">61. 心/忄 (หัวใจ - 4 ขีด)</option>
+              <option value="62">62. 戈 (หอก - 4 ขีด)</option>
+              <option value="63">63. 戶/戸 (ประตูเรือน - 4 ขีด)</option>
+              <option value="64">64. 手/扌 (มือ - 4 ขีด)</option>
+              <option value="66">66. 攴/攵 (เคาะ/ตี - 4 ขีด)</option>
+              <option value="67">67. 文 (ตัวอักษร/ลาย - 4 ขีด)</option>
+              <option value="69">69. 斤 (ขวาน - 4 ขีด)</option>
+              <option value="70">70. 方 (ทิศทาง/สี่เหลี่ยม - 4 ขีด)</option>
+              <option value="72">72. 日 (พระอาทิตย์/วัน - 4 ขีด)</option>
+              <option value="74">74. 月 (พระจันทร์/เดือน - 4 ขีด)</option>
+              <option value="75">75. 木 (ต้นไม้ - 4 ขีด)</option>
+              <option value="76">76. 欠 (หาว/ขาด - 4 ขีด)</option>
+              <option value="77">77. 止 (หยุด - 4 ขีด)</option>
+              <option value="79">79. 殳 (ไม้พลอง - 4 ขีด)</option>
+              <option value="81">81. 比 (เปรียบเทียบ - 4 ขีด)</option>
+              <option value="82">82. 毛 (ขน - 4 ขีด)</option>
+              <option value="83">83. 氏 (ตระกูล - 4 ขีด)</option>
+              <option value="85">85. 水/氵 (น้ำ - 4 ขีด)</option>
+              <option value="86">86. 火/灬 (ไฟ - 4 ขีด)</option>
+              <option value="87">87. 爪/爫 (กรงเล็บ - 4 ขีด)</option>
+              <option value="88">88. 父 (พ่อ - 4 ขีด)</option>
+              <option value="90">90. 爿 (แผ่นไม้ - 4 ขีด)</option>
+              <option value="91">91. 片 (ชิ้นส่วน - 4 ขีด)</option>
+              <option value="93">93. 牛/牜 (วัว - 4 ขีด)</option>
+              <option value="94">94. 犬/犭 (สุนัข - 4 ขีด)</option>
+              <option value="96">96. 玉/王 (หยก/ราชา - 5 ขีด)</option>
+              <option value="98">98. 瓦 (กระเบื้อง - 5 ขีด)</option>
+              <option value="100">100. 生 (เกิด/มีชีวิต - 5 ขีด)</option>
+              <option value="102">102. 田 (ทุ่งนา - 5 ขีด)</option>
+              <option value="104">104. 疒 (เจ็บป่วย - 5 ขีด)</option>
+              <option value="106">106. 白 (สีขาว - 5 ขีด)</option>
+              <option value="108">108. 皿 (จาน - 5 ขีด)</option>
+              <option value="109">109. 目 (ดวงตา - 5 ขีด)</option>
+              <option value="111">111. 矢 (ลูกศร - 5 ขีด)</option>
+              <option value="112">112. 石 (หิน - 5 ขีด)</option>
+              <option value="113">113. 示/礻 (เซ่นไหว้/แสดง - 5 ขีด)</option>
+              <option value="115">115. 禾 (รวงข้าว - 5 ขีด)</option>
+              <option value="116">116. 穴 (ถ้ำ/รู - 5 ขีด)</option>
+              <option value="117">117. 立 (ยืน - 5 ขีด)</option>
+              <option value="118">118. 竹/⺮ (ต้นไผ่ - 6 ขีด)</option>
+              <option value="119">119. 米 (ข้าวสาร - 6 ขีด)</option>
+              <option value="120">120. 糸/糹 (เส้นด้าย - 6 ขีด)</option>
+              <option value="122">122. 网/罒 (ตาข่าย - 6 ขีด)</option>
+              <option value="123">123. 羊 (แกะ - 6 ขีด)</option>
+              <option value="124">124. 羽 (ปีก/ขนนก - 6 ขีด)</option>
+              <option value="125">125. 老/耂 (ชรา - 6 ขีด)</option>
+              <option value="128">128. 耳 (หู - 6 ขีด)</option>
+              <option value="130">130. 肉/⺼ (เนื้อ - 6 ขีด)</option>
+              <option value="133">133. 至 (ถึง - 6 ขีด)</option>
+              <option value="134">134. 臼 (ครก - 6 ขีด)</option>
+              <option value="135">135. 舌 (ลิ้น - 6 ขีด)</option>
+              <option value="137">137. 舟 (เรือ - 6 ขีด)</option>
+              <option value="140">140. 艸/艹 (พืชหญ้า - 6 ขีด)</option>
+              <option value="142">142. 虫 (แมลง - 6 ขีด)</option>
+              <option value="144">144. 行 (เดิน/ไป - 6 ขีด)</option>
+              <option value="145">145. 衣/衤 (เสื้อผ้า - 6 ขีด)</option>
+              <option value="146">146. 襾/西 (คลุม/ตะวันตก - 6 ขีด)</option>
+              <option value="147">147. 見 (มองเห็น - 7 ขีด)</option>
+              <option value="148">148. 角 (เขา/มุม - 7 ขีด)</option>
+              <option value="149">149. 言/訁 (คำพูด - 7 ขีด)</option>
+              <option value="150">150. 谷 (หุบเขา - 7 ขีด)</option>
+              <option value="151">151. 豆 (ถั่ว - 7 ขีด)</option>
+              <option value="152">152. 豕 (หมู - 7 ขีด)</option>
+              <option value="154">154. 貝 (เปลือกหอย/เงินตรา - 7 ขีด)</option>
+              <option value="155">155. 赤 (สีแดง - 7 ขีด)</option>
+              <option value="156">156. 走 (วิ่ง - 7 ขีด)</option>
+              <option value="157">157. 足/⻊ (เท้า - 7 ขีด)</option>
+              <option value="158">158. 身 (ร่างกาย - 7 ขีด)</option>
+              <option value="159">159. 車 (รถ - 7 ขีด)</option>
+              <option value="160">160. 辛 (เผ็ด/ขมขื่น - 7 ขีด)</option>
+              <option value="162">162. 辵/辶 (ก้าวเดิน - 7 ขีด)</option>
+              <option value="163">163. 邑/阝 (เมือง - 7 ขีด)</option>
+              <option value="164">164. 酉 (เหล้า/ไห - 7 ขีด)</option>
+              <option value="166">166. 里 (หมู่บ้าน/ลี้ - 7 ขีด)</option>
+              <option value="167">167. 金/釒 (ทอง/โลหะ - 8 ขีด)</option>
+              <option value="168">168. 長 (ยาว - 8 ขีด)</option>
+              <option value="169">169. 門 (ประตูใหญ่ - 8 ขีด)</option>
+              <option value="170">170. 阜/阝 (เนินดิน - 8 ขีด)</option>
+              <option value="172">172. 隹 (นกตัวสั้น - 8 ขีด)</option>
+              <option value="173">173. 雨 (ฝน - 8 ขีด)</option>
+              <option value="174">174. 靑/青 (สีคราม - 8 ขีด)</option>
+              <option value="175">175. 非 (ไม่ใช่ - 8 ขีด)</option>
+              <option value="177">177. 革 (หนังฟอก - 9 ขีด)</option>
+              <option value="180">180. 音 (เสียง - 9 ขีด)</option>
+              <option value="181">181. 頁 (หน้ากระดาษ/ศีรษะ - 9 ขีด)</option>
+              <option value="182">182. 風 (ลม - 9 ขีด)</option>
+              <option value="184">184. 食/飠 (อาหาร - 9 ขีด)</option>
+              <option value="185">185. 首 (คอ/หัวหน้า - 9 ขีด)</option>
+              <option value="187">187. 馬 (ม้า - 10 ขีด)</option>
+              <option value="188">188. 骨 (กระดูก - 10 ขีด)</option>
+              <option value="189">189. 高 (สูง - 10 ขีด)</option>
+              <option value="195">195. 魚 (ปลา - 11 ขีด)</option>
+              <option value="196">196. 鳥 (นก - 11 ขีด)</option>
+              <option value="198">198. 鹿 (กวาง - 11 ขีด)</option>
+              <option value="199">199. 麥/麦 (ข้าวสาลี - 11 ขีด)</option>
+              <option value="200">200. 麻 (ป่าน/กัญชง - 11 ขีด)</option>
+              <option value="201">201. 黃/黄 (สีเหลือง - 12 ขีด)</option>
+              <option value="202">202. 黍 (ข้าวฟ่าง - 12 ขีด)</option>
+              <option value="203">203. 黑/黒 (สีดำ - 12 ขีด)</option>
+              <option value="211">211. 齒/歯 (ฟัน - 15 ขีด)</option>
+              <option value="212">212. 龍/竜 (มังกร - 16 ขีด)</option>
+            </select>
+          </div>
+
+          <!-- Mobile Drawer Sticky Action Bar -->
+          <div class="sidebar-mobile-actions">
+            <button type="button" id="mobile-sidebar-reset-btn" class="action-btn" style="flex: 1; justify-content: center;">
+              ล้างตัวกรอง
+            </button>
+            <button type="button" id="mobile-sidebar-apply-btn" class="action-btn" style="flex: 2; justify-content: center; background-color: var(--color-accent); color: var(--color-text-inverse); border-color: var(--color-accent);">
+              ดูผลลัพธ์
+            </button>
+          </div>
+        </aside>
+
+        <!-- Main Cards Section -->
+        <section class="browse-main">
+          <!-- Quick Filter Presets Toolbar (Grouped Clusters) -->
+          <div class="filter-presets-toolbar" role="toolbar" aria-label="ตัวกรองคันจิด่วน">
+            <div class="presets-track">
+              <!-- Cluster 1: ขอบเขตหลัก (Core Scope) -->
+              <div class="preset-cluster">
+                <button type="button" class="filter-preset-btn active" data-preset="joyo" title="คันจิใช้ทั่วไป (2,136 ตัว)">
+                  <span>🌸</span> โจโย <span class="preset-count">2,136</span>
+                </button>
+                <button type="button" class="filter-preset-btn" data-preset="all" title="คันจิทั้งหมดในระบบ (5,867 ตัว)">
+                  <span>🌟</span> ทั้งหมด <span class="preset-count">5,867</span>
+                </button>
+                <button type="button" class="filter-preset-btn" data-preset="favorites" title="คันจิที่บันทึกไว้ในรายการโปรด">
+                  <span>⭐</span> รายการโปรด
+                </button>
+              </div>
+
+              <div class="preset-cluster-divider" aria-hidden="true"></div>
+
+              <!-- Cluster 2: ระดับชั้นเรียน (Education Grade) -->
+              <div class="preset-cluster">
+                <button type="button" class="filter-preset-btn" data-preset="elementary" title="คันจิระดับประถมศึกษาปีที่ 1-6 (1,026 ตัว)">
+                  <span>🎒</span> ประถม 1-6 <span class="preset-count">1,026</span>
+                </button>
+                <button type="button" class="filter-preset-btn" data-preset="secondary" title="คันจิระดับมัธยมศึกษา (1,110 ตัว)">
+                  <span>🏫</span> มัธยม <span class="preset-count">1,110</span>
+                </button>
+              </div>
+
+              <div class="preset-cluster-divider" aria-hidden="true"></div>
+
+              <!-- Cluster 3: ระดับ JLPT (Segmented Pill Group) -->
+              <div class="preset-cluster jlpt-segmented" title="เลือกระดับ JLPT">
+                <span class="jlpt-label">JLPT</span>
+                <div class="jlpt-pill-group">
+                  <button type="button" class="filter-preset-btn segmented-btn jlpt-n5" data-preset="jlpt-n5" title="JLPT N5 (103 ตัว)">
+                    <span class="jlpt-dot dot-n5"></span>N5 <span class="preset-count">103</span>
+                  </button>
+                  <button type="button" class="filter-preset-btn segmented-btn jlpt-n4" data-preset="jlpt-n4" title="JLPT N4 (181 ตัว)">
+                    <span class="jlpt-dot dot-n4"></span>N4 <span class="preset-count">181</span>
+                  </button>
+                  <button type="button" class="filter-preset-btn segmented-btn jlpt-n3" data-preset="jlpt-n3" title="JLPT N3 (361 ตัว)">
+                    <span class="jlpt-dot dot-n3"></span>N3 <span class="preset-count">361</span>
+                  </button>
+                  <button type="button" class="filter-preset-btn segmented-btn jlpt-n2" data-preset="jlpt-n2" title="JLPT N2 (415 ตัว)">
+                    <span class="jlpt-dot dot-n2"></span>N2 <span class="preset-count">415</span>
+                  </button>
+                  <button type="button" class="filter-preset-btn segmented-btn jlpt-n1" data-preset="jlpt-n1" title="JLPT N1 (1,076 ตัว)">
+                    <span class="jlpt-dot dot-n1"></span>N1 <span class="preset-count">1.0k</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="preset-cluster-divider" aria-hidden="true"></div>
+
+              <!-- Cluster 4: ขั้นสูง (Advanced / Kanken) -->
+              <div class="preset-cluster">
+                <button type="button" class="filter-preset-btn" data-preset="kanken-advanced" title="คันจิระดับสูง 漢検 準1級 และ 1級 (3,731 ตัว)">
+                  <span>👑</span> 漢検 準1・1級 <span class="preset-count">3,731</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results Top Bar & Search -->
+          <div style="margin-bottom: var(--spacing-md);">
+            <div class="search-input-group" style="margin-bottom: var(--spacing-sm);">
+              <span style="font-size: 1.1rem; color: var(--color-text-muted); margin-right: 6px;">🔍</span>
+              <input 
+                type="search" 
+                id="browse-search-input" 
+                class="search-input" 
+                placeholder="พิมพ์คันจิ, เสียงอ่าน (あい / ai), ความหมายไทย (รัก), หรืออังกฤษ (love) เพื่อกรองทันที..."
+                autocomplete="off"
+              >
+              <button type="button" class="search-clear-btn" id="browse-clear-btn" aria-label="ล้างข้อความ">✕</button>
+            </div>
+
+            <!-- Active Filters Chip Bar -->
+            <div id="active-filter-tags" style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--spacing-xs);"></div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-sm);">
+              <div id="results-count" style="font-weight: 700; color: var(--color-text-muted);">
+                กำลังโหลดข้อมูล...
+              </div>
+
+              <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                <label for="sort-select" style="font-size: var(--font-size-sm); color: var(--color-text-muted);">เรียงตาม:</label>
+                <select id="sort-select" style="padding: 6px 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text);">
+                  <option value="reading" selected>เสียงอ่าน (読み: あいうえお)</option>
+                  <option value="strokes">จำนวนขีด (画数: น้อย → มาก)</option>
+                  <option value="radical">หมวดอักษร (部首: 1 → 214)</option>
+                  <option value="grade">ระดับชั้นเรียน (Grade 1 → มัธยม/นอกเกณฑ์)</option>
+                  <option value="kanken">ระดับ 漢検 (10級 → 1級)</option>
+                  <option value="jlpt">ระดับ JLPT (N5 → N1)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kanji Grid -->
+          <div class="kanji-grid" id="browse-grid">
+            <div class="skeleton" style="height: 300px; grid-column: 1/-1;"></div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination" id="browse-pagination"></div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table, Kanken 2020 & KANJIDIC2 | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

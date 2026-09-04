@@ -1,0 +1,7095 @@
+[
+  {
+    "kanji": "久",
+    "codepoint": "4E45",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 4,
+    "radicalChar": "丿",
+    "onyomi": [
+      "キュウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "ひさ.しい"
+    ],
+    "meanings_en": [
+      "long time",
+      "old story"
+    ],
+    "meanings_th": [
+      "เวลานาน",
+      "เรื่องเก่า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "仏",
+    "codepoint": "4ECF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ブツ"
+    ],
+    "kunyomi": [
+      "ほとけ"
+    ],
+    "meanings_en": [
+      "Buddha",
+      "the dead",
+      "France"
+    ],
+    "meanings_th": [
+      "พระพุทธเจ้า",
+      "คนตาย",
+      "ฝรั่งเศส"
+    ],
+    "joyo": true,
+    "traditionalForm": "佛",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "フツ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "仮",
+    "codepoint": "4EEE",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "かり"
+    ],
+    "meanings_en": [
+      "sham",
+      "temporary",
+      "interim",
+      "assumed (name)",
+      "informal"
+    ],
+    "meanings_th": [
+      "เสแสร้ง",
+      "ชั่วคราว"
+    ],
+    "joyo": true,
+    "traditionalForm": "假",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "か.す"
+    ]
+  },
+  {
+    "kanji": "件",
+    "codepoint": "4EF6",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "くだん"
+    ],
+    "meanings_en": [
+      "affair",
+      "case",
+      "matter",
+      "item"
+    ],
+    "meanings_th": [
+      "เรื่อง",
+      "กรณี"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "くだり",
+      "くだん"
+    ]
+  },
+  {
+    "kanji": "任",
+    "codepoint": "4EFB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ニン"
+    ],
+    "kunyomi": [
+      "まか.す",
+      "まか.せる"
+    ],
+    "meanings_en": [
+      "responsibility",
+      "duty",
+      "term",
+      "entrust to",
+      "appoint"
+    ],
+    "meanings_th": [
+      "ความรับผิดชอบ",
+      "หน้าที่",
+      "ระยะ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ジン"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "似",
+    "codepoint": "4F3C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "に.る"
+    ],
+    "meanings_en": [
+      "becoming",
+      "resemble",
+      "counterfeit",
+      "imitate",
+      "suitable"
+    ],
+    "meanings_th": [
+      "กลายเป็น",
+      "มีลักษณะคล้ายกัน",
+      "ของปลอม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シ"
+    ],
+    "kunyomi_hyougai": [
+      "ごと.し"
+    ]
+  },
+  {
+    "kanji": "余",
+    "codepoint": "4F59",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ヨ"
+    ],
+    "kunyomi": [
+      "あま.す",
+      "あま.る"
+    ],
+    "meanings_en": [
+      "too much",
+      "myself",
+      "surplus",
+      "other",
+      "remainder"
+    ],
+    "meanings_th": [
+      "มากเกินไป",
+      "ตัวฉันเอง",
+      "ส่วนเกิน"
+    ],
+    "joyo": true,
+    "traditionalForm": "餘",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ほか"
+    ]
+  },
+  {
+    "kanji": "価",
+    "codepoint": "4FA1",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "あたい"
+    ],
+    "meanings_en": [
+      "value",
+      "price"
+    ],
+    "meanings_th": [
+      "ค่า",
+      "ราคา"
+    ],
+    "joyo": true,
+    "traditionalForm": "價",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "保",
+    "codepoint": "4FDD",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "たも.つ"
+    ],
+    "meanings_en": [
+      "protect",
+      "guarantee",
+      "keep",
+      "preserve",
+      "sustain",
+      "support"
+    ],
+    "meanings_th": [
+      "ปกป้อง",
+      "รับประกัน",
+      "เก็บไว้"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ホウ"
+    ],
+    "kunyomi_hyougai": [
+      "も.つ"
+    ]
+  },
+  {
+    "kanji": "修",
+    "codepoint": "4FEE",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "シュウ",
+      "シュ"
+    ],
+    "kunyomi": [
+      "おさ.まる",
+      "おさ.める"
+    ],
+    "meanings_en": [
+      "discipline",
+      "conduct oneself well",
+      "study",
+      "master"
+    ],
+    "meanings_th": [
+      "มีระเบียบวินัย",
+      "ประพฤติตนดี",
+      "การศึกษา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "個",
+    "codepoint": "500B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "individual",
+      "counter for articles"
+    ],
+    "meanings_th": [
+      "รายบุคคล",
+      "เคาน์เตอร์สำหรับบทความ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "カ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "停",
+    "codepoint": "505C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "と.める",
+      "と.まる"
+    ],
+    "meanings_en": [
+      "halt",
+      "stopping"
+    ],
+    "meanings_th": [
+      "หยุด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "とど.まる",
+      "と.まる"
+    ]
+  },
+  {
+    "kanji": "備",
+    "codepoint": "5099",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ビ"
+    ],
+    "kunyomi": [
+      "そな.える",
+      "そな.わる"
+    ],
+    "meanings_en": [
+      "equip",
+      "provision",
+      "preparation"
+    ],
+    "meanings_th": [
+      "อุปกรณ์",
+      "บทบัญญัติ",
+      "การเตรียมการ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ヒ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "像",
+    "codepoint": "50CF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "statue",
+      "picture",
+      "image",
+      "figure",
+      "portrait"
+    ],
+    "meanings_th": [
+      "รูปปั้น",
+      "รูปภาพ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ショウ"
+    ],
+    "kunyomi_hyougai": [
+      "かたち",
+      "かたど.る"
+    ]
+  },
+  {
+    "kanji": "再",
+    "codepoint": "518D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 13,
+    "radicalChar": "冂",
+    "onyomi": [
+      "サイ",
+      "サ"
+    ],
+    "kunyomi": [
+      "ふたた.び"
+    ],
+    "meanings_en": [
+      "again",
+      "twice",
+      "second time"
+    ],
+    "meanings_th": [
+      "อีกครั้ง",
+      "สองครั้ง",
+      "ครั้งที่สอง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "刊",
+    "codepoint": "520A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 18,
+    "radicalChar": "刀",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "publish",
+      "carve",
+      "engrave"
+    ],
+    "meanings_th": [
+      "เผยแพร่",
+      "แกะสลัก"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "きざ.む"
+    ]
+  },
+  {
+    "kanji": "判",
+    "codepoint": "5224",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 18,
+    "radicalChar": "刀",
+    "onyomi": [
+      "ハン",
+      "バン"
+    ],
+    "kunyomi": [
+      "わか.る"
+    ],
+    "meanings_en": [
+      "judgement",
+      "judgment",
+      "signature",
+      "stamp",
+      "seal"
+    ],
+    "meanings_th": [
+      "การตัดสิน",
+      "ลายเซ็น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "わか.る",
+      "わ.ける"
+    ]
+  },
+  {
+    "kanji": "制",
+    "codepoint": "5236",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 18,
+    "radicalChar": "刀",
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "system",
+      "law",
+      "rule"
+    ],
+    "meanings_th": [
+      "ระบบ",
+      "กฎหมาย",
+      "กฎ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おさ.える"
+    ]
+  },
+  {
+    "kanji": "則",
+    "codepoint": "5247",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 18,
+    "radicalChar": "刀",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "のっと.る",
+      "のり",
+      "すなわち"
+    ],
+    "meanings_en": [
+      "rule",
+      "law",
+      "follow",
+      "based on",
+      "model after"
+    ],
+    "meanings_th": [
+      "กฎ",
+      "กฎหมาย",
+      "ทำตาม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "すなわ.ち",
+      "のっと.る",
+      "のり"
+    ]
+  },
+  {
+    "kanji": "効",
+    "codepoint": "52B9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 19,
+    "radicalChar": "力",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "き.く"
+    ],
+    "meanings_en": [
+      "merit",
+      "efficacy",
+      "efficiency",
+      "benefit"
+    ],
+    "meanings_th": [
+      "บุญ",
+      "ประสิทธิภาพ"
+    ],
+    "joyo": true,
+    "traditionalForm": "效",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いた.す",
+      "かい"
+    ]
+  },
+  {
+    "kanji": "務",
+    "codepoint": "52D9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 19,
+    "radicalChar": "力",
+    "onyomi": [
+      "ム"
+    ],
+    "kunyomi": [
+      "つと.まる",
+      "つと.める"
+    ],
+    "meanings_en": [
+      "task",
+      "duties"
+    ],
+    "meanings_th": [
+      "งาน",
+      "หน้าที่"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ブ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "勢",
+    "codepoint": "52E2",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 19,
+    "radicalChar": "力",
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [
+      "いきお.い"
+    ],
+    "meanings_en": [
+      "forces",
+      "energy",
+      "military strength"
+    ],
+    "meanings_th": [
+      "กองกำลัง",
+      "พลังงาน",
+      "ความแข็งแกร่งทางทหาร"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "厚",
+    "codepoint": "539A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 27,
+    "radicalChar": "厂",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "あつ.い"
+    ],
+    "meanings_en": [
+      "thick",
+      "heavy",
+      "rich",
+      "kind",
+      "cordial",
+      "brazen",
+      "shameless"
+    ],
+    "meanings_th": [
+      "หนา",
+      "หนัก",
+      "รวย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "句",
+    "codepoint": "53E5",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "ク"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "phrase",
+      "clause",
+      "sentence",
+      "passage",
+      "paragraph",
+      "counter for haiku"
+    ],
+    "meanings_th": [
+      "วลี",
+      "ข้อ",
+      "ประโยค"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "コウ"
+    ],
+    "kunyomi_hyougai": [
+      "あ.たる",
+      "ま.がる"
+    ]
+  },
+  {
+    "kanji": "可",
+    "codepoint": "53EF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "-べ.き",
+      "-べ.し"
+    ],
+    "meanings_en": [
+      "can",
+      "passable",
+      "approval"
+    ],
+    "meanings_th": [
+      "สามารถ",
+      "ผ่านได้",
+      "การอนุมัติ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "コク"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "史",
+    "codepoint": "53F2",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "history",
+      "chronicle"
+    ],
+    "meanings_th": [
+      "ประวัติศาสตร์",
+      "พงศาวดาร"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ふびと"
+    ]
+  },
+  {
+    "kanji": "告",
+    "codepoint": "544A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "つ.げる"
+    ],
+    "meanings_en": [
+      "revelation",
+      "tell",
+      "inform",
+      "announce"
+    ],
+    "meanings_th": [
+      "การเปิดเผย",
+      "บอก",
+      "แจ้ง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "コウ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "喜",
+    "codepoint": "559C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "よろこ.ぶ"
+    ],
+    "meanings_en": [
+      "rejoice",
+      "take pleasure in"
+    ],
+    "meanings_th": [
+      "ชื่นชมยินดี",
+      "มีความสุขใน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "営",
+    "codepoint": "55B6",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 30,
+    "radicalChar": "口",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "いとな.む"
+    ],
+    "meanings_en": [
+      "camp",
+      "perform",
+      "build",
+      "conduct (business)"
+    ],
+    "meanings_th": [
+      "ค่าย",
+      "ดำเนินการ",
+      "สร้าง"
+    ],
+    "joyo": true,
+    "traditionalForm": "營",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ヨウ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "因",
+    "codepoint": "56E0",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 31,
+    "radicalChar": "囗",
+    "onyomi": [
+      "イン"
+    ],
+    "kunyomi": [
+      "よ.る"
+    ],
+    "meanings_en": [
+      "cause",
+      "factor",
+      "be associated with",
+      "depend on",
+      "be limited to"
+    ],
+    "meanings_th": [
+      "สาเหตุ",
+      "ปัจจัย",
+      "เกี่ยวข้องกับ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ちなみ",
+      "ちな.む"
+    ]
+  },
+  {
+    "kanji": "団",
+    "codepoint": "56E3",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 31,
+    "radicalChar": "囗",
+    "onyomi": [
+      "ダン",
+      "トン"
+    ],
+    "kunyomi": [
+      "かたまり",
+      "まる.い"
+    ],
+    "meanings_en": [
+      "group",
+      "association"
+    ],
+    "meanings_th": [
+      "กลุ่ม",
+      "สมาคม"
+    ],
+    "joyo": true,
+    "traditionalForm": "團",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かたまり",
+      "まる.い"
+    ]
+  },
+  {
+    "kanji": "囲",
+    "codepoint": "56F2",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 31,
+    "radicalChar": "囗",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "かこ.う",
+      "かこ.む"
+    ],
+    "meanings_en": [
+      "surround",
+      "besiege",
+      "store",
+      "paling",
+      "enclosure",
+      "encircle",
+      "preserve",
+      "keep"
+    ],
+    "meanings_th": [
+      "ล้อมรอบ",
+      "ปิดล้อม",
+      "เก็บ"
+    ],
+    "joyo": true,
+    "traditionalForm": "圍",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "圧",
+    "codepoint": "5727",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "アツ"
+    ],
+    "kunyomi": [
+      "お.す",
+      "へ.す",
+      "おさ.える",
+      "お.さえる"
+    ],
+    "meanings_en": [
+      "pressure",
+      "push",
+      "overwhelm",
+      "oppress",
+      "dominate"
+    ],
+    "meanings_th": [
+      "ความกดดัน",
+      "ผลักดัน",
+      "ล้นหลาม"
+    ],
+    "joyo": true,
+    "traditionalForm": "壓",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "オウ"
+    ],
+    "kunyomi_hyougai": [
+      "お.さえる",
+      "お.す"
+    ]
+  },
+  {
+    "kanji": "在",
+    "codepoint": "5728",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ザイ"
+    ],
+    "kunyomi": [
+      "あ.る"
+    ],
+    "meanings_en": [
+      "exist",
+      "outskirts",
+      "suburbs",
+      "located in"
+    ],
+    "meanings_th": [
+      "มีอยู่จริง",
+      "ชานเมือง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いま.す",
+      "ましま.す"
+    ]
+  },
+  {
+    "kanji": "均",
+    "codepoint": "5747",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "なら.す"
+    ],
+    "meanings_en": [
+      "level",
+      "average"
+    ],
+    "meanings_th": [
+      "ระดับ",
+      "เฉลี่ย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "イン"
+    ],
+    "kunyomi_hyougai": [
+      "ととの.える",
+      "なら.す"
+    ]
+  },
+  {
+    "kanji": "型",
+    "codepoint": "578B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "かた"
+    ],
+    "meanings_en": [
+      "mould",
+      "type",
+      "model"
+    ],
+    "meanings_th": [
+      "แม่พิมพ์",
+      "ประเภท",
+      "โมเดล"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "基",
+    "codepoint": "57FA",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "もと",
+      "もとい"
+    ],
+    "meanings_en": [
+      "fundamentals",
+      "radical (chem)",
+      "counter for machines",
+      "foundation"
+    ],
+    "meanings_th": [
+      "พื้นฐาน",
+      "รุนแรง (เคมี)",
+      "เคาน์เตอร์สำหรับเครื่องจักร"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "もと.づく"
+    ]
+  },
+  {
+    "kanji": "堂",
+    "codepoint": "5802",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "public chamber",
+      "hall"
+    ],
+    "meanings_th": [
+      "ห้องสาธารณะ",
+      "ห้องโถง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "トウ"
+    ],
+    "kunyomi_hyougai": [
+      "たかどの"
+    ]
+  },
+  {
+    "kanji": "報",
+    "codepoint": "5831",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "むく.いる"
+    ],
+    "meanings_en": [
+      "report",
+      "news",
+      "reward",
+      "retribution"
+    ],
+    "meanings_th": [
+      "รายงาน",
+      "ข่าว",
+      "รางวัล"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しら.せる"
+    ]
+  },
+  {
+    "kanji": "境",
+    "codepoint": "5883",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "キョウ",
+      "ケイ"
+    ],
+    "kunyomi": [
+      "さかい"
+    ],
+    "meanings_en": [
+      "boundary",
+      "border",
+      "region"
+    ],
+    "meanings_th": [
+      "ขอบเขต",
+      "ชายแดน",
+      "ภูมิภาค"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "墓",
+    "codepoint": "5893",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "はか"
+    ],
+    "meanings_en": [
+      "grave",
+      "tomb"
+    ],
+    "meanings_th": [
+      "หลุมฝังศพ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "増",
+    "codepoint": "5897",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 32,
+    "radicalChar": "土",
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "ふ.える",
+      "ふ.やす",
+      "ま.す"
+    ],
+    "meanings_en": [
+      "increase",
+      "add",
+      "augment",
+      "gain",
+      "promote"
+    ],
+    "meanings_th": [
+      "เพิ่มขึ้น",
+      "เพิ่ม",
+      "เสริม"
+    ],
+    "joyo": true,
+    "traditionalForm": "增",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "士",
+    "codepoint": "58EB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 33,
+    "radicalChar": "士",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "さむらい"
+    ],
+    "meanings_en": [
+      "gentleman",
+      "scholar",
+      "samurai",
+      "samurai radical (no. 33)"
+    ],
+    "meanings_th": [
+      "สุภาพบุรุษ",
+      "นักวิชาการ",
+      "ซามูไร"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "さむらい"
+    ]
+  },
+  {
+    "kanji": "妻",
+    "codepoint": "59BB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 38,
+    "radicalChar": "女",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "つま"
+    ],
+    "meanings_en": [
+      "wife",
+      "spouse"
+    ],
+    "meanings_th": [
+      "ภรรยา",
+      "คู่สมรส"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セイ"
+    ],
+    "kunyomi_hyougai": [
+      "めあ.わす"
+    ]
+  },
+  {
+    "kanji": "婦",
+    "codepoint": "5A66",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 38,
+    "radicalChar": "女",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "よめ"
+    ],
+    "meanings_en": [
+      "lady",
+      "woman",
+      "wife",
+      "bride"
+    ],
+    "meanings_th": [
+      "ท่านหญิง",
+      "ผู้หญิง",
+      "ภรรยา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おんな"
+    ]
+  },
+  {
+    "kanji": "容",
+    "codepoint": "5BB9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 40,
+    "radicalChar": "宀",
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "い.れる"
+    ],
+    "meanings_en": [
+      "contain",
+      "form",
+      "looks"
+    ],
+    "meanings_th": [
+      "ประกอบด้วย",
+      "แบบฟอร์ม",
+      "ดู"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "い.れる",
+      "かたち",
+      "ゆる.す"
+    ]
+  },
+  {
+    "kanji": "寄",
+    "codepoint": "5BC4",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 40,
+    "radicalChar": "宀",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "よ.せる",
+      "よ.る"
+    ],
+    "meanings_en": [
+      "draw near",
+      "stop in",
+      "bring near",
+      "gather",
+      "collect",
+      "send",
+      "forward"
+    ],
+    "meanings_th": [
+      "เข้ามาใกล้",
+      "หยุดใน",
+      "นำมาใกล้"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "導",
+    "codepoint": "5C0E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 41,
+    "radicalChar": "寸",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "みちび.く"
+    ],
+    "meanings_en": [
+      "guidance",
+      "leading",
+      "conduct",
+      "usher"
+    ],
+    "meanings_th": [
+      "คำแนะนำ",
+      "ชั้นนำ",
+      "ประพฤติตน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しるべ"
+    ]
+  },
+  {
+    "kanji": "居",
+    "codepoint": "5C45",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 44,
+    "radicalChar": "尸",
+    "onyomi": [
+      "キョ"
+    ],
+    "kunyomi": [
+      "い.る"
+    ],
+    "meanings_en": [
+      "reside",
+      "to be",
+      "exist",
+      "live with"
+    ],
+    "meanings_th": [
+      "อาศัยอยู่",
+      "จะเป็น",
+      "มีอยู่จริง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "コ"
+    ],
+    "kunyomi_hyougai": [
+      "お.る"
+    ]
+  },
+  {
+    "kanji": "属",
+    "codepoint": "5C5E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 44,
+    "radicalChar": "尸",
+    "onyomi": [
+      "ゾク"
+    ],
+    "kunyomi": [
+      "さかん",
+      "つく",
+      "やから"
+    ],
+    "meanings_en": [
+      "belong",
+      "genus",
+      "subordinate official",
+      "affiliated"
+    ],
+    "meanings_th": [
+      "เป็นของ",
+      "สกุล",
+      "เจ้าหน้าที่ผู้ใต้บังคับบัญชา"
+    ],
+    "joyo": true,
+    "traditionalForm": "屬",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ショク"
+    ],
+    "kunyomi_hyougai": [
+      "つ.く",
+      "やから"
+    ]
+  },
+  {
+    "kanji": "布",
+    "codepoint": "5E03",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 50,
+    "radicalChar": "巾",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "ぬの"
+    ],
+    "meanings_en": [
+      "linen",
+      "cloth",
+      "spread",
+      "distribute"
+    ],
+    "meanings_th": [
+      "ผ้าลินิน",
+      "ผ้า",
+      "การแพร่กระจาย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ホ"
+    ],
+    "kunyomi_hyougai": [
+      "し.く"
+    ]
+  },
+  {
+    "kanji": "師",
+    "codepoint": "5E2B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 50,
+    "radicalChar": "巾",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "いくさ"
+    ],
+    "meanings_en": [
+      "expert",
+      "teacher",
+      "master",
+      "model",
+      "exemplar",
+      "army (incl. counter)",
+      "war"
+    ],
+    "meanings_th": [
+      "ผู้เชี่ยวชาญ",
+      "ครู",
+      "อาจารย์"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いくさ",
+      "みやこ"
+    ]
+  },
+  {
+    "kanji": "常",
+    "codepoint": "5E38",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 50,
+    "radicalChar": "巾",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "つね",
+      "とこ"
+    ],
+    "meanings_en": [
+      "usual",
+      "ordinary",
+      "normal",
+      "common",
+      "regular",
+      "continually",
+      "always",
+      "long-lasting"
+    ],
+    "meanings_th": [
+      "ปกติ",
+      "สามัญ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "幹",
+    "codepoint": "5E79",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 51,
+    "radicalChar": "干",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "みき"
+    ],
+    "meanings_en": [
+      "tree trunk",
+      "main part",
+      "talent",
+      "capability"
+    ],
+    "meanings_th": [
+      "ลำต้นของต้นไม้",
+      "ส่วนหลัก",
+      "พรสวรรค์"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "から",
+      "わざ"
+    ]
+  },
+  {
+    "kanji": "序",
+    "codepoint": "5E8F",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 53,
+    "radicalChar": "广",
+    "onyomi": [
+      "ジョ"
+    ],
+    "kunyomi": [
+      "つい.で",
+      "ついで"
+    ],
+    "meanings_en": [
+      "preface",
+      "beginning",
+      "order",
+      "precedence",
+      "occasion",
+      "chance",
+      "incidentally"
+    ],
+    "meanings_th": [
+      "คำนำ",
+      "การเริ่มต้น",
+      "สั่งซื้อ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "つい.で",
+      "はしがき",
+      "まなびや"
+    ]
+  },
+  {
+    "kanji": "弁",
+    "codepoint": "5F01",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 55,
+    "radicalChar": "廾",
+    "onyomi": [
+      "ベン"
+    ],
+    "kunyomi": [
+      "はなびら",
+      "うりのなかご"
+    ],
+    "meanings_en": [
+      "valve",
+      "petal",
+      "braid",
+      "speech",
+      "dialect",
+      "discrimination",
+      "dispose of",
+      "distinguish",
+      "conical cap"
+    ],
+    "meanings_th": [
+      "วาล์ว",
+      "กลีบดอกไม้",
+      "ถักเปีย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かた.る"
+    ]
+  },
+  {
+    "kanji": "張",
+    "codepoint": "5F35",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 57,
+    "radicalChar": "弓",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "は.る"
+    ],
+    "meanings_en": [
+      "counter for bows & stringed instruments",
+      "stretch",
+      "spread",
+      "put up (tent)"
+    ],
+    "meanings_th": [
+      "เคาน์เตอร์สำหรับคันธนูและเครื่องสาย",
+      "ยืด",
+      "การแพร่กระจาย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "往",
+    "codepoint": "5F80",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 60,
+    "radicalChar": "彳",
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "い.く",
+      "いにしえ",
+      "さき.に",
+      "ゆ.く"
+    ],
+    "meanings_en": [
+      "journey",
+      "travel",
+      "chase away",
+      "let go",
+      "going",
+      "before",
+      "formerly"
+    ],
+    "meanings_th": [
+      "การเดินทาง",
+      "ไล่ล่าออกไป"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いにしえ",
+      "ゆ.く"
+    ]
+  },
+  {
+    "kanji": "得",
+    "codepoint": "5F97",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 60,
+    "radicalChar": "彳",
+    "onyomi": [
+      "トク"
+    ],
+    "kunyomi": [
+      "え.る",
+      "う.る"
+    ],
+    "meanings_en": [
+      "gain",
+      "get",
+      "find",
+      "earn",
+      "acquire",
+      "can",
+      "may",
+      "able to",
+      "profit",
+      "advantage",
+      "benefit"
+    ],
+    "meanings_th": [
+      "ได้รับ",
+      "ค้นหา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "復",
+    "codepoint": "5FA9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 60,
+    "radicalChar": "彳",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [
+      "また"
+    ],
+    "meanings_en": [
+      "restore",
+      "return to",
+      "revert",
+      "resume"
+    ],
+    "meanings_th": [
+      "คืนค่า",
+      "กลับไปที่",
+      "ย้อนกลับ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かえ.す",
+      "かえ.る",
+      "ふたた.び"
+    ]
+  },
+  {
+    "kanji": "志",
+    "codepoint": "5FD7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "こころざし",
+      "こころざ.す"
+    ],
+    "meanings_en": [
+      "intention",
+      "plan",
+      "resolve",
+      "aspire",
+      "motive",
+      "hopes",
+      "shilling"
+    ],
+    "meanings_th": [
+      "ความตั้งใจ",
+      "แผน",
+      "แก้ไข"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しる.す"
+    ]
+  },
+  {
+    "kanji": "応",
+    "codepoint": "5FDC",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "こた.える"
+    ],
+    "meanings_en": [
+      "apply",
+      "answer",
+      "yes",
+      "OK",
+      "reply",
+      "accept"
+    ],
+    "meanings_th": [
+      "ใช้",
+      "ตอบ",
+      "ใช่"
+    ],
+    "joyo": true,
+    "traditionalForm": "應",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "まさ.に"
+    ]
+  },
+  {
+    "kanji": "快",
+    "codepoint": "5FEB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "こころよ.い"
+    ],
+    "meanings_en": [
+      "cheerful",
+      "pleasant",
+      "agreeable",
+      "comfortable"
+    ],
+    "meanings_th": [
+      "ร่าเริง",
+      "น่ารื่นรมย์",
+      "น่าพอใจ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ケ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "性",
+    "codepoint": "6027",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "さが"
+    ],
+    "meanings_en": [
+      "sex",
+      "gender",
+      "nature"
+    ],
+    "meanings_th": [
+      "เพศ",
+      "ธรรมชาติ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "さが",
+      "たち"
+    ]
+  },
+  {
+    "kanji": "情",
+    "codepoint": "60C5",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "ジョウ",
+      "セイ"
+    ],
+    "kunyomi": [
+      "なさ.け"
+    ],
+    "meanings_en": [
+      "feelings",
+      "emotion",
+      "passion",
+      "sympathy",
+      "circumstances",
+      "facts"
+    ],
+    "meanings_th": [
+      "ความรู้สึก",
+      "อารมณ์",
+      "ความหลงใหล"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おもむき"
+    ]
+  },
+  {
+    "kanji": "態",
+    "codepoint": "614B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "わざ.と"
+    ],
+    "meanings_en": [
+      "attitude",
+      "condition",
+      "figure",
+      "appearance",
+      "voice (of verbs)"
+    ],
+    "meanings_th": [
+      "ทัศนคติ",
+      "สภาพ",
+      "รูป"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "テイ"
+    ],
+    "kunyomi_hyougai": [
+      "さま",
+      "わざ.と"
+    ]
+  },
+  {
+    "kanji": "慣",
+    "codepoint": "6163",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 61,
+    "radicalChar": "心",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "な.らす",
+      "な.れる"
+    ],
+    "meanings_en": [
+      "accustomed",
+      "get used to",
+      "become experienced"
+    ],
+    "meanings_th": [
+      "คุ้นเคย",
+      "ทำความคุ้นเคย",
+      "มีประสบการณ์"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ならわし"
+    ]
+  },
+  {
+    "kanji": "技",
+    "codepoint": "6280",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [
+      "わざ"
+    ],
+    "meanings_en": [
+      "skill",
+      "art",
+      "craft",
+      "ability",
+      "feat",
+      "performance",
+      "vocation",
+      "arts"
+    ],
+    "meanings_th": [
+      "ทักษะ",
+      "ศิลปะ",
+      "งานฝีมือ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "招",
+    "codepoint": "62DB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "まね.く"
+    ],
+    "meanings_en": [
+      "beckon",
+      "invite",
+      "summon",
+      "engage"
+    ],
+    "meanings_th": [
+      "กวักมือเรียก",
+      "เชิญ",
+      "เรียก"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "授",
+    "codepoint": "6388",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "ジュ"
+    ],
+    "kunyomi": [
+      "さず.かる",
+      "さず.ける"
+    ],
+    "meanings_en": [
+      "impart",
+      "instruct",
+      "grant",
+      "confer"
+    ],
+    "meanings_th": [
+      "บอกเล่า",
+      "สั่งสอน",
+      "เงินช่วยเหลือ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "採",
+    "codepoint": "63A1",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "と.る"
+    ],
+    "meanings_en": [
+      "pick",
+      "take",
+      "fetch",
+      "take up"
+    ],
+    "meanings_th": [
+      "เลือก",
+      "ใช้เวลา",
+      "ดึง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "接",
+    "codepoint": "63A5",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "セツ"
+    ],
+    "kunyomi": [
+      "つ.ぐ"
+    ],
+    "meanings_en": [
+      "touch",
+      "contact",
+      "adjoin",
+      "piece together"
+    ],
+    "meanings_th": [
+      "สัมผัส",
+      "ติดต่อ",
+      "ติดกัน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ショウ"
+    ],
+    "kunyomi_hyougai": [
+      "は.ぐ"
+    ]
+  },
+  {
+    "kanji": "提",
+    "codepoint": "63D0",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "さげる"
+    ],
+    "meanings_en": [
+      "propose",
+      "take along",
+      "carry in hand"
+    ],
+    "meanings_th": [
+      "เสนอ",
+      "ไปด้วย",
+      "ถืออยู่ในมือ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "損",
+    "codepoint": "640D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 64,
+    "radicalChar": "手",
+    "onyomi": [
+      "ソン"
+    ],
+    "kunyomi": [
+      "そこ.なう",
+      "そこ.ねる"
+    ],
+    "meanings_en": [
+      "damage",
+      "loss",
+      "disadvantage",
+      "hurt",
+      "injure"
+    ],
+    "meanings_th": [
+      "ความเสียหาย",
+      "การสูญเสีย",
+      "ข้อเสียเปรียบ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "へ.る"
+    ]
+  },
+  {
+    "kanji": "支",
+    "codepoint": "652F",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 65,
+    "radicalChar": "支",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "ささ.える"
+    ],
+    "meanings_en": [
+      "branch",
+      "support",
+      "sustain",
+      "branch radical (no. 65)"
+    ],
+    "meanings_th": [
+      "สาขา",
+      "สนับสนุน",
+      "ยั่งยืน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "か.う",
+      "つか.える"
+    ]
+  },
+  {
+    "kanji": "政",
+    "codepoint": "653F",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 66,
+    "radicalChar": "攴",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "まつりごと"
+    ],
+    "meanings_en": [
+      "politics",
+      "government"
+    ],
+    "meanings_th": [
+      "การเมือง",
+      "รัฐบาล"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "故",
+    "codepoint": "6545",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 66,
+    "radicalChar": "攴",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "ゆえ"
+    ],
+    "meanings_en": [
+      "happenstance",
+      "especially",
+      "intentionally",
+      "reason",
+      "cause",
+      "circumstances",
+      "the late",
+      "therefore",
+      "consequently"
+    ],
+    "meanings_th": [
+      "เหตุการณ์ที่เกิดขึ้น",
+      "โดยเฉพาะอย่างยิ่ง",
+      "โดยเจตนา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ことさら.に",
+      "ふる.い"
+    ]
+  },
+  {
+    "kanji": "救",
+    "codepoint": "6551",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 66,
+    "radicalChar": "攴",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "すく.う"
+    ],
+    "meanings_en": [
+      "salvation",
+      "save",
+      "help",
+      "rescue",
+      "reclaim"
+    ],
+    "meanings_th": [
+      "ความรอด",
+      "บันทึก",
+      "ช่วยด้วย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ク"
+    ],
+    "kunyomi_hyougai": [
+      "たす.ける"
+    ]
+  },
+  {
+    "kanji": "断",
+    "codepoint": "65AD",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 69,
+    "radicalChar": "斤",
+    "onyomi": [
+      "ダン"
+    ],
+    "kunyomi": [
+      "ことわ.る",
+      "た.つ"
+    ],
+    "meanings_en": [
+      "severance",
+      "decline",
+      "refuse",
+      "apologize",
+      "warn",
+      "dismiss",
+      "prohibit",
+      "decision",
+      "judgement",
+      "cutting"
+    ],
+    "meanings_th": [
+      "การชดเชย",
+      "ลดลง",
+      "ปฏิเสธ"
+    ],
+    "joyo": true,
+    "traditionalForm": "斷",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "タン"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "旧",
+    "codepoint": "65E7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 72,
+    "radicalChar": "日",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "ふる.い",
+      "もと"
+    ],
+    "meanings_en": [
+      "old times",
+      "old things",
+      "old friend",
+      "former",
+      "ex-"
+    ],
+    "meanings_th": [
+      "สมัยเก่า",
+      "ของเก่า",
+      "เพื่อนเก่า"
+    ],
+    "joyo": true,
+    "traditionalForm": "舊",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ふ.る"
+    ]
+  },
+  {
+    "kanji": "易",
+    "codepoint": "6613",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 72,
+    "radicalChar": "日",
+    "onyomi": [
+      "エキ",
+      "イ"
+    ],
+    "kunyomi": [
+      "やさ.しい"
+    ],
+    "meanings_en": [
+      "easy",
+      "ready to",
+      "simple",
+      "fortune-telling",
+      "divination"
+    ],
+    "meanings_th": [
+      "ง่าย",
+      "พร้อมที่จะ",
+      "เรียบง่าย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あなど.る"
+    ]
+  },
+  {
+    "kanji": "暴",
+    "codepoint": "66B4",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 72,
+    "radicalChar": "日",
+    "onyomi": [
+      "ボウ",
+      "バク"
+    ],
+    "kunyomi": [
+      "あば.れる",
+      "あば.く"
+    ],
+    "meanings_en": [
+      "outburst",
+      "rave",
+      "fret",
+      "force",
+      "violence",
+      "cruelty",
+      "outrage"
+    ],
+    "meanings_th": [
+      "ระเบิดออกมา",
+      "คลั่งไคล้",
+      "ทำให้ไม่สบายใจ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "条",
+    "codepoint": "6761",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "えだ",
+      "すじ"
+    ],
+    "meanings_en": [
+      "article",
+      "clause",
+      "counter for articles, clauses, paragraphs, etc.",
+      "twig",
+      "item",
+      "stripe",
+      "streak"
+    ],
+    "meanings_th": [
+      "บทความ",
+      "ข้อ",
+      "เคาน์เตอร์สำหรับบทความ อนุประโยค ย่อหน้า ฯลฯ"
+    ],
+    "joyo": true,
+    "traditionalForm": "條",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "えだ",
+      "すじ"
+    ]
+  },
+  {
+    "kanji": "枝",
+    "codepoint": "679D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "えだ"
+    ],
+    "meanings_en": [
+      "bough",
+      "branch",
+      "twig",
+      "limb",
+      "counter for branches"
+    ],
+    "meanings_th": [
+      "กิ่งก้าน",
+      "สาขา",
+      "กิ่งไม้"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "査",
+    "codepoint": "67FB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "investigate"
+    ],
+    "meanings_th": [
+      "สอบสวน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しら.べる"
+    ]
+  },
+  {
+    "kanji": "格",
+    "codepoint": "683C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "カク",
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "status",
+      "rank",
+      "capacity",
+      "character",
+      "case (law, grammar)"
+    ],
+    "meanings_th": [
+      "สถานะ",
+      "อันดับ",
+      "ความจุ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "検",
+    "codepoint": "691C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "しら.べる"
+    ],
+    "meanings_en": [
+      "examination",
+      "investigate"
+    ],
+    "meanings_th": [
+      "การสอบ",
+      "สอบสวน"
+    ],
+    "joyo": true,
+    "traditionalForm": "檢",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "構",
+    "codepoint": "69CB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "かま.う",
+      "かま.える"
+    ],
+    "meanings_en": [
+      "posture",
+      "stance",
+      "appearance",
+      "build",
+      "set up"
+    ],
+    "meanings_th": [
+      "ท่าทาง",
+      "ลักษณะที่ปรากฏ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "武",
+    "codepoint": "6B66",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 77,
+    "radicalChar": "止",
+    "onyomi": [
+      "ブ",
+      "ム"
+    ],
+    "kunyomi": [
+      "たけ",
+      "たけ.し"
+    ],
+    "meanings_en": [
+      "warrior",
+      "military",
+      "chivalry",
+      "arms"
+    ],
+    "meanings_th": [
+      "นักรบ",
+      "ทหาร",
+      "ความกล้าหาญ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "たけ.し",
+      "もののふ"
+    ]
+  },
+  {
+    "kanji": "歴",
+    "codepoint": "6B74",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 77,
+    "radicalChar": "止",
+    "onyomi": [
+      "レキ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "curriculum",
+      "continuation",
+      "passage of time"
+    ],
+    "meanings_th": [
+      "หลักสูตร",
+      "ความต่อเนื่อง",
+      "กาลเวลา"
+    ],
+    "joyo": true,
+    "traditionalForm": "歷",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "リャク"
+    ],
+    "kunyomi_hyougai": [
+      "へ.る"
+    ]
+  },
+  {
+    "kanji": "殺",
+    "codepoint": "6BBA",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 79,
+    "radicalChar": "殳",
+    "onyomi": [
+      "サツ",
+      "セツ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "ころ.す"
+    ],
+    "meanings_en": [
+      "kill",
+      "murder",
+      "butcher",
+      "slice off",
+      "split",
+      "diminish",
+      "reduce",
+      "spoil"
+    ],
+    "meanings_th": [
+      "ฆ่า",
+      "ฆาตกรรม",
+      "คนขายเนื้อ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "毒",
+    "codepoint": "6BD2",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 80,
+    "radicalChar": "毋",
+    "onyomi": [
+      "ドク"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "poison",
+      "virus",
+      "venom",
+      "germ",
+      "harm",
+      "injury",
+      "spite"
+    ],
+    "meanings_th": [
+      "ยาพิษ",
+      "ไวรัส",
+      "พิษ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "そこ.なう",
+      "わる.い"
+    ]
+  },
+  {
+    "kanji": "比",
+    "codepoint": "6BD4",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 81,
+    "radicalChar": "比",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "くら.べる"
+    ],
+    "meanings_en": [
+      "compare",
+      "race",
+      "ratio",
+      "Philippines"
+    ],
+    "meanings_th": [
+      "เปรียบเทียบ",
+      "แข่ง",
+      "อัตราส่วน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ビ"
+    ],
+    "kunyomi_hyougai": [
+      "ころ"
+    ]
+  },
+  {
+    "kanji": "永",
+    "codepoint": "6C38",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "なが.い"
+    ],
+    "meanings_en": [
+      "eternity",
+      "long",
+      "lengthy"
+    ],
+    "meanings_th": [
+      "นิรันดร์",
+      "ยาว"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ヨウ"
+    ],
+    "kunyomi_hyougai": [
+      "とこしえ"
+    ]
+  },
+  {
+    "kanji": "河",
+    "codepoint": "6CB3",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meanings_en": [
+      "river"
+    ],
+    "meanings_th": [
+      "แม่น้ำ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "液",
+    "codepoint": "6DB2",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "エキ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "fluid",
+      "liquid",
+      "juice",
+      "sap",
+      "secretion"
+    ],
+    "meanings_th": [
+      "ของเหลว",
+      "น้ำผลไม้"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しる",
+      "わき"
+    ]
+  },
+  {
+    "kanji": "混",
+    "codepoint": "6DF7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "コン"
+    ],
+    "kunyomi": [
+      "こ.む",
+      "ま.ざる",
+      "ま.じる",
+      "まぜる"
+    ],
+    "meanings_en": [
+      "mix",
+      "blend",
+      "confuse"
+    ],
+    "meanings_th": [
+      "ผสม",
+      "ผสมผสาน",
+      "สับสน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "減",
+    "codepoint": "6E1B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "へ.らす",
+      "へ.る"
+    ],
+    "meanings_en": [
+      "dwindle",
+      "decrease",
+      "reduce",
+      "decline",
+      "curtail",
+      "get hungry"
+    ],
+    "meanings_th": [
+      "ลดน้อยลง",
+      "ลดลง",
+      "ลด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "測",
+    "codepoint": "6E2C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "はかる"
+    ],
+    "meanings_en": [
+      "fathom",
+      "plan",
+      "scheme",
+      "measure"
+    ],
+    "meanings_th": [
+      "หยั่งรู้",
+      "แผน",
+      "โครงการ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "準",
+    "codepoint": "6E96",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [
+      "じゅん.じる",
+      "じゅん.ずる",
+      "なぞら.える",
+      "のり",
+      "ひと.しい",
+      "みずもり"
+    ],
+    "meanings_en": [
+      "semi-",
+      "correspond to",
+      "proportionate to",
+      "conform",
+      "imitate"
+    ],
+    "meanings_th": [
+      "กึ่ง-",
+      "สอดคล้องกับ",
+      "ได้สัดส่วนกับ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シュン"
+    ],
+    "kunyomi_hyougai": [
+      "なぞら.える",
+      "みずもり"
+    ]
+  },
+  {
+    "kanji": "演",
+    "codepoint": "6F14",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "performance",
+      "act",
+      "play",
+      "render",
+      "stage"
+    ],
+    "meanings_th": [
+      "ประสิทธิภาพการทำงาน",
+      "กระทำ",
+      "เล่น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おこな.う",
+      "の.べる"
+    ]
+  },
+  {
+    "kanji": "潔",
+    "codepoint": "6F54",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 85,
+    "radicalChar": "水",
+    "onyomi": [
+      "ケツ"
+    ],
+    "kunyomi": [
+      "いさぎよ.い"
+    ],
+    "meanings_en": [
+      "undefiled",
+      "pure",
+      "clean",
+      "righteous",
+      "gallant"
+    ],
+    "meanings_th": [
+      "ไม่มีมลทิน",
+      "บริสุทธิ์",
+      "สะอาด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "きよ.い"
+    ]
+  },
+  {
+    "kanji": "災",
+    "codepoint": "707D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 86,
+    "radicalChar": "火",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "わざわ.い"
+    ],
+    "meanings_en": [
+      "disaster",
+      "calamity",
+      "woe",
+      "curse",
+      "evil"
+    ],
+    "meanings_th": [
+      "ภัยพิบัติ",
+      "วิบัติ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "燃",
+    "codepoint": "71C3",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 86,
+    "radicalChar": "火",
+    "onyomi": [
+      "ネン"
+    ],
+    "kunyomi": [
+      "も.える",
+      "も.す",
+      "もやす"
+    ],
+    "meanings_en": [
+      "burn",
+      "blaze",
+      "glow"
+    ],
+    "meanings_th": [
+      "เผาไหม้",
+      "เปลวไฟ",
+      "เรืองแสง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "版",
+    "codepoint": "7248",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 91,
+    "radicalChar": "片",
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "printing block",
+      "printing plate",
+      "edition",
+      "impression",
+      "label"
+    ],
+    "meanings_th": [
+      "บล็อกการพิมพ์",
+      "แผ่นพิมพ์",
+      "ฉบับ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いた",
+      "ふだ"
+    ]
+  },
+  {
+    "kanji": "犯",
+    "codepoint": "72AF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 94,
+    "radicalChar": "犬",
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [
+      "おかす"
+    ],
+    "meanings_en": [
+      "crime",
+      "sin",
+      "offense"
+    ],
+    "meanings_th": [
+      "อาชญากรรม",
+      "บาป",
+      "ความผิด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ボン"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "状",
+    "codepoint": "72B6",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 94,
+    "radicalChar": "犬",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "status quo",
+      "conditions",
+      "circumstances",
+      "form",
+      "appearance"
+    ],
+    "meanings_th": [
+      "สภาพที่เป็นอยู่",
+      "เงื่อนไข",
+      "สถานการณ์"
+    ],
+    "joyo": true,
+    "traditionalForm": "狀",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かきつけ",
+      "かたち"
+    ]
+  },
+  {
+    "kanji": "独",
+    "codepoint": "72EC",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 94,
+    "radicalChar": "犬",
+    "onyomi": [
+      "ドク"
+    ],
+    "kunyomi": [
+      "ひと.り"
+    ],
+    "meanings_en": [
+      "single",
+      "alone",
+      "spontaneously",
+      "Germany"
+    ],
+    "meanings_th": [
+      "โสด",
+      "คนเดียว",
+      "ตามธรรมชาติ"
+    ],
+    "joyo": true,
+    "traditionalForm": "獨",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "トク"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "率",
+    "codepoint": "7387",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 95,
+    "radicalChar": "玄",
+    "onyomi": [
+      "ソツ",
+      "リツ"
+    ],
+    "kunyomi": [
+      "ひき.いる"
+    ],
+    "meanings_en": [
+      "ratio",
+      "rate",
+      "proportion",
+      "%",
+      "factor",
+      "lead",
+      "spearhead",
+      "command"
+    ],
+    "meanings_th": [
+      "อัตราส่วน",
+      "อัตรา",
+      "สัดส่วน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おおむ.ね"
+    ]
+  },
+  {
+    "kanji": "現",
+    "codepoint": "73FE",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 96,
+    "radicalChar": "玉",
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "あらわ.す",
+      "あらわ.れる"
+    ],
+    "meanings_en": [
+      "present",
+      "existing",
+      "actual"
+    ],
+    "meanings_th": [
+      "ปัจจุบัน",
+      "ที่มีอยู่",
+      "จริง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "うつつ"
+    ]
+  },
+  {
+    "kanji": "留",
+    "codepoint": "7559",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 102,
+    "radicalChar": "田",
+    "onyomi": [
+      "リュウ",
+      "ル"
+    ],
+    "kunyomi": [
+      "とまる",
+      "とめる"
+    ],
+    "meanings_en": [
+      "detain",
+      "fasten",
+      "halt",
+      "stop"
+    ],
+    "meanings_th": [
+      "กักขัง",
+      "ยึด",
+      "หยุด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "略",
+    "codepoint": "7565",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 102,
+    "radicalChar": "田",
+    "onyomi": [
+      "リャク"
+    ],
+    "kunyomi": [
+      "ほぼ",
+      "はぶ.く",
+      "おか.す",
+      "おさ.める",
+      "はかりごと",
+      "はか.る"
+    ],
+    "meanings_en": [
+      "abbreviation",
+      "omission",
+      "outline",
+      "shorten",
+      "capture",
+      "plunder"
+    ],
+    "meanings_th": [
+      "ตัวย่อ",
+      "การละเลย",
+      "โครงร่าง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おか.す",
+      "おさ.める",
+      "はかりごと"
+    ]
+  },
+  {
+    "kanji": "益",
+    "codepoint": "76CA",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 108,
+    "radicalChar": "皿",
+    "onyomi": [
+      "エキ",
+      "ヤク"
+    ],
+    "kunyomi": [
+      "ま.す"
+    ],
+    "meanings_en": [
+      "benefit",
+      "gain",
+      "profit",
+      "advantage"
+    ],
+    "meanings_th": [
+      "ได้รับประโยชน์",
+      "ได้รับ",
+      "กำไร"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ま.す",
+      "ますます"
+    ]
+  },
+  {
+    "kanji": "眼",
+    "codepoint": "773C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 109,
+    "radicalChar": "目",
+    "onyomi": [
+      "ガン",
+      "ゲン"
+    ],
+    "kunyomi": [
+      "まなこ"
+    ],
+    "meanings_en": [
+      "eyeball"
+    ],
+    "meanings_th": [
+      "ลูกตา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "め"
+    ]
+  },
+  {
+    "kanji": "破",
+    "codepoint": "7834",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 112,
+    "radicalChar": "石",
+    "onyomi": [
+      "ハ"
+    ],
+    "kunyomi": [
+      "やぶ.る",
+      "やぶ.れる"
+    ],
+    "meanings_en": [
+      "rend",
+      "rip",
+      "tear",
+      "break",
+      "destroy",
+      "defeat",
+      "frustrate"
+    ],
+    "meanings_th": [
+      "ฉีก",
+      "ฉีกขาด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "わ.れる"
+    ]
+  },
+  {
+    "kanji": "確",
+    "codepoint": "78BA",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 112,
+    "radicalChar": "石",
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "たし.か",
+      "たし.かめる"
+    ],
+    "meanings_en": [
+      "assurance",
+      "firm",
+      "tight",
+      "hard",
+      "solid",
+      "confirm",
+      "clear",
+      "evident"
+    ],
+    "meanings_th": [
+      "ความมั่นใจ",
+      "บริษัท",
+      "แน่น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かた.い"
+    ]
+  },
+  {
+    "kanji": "示",
+    "codepoint": "793A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 113,
+    "radicalChar": "示",
+    "onyomi": [
+      "ジ",
+      "シ"
+    ],
+    "kunyomi": [
+      "しめ.す"
+    ],
+    "meanings_en": [
+      "show",
+      "indicate",
+      "point out",
+      "express",
+      "display"
+    ],
+    "meanings_th": [
+      "แสดง",
+      "ระบุ",
+      "ชี้ให้เห็น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "キ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "祖",
+    "codepoint": "7956",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 113,
+    "radicalChar": "示",
+    "onyomi": [
+      "ソ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "ancestor",
+      "pioneer",
+      "founder"
+    ],
+    "meanings_th": [
+      "บรรพบุรุษ",
+      "ผู้บุกเบิก",
+      "ผู้ก่อตั้ง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おや",
+      "じじ",
+      "はじ.め"
+    ]
+  },
+  {
+    "kanji": "禁",
+    "codepoint": "7981",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 113,
+    "radicalChar": "示",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "prohibition",
+      "ban",
+      "forbid"
+    ],
+    "meanings_th": [
+      "ข้อห้าม",
+      "ห้าม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いさ.める",
+      "い.む",
+      "とど.める"
+    ]
+  },
+  {
+    "kanji": "移",
+    "codepoint": "79FB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 115,
+    "radicalChar": "禾",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "うつ.す",
+      "うつ.る"
+    ],
+    "meanings_en": [
+      "shift",
+      "move",
+      "change",
+      "drift",
+      "catch (cold, fire)",
+      "pass into"
+    ],
+    "meanings_th": [
+      "กะ",
+      "ย้าย",
+      "การเปลี่ยนแปลง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "程",
+    "codepoint": "7A0B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 115,
+    "radicalChar": "禾",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "ほど"
+    ],
+    "meanings_en": [
+      "extent",
+      "degree",
+      "law",
+      "formula",
+      "distance",
+      "limits",
+      "amount"
+    ],
+    "meanings_th": [
+      "ขอบเขต",
+      "องศา",
+      "กฎหมาย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "税",
+    "codepoint": "7A0E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 115,
+    "radicalChar": "禾",
+    "onyomi": [
+      "ゼイ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "tax",
+      "duty"
+    ],
+    "meanings_th": [
+      "ภาษี",
+      "หน้าที่"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セイ"
+    ],
+    "kunyomi_hyougai": [
+      "みつぎ"
+    ]
+  },
+  {
+    "kanji": "築",
+    "codepoint": "7BC9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 118,
+    "radicalChar": "竹",
+    "onyomi": [
+      "チク"
+    ],
+    "kunyomi": [
+      "きず.く"
+    ],
+    "meanings_en": [
+      "fabricate",
+      "build",
+      "construct"
+    ],
+    "meanings_th": [
+      "ประดิษฐ์",
+      "สร้าง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "つ.く"
+    ]
+  },
+  {
+    "kanji": "粉",
+    "codepoint": "7C89",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 119,
+    "radicalChar": "米",
+    "onyomi": [
+      "フン"
+    ],
+    "kunyomi": [
+      "こ",
+      "こな"
+    ],
+    "meanings_en": [
+      "flour",
+      "powder",
+      "dust"
+    ],
+    "meanings_th": [
+      "แป้ง",
+      "ผง",
+      "ฝุ่น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "デシメートル"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "精",
+    "codepoint": "7CBE",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 119,
+    "radicalChar": "米",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "しら.げる",
+      "くわ.しい"
+    ],
+    "meanings_en": [
+      "refined",
+      "ghost",
+      "fairy",
+      "energy",
+      "vitality",
+      "semen",
+      "excellence",
+      "purity",
+      "skill"
+    ],
+    "meanings_th": [
+      "ประณีต",
+      "ผี",
+      "นางฟ้า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "くわ.しい",
+      "しら.げる"
+    ]
+  },
+  {
+    "kanji": "紀",
+    "codepoint": "7D00",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "chronicle",
+      "account",
+      "narrative",
+      "history",
+      "annals",
+      "geologic period"
+    ],
+    "meanings_th": [
+      "พงศาวดาร",
+      "บัญชี",
+      "เรื่องเล่า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おさ.める",
+      "しる.す",
+      "のり"
+    ]
+  },
+  {
+    "kanji": "素",
+    "codepoint": "7D20",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "ソ",
+      "ス"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meanings_en": [
+      "elementary",
+      "principle",
+      "naked",
+      "uncovered"
+    ],
+    "meanings_th": [
+      "ระดับประถมศึกษา",
+      "หลักการ",
+      "เปลือยเปล่า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "しろ.い",
+      "もと"
+    ]
+  },
+  {
+    "kanji": "経",
+    "codepoint": "7D4C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "へ.る"
+    ],
+    "meanings_en": [
+      "sutra",
+      "longitude",
+      "pass thru",
+      "expire",
+      "warp"
+    ],
+    "meanings_th": [
+      "พระสูตร",
+      "ลองจิจูด",
+      "ผ่าน"
+    ],
+    "joyo": true,
+    "traditionalForm": "經",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おさ.める"
+    ]
+  },
+  {
+    "kanji": "統",
+    "codepoint": "7D71",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "す.べる"
+    ],
+    "meanings_en": [
+      "overall",
+      "relationship",
+      "ruling",
+      "governing"
+    ],
+    "meanings_th": [
+      "โดยรวม",
+      "ความสัมพันธ์",
+      "การพิจารณาคดี"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "おさ.める",
+      "すじ"
+    ]
+  },
+  {
+    "kanji": "絶",
+    "codepoint": "7D76",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "ゼツ"
+    ],
+    "kunyomi": [
+      "たえる",
+      "たやす",
+      "たつ"
+    ],
+    "meanings_en": [
+      "discontinue",
+      "sever",
+      "cut off",
+      "abstain",
+      "interrupt",
+      "suppress",
+      "be beyond",
+      "without match",
+      "peerless",
+      "unparalleled"
+    ],
+    "meanings_th": [
+      "ยุติ",
+      "ตัด",
+      "ตัดออก"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "綿",
+    "codepoint": "7DBF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "メン"
+    ],
+    "kunyomi": [
+      "わた"
+    ],
+    "meanings_en": [
+      "cotton"
+    ],
+    "meanings_th": [
+      "ผ้าฝ้าย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ベン"
+    ],
+    "kunyomi_hyougai": [
+      "つら.なる"
+    ]
+  },
+  {
+    "kanji": "総",
+    "codepoint": "7DCF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "す.べて",
+      "すべ.て",
+      "ふさ"
+    ],
+    "meanings_en": [
+      "general",
+      "whole",
+      "all",
+      "full",
+      "total"
+    ],
+    "meanings_th": [
+      "ทั่วไป",
+      "ทั้งหมด"
+    ],
+    "joyo": true,
+    "traditionalForm": "總",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "すべ.て",
+      "す.べる",
+      "ふさ"
+    ]
+  },
+  {
+    "kanji": "編",
+    "codepoint": "7DE8",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "ヘン"
+    ],
+    "kunyomi": [
+      "あ.む"
+    ],
+    "meanings_en": [
+      "compilation",
+      "knit",
+      "plait",
+      "braid",
+      "twist",
+      "editing",
+      "completed poem",
+      "part of a book"
+    ],
+    "meanings_th": [
+      "การรวบรวม",
+      "ถัก",
+      "ถักเปีย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "とじいと",
+      "ふみ"
+    ]
+  },
+  {
+    "kanji": "績",
+    "codepoint": "7E3E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "exploits",
+      "achievements",
+      "unreeling cocoons"
+    ],
+    "meanings_th": [
+      "การหาประโยชน์",
+      "ความสำเร็จ",
+      "รังไหมที่ไม่ร่วงหล่น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いさお",
+      "う.む",
+      "つむ.ぐ"
+    ]
+  },
+  {
+    "kanji": "織",
+    "codepoint": "7E54",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 120,
+    "radicalChar": "糸",
+    "onyomi": [
+      "シキ",
+      "ショク"
+    ],
+    "kunyomi": [
+      "お.る"
+    ],
+    "meanings_en": [
+      "weave",
+      "fabric"
+    ],
+    "meanings_th": [
+      "สาน",
+      "ผ้า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "罪",
+    "codepoint": "7F6A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 122,
+    "radicalChar": "网",
+    "onyomi": [
+      "ザイ"
+    ],
+    "kunyomi": [
+      "つみ"
+    ],
+    "meanings_en": [
+      "guilt",
+      "sin",
+      "crime",
+      "fault",
+      "blame",
+      "offense"
+    ],
+    "meanings_th": [
+      "ความรู้สึกผิด",
+      "บาป",
+      "อาชญากรรม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "義",
+    "codepoint": "7FA9",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 123,
+    "radicalChar": "羊",
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "righteousness",
+      "justice",
+      "morality",
+      "honor",
+      "loyalty",
+      "meaning"
+    ],
+    "meanings_th": [
+      "ความชอบธรรม",
+      "ความยุติธรรม",
+      "ศีลธรรม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "よ.い"
+    ]
+  },
+  {
+    "kanji": "耕",
+    "codepoint": "8015",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 127,
+    "radicalChar": "耒",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "たがや.す"
+    ],
+    "meanings_en": [
+      "till",
+      "plow",
+      "cultivate"
+    ],
+    "meanings_th": [
+      "จนถึง",
+      "ไถ",
+      "ปลูกฝัง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "職",
+    "codepoint": "8077",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 128,
+    "radicalChar": "耳",
+    "onyomi": [
+      "ショク"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "post",
+      "employment",
+      "work"
+    ],
+    "meanings_th": [
+      "โพสต์",
+      "การจ้างงาน",
+      "ทำงาน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シキ"
+    ],
+    "kunyomi_hyougai": [
+      "つかさ",
+      "つかさど.る"
+    ]
+  },
+  {
+    "kanji": "肥",
+    "codepoint": "80A5",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 130,
+    "radicalChar": "肉",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "こえ",
+      "こ.える",
+      "こ.やし",
+      "こやす"
+    ],
+    "meanings_en": [
+      "fertilizer",
+      "get fat",
+      "fertile",
+      "manure",
+      "pamper"
+    ],
+    "meanings_th": [
+      "ปุ๋ย",
+      "อ้วนขึ้น",
+      "อุดมสมบูรณ์"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "能",
+    "codepoint": "80FD",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 130,
+    "radicalChar": "肉",
+    "onyomi": [
+      "ノウ"
+    ],
+    "kunyomi": [
+      "よ.く",
+      "あた.う"
+    ],
+    "meanings_en": [
+      "ability",
+      "talent",
+      "skill",
+      "capacity"
+    ],
+    "meanings_th": [
+      "ความสามารถ",
+      "พรสวรรค์",
+      "ทักษะ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ドウ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "脈",
+    "codepoint": "8108",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 130,
+    "radicalChar": "肉",
+    "onyomi": [
+      "ミャク"
+    ],
+    "kunyomi": [
+      "すじ"
+    ],
+    "meanings_en": [
+      "vein",
+      "pulse",
+      "hope"
+    ],
+    "meanings_th": [
+      "หลอดเลือดดำ",
+      "ชีพจร",
+      "ความหวัง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "バク"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "興",
+    "codepoint": "8208",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 134,
+    "radicalChar": "臼",
+    "onyomi": [
+      "キョウ",
+      "コウ"
+    ],
+    "kunyomi": [
+      "おこ.す",
+      "おこる"
+    ],
+    "meanings_en": [
+      "entertain",
+      "revive",
+      "retrieve",
+      "interest",
+      "pleasure"
+    ],
+    "meanings_th": [
+      "ความบันเทิง",
+      "ฟื้นขึ้นมา",
+      "เรียกคืน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "舎",
+    "codepoint": "820E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 9,
+    "radicalChar": "人",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "やど.る"
+    ],
+    "meanings_en": [
+      "cottage",
+      "inn",
+      "hut",
+      "house",
+      "mansion"
+    ],
+    "meanings_th": [
+      "กระท่อม",
+      "โรงแรม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セキ"
+    ],
+    "kunyomi_hyougai": [
+      "いえ",
+      "お.く"
+    ]
+  },
+  {
+    "kanji": "航",
+    "codepoint": "822A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 137,
+    "radicalChar": "舟",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "navigate",
+      "sail",
+      "cruise",
+      "fly"
+    ],
+    "meanings_th": [
+      "นำทาง",
+      "แล่นเรือ",
+      "ล่องเรือ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "わた.る"
+    ]
+  },
+  {
+    "kanji": "術",
+    "codepoint": "8853",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 144,
+    "radicalChar": "行",
+    "onyomi": [
+      "ジュツ"
+    ],
+    "kunyomi": [
+      "すべ"
+    ],
+    "meanings_en": [
+      "art",
+      "technique",
+      "skill",
+      "means",
+      "trick",
+      "resources",
+      "magic"
+    ],
+    "meanings_th": [
+      "ศิลปะ",
+      "เทคนิค",
+      "ทักษะ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シュツ"
+    ],
+    "kunyomi_hyougai": [
+      "すべ",
+      "わざ"
+    ]
+  },
+  {
+    "kanji": "衛",
+    "codepoint": "885B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 144,
+    "radicalChar": "行",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "defense",
+      "protection"
+    ],
+    "meanings_th": [
+      "การป้องกัน"
+    ],
+    "joyo": true,
+    "traditionalForm": "衞",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "エ"
+    ],
+    "kunyomi_hyougai": [
+      "まも.る"
+    ]
+  },
+  {
+    "kanji": "製",
+    "codepoint": "88FD",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 145,
+    "radicalChar": "衣",
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "made in...",
+      "manufacture"
+    ],
+    "meanings_th": [
+      "ทำใน...",
+      "ผลิต"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "つく.る"
+    ]
+  },
+  {
+    "kanji": "複",
+    "codepoint": "8907",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 145,
+    "radicalChar": "衣",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "duplicate",
+      "double",
+      "compound",
+      "multiple"
+    ],
+    "meanings_th": [
+      "ซ้ำกัน",
+      "สองเท่า",
+      "สารประกอบ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かさ.ねる"
+    ]
+  },
+  {
+    "kanji": "規",
+    "codepoint": "898F",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 147,
+    "radicalChar": "見",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "かめ"
+    ],
+    "meanings_en": [
+      "standard",
+      "measure"
+    ],
+    "meanings_th": [
+      "มาตรฐาน",
+      "วัด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ただ.す",
+      "のり",
+      "ぶんまわし"
+    ]
+  },
+  {
+    "kanji": "解",
+    "codepoint": "89E3",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 148,
+    "radicalChar": "角",
+    "onyomi": [
+      "カイ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "と.かす",
+      "と.く",
+      "と.ける"
+    ],
+    "meanings_en": [
+      "unravel",
+      "notes",
+      "key",
+      "explanation",
+      "understanding",
+      "untie",
+      "undo",
+      "solve",
+      "answer",
+      "cancel",
+      "absolve",
+      "explain",
+      "minute"
+    ],
+    "meanings_th": [
+      "คลี่คลาย",
+      "บันทึกย่อ",
+      "ที่สำคัญ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "設",
+    "codepoint": "8A2D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "セツ"
+    ],
+    "kunyomi": [
+      "もう.ける"
+    ],
+    "meanings_en": [
+      "establishment",
+      "provision",
+      "prepare"
+    ],
+    "meanings_th": [
+      "สถานประกอบการ",
+      "บทบัญญัติ",
+      "เตรียมความพร้อม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セチ"
+    ],
+    "kunyomi_hyougai": [
+      "しつら.える"
+    ]
+  },
+  {
+    "kanji": "許",
+    "codepoint": "8A31",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "キョ"
+    ],
+    "kunyomi": [
+      "ゆる.す"
+    ],
+    "meanings_en": [
+      "permit",
+      "approve"
+    ],
+    "meanings_th": [
+      "ใบอนุญาต",
+      "อนุมัติ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "コ"
+    ],
+    "kunyomi_hyougai": [
+      "ばか.り"
+    ]
+  },
+  {
+    "kanji": "証",
+    "codepoint": "8A3C",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "あかし"
+    ],
+    "meanings_en": [
+      "evidence",
+      "proof",
+      "certificate"
+    ],
+    "meanings_th": [
+      "หลักฐาน",
+      "ใบรับรอง"
+    ],
+    "joyo": true,
+    "traditionalForm": "證",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あかし",
+      "あか.し",
+      "あか.す"
+    ]
+  },
+  {
+    "kanji": "評",
+    "codepoint": "8A55",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "ヒョウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "evaluate",
+      "criticism",
+      "comment"
+    ],
+    "meanings_th": [
+      "ประเมิน",
+      "การวิพากษ์วิจารณ์",
+      "ความคิดเห็น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ヘイ"
+    ],
+    "kunyomi_hyougai": [
+      "あげつら.う",
+      "はか.る"
+    ]
+  },
+  {
+    "kanji": "講",
+    "codepoint": "8B1B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "lecture",
+      "club",
+      "association"
+    ],
+    "meanings_th": [
+      "การบรรยาย",
+      "สโมสร",
+      "สมาคม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "謝",
+    "codepoint": "8B1D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "あやま.る"
+    ],
+    "meanings_en": [
+      "apologize",
+      "thank",
+      "refuse"
+    ],
+    "meanings_th": [
+      "ขอโทษ",
+      "ขอบคุณ",
+      "ปฏิเสธ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ことわ.る",
+      "さ.る"
+    ]
+  },
+  {
+    "kanji": "識",
+    "codepoint": "8B58",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "シキ"
+    ],
+    "kunyomi": [
+      "し.る",
+      "しる.す"
+    ],
+    "meanings_en": [
+      "discriminating",
+      "know",
+      "write"
+    ],
+    "meanings_th": [
+      "การเลือกปฏิบัติ",
+      "รู้",
+      "เขียน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ショク"
+    ],
+    "kunyomi_hyougai": [
+      "し.る",
+      "しる.す"
+    ]
+  },
+  {
+    "kanji": "護",
+    "codepoint": "8B77",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 149,
+    "radicalChar": "言",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "まも.る"
+    ],
+    "meanings_en": [
+      "safeguard",
+      "protect"
+    ],
+    "meanings_th": [
+      "ป้องกัน",
+      "ปกป้อง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "まも.り",
+      "まも.る"
+    ]
+  },
+  {
+    "kanji": "豊",
+    "codepoint": "8C4A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 151,
+    "radicalChar": "豆",
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "ゆた.か"
+    ],
+    "meanings_en": [
+      "bountiful",
+      "excellent",
+      "rich"
+    ],
+    "meanings_th": [
+      "อุดมสมบูรณ์",
+      "ยอดเยี่ยม",
+      "รวย"
+    ],
+    "joyo": true,
+    "traditionalForm": "豐",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "とよ"
+    ]
+  },
+  {
+    "kanji": "象",
+    "codepoint": "8C61",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 152,
+    "radicalChar": "豕",
+    "onyomi": [
+      "ショウ",
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "かたど.る"
+    ],
+    "meanings_en": [
+      "elephant",
+      "pattern after",
+      "imitate",
+      "image",
+      "shape",
+      "sign (of the times)"
+    ],
+    "meanings_th": [
+      "ช้าง",
+      "แบบหลัง",
+      "เลียนแบบ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かたち",
+      "かたど.る"
+    ]
+  },
+  {
+    "kanji": "財",
+    "codepoint": "8CA1",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "ザイ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "たから"
+    ],
+    "meanings_en": [
+      "property",
+      "money",
+      "wealth",
+      "assets"
+    ],
+    "meanings_th": [
+      "ทรัพย์สิน",
+      "เงิน",
+      "ความมั่งคั่ง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "貧",
+    "codepoint": "8CA7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "ビン",
+      "ヒン"
+    ],
+    "kunyomi": [
+      "まず.しい"
+    ],
+    "meanings_en": [
+      "poverty",
+      "poor"
+    ],
+    "meanings_th": [
+      "ความยากจน",
+      "ยากจน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "責",
+    "codepoint": "8CAC",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "せ.める"
+    ],
+    "meanings_en": [
+      "blame",
+      "condemn",
+      "censure"
+    ],
+    "meanings_th": [
+      "ตำหนิ",
+      "ประณาม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "サイ",
+      "シャク"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "貯",
+    "codepoint": "8CAF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "チョ"
+    ],
+    "kunyomi": [
+      "た.める",
+      "たくわ.える"
+    ],
+    "meanings_en": [
+      "savings",
+      "store",
+      "lay in",
+      "keep",
+      "wear mustache"
+    ],
+    "meanings_th": [
+      "ออมทรัพย์",
+      "เก็บ",
+      "นอนใน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "たくわ.える"
+    ]
+  },
+  {
+    "kanji": "貸",
+    "codepoint": "8CB8",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "か.す"
+    ],
+    "meanings_en": [
+      "lend"
+    ],
+    "meanings_th": [
+      "ให้ยืม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "費",
+    "codepoint": "8CBB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "つい.える",
+      "つい.やす"
+    ],
+    "meanings_en": [
+      "expense",
+      "cost",
+      "spend",
+      "consume",
+      "waste"
+    ],
+    "meanings_th": [
+      "ค่าใช้จ่าย",
+      "ใช้จ่าย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "貿",
+    "codepoint": "8CBF",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "ボウ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "trade",
+      "exchange"
+    ],
+    "meanings_th": [
+      "การค้าขาย",
+      "แลกเปลี่ยน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あきな.う"
+    ]
+  },
+  {
+    "kanji": "資",
+    "codepoint": "8CC7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "assets",
+      "resources",
+      "capital",
+      "funds",
+      "data",
+      "be conducive to",
+      "contribute to"
+    ],
+    "meanings_th": [
+      "สินทรัพย์",
+      "ทรัพยากร",
+      "ทุน"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "たから",
+      "たす.ける",
+      "たち"
+    ]
+  },
+  {
+    "kanji": "賛",
+    "codepoint": "8CDB",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "たす.ける",
+      "たた.える"
+    ],
+    "meanings_en": [
+      "approve",
+      "praise",
+      "title or inscription on picture",
+      "assist",
+      "agree with"
+    ],
+    "meanings_th": [
+      "อนุมัติ",
+      "สรรเสริญ",
+      "ชื่อหรือคำจารึกบนภาพ"
+    ],
+    "joyo": true,
+    "traditionalForm": "贊",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "たす.ける",
+      "たた.える",
+      "ほ.める"
+    ]
+  },
+  {
+    "kanji": "賞",
+    "codepoint": "8CDE",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ほ.める"
+    ],
+    "meanings_en": [
+      "prize",
+      "reward",
+      "praise"
+    ],
+    "meanings_th": [
+      "รางวัล",
+      "สรรเสริญ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ほ.める",
+      "め.でる"
+    ]
+  },
+  {
+    "kanji": "質",
+    "codepoint": "8CEA",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 154,
+    "radicalChar": "貝",
+    "onyomi": [
+      "シツ",
+      "シチ",
+      "チ"
+    ],
+    "kunyomi": [
+      "たち",
+      "ただ.す",
+      "もと",
+      "わりふ"
+    ],
+    "meanings_en": [
+      "substance",
+      "quality",
+      "matter",
+      "temperament"
+    ],
+    "meanings_th": [
+      "สาร",
+      "คุณภาพ",
+      "เรื่อง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ただ.す"
+    ]
+  },
+  {
+    "kanji": "輸",
+    "codepoint": "8F38",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 159,
+    "radicalChar": "車",
+    "onyomi": [
+      "ユ"
+    ],
+    "kunyomi": [],
+    "meanings_en": [
+      "transport",
+      "send",
+      "be inferior"
+    ],
+    "meanings_th": [
+      "การขนส่ง",
+      "ส่ง",
+      "ด้อยกว่า"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "シュ"
+    ],
+    "kunyomi_hyougai": [
+      "いた.す"
+    ]
+  },
+  {
+    "kanji": "述",
+    "codepoint": "8FF0",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "ジュツ"
+    ],
+    "kunyomi": [
+      "の.べる"
+    ],
+    "meanings_en": [
+      "mention",
+      "state",
+      "speak",
+      "relate"
+    ],
+    "meanings_th": [
+      "กล่าวถึง",
+      "รัฐ",
+      "พูด"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "迷",
+    "codepoint": "8FF7",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "メイ"
+    ],
+    "kunyomi": [
+      "まよ.う"
+    ],
+    "meanings_en": [
+      "astray",
+      "be perplexed",
+      "in doubt",
+      "lost",
+      "err",
+      "illusion"
+    ],
+    "meanings_th": [
+      "หลงทาง",
+      "สับสน",
+      "มีข้อสงสัย"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "まど.う"
+    ]
+  },
+  {
+    "kanji": "逆",
+    "codepoint": "9006",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "ギャク"
+    ],
+    "kunyomi": [
+      "さか",
+      "さか.らう"
+    ],
+    "meanings_en": [
+      "inverted",
+      "reverse",
+      "opposite",
+      "wicked"
+    ],
+    "meanings_th": [
+      "ฤvertedษี",
+      "ย้อนกลับ",
+      "ตรงกันข้าม"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ゲキ"
+    ],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "造",
+    "codepoint": "9020",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "つく.る"
+    ],
+    "meanings_en": [
+      "create",
+      "make",
+      "structure",
+      "physique"
+    ],
+    "meanings_th": [
+      "สร้าง",
+      "ทำให้",
+      "โครงสร้าง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "いた.る",
+      "な.る"
+    ]
+  },
+  {
+    "kanji": "過",
+    "codepoint": "904E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "すぎる",
+      "あやまち",
+      "すごす",
+      "あやまつ"
+    ],
+    "meanings_en": [
+      "overdo",
+      "exceed",
+      "go beyond",
+      "error"
+    ],
+    "meanings_th": [
+      "หักโหม",
+      "เกิน",
+      "ไปไกลกว่านั้น"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "適",
+    "codepoint": "9069",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 162,
+    "radicalChar": "辵",
+    "onyomi": [
+      "テキ"
+    ],
+    "kunyomi": [
+      "かな.う"
+    ],
+    "meanings_en": [
+      "suitable",
+      "occasional",
+      "rare",
+      "qualified",
+      "capable"
+    ],
+    "meanings_th": [
+      "เหมาะสม",
+      "เป็นครั้งคราว",
+      "หายาก"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "セキ"
+    ],
+    "kunyomi_hyougai": [
+      "かな.う",
+      "たまたま"
+    ]
+  },
+  {
+    "kanji": "酸",
+    "codepoint": "9178",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 164,
+    "radicalChar": "酉",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "す.い"
+    ],
+    "meanings_en": [
+      "acid",
+      "bitterness",
+      "sour",
+      "tart"
+    ],
+    "meanings_th": [
+      "กรด",
+      "ความขมขื่น",
+      "เปรี้ยว"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "す",
+      "つら.い"
+    ]
+  },
+  {
+    "kanji": "鉱",
+    "codepoint": "9271",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 167,
+    "radicalChar": "金",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "あらがね"
+    ],
+    "meanings_en": [
+      "mineral",
+      "ore"
+    ],
+    "meanings_th": [
+      "แร่"
+    ],
+    "joyo": true,
+    "traditionalForm": "鑛",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あらがね"
+    ]
+  },
+  {
+    "kanji": "銅",
+    "codepoint": "9285",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 1,
+    "kanken": "6",
+    "radical": 167,
+    "radicalChar": "金",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "あかがね"
+    ],
+    "meanings_en": [
+      "copper"
+    ],
+    "meanings_th": [
+      "ทองแดง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あかがね"
+    ]
+  },
+  {
+    "kanji": "防",
+    "codepoint": "9632",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 170,
+    "radicalChar": "阜",
+    "onyomi": [
+      "ボウ"
+    ],
+    "kunyomi": [
+      "ふせ.ぐ"
+    ],
+    "meanings_en": [
+      "ward off",
+      "defend",
+      "protect",
+      "resist"
+    ],
+    "meanings_th": [
+      "ปัด",
+      "ปกป้อง"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [
+      "ホウ"
+    ],
+    "kunyomi_hyougai": [
+      "まも.る"
+    ]
+  },
+  {
+    "kanji": "限",
+    "codepoint": "9650",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 170,
+    "radicalChar": "阜",
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "かぎ.る"
+    ],
+    "meanings_en": [
+      "limit",
+      "restrict",
+      "to best of ability"
+    ],
+    "meanings_th": [
+      "ขีด จำกัด",
+      "จำกัด",
+      "อย่างเต็มความสามารถ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "かぎ.り",
+      "きり"
+    ]
+  },
+  {
+    "kanji": "険",
+    "codepoint": "967A",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 170,
+    "radicalChar": "阜",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "けわ.しい"
+    ],
+    "meanings_en": [
+      "precipitous",
+      "inaccessible place",
+      "impregnable position",
+      "steep place",
+      "sharp eyes"
+    ],
+    "meanings_th": [
+      "สูงชัน",
+      "สถานที่ที่ไม่สามารถเข้าถึงได้",
+      "ตำแหน่งที่เข้มแข็ง"
+    ],
+    "joyo": true,
+    "traditionalForm": "險",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": []
+  },
+  {
+    "kanji": "際",
+    "codepoint": "969B",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 3,
+    "kanken": "6",
+    "radical": 170,
+    "radicalChar": "阜",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "きわ"
+    ],
+    "meanings_en": [
+      "occasion",
+      "side",
+      "edge",
+      "verge",
+      "dangerous",
+      "adventurous",
+      "indecent",
+      "time",
+      "when"
+    ],
+    "meanings_th": [
+      "โอกาส",
+      "ด้านข้าง",
+      "ขอบ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あい",
+      "まじ.わる"
+    ]
+  },
+  {
+    "kanji": "雑",
+    "codepoint": "96D1",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 172,
+    "radicalChar": "隹",
+    "onyomi": [
+      "ザツ",
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "まじ.える",
+      "まじ.る"
+    ],
+    "meanings_en": [
+      "miscellaneous"
+    ],
+    "meanings_th": [
+      "เบ็ดเตล็ด"
+    ],
+    "joyo": true,
+    "traditionalForm": "雜",
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ま.じる",
+      "ま.ぜる"
+    ]
+  },
+  {
+    "kanji": "非",
+    "codepoint": "975E",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 175,
+    "radicalChar": "非",
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "あら.ず"
+    ],
+    "meanings_en": [
+      "un-",
+      "mistake",
+      "negative",
+      "injustice",
+      "non-"
+    ],
+    "meanings_th": [
+      "ยกเลิก",
+      "ความผิดพลาด",
+      "ลบ"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "あら.ず",
+      "そし.る",
+      "わる.い"
+    ]
+  },
+  {
+    "kanji": "領",
+    "codepoint": "9818",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 181,
+    "radicalChar": "頁",
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [
+      "えり"
+    ],
+    "meanings_en": [
+      "jurisdiction",
+      "dominion",
+      "territory",
+      "fief",
+      "reign"
+    ],
+    "meanings_th": [
+      "เขตอำนาจศาล",
+      "การปกครอง",
+      "อาณาเขต"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "うなじ",
+      "えり",
+      "う.ける"
+    ]
+  },
+  {
+    "kanji": "額",
+    "codepoint": "984D",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 181,
+    "radicalChar": "頁",
+    "onyomi": [
+      "ガク"
+    ],
+    "kunyomi": [
+      "ひたい"
+    ],
+    "meanings_en": [
+      "forehead",
+      "tablet",
+      "plaque",
+      "framed picture",
+      "sum",
+      "amount",
+      "volume"
+    ],
+    "meanings_th": [
+      "หน้าผาก",
+      "แท็บเล็ต",
+      "คราบจุลินทรีย์"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "ぬか",
+      "ぬか.ずく"
+    ]
+  },
+  {
+    "kanji": "飼",
+    "codepoint": "98FC",
+    "strokes": 5,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 184,
+    "radicalChar": "食",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "か.う"
+    ],
+    "meanings_en": [
+      "domesticate",
+      "raise",
+      "keep",
+      "feed"
+    ],
+    "meanings_th": [
+      "เลี้ยงในบ้าน",
+      "ยก",
+      "เก็บไว้"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [],
+    "examples": [],
+    "onyomi_hyougai": [],
+    "kunyomi_hyougai": [
+      "やしな.う"
+    ]
+  },
+  {
+    "kanji": "夢",
+    "codepoint": "5922",
+    "strokes": 13,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 36,
+    "radicalChar": "夕",
+    "onyomi": [
+      "ム"
+    ],
+    "kunyomi": [
+      "ゆめ"
+    ],
+    "meanings_en": [
+      "dream",
+      "vision",
+      "illusion"
+    ],
+    "meanings_th": [
+      "ความฝัน",
+      "ฝัน",
+      "ภาพลวงตา"
+    ],
+    "joyo": true,
+    "traditionalForm": null,
+    "handwritingTip": null,
+    "nanori": [
+      "ゆ"
+    ],
+    "examples": [
+      {
+        "word": "悪夢",
+        "reading": "あくむ",
+        "meaning_en": "nightmare",
+        "meaning_th": "ฝันร้าย",
+        "sentence_ja": "怖い悪夢を見て夜中に目が覚めました。",
+        "sentence_th": "ฉันฝันร้ายจนสะดุ้งตื่นขึ้นมากลางดึก",
+        "sentence_ruby": "<ruby>怖<rt>こわ</rt></ruby>い<ruby>悪夢<rt>あくむ</rt></ruby>を<ruby>見<rt>み</rt></ruby>て<ruby>夜中<rt>よなか</rt></ruby>に<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めました。"
+      },
+      {
+        "word": "夢中",
+        "reading": "むちゅう",
+        "meaning_en": "absorbed, engrossed",
+        "meaning_th": "หลงใหล, จดจ่ออย่างใจจดใจจ่อ",
+        "sentence_ja": "子供たちはゲームに夢中になっています。",
+        "sentence_th": "พวกเด็กๆ กำลังเล่นเกมอย่างใจจดใจจ่อ",
+        "sentence_ruby": "<ruby>子供<rt>こども</rt></ruby>たちはゲームに<ruby>夢中<rt>むちゅう</rt></ruby>になっています。"
+      }
+    ],
+    "onyomi_hyougai": [
+      "ボウ"
+    ],
+    "kunyomi_hyougai": [
+      "ゆめ.みる",
+      "くら.い"
+    ]
+  },
+  {
+    "kanji": "桜",
+    "codepoint": "685C",
+    "strokes": 10,
+    "grade": 5,
+    "jlpt": 2,
+    "kanken": "6",
+    "radical": 75,
+    "radicalChar": "木",
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "さくら"
+    ],
+    "meanings_en": [
+      "cherry blossom",
+      "cherry tree"
+    ],
+    "meanings_th": [
+      "ดอกซากุระ",
+      "ต้นซากุระ"
+    ],
+    "joyo": true,
+    "traditionalForm": "櫻",
+    "handwritingTip": null,
+    "nanori": [
+      "お",
+      "さく"
+    ],
+    "examples": [
+      {
+        "word": "桜前線",
+        "reading": "さくらぜんせん",
+        "meaning_en": "cherry blossom front",
+        "meaning_th": "แนวพยากรณ์ซากุระบาน",
+        "sentence_ja": "春のニュースで桜前線の情報が報じられました。",
+        "sentence_th": "ในข่าวช่วงฤดูใบไม้ผลิมีการรายงานแนวพยากรณ์ซากุระบาน",
+        "sentence_ruby": "<ruby>春<rt>はる</rt></ruby>のニュースで<ruby>桜前線<rt>さくらぜんせん</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>が<ruby>報<rt>ほう</rt></ruby>じられました。"
+      },
+      {
+        "word": "夜桜",
+        "reading": "よざくら",
+        "meaning_en": "cherry blossoms at night",
+        "meaning_th": "ซากุระยามค่ำคืน",
+        "sentence_ja": "ライトアップされた夜桜はとても幻想的です。",
+        "sentence_th": "ซากุระยามค่ำคืนที่ประดับไฟดูสวยงามราวกับภาพฝัน",
+        "sentence_ruby": "ライトアップされた<ruby>夜桜<rt>よざくら</rt></ruby>はとても<ruby>幻想的<rt>げんそうてき</rt></ruby>です。"
+      }
+    ],
+    "onyomi_hyougai": [
+      "ヨウ"
+    ],
+    "kunyomi_hyougai": []
+  }
+]

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คู่มือลักษณะตัวอักษรและลายมือ (文化庁 字体・字形指針) | KanjiThai</title>
+  <meta name="description" content="คู่มืออธิบายความแตกต่างระหว่างฟอนต์พิมพ์กับลายมือเขียนคันจิ ตามเกณฑ์ทางการของทบวงวัฒนธรรมญี่ปุ่น (文化庁 平成28年指針)">
+  
+  <!-- PWA Manifest & Icons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+
+  <!-- Theme Setup (Anti-FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || 'spring';
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="handwriting-guide">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- 1. Left: Mobile Navigation Menu Toggle (Hamburger) -->
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Right: Theme Switcher -->
+      <div class="nav-actions">
+                <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">常用漢字表の字体・字形に関する指針</h1>
+        <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto;">
+          คู่มือและแนวทางการเขียนคันจิด้วยลายมือ vs ฟอนต์ตัวพิมพ์ อ้างอิงจากรายงานอย่างเป็นทางการของทบวงวัฒนธรรมญี่ปุ่น (文化庁 平成28年報告)
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: var(--spacing-xl); max-width: 900px;">
+
+      <!-- Core Principle Card -->
+      <div class="detail-card" style="margin-bottom: var(--spacing-xl); background: var(--color-surface-2); border-left: 4px solid var(--color-accent);">
+        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-xs);">
+          💡 หลักการพื้นฐานสำคัญ 3 ประการ (文化庁 基本原則)
+        </h2>
+        <ol style="padding-left: var(--spacing-lg); line-height: 1.8; color: var(--color-text);">
+          <li><strong>ตัวพิมพ์กับลายมือมีธรรมเนียมต่างกัน:</strong> ฟอนต์คอมพิวเตอร์ (เช่น Mincho หรือ Gothic) ออกแบบมาเพื่อความสวยงามในการเรียงพิมพ์ ไม่จำเป็นต้องลอกเลียนแบบหัวแหลมหรือเชิงมุมทุกจุดในการเขียนด้วยมือ</li>
+          <li><strong>ยึดโครงสร้างตัวอักษร (骨組み) เป็นหลัก:</strong> ตราบใดที่โครงสร้างความหมายไม่ผิดเพี้ยน ไม่สร้างความสับสนกับคันจิตัวอื่น ถือว่าถูกต้อง</li>
+          <li><strong>การตวัดหรือหยุดเส้นไม่ได้มีเพียงแบบเดียวที่ถูก:</strong> การตวัดปลายเส้นขึ้น (はね) หรือหยุดนิ่ง (とめ) เป็นไปตามธรรมชาติการเขียน ยอมรับได้ทั้งสองแบบ</li>
+        </ol>
+      </div>
+
+      <!-- Rules List Container -->
+      <div id="handwriting-rules-container" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+        <div class="skeleton" style="height: 300px;"></div>
+      </div>
+
+      <!-- Comparison Matrix Table Card -->
+      <div class="detail-card" style="margin-top: var(--spacing-2xl);">
+        <h2 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-sm); color: var(--color-accent);">
+          📊 สรุปความแตกต่างของคำศัพท์พบบ่อย
+        </h2>
+        <div class="table-responsive-wrapper">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: var(--font-size-sm); min-width: 500px;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--color-border); background: var(--color-surface-2);">
+                <th style="padding: 10px;">คันจิ</th>
+                <th style="padding: 10px;">ตัวพิมพ์ Mincho (印刷文字)</th>
+                <th style="padding: 10px;">ลายมือ Kaisho (手書き文字)</th>
+                <th style="padding: 10px;">คำวินิจฉัยของ 文化庁</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--color-border-subtle);">
+                <td style="padding: 10px; font-size: 1.5rem; font-family: var(--font-display-jp); font-weight: 700;">木・林・森</td>
+                <td style="padding: 10px;">เส้นตั้งลากตรงหยุดนิ่ง</td>
+                <td style="padding: 10px;">หยุดนิ่ง (とめ) หรือ ตวัดปลาย (はね)</td>
+                <td style="padding: 10px; color: var(--color-badge-n4); font-weight: 600;">✓ ถูกต้องทั้งสองแบบ</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border-subtle);">
+                <td style="padding: 10px; font-size: 1.5rem; font-family: var(--font-display-jp); font-weight: 700;">令・鈴・冷</td>
+                <td style="padding: 10px;">ด้านล่างเป็นเส้นขวาง + 卩</td>
+                <td style="padding: 10px;">ด้านล่างเขียนเป็นจุด + เส้น マ</td>
+                <td style="padding: 10px; color: var(--color-badge-n4); font-weight: 600;">✓ ถูกต้องทั้งสองแบบ (แบบ マ ใช้สอนใน รร. ประถม)</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border-subtle);">
+                <td style="padding: 10px; font-size: 1.5rem; font-family: var(--font-display-jp); font-weight: 700;">雨・雪・雲</td>
+                <td style="padding: 10px;">จุดด้านในเป็นเส้นปัดเฉียง</td>
+                <td style="padding: 10px;">แต้มจุดกลม หรือ ปัดเฉียง</td>
+                <td style="padding: 10px; color: var(--color-badge-n4); font-weight: 600;">✓ ถูกต้องทั้งสองแบบ</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border-subtle);">
+                <td style="padding: 10px; font-size: 1.5rem; font-family: var(--font-display-jp); font-weight: 700;">八・文・月</td>
+                <td style="padding: 10px;">เส้นติดชิดกัน</td>
+                <td style="padding: 10px;">เว้นช่องว่างเล็กน้อยตามจังหวะมือ</td>
+                <td style="padding: 10px; color: var(--color-badge-n4); font-weight: 600;">✓ ยอมรับได้ ไม่ถือเป็นข้อผิดพลาด</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลอ้างอิงจากรายงานทบวงวัฒนธรรมญี่ปุ่น (文化庁 平成28年2月29日 常用漢字表の字体・字形に関する指針) | KanjiThai
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('handwriting-rules-container');
+      try {
+        const res = await fetch('./data/handwriting-rules.json');
+        const rules = await res.json();
+
+        container.innerHTML = rules.map(rule => `
+          <div class="detail-card">
+            <div class="detail-card-title">
+              <span style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 1.5rem;">${rule.icon}</span>
+                <span>${rule.titleTh}</span>
+              </span>
+              <span class="badge badge-joyo">${rule.category}</span>
+            </div>
+            
+            <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-sm); font-family: var(--font-jp);">
+              หัวข้อภาษาญี่ปุ่น: <strong>${rule.titleJp}</strong>
+            </div>
+
+            <p style="font-size: 1rem; line-height: 1.6; margin-bottom: var(--spacing-md); color: var(--color-text);">
+              ${rule.summaryTh}
+            </p>
+
+            <div style="background: var(--color-surface-2); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--border-radius-sm); margin-bottom: var(--spacing-md); font-size: var(--font-size-sm);">
+              <strong>คำชี้แจงทางการ (文化庁):</strong> ${rule.officialPolicyTh}
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--spacing-xs); flex-wrap: wrap;">
+              <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted);">ตัวอย่างคันจิที่เกี่ยวข้อง:</span>
+              ${rule.examples.map(k => `
+                <a href="kanji.html?k=${encodeURIComponent(k)}" class="filter-chip" style="font-family: var(--font-display-jp); font-size: 1.2rem; padding: 2px 10px;">
+                  ${k}
+                </a>
+              `).join('')}
+            </div>
+          </div>
+        `).join('');
+
+      } catch (err) {
+        container.innerHTML = '<div style="color: red; text-align: center;">ไม่สามารถโหลดข้อมูลคู่มือลายมือได้</div>';
+      }
+    });
+  </script>
+</body>
+</html>

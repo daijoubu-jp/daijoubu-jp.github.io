@@ -1,0 +1,87 @@
+/* ==========================================================================
+   SUMMER / MATSURI THEME (夏・祭り)
+   Aesthetic: Festival night, indigo yukata, lantern glow, vermilion torii
+   ========================================================================== */
+
+/* --- Light Mode (Sunny Summer Matsuri / 夏祭り 昼) --- */
+[data-theme="summer"][data-mode="light"] {
+  --color-bg: #FFFBEB;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #FEF3C7;
+  --color-surface-hover: #FDE68A;
+  --color-border: #FCD34D;
+  --color-border-subtle: #FEF3C7;
+  
+  --color-text: #451A03;
+  --color-text-muted: #92400E;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #EA580C;
+  --color-accent-hover: #C2410C;
+  --color-accent-light: #FFEDD5;
+  --color-accent-2: #EAB308;
+  
+  --color-kanji-display: #7C2D12;
+  --color-card-border: rgba(234, 88, 12, 0.2);
+  --color-shadow: rgba(69, 26, 3, 0.08);
+  --color-shadow-hover: rgba(234, 88, 12, 0.2);
+
+  --gradient-hero: linear-gradient(135deg, rgba(254, 243, 199, 0.6) 0%, rgba(255, 251, 235, 0.9) 50%, rgba(255, 237, 213, 0.6) 100%);
+  --theme-banner-bg: #FEF3C7;
+  --theme-icon: '🏮';
+  --theme-name-en: 'Summer Matsuri (Day)';
+  --theme-name-th: 'ฤดูร้อน (มัตสึริกลางวัน)';
+  --theme-name-jp: '夏祭り (昼)';
+}
+
+/* --- Dark Mode (Matsuri Night / 夏祭り 夜 - Default for Summer) --- */
+[data-theme="summer"],
+[data-theme="summer"][data-mode="dark"] {
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-surface-2: #334155;
+  --color-surface-hover: #475569;
+  --color-border: #334155;
+  --color-border-subtle: #1E293B;
+  
+  --color-text: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  --color-text-inverse: #0F172A;
+  
+  --color-accent: #F97316;
+  --color-accent-hover: #EA580C;
+  --color-accent-light: rgba(249, 115, 22, 0.25);
+  --color-accent-2: #FACC15;
+  
+  --color-kanji-display: #FDBA74;
+  --color-card-border: rgba(249, 115, 22, 0.3);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-shadow-hover: rgba(249, 115, 22, 0.3);
+
+  --gradient-hero: linear-gradient(135deg, #1E1B4B 0%, #0F172A 60%, #431407 100%);
+  --theme-banner-bg: #1E293B;
+  --theme-icon: '🏮';
+  --theme-name-en: 'Summer (Matsuri Night)';
+  --theme-name-th: 'ฤดูร้อน (มัตสึริราตรี)';
+  --theme-name-jp: '夏祭り (夜)';
+}
+
+[data-theme="summer"] .hero-section::before {
+  content: '🏮';
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 8px #F97316);
+}
+
+[data-theme="summer"] .hero-section::after {
+  content: '🏮';
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 8px #F97316);
+}

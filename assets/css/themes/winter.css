@@ -1,0 +1,85 @@
+/* ==========================================================================
+   WINTER / YUKI THEME (冬・雪)
+   Aesthetic: Pristine snow, cool slate blue, charcoal calligraphy ink
+   ========================================================================== */
+
+/* --- Light Mode (Default) --- */
+[data-theme="winter"],
+[data-theme="winter"][data-mode="light"] {
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #EEF2F6;
+  --color-surface-hover: #E2E8F0;
+  --color-border: #CBD5E1;
+  --color-border-subtle: #E2E8F0;
+  
+  --color-text: #1E293B;
+  --color-text-muted: #64748B;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #0284C7;
+  --color-accent-hover: #0369A1;
+  --color-accent-light: #E0F2FE;
+  --color-accent-2: #0D9488;
+  
+  --color-kanji-display: #0F172A;
+  --color-card-border: rgba(2, 132, 199, 0.2);
+  --color-shadow: rgba(15, 23, 42, 0.06);
+  --color-shadow-hover: rgba(2, 132, 199, 0.2);
+
+  --gradient-hero: linear-gradient(135deg, rgba(224, 242, 254, 0.8) 0%, rgba(248, 250, 252, 0.9) 60%, rgba(204, 251, 241, 0.4) 100%);
+  --theme-banner-bg: #EEF2F6;
+  --theme-icon: '❄️';
+  --theme-name-en: 'Winter (Yuki)';
+  --theme-name-th: 'ฤดูหนาว (หิมะยูกิ)';
+  --theme-name-jp: '冬 (雪)';
+}
+
+/* --- Dark Mode (Arctic Midnight / 雪月夜) --- */
+[data-theme="winter"][data-mode="dark"] {
+  --color-bg: #0B132B;
+  --color-surface: #1C2541;
+  --color-surface-2: #243356;
+  --color-surface-hover: #31436E;
+  --color-border: #3A506B;
+  --color-border-subtle: #1C2541;
+  
+  --color-text: #F0F6FC;
+  --color-text-muted: #94A3B8;
+  --color-text-inverse: #0B132B;
+  
+  --color-accent: #38BDF8;
+  --color-accent-hover: #7DD3FC;
+  --color-accent-light: rgba(56, 189, 248, 0.25);
+  --color-accent-2: #2DD4BF;
+  
+  --color-kanji-display: #BAE6FD;
+  --color-card-border: rgba(56, 189, 248, 0.3);
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-shadow-hover: rgba(56, 189, 248, 0.35);
+
+  --gradient-hero: linear-gradient(135deg, #1C2541 0%, #0B132B 60%, #0c2340 100%);
+  --theme-banner-bg: #1C2541;
+  --theme-icon: '❄️';
+  --theme-name-en: 'Midnight Frost';
+  --theme-name-th: 'เหมันต์ราตรี (雪月夜)';
+  --theme-name-jp: '雪月夜 (ゆきづきよ)';
+}
+
+[data-theme="winter"] .hero-section::before {
+  content: '❄️';
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  font-size: 1.4rem;
+  opacity: 0.35;
+}
+
+[data-theme="winter"] .hero-section::after {
+  content: '❄️';
+  position: absolute;
+  bottom: 20%;
+  right: 7%;
+  font-size: 1.2rem;
+  opacity: 0.35;
+}

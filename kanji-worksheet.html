@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ตัวสร้างใบงานคัดลายมือคันจิ (Kanji Practice Worksheet Maker) - สร้างใบงานฝึกคัดคันจิ A4 พร้อมเส้นไกด์กากบาท เส้นดาวรอยปะ และสั่งพิมพ์หรือเซฟ PDF ได้ทันที">
+  <meta name="theme-color" content="#FFF9FB">
+  <title>ตัวสร้างใบงานคัดลายมือคันจิ (Kanji Worksheet Maker) | KanjiThai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+</head>
+<body data-page="worksheet">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" style="padding: 2.5rem 0 1.5rem;">
+      <div class="container" style="text-align: center;">
+        <h1 class="hero-title" style="font-size: clamp(1.85rem, 4vw, 2.75rem); margin-bottom: 0.5rem;">
+          ตัวสร้างใบงานคัดลายมือคันจิ <br>
+          <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--color-accent); font-weight: 600;">(Kanji Practice Worksheet Maker • 漢字練習帳作成)</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 780px; margin: 0 auto 1.5rem; font-size: var(--font-size-sm); color: var(--color-text-muted);">
+          สร้างใบงานแบบฝึกหัดคัดคันจิขนาด A4 ได้เองตามต้องการ เลือกตัวอักษร เส้นไกด์ และพิมพ์เป็นเอกสารหรือบันทึกเป็น PDF ได้ทันทีในคลิกเดียว
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container" style="padding-top: var(--spacing-sm); max-width: 960px;">
+      
+      <!-- Generator Controls Card (Screen Only) -->
+      <div class="ws-controls-card">
+        <h2 style="font-size: 1.1rem; margin-bottom: var(--spacing-md); color: var(--color-accent); display: flex; align-items: center; gap: 8px;">
+          <span>⚙️</span> ปรับแต่งใบงานคัดลายมือ
+        </h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+          
+          <div>
+            <label for="ws-preset-select" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px;">ชุดตัวเลือกด่วน:</label>
+            <select id="ws-preset-select" style="width: 100%; padding: 8px 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-2); color: var(--color-text);">
+              <option value="custom" selected>กำหนดคันจิเอง (Custom)</option>
+              <option value="grade-1">ประถม 1 (小1 - 80 ตัว)</option>
+              <option value="grade-2">ประถม 2 (小2 - 160 ตัว)</option>
+              <option value="grade-3">ประถม 3 (小3 - 200 ตัว)</option>
+              <option value="jlpt-5">JLPT N5</option>
+              <option value="jlpt-4">JLPT N4</option>
+              <option value="jlpt-3">JLPT N3</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="ws-grid-style" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px;">รูปแบบเส้นไกด์ (Grid Guide):</label>
+            <select id="ws-grid-style" style="width: 100%; padding: 8px 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-2); color: var(--color-text);">
+              <option value="cross" selected>田 เส้นประ 4 ช่อง (十字リーダー)</option>
+              <option value="star">米 เส้นประ 8 ทิศ (米字リーダー)</option>
+              <option value="none">▢ กล่องสี่เหลี่ยมธรรมดา (Plain Box)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="ws-trace-count" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px;">จำนวนช่องตัวอักษรจาง (รอยปะ):</label>
+            <select id="ws-trace-count" style="width: 100%; padding: 8px 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-2); color: var(--color-text);">
+              <option value="1">1 ช่อง (ฝึกเขียนเองเร็วขึ้น)</option>
+              <option value="2" selected>2 ช่อง (มาตรฐานแนะนำ)</option>
+              <option value="3">3 ช่อง (สำหรับผู้เริ่มต้น)</option>
+              <option value="5">5 ช่อง (เน้นลากเส้นตามรอย)</option>
+              <option value="9">ทุกช่อง (คัดตามรอยทั้งหมด)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div style="margin-bottom: var(--spacing-md);">
+          <label for="ws-custom-input" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px;">ตัวอักษรคันจิที่ต้องการคัด (คัดแถวละ 1 ตัวอักษร):</label>
+          <input 
+            type="text" 
+            id="ws-custom-input" 
+            value="日本語漢字学習" 
+            placeholder="พิมพ์หรือวางตัวคันจิที่ต้องการ เช่น 日本語学習..." 
+            style="width: 100%; padding: 10px 14px; font-size: 1.1rem; font-family: var(--font-display-jp); border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-2); color: var(--color-text); box-sizing: border-box;"
+          >
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-sm);">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; cursor: pointer;">
+            <input type="checkbox" id="ws-show-info" checked>
+            <span>แสดงเสียงอ่าน (On/Kun) และคำแปลไทยกำกับหัวแถว</span>
+          </label>
+
+          <div style="display: flex; gap: var(--spacing-sm);">
+            <button type="button" id="ws-generate-btn" class="action-btn" style="padding: 8px 18px; border-radius: var(--border-radius-sm); cursor: pointer;">
+              🔄 อัปเดตตัวอย่าง
+            </button>
+            <button type="button" id="ws-print-btn" style="padding: 8px 22px; border-radius: var(--border-radius-sm); background: #10b981; color: #fff; font-weight: 700; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              <span>🖨️</span> พิมพ์ / เซฟเป็น PDF (A4)
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Printable Worksheet Pages -->
+      <div class="ws-mobile-hint">
+        📱 บนมือถือสามารถปัดซ้าย-ขวาเพื่อดูตัวอย่างกระดาษ A4 เต็มแผ่น หรือกดพิมพ์/PDF ด้านบน
+      </div>
+      <div id="worksheet-pages-container">
+        <div class="skeleton" style="height: 500px; border-radius: var(--border-radius);"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ระบบสร้างใบงานคัดลายมือรองรับขนาดกระดาษมาตรฐาน A4 สากล | KanjiThai © 2026
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

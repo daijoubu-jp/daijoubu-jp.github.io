@@ -1,0 +1,259 @@
+/* ==========================================================================
+   KANJI DICTIONARY - BASE STYLES & DESIGN TOKENS
+   Fonts: Noto Sans, Noto Sans JP, Noto Sans Thai Looped, Noto Serif JP
+   ========================================================================== */
+
+/* Google Fonts removed - now in HTML */
+
+/* --- CSS Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Default / Spring Palette fallback */
+  --color-bg: #FFF9FB;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #FFF0F5;
+  --color-surface-hover: #FFE4EC;
+  --color-border: #F3D3DF;
+  --color-border-subtle: #FAECF2;
+  
+  --color-text: #4A343D;
+  --color-text-muted: #8E6C7B;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #E86F88;
+  --color-accent-hover: #D4546F;
+  --color-accent-light: #FFDDE6;
+  --color-accent-2: #6EA888;
+  
+  --color-kanji-display: #38242D;
+  --color-card-border: rgba(232, 111, 136, 0.2);
+  --color-shadow: rgba(74, 52, 61, 0.08);
+  --color-shadow-hover: rgba(232, 111, 136, 0.2);
+
+  /* Level Badges */
+  --color-badge-n1: #D32F2F;
+  --color-badge-n2: #E65100;
+  --color-badge-n3: #F57F17;
+  --color-badge-n4: #2E7D32;
+  --color-badge-n5: #1565C0;
+  --color-badge-kanken: #5E35B1;
+  --color-badge-joyo: #00838F;
+
+  /* Typography Stack */
+  --font-body: 'Noto Sans', 'Noto Sans Thai Looped', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display-jp: 'Noto Serif JP', 'Noto Sans JP', serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+  --font-thai: 'Noto Sans Thai Looped', sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-kanji-card: clamp(2.5rem, 5vw, 3.25rem);
+  --font-size-kanji-hero: clamp(5rem, 15vw, 9rem);
+
+  /* Spacing */
+  --spacing-3xs: 0.125rem;
+  --spacing-2xs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Layout */
+  --max-width: 1240px;
+  --header-height: 70px;
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius: 12px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-full: 9999px;
+  --line-height-base: 1.6;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px var(--color-shadow);
+  --shadow-md: 0 4px 12px var(--color-shadow);
+  --shadow-lg: 0 8px 24px var(--color-shadow);
+  --shadow-card-hover: 0 10px 25px var(--color-shadow-hover);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Theme Visual Decor */
+  --gradient-hero: linear-gradient(135deg, rgba(232, 111, 136, 0.12) 0%, rgba(255, 240, 245, 0.6) 100%);
+  --theme-banner-bg: #FFF0F5;
+  --theme-icon: '🌸';
+  --theme-name-en: 'Spring (Sakura)';
+  --theme-name-th: 'ฤดูใบไม้ผลิ (ซากุระ)';
+  --theme-name-jp: '春 (さくら)';
+}
+
+/* Base Elements */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+img, svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* Utility Containers */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.main-content {
+  flex: 1 0 auto;
+  padding-bottom: var(--spacing-3xl);
+}
+
+/* Helper Language Classes */
+.lang-jp {
+  font-family: var(--font-jp);
+}
+
+.lang-th {
+  font-family: var(--font-thai);
+}
+
+.kanji-text {
+  font-family: var(--font-display-jp);
+}
+
+.visually-hidden, .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
+  }
+}

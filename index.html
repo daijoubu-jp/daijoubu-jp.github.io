@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>พจนานุกรมคันจิ สำหรับคนไทย | Thai-Japanese Kanji Dictionary (漢字辞典)</title>
+  <meta name="description" content="พจนานุกรมคันจิออนไลน์สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย ครอบคลุมคันจิโจโย 2,136 ตัว และคันจิคันเค็นระดับสูง พร้อมเสียงอ่าน ความหมายภาษาไทย และลำดับขีด">
+  <!-- SEO & Social Sharing (Open Graph) -->
+  <meta property="og:title" content="พจนานุกรมคันจิ สำหรับคนไทย | KanjiThai">
+  <meta property="og:description" content="พจนานุกรมคันจิออนไลน์สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย ครอบคลุมคันจิโจโย 2,136 ตัว และคันจิคันเค็นระดับสูง">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06f22.svg">
+  <meta name="twitter:card" content="summary">
+  
+  <!-- PWA Manifest & Icons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+
+  <!-- Theme Setup (Anti-FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || 'spring';
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- 1. Left: Mobile Navigation Menu Toggle (Hamburger) -->
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Right: Theme Switcher -->
+      <div class="nav-actions">
+                <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Hero Search Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title kanji-text">漢字辞典 for Thai Learners</h1>
+        <p class="hero-subtitle">
+          พจนานุกรมคันจิครอบคลุมทุกระดับ JLPT (N5–N1) และคันเค็น (漢検 10級 ถึง 1級 รวมกว่า 5,800+ ตัวอักษร) แปลความหมายเป็นภาษาไทยอย่างละเอียด อ้างอิงเกณฑ์ทางการของทบวงวัฒนธรรมญี่ปุ่น (文化庁)
+        </p>
+
+        <!-- Search Box -->
+        <div class="search-box-wrapper">
+          <form id="hero-search-form" class="search-input-group">
+            <span style="font-size: 1.25rem; color: var(--color-text-muted); margin-right: var(--spacing-xs);">🔍</span>
+            <input 
+              type="search" 
+              id="hero-search-input" 
+              class="search-input" 
+              placeholder="ค้นหาด้วยคันจิ (愛), เสียงอ่าน (あい, ai), ความหมายภาษาไทย (รัก) หรืออังกฤษ (love)..." 
+              autocomplete="off"
+              aria-label="ค้นหาคันจิ"
+            >
+            <button type="button" class="search-clear-btn" id="search-clear-btn" aria-label="ล้างข้อความ">✕</button>
+            <button type="submit" class="search-submit-btn">ค้นหา</button>
+          </form>
+
+          <!-- Autocomplete Dropdown -->
+          <div class="autocomplete-dropdown" id="hero-autocomplete"></div>
+        </div>
+
+        <!-- Quick Filter Chips -->
+        <div class="quick-filters">
+          <span style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-right: 4px; align-self: center;">ทางลัด:</span>
+          <a href="browse.html?jlpt=5" class="filter-chip">N5 (พื้นฐาน)</a>
+          <a href="browse.html?jlpt=4" class="filter-chip">N4 (เบื้องต้น)</a>
+          <a href="browse.html?jlpt=3" class="filter-chip">N3 (กลาง)</a>
+          <a href="browse.html?jlpt=2" class="filter-chip">N2 (สูง)</a>
+          <a href="browse.html?jlpt=1" class="filter-chip">N1 (เชี่ยวชาญ)</a>
+          <a href="browse.html?kanken=jun1,1" class="filter-chip">🏆 漢検 準1級・1級</a>
+          <a href="special-readings.html" class="filter-chip" style="background-color: var(--color-surface-hover); border-color: var(--color-accent);">✨ คำอ่านพิเศษ (付表)</a>
+          <a href="radicals.html" class="filter-chip" style="background-color: var(--color-surface-hover); border-color: var(--color-accent);">部 หมวดอักษร (214 ตัว)</a>
+          <a href="kanji-worksheet.html" class="filter-chip" style="background-color: var(--color-surface-hover); border-color: var(--color-accent);">🖨️ ใบงานคัดลายมือ (A4)</a>
+          <a href="handwriting-guide.html" class="filter-chip" style="background-color: var(--color-surface-hover); border-color: var(--color-accent);">✍️ คู่มือลายมือ (文化庁)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="container" style="padding-top: var(--spacing-2xl);">
+      
+      <!-- Favorite Kanji Section (Shown if user has 1+ favorites) -->
+      <section id="favorites-section" style="margin-bottom: var(--spacing-xl); display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--spacing-xs);">
+          <div style="font-size: var(--font-size-sm); font-weight: 700; color: var(--color-text);">
+            ⭐ คันจิในรายการโปรด (Favorites):
+          </div>
+          <a href="browse.html?preset=favorites" style="font-size: var(--font-size-xs); color: var(--color-accent); text-decoration: none; font-weight: 600;">
+            ดูทั้งหมดในคลังศัพท์ →
+          </a>
+        </div>
+        <div id="favorites-list" style="display: flex; gap: var(--spacing-xs); flex-wrap: wrap; align-items: center;"></div>
+      </section>
+
+      <!-- Recent Searches -->
+      <section style="margin-bottom: var(--spacing-xl); display: none;">
+        <div style="font-size: var(--font-size-sm); font-weight: 700; margin-bottom: var(--spacing-xs); color: var(--color-text-muted);">
+          🕒 ค้นหาล่าสุด:
+        </div>
+        <div id="recent-searches-list" style="display: flex; gap: var(--spacing-xs); flex-wrap: wrap;"></div>
+      </section>
+
+      <!-- Kanji of the Day -->
+      <section>
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">✨ คันจิประจำวัน (Kanji of the Day)</h2>
+            <span class="section-sub">เรียนรู้คันจิวันละ 1 ตัวอักษรเพื่อเพิ่มพูนคลังคำศัพท์</span>
+          </div>
+        </div>
+        <div id="daily-kanji-container">
+          <div class="skeleton" style="height: 180px; width: 100%;"></div>
+        </div>
+      </section>
+
+      <!-- Category Quick Links Section -->
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">📚 เลือกเรียนตามหมวดหมู่และหลักสูตร</h2>
+            <span class="section-sub">จัดกลุ่มตามเกณฑ์กระทรวงศึกษาธิการญี่ปุ่น ระดับการสอบ JLPT และระดับการสอบคันเค็น (漢検)</span>
+          </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="home-category-tabs" role="tablist">
+          <button type="button" class="home-category-tab-btn active" data-target="panel-grades">🎒 ระดับชั้นเรียน (8 กลุ่มชั้น)</button>
+          <button type="button" class="home-category-tab-btn" data-target="panel-jlpt">🇯🇵 ระดับ JLPT (N5 – N1)</button>
+          <button type="button" class="home-category-tab-btn" data-target="panel-kanken">📜 ระดับสอบคันเค็น (12 ระดับ)</button>
+        </div>
+
+        <!-- Panel 1: Grades -->
+        <div class="home-category-panel active" id="panel-grades">
+          <a href="browse.html?grade=1" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🎒 ประถมศึกษาปีที่ 1</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิพื้นฐาน เช่น 一, 日, 山, 火, 水, 木</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">80 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=2" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🏫 ประถมศึกษาปีที่ 2</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิชีวิตประจำวัน เช่น 海, 風, 星, 心, 語</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">160 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=3" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">📖 ประถมศึกษาปีที่ 3</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิประถมกลาง เช่น 運, 漢, 昭, 都, 期</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">200 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=4" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">📘 ประถมศึกษาปีที่ 4</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิประถมกลาง เช่น 愛, 景, 歴, 希, 官</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">202 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=5" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">📙 ประถมศึกษาปีที่ 5</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิประถมปลาย เช่น 恩, 雑, 領, 統, 製</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">193 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=6" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🎓 ประถมศึกษาปีที่ 6</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิประถมปลาย เช่น 異, 憲, 劇, 暮, 創</div>
+            <span class="badge badge-grade" style="margin-top: var(--spacing-sm);">191 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=8" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🏛️ มัธยมศึกษา (Secondary)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิโจโยระดับมัธยม เช่น 桜, 夢, 瞬, 誇, 憂</div>
+            <span class="badge badge-joyo" style="margin-top: var(--spacing-sm);">1,110 ตัว</span>
+          </a>
+
+          <a href="browse.html?grade=nonjoyo" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">⛩️ นอกเกณฑ์โจโย (Advanced)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิชื่อคน วรรณกรรม และคันจิเฉพาะทาง</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-sm);">3,731 ตัว</span>
+          </a>
+        </div>
+
+        <!-- Panel 2: JLPT -->
+        <div class="home-category-panel" id="panel-jlpt">
+          <a href="browse.html?jlpt=5" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🟢 JLPT N5 (พื้นฐาน)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิเริ่มต้นสำหรับผู้เรียน เช่น 日, 月, 人, 水, 木, 本</div>
+            <span class="badge badge-jlpt badge-jlpt-n5" style="margin-top: var(--spacing-sm);">103 ตัว</span>
+          </a>
+
+          <a href="browse.html?jlpt=4" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🔵 JLPT N4 (เบื้องต้น)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิระดับเบื้องต้น เช่น 花, 空, 海, 天, 駅, 道</div>
+            <span class="badge badge-jlpt badge-jlpt-n4" style="margin-top: var(--spacing-sm);">181 ตัว</span>
+          </a>
+
+          <a href="browse.html?jlpt=3" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🟡 JLPT N3 (ระดับกลาง)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิระดับกลางสื่อสารทั่วไป เช่น 愛, 桜, 風, 星, 夢</div>
+            <span class="badge badge-jlpt badge-jlpt-n3" style="margin-top: var(--spacing-sm);">361 ตัว</span>
+          </a>
+
+          <a href="browse.html?jlpt=2" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🟠 JLPT N2 (ระดับสูง)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิข่าวสารและบทความวิชาการ เช่น 漢, 際, 企, 景, 労</div>
+            <span class="badge badge-jlpt badge-jlpt-n2" style="margin-top: var(--spacing-sm);">415 ตัว</span>
+          </a>
+
+          <a href="browse.html?jlpt=1" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">🔴 JLPT N1 (เชี่ยวชาญ)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.5;">คันจิระดับสูงและงานวรรณกรรม เช่น 繊, 膨, 覆, 覇, 鬱</div>
+            <span class="badge badge-jlpt badge-jlpt-n1" style="margin-top: var(--spacing-sm);">1,076 ตัว</span>
+          </a>
+        </div>
+
+        <!-- Panel 3: Kanji Kentei (12 Grades) -->
+        <div class="home-category-panel" id="panel-kanken">
+          <a href="browse.html?kanken=10" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 10級 (ป.1)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">80 ตัว (เต็ม 150 / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">80 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=9" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 9級 (ป.2)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">240 ตัว (เต็ม 150 / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">240 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=8" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 8級 (ป.3)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">440 ตัว (เต็ม 150 / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">440 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=7" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 7級 (ป.4)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">642 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">642 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=6" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 6級 (ป.5)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">835 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">835 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=5" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 5級 (ป.6)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">1,026 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">1,026 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=4" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 4級 (ม.ต้น)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">1,339 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">1,339 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=3" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 3級 (จบ ม.ต้น)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">1,623 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">1,623 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=jun2" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 準2級 (ม.ปลาย)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">1,951 ตัว (เต็ม 200 / ผ่าน 70%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">1,951 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=2" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 2級 (จบ ม.ปลาย)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">2,136 ตัว (常用 ทั้งหมด / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">2,136 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=jun1" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 準1級 (ขั้นสูง)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">ประมาณ 3,000 ตัว (JIS 1 / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">~3,000 ตัว</span>
+          </a>
+
+          <a href="browse.html?kanken=1" class="kanji-card" style="text-align: left; align-items: flex-start;">
+            <div style="font-size: 1.15rem; font-weight: 700; margin-bottom: 2px;">漢検 1級 (สูงสุด)</div>
+            <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">ประมาณ 6,000 ตัว (JIS 1-2 / ผ่าน 80%)</div>
+            <span class="badge badge-kanken" style="margin-top: var(--spacing-xs);">~6,000 ตัว</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Source References Highlight Banner -->
+      <section style="background: var(--color-surface); border: 2px solid var(--color-border); border-radius: var(--border-radius-lg); padding: var(--spacing-xl); margin-top: var(--spacing-xl);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl);">
+          <div>
+            <h3 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">📖 ตารางคำอ่านพิเศษ (付表)</h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-sm);">
+              รวบรวมคำอ่านพิเศษ (Ateji / 熟字訓) กว่า 130 คำตามตารางประกาศอย่างเป็นทางการของทบวงวัฒนธรรมญี่ปุ่น เช่น 今日 (きょう), 明日 (あす), 大人 (おとな), 浴衣 (ゆかた)
+            </p>
+            <a href="special-readings.html" class="action-btn">สำรวจคำอ่านพิเศษทั้งหมด →</a>
+          </div>
+          <div>
+            <h3 style="color: var(--color-accent); margin-bottom: var(--spacing-xs);">✍️ คู่มือลายมือ vs ตัวพิมพ์ (文化庁)</h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: var(--spacing-sm);">
+              คลายข้อสงสัยในการเขียนคันจิ: เส้นตั้งของ '木' ตวัดหรือหยุด? หลังคาของ '令' ต้องเขียนอย่างไร? อ้างอิงตามรายงานชี้แจงทางการของ 文化庁
+            </p>
+            <a href="handwriting-guide.html" class="action-btn">อ่านคู่มือลักษณะตัวอักษร →</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="font-weight: 700; font-size: 1.1rem; color: var(--color-text);">KanjiThai (漢字辞典)</div>
+          <p>เว็บไซต์พจนานุกรมคันจิเพื่อผู้เรียนภาษาญี่ปุ่นชาวไทย ออกแบบด้วย Typography ที่รองรับภาษาญี่ปุ่น ภาษาไทย และภาษาอังกฤษอย่างสมบูรณ์แบบ</p>
+        </div>
+        <div>
+          <div style="font-weight: 700; margin-bottom: var(--spacing-xs); color: var(--color-text);">เมนูลัด</div>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="browse.html">ค้นหาคันจิ</a></li>
+            <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+              <li><a href="kanken-guide.html">คู่มือสอบคันจิ (漢検)</a></li>
+            <li><a href="handwriting-guide.html">คู่มือลายมือ (文化庁)</a></li>
+            <li><a href="about.html">เกี่ยวกับโครงการ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div style="font-weight: 700; margin-bottom: var(--spacing-xs); color: var(--color-text);">ธีมญี่ปุ่น</div>
+          <ul class="footer-links">
+            <li>🌸 ฤดูใบไม้ผลิ (Sakura)</li>
+            <li>🏮 ฤดูร้อน (Matsuri)</li>
+            <li>🍁 ฤดูใบไม้ร่วง (Momiji)</li>
+            <li>❄️ ฤดูหนาว (Yuki)</li>
+            <li>🎌 อนิเมะไซเบอร์</li>
+            <li>🎨 ภาพพิมพ์อุคิโยะเอะ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table, Bunkachō 2016 Guidelines, Kanken 2020 & KANJIDIC2 | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

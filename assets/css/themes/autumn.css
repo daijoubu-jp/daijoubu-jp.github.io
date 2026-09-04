@@ -1,0 +1,87 @@
+/* ==========================================================================
+   AUTUMN / MOMIJI THEME (秋・紅葉)
+   Aesthetic: Maple red, golden ginkgo, warm parchment, rich harvest
+   ========================================================================== */
+
+/* --- Light Mode (Default) --- */
+[data-theme="autumn"],
+[data-theme="autumn"][data-mode="light"] {
+  --color-bg: #FDF8F2;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F8EFE4;
+  --color-surface-hover: #F2E3D2;
+  --color-border: #E8D3BF;
+  --color-border-subtle: #F4E8DC;
+  
+  --color-text: #452618;
+  --color-text-muted: #8C654E;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #C2410C;
+  --color-accent-hover: #9A3412;
+  --color-accent-light: #FFEDD5;
+  --color-accent-2: #CA8A04;
+  
+  --color-kanji-display: #7C2D12;
+  --color-card-border: rgba(194, 65, 12, 0.2);
+  --color-shadow: rgba(69, 38, 24, 0.08);
+  --color-shadow-hover: rgba(194, 65, 12, 0.2);
+
+  --gradient-hero: linear-gradient(135deg, rgba(194, 65, 12, 0.15) 0%, rgba(253, 248, 242, 0.8) 50%, rgba(202, 138, 4, 0.15) 100%);
+  --theme-banner-bg: #F8EFE4;
+  --theme-icon: '🍁';
+  --theme-name-en: 'Autumn (Momiji)';
+  --theme-name-th: 'ฤดูใบไม้ร่วง (โมมิจิ)';
+  --theme-name-jp: '秋 (紅葉)';
+}
+
+/* --- Dark Mode (Autumn Embers / 紅葉 宵・炭火) --- */
+[data-theme="autumn"][data-mode="dark"] {
+  --color-bg: #1A120E;
+  --color-surface: #281B15;
+  --color-surface-2: #38271E;
+  --color-surface-hover: #4A3428;
+  --color-border: #52382B;
+  --color-border-subtle: #302018;
+  
+  --color-text: #FDF3E7;
+  --color-text-muted: #C9A992;
+  --color-text-inverse: #1A120E;
+  
+  --color-accent: #EA580C;
+  --color-accent-hover: #F97316;
+  --color-accent-light: rgba(234, 88, 12, 0.25);
+  --color-accent-2: #F59E0B;
+  
+  --color-kanji-display: #FDBA74;
+  --color-card-border: rgba(234, 88, 12, 0.3);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-shadow-hover: rgba(234, 88, 12, 0.35);
+
+  --gradient-hero: linear-gradient(135deg, #281B15 0%, #1A120E 60%, #431407 100%);
+  --theme-banner-bg: #281B15;
+  --theme-icon: '🍁';
+  --theme-name-en: 'Autumn Embers';
+  --theme-name-th: 'โมมิจิราตรี (紅葉 宵)';
+  --theme-name-jp: '紅葉 (宵)';
+}
+
+[data-theme="autumn"] .hero-section::before {
+  content: '🍁';
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  font-size: 1.6rem;
+  opacity: 0.35;
+  animation: floatPetal 9s ease-in-out infinite;
+}
+
+[data-theme="autumn"] .hero-section::after {
+  content: '🍂';
+  position: absolute;
+  bottom: 18%;
+  right: 10%;
+  font-size: 1.4rem;
+  opacity: 0.3;
+  animation: floatPetal 11s ease-in-out infinite reverse;
+}

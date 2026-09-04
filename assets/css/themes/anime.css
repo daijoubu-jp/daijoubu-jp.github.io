@@ -1,0 +1,75 @@
+/* ==========================================================================
+   ANIME / CYBERPUNK THEME (アニメ)
+   Aesthetic: Vibrant neon colors, dark cyberpunk midnight, glowing edges
+   ========================================================================== */
+
+/* --- Light Mode (Pop Anime / アニメ ポップ) --- */
+[data-theme="anime"][data-mode="light"] {
+  --color-bg: #FAF5FF;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F3E8FF;
+  --color-surface-hover: #E9D5FF;
+  --color-border: #D8B4FE;
+  --color-border-subtle: #F3E8FF;
+  
+  --color-text: #3B0764;
+  --color-text-muted: #7E22CE;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #D946EF;
+  --color-accent-hover: #C026D3;
+  --color-accent-light: #FAE8FF;
+  --color-accent-2: #0284C7;
+  
+  --color-kanji-display: #581C87;
+  --color-card-border: rgba(217, 70, 239, 0.25);
+  --color-shadow: rgba(59, 7, 100, 0.08);
+  --color-shadow-hover: rgba(217, 70, 239, 0.25);
+
+  --gradient-hero: linear-gradient(135deg, rgba(243, 232, 255, 0.8) 0%, rgba(250, 245, 255, 0.9) 50%, rgba(224, 242, 254, 0.6) 100%);
+  --theme-banner-bg: #F3E8FF;
+  --theme-icon: '🎌';
+  --theme-name-en: 'Anime Pop (Light)';
+  --theme-name-th: 'อนิเมะป็อป (สว่าง)';
+  --theme-name-jp: 'アニメ (ポップ)';
+}
+
+/* --- Dark Mode (Cyberpunk Neo-Tokyo / アニメ 電脳 - Default for Anime) --- */
+[data-theme="anime"],
+[data-theme="anime"][data-mode="dark"] {
+  --color-bg: #0A0A16;
+  --color-surface: #14142B;
+  --color-surface-2: #212144;
+  --color-surface-hover: #2E2E5D;
+  --color-border: #3A3A6D;
+  --color-border-subtle: #212144;
+  
+  --color-text: #F3F4F6;
+  --color-text-muted: #A5B4FC;
+  --color-text-inverse: #0A0A16;
+  
+  --color-accent: #EC4899;
+  --color-accent-hover: #DB2777;
+  --color-accent-light: rgba(236, 72, 153, 0.25);
+  --color-accent-2: #06B6D4;
+  
+  --color-kanji-display: #38BDF8;
+  --color-card-border: rgba(236, 72, 153, 0.4);
+  --color-shadow: rgba(0, 0, 0, 0.6);
+  --color-shadow-hover: rgba(236, 72, 153, 0.4);
+
+  --gradient-hero: linear-gradient(135deg, #1E1035 0%, #0A0A16 50%, #082F49 100%);
+  --theme-banner-bg: #14142B;
+  --theme-icon: '🎌';
+  --theme-name-en: 'Anime (Cyber)';
+  --theme-name-th: 'อนิเมะไซเบอร์';
+  --theme-name-jp: 'アニメ (電脳)';
+}
+
+[data-theme="anime"] .kanji-card:hover {
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.5), 0 0 30px rgba(6, 182, 212, 0.3);
+}
+
+[data-theme="anime"] .kanji-card-char {
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}

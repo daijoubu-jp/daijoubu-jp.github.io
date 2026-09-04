@@ -1,0 +1,2845 @@
+[
+  {
+    "number": 1,
+    "radical": "一",
+    "variants": [
+      "一"
+    ],
+    "strokes": 1,
+    "name_jp": "いち (ichi)",
+    "position": "その他",
+    "meaning_th": "หนึ่ง / เส้นแนวนอน",
+    "total_kanji": 44,
+    "joyo_count": 16
+  },
+  {
+    "number": 2,
+    "radical": "丨",
+    "variants": [
+      "丨"
+    ],
+    "strokes": 1,
+    "name_jp": "ぼう (bō)",
+    "position": "その他",
+    "meaning_th": "เส้นแนวตั้ง / ไม้พลอง",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 3,
+    "radical": "丶",
+    "variants": [
+      "丶"
+    ],
+    "strokes": 1,
+    "name_jp": "てん (ten)",
+    "position": "その他",
+    "meaning_th": "จุด / หยดน้ำ",
+    "total_kanji": 4,
+    "joyo_count": 4
+  },
+  {
+    "number": 4,
+    "radical": "丿",
+    "variants": [
+      "丿"
+    ],
+    "strokes": 1,
+    "name_jp": "の (no)",
+    "position": "その他",
+    "meaning_th": "เส้นโค้งซ้าย / เส้นตวัด",
+    "total_kanji": 9,
+    "joyo_count": 3
+  },
+  {
+    "number": 5,
+    "radical": "乙",
+    "variants": [
+      "乙",
+      "乚",
+      "乛"
+    ],
+    "strokes": 1,
+    "name_jp": "おつ (otsu)",
+    "position": "その他",
+    "meaning_th": "ลำดับที่สอง / นกแอ่น / คดเคี้ยว",
+    "total_kanji": 8,
+    "joyo_count": 7
+  },
+  {
+    "number": 6,
+    "radical": "亅",
+    "variants": [
+      "亅"
+    ],
+    "strokes": 1,
+    "name_jp": "はねぼう (hanebō)",
+    "position": "その他",
+    "meaning_th": "ตะขอ / เส้นตวัดขึ้น",
+    "total_kanji": 4,
+    "joyo_count": 4
+  },
+  {
+    "number": 7,
+    "radical": "二",
+    "variants": [
+      "二"
+    ],
+    "strokes": 2,
+    "name_jp": "に (ni)",
+    "position": "その他",
+    "meaning_th": "สอง / เส้นขนาน",
+    "total_kanji": 11,
+    "joyo_count": 5
+  },
+  {
+    "number": 8,
+    "radical": "亠",
+    "variants": [
+      "亠"
+    ],
+    "strokes": 2,
+    "name_jp": "なべぶた (nabebuta)",
+    "position": "かんむり",
+    "meaning_th": "ฝาหม้อ / หลังคาด้านบน",
+    "total_kanji": 11,
+    "joyo_count": 5
+  },
+  {
+    "number": 9,
+    "radical": "人",
+    "variants": [
+      "人",
+      "亻"
+    ],
+    "strokes": 2,
+    "name_jp": "ひと (hito / ninben)",
+    "position": "へん",
+    "meaning_th": "คน / มนุษย์",
+    "total_kanji": 213,
+    "joyo_count": 102
+  },
+  {
+    "number": 10,
+    "radical": "儿",
+    "variants": [
+      "儿"
+    ],
+    "strokes": 2,
+    "name_jp": "ひとあし (hitoashi)",
+    "position": "あし",
+    "meaning_th": "ขามนุษย์ / การก้าวเดิน",
+    "total_kanji": 17,
+    "joyo_count": 10
+  },
+  {
+    "number": 11,
+    "radical": "入",
+    "variants": [
+      "入"
+    ],
+    "strokes": 2,
+    "name_jp": "いる (iru)",
+    "position": "その他",
+    "meaning_th": "เข้า / เข้าสู่",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 12,
+    "radical": "八",
+    "variants": [
+      "八",
+      "丷"
+    ],
+    "strokes": 2,
+    "name_jp": "はち (hachi)",
+    "position": "その他",
+    "meaning_th": "แปด / การแยกออกจากกัน",
+    "total_kanji": 10,
+    "joyo_count": 8
+  },
+  {
+    "number": 13,
+    "radical": "冂",
+    "variants": [
+      "冂"
+    ],
+    "strokes": 2,
+    "name_jp": "けいがまえ (keigamae)",
+    "position": "かまえ",
+    "meaning_th": "ขอบเขต / ชานเมือง / กรอบล่างเปิด",
+    "total_kanji": 10,
+    "joyo_count": 5
+  },
+  {
+    "number": 14,
+    "radical": "冖",
+    "variants": [
+      "冖"
+    ],
+    "strokes": 2,
+    "name_jp": "わかんむり (wakanmuri)",
+    "position": "かんむり",
+    "meaning_th": "ผ้าคลุม / มงกุฎคลุม",
+    "total_kanji": 8,
+    "joyo_count": 4
+  },
+  {
+    "number": 15,
+    "radical": "冫",
+    "variants": [
+      "冫"
+    ],
+    "strokes": 2,
+    "name_jp": "にすい (nisui)",
+    "position": "へん",
+    "meaning_th": "น้ำแข็ง / สองหยดน้ำ",
+    "total_kanji": 16,
+    "joyo_count": 7
+  },
+  {
+    "number": 16,
+    "radical": "几",
+    "variants": [
+      "几"
+    ],
+    "strokes": 2,
+    "name_jp": "きにょう (kinyō)",
+    "position": "かまえ",
+    "meaning_th": "โต๊ะเตี้ย / เก้าอี้ม้านั่ง",
+    "total_kanji": 9,
+    "joyo_count": 2
+  },
+  {
+    "number": 17,
+    "radical": "凵",
+    "variants": [
+      "凵"
+    ],
+    "strokes": 2,
+    "name_jp": "かんにょう (kannyō)",
+    "position": "あし",
+    "meaning_th": "ภาชนะเปิดบน / หลุม / แอ่ง",
+    "total_kanji": 6,
+    "joyo_count": 4
+  },
+  {
+    "number": 18,
+    "radical": "刀",
+    "variants": [
+      "刀",
+      "刂"
+    ],
+    "strokes": 2,
+    "name_jp": "かตานะ (katana / ritō)",
+    "position": "つくり",
+    "meaning_th": "ดาบ / มีด",
+    "total_kanji": 55,
+    "joyo_count": 32
+  },
+  {
+    "number": 19,
+    "radical": "力",
+    "variants": [
+      "力"
+    ],
+    "strokes": 2,
+    "name_jp": "ちから (chikara)",
+    "position": "つくり",
+    "meaning_th": "พลัง / กำลัง",
+    "total_kanji": 35,
+    "joyo_count": 23
+  },
+  {
+    "number": 20,
+    "radical": "勹",
+    "variants": [
+      "勹"
+    ],
+    "strokes": 2,
+    "name_jp": "つつみがまえ (tsutsumigamae)",
+    "position": "かまえ",
+    "meaning_th": "การห่อ / โอบล้อม",
+    "total_kanji": 11,
+    "joyo_count": 3
+  },
+  {
+    "number": 21,
+    "radical": "匕",
+    "variants": [
+      "匕"
+    ],
+    "strokes": 2,
+    "name_jp": "ひ (hi)",
+    "position": "その他",
+    "meaning_th": "ช้อน / กริชสั้น",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 22,
+    "radical": "匚",
+    "variants": [
+      "匚"
+    ],
+    "strokes": 2,
+    "name_jp": "はこがまえ (hakogamae)",
+    "position": "かまえ",
+    "meaning_th": "กล่องใส่ของ",
+    "total_kanji": 9,
+    "joyo_count": 1
+  },
+  {
+    "number": 23,
+    "radical": "匸",
+    "variants": [
+      "匸"
+    ],
+    "strokes": 2,
+    "name_jp": "かくしがまえ (kakushigamae)",
+    "position": "かまえ",
+    "meaning_th": "การซ่อนของ / บังตา",
+    "total_kanji": 4,
+    "joyo_count": 4
+  },
+  {
+    "number": 24,
+    "radical": "十",
+    "variants": [
+      "十"
+    ],
+    "strokes": 2,
+    "name_jp": "じゅう (jū)",
+    "position": "その他",
+    "meaning_th": "สิบ / สมบูรณ์ / เครื่องหมายบวก",
+    "total_kanji": 15,
+    "joyo_count": 12
+  },
+  {
+    "number": 25,
+    "radical": "卜",
+    "variants": [
+      "卜"
+    ],
+    "strokes": 2,
+    "name_jp": "ぼく (boku)",
+    "position": "その他",
+    "meaning_th": "การทำนาย / เสียงกระดองเต่าแตก",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 26,
+    "radical": "卩",
+    "variants": [
+      "卩",
+      "⺋"
+    ],
+    "strokes": 2,
+    "name_jp": "ふしづくり (fushizukuri)",
+    "position": "つくり",
+    "meaning_th": "ข้อต่อ / ตราประทับ / คนคุกเข่า",
+    "total_kanji": 11,
+    "joyo_count": 6
+  },
+  {
+    "number": 27,
+    "radical": "厂",
+    "variants": [
+      "厂"
+    ],
+    "strokes": 2,
+    "name_jp": "がんだれ (gandare)",
+    "position": "たれ",
+    "meaning_th": "เพิงผา / หน้าผาชัน",
+    "total_kanji": 15,
+    "joyo_count": 5
+  },
+  {
+    "number": 28,
+    "radical": "厶",
+    "variants": [
+      "厶"
+    ],
+    "strokes": 2,
+    "name_jp": "む (mu)",
+    "position": "その他",
+    "meaning_th": "ส่วนตัว / ตัวเอง",
+    "total_kanji": 2,
+    "joyo_count": 2
+  },
+  {
+    "number": 29,
+    "radical": "又",
+    "variants": [
+      "又"
+    ],
+    "strokes": 2,
+    "name_jp": "また (mata)",
+    "position": "その他",
+    "meaning_th": "มือขวา / อีกครั้ง",
+    "total_kanji": 15,
+    "joyo_count": 10
+  },
+  {
+    "number": 30,
+    "radical": "口",
+    "variants": [
+      "口"
+    ],
+    "strokes": 3,
+    "name_jp": "くち (kuchi)",
+    "position": "その他",
+    "meaning_th": "ปาก / ช่องเปิด",
+    "total_kanji": 222,
+    "joyo_count": 71
+  },
+  {
+    "number": 31,
+    "radical": "囗",
+    "variants": [
+      "囗"
+    ],
+    "strokes": 3,
+    "name_jp": "くにがまえ (kunigamae)",
+    "position": "かまえ",
+    "meaning_th": "กรอบสี่เหลี่ยมล้อมรอบ / ดินแดน",
+    "total_kanji": 20,
+    "joyo_count": 12
+  },
+  {
+    "number": 32,
+    "radical": "土",
+    "variants": [
+      "土"
+    ],
+    "strokes": 3,
+    "name_jp": "つち (tsuchi)",
+    "position": "へん",
+    "meaning_th": "ดิน / แผ่นดิน",
+    "total_kanji": 100,
+    "joyo_count": 50
+  },
+  {
+    "number": 33,
+    "radical": "士",
+    "variants": [
+      "士"
+    ],
+    "strokes": 3,
+    "name_jp": "さむらい (samurai)",
+    "position": "その他",
+    "meaning_th": "บัณฑิต / นักรบ / ขุนนาง",
+    "total_kanji": 9,
+    "joyo_count": 5
+  },
+  {
+    "number": 34,
+    "radical": "夂",
+    "variants": [
+      "夂"
+    ],
+    "strokes": 3,
+    "name_jp": "ふゆがしら (fuyugashira)",
+    "position": "かんむり",
+    "meaning_th": "ก้าวตามหลัง / ฤดูหนาว",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 35,
+    "radical": "夊",
+    "variants": [
+      "夊"
+    ],
+    "strokes": 3,
+    "name_jp": "すいにょう (suinyō)",
+    "position": "あし",
+    "meaning_th": "เดินช้า / ลากเท้า",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 36,
+    "radical": "夕",
+    "variants": [
+      "夕"
+    ],
+    "strokes": 3,
+    "name_jp": "ゆうべ (yūbe)",
+    "position": "その他",
+    "meaning_th": "ยามเย็น / พระจันทร์เสี้ยว",
+    "total_kanji": 7,
+    "joyo_count": 5
+  },
+  {
+    "number": 37,
+    "radical": "大",
+    "variants": [
+      "大"
+    ],
+    "strokes": 3,
+    "name_jp": "だい (dai)",
+    "position": "その他",
+    "meaning_th": "ใหญ่ / ผู้ใหญ่กางแขนขา",
+    "total_kanji": 31,
+    "joyo_count": 16
+  },
+  {
+    "number": 38,
+    "radical": "女",
+    "variants": [
+      "女"
+    ],
+    "strokes": 3,
+    "name_jp": "おんな (onna)",
+    "position": "へん",
+    "meaning_th": "ผู้หญิง / สตรี",
+    "total_kanji": 98,
+    "joyo_count": 36
+  },
+  {
+    "number": 39,
+    "radical": "子",
+    "variants": [
+      "子"
+    ],
+    "strokes": 3,
+    "name_jp": "こ (ko)",
+    "position": "その他",
+    "meaning_th": "เด็ก / ทารก",
+    "total_kanji": 25,
+    "joyo_count": 9
+  },
+  {
+    "number": 40,
+    "radical": "宀",
+    "variants": [
+      "宀"
+    ],
+    "strokes": 3,
+    "name_jp": "うかんむり (ukanmuri)",
+    "position": "かんむり",
+    "meaning_th": "หลังคาบ้าน",
+    "total_kanji": 55,
+    "joyo_count": 36
+  },
+  {
+    "number": 41,
+    "radical": "寸",
+    "variants": [
+      "寸"
+    ],
+    "strokes": 3,
+    "name_jp": "すん (sun)",
+    "position": "つくり",
+    "meaning_th": "หน่วยวัดนิ้ว / ข้อมือจับชีพจร",
+    "total_kanji": 12,
+    "joyo_count": 12
+  },
+  {
+    "number": 42,
+    "radical": "小",
+    "variants": [
+      "小",
+      "⺌"
+    ],
+    "strokes": 3,
+    "name_jp": "しょう (shō)",
+    "position": "かんむり",
+    "meaning_th": "เล็ก / เล็กน้อย",
+    "total_kanji": 5,
+    "joyo_count": 3
+  },
+  {
+    "number": 43,
+    "radical": "尢",
+    "variants": [
+      "尢",
+      "尣"
+    ],
+    "strokes": 3,
+    "name_jp": "まげあし (mageashi)",
+    "position": "その他",
+    "meaning_th": "ขาพิการ / ขาโก่ง",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 44,
+    "radical": "尸",
+    "variants": [
+      "尸"
+    ],
+    "strokes": 3,
+    "name_jp": "しかばเน (shikabane)",
+    "position": "たれ",
+    "meaning_th": "ร่างคนนอน / ศพ / โครงร่าง",
+    "total_kanji": 28,
+    "joyo_count": 15
+  },
+  {
+    "number": 45,
+    "radical": "屮",
+    "variants": [
+      "屮"
+    ],
+    "strokes": 3,
+    "name_jp": "てつ (tetsu)",
+    "position": "その他",
+    "meaning_th": "ต้นอ่อนแทงยอดจากดิน",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 46,
+    "radical": "山",
+    "variants": [
+      "山"
+    ],
+    "strokes": 3,
+    "name_jp": "やま (yama)",
+    "position": "へん",
+    "meaning_th": "ภูเขา / ธรรมชาติ",
+    "total_kanji": 64,
+    "joyo_count": 16
+  },
+  {
+    "number": 47,
+    "radical": "巛",
+    "variants": [
+      "巛",
+      "川"
+    ],
+    "strokes": 3,
+    "name_jp": "まがりがわ (magarigawa)",
+    "position": "その他",
+    "meaning_th": "แม่น้ำ / สายน้ำไหล",
+    "total_kanji": 4,
+    "joyo_count": 4
+  },
+  {
+    "number": 48,
+    "radical": "工",
+    "variants": [
+      "工"
+    ],
+    "strokes": 3,
+    "name_jp": "こう (kō)",
+    "position": "その他",
+    "meaning_th": "ช่างฝีมือ / งานก่อสร้าง / ไม้วัด",
+    "total_kanji": 6,
+    "joyo_count": 5
+  },
+  {
+    "number": 49,
+    "radical": "己",
+    "variants": [
+      "己",
+      "已",
+      "巳"
+    ],
+    "strokes": 3,
+    "name_jp": "おのれ (onore)",
+    "position": "その他",
+    "meaning_th": "ตนเอง / สร้อยงู",
+    "total_kanji": 7,
+    "joyo_count": 2
+  },
+  {
+    "number": 50,
+    "radical": "巾",
+    "variants": [
+      "巾"
+    ],
+    "strokes": 3,
+    "name_jp": "はば (haba)",
+    "position": "へん",
+    "meaning_th": "ผ้าผืน / ผ้าเช็ดหน้า",
+    "total_kanji": 36,
+    "joyo_count": 17
+  },
+  {
+    "number": 51,
+    "radical": "干",
+    "variants": [
+      "干"
+    ],
+    "strokes": 3,
+    "name_jp": "かん (kan)",
+    "position": "その他",
+    "meaning_th": "ตากแห้ง / โล่ป้องกัน",
+    "total_kanji": 8,
+    "joyo_count": 5
+  },
+  {
+    "number": 52,
+    "radical": "幺",
+    "variants": [
+      "幺"
+    ],
+    "strokes": 3,
+    "name_jp": "よう (yō)",
+    "position": "その他",
+    "meaning_th": "เส้นไหมเส้นเล็ก / ตัวอ่อน",
+    "total_kanji": 4,
+    "joyo_count": 4
+  },
+  {
+    "number": 53,
+    "radical": "广",
+    "variants": [
+      "广"
+    ],
+    "strokes": 3,
+    "name_jp": "まだれ (madare)",
+    "position": "たれ",
+    "meaning_th": "อาคารมีหลังคาข้างเดียว / โรงเรือน",
+    "total_kanji": 40,
+    "joyo_count": 17
+  },
+  {
+    "number": 54,
+    "radical": "廴",
+    "variants": [
+      "廴"
+    ],
+    "strokes": 3,
+    "name_jp": "えんにょう (ennyō)",
+    "position": "にょう",
+    "meaning_th": "การก้าวย่างยาว / ทางเดิน",
+    "total_kanji": 6,
+    "joyo_count": 3
+  },
+  {
+    "number": 55,
+    "radical": "廾",
+    "variants": [
+      "廾"
+    ],
+    "strokes": 3,
+    "name_jp": "きょう (kyō)",
+    "position": "あし",
+    "meaning_th": "สองมือยกของขึ้น",
+    "total_kanji": 5,
+    "joyo_count": 3
+  },
+  {
+    "number": 56,
+    "radical": "弋",
+    "variants": [
+      "弋"
+    ],
+    "strokes": 3,
+    "name_jp": "しきがまえ (shikigamae)",
+    "position": "その他",
+    "meaning_th": "หลักปัก / ลูกศรผูกเชือก",
+    "total_kanji": 6,
+    "joyo_count": 2
+  },
+  {
+    "number": 57,
+    "radical": "弓",
+    "variants": [
+      "弓"
+    ],
+    "strokes": 3,
+    "name_jp": "ゆみ (yumi)",
+    "position": "へん",
+    "meaning_th": "คันธนู",
+    "total_kanji": 22,
+    "joyo_count": 11
+  },
+  {
+    "number": 58,
+    "radical": "彐",
+    "variants": [
+      "彐",
+      "彑"
+    ],
+    "strokes": 3,
+    "name_jp": "けいがしら (keigashira)",
+    "position": "かんむり",
+    "meaning_th": "หัวหมูป่า / จมูกสัตว์",
+    "total_kanji": 5,
+    "joyo_count": 2
+  },
+  {
+    "number": 59,
+    "radical": "彡",
+    "variants": [
+      "彡"
+    ],
+    "strokes": 3,
+    "name_jp": "さんづくり (sandzukuri)",
+    "position": "つくり",
+    "meaning_th": "ลวดลาย / ขนยาว / แสงเงา",
+    "total_kanji": 9,
+    "joyo_count": 5
+  },
+  {
+    "number": 60,
+    "radical": "彳",
+    "variants": [
+      "彳"
+    ],
+    "strokes": 3,
+    "name_jp": "ぎょうにんべん (gyōninben)",
+    "position": "へん",
+    "meaning_th": "ทางแยก / การก้าวเท้าซ้ายเดิน",
+    "total_kanji": 32,
+    "joyo_count": 19
+  },
+  {
+    "number": 61,
+    "radical": "心",
+    "variants": [
+      "心",
+      "忄",
+      "⺗"
+    ],
+    "strokes": 4,
+    "name_jp": "こころ (kokoro / risshinben)",
+    "position": "へん",
+    "meaning_th": "หัวใจ / จิตใจ / ความรู้สึก",
+    "total_kanji": 202,
+    "joyo_count": 76
+  },
+  {
+    "number": 62,
+    "radical": "戈",
+    "variants": [
+      "戈"
+    ],
+    "strokes": 4,
+    "name_jp": "ほこ (hoko)",
+    "position": "つくり",
+    "meaning_th": "หอก / อาวุธโบราณ",
+    "total_kanji": 22,
+    "joyo_count": 7
+  },
+  {
+    "number": 63,
+    "radical": "戶",
+    "variants": [
+      "戶",
+      "户",
+      "戸"
+    ],
+    "strokes": 4,
+    "name_jp": "と (to)",
+    "position": "たれ",
+    "meaning_th": "บานประตูเดี่ยว",
+    "total_kanji": 8,
+    "joyo_count": 6
+  },
+  {
+    "number": 64,
+    "radical": "手",
+    "variants": [
+      "手",
+      "扌"
+    ],
+    "strokes": 4,
+    "name_jp": "て (te / tehen)",
+    "position": "へん",
+    "meaning_th": "มือ / การกระทำด้วยมือ",
+    "total_kanji": 223,
+    "joyo_count": 95
+  },
+  {
+    "number": 65,
+    "radical": "支",
+    "variants": [
+      "支"
+    ],
+    "strokes": 4,
+    "name_jp": "し (shi)",
+    "position": "その他",
+    "meaning_th": "กิ่งไม้ / การค้ำจุน",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 66,
+    "radical": "攴",
+    "variants": [
+      "攴",
+      "攵"
+    ],
+    "strokes": 4,
+    "name_jp": "ぼくづくり (bokuzukuri / nogime)",
+    "position": "つくり",
+    "meaning_th": "เคาะ / ตีเบาๆ / ถือไม้เรียว",
+    "total_kanji": 23,
+    "joyo_count": 16
+  },
+  {
+    "number": 67,
+    "radical": "文",
+    "variants": [
+      "文"
+    ],
+    "strokes": 4,
+    "name_jp": "ぶん (bun)",
+    "position": "その他",
+    "meaning_th": "ลายลักษณ์อักษร / ลวดลาย / วัฒนธรรม",
+    "total_kanji": 6,
+    "joyo_count": 4
+  },
+  {
+    "number": 68,
+    "radical": "斗",
+    "variants": [
+      "斗"
+    ],
+    "strokes": 4,
+    "name_jp": "とます (tomasu)",
+    "position": "つくり",
+    "meaning_th": "กระบวยตักเหล้า / ถังตวง",
+    "total_kanji": 6,
+    "joyo_count": 3
+  },
+  {
+    "number": 69,
+    "radical": "斤",
+    "variants": [
+      "斤"
+    ],
+    "strokes": 4,
+    "name_jp": "おの (ono)",
+    "position": "つくり",
+    "meaning_th": "ขวาน / หน่วยชั่งน้ำหนัก",
+    "total_kanji": 8,
+    "joyo_count": 5
+  },
+  {
+    "number": 70,
+    "radical": "方",
+    "variants": [
+      "方"
+    ],
+    "strokes": 4,
+    "name_jp": "ほう (hō)",
+    "position": "へん",
+    "meaning_th": "ทิศทาง / สี่เหลี่ยม / สองเรือผูกเคียง",
+    "total_kanji": 14,
+    "joyo_count": 6
+  },
+  {
+    "number": 71,
+    "radical": "无",
+    "variants": [
+      "无",
+      "旡"
+    ],
+    "strokes": 4,
+    "name_jp": "む (mu)",
+    "position": "その他",
+    "meaning_th": "ไม่มี / ไร้",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 72,
+    "radical": "日",
+    "variants": [
+      "日"
+    ],
+    "strokes": 4,
+    "name_jp": "ひ (hi / nichihen)",
+    "position": "へん",
+    "meaning_th": "ดวงอาทิตย์ / วัน / แสงสว่าง",
+    "total_kanji": 85,
+    "joyo_count": 38
+  },
+  {
+    "number": 73,
+    "radical": "曰",
+    "variants": [
+      "曰"
+    ],
+    "strokes": 4,
+    "name_jp": "ひらび (hirabi)",
+    "position": "その他",
+    "meaning_th": "เอ่ยคำว่า / กล่าว",
+    "total_kanji": 11,
+    "joyo_count": 7
+  },
+  {
+    "number": 74,
+    "radical": "月",
+    "variants": [
+      "月"
+    ],
+    "strokes": 4,
+    "name_jp": "つき (tsuki)",
+    "position": "へん",
+    "meaning_th": "ดวงจันทร์ / เดือน",
+    "total_kanji": 14,
+    "joyo_count": 8
+  },
+  {
+    "number": 75,
+    "radical": "木",
+    "variants": [
+      "木"
+    ],
+    "strokes": 4,
+    "name_jp": "き (ki / kihen)",
+    "position": "へん",
+    "meaning_th": "ต้นไม้ / ไม้",
+    "total_kanji": 304,
+    "joyo_count": 85
+  },
+  {
+    "number": 76,
+    "radical": "欠",
+    "variants": [
+      "欠"
+    ],
+    "strokes": 4,
+    "name_jp": "あくび (akubi)",
+    "position": "つくり",
+    "meaning_th": "อ้าปากหาว / ขาดแคลน",
+    "total_kanji": 22,
+    "joyo_count": 8
+  },
+  {
+    "number": 77,
+    "radical": "止",
+    "variants": [
+      "止"
+    ],
+    "strokes": 4,
+    "name_jp": "とめる (tomeru)",
+    "position": "その他",
+    "meaning_th": "หยุด / เท้ายืนหยุด",
+    "total_kanji": 9,
+    "joyo_count": 7
+  },
+  {
+    "number": 78,
+    "radical": "歹",
+    "variants": [
+      "歹",
+      "歺"
+    ],
+    "strokes": 4,
+    "name_jp": "がつ (gatsu)",
+    "position": "へん",
+    "meaning_th": "กระดูกผุ / ความตาย",
+    "total_kanji": 18,
+    "joyo_count": 5
+  },
+  {
+    "number": 79,
+    "radical": "殳",
+    "variants": [
+      "殳"
+    ],
+    "strokes": 4,
+    "name_jp": "ほこづくり (hokodzukuri)",
+    "position": "つくり",
+    "meaning_th": "กระบองไม้ / ทุบตี",
+    "total_kanji": 8,
+    "joyo_count": 6
+  },
+  {
+    "number": 80,
+    "radical": "毋",
+    "variants": [
+      "毋",
+      "母"
+    ],
+    "strokes": 4,
+    "name_jp": "なかれ (nakare / haha)",
+    "position": "その他",
+    "meaning_th": "แม่ / ห้ามมิให้",
+    "total_kanji": 4,
+    "joyo_count": 3
+  },
+  {
+    "number": 81,
+    "radical": "比",
+    "variants": [
+      "比"
+    ],
+    "strokes": 4,
+    "name_jp": "くらべる (kuraberu)",
+    "position": "その他",
+    "meaning_th": "เปรียบเทียบ / ยืนเคียงข้าง",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 82,
+    "radical": "毛",
+    "variants": [
+      "毛"
+    ],
+    "strokes": 4,
+    "name_jp": "け (ke)",
+    "position": "その他",
+    "meaning_th": "ขน / เส้นผม",
+    "total_kanji": 7,
+    "joyo_count": 1
+  },
+  {
+    "number": 83,
+    "radical": "氏",
+    "variants": [
+      "氏"
+    ],
+    "strokes": 4,
+    "name_jp": "うじ (uji)",
+    "position": "その他",
+    "meaning_th": "ตระกูล / เชื้อสาย",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 84,
+    "radical": "气",
+    "variants": [
+      "气"
+    ],
+    "strokes": 4,
+    "name_jp": "きがまえ (kigamae)",
+    "position": "かまえ",
+    "meaning_th": "อากาศ / ไอระเหย / ลมปราณ",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 85,
+    "radical": "水",
+    "variants": [
+      "水",
+      "氵",
+      "氺"
+    ],
+    "strokes": 4,
+    "name_jp": "みず (mizu / sanzui)",
+    "position": "へん",
+    "meaning_th": "น้ำ / ของเหลว",
+    "total_kanji": 292,
+    "joyo_count": 118
+  },
+  {
+    "number": 86,
+    "radical": "火",
+    "variants": [
+      "火",
+      "灬"
+    ],
+    "strokes": 4,
+    "name_jp": "ひ (hi / renga)",
+    "position": "へん",
+    "meaning_th": "ไฟ / ความร้อน / เปลวเพลิง",
+    "total_kanji": 91,
+    "joyo_count": 26
+  },
+  {
+    "number": 87,
+    "radical": "爪",
+    "variants": [
+      "爪",
+      "爫"
+    ],
+    "strokes": 4,
+    "name_jp": "つめ (tsume)",
+    "position": "かんむり",
+    "meaning_th": "กรงเล็บ / เล็บมือ",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 88,
+    "radical": "父",
+    "variants": [
+      "父"
+    ],
+    "strokes": 4,
+    "name_jp": "ちち (chichi)",
+    "position": "その他",
+    "meaning_th": "บิดา / พ่อ",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 89,
+    "radical": "爻",
+    "variants": [
+      "爻"
+    ],
+    "strokes": 4,
+    "name_jp": "こう (kō)",
+    "position": "その他",
+    "meaning_th": "ลายกากบาท / เส้นยันต์อี้จิง",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 90,
+    "radical": "爿",
+    "variants": [
+      "爿"
+    ],
+    "strokes": 4,
+    "name_jp": "しょうへん (shōhen)",
+    "position": "へん",
+    "meaning_th": "เตียงไม้ผ่าซีก",
+    "total_kanji": 2,
+    "joyo_count": 0
+  },
+  {
+    "number": 91,
+    "radical": "片",
+    "variants": [
+      "片"
+    ],
+    "strokes": 4,
+    "name_jp": "かた (kata)",
+    "position": "へん",
+    "meaning_th": "แผ่นไม้บาง / เสี้ยวเดียว",
+    "total_kanji": 7,
+    "joyo_count": 2
+  },
+  {
+    "number": 92,
+    "radical": "牙",
+    "variants": [
+      "牙"
+    ],
+    "strokes": 4,
+    "name_jp": "きば (kiba)",
+    "position": "その他",
+    "meaning_th": "เขี้ยวสัตว์",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 93,
+    "radical": "牛",
+    "variants": [
+      "牛",
+      "牜"
+    ],
+    "strokes": 4,
+    "name_jp": "うし (ushi)",
+    "position": "へん",
+    "meaning_th": "วัว / ปศุสัตว์",
+    "total_kanji": 20,
+    "joyo_count": 6
+  },
+  {
+    "number": 94,
+    "radical": "犬",
+    "variants": [
+      "犬",
+      "犭"
+    ],
+    "strokes": 4,
+    "name_jp": "いぬ (inu / kemonohen)",
+    "position": "へん",
+    "meaning_th": "สุนัข / สัตว์สี่เท้า",
+    "total_kanji": 53,
+    "joyo_count": 17
+  },
+  {
+    "number": 95,
+    "radical": "玄",
+    "variants": [
+      "玄"
+    ],
+    "strokes": 5,
+    "name_jp": "げん (gen)",
+    "position": "その他",
+    "meaning_th": "สีดำลึกล้ำ / ความเร้นลับ",
+    "total_kanji": 2,
+    "joyo_count": 2
+  },
+  {
+    "number": 96,
+    "radical": "玉",
+    "variants": [
+      "玉",
+      "王",
+      "⺩"
+    ],
+    "strokes": 5,
+    "name_jp": "たま (tama / ōhen)",
+    "position": "へん",
+    "meaning_th": "หยกมงคล / อัญมณี / กษัตริย์",
+    "total_kanji": 61,
+    "joyo_count": 15
+  },
+  {
+    "number": 97,
+    "radical": "瓜",
+    "variants": [
+      "瓜"
+    ],
+    "strokes": 5,
+    "name_jp": "うり (uri)",
+    "position": "その他",
+    "meaning_th": "พืชตระกูลแตง",
+    "total_kanji": 4,
+    "joyo_count": 0
+  },
+  {
+    "number": 98,
+    "radical": "瓦",
+    "variants": [
+      "瓦"
+    ],
+    "strokes": 5,
+    "name_jp": "かわら (kawara)",
+    "position": "つくり",
+    "meaning_th": "กระเบื้องดินเผา",
+    "total_kanji": 19,
+    "joyo_count": 2
+  },
+  {
+    "number": 99,
+    "radical": "甘",
+    "variants": [
+      "甘"
+    ],
+    "strokes": 5,
+    "name_jp": "あまい (amai)",
+    "position": "その他",
+    "meaning_th": "รสหวาน / ความพึงพอใจ",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 100,
+    "radical": "生",
+    "variants": [
+      "生"
+    ],
+    "strokes": 5,
+    "name_jp": "せい (sei / umareru)",
+    "position": "その他",
+    "meaning_th": "ชีวิต / การเกิด / งอกงาม",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 101,
+    "radical": "用",
+    "variants": [
+      "用"
+    ],
+    "strokes": 5,
+    "name_jp": "よう (yō)",
+    "position": "その他",
+    "meaning_th": "ใช้งาน / นำมาใช้",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 102,
+    "radical": "田",
+    "variants": [
+      "田"
+    ],
+    "strokes": 5,
+    "name_jp": "た (ta / tahen)",
+    "position": "へん",
+    "meaning_th": "ทุ่งนา / แปลงเกษตร",
+    "total_kanji": 34,
+    "joyo_count": 19
+  },
+  {
+    "number": 103,
+    "radical": "疋",
+    "variants": [
+      "疋",
+      "⺪"
+    ],
+    "strokes": 5,
+    "name_jp": "ひき (hiki)",
+    "position": "あし",
+    "meaning_th": "ขาท่อนล่าง / ม้วนผ้า",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 104,
+    "radical": "疒",
+    "variants": [
+      "疒"
+    ],
+    "strokes": 5,
+    "name_jp": "やまいだれ (yamaidare)",
+    "position": "たれ",
+    "meaning_th": "ความเจ็บป่วย / นอนซมบนเตียง",
+    "total_kanji": 72,
+    "joyo_count": 15
+  },
+  {
+    "number": 105,
+    "radical": "癶",
+    "variants": [
+      "癶"
+    ],
+    "strokes": 5,
+    "name_jp": "はつがしら (hatsugashira)",
+    "position": "かんむり",
+    "meaning_th": "สองเท้าก้าวออกซ้ายขวา",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 106,
+    "radical": "白",
+    "variants": [
+      "白"
+    ],
+    "strokes": 5,
+    "name_jp": "しろ (shiro)",
+    "position": "へん",
+    "meaning_th": "สีขาว / บริสุทธิ์ / สว่าง",
+    "total_kanji": 13,
+    "joyo_count": 5
+  },
+  {
+    "number": 107,
+    "radical": "皮",
+    "variants": [
+      "皮"
+    ],
+    "strokes": 5,
+    "name_jp": "けがわ (kegawa)",
+    "position": "つくり",
+    "meaning_th": "หนังสัตว์ / ผิวหนัง",
+    "total_kanji": 6,
+    "joyo_count": 1
+  },
+  {
+    "number": 108,
+    "radical": "皿",
+    "variants": [
+      "皿"
+    ],
+    "strokes": 5,
+    "name_jp": "さら (sara)",
+    "position": "あし",
+    "meaning_th": "จาน / ภาชนะใส่อาหาร",
+    "total_kanji": 18,
+    "joyo_count": 8
+  },
+  {
+    "number": 109,
+    "radical": "目",
+    "variants": [
+      "目"
+    ],
+    "strokes": 5,
+    "name_jp": "め (me / mehen)",
+    "position": "へん",
+    "meaning_th": "ดวงตา / การมองเห็น",
+    "total_kanji": 52,
+    "joyo_count": 20
+  },
+  {
+    "number": 110,
+    "radical": "矛",
+    "variants": [
+      "矛"
+    ],
+    "strokes": 5,
+    "name_jp": "むのほこ (munohoko)",
+    "position": "へん",
+    "meaning_th": "ทวน / หอกมีด้าม",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 111,
+    "radical": "矢",
+    "variants": [
+      "矢"
+    ],
+    "strokes": 5,
+    "name_jp": "や (ya / yahen)",
+    "position": "へん",
+    "meaning_th": "ลูกธนู / ตรงไปข้างหน้า",
+    "total_kanji": 8,
+    "joyo_count": 4
+  },
+  {
+    "number": 112,
+    "radical": "石",
+    "variants": [
+      "石"
+    ],
+    "strokes": 5,
+    "name_jp": "いし (ishi / ishihen)",
+    "position": "へん",
+    "meaning_th": "หิน / แร่หิน",
+    "total_kanji": 61,
+    "joyo_count": 16
+  },
+  {
+    "number": 113,
+    "radical": "示",
+    "variants": [
+      "示",
+      "礻",
+      "⺡"
+    ],
+    "strokes": 5,
+    "name_jp": "しめす (shimesu / shimesuhen)",
+    "position": "へん",
+    "meaning_th": "การสักการะเทพเจ้า / แท่นบูชา / บ่งบอก",
+    "total_kanji": 38,
+    "joyo_count": 15
+  },
+  {
+    "number": 114,
+    "radical": "禸",
+    "variants": [
+      "禸"
+    ],
+    "strokes": 5,
+    "name_jp": "ぐうのあし (gūnoashi)",
+    "position": "あし",
+    "meaning_th": "รอยเท้าสัตว์ป่า",
+    "total_kanji": 3,
+    "joyo_count": 0
+  },
+  {
+    "number": 115,
+    "radical": "禾",
+    "variants": [
+      "禾"
+    ],
+    "strokes": 5,
+    "name_jp": "のぎ (nogi / nogihen)",
+    "position": "へん",
+    "meaning_th": "รวงข้าว / ธัญพืช",
+    "total_kanji": 48,
+    "joyo_count": 23
+  },
+  {
+    "number": 116,
+    "radical": "穴",
+    "variants": [
+      "穴"
+    ],
+    "strokes": 5,
+    "name_jp": "あな (ana / anakanmuri)",
+    "position": "かんむり",
+    "meaning_th": "ถ้ำ / หลุม / โพรง",
+    "total_kanji": 28,
+    "joyo_count": 10
+  },
+  {
+    "number": 117,
+    "radical": "立",
+    "variants": [
+      "立"
+    ],
+    "strokes": 5,
+    "name_jp": "たつ (tatsu)",
+    "position": "へん",
+    "meaning_th": "ยืนหยัด / ตั้งตรง",
+    "total_kanji": 20,
+    "joyo_count": 6
+  },
+  {
+    "number": 118,
+    "radical": "竹",
+    "variants": [
+      "竹",
+      "⺮"
+    ],
+    "strokes": 6,
+    "name_jp": "たけ (take / takekanmuri)",
+    "position": "かんむり",
+    "meaning_th": "ต้นไผ่ / ไม้ไผ่",
+    "total_kanji": 120,
+    "joyo_count": 25
+  },
+  {
+    "number": 119,
+    "radical": "米",
+    "variants": [
+      "米"
+    ],
+    "strokes": 6,
+    "name_jp": "こめ (kome / komehen)",
+    "position": "へん",
+    "meaning_th": "เมล็ดข้าว / อาหารหลัก",
+    "total_kanji": 42,
+    "joyo_count": 10
+  },
+  {
+    "number": 120,
+    "radical": "糸",
+    "variants": [
+      "糸",
+      "糹"
+    ],
+    "strokes": 6,
+    "name_jp": "いと (ito / itohen)",
+    "position": "へん",
+    "meaning_th": "เส้นด้าย / เส้นไหม / ความผูกพัน",
+    "total_kanji": 166,
+    "joyo_count": 63
+  },
+  {
+    "number": 121,
+    "radical": "缶",
+    "variants": [
+      "缶"
+    ],
+    "strokes": 6,
+    "name_jp": "ほとぎ (hotogi)",
+    "position": "へん",
+    "meaning_th": "หม้อดินเผา / ไห",
+    "total_kanji": 6,
+    "joyo_count": 1
+  },
+  {
+    "number": 122,
+    "radical": "网",
+    "variants": [
+      "网",
+      "罒",
+      "⺲"
+    ],
+    "strokes": 6,
+    "name_jp": "あみがしら (amigashira)",
+    "position": "かんむり",
+    "meaning_th": "ตาข่ายจับปลา / แห",
+    "total_kanji": 22,
+    "joyo_count": 7
+  },
+  {
+    "number": 123,
+    "radical": "羊",
+    "variants": [
+      "羊",
+      "⺶"
+    ],
+    "strokes": 6,
+    "name_jp": "ひつじ (hitsuji)",
+    "position": "かんむり",
+    "meaning_th": "แกะ / ความดีงามมงคล",
+    "total_kanji": 15,
+    "joyo_count": 6
+  },
+  {
+    "number": 124,
+    "radical": "羽",
+    "variants": [
+      "羽"
+    ],
+    "strokes": 6,
+    "name_jp": "はね (hane)",
+    "position": "その他",
+    "meaning_th": "ขนนก / ปีก",
+    "total_kanji": 20,
+    "joyo_count": 6
+  },
+  {
+    "number": 125,
+    "radical": "老",
+    "variants": [
+      "老",
+      "耂"
+    ],
+    "strokes": 6,
+    "name_jp": "おい (oi)",
+    "position": "かんむり",
+    "meaning_th": "คนชรา / อายุยืนยาว",
+    "total_kanji": 6,
+    "joyo_count": 3
+  },
+  {
+    "number": 126,
+    "radical": "而",
+    "variants": [
+      "而"
+    ],
+    "strokes": 6,
+    "name_jp": "しかして (shikashite)",
+    "position": "その他",
+    "meaning_th": "เคราคาง / และแล้ว",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 127,
+    "radical": "耒",
+    "variants": [
+      "耒"
+    ],
+    "strokes": 6,
+    "name_jp": "らいすき (raisuki)",
+    "position": "へん",
+    "meaning_th": "คันไถไม้ / การเพาะปลูก",
+    "total_kanji": 8,
+    "joyo_count": 2
+  },
+  {
+    "number": 128,
+    "radical": "耳",
+    "variants": [
+      "耳"
+    ],
+    "strokes": 6,
+    "name_jp": "みみ (mimi / mimihen)",
+    "position": "へん",
+    "meaning_th": "หู / การได้ยิน",
+    "total_kanji": 21,
+    "joyo_count": 5
+  },
+  {
+    "number": 129,
+    "radical": "聿",
+    "variants": [
+      "聿",
+      "⺻"
+    ],
+    "strokes": 6,
+    "name_jp": "ふでづくり (fudezukuri)",
+    "position": "つくり",
+    "meaning_th": "พู่กันเขียนหนังสือ",
+    "total_kanji": 5,
+    "joyo_count": 1
+  },
+  {
+    "number": 130,
+    "radical": "肉",
+    "variants": [
+      "肉",
+      "⺼"
+    ],
+    "strokes": 6,
+    "name_jp": "にく (niku / nikuzuki)",
+    "position": "へん",
+    "meaning_th": "เนื้อสัตว์ / ร่างกายมนุษย์",
+    "total_kanji": 107,
+    "joyo_count": 44
+  },
+  {
+    "number": 131,
+    "radical": "臣",
+    "variants": [
+      "臣"
+    ],
+    "strokes": 6,
+    "name_jp": "しん (shin)",
+    "position": "その他",
+    "meaning_th": "ข้าราชบริพาร / เสนาบดี",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 132,
+    "radical": "自",
+    "variants": [
+      "自"
+    ],
+    "strokes": 6,
+    "name_jp": "みずから (mizukara)",
+    "position": "その他",
+    "meaning_th": "ตัวเอง / จมูก",
+    "total_kanji": 2,
+    "joyo_count": 2
+  },
+  {
+    "number": 133,
+    "radical": "至",
+    "variants": [
+      "至"
+    ],
+    "strokes": 6,
+    "name_jp": "いたる (itaru)",
+    "position": "その他",
+    "meaning_th": "มาถึง / ปลายทาง",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 134,
+    "radical": "臼",
+    "variants": [
+      "臼"
+    ],
+    "strokes": 6,
+    "name_jp": "うす (usu)",
+    "position": "その他",
+    "meaning_th": "ครกตำข้าว",
+    "total_kanji": 6,
+    "joyo_count": 2
+  },
+  {
+    "number": 135,
+    "radical": "舌",
+    "variants": [
+      "舌"
+    ],
+    "strokes": 6,
+    "name_jp": "した (shita)",
+    "position": "へん",
+    "meaning_th": "ลิ้น / การลิ้มรส",
+    "total_kanji": 4,
+    "joyo_count": 1
+  },
+  {
+    "number": 136,
+    "radical": "舛",
+    "variants": [
+      "舛"
+    ],
+    "strokes": 6,
+    "name_jp": "ます (masu)",
+    "position": "その他",
+    "meaning_th": "สองเท้าหันตรงข้าม / ผิดแผก",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 137,
+    "radical": "舟",
+    "variants": [
+      "舟"
+    ],
+    "strokes": 6,
+    "name_jp": "ふね (fune / funehen)",
+    "position": "へん",
+    "meaning_th": "เรือ / ยานพาหนะทางน้ำ",
+    "total_kanji": 23,
+    "joyo_count": 8
+  },
+  {
+    "number": 138,
+    "radical": "艮",
+    "variants": [
+      "艮"
+    ],
+    "strokes": 6,
+    "name_jp": "うしとら (ushitora)",
+    "position": "つくり",
+    "meaning_th": "ดื้อดึง / หันหลังเหลียวมอง",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 139,
+    "radical": "色",
+    "variants": [
+      "色"
+    ],
+    "strokes": 6,
+    "name_jp": "いろ (iro)",
+    "position": "その他",
+    "meaning_th": "สีสัน / ความงาม / อารมณ์",
+    "total_kanji": 2,
+    "joyo_count": 2
+  },
+  {
+    "number": 140,
+    "radical": "艸",
+    "variants": [
+      "艸",
+      "艹"
+    ],
+    "strokes": 6,
+    "name_jp": "くさ (kusa / kusakanmuri)",
+    "position": "かんむり",
+    "meaning_th": "พืชหญ้า / สมุนไพร / พฤกษา",
+    "total_kanji": 258,
+    "joyo_count": 46
+  },
+  {
+    "number": 141,
+    "radical": "虍",
+    "variants": [
+      "虍"
+    ],
+    "strokes": 6,
+    "name_jp": "とらかんむり (torakanmuri)",
+    "position": "かんむり",
+    "meaning_th": "ลายเสือโคร่ง / เสือ",
+    "total_kanji": 8,
+    "joyo_count": 5
+  },
+  {
+    "number": 142,
+    "radical": "虫",
+    "variants": [
+      "虫"
+    ],
+    "strokes": 6,
+    "name_jp": "むし (mushi / mushihen)",
+    "position": "へん",
+    "meaning_th": "แมลง / สัตว์เลื้อยคลาน",
+    "total_kanji": 127,
+    "joyo_count": 10
+  },
+  {
+    "number": 143,
+    "radical": "血",
+    "variants": [
+      "血"
+    ],
+    "strokes": 6,
+    "name_jp": "ち (chi)",
+    "position": "その他",
+    "meaning_th": "โลหิต / เลือด",
+    "total_kanji": 4,
+    "joyo_count": 2
+  },
+  {
+    "number": 144,
+    "radical": "行",
+    "variants": [
+      "行"
+    ],
+    "strokes": 6,
+    "name_jp": "ぎょう (gyō / gyōgamae)",
+    "position": "かまえ",
+    "meaning_th": "ทางแยกสี่แพร่ง / การเดินทาง",
+    "total_kanji": 10,
+    "joyo_count": 6
+  },
+  {
+    "number": 145,
+    "radical": "衣",
+    "variants": [
+      "衣",
+      "衤"
+    ],
+    "strokes": 6,
+    "name_jp": "ころも (koromo / koromohen)",
+    "position": "へん",
+    "meaning_th": "เสื้อผ้า / เครื่องนุ่งห่ม",
+    "total_kanji": 83,
+    "joyo_count": 21
+  },
+  {
+    "number": 146,
+    "radical": "襾",
+    "variants": [
+      "襾",
+      "西",
+      "覀"
+    ],
+    "strokes": 6,
+    "name_jp": "にし (nishi)",
+    "position": "かんむり",
+    "meaning_th": "ฝาปิดครอบ / ทิศตะวันตก",
+    "total_kanji": 6,
+    "joyo_count": 4
+  },
+  {
+    "number": 147,
+    "radical": "見",
+    "variants": [
+      "見"
+    ],
+    "strokes": 7,
+    "name_jp": "みる (miru)",
+    "position": "つくり",
+    "meaning_th": "มองเห็น / ประจักษ์",
+    "total_kanji": 17,
+    "joyo_count": 7
+  },
+  {
+    "number": 148,
+    "radical": "角",
+    "variants": [
+      "角"
+    ],
+    "strokes": 7,
+    "name_jp": "つの (tsuno)",
+    "position": "へん",
+    "meaning_th": "เขาขลุกขลิก / มุม",
+    "total_kanji": 8,
+    "joyo_count": 3
+  },
+  {
+    "number": 149,
+    "radical": "言",
+    "variants": [
+      "言",
+      "訁"
+    ],
+    "strokes": 7,
+    "name_jp": "ことば (kotoba / gonben)",
+    "position": "へん",
+    "meaning_th": "คำพูด / ภาษา / วาจา",
+    "total_kanji": 153,
+    "joyo_count": 68
+  },
+  {
+    "number": 150,
+    "radical": "谷",
+    "variants": [
+      "谷"
+    ],
+    "strokes": 7,
+    "name_jp": "たに (tani)",
+    "position": "へん",
+    "meaning_th": "หุบเขา / ลำธารในเขา",
+    "total_kanji": 4,
+    "joyo_count": 1
+  },
+  {
+    "number": 151,
+    "radical": "豆",
+    "variants": [
+      "豆"
+    ],
+    "strokes": 7,
+    "name_jp": "まめ (mame)",
+    "position": "へん",
+    "meaning_th": "ถั่ว / ชามใส่อาหารมีเชิง",
+    "total_kanji": 5,
+    "joyo_count": 2
+  },
+  {
+    "number": 152,
+    "radical": "豕",
+    "variants": [
+      "豕"
+    ],
+    "strokes": 7,
+    "name_jp": "いのこ (inoko)",
+    "position": "へん",
+    "meaning_th": "หมูป่า / สุกร",
+    "total_kanji": 5,
+    "joyo_count": 3
+  },
+  {
+    "number": 153,
+    "radical": "豸",
+    "variants": [
+      "豸"
+    ],
+    "strokes": 7,
+    "name_jp": "むじな (mujina)",
+    "position": "へん",
+    "meaning_th": "สัตว์ร้ายไร้เท้า / แมวป่า",
+    "total_kanji": 8,
+    "joyo_count": 1
+  },
+  {
+    "number": 154,
+    "radical": "貝",
+    "variants": [
+      "貝"
+    ],
+    "strokes": 7,
+    "name_jp": "かい (kai / kaihen)",
+    "position": "へん",
+    "meaning_th": "หอยเบี้ย / ทรัพย์สิน / เงินตรา",
+    "total_kanji": 58,
+    "joyo_count": 35
+  },
+  {
+    "number": 155,
+    "radical": "赤",
+    "variants": [
+      "赤"
+    ],
+    "strokes": 7,
+    "name_jp": "あか (aka)",
+    "position": "その他",
+    "meaning_th": "สีแดง / เพลิงสว่าง",
+    "total_kanji": 6,
+    "joyo_count": 2
+  },
+  {
+    "number": 156,
+    "radical": "走",
+    "variants": [
+      "走"
+    ],
+    "strokes": 7,
+    "name_jp": "はしる (hashiru / sōnyō)",
+    "position": "にょう",
+    "meaning_th": "วิ่ง / เร่งรีบ",
+    "total_kanji": 10,
+    "joyo_count": 6
+  },
+  {
+    "number": 157,
+    "radical": "足",
+    "variants": [
+      "足",
+      "⻊"
+    ],
+    "strokes": 7,
+    "name_jp": "あし (ashi / ashihen)",
+    "position": "へん",
+    "meaning_th": "ขา / เท้า / เพียงพอ",
+    "total_kanji": 67,
+    "joyo_count": 11
+  },
+  {
+    "number": 158,
+    "radical": "身",
+    "variants": [
+      "身"
+    ],
+    "strokes": 7,
+    "name_jp": "み (mi / mihen)",
+    "position": "へん",
+    "meaning_th": "ร่างกาย / คนมีครรภ์",
+    "total_kanji": 8,
+    "joyo_count": 1
+  },
+  {
+    "number": 159,
+    "radical": "車",
+    "variants": [
+      "車"
+    ],
+    "strokes": 7,
+    "name_jp": "くるま (kuruma / kurumahen)",
+    "position": "へん",
+    "meaning_th": "เกวียน / รถ / ยานพาหนะ",
+    "total_kanji": 51,
+    "joyo_count": 15
+  },
+  {
+    "number": 160,
+    "radical": "辛",
+    "variants": [
+      "辛"
+    ],
+    "strokes": 7,
+    "name_jp": "からい (karai)",
+    "position": "その他",
+    "meaning_th": "เผ็ดร้อน / ความยากลำบาก / เข็มสัก",
+    "total_kanji": 5,
+    "joyo_count": 3
+  },
+  {
+    "number": 161,
+    "radical": "辰",
+    "variants": [
+      "辰"
+    ],
+    "strokes": 7,
+    "name_jp": "しんのたつ (shinnotatsu)",
+    "position": "たれ",
+    "meaning_th": "ปีมะโรง / การเคลื่อนไหวของดาว",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 162,
+    "radical": "辵",
+    "variants": [
+      "辵",
+      "辶",
+      "⻌"
+    ],
+    "strokes": 7,
+    "name_jp": "しんにょう (shinnyō)",
+    "position": "にょう",
+    "meaning_th": "การเดินทางบนถนน / การก้าวไป",
+    "total_kanji": 102,
+    "joyo_count": 51
+  },
+  {
+    "number": 163,
+    "radical": "邑",
+    "variants": [
+      "邑",
+      "⻏"
+    ],
+    "strokes": 7,
+    "name_jp": "おおざと (ōzato)",
+    "position": "つくり",
+    "meaning_th": "เมือง / หมู่บ้าน / ชุมชน",
+    "total_kanji": 26,
+    "joyo_count": 12
+  },
+  {
+    "number": 164,
+    "radical": "酉",
+    "variants": [
+      "酉"
+    ],
+    "strokes": 7,
+    "name_jp": "とりへん (torihen)",
+    "position": "へん",
+    "meaning_th": "ไหหมักสุรา / สุรา / ปีระกา",
+    "total_kanji": 39,
+    "joyo_count": 14
+  },
+  {
+    "number": 165,
+    "radical": "釆",
+    "variants": [
+      "釆"
+    ],
+    "strokes": 7,
+    "name_jp": "のごめ (nogome)",
+    "position": "その他",
+    "meaning_th": "การแยกแยะรอยเท้าสัตว์",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 166,
+    "radical": "里",
+    "variants": [
+      "里"
+    ],
+    "strokes": 7,
+    "name_jp": "さと (sato)",
+    "position": "その他",
+    "meaning_th": "หมู่บ้าน / หน่วยระยะทางลี้",
+    "total_kanji": 5,
+    "joyo_count": 4
+  },
+  {
+    "number": 167,
+    "radical": "金",
+    "variants": [
+      "金",
+      "釒"
+    ],
+    "strokes": 8,
+    "name_jp": "かね (kane / kanehen)",
+    "position": "へん",
+    "meaning_th": "ทองคำ / โลหะ / เงิน",
+    "total_kanji": 133,
+    "joyo_count": 33
+  },
+  {
+    "number": 168,
+    "radical": "長",
+    "variants": [
+      "長"
+    ],
+    "strokes": 8,
+    "name_jp": "ながい (nagai)",
+    "position": "その他",
+    "meaning_th": "ยาวไกล / ผู้ใหญ่ / ผู้นำ",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 169,
+    "radical": "門",
+    "variants": [
+      "門"
+    ],
+    "strokes": 8,
+    "name_jp": "もん (mon / mongamae)",
+    "position": "かまえ",
+    "meaning_th": "ซุ้มประตูใหญ่ / ประตูสองบาน",
+    "total_kanji": 36,
+    "joyo_count": 11
+  },
+  {
+    "number": 170,
+    "radical": "阜",
+    "variants": [
+      "阜",
+      "⻖"
+    ],
+    "strokes": 8,
+    "name_jp": "こざとへん (kozatohen)",
+    "position": "へん",
+    "meaning_th": "เนินดิน / ภูเขาเตี้ย",
+    "total_kanji": 55,
+    "joyo_count": 31
+  },
+  {
+    "number": 171,
+    "radical": "隶",
+    "variants": [
+      "隶"
+    ],
+    "strokes": 8,
+    "name_jp": "れいづくり (reizukuri)",
+    "position": "つくり",
+    "meaning_th": "การคว้าจับจากด้านหลัง",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 172,
+    "radical": "隹",
+    "variants": [
+      "隹"
+    ],
+    "strokes": 8,
+    "name_jp": "ふるとり (furutori)",
+    "position": "つくり",
+    "meaning_th": "นกหางสั้น / สกุณา",
+    "total_kanji": 19,
+    "joyo_count": 9
+  },
+  {
+    "number": 173,
+    "radical": "雨",
+    "variants": [
+      "雨",
+      "⻗"
+    ],
+    "strokes": 8,
+    "name_jp": "あめ (ame / amekanmuri)",
+    "position": "かんむり",
+    "meaning_th": "ฝน / ปรากฏการณ์ฟ้าดิน",
+    "total_kanji": 37,
+    "joyo_count": 13
+  },
+  {
+    "number": 174,
+    "radical": "靑",
+    "variants": [
+      "靑",
+      "青"
+    ],
+    "strokes": 8,
+    "name_jp": "あお (ao)",
+    "position": "その他",
+    "meaning_th": "สีฟ้า / สีเขียวมรกต / เยาว์วัย",
+    "total_kanji": 3,
+    "joyo_count": 2
+  },
+  {
+    "number": 175,
+    "radical": "非",
+    "variants": [
+      "非"
+    ],
+    "strokes": 8,
+    "name_jp": "あらず (arazu)",
+    "position": "その他",
+    "meaning_th": "ไม่ใช่ / ปีกนกหันหลังให้กัน",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 176,
+    "radical": "面",
+    "variants": [
+      "面"
+    ],
+    "strokes": 9,
+    "name_jp": "めん (men)",
+    "position": "その他",
+    "meaning_th": "ใบหน้า / ด้านหน้า",
+    "total_kanji": 4,
+    "joyo_count": 1
+  },
+  {
+    "number": 177,
+    "radical": "革",
+    "variants": [
+      "革"
+    ],
+    "strokes": 9,
+    "name_jp": "かわへん (kawahen)",
+    "position": "へん",
+    "meaning_th": "หนังสัตว์ฟอกแล้ว / ปฏิรูป",
+    "total_kanji": 28,
+    "joyo_count": 2
+  },
+  {
+    "number": 178,
+    "radical": "韋",
+    "variants": [
+      "韋"
+    ],
+    "strokes": 9,
+    "name_jp": "なめしがわ (nameshigawa)",
+    "position": "その他",
+    "meaning_th": "หนังฟอกนุ่ม / หันตรงข้าม",
+    "total_kanji": 4,
+    "joyo_count": 1
+  },
+  {
+    "number": 179,
+    "radical": "韭",
+    "variants": [
+      "韭"
+    ],
+    "strokes": 9,
+    "name_jp": "にら (nira)",
+    "position": "その他",
+    "meaning_th": "ต้นกุยช่าย",
+    "total_kanji": 3,
+    "joyo_count": 0
+  },
+  {
+    "number": 180,
+    "radical": "音",
+    "variants": [
+      "音"
+    ],
+    "strokes": 9,
+    "name_jp": "おと (oto / otohen)",
+    "position": "へん",
+    "meaning_th": "เสียงดนตรี / สำเนียง",
+    "total_kanji": 5,
+    "joyo_count": 3
+  },
+  {
+    "number": 181,
+    "radical": "頁",
+    "variants": [
+      "頁"
+    ],
+    "strokes": 9,
+    "name_jp": "おおがい (ōgai)",
+    "position": "つくり",
+    "meaning_th": "หน้ากระดาษ / ศีรษะมนุษย์",
+    "total_kanji": 42,
+    "joyo_count": 22
+  },
+  {
+    "number": 182,
+    "radical": "風",
+    "variants": [
+      "風"
+    ],
+    "strokes": 9,
+    "name_jp": "かぜ (kaze)",
+    "position": "かまえ",
+    "meaning_th": "สายลม / ธรรมเนียม",
+    "total_kanji": 7,
+    "joyo_count": 1
+  },
+  {
+    "number": 183,
+    "radical": "飛",
+    "variants": [
+      "飛"
+    ],
+    "strokes": 9,
+    "name_jp": "とぶ (tobu)",
+    "position": "その他",
+    "meaning_th": "บินขึ้นสู่ฟ้า",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 184,
+    "radical": "食",
+    "variants": [
+      "食",
+      "飠"
+    ],
+    "strokes": 9,
+    "name_jp": "しょく (shoku / shokuhen)",
+    "position": "へん",
+    "meaning_th": "อาหาร / การรับประทาน",
+    "total_kanji": 38,
+    "joyo_count": 12
+  },
+  {
+    "number": 185,
+    "radical": "首",
+    "variants": [
+      "首"
+    ],
+    "strokes": 9,
+    "name_jp": "くび (kubi)",
+    "position": "その他",
+    "meaning_th": "คอ / ลำคอ / หัวหน้า",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 186,
+    "radical": "香",
+    "variants": [
+      "香"
+    ],
+    "strokes": 9,
+    "name_jp": "かおり (kaori)",
+    "position": "その他",
+    "meaning_th": "กลิ่นหอมของรวงข้าว",
+    "total_kanji": 3,
+    "joyo_count": 1
+  },
+  {
+    "number": 187,
+    "radical": "馬",
+    "variants": [
+      "馬"
+    ],
+    "strokes": 10,
+    "name_jp": "うま (uma / umahen)",
+    "position": "へん",
+    "meaning_th": "ม้า / สัตว์พาหนะ",
+    "total_kanji": 51,
+    "joyo_count": 11
+  },
+  {
+    "number": 188,
+    "radical": "骨",
+    "variants": [
+      "骨"
+    ],
+    "strokes": 10,
+    "name_jp": "ほね (hone / honehen)",
+    "position": "へん",
+    "meaning_th": "กระดูก / โครงร่าง",
+    "total_kanji": 9,
+    "joyo_count": 3
+  },
+  {
+    "number": 189,
+    "radical": "高",
+    "variants": [
+      "高"
+    ],
+    "strokes": 10,
+    "name_jp": "たかい (takai)",
+    "position": "その他",
+    "meaning_th": "สูง / หอคอยสูง",
+    "total_kanji": 1,
+    "joyo_count": 1
+  },
+  {
+    "number": 190,
+    "radical": "髟",
+    "variants": [
+      "髟"
+    ],
+    "strokes": 10,
+    "name_jp": "かみがしら (kamigashira)",
+    "position": "かんむり",
+    "meaning_th": "เส้นผมยาวสยาย",
+    "total_kanji": 18,
+    "joyo_count": 1
+  },
+  {
+    "number": 191,
+    "radical": "鬥",
+    "variants": [
+      "鬥"
+    ],
+    "strokes": 10,
+    "name_jp": "とうがまえ (tōgamae)",
+    "position": "かまえ",
+    "meaning_th": "การต่อสู้ / ประจันหน้า",
+    "total_kanji": 5,
+    "joyo_count": 0
+  },
+  {
+    "number": 192,
+    "radical": "鬯",
+    "variants": [
+      "鬯"
+    ],
+    "strokes": 10,
+    "name_jp": "ちょう (chō)",
+    "position": "その他",
+    "meaning_th": "สุราสมุนไพรเซ่นไหว้",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 193,
+    "radical": "鬲",
+    "variants": [
+      "鬲"
+    ],
+    "strokes": 10,
+    "name_jp": "かなえ (kanae)",
+    "position": "その他",
+    "meaning_th": "หม้อต้มสามขา",
+    "total_kanji": 1,
+    "joyo_count": 0
+  },
+  {
+    "number": 194,
+    "radical": "鬼",
+    "variants": [
+      "鬼"
+    ],
+    "strokes": 10,
+    "name_jp": "おに (oni)",
+    "position": "つくり",
+    "meaning_th": "อสูร / วิญญาณ / ยักษ์",
+    "total_kanji": 12,
+    "joyo_count": 4
+  },
+  {
+    "number": 195,
+    "radical": "魚",
+    "variants": [
+      "魚"
+    ],
+    "strokes": 11,
+    "name_jp": "うお (uo / uohen)",
+    "position": "へん",
+    "meaning_th": "ปลา / สัตว์น้ำ",
+    "total_kanji": 90,
+    "joyo_count": 3
+  },
+  {
+    "number": 196,
+    "radical": "鳥",
+    "variants": [
+      "鳥"
+    ],
+    "strokes": 11,
+    "name_jp": "とり (tori / torihen)",
+    "position": "つくり",
+    "meaning_th": "นกหางยาว",
+    "total_kanji": 79,
+    "joyo_count": 4
+  },
+  {
+    "number": 197,
+    "radical": "鹵",
+    "variants": [
+      "鹵"
+    ],
+    "strokes": 11,
+    "name_jp": "ろ (ro)",
+    "position": "その他",
+    "meaning_th": "ดินเค็ม / เกลือสินเธาว์",
+    "total_kanji": 4,
+    "joyo_count": 0
+  },
+  {
+    "number": 198,
+    "radical": "鹿",
+    "variants": [
+      "鹿"
+    ],
+    "strokes": 11,
+    "name_jp": "しか (shika)",
+    "position": "その他",
+    "meaning_th": "กวาง",
+    "total_kanji": 14,
+    "joyo_count": 3
+  },
+  {
+    "number": 199,
+    "radical": "麥",
+    "variants": [
+      "麥",
+      "麦"
+    ],
+    "strokes": 11,
+    "name_jp": "むぎ (mugi)",
+    "position": "その他",
+    "meaning_th": "ข้าวสาลี / ข้าวบาร์เลย์",
+    "total_kanji": 8,
+    "joyo_count": 2
+  },
+  {
+    "number": 200,
+    "radical": "麻",
+    "variants": [
+      "麻"
+    ],
+    "strokes": 11,
+    "name_jp": "あさ (asa)",
+    "position": "たれ",
+    "meaning_th": "ต้นป่าน / ต้นกัญชง",
+    "total_kanji": 4,
+    "joyo_count": 1
+  },
+  {
+    "number": 201,
+    "radical": "黃",
+    "variants": [
+      "黃",
+      "黄"
+    ],
+    "strokes": 12,
+    "name_jp": "きいろ (kiiro)",
+    "position": "その他",
+    "meaning_th": "สีเหลือง / ธาตุดิน",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 202,
+    "radical": "黍",
+    "variants": [
+      "黍"
+    ],
+    "strokes": 12,
+    "name_jp": "きび (kibi)",
+    "position": "その他",
+    "meaning_th": "ข้าวฟ่างเหนียว",
+    "total_kanji": 4,
+    "joyo_count": 0
+  },
+  {
+    "number": 203,
+    "radical": "黑",
+    "variants": [
+      "黑",
+      "黒"
+    ],
+    "strokes": 12,
+    "name_jp": "くろ (kuro)",
+    "position": "その他",
+    "meaning_th": "สีดำ / ควันไฟเขม่า",
+    "total_kanji": 12,
+    "joyo_count": 2
+  },
+  {
+    "number": 204,
+    "radical": "黹",
+    "variants": [
+      "黹"
+    ],
+    "strokes": 12,
+    "name_jp": "ち (chi)",
+    "position": "その他",
+    "meaning_th": "การเย็บปักถักร้อย",
+    "total_kanji": 3,
+    "joyo_count": 0
+  },
+  {
+    "number": 205,
+    "radical": "黽",
+    "variants": [
+      "黽"
+    ],
+    "strokes": 13,
+    "name_jp": "べん (ben)",
+    "position": "その他",
+    "meaning_th": "กบ / คางคก",
+    "total_kanji": 3,
+    "joyo_count": 0
+  },
+  {
+    "number": 206,
+    "radical": "鼎",
+    "variants": [
+      "鼎"
+    ],
+    "strokes": 13,
+    "name_jp": "かなえ (kanae)",
+    "position": "その他",
+    "meaning_th": "กระถางสามขาแห่งอำนาจ",
+    "total_kanji": 1,
+    "joyo_count": 0
+  },
+  {
+    "number": 207,
+    "radical": "鼓",
+    "variants": [
+      "鼓"
+    ],
+    "strokes": 13,
+    "name_jp": "つづみ (tsudzumi)",
+    "position": "その他",
+    "meaning_th": "กลองศึก",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 208,
+    "radical": "鼠",
+    "variants": [
+      "鼠"
+    ],
+    "strokes": 13,
+    "name_jp": "ねずみ (nezumi)",
+    "position": "へん",
+    "meaning_th": "หนู",
+    "total_kanji": 5,
+    "joyo_count": 0
+  },
+  {
+    "number": 209,
+    "radical": "鼻",
+    "variants": [
+      "鼻"
+    ],
+    "strokes": 14,
+    "name_jp": "はな (hana)",
+    "position": "へん",
+    "meaning_th": "จมูก / การหายใจ",
+    "total_kanji": 2,
+    "joyo_count": 1
+  },
+  {
+    "number": 210,
+    "radical": "齊",
+    "variants": [
+      "齊",
+      "斉"
+    ],
+    "strokes": 14,
+    "name_jp": "せい (sei)",
+    "position": "その他",
+    "meaning_th": "ความเรียบร้อย / เสมอกัน",
+    "total_kanji": 2,
+    "joyo_count": 0
+  },
+  {
+    "number": 211,
+    "radical": "齒",
+    "variants": [
+      "齒",
+      "歯"
+    ],
+    "strokes": 15,
+    "name_jp": "は (ha)",
+    "position": "へん",
+    "meaning_th": "ฟัน / วัยอายุ",
+    "total_kanji": 12,
+    "joyo_count": 1
+  },
+  {
+    "number": 212,
+    "radical": "龍",
+    "variants": [
+      "龍",
+      "竜"
+    ],
+    "strokes": 16,
+    "name_jp": "りゅう (ryū)",
+    "position": "その他",
+    "meaning_th": "มังกร",
+    "total_kanji": 2,
+    "joyo_count": 0
+  },
+  {
+    "number": 213,
+    "radical": "龜",
+    "variants": [
+      "龜",
+      "亀"
+    ],
+    "strokes": 16,
+    "name_jp": "かめ (kame)",
+    "position": "その他",
+    "meaning_th": "เต่า / อายุวัฒนะ",
+    "total_kanji": 0,
+    "joyo_count": 0
+  },
+  {
+    "number": 214,
+    "radical": "龠",
+    "variants": [
+      "龠"
+    ],
+    "strokes": 17,
+    "name_jp": "やく (yaku)",
+    "position": "その他",
+    "meaning_th": "ขลุ่ยสามรู / ดนตรีโบราณ",
+    "total_kanji": 1,
+    "joyo_count": 0
+  }
+]

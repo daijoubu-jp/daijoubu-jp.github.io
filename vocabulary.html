@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="คลังคำศัพท์และสำนวนคันจิ (Kanji Vocabulary & Jukugo) - รวมสุภาษิต 4 ตัวอักษร (四字熟語), คำศัพท์หมวดสัตว์ พืช ชื่อประเทศในคันจิ และศัพท์จากมังงะอนิเมะ Bleach, Naruto, Kimetsu no Yaiba, Jujutsu Kaisen">
+  <meta name="theme-color" content="#FFF9FB">
+  <title>คลังคำศัพท์และสำนวนคันจิ (Kanji Vocabulary & Jukugo) | KanjiThai</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+</head>
+<body data-page="vocabulary">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- 1. Left: Mobile Navigation Menu Toggle (Hamburger) -->
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Right: Theme Switcher -->
+      <div class="nav-actions">
+        <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" style="padding: 2.5rem 0 1.75rem;">
+      <div class="container" style="text-align: center;">
+        <h1 class="hero-title" style="font-size: clamp(1.85rem, 4vw, 2.75rem); margin-bottom: 0.5rem;">
+          คลังคำศัพท์และสำนวนคันจิ <br>
+          <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--color-accent); font-weight: 600;">(Kanji Vocabulary & Jukugo Hub)</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 680px; margin: 0 auto 1.5rem; font-size: var(--font-size-sm); color: var(--color-text-muted);">
+          รวบรวมสุภาษิต 4 ตัวอักษร (四字熟語), คำศัพท์หมวดสัตว์ พืช ดอกไม้ ชื่อประเทศทับศัพท์ Ateji และศัพท์ท่าไม้ตายสุดเท่จากมังงะ/อนิเมะ พร้อมการแยกส่วนคันจิและเสียงอ่าน
+        </p>
+
+        <!-- Search Input Bar -->
+        <div class="search-input-group" style="max-width: 640px; margin: 0 auto; box-shadow: var(--shadow-md);">
+          <span style="font-size: 1.2rem; color: var(--color-text-muted); margin-right: 6px;">🔍</span>
+          <input 
+            type="search" 
+            id="vocab-search-input" 
+            class="search-input" 
+            placeholder="ค้นหาคันจิ, เสียงอ่าน (rasengan), ความหมายไทย (แพนด้า), อังกฤษ, หรือชื่ออนิเมะ..."
+            autocomplete="off"
+          >
+          <button type="button" class="search-clear-btn" id="vocab-clear-btn" aria-label="ล้างข้อความ">✕</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container" style="padding-top: var(--spacing-md);">
+      
+      <!-- 2-Tier Filter Navigation -->
+      <div class="vocab-filter-wrapper">
+        <!-- Tier 1: Segmented Main Tabs -->
+        <div class="vocab-tier1-bar" role="tablist" aria-label="หมวดหมู่หลัก">
+          <button type="button" class="vocab-tier1-tab active" data-tier="all" role="tab" aria-selected="true">
+            <span class="tab-icon">🌟</span>
+            <span class="tab-text">ทั้งหมด (All)</span>
+            <span class="tab-badge" id="badge-count-all">60</span>
+          </button>
+          <button type="button" class="vocab-tier1-tab" data-tier="general" role="tab" aria-selected="false">
+            <span class="tab-icon">📚</span>
+            <span class="tab-text">คำศัพท์ทั่วไป &amp; สำนวน</span>
+            <span class="tab-badge" id="badge-count-general">34</span>
+          </button>
+          <button type="button" class="vocab-tier1-tab" data-tier="anime" role="tab" aria-selected="false">
+            <span class="tab-icon">⚔️</span>
+            <span class="tab-text">มังงะ &amp; อนิเมะ</span>
+            <span class="tab-badge" id="badge-count-anime">26</span>
+          </button>
+        </div>
+
+        <!-- Tier 2: Sub-category Chips Container -->
+        <div class="vocab-tier2-container">
+          <!-- Tier 2 Group: All -->
+          <div class="vocab-tier2-group active" data-tier-group="all">
+            <button type="button" class="vocab-chip active" data-category="all">
+              <span>🌟</span> ทุกคำศัพท์ (ทั้งหมด)
+            </button>
+            <button type="button" class="vocab-chip" data-category="yojijukugo">
+              <span>📜</span> สุภาษิต 4 ตัว
+            </button>
+            <button type="button" class="vocab-chip" data-category="animals">
+              <span>🦊</span> สัตว์ในคันจิ
+            </button>
+            <button type="button" class="vocab-chip" data-category="plants">
+              <span>🌸</span> พืช・ดอกไม้
+            </button>
+            <button type="button" class="vocab-chip" data-category="countries">
+              <span>🌍</span> ชื่อประเทศ
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-all">
+              <span>⚔️</span> รวมอนิเมะทั้งหมด
+            </button>
+          </div>
+
+          <!-- Tier 2 Group: General Vocab -->
+          <div class="vocab-tier2-group" data-tier-group="general">
+            <button type="button" class="vocab-chip" data-category="general-all">
+              <span>✨</span> ทั้งหมดในหมวดทั่วไป
+            </button>
+            <button type="button" class="vocab-chip" data-category="yojijukugo">
+              <span>📜</span> สุภาษิต 4 ตัวอักษร (四字熟語)
+            </button>
+            <button type="button" class="vocab-chip" data-category="animals">
+              <span>🦊</span> สัตว์ในคันจิ (動物)
+            </button>
+            <button type="button" class="vocab-chip" data-category="plants">
+              <span>🌸</span> พืช ดอกไม้ ผลไม้ (植物・花・果物)
+            </button>
+            <button type="button" class="vocab-chip" data-category="countries">
+              <span>🌍</span> ชื่อประเทศ &amp; อักษรย่อ (国名・当て字)
+            </button>
+          </div>
+
+          <!-- Tier 2 Group: Anime & Manga -->
+          <div class="vocab-tier2-group" data-tier-group="anime">
+            <button type="button" class="vocab-chip" data-category="anime-all">
+              <span>✨</span> รวมทุกเรื่อง (อนิเมะทั้งหมด)
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-bleach">
+              <span>⚔️</span> Bleach (เทพมรณะ)
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-naruto">
+              <span>🍥</span> Naruto (นินจาคาถา)
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-kny">
+              <span>🗡️</span> ดาบพิฆาตอสูร (Demon Slayer)
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-jjk">
+              <span>🤞</span> มหาเวทย์ผนึกมาร (Jujutsu Kaisen)
+            </button>
+            <button type="button" class="vocab-chip" data-category="anime-other">
+              <span>👑</span> อนิเมะยอดฮิตอื่นๆ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Summary Bar -->
+      <div class="vocab-controls-bar">
+        <div id="vocab-results-count" style="font-weight: 700; color: var(--color-text-muted);">
+          กำลังโหลดคำศัพท์...
+        </div>
+
+        <div style="display: flex; align-items: center; gap: var(--spacing-sm); flex-wrap: wrap;">
+          <!-- Furigana Toggle -->
+          <button type="button" class="furigana-toggle-btn active" id="furigana-toggle-btn" title="คลิกเพื่อเปิด/ซ่อนฟุริงะนะบนตัวคันจิ">
+            <span>[振]</span> ฟุริงะนะ: <strong>เปิด</strong>
+          </button>
+
+          <!-- Sort Select -->
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <label for="vocab-sort-select" style="font-size: var(--font-size-sm); color: var(--color-text-muted);">เรียงตาม:</label>
+            <select id="vocab-sort-select" style="padding: 6px 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text);">
+              <option value="default" selected>หมวดหมู่และลำดับแนะนำ</option>
+              <option value="word">เสียงอ่าน (あいうえお)</option>
+              <option value="length">ความสั้น-ยาวของคำ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vocabulary Cards Grid -->
+      <div class="vocab-grid" id="vocab-grid">
+        <div class="skeleton" style="height: 280px; border-radius: var(--border-radius);"></div>
+        <div class="skeleton" style="height: 280px; border-radius: var(--border-radius);"></div>
+        <div class="skeleton" style="height: 280px; border-radius: var(--border-radius);"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลคำศัพท์และสำนวนจัดทำเพื่อการศึกษาภาษาและวัฒนธรรมญี่ปุ่น | KanjiThai © 2026
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

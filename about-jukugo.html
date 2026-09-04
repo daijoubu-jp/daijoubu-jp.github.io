@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring" data-mode="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ศาสตร์แห่งคำประสมคันจิ (The Linguistics of Jukugo) - โครงสร้างไวยากรณ์ 6 รูปแบบ กฎการอ่านจูบาโกะ-ยูโตะ และความลึกซึ้งของสุภาษิต 4 ตัวอักษร (四字熟語)">
+  <meta name="theme-color" content="#FFF9FB">
+  <title>เกี่ยวกับ 熟語 คำประสมคันจิ (熟語の成り立ちと構成) | KanjiThai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes/spring.css">
+  <link rel="stylesheet" href="assets/css/themes/summer.css">
+  <link rel="stylesheet" href="assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="assets/css/themes/winter.css">
+  <link rel="stylesheet" href="assets/css/themes/anime.css">
+  <link rel="stylesheet" href="assets/css/themes/ukiyoe.css">
+</head>
+<body data-page="knowledge">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">KanjiThai</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <a href="browse.html" class="nav-link" data-nav="dictionary">พจนานุกรม</a>
+            <ul class="dropdown-menu">
+              <li><a href="browse.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="kanji-knowledge.html" class="nav-link" data-nav="knowledge">คลังความรู้</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-knowledge.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="kanji-history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="handwriting-guide.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="kanken-guide.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="about-radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="about-jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="kanji-games.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <a href="tools.html" class="nav-link" data-nav="tools">เครื่องมือ</a>
+            <ul class="dropdown-menu">
+              <li><a href="kanji-worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="tools.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero-section" style="padding: 2.5rem 0 1.5rem;">
+      <div class="container" style="text-align: center;">
+        <h1 class="hero-title" style="font-size: clamp(1.85rem, 4vw, 2.75rem); margin-bottom: 0.5rem;">
+          ศาสตร์แห่งคำประสมคันจิ (熟語) <br>
+          <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--color-accent); font-weight: 600;">(The Linguistics & Grammar of Jukugo)</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 780px; margin: 0 auto; font-size: var(--font-size-sm); color: var(--color-text-muted);">
+          ไขรหัสลับโครงสร้างไวยากรณ์คำประสมคันจิ 6 รูปแบบ กฎการอ่านแบบลูกผสม (重箱・湯桶) และมนต์เสน่ห์แห่งสุภาษิต 4 ตัวอักษร
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: var(--spacing-xl); max-width: 920px;">
+      
+      <!-- Intro Card -->
+      <article class="detail-card" style="margin-bottom: var(--spacing-xl); border-left: 4px solid var(--color-accent);">
+        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-xs);">
+          📖 熟語 (จูคุโกะ) คืออะไร?
+        </h2>
+        <p style="line-height: 1.8; color: var(--color-text);">
+          <strong>จูคุโกะ (熟語)</strong> คือคำศัพท์ที่เกิดจากการนำคันจิตั้งแต่ 2 ตัวขึ้นไปมาประสมกันจนเกิดเป็นคำศัพท์ใหม่ที่มีความหมายสมบูรณ์ในตัวเอง (เช่น 森林, 読書, 領域展開) การเข้าใจ <em>"ความสัมพันธ์เชิงตรรกะระหว่างคันจิแต่ละตัว"</em> จะช่วยให้ผู้เรียนสามารถจดจำคำศัพท์นับหมื่นคำได้อย่างแม่นยำและเป็นระบบ
+        </p>
+      </article>
+
+      <!-- 6 Structural Patterns -->
+      <h2 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--color-text);">
+        🧩 6 โครงสร้างตรรกะของคำประสม (熟語の6つの構成)
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-md); margin-bottom: var(--spacing-2xl);">
+        
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">1. ความหมายคล้ายกัน (似た意味)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            คันจิสองตัวที่มีความหมายใกล้เคียงกันมารวมพลังเพื่อเน้นย้ำความหมายให้ชัดเจนขึ้น
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 森林 (ป่า + ดง), 変化 (เปลี่ยน + กลาย), 停止 (หยุด + นิ่ง), 永久 (นิรันดร์ + กาล)
+          </div>
+        </div>
+
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">2. ความหมายตรงข้ามกัน (対立・対比)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            นำคันจิที่มีความหมายคู่ขนานหรือขั้วตรงข้ามมาคู่กัน เพื่อแสดงสเปกตรัมหรือสภาพทั้งหมด
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 明暗 (สว่าง-มืด), 高低 (สูง-ต่ำ), 勝敗 (แพ้-ชนะ), 左右 (ซ้าย-ขวา)
+          </div>
+        </div>
+
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">3. ตัวหน้าขยายตัวหลัง (修飾・被修飾)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            คันจิตัวแรกทำหน้าที่เป็นคำคุณศัพท์ (Adjective) ขยายคำนามที่เป็นคันจิตัวหลัง
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 青空 (ท้องฟ้าสีคราม), 鉄道 (ทางรถไฟเหล็ก), 高山 (ภูเขาสูง), 急行 (ด่วน)
+          </div>
+        </div>
+
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">4. กริยา + กรรม (動詞＋目的語)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            ตัวแรกคือกริยา ส่วนตัวหลังคือสิ่งที่ถูกกระทำ (เรียงตามไวยากรณ์จีน: Verb + Object)
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 読書 (อ่านหนังสือ), 登山 (ปีนภูเขา), 飲水 (ดื่มน้ำ), 帰国 (กลับประเทศ)
+          </div>
+        </div>
+
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">5. คำปฏิเสธนำหน้า (否定)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            ขึ้นต้นด้วยคันจิที่มีความหมายว่า "ไม่" เช่น 不, 無, 非, 未 เพื่อกลับความหมายเป็นตรงข้าม
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 不安 (ไม่สงบ), 無理 (ไร้เหตุผล/ฝืน), 未知 (ยังไม่รู้), 非常 (ไม่ธรรมดา)
+          </div>
+        </div>
+
+        <div class="detail-card" style="padding: var(--spacing-md);">
+          <h3 style="font-size: 1.05rem; color: var(--color-accent); margin-bottom: 6px;">6. ประธาน + กริยา (主語＋述語)</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: 8px;">
+            ตัวหน้าเป็นประธาน และตัวหลังเป็นอาการกริยาหรือสภาพของประธานนั้น
+          </p>
+          <div style="font-size: var(--font-size-sm); background: var(--color-surface-2); padding: 8px; border-radius: 4px;">
+            <strong>ตัวอย่าง:</strong> 日没 (ดวงอาทิตย์ตก), 雷鳴 (ฟ้าร้อง), 地震 (แผ่นดินไหว), 国立 (รัฐจัดตั้ง)
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Special Readings Box -->
+      <article class="detail-card" style="margin-bottom: var(--spacing-xl);">
+        <h2 style="font-size: var(--font-size-xl); color: var(--color-accent); margin-bottom: var(--spacing-sm);">
+          🗣️ กฎการอ่านแบบผสมผสานพิเศษ (重箱読み・湯桶読み)
+        </h2>
+        <p style="line-height: 1.8; color: var(--color-text); margin-bottom: var(--spacing-md);">
+          ตามปกติแล้ว คำประสมคันจิมักอ่านด้วยเสียงองคู่กัน (音＋音) หรือเสียงคุนคู่กัน (訓＋訓) แต่ในประวัติศาสตร์ภาษาญี่ปุ่น มีคำบางกลุ่มที่ <strong>ผสมเสียงองและคุนเข้าด้วยกัน</strong>:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-md);">
+          <div style="background: var(--color-surface-2); padding: var(--spacing-md); border-radius: var(--border-radius-sm);">
+            <h4 style="color: var(--color-accent); margin-bottom: 4px;">📦 重箱読み (จูบาโกะโยมิ) = 音 (On) + 訓 (Kun)</h4>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6;">
+              ตัวหน้าอ่านเสียงอง ตัวหลังอ่านเสียงคุน
+              <br><strong>ตัวอย่าง:</strong> 重箱 (じゅう・ばこ), 役場 (やく・ば), 本棚 (ほん・だな), 額縁 (がく・ぶち)
+            </p>
+          </div>
+          <div style="background: var(--color-surface-2); padding: var(--spacing-md); border-radius: var(--border-radius-sm);">
+            <h4 style="color: var(--color-accent); margin-bottom: 4px;">♨️ 湯桶読み (ยูโตะโยมิ) = 訓 (Kun) + 音 (On)</h4>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); line-height: 1.6;">
+              ตัวหน้าอ่านเสียงคุน ตัวหลังอ่านเสียงอง
+              <br><strong>ตัวอย่าง:</strong> 湯桶 (ゆ・とう), 場所 (ば・しょ), 雨具 (あま・ぐ), 荷物 (に・もつ)
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CTA -->
+      <div style="text-align: center; margin-bottom: var(--spacing-2xl);">
+        <a href="vocabulary.html" class="action-btn" style="padding: 12px 28px; font-size: 1rem; text-decoration: none; border-radius: var(--border-radius-full); display: inline-flex; align-items: center; gap: 8px;">
+          <span>📚</span> สำรวจคลังคำศัพท์และสุภาษิต 4 ตัวอักษร (四字熟語 Hub) ➔
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลไวยากรณ์คำประสมและเสียงอ่านพิเศษภาษาญี่ปุ่น | KanjiThai © 2026
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* ==========================================================================
+   SPRING / SAKURA THEME (春・桜)
+   Aesthetic: Gentle cherry blossoms, soft pinks, fresh spring greens
+   ========================================================================== */
+
+/* --- Light Mode (Default) --- */
+[data-theme="spring"],
+[data-theme="spring"][data-mode="light"] {
+  --color-bg: #FFF9FB;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #FFF0F5;
+  --color-surface-hover: #FFE4EC;
+  --color-border: #F3D3DF;
+  --color-border-subtle: #FAECF2;
+  
+  --color-text: #4A343D;
+  --color-text-muted: #8E6C7B;
+  --color-text-inverse: #FFFFFF;
+  
+  --color-accent: #E86F88;
+  --color-accent-hover: #D4546F;
+  --color-accent-light: #FFDDE6;
+  --color-accent-2: #6EA888;
+  
+  --color-kanji-display: #38242D;
+  --color-card-border: rgba(232, 111, 136, 0.2);
+  --color-shadow: rgba(74, 52, 61, 0.08);
+  --color-shadow-hover: rgba(232, 111, 136, 0.2);
+
+  --gradient-hero: linear-gradient(135deg, rgba(255, 183, 197, 0.25) 0%, rgba(255, 249, 251, 0.8) 50%, rgba(168, 216, 168, 0.2) 100%);
+  --theme-banner-bg: #FFF0F5;
+  --theme-icon: '🌸';
+  --theme-name-en: 'Spring (Sakura)';
+  --theme-name-th: 'ฤดูใบไม้ผลิ (ซากุระ)';
+  --theme-name-jp: '春 (さくら)';
+}
+
+/* --- Dark Mode (Night Sakura / 夜桜) --- */
+[data-theme="spring"][data-mode="dark"] {
+  --color-bg: #1E1218;
+  --color-surface: #2D1D26;
+  --color-surface-2: #3E2934;
+  --color-surface-hover: #4F3543;
+  --color-border: #503140;
+  --color-border-subtle: #36222E;
+  
+  --color-text: #FDE8EF;
+  --color-text-muted: #C49EAE;
+  --color-text-inverse: #1E1218;
+  
+  --color-accent: #FF7597;
+  --color-accent-hover: #FF94AF;
+  --color-accent-light: rgba(255, 117, 151, 0.25);
+  --color-accent-2: #84CC16;
+  
+  --color-kanji-display: #FFB3C6;
+  --color-card-border: rgba(255, 117, 151, 0.3);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-shadow-hover: rgba(255, 117, 151, 0.35);
+
+  --gradient-hero: linear-gradient(135deg, #2D1D26 0%, #1E1218 60%, #3B1B2A 100%);
+  --theme-banner-bg: #2D1D26;
+  --theme-icon: '🌸';
+  --theme-name-en: 'Night Sakura';
+  --theme-name-th: 'ซากุระราตรี (夜桜)';
+  --theme-name-jp: '夜桜 (よざくら)';
+}
+
+/* Subtle floating petal decoration */
+[data-theme="spring"] .hero-section::before {
+  content: '🌸';
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 1.5rem;
+  opacity: 0.3;
+  animation: floatPetal 8s ease-in-out infinite;
+}
+
+[data-theme="spring"] .hero-section::after {
+  content: '🌸';
+  position: absolute;
+  bottom: 15%;
+  right: 8%;
+  font-size: 1.2rem;
+  opacity: 0.25;
+  animation: floatPetal 10s ease-in-out infinite reverse;
+}
+
+@keyframes floatPetal {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(20deg); }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "level": "10",
+    "file": "data/kanji-levels/kanken-10.json",
+    "count": 80,
+    "source_pdf": "kanken-10.pdf"
+  },
+  {
+    "level": "9",
+    "file": "data/kanji-levels/kanken-9.json",
+    "count": 160,
+    "source_pdf": "kanken-9.pdf"
+  },
+  {
+    "level": "8",
+    "file": "data/kanji-levels/kanken-8.json",
+    "count": 200,
+    "source_pdf": "kanken-8.pdf"
+  },
+  {
+    "level": "7",
+    "file": "data/kanji-levels/kanken-7.json",
+    "count": 202,
+    "source_pdf": "kanken-7.pdf"
+  },
+  {
+    "level": "6",
+    "file": "data/kanji-levels/kanken-6.json",
+    "count": 193,
+    "source_pdf": "kanken-6.pdf"
+  },
+  {
+    "level": "5",
+    "file": "data/kanji-levels/kanken-5.json",
+    "count": 191,
+    "source_pdf": "kanken-5.pdf"
+  },
+  {
+    "level": "4",
+    "file": "data/kanji-levels/kanken-4.json",
+    "count": 313,
+    "source_pdf": "kanken-4.pdf"
+  },
+  {
+    "level": "3",
+    "file": "data/kanji-levels/kanken-3.json",
+    "count": 284,
+    "source_pdf": "kanken-3.pdf"
+  },
+  {
+    "level": "jun2",
+    "file": "data/kanji-levels/kanken-jun2.json",
+    "count": 328,
+    "source_pdf": "kanken-jun-2.pdf"
+  },
+  {
+    "level": "2",
+    "file": "data/kanji-levels/kanken-2.json",
+    "count": 185,
+    "source_pdf": "kanken-2.pdf"
+  },
+  {
+    "level": "jun1",
+    "file": "data/kanji-levels/kanken-jun1.json",
+    "count": 942,
+    "source_pdf": "kanken-jun-1.pdf"
+  },
+  {
+    "level": "1",
+    "file": "data/kanji-levels/kanken-1.json",
+    "count": 2789,
+    "source_pdf": "kanken-1.pdf"
+  }
+]
