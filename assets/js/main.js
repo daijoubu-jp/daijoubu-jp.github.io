@@ -196,6 +196,9 @@ async function initHomePage() {
   // Setup Category quick links tabs
   setupCategoryTabs();
 
+  // Setup Tsundere Alpha Warning Banner
+  setupTsundereBanner();
+
   if (!searchInput) return;
 
   let debounceTimer = null;
@@ -415,6 +418,28 @@ function setupBackToTop() {
 
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/**
+ * Handles dismissing of the Tsundere under-construction Alpha banner.
+ */
+function setupTsundereBanner() {
+  const banner = document.getElementById('tsundere-alpha-banner');
+  const closeBtn = document.getElementById('close-tsundere-banner');
+  if (!banner || !closeBtn) return;
+
+  if (sessionStorage.getItem('tsundere-banner-dismissed') === 'true') {
+    banner.style.display = 'none';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    banner.style.opacity = '0';
+    banner.style.transform = 'translateY(-6px)';
+    setTimeout(() => {
+      banner.style.display = 'none';
+      sessionStorage.setItem('tsundere-banner-dismissed', 'true');
+    }, 200);
   });
 }
 
