@@ -22,3 +22,5 @@ Thumbs.db
 # Internal authoring & processing tools (not published to GitHub)
 content/
 scripts/
+revisions.md
+
