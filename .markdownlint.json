@@ -1,0 +1,34 @@
+{
+  "default": true,
+  "MD003": false,
+  "MD013": false,
+  "MD033": {
+    "allowed_elements": [
+      "ruby",
+      "rt",
+      "rp",
+      "br",
+      "details",
+      "summary",
+      "aside",
+      "span",
+      "div",
+      "a",
+      "table",
+      "thead",
+      "tbody",
+      "tr",
+      "th",
+      "td",
+      "p",
+      "strong",
+      "em",
+      "kbd"
+    ]
+  },
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD041": false,
+  "MD036": false
+}

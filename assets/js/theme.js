@@ -196,6 +196,12 @@ export function renderThemeDropdown(container) {
         `;
       }).join('')}
     </div>
+
+    <div style="padding: 8px 12px; border-top: 1px solid var(--color-border-subtle); text-align: center;">
+      <button type="button" id="theme-auto-reset-btn" style="width: 100%; font-size: 0.78rem; padding: 6px; border-radius: var(--border-radius-sm); background: var(--color-surface-2); border: 1px dashed var(--color-accent); color: var(--color-accent); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; transition: all var(--transition-fast);">
+        <span>🕒</span> รีเซ็ตเป็นตามฤดูกาล & เวลา
+      </button>
+    </div>
   `;
 
   // Bind sliding switch inside dropdown
@@ -222,4 +228,18 @@ export function renderThemeDropdown(container) {
       container.classList.remove('show');
     });
   });
+
+  // Bind Auto Seasonal Reset Button
+  const autoResetBtn = container.querySelector('#theme-auto-reset-btn');
+  if (autoResetBtn) {
+    autoResetBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      localStorage.removeItem('kanji-theme');
+      localStorage.removeItem('kanjithai_theme');
+      localStorage.removeItem('kanji-theme-mode');
+      localStorage.removeItem('kanjithai_mode');
+      applyTheme();
+      renderThemeDropdown(container);
+    });
+  }
 }

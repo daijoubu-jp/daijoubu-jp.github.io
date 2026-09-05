@@ -39,8 +39,13 @@
   <script>
     (function() {
       try {
-        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || 'spring';
-        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || 'light';
+        var now = new Date();
+        var m = now.getMonth() + 1;
+        var defaultTheme = (m >= 4 && m <= 6) ? 'spring' : (m >= 7 && m <= 9) ? 'summer' : (m >= 10 && m <= 12) ? 'autumn' : 'winter';
+        var h = now.getHours();
+        var defaultMode = (h >= 6 && h < 18) ? 'light' : 'dark';
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || defaultTheme;
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || defaultMode;
         document.documentElement.setAttribute('data-theme', savedTheme);
         document.documentElement.setAttribute('data-mode', savedMode);
       } catch (e) {}
@@ -155,9 +160,10 @@
     <!-- Hero Search Section -->
     <section class="hero-section">
       <div class="container">
-        <h1 class="hero-title kanji-text">漢字辞典 for Thai Learners</h1>
+        <h1 class="hero-title kanji-text">『だいじょうぶ』漢字辞典</h1>
         <p class="hero-subtitle">
-          พจนานุกรมคันจิครอบคลุมทุกระดับ JLPT (N5–N1) และคันเค็น (漢検 10級 ถึง 1級 รวมกว่า 5,800+ ตัวอักษร) แปลความหมายเป็นภาษาไทยอย่างละเอียด อ้างอิงเกณฑ์ทางการของทบวงวัฒนธรรมญี่ปุ่น (文化庁)
+          <span class="hero-subtitle-main">Daijoubu JP Kanji Dictionary พจนานุกรมคันจิ</span>
+          <span class="hero-subtitle-sub">ที่จะเปลี่ยนการเรียนคันจิให้เป็นเรื่องที่ Daijoubu</span>
         </p>
 
         <!-- Search Box -->

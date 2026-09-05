@@ -69,11 +69,40 @@ function writeJSON(key, value) {
 // ─── Theme & Mode ─────────────────────────────────────────────────────────────
 
 /**
- * Returns the saved theme id, or 'spring' if none is stored.
+ * Calculates the default seasonal theme based on current month:
+ * - Spring: Apr - June (4, 5, 6)
+ * - Summer: July - September (7, 8, 9)
+ * - Autumn: October - December (10, 11, 12)
+ * - Winter: Jan - March (1, 2, 3)
+ * @param {Date} [d]
+ * @returns {'spring'|'summer'|'autumn'|'winter'}
+ */
+export function getSeasonalTheme(d = new Date()) {
+  const month = d.getMonth() + 1; // 1-12
+  if (month >= 4 && month <= 6) return 'spring';
+  if (month >= 7 && month <= 9) return 'summer';
+  if (month >= 10 && month <= 12) return 'autumn';
+  return 'winter';
+}
+
+/**
+ * Calculates the default mode based on current time:
+ * - Light theme: 06:00:00 - 17:59:59
+ * - Dark theme: 18:00:00 - 05:59:59
+ * @param {Date} [d]
+ * @returns {'light'|'dark'}
+ */
+export function getTimeBasedMode(d = new Date()) {
+  const hour = d.getHours();
+  return (hour >= 6 && hour < 18) ? 'light' : 'dark';
+}
+
+/**
+ * Returns the saved theme id, or dynamic seasonal theme if none is stored.
  * @returns {string}
  */
 export function getTheme() {
-  return localStorage.getItem(KEYS.THEME) || 'spring';
+  return localStorage.getItem(KEYS.THEME) || getSeasonalTheme();
 }
 
 /**
@@ -89,11 +118,11 @@ export function setTheme(name) {
 }
 
 /**
- * Returns the saved theme mode ('light' | 'dark'), default 'light'.
+ * Returns the saved theme mode ('light' | 'dark'), or time-based mode if none stored.
  * @returns {'light'|'dark'}
  */
 export function getThemeMode() {
-  return localStorage.getItem(KEYS.MODE) || 'light';
+  return localStorage.getItem(KEYS.MODE) || getTimeBasedMode();
 }
 
 /**

@@ -6,7 +6,7 @@
  * trace boxes, and readings.
  */
 
-import { loadKanjiData } from './search.js?v=1788415658';
+import { loadKanjiData, searchKanji } from './search.js';
 
 let cachedKanji = null;
 
@@ -20,6 +20,9 @@ export async function initWorksheetPage() {
   const showInfoCheckbox = document.getElementById('ws-show-info');
   const generateBtn = document.getElementById('ws-generate-btn');
   const printBtn = document.getElementById('ws-print-btn');
+
+  // Setup Kanji Search Picker Panel
+  setupKanjiPicker(customInput);
 
   // When preset changes, populate customInput
   if (presetSelect && customInput) {
@@ -59,6 +62,76 @@ export async function initWorksheetPage() {
 
   // Initial generation
   generateWorksheet();
+}
+
+/**
+ * Connects the Kanji Search Picker panel for easy character insertion.
+ */
+function setupKanjiPicker(customInput) {
+  const toggleBtn = document.getElementById('ws-search-kanji-btn');
+  const panel = document.getElementById('ws-kanji-picker-panel');
+  const searchInput = document.getElementById('ws-picker-search-input');
+  const closeBtn = document.getElementById('ws-picker-close-btn');
+  const resultsContainer = document.getElementById('ws-picker-results');
+
+  if (!toggleBtn || !panel || !searchInput) return;
+
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = panel.style.display === 'none';
+    panel.style.display = isHidden ? 'block' : 'none';
+    if (isHidden) {
+      searchInput.focus();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      panel.style.display = 'none';
+    });
+  }
+
+  let debounce = null;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(debounce);
+    const q = searchInput.value.trim();
+    if (!q) {
+      resultsContainer.innerHTML = '<span style="font-size: 0.8rem; color: var(--color-text-muted); padding: 6px;">พิมพ์คำค้นหาเพื่อเริ่มค้นหาคันจิ...</span>';
+      return;
+    }
+    debounce = setTimeout(async () => {
+      const matches = await searchKanji(q, { limit: 24 });
+      if (!matches || !matches.length) {
+        resultsContainer.innerHTML = '<span style="font-size: 0.8rem; color: var(--color-text-muted); padding: 6px;">ไม่พบคันจิที่ตรงกับคำค้นหา</span>';
+        return;
+      }
+      resultsContainer.innerHTML = matches.map(k => {
+        const meanTh = (k.meanings_th && k.meanings_th[0]) ? k.meanings_th[0] : (k.meanings_en?.[0] || '');
+        const on = (k.onyomi && k.onyomi[0]) ? k.onyomi[0] : '';
+        return `
+          <button type="button" class="ws-picker-chip" data-char="${k.kanji}" title="${k.kanji}: ${meanTh} (${on})" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: var(--border-radius-sm); background: var(--color-surface-2); border: 1px solid var(--color-border); color: var(--color-text); font-size: 0.85rem; cursor: pointer; transition: all var(--transition-fast);">
+            <strong class="kanji-text" style="font-size: 1.15rem; color: var(--color-accent);">${k.kanji}</strong>
+            <span style="font-size: 0.75rem; color: var(--color-text-muted); max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${meanTh}</span>
+          </button>
+        `;
+      }).join('');
+
+      resultsContainer.querySelectorAll('.ws-picker-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const char = btn.dataset.char;
+          if (customInput) {
+            customInput.value = (customInput.value || '') + char;
+            generateWorksheet();
+          }
+          btn.style.borderColor = 'var(--color-accent)';
+          btn.style.backgroundColor = 'var(--color-accent-light)';
+          setTimeout(() => {
+            btn.style.borderColor = '';
+            btn.style.backgroundColor = '';
+          }, 300);
+        });
+      });
+    }, 180);
+  });
 }
 
 export function generateWorksheet() {
@@ -150,7 +223,10 @@ export function generateWorksheet() {
     return `
       <section class="ws-page">
         <div class="ws-page-header">
-          <div class="ws-header-title">แบบฝึกคัดลายมือคันจิ (漢字練習帳)</div>
+          <div class="ws-header-titles">
+            <div class="ws-header-title">แบบฝึกคัดลายมือคันจิ</div>
+            <div class="ws-header-sub kanji-text">漢字練習帳</div>
+          </div>
           <div class="ws-header-fields">
             <span>วันที่: ____________________</span>
             <span>ชื่อ: ____________________</span>

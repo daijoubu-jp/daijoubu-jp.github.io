@@ -336,17 +336,47 @@ export function sortKanji(list, sortBy = 'reading', order = 'asc') {
 }
 
 /**
- * Get the deterministic Kanji of the Day based on the current date.
+ * 32-bit integer string hashing algorithm.
+ * @param {string} str
+ * @returns {number}
+ */
+function hashDateString(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = Math.imul(31, hash) + str.charCodeAt(i) | 0;
+  }
+  return hash;
+}
+
+/**
+ * Mulberry32 32-bit PRNG generator.
+ * @param {number} a Seed
+ * @returns {() => number} Returns pseudo-random float in [0, 1)
+ */
+function mulberry32(a) {
+  return function() {
+    let t = a += 0x6D2B79F5;
+    t = Math.imul(t ^ t >>> 15, t | 1);
+    t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+/**
+ * Get the deterministic Kanji of the Day based on the current date using PRNG.
+ * Produces an evenly distributed random kanji from the entire dataset for each day.
  * @returns {Promise<object>}
  */
 export async function getDailyKanji() {
   const data = await loadKanjiData();
   if (!data.length) return null;
 
-  // Use date hash for consistent kanji throughout the day
   const today = new Date();
-  const dateNum = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-  const index = dateNum % data.length;
+  const dateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  const seed = hashDateString(dateStr);
+  const rng = mulberry32(seed);
 
+  const index = Math.floor(rng() * data.length);
   return data[index];
 }
+

@@ -32,8 +32,13 @@
   <script>
     (function() {
       try {
-        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || 'spring';
-        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || 'light';
+        var now = new Date();
+        var m = now.getMonth() + 1;
+        var defaultTheme = (m >= 4 && m <= 6) ? 'spring' : (m >= 7 && m <= 9) ? 'summer' : (m >= 10 && m <= 12) ? 'autumn' : 'winter';
+        var h = now.getHours();
+        var defaultMode = (h >= 6 && h < 18) ? 'light' : 'dark';
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || defaultTheme;
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || defaultMode;
         document.documentElement.setAttribute('data-theme', savedTheme);
         document.documentElement.setAttribute('data-mode', savedMode);
       } catch (e) {}
@@ -126,7 +131,7 @@
   <main class="main-content">
     <section class="hero-section">
       <div class="container">
-        <h1 class="hero-title">เกี่ยวกับเว็บไซต์ KanjiThai</h1>
+        <h1 class="hero-title">เกี่ยวกับเว็บไซต์ Daijoubu JP Kanji Dictionary</h1>
         <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
           พจนานุกรมคันจิออนไลน์ One-Stop สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย อ้างอิงตามเกณฑ์มาตรฐานทางการของทบวงวัฒนธรรมญี่ปุ่น (文化庁) และสมาคมสอบคันเค็น (漢検)
         </p>
@@ -157,13 +162,48 @@
         </p>
       </div>
 
+      <div class="detail-card" style="margin-bottom: var(--spacing-xl);">
+        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-sm);">🎯 เกณฑ์การจัดหมวดหมู่คันจิตามระดับ JLPT (N5 – N1)</h2>
+        <p style="line-height: 1.8; margin-bottom: var(--spacing-sm);">
+          ตั้งแต่การปฏิรูปการสอบวัดระดับภาษาญี่ปุ่น (JLPT) รูปแบบใหม่ในปี 2010 (平成22年) เป็นต้นมา ทาง Japan Foundation และสมาคม JEES <strong>ไม่ได้เผยแพร่รายการคันจิหรือคำศัพท์อย่างเป็นทางการแบบตายตัว</strong> สำหรับแต่ละระดับ (N5 ถึง N1) อีกต่อไป เพื่อเน้นวัดสมรรถนะการสื่อสารจริงมากกว่าการท่องจำตาราง
+        </p>
+        <p style="line-height: 1.8; margin-bottom: var(--spacing-sm);">
+          ดังนั้น พจนานุกรม <strong>Daijoubu JP</strong> จึงจำแนกและเทียบเคียงระดับ JLPT โดยผสานเกณฑ์มาตรฐาน 3 แหล่ง เพื่อความแม่นยำและเป็นประโยชน์ต่อผู้เรียนสูงสุด:
+        </p>
+        <ol style="padding-left: var(--spacing-lg); line-height: 1.8;">
+          <li><strong>เกณฑ์ประวัติข้อสอบจริง (Historical JLPT 1–4 Scale Remapping):</strong> นำรายการคันจิเดิมที่เคยกำหนดไว้ในระบบ 4 ระดับ (เกรด 4→N5, เกรด 3→N4, เกรด 2→N3, เกรด 1→N2/N1) มาร่วมวิเคราะห์</li>
+          <li><strong>ตารางความถี่การใช้คันจิของทบวงวัฒนธรรมญี่ปุ่น (文化庁 漢字出現頻度表):</strong> เทียบเคียงสถิติความถี่คำที่พบจริงในสื่อสิ่งพิมพ์ ข่าวสาร และชีวิตประจำวัน</li>
+          <li><strong>หลักสูตรและตำรามาตรฐานสากล:</strong> อ้างอิงแนวทางของตำราเรียนยอดนิยม เช่น Minna no Nihongo, Genki, Sou Matome, และ Shin Kanzen Master เพื่อให้สอดคล้องกับคันจิที่ผู้เรียนพบเจอในการสอบจริงแต่ละระดับ</li>
+        </ol>
+      </div>
+
+      <div class="detail-card author-bio-card" style="margin-bottom: var(--spacing-xl);">
+        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-sm);">👤 ผู้จัดทำโครงการ (Project Author)</h2>
+        <div style="display: flex; gap: var(--spacing-md); align-items: center; flex-wrap: wrap;">
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover)); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: var(--shadow-sm); flex-shrink: 0;">
+            武
+          </div>
+          <div style="flex: 1; min-width: 240px;">
+            <h3 style="margin: 0 0 4px; font-size: 1.2rem; color: var(--color-text);">Takeshi Ayanokoji <span class="kanji-text" style="color: var(--color-accent); font-weight: 600;">(綾小路武)</span></h3>
+            <p style="margin: 0 0 6px; font-size: var(--font-size-sm); color: var(--color-text-muted);">ผู้ก่อตั้งและผู้พัฒนาเครือข่ายการเรียนรู้ภาษาญี่ปุ่น Daijoubu JP</p>
+            <p style="margin: 0; font-size: var(--font-size-sm); line-height: 1.6;">
+              มุ่งมั่นพัฒนาเครื่องมือและสื่อการเรียนรู้ภาษาญี่ปุ่นสำหรับคนไทย เพื่อเปลี่ยนการเรียนภาษาญี่ปุ่นและตัวอักษรคันจิให้เป็นเรื่องที่เข้าถึงง่าย ชัดเจน ถูกต้องตามเกณฑ์มาตรฐาน และ Daijoubu สำหรับทุกคน
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-card">
-        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-sm);">📜 เอกสารอ้างอิงและลิขสิทธิ์ (Attributions)</h2>
+        <h2 style="font-size: var(--font-size-lg); color: var(--color-accent); margin-bottom: var(--spacing-sm);">📜 เอกสารอ้างอิงและลิขสิทธิ์ (Attributions & References)</h2>
         <ul style="padding-left: var(--spacing-lg); line-height: 1.8; color: var(--color-text-muted);">
           <li><strong>文化庁 常用漢字表 (平成22年内閣告示第2号):</strong> ตารางคันจิโจโย 2,136 ตัว และตารางคำอ่านพิเศษ (付表)</li>
           <li><strong>文化庁 常用漢字表の字体・字形に関する指針 (平成28年2月29日 報告):</strong> แนวทางและข้อยกเว้นการเขียนลายมือและฟอนต์พิมพ์</li>
           <li><strong>文化庁 漢字出現頻度表 順位対照表（Ver.1.3）:</strong> การสำรวจความถี่การปรากฏของคันจิในสื่อสิ่งพิมพ์และอินเทอร์เน็ต เพื่อจำแนกระดับความยากง่าย (JLPT N5–N1)</li>
           <li><strong>日本漢字能力検定協会 級別漢字表 (2020年度 新配当):</strong> ตารางคันจิตามระดับการสอบคันเค็น</li>
+          <li><a href="https://www.amazon.co.jp/dp/4010777397" target="_blank" rel="noopener noreferrer"><strong>旺文社 標準漢和辞典 第七版特装版:</strong></a> พจนานุกรมคันจิมาตรฐานสำนักพิมพ์ Obunsha สำหรับการตรวจสอบความหมาย ลำดับขีด และรากศัพท์คันจิ</li>
+          <li><a href="https://www.amazon.co.jp/dp/4010777389" target="_blank" rel="noopener noreferrer"><strong>旺文社 標準国語辞典 第八版特装版:</strong></a> พจนานุกรมภาษาญี่ปุ่นมาตรฐาน Obunsha สำหรับการตรวจสอบคำอ่านและคำศัพท์ประสม (熟語)</li>
+          <li><a href="https://www.amazon.co.jp/dp/4890963057" target="_blank" rel="noopener noreferrer"><strong>漢検 漢字辞典 第二版:</strong></a> พจนานุกรมคันจิทางการของสมาคมทดสอบสมรรถภาพคันจิแห่งประเทศญี่ปุ่น (日本漢字能力検定協会) ครอบคลุมคันจิระดับ 10級 ถึง 1級</li>
+          <li><a href="https://kanji.jitenon.jp/" target="_blank" rel="noopener noreferrer"><strong>漢字辞典オンライン (Kanji Jiten Online):</strong></a> ฐานข้อมูลคันจิออนไลน์สำหรับการตรวจสอบคันจินอกโจโย ส่วนประกอบตัวอักษร และตารางคันเค็น</li>
           <li><strong>KANJIDIC2 & JMdict:</strong> Electronic Dictionary Research and Development Group (EDRDG - CC BY-SA 4.0)</li>
           <li><strong>KanjiVG:</strong> โดย Ulrich Apel (CC BY-SA 3.0) สำหรับแอนิเมชันลำดับขีด SVG</li>
         </ul>

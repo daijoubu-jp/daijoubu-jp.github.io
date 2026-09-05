@@ -25,6 +25,22 @@
   <link rel="stylesheet" href="../assets/css/themes/winter.css">
   <link rel="stylesheet" href="../assets/css/themes/anime.css">
   <link rel="stylesheet" href="../assets/css/themes/ukiyoe.css">
+  <!-- Theme Setup (Anti-FOUC) -->
+  <script>
+    (function() {
+      try {
+        var now = new Date();
+        var m = now.getMonth() + 1;
+        var defaultTheme = (m >= 4 && m <= 6) ? 'spring' : (m >= 7 && m <= 9) ? 'summer' : (m >= 10 && m <= 12) ? 'autumn' : 'winter';
+        var h = now.getHours();
+        var defaultMode = (h >= 6 && h < 18) ? 'light' : 'dark';
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || defaultTheme;
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || defaultMode;
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body data-page="vocabulary">
 

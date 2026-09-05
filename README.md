@@ -45,7 +45,7 @@
 - **Frontend**: HTML5 Semantic, Modern CSS3 (CSS Custom Properties, Grid, Flexbox), Vanilla JavaScript (ES Modules)
 - **Zero Framework / Zero Build Step**: สามารถเปิดใช้งานหรือโฮสต์ได้ทันทีโดยไม่ต้องผ่านกระบวนการ build/compile
 - **Fonts**: Noto Sans JP, Noto Serif JP, Noto Sans Thai Looped
-- **Data Source**: 
+- **Data Source**:
   - [KANJIDIC2](http://www.edrdg.org/kanjidic/kanjidic2.xml.gz) & [KanjiVG](https://kanjivg.tagaini.net/)
   - กระทรวงศึกษาธิการและวัฒนธรรมญี่ปุ่น (MEXT / 文化庁 Bunkachō 2010 Joyo Table)
   - สมาคมทดสอบความถนัดคันจิแห่งประเทศญี่ปุ่น (日本漢字能力検定協会)
@@ -54,7 +54,8 @@
 
 ## 🚀 การเผยแพร่และการติดตั้ง (Deployment)
 
-### วิธีการเปิดใช้งานผ่าน GitHub Pages:
+### วิธีการเปิดใช้งานผ่าน GitHub Pages
+
 1. เข้าไปที่ **Settings** ของ Repository บน GitHub
 2. ไปที่เมนู **Pages** (แถบเมนูด้านซ้าย)
 3. ภายใต้หัวข้อ **Build and deployment > Source**:

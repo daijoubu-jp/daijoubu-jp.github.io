@@ -10,6 +10,10 @@
 import { getKanji, getKanjiByCodepoint, loadKanjiData } from './search.js';
 import { isFavorite, addFavorite, removeFavorite, copyToClipboard } from './storage.js';
 
+// Fixed stroke animation timing constants
+const FIXED_STROKE_DURATION = 1.15; // seconds per stroke
+const FIXED_STROKE_PAUSE = 0.45;    // pause between strokes in seconds
+
 let strokeState = {
   container: null,
   paths: [],
@@ -186,15 +190,6 @@ function renderHero(kanji) {
   const modalView = document.getElementById('stroke-modal-view');
   const closeModalBtn = document.getElementById('close-stroke-modal');
   const modalReplayBtn = document.getElementById('modal-replay-btn');
-  const modalSpeedInput = document.getElementById('modal-speed-input');
-  const modalPauseInput = document.getElementById('modal-pause-input');
-  const modalSpeedVal = document.getElementById('modal-speed-val');
-  const modalPauseVal = document.getElementById('modal-pause-val');
-
-  const speedInput = document.getElementById('stroke-speed-input');
-  const pauseInput = document.getElementById('stroke-pause-input');
-  const speedVal = document.getElementById('stroke-speed-val');
-  const pauseVal = document.getElementById('stroke-pause-val');
 
   const closeModal = () => {
     if (!modal) return;
@@ -213,16 +208,6 @@ function renderHero(kanji) {
       modalView.classList.remove('grid-cross', 'grid-star');
       if (savedGuide === 'cross') modalView.classList.add('grid-cross');
       if (savedGuide === 'star') modalView.classList.add('grid-star');
-
-      // Sync main sliders to modal sliders
-      if (modalSpeedInput && speedInput) {
-        modalSpeedInput.value = speedInput.value;
-        if (modalSpeedVal) modalSpeedVal.textContent = parseFloat(speedInput.value).toFixed(2) + 's';
-      }
-      if (modalPauseInput && pauseInput) {
-        modalPauseInput.value = pauseInput.value;
-        if (modalPauseVal) modalPauseVal.textContent = parseFloat(pauseInput.value).toFixed(2) + 's';
-      }
 
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
@@ -248,57 +233,6 @@ function renderHero(kanji) {
         animateSvgPaths(modalView);
       });
     }
-
-    if (modalSpeedInput) {
-      modalSpeedInput.addEventListener('input', (e) => {
-        const val = parseFloat(e.target.value).toFixed(2) + 's';
-        if (modalSpeedVal) modalSpeedVal.textContent = val;
-        if (speedInput) speedInput.value = e.target.value;
-        if (speedVal) speedVal.textContent = val;
-      });
-      modalSpeedInput.addEventListener('change', () => {
-        animateSvgPaths(modalView);
-      });
-    }
-
-    if (modalPauseInput) {
-      modalPauseInput.addEventListener('input', (e) => {
-        const val = parseFloat(e.target.value).toFixed(2) + 's';
-        if (modalPauseVal) modalPauseVal.textContent = val;
-        if (pauseInput) pauseInput.value = e.target.value;
-        if (pauseVal) pauseVal.textContent = val;
-      });
-      modalPauseInput.addEventListener('change', () => {
-        animateSvgPaths(modalView);
-      });
-    }
-  }
-
-  // Main Page Stroke Settings Logic
-  if (speedInput && speedVal) {
-    speedInput.addEventListener('input', (e) => {
-      const val = parseFloat(e.target.value).toFixed(2) + 's';
-      speedVal.textContent = val;
-      if (modalSpeedInput) modalSpeedInput.value = e.target.value;
-      if (modalSpeedVal) modalSpeedVal.textContent = val;
-    });
-    speedInput.addEventListener('change', () => {
-      replayStrokeOrder();
-      if (modal && modal.style.display === 'flex') animateSvgPaths(modalView);
-    });
-  }
-
-  if (pauseInput && pauseVal) {
-    pauseInput.addEventListener('input', (e) => {
-      const val = parseFloat(e.target.value).toFixed(2) + 's';
-      pauseVal.textContent = val;
-      if (modalPauseInput) modalPauseInput.value = e.target.value;
-      if (modalPauseVal) modalPauseVal.textContent = val;
-    });
-    pauseInput.addEventListener('change', () => {
-      replayStrokeOrder();
-      if (modal && modal.style.display === 'flex') animateSvgPaths(modalView);
-    });
   }
 }
 
@@ -688,10 +622,8 @@ function renderStaticStrokes(count) {
 function startAutoPlay(fromIndex = 0) {
   if (!strokeState.paths.length) return;
 
-  const speedInput = document.getElementById('stroke-speed-input');
-  const pauseInput = document.getElementById('stroke-pause-input');
-  const duration = speedInput ? parseFloat(speedInput.value) : 1.25;
-  const pause = pauseInput ? parseFloat(pauseInput.value) : 1.0;
+  const duration = FIXED_STROKE_DURATION;
+  const pause = FIXED_STROKE_PAUSE;
 
   strokeState.paths.forEach((p, idx) => {
     p.style.animation = 'none';
@@ -790,10 +722,8 @@ function animateSvgPaths(container) {
   const paths = container.querySelectorAll('path');
   if (!paths || paths.length === 0) return;
   
-  const speedInput = document.getElementById('stroke-speed-input');
-  const pauseInput = document.getElementById('stroke-pause-input');
-  const duration = speedInput ? parseFloat(speedInput.value) : 1.25;
-  const pause = pauseInput ? parseFloat(pauseInput.value) : 1.0;
+  const duration = FIXED_STROKE_DURATION;
+  const pause = FIXED_STROKE_PAUSE;
 
   paths.forEach((path) => {
     const length = path.getTotalLength ? path.getTotalLength() : 100;
