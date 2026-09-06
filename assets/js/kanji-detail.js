@@ -11,8 +11,8 @@ import { getKanji, getKanjiByCodepoint, loadKanjiData } from './search.js';
 import { isFavorite, addFavorite, removeFavorite, copyToClipboard } from './storage.js';
 
 // Fixed stroke animation timing constants
-const FIXED_STROKE_DURATION = 1.15; // seconds per stroke
-const FIXED_STROKE_PAUSE = 0.45;    // pause between strokes in seconds
+const FIXED_STROKE_DURATION = 1.25; // seconds per stroke
+const FIXED_STROKE_PAUSE = 1.0;     // pause between strokes in seconds
 
 let strokeState = {
   container: null,
@@ -177,34 +177,94 @@ function renderHero(kanji) {
     });
   }
 
-  const replayBtn = document.getElementById('replay-stroke-btn');
-  if (replayBtn) {
-    replayBtn.addEventListener('click', () => {
-      replayStrokeOrder();
-    });
-  }
-
   // Enlarge Button & Modal Logic
   const enlargeBtn = document.getElementById('enlarge-stroke-btn');
   const modal = document.getElementById('stroke-modal');
   const modalView = document.getElementById('stroke-modal-view');
   const closeModalBtn = document.getElementById('close-stroke-modal');
-  const modalReplayBtn = document.getElementById('modal-replay-btn');
 
   const closeModal = () => {
     if (!modal) return;
     modal.style.opacity = '0';
-    setTimeout(() => modal.style.display = 'none', 300);
+    setTimeout(() => {
+      modal.style.display = 'none';
+      const mainContainer = document.getElementById('stroke-order-view');
+      if (mainContainer) {
+        bindStrokeState(mainContainer);
+        startAutoPlay(0);
+      }
+    }, 300);
     document.body.style.overflow = '';
   };
 
   if (enlargeBtn && modal && modalView) {
     enlargeBtn.addEventListener('click', () => {
       const mainContainer = document.getElementById('stroke-order-view');
-      modalView.innerHTML = mainContainer.innerHTML;
-      
+      modalView.innerHTML = mainContainer ? mainContainer.innerHTML : '';
+
+      // Populate rich modules in modal
+      const modalKanjiBig = document.getElementById('modal-kanji-big');
+      if (modalKanjiBig) modalKanjiBig.textContent = kanji.kanji;
+
+      const modalMeaningsTh = document.getElementById('modal-meanings-th');
+      if (modalMeaningsTh) {
+        modalMeaningsTh.textContent = (kanji.meanings_th && kanji.meanings_th.length)
+          ? kanji.meanings_th.join(', ')
+          : '-';
+      }
+
+      const modalMeaningsEn = document.getElementById('modal-meanings-en');
+      if (modalMeaningsEn) {
+        modalMeaningsEn.textContent = (kanji.meanings_en && kanji.meanings_en.length)
+          ? kanji.meanings_en.join(', ')
+          : '-';
+      }
+
+      const modalOnyomi = document.getElementById('modal-onyomi');
+      if (modalOnyomi) {
+        const joyo = (kanji.onyomi || []).map(r => `
+          <span class="reading-pill">
+            ${r} <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
+          </span>
+        `);
+        const hyougai = (kanji.onyomi_hyougai || []).map(r => `
+          <span class="reading-pill reading-pill-hyougai">
+            ${r} <span class="hyougai-tag">表外</span> <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
+          </span>
+        `);
+        const all = [...joyo, ...hyougai];
+        modalOnyomi.innerHTML = all.length ? all.join('') : '-';
+      }
+
+      const modalKunyomi = document.getElementById('modal-kunyomi');
+      if (modalKunyomi) {
+        const joyo = (kanji.kunyomi || []).map(r => `
+          <span class="reading-pill">
+            ${r} <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
+          </span>
+        `);
+        const hyougai = (kanji.kunyomi_hyougai || []).map(r => `
+          <span class="reading-pill reading-pill-hyougai">
+            ${r} <span class="hyougai-tag">表外</span> <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
+          </span>
+        `);
+        const all = [...joyo, ...hyougai];
+        modalKunyomi.innerHTML = all.length ? all.join('') : '-';
+      }
+
+      const modalBadges = document.getElementById('modal-info-badges');
+      if (modalBadges) {
+        const badges = [];
+        if (kanji.strokes) badges.push(`<span class="badge badge--strokes" style="font-size: 0.85rem; padding: 4px 10px;">${kanji.strokes} ขีด</span>`);
+        if (kanji.jlpt) badges.push(`<span class="badge badge--jlpt badge--jlpt-n${kanji.jlpt}" style="font-size: 0.85rem; padding: 4px 10px;">JLPT N${kanji.jlpt}</span>`);
+        if (kanji.grade) badges.push(`<span class="badge badge--grade" style="font-size: 0.85rem; padding: 4px 10px;">ประถม ${kanji.grade}</span>`);
+        if (kanji.kanken) badges.push(`<span class="badge badge--kanken" style="font-size: 0.85rem; padding: 4px 10px;">漢検 ${kanji.kanken}</span>`);
+        if (kanji.radicalChar) badges.push(`<span class="badge badge--radical" style="font-size: 0.85rem; padding: 4px 10px;">หมวด: ${kanji.radicalChar} (#${kanji.radical || '-'})</span>`);
+        modalBadges.innerHTML = badges.join(' ');
+      }
+
       // Sync guideline class
-      const savedGuide = localStorage.getItem('kanji-guideline') || 'none';
+      const savedGuide = localStorage.getItem('kanji-guideline') || 'cross';
       modalView.classList.remove('grid-cross', 'grid-star');
       if (savedGuide === 'cross') modalView.classList.add('grid-cross');
       if (savedGuide === 'star') modalView.classList.add('grid-star');
@@ -213,7 +273,8 @@ function renderHero(kanji) {
       document.body.style.overflow = 'hidden';
       setTimeout(() => modal.style.opacity = '1', 10);
       
-      animateSvgPaths(modalView);
+      bindStrokeState(modalView);
+      startAutoPlay(0);
     });
 
     if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
@@ -227,12 +288,6 @@ function renderHero(kanji) {
         closeModal();
       }
     });
-
-    if (modalReplayBtn) {
-      modalReplayBtn.addEventListener('click', () => {
-        animateSvgPaths(modalView);
-      });
-    }
   }
 }
 
@@ -256,7 +311,7 @@ export function showToast(message, icon = '✓') {
 function updateFavButtonState(btn, char) {
   const fav = isFavorite(char);
   btn.classList.toggle('active', fav);
-  btn.innerHTML = fav ? '<span>★</span> บันทึกแล้ว' : '<span>☆</span> เพิ่มในรายการโปรด';
+  btn.innerHTML = fav ? '<i class="fa-solid fa-star"></i> บันทึกแล้ว' : '<i class="fa-regular fa-star"></i> เพิ่มในรายการโปรด';
 }
 
 function cleanReadingForSpeech(str) {
@@ -591,19 +646,32 @@ async function renderRelated(kanji) {
    STROKE CONTROLLER & ANIMATION
    ========================================================================== */
 
+function bindStrokeState(container) {
+  if (!container) return;
+  strokeState.container = container;
+  strokeState.paths = Array.from(container.querySelectorAll('path'));
+  strokeState.lengths = strokeState.paths.map(p => p.getTotalLength ? p.getTotalLength() : 100);
+  strokeState.currentIdx = 0;
+}
+
 function updateStrokeCounter(current, total) {
-  const el = document.getElementById('stroke-counter-display');
-  if (el) {
-    el.textContent = total > 0 ? `ขีดที่ ${current} / ${total}` : 'ขีดที่ - / -';
-  }
+  const text = total > 0 ? `ขีดที่ ${current} / ${total}` : 'ขีดที่ - / -';
+  ['stroke-counter-display', 'modal-stroke-counter-display'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  });
 }
 
 function updatePlayPauseBtn(isPlaying) {
-  const btn = document.getElementById('stroke-play-pause-btn');
-  if (btn) {
-    btn.innerHTML = isPlaying ? '⏸' : '▶';
-    btn.title = isPlaying ? 'หยุดชั่วคราว' : 'เล่นต่อ / เล่นซ้ำ';
-  }
+  const icon = isPlaying ? '<i class="fa-solid fa-pause"></i>' : '<i class="fa-solid fa-play"></i>';
+  const title = isPlaying ? 'หยุดชั่วคราว' : 'เล่นต่อ / เล่นซ้ำ';
+  ['stroke-play-pause-btn', 'modal-play-pause-btn'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.innerHTML = icon;
+      btn.title = title;
+    }
+  });
 }
 
 function renderStaticStrokes(count) {
@@ -667,32 +735,32 @@ function startAutoPlay(fromIndex = 0) {
 }
 
 function initStrokeControllers() {
-  const prevStepBtn = document.getElementById('stroke-step-prev');
-  const nextStepBtn = document.getElementById('stroke-step-next');
-  const playPauseBtn = document.getElementById('stroke-play-pause-btn');
+  const prevStepBtns = [document.getElementById('stroke-step-prev'), document.getElementById('modal-step-prev')].filter(Boolean);
+  const nextStepBtns = [document.getElementById('stroke-step-next'), document.getElementById('modal-step-next')].filter(Boolean);
+  const playPauseBtns = [document.getElementById('stroke-play-pause-btn'), document.getElementById('modal-play-pause-btn')].filter(Boolean);
 
-  if (prevStepBtn) {
-    prevStepBtn.addEventListener('click', () => {
+  prevStepBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
       if (!strokeState.paths.length) return;
       strokeState.isPlaying = false;
       updatePlayPauseBtn(false);
       const target = Math.max(0, strokeState.currentIdx - 1);
       renderStaticStrokes(target);
     });
-  }
+  });
 
-  if (nextStepBtn) {
-    nextStepBtn.addEventListener('click', () => {
+  nextStepBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
       if (!strokeState.paths.length) return;
       strokeState.isPlaying = false;
       updatePlayPauseBtn(false);
       const target = Math.min(strokeState.paths.length, strokeState.currentIdx + 1);
       renderStaticStrokes(target);
     });
-  }
+  });
 
-  if (playPauseBtn) {
-    playPauseBtn.addEventListener('click', () => {
+  playPauseBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
       if (!strokeState.paths.length) return;
 
       if (strokeState.isPlaying) {
@@ -714,7 +782,7 @@ function initStrokeControllers() {
         }
       }
     });
-  }
+  });
 }
 
 function animateSvgPaths(container) {
@@ -766,12 +834,7 @@ async function loadStrokeOrder(kanji) {
     }
 
     container.innerHTML = svgText;
-    
-    strokeState.container = container;
-    strokeState.paths = Array.from(container.querySelectorAll('path'));
-    strokeState.lengths = strokeState.paths.map(p => p.getTotalLength ? p.getTotalLength() : 100);
-    strokeState.currentIdx = 0;
-
+    bindStrokeState(container);
     startAutoPlay(0);
 
   } catch (err) {
@@ -793,7 +856,7 @@ function initGuidelineControls() {
   const strokeView = document.getElementById('stroke-order-view');
   const modalView = document.getElementById('stroke-modal-view');
 
-  const saved = localStorage.getItem('kanji-guideline') || 'none';
+  const saved = localStorage.getItem('kanji-guideline') || 'cross';
   setGuideline(saved);
 
   guideBtns.forEach(btn => {

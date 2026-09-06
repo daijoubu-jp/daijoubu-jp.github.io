@@ -171,15 +171,6 @@ export function renderThemeDropdown(container) {
   const currentMode = getThemeMode();
 
   container.innerHTML = `
-    <div style="padding: 10px 14px; border-bottom: 1px solid var(--color-border-subtle); display: flex; justify-content: space-between; align-items: center;">
-      <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted);">โหมดแสง (Light / Dark):</span>
-      <div class="mode-toggle-switch" id="dropdown-mode-switch" role="switch" aria-checked="${currentMode === 'dark'}" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
-        <span class="mode-switch-icon">☀️</span>
-        <span class="mode-switch-icon">🌙</span>
-        <span class="mode-switch-thumb"></span>
-      </div>
-    </div>
-    
     <div style="max-height: 320px; overflow-y: auto; padding: 4px 0;">
       ${THEMES.map(theme => {
         const swatches = currentMode === 'dark' ? theme.swatchDark : theme.swatchLight;
@@ -203,23 +194,6 @@ export function renderThemeDropdown(container) {
       </button>
     </div>
   `;
-
-  // Bind sliding switch inside dropdown
-  const dropdownSwitch = container.querySelector('#dropdown-mode-switch');
-  if (dropdownSwitch) {
-    const handleSwitch = (e) => {
-      e.stopPropagation();
-      toggleThemeMode();
-      renderThemeDropdown(container);
-    };
-    dropdownSwitch.addEventListener('click', handleSwitch);
-    dropdownSwitch.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        handleSwitch(e);
-      }
-    });
-  }
 
   // Bind Theme Selection Buttons
   container.querySelectorAll('.theme-option').forEach(btn => {

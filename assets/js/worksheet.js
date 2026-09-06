@@ -18,13 +18,12 @@ export async function initWorksheetPage() {
   const gridStyleSelect = document.getElementById('ws-grid-style');
   const traceCountSelect = document.getElementById('ws-trace-count');
   const showInfoCheckbox = document.getElementById('ws-show-info');
-  const generateBtn = document.getElementById('ws-generate-btn');
   const printBtn = document.getElementById('ws-print-btn');
 
   // Setup Kanji Search Picker Panel
   setupKanjiPicker(customInput);
 
-  // When preset changes, populate customInput
+  // When preset changes, populate customInput and auto-update
   if (presetSelect && customInput) {
     presetSelect.addEventListener('change', () => {
       const val = presetSelect.value;
@@ -48,11 +47,20 @@ export async function initWorksheetPage() {
     });
   }
 
-  if (generateBtn) {
-    generateBtn.addEventListener('click', () => {
+  // Auto-update worksheet whenever any input or setting changes
+  if (customInput) {
+    customInput.addEventListener('input', () => {
       generateWorksheet();
     });
   }
+
+  [gridStyleSelect, traceCountSelect, showInfoCheckbox].forEach(el => {
+    if (el) {
+      el.addEventListener('change', () => {
+        generateWorksheet();
+      });
+    }
+  });
 
   if (printBtn) {
     printBtn.addEventListener('click', () => {
@@ -77,16 +85,18 @@ function setupKanjiPicker(customInput) {
   if (!toggleBtn || !panel || !searchInput) return;
 
   toggleBtn.addEventListener('click', () => {
-    const isHidden = panel.style.display === 'none';
-    panel.style.display = isHidden ? 'block' : 'none';
-    if (isHidden) {
+    const isOpen = panel.classList.contains('open');
+    if (isOpen) {
+      panel.classList.remove('open');
+    } else {
+      panel.classList.add('open');
       searchInput.focus();
     }
   });
 
   if (closeBtn) {
     closeBtn.addEventListener('click', () => {
-      panel.style.display = 'none';
+      panel.classList.remove('open');
     });
   }
 

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#FFF9FB">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="KanjiThai">
+  <meta name="apple-mobile-web-app-title" content="Daijoubu JP">
   <title>รายละเอียดคันจิ (Kanji Details) | KanjiThai</title>
   
   <!-- PWA Manifest & Icons -->
@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
   
+    <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="../assets/css/base.css?v=1788492100">
   <link rel="stylesheet" href="../assets/css/components.css">
@@ -68,8 +70,8 @@
       <a href="../index.html" class="nav-brand">
         <div class="nav-brand-logo">漢</div>
         <div class="nav-brand-text">
-          <span class="nav-brand-title">KanjiThai</span>
-          <span class="nav-brand-sub">พจนานุกรมคันจิไทย-ญี่ปุ่น</span>
+          <span class="nav-brand-title">Daijoubu JP</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิครบเครื่อง</span>
         </div>
       </a>      <!-- Navigation Links -->
       <nav>
@@ -168,54 +170,45 @@
             <!-- Left Character Card & Stroke Order -->
             <div class="detail-char-card">
               <div class="detail-kanji-big" id="detail-kanji-char" lang="ja">...</div>
-              
-              <!-- Grid Guideline Toggle Chips -->
-              <div class="guideline-toggle-bar">
-                <span class="guideline-label">เส้นไกด์:</span>
-                <button type="button" class="guide-chip active" data-guide="none" id="guide-none-btn" title="ปิดเส้นไกด์">✕</button>
-                <button type="button" class="guide-chip" data-guide="cross" id="guide-cross-btn" title="田 เส้นประกากบาท (十字)">田</button>
-                <button type="button" class="guide-chip" data-guide="star" id="guide-star-btn" title="米 เส้นประแปดทิศ (米字)">米</button>
-              </div>
 
               <!-- Stroke Order SVG Display Area -->
-              <div class="stroke-order-view" id="stroke-order-view">
+              <div class="stroke-order-view grid-cross" id="stroke-order-view">
                 <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">กำลังโหลดลำดับขีด...</span>
+              </div>
+
+              <!-- Grid Guideline Toggle Chips (Moved below stroke view, above controller) -->
+              <div class="guideline-toggle-bar" style="margin-top: 8px;">
+                <span class="guideline-label">เส้นไกด์:</span>
+                <button type="button" class="guide-chip" data-guide="none" id="guide-none-btn" title="ปิดเส้นไกด์">✕</button>
+                <button type="button" class="guide-chip active" data-guide="cross" id="guide-cross-btn" title="田 เส้นประกากบาท (十字)">田</button>
+                <button type="button" class="guide-chip" data-guide="star" id="guide-star-btn" title="米 เส้นประแปดทิศ (米字)">米</button>
               </div>
 
               <!-- Interactive Step-by-Step Stroke Controller -->
               <div class="stroke-ctrl-toolbar">
                 <div class="stroke-ctrl-buttons">
-                  <button type="button" class="stroke-step-btn" id="stroke-step-prev" title="ถอยหลัง 1 ขีด">◀</button>
-                  <button type="button" class="stroke-step-btn stroke-play-pause-btn" id="stroke-play-pause-btn" title="หยุดชั่วคราว / เล่นต่อ">⏸</button>
-                  <button type="button" class="stroke-step-btn" id="stroke-step-next" title="เดินหน้า 1 ขีด">▶</button>
+                  <button type="button" class="stroke-step-btn" id="stroke-step-prev" title="ถอยหลัง 1 ขีด" aria-label="ถอยหลัง 1 ขีด"><i class="fa-solid fa-backward-step"></i></button>
+                  <button type="button" class="stroke-step-btn stroke-play-pause-btn" id="stroke-play-pause-btn" title="หยุดชั่วคราว / เล่นต่อ" aria-label="หยุดชั่วคราว หรือ เล่นต่อ"><i class="fa-solid fa-pause"></i></button>
+                  <button type="button" class="stroke-step-btn" id="stroke-step-next" title="เดินหน้า 1 ขีด" aria-label="เดินหน้า 1 ขีด"><i class="fa-solid fa-forward-step"></i></button>
                 </div>
                 <div class="stroke-counter-display" id="stroke-counter-display">
                   ขีดที่ - / -
                 </div>
               </div>
 
-              <!-- Action Buttons Grid -->
-              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px; width: 100%;">
-                <div style="display: flex; gap: 8px; width: 100%;">
-                  <button type="button" class="action-btn" id="replay-stroke-btn" title="เล่นลำดับขีดซ้ำ" style="flex: 1; justify-content: center; background: var(--color-surface-2); border-color: var(--color-accent); color: var(--color-accent); font-weight: 600;">
-                    <span>🔄</span> เล่นซ้ำ
-                  </button>
-                  <button type="button" class="action-btn" id="enlarge-stroke-btn" title="ขยายดูลำดับขีด" style="flex: 1; justify-content: center; font-weight: 600;">
-                    <span>🔍</span> ขยาย
-                  </button>
-                </div>
-                
-                <div style="display: flex; gap: 8px; width: 100%;">
-                  <button type="button" class="action-btn" id="favorite-btn" style="flex: 1; justify-content: center;">
-                    <span>☆</span> รายการโปรด
-                  </button>
-                  <button type="button" class="action-btn" id="share-btn" style="flex: 1; justify-content: center;">
-                    <span>🔗</span> แชร์
-                  </button>
-                </div>
-
-                <button type="button" class="action-btn" id="anki-export-btn" title="คัดลอกข้อมูลสรุปสำหรับการ์ด Anki" style="width: 100%; justify-content: center; font-weight: 600; background: var(--color-surface-2);">
-                  <span>📋</span> คัดลอกลง Anki / โน้ต
+              <!-- Action Buttons List (One-Column Display) -->
+              <div class="detail-action-list" style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px; width: 100%;">
+                <button type="button" class="action-btn" id="enlarge-stroke-btn" title="ขยายดูลำดับขีดและข้อมูลเต็มจอ" style="width: 100%; justify-content: center; font-weight: 600;">
+                  <i class="fa-solid fa-expand"></i> ขยายเต็มจอ
+                </button>
+                <button type="button" class="action-btn" id="favorite-btn" style="width: 100%; justify-content: center;">
+                  <i class="fa-regular fa-star"></i> เพิ่มในรายการโปรด
+                </button>
+                <button type="button" class="action-btn" id="share-btn" style="width: 100%; justify-content: center;">
+                  <i class="fa-solid fa-share-nodes"></i> แชร์หน้านี้
+                </button>
+                <button type="button" class="action-btn" id="anki-export-btn" title="คัดลอกข้อมูลสรุปสำหรับการ์ด Anki / โน้ต" style="width: 100%; justify-content: center; font-weight: 600; background: var(--color-surface-2);">
+                  <i class="fa-solid fa-clipboard"></i> คัดลอกลง Anki / โน้ต
                 </button>
               </div>
             </div>
@@ -313,15 +306,85 @@
   </main>
 
 
-  <!-- Stroke Order Modal -->
-  <div id="stroke-modal" class="modal-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
-    <div class="modal-content" style="background: white; border-radius: var(--border-radius-lg); padding: var(--spacing-lg); max-width: 90vw; max-height: 90vh; position: relative; box-shadow: var(--shadow-lg); text-align: center; overflow-y: auto;">
-      <button id="close-stroke-modal" type="button" aria-label="ปิดหน้าต่างขยาย" style="position: absolute; top: 12px; right: 12px; background: #f1f1f1; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; font-weight: bold; color: #333;">✕</button>
-      <div id="stroke-modal-view" style="width: 70vw; height: 70vw; max-width: 400px; max-height: 400px; margin: 0 auto;"></div>
-
-      <button type="button" class="action-btn" id="modal-replay-btn" style="margin-top: 16px; justify-content: center; background: #f1f1f1; border-color: #ddd; color: #333; font-weight: 600; width: 100%;">
-        <span>🔄</span> เล่นลำดับขีดซ้ำ
+  <!-- Full Screen / Enlarge Kanji Modal -->
+  <div id="stroke-modal" class="modal-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; padding: var(--spacing-sm);">
+    <div class="modal-content stroke-modal-dialog" style="background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); border-radius: var(--border-radius-lg); padding: var(--spacing-xl); max-width: 960px; width: 95vw; max-height: 92vh; position: relative; box-shadow: var(--shadow-lg); overflow-y: auto;">
+      <button id="close-stroke-modal" type="button" aria-label="ปิดหน้าต่างขยาย" style="position: absolute; top: 16px; right: 16px; background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 50%; width: 36px; height: 36px; cursor: pointer; font-size: 1rem; color: var(--color-text); display: flex; align-items: center; justify-content: center; z-index: 10; transition: all var(--transition-fast);">
+        <i class="fa-solid fa-xmark"></i>
       </button>
+
+      <div class="modal-detail-layout" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); text-align: left;">
+        
+        <!-- Left: Large Stroke Order & Interactive Controller -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <div class="modal-kanji-big kanji-text" id="modal-kanji-big" style="font-size: 2.5rem; font-weight: 700; color: var(--color-accent); margin-bottom: 8px;"></div>
+          
+          <div class="stroke-order-view grid-cross" id="stroke-modal-view" style="width: 100%; max-width: 360px; aspect-ratio: 1/1; border: 2px solid var(--color-border); border-radius: var(--border-radius); position: relative; overflow: hidden; background: #ffffff;"></div>
+
+          <!-- Guidelines in modal -->
+          <div class="guideline-toggle-bar" style="margin-top: 10px;">
+            <span class="guideline-label">เส้นไกด์:</span>
+            <button type="button" class="guide-chip" data-guide="none" id="modal-guide-none-btn" title="ปิดเส้นไกด์">✕</button>
+            <button type="button" class="guide-chip active" data-guide="cross" id="modal-guide-cross-btn" title="田 เส้นประกากบาท">田</button>
+            <button type="button" class="guide-chip" data-guide="star" id="modal-guide-star-btn" title="米 เส้นประแปดทิศ">米</button>
+          </div>
+
+          <!-- Interactive controller in modal -->
+          <div class="stroke-ctrl-toolbar" style="margin-top: 8px;">
+            <div class="stroke-ctrl-buttons">
+              <button type="button" class="stroke-step-btn" id="modal-step-prev" title="ถอยหลัง 1 ขีด" aria-label="ถอยหลัง 1 ขีด"><i class="fa-solid fa-backward-step"></i></button>
+              <button type="button" class="stroke-step-btn stroke-play-pause-btn" id="modal-play-pause-btn" title="หยุดชั่วคราว / เล่นต่อ" aria-label="หยุดชั่วคราว หรือ เล่นต่อ"><i class="fa-solid fa-pause"></i></button>
+              <button type="button" class="stroke-step-btn" id="modal-step-next" title="เดินหน้า 1 ขีด" aria-label="เดินหน้า 1 ขีด"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+            <div class="stroke-counter-display" id="modal-stroke-counter-display">
+              ขีดที่ - / -
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Information Modules (Meanings, Readings, Metadata) -->
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+          <!-- Meanings -->
+          <div class="detail-card" style="margin: 0;">
+            <div class="detail-card-title">
+              <span>🇹🇭 ความหมายภาษาไทย (Thai Meanings)</span>
+            </div>
+            <div id="modal-meanings-th" style="margin-bottom: var(--spacing-sm); font-size: var(--font-size-md); font-weight: 600; color: var(--color-accent);"></div>
+            <div class="detail-card-title" style="margin-top: var(--spacing-xs);">
+              <span>🇬🇧 English Meanings</span>
+            </div>
+            <div id="modal-meanings-en" style="color: var(--color-text-muted);"></div>
+          </div>
+
+          <!-- Readings -->
+          <div class="detail-card" style="margin: 0;">
+            <div class="detail-card-title">
+              <span>🔊 เสียงอ่าน (Readings)</span>
+            </div>
+            <div style="margin-bottom: var(--spacing-xs);">
+              <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
+                音読み (On'yomi):
+              </div>
+              <div id="modal-onyomi" lang="ja" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
+            </div>
+            <div>
+              <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
+                訓読み (Kun'yomi):
+              </div>
+              <div id="modal-kunyomi" lang="ja" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
+            </div>
+          </div>
+
+          <!-- Metadata Badges -->
+          <div class="detail-card" style="margin: 0;">
+            <div class="detail-card-title">
+              <span>📊 ข้อมูลจำแนก (Classification)</span>
+            </div>
+            <div id="modal-info-badges" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
