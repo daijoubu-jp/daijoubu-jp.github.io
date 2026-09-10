@@ -216,26 +216,10 @@
             <!-- Right Detail Sections -->
             <div class="detail-sections">
               
-              <!-- Meanings Card -->
+              <!-- 1. Readings Card (読み) -->
               <div class="detail-card">
                 <div class="detail-card-title">
-                  <span>🇹🇭 ความหมายภาษาไทย (Thai Meanings)</span>
-                </div>
-                <div id="detail-meanings-th" style="margin-bottom: var(--spacing-md);"></div>
-
-                <div class="detail-card-title" style="margin-top: var(--spacing-md);">
-                  <span>🇬🇧 English Meanings</span>
-                </div>
-                <div id="detail-meanings-en"></div>
-              </div>
-
-              <!-- Bunkacho Handwriting Note (if applicable) -->
-              <div id="detail-handwriting-tip" style="display: none;"></div>
-
-              <!-- Readings Card -->
-              <div class="detail-card">
-                <div class="detail-card-title">
-                  <span>🔊 เสียงอ่าน (Readings)</span>
+                  <span>🔊 เสียงอ่าน (Readings / 読み)</span>
                 </div>
 
                 <div style="margin-bottom: var(--spacing-sm);">
@@ -254,13 +238,31 @@
 
                 <div>
                   <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
-                    名乗り (Nanori - เสียงอ่านในชื่อคน):
+                    人名 (Jinmei - เสียงอ่านในชื่อคน):
                   </div>
                   <div id="detail-nanori" lang="ja"></div>
                 </div>
               </div>
 
-              <!-- Origin (成り立ち) Card -->
+              <!-- 2. Meanings Card (意味) -->
+              <div class="detail-card">
+                <div class="detail-card-title">
+                  <span>🇯🇵 ความหมายภาษาญี่ปุ่น (Japanese Meanings / 字義)</span>
+                </div>
+                <div id="detail-meanings-ja" lang="ja" style="margin-bottom: var(--spacing-md);"></div>
+
+                <div class="detail-card-title">
+                  <span>🇹🇭 ความหมายภาษาไทย (Thai Meanings)</span>
+                </div>
+                <div id="detail-meanings-th" style="margin-bottom: var(--spacing-md);"></div>
+
+                <div class="detail-card-title">
+                  <span>🇬🇧 English Meanings</span>
+                </div>
+                <div id="detail-meanings-en"></div>
+              </div>
+
+              <!-- 3. Origin (成り立ち) Card -->
               <div class="detail-card">
                 <div class="detail-card-title">
                   <span>🌱 ที่มาและโครงสร้างของคันจิ (Origin / 成り立ち)</span>
@@ -268,7 +270,7 @@
                 <div id="detail-origin"></div>
               </div>
 
-              <!-- Meta Info Grid Card -->
+              <!-- 4. Meta Info Grid Card (Classification) -->
               <div class="detail-card">
                 <div class="detail-card-title">
                   <span>📊 ข้อมูลระดับและหมวดอักษร (Classification)</span>
@@ -276,7 +278,16 @@
                 <div class="meta-grid" id="detail-meta-grid"></div>
               </div>
 
-              <!-- Compound Words / Vocabulary (Bunkacho 語例) -->
+              <!-- 5. Notes Card (หมายเหตุ / ข้อควรระวัง / เกร็ดน่ารู้) -->
+              <div class="detail-card" id="detail-notes-card" style="display: none;">
+                <div class="detail-card-title">
+                  <span>💡 หมายเหตุและเกร็ดน่ารู้ (Notes & Usage)</span>
+                </div>
+                <div id="detail-notes-content" style="font-size: var(--font-size-sm); line-height: 1.6; color: var(--color-text);"></div>
+                <div id="detail-handwriting-tip" style="display: none; margin-top: var(--spacing-sm);"></div>
+              </div>
+
+              <!-- 6. Compound Words / Vocabulary (Bunkacho 語例) -->
               <div class="detail-card">
                 <div class="detail-card-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
                   <span>📖 ตัวอย่างคำศัพท์และคำประสม (Compound Words / 熟語・語例)</span>
@@ -287,7 +298,7 @@
                 <div id="detail-examples"></div>
               </div>
 
-              <!-- Related Kanji -->
+              <!-- 7. Related Kanji -->
               <div class="detail-card">
                 <div class="detail-card-title">
                   <span>🔗 คันจิที่มีหมวดอักษรหรือจำนวนขีดใกล้เคียง</span>
@@ -342,24 +353,13 @@
           </div>
         </div>
 
-        <!-- Right: Information Modules (Meanings, Readings, Metadata) -->
+        <!-- Right: Information Modules (Readings, Meanings, Metadata) -->
         <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
-          <!-- Meanings -->
+          
+          <!-- 1. Readings in modal -->
           <div class="detail-card" style="margin: 0;">
             <div class="detail-card-title">
-              <span>🇹🇭 ความหมายภาษาไทย (Thai Meanings)</span>
-            </div>
-            <div id="modal-meanings-th" style="margin-bottom: var(--spacing-sm); font-size: var(--font-size-md); font-weight: 600; color: var(--color-accent);"></div>
-            <div class="detail-card-title" style="margin-top: var(--spacing-xs);">
-              <span>🇬🇧 English Meanings</span>
-            </div>
-            <div id="modal-meanings-en" style="color: var(--color-text-muted);"></div>
-          </div>
-
-          <!-- Readings -->
-          <div class="detail-card" style="margin: 0;">
-            <div class="detail-card-title">
-              <span>🔊 เสียงอ่าน (Readings)</span>
+              <span>🔊 เสียงอ่าน (Readings / 読み)</span>
             </div>
             <div style="margin-bottom: var(--spacing-xs);">
               <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
@@ -367,15 +367,37 @@
               </div>
               <div id="modal-onyomi" lang="ja" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
             </div>
-            <div>
+            <div style="margin-bottom: var(--spacing-xs);">
               <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
                 訓読み (Kun'yomi):
               </div>
               <div id="modal-kunyomi" lang="ja" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
             </div>
+            <div>
+              <div style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); margin-bottom: 4px;">
+                人名 (Jinmei):
+              </div>
+              <div id="modal-nanori" lang="ja" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
+            </div>
           </div>
 
-          <!-- Metadata Badges -->
+          <!-- 2. Meanings in modal -->
+          <div class="detail-card" style="margin: 0;">
+            <div class="detail-card-title">
+              <span>🇯🇵 ความหมายภาษาญี่ปุ่น (Japanese Meanings / 字義)</span>
+            </div>
+            <div id="modal-meanings-ja" lang="ja" style="margin-bottom: var(--spacing-xs); color: var(--color-text); font-weight: 500;"></div>
+            <div class="detail-card-title" style="margin-top: var(--spacing-xs);">
+              <span>🇹🇭 ความหมายภาษาไทย (Thai Meanings)</span>
+            </div>
+            <div id="modal-meanings-th" style="margin-bottom: var(--spacing-xs); font-size: var(--font-size-md); font-weight: 600; color: var(--color-accent);"></div>
+            <div class="detail-card-title" style="margin-top: var(--spacing-xs);">
+              <span>🇬🇧 English Meanings</span>
+            </div>
+            <div id="modal-meanings-en" style="color: var(--color-text-muted);"></div>
+          </div>
+
+          <!-- 3. Metadata Badges in modal -->
           <div class="detail-card" style="margin: 0;">
             <div class="detail-card-title">
               <span>📊 ข้อมูลจำแนก (Classification)</span>
@@ -384,6 +406,68 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- Share Page Modal -->
+  <div id="share-modal" class="modal-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); z-index: 2000; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s ease; padding: var(--spacing-sm);">
+    <div class="modal-content share-modal-dialog" style="background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); border-radius: var(--border-radius-lg); padding: var(--spacing-xl); max-width: 520px; width: 92vw; position: relative; box-shadow: var(--shadow-lg);">
+      <button id="close-share-modal" type="button" aria-label="ปิดหน้าต่างแชร์" style="position: absolute; top: 16px; right: 16px; background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 50%; width: 36px; height: 36px; cursor: pointer; font-size: 1rem; color: var(--color-text); display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--spacing-md);">
+        <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(226, 88, 34, 0.12); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div>
+          <h3 style="margin: 0; font-size: 1.25rem;">แชร์หน้านี้</h3>
+          <p style="margin: 0; font-size: var(--font-size-xs); color: var(--color-text-muted);">แบ่งปันคันจิตัวนี้ให้เพื่อนหรือบันทึกไว้ทบทวน</p>
+        </div>
+      </div>
+
+      <!-- Kanji Preview Banner in Share Modal -->
+      <div id="share-kanji-preview" style="display: flex; align-items: center; gap: var(--spacing-md); padding: 12px 16px; background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--border-radius); margin-bottom: var(--spacing-lg);">
+        <div id="share-preview-char" class="kanji-text" style="font-size: 2.5rem; font-weight: 700; color: var(--color-accent); line-height: 1;">一</div>
+        <div style="flex: 1; min-width: 0;">
+          <div id="share-preview-reading" style="font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text);">...</div>
+          <div id="share-preview-meaning" style="font-size: var(--font-size-xs); color: var(--color-text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">...</div>
+        </div>
+      </div>
+
+      <!-- Copy Link Field -->
+      <div style="margin-bottom: var(--spacing-lg);">
+        <label for="share-url-input" style="display: block; font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); margin-bottom: 6px;">
+          คัดลอกลิงก์ (URL):
+        </label>
+        <div style="display: flex; gap: 8px;">
+          <input type="text" id="share-url-input" readonly style="flex: 1; padding: 10px 14px; font-size: var(--font-size-sm); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); background: var(--color-surface-2); color: var(--color-text); outline: none;">
+          <button type="button" id="share-copy-btn" class="action-btn" style="padding: 10px 18px; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+            <i class="fa-solid fa-copy"></i> <span>คัดลอก</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Social Share Buttons -->
+      <div>
+        <label style="display: block; font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); margin-bottom: 8px;">
+          แชร์ไปยังโซเชียลมีเดีย:
+        </label>
+        <div class="share-social-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;">
+          <a href="#" id="share-x-btn" target="_blank" rel="noopener noreferrer" class="share-social-btn" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-radius: var(--border-radius-sm); background: #000000; color: #ffffff; text-decoration: none; font-size: var(--font-size-sm); font-weight: 600; transition: opacity var(--transition-fast);">
+            <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+          </a>
+          <a href="#" id="share-fb-btn" target="_blank" rel="noopener noreferrer" class="share-social-btn" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-radius: var(--border-radius-sm); background: #1877f2; color: #ffffff; text-decoration: none; font-size: var(--font-size-sm); font-weight: 600; transition: opacity var(--transition-fast);">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+          <a href="#" id="share-line-btn" target="_blank" rel="noopener noreferrer" class="share-social-btn" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-radius: var(--border-radius-sm); background: #06c755; color: #ffffff; text-decoration: none; font-size: var(--font-size-sm); font-weight: 600; transition: opacity var(--transition-fast);">
+            <i class="fa-brands fa-line"></i> LINE
+          </a>
+          <button type="button" id="share-native-btn" class="share-social-btn" style="display: none; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-radius: var(--border-radius-sm); background: var(--color-surface-2); border: 1px solid var(--color-border); color: var(--color-text); font-size: var(--font-size-sm); font-weight: 600; cursor: pointer;">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i> อื่นๆ
+          </button>
+        </div>
       </div>
     </div>
   </div>

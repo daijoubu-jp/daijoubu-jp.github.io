@@ -4535,3 +4535,68 @@ rt {
   }
 }
 
+/* ==========================================================================
+   SHARE MODAL & JAPANESE MEANINGS & NOTES
+   ========================================================================== */
+
+.share-modal-dialog {
+  animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.share-social-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.share-social-btn:active {
+  transform: translateY(0);
+}
+
+.meaning-ja-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  padding: 4px 12px;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  font-family: var(--font-display-jp);
+}
+
+.meaning-ja-pill:hover {
+  border-color: var(--color-accent);
+}
+
+.note-callout {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  background: var(--color-surface-2);
+  border-left: 4px solid var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.note-callout-title {
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+

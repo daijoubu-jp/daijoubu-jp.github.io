@@ -44,12 +44,13 @@ export async function initDetailPage() {
   await setupBreadcrumbsAndSeqNav(kanji);
   renderHero(kanji);
   renderReadings(kanji);
-  renderOrigin(kanji);
   renderMeanings(kanji);
+  renderOrigin(kanji);
   renderMeta(kanji);
-  renderHandwritingTip(kanji);
+  renderNotes(kanji);
   renderExamples(kanji);
   renderRelated(kanji);
+  initShareModal(kanji);
   initGuidelineControls();
   initStrokeControllers();
   initFuriganaToggle();
@@ -156,27 +157,6 @@ function renderHero(kanji) {
     });
   }
 
-  const shareBtn = document.getElementById('share-btn');
-  if (shareBtn) {
-    shareBtn.addEventListener('click', async () => {
-      if (navigator.share) {
-        try {
-          await navigator.share({
-            title: `คันจิ ${kanji.kanji} - พจนานุกรมคันจิไทย-ญี่ปุ่น`,
-            url: window.location.href
-          });
-        } catch {}
-      } else {
-        const ok = await copyToClipboard(window.location.href);
-        if (ok) {
-          showToast('คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!');
-        } else {
-          showToast('ไม่สามารถคัดลอกลิงก์ได้', '⚠️');
-        }
-      }
-    });
-  }
-
   // Enlarge Button & Modal Logic
   const enlargeBtn = document.getElementById('enlarge-stroke-btn');
   const modal = document.getElementById('stroke-modal');
@@ -205,6 +185,16 @@ function renderHero(kanji) {
       // Populate rich modules in modal
       const modalKanjiBig = document.getElementById('modal-kanji-big');
       if (modalKanjiBig) modalKanjiBig.textContent = kanji.kanji;
+
+      const modalMeaningsJa = document.getElementById('modal-meanings-ja');
+      if (modalMeaningsJa) {
+        const jaList = (kanji.meanings_ja && kanji.meanings_ja.length)
+          ? kanji.meanings_ja
+          : (kanji.kunyomi && kanji.kunyomi.length)
+            ? kanji.kunyomi.map(k => k.replace(/[.・]/g, ''))
+            : [];
+        modalMeaningsJa.textContent = jaList.length ? jaList.join('、') : '-';
+      }
 
       const modalMeaningsTh = document.getElementById('modal-meanings-th');
       if (modalMeaningsTh) {
@@ -250,6 +240,18 @@ function renderHero(kanji) {
         `);
         const all = [...joyo, ...hyougai];
         modalKunyomi.innerHTML = all.length ? all.join('') : '-';
+      }
+
+      const modalNanori = document.getElementById('modal-nanori');
+      if (modalNanori) {
+        const list = kanji.jinmei || kanji.nanori || [];
+        modalNanori.innerHTML = list.length
+          ? list.map(r => `
+            <span class="reading-pill">
+              ${r} <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
+            </span>
+          `).join('')
+          : '-';
       }
 
       const modalBadges = document.getElementById('modal-info-badges');
@@ -361,10 +363,11 @@ function renderReadings(kanji) {
       : '<span style="color: var(--color-text-muted); font-size: var(--font-size-sm);">-</span>';
   }
 
-  // Nanori (Name readings)
+  // Jinmei / Nanori (Name readings)
   if (nanoriList) {
-    nanoriList.innerHTML = (kanji.nanori && kanji.nanori.length)
-      ? kanji.nanori.map(r => `
+    const list = kanji.jinmei || kanji.nanori || [];
+    nanoriList.innerHTML = list.length
+      ? list.map(r => `
         <span class="reading-pill">
           ${r} <button type="button" class="audio-btn" data-tts="${cleanReadingForSpeech(r)}" title="ฟังเสียงอ่าน ${r}" aria-label="ฟังเสียงอ่าน ${r}">🔊</button>
         </span>
@@ -374,8 +377,27 @@ function renderReadings(kanji) {
 }
 
 function renderMeanings(kanji) {
+  const jaContainer = document.getElementById('detail-meanings-ja');
   const thContainer = document.getElementById('detail-meanings-th');
   const enContainer = document.getElementById('detail-meanings-en');
+
+  if (jaContainer) {
+    const jaList = (kanji.meanings_ja && kanji.meanings_ja.length)
+      ? kanji.meanings_ja
+      : (kanji.kunyomi && kanji.kunyomi.length)
+        ? kanji.kunyomi.map(k => k.replace(/[.・]/g, ''))
+        : [];
+
+    jaContainer.innerHTML = jaList.length
+      ? `<div class="meanings-ja-list" style="display: flex; flex-wrap: wrap; gap: 6px;">
+           ${jaList.map(m => `
+             <span class="meaning-ja-pill">
+               ${m} <button type="button" class="audio-btn" data-tts="${m}" title="ฟังเสียง ${m}" aria-label="ฟังเสียง ${m}">🔊</button>
+             </span>
+           `).join('')}
+         </div>`
+      : '<div style="color: var(--color-text-muted);">-</div>';
+  }
 
   if (thContainer) {
     thContainer.innerHTML = (kanji.meanings_th && kanji.meanings_th.length)
@@ -495,13 +517,6 @@ function renderMeta(kanji) {
     ? `ป.${kanji.grade}` 
     : (kanji.joyo ? 'มัธยมศึกษา (常用)' : (kanji.kanken === 'jun1' ? 'นอกเกณฑ์โจโย (準1級)' : 'นอกเกณฑ์โจโย (1級)'));
 
-  const tradForm = kanji.traditionalForm ? `
-    <div class="meta-item" style="border: 1px solid var(--color-accent);">
-      <div class="meta-item-label">ตัวเต็ม (康熙字典体)</div>
-      <div class="meta-item-value" style="font-family: var(--font-display-jp); font-size: 1.5rem; color: var(--color-accent);">${kanji.traditionalForm}</div>
-    </div>
-  ` : '';
-
   const jlptBadge = kanji.jlpt 
     ? `<span class="badge badge--jlpt badge--jlpt-n${kanji.jlpt}">N${kanji.jlpt}</span>` 
     : '-';
@@ -541,28 +556,54 @@ function renderMeta(kanji) {
       <div class="meta-item-label">รหัส Unicode</div>
       <div class="meta-item-value">U+${kanji.codepoint || ''}</div>
     </div>
-    ${tradForm}
   `;
 }
 
-function renderHandwritingTip(kanji) {
-  const container = document.getElementById('detail-handwriting-tip');
-  if (!container) return;
+function renderNotes(kanji) {
+  const card = document.getElementById('detail-notes-card');
+  const content = document.getElementById('detail-notes-content');
+  const handwritingTip = document.getElementById('detail-handwriting-tip');
+  if (!card) return;
 
-  if (kanji.handwritingTip) {
-    container.style.display = 'block';
-    container.innerHTML = `
-      <div style="background: var(--color-surface-2); border-left: 4px solid var(--color-accent); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--border-radius-sm); font-size: var(--font-size-sm);">
-        <strong>✍️ ข้อแนะนำการเขียนลายมือ (文化庁 指針):</strong><br>
-        ${kanji.handwritingTip}
-        <div style="margin-top: 4px;">
-          <a href="../knowledge/handwriting.html" style="font-size: var(--font-size-xs); color: var(--color-accent);">อ่านคู่มือลักษณะตัวอักษรและลายมือฉบับเต็ม →</a>
+  let hasNotes = false;
+
+  // Notes content (e.g. usage, financial daiji, historical context)
+  if (kanji.notes) {
+    hasNotes = true;
+    if (content) {
+      content.innerHTML = `
+        <div class="note-callout">
+          <div class="note-callout-title">
+            <span>📌 ข้อสังเกตและเกร็ดการใช้งาน:</span>
+          </div>
+          <div>${kanji.notes}</div>
         </div>
-      </div>
-    `;
-  } else {
-    container.style.display = 'none';
+      `;
+    }
+  } else if (content) {
+    content.innerHTML = '';
   }
+
+  // Bunkacho handwriting rule
+  if (kanji.handwritingTip) {
+    hasNotes = true;
+    if (handwritingTip) {
+      handwritingTip.style.display = 'block';
+      handwritingTip.innerHTML = `
+        <div style="background: var(--color-surface-2); border-left: 4px solid var(--color-accent); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--border-radius-sm); font-size: var(--font-size-sm);">
+          <strong>✍️ ข้อแนะนำการเขียนลายมือ (文化庁 指針):</strong><br>
+          ${kanji.handwritingTip}
+          <div style="margin-top: 4px;">
+            <a href="../knowledge/handwriting.html" style="font-size: var(--font-size-xs); color: var(--color-accent);">อ่านคู่มือลักษณะตัวอักษรและลายมือฉบับเต็ม →</a>
+          </div>
+        </div>
+      `;
+    }
+  } else if (handwritingTip) {
+    handwritingTip.style.display = 'none';
+  }
+
+  card.style.display = hasNotes ? 'block' : 'none';
 }
 
 function formatVocabWord(word) {
@@ -990,3 +1031,112 @@ function initAnkiExport(kanji) {
     }
   });
 }
+
+/* ==========================================================================
+   SHARE MODAL
+   ========================================================================== */
+
+function initShareModal(kanji) {
+  const shareBtn = document.getElementById('share-btn');
+  const modal = document.getElementById('share-modal');
+  const closeBtn = document.getElementById('close-share-modal');
+  const copyBtn = document.getElementById('share-copy-btn');
+  const urlInput = document.getElementById('share-url-input');
+  const previewChar = document.getElementById('share-preview-char');
+  const previewReading = document.getElementById('share-preview-reading');
+  const previewMeaning = document.getElementById('share-preview-meaning');
+  const xBtn = document.getElementById('share-x-btn');
+  const fbBtn = document.getElementById('share-fb-btn');
+  const lineBtn = document.getElementById('share-line-btn');
+  const nativeBtn = document.getElementById('share-native-btn');
+
+  if (!shareBtn || !modal) return;
+
+  const currentUrl = window.location.href;
+  const onReads = (kanji.onyomi || []).join(', ');
+  const kunReads = (kanji.kunyomi || []).join(', ');
+  const readSummary = [onReads, kunReads].filter(Boolean).join(' / ') || '-';
+  const meanSummary = (kanji.meanings_th && kanji.meanings_th.length)
+    ? kanji.meanings_th.join(', ')
+    : (kanji.meanings_en || []).join(', ') || '-';
+
+  const shareTitle = `คันจิ 『${kanji.kanji}』 (${readSummary}) - ${meanSummary} | Daijoubu JP พจนานุกรมคันจิ`;
+
+  if (previewChar) previewChar.textContent = kanji.kanji;
+  if (previewReading) previewReading.textContent = readSummary;
+  if (previewMeaning) previewMeaning.textContent = meanSummary;
+  if (urlInput) urlInput.value = currentUrl;
+
+  if (xBtn) {
+    xBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareTitle)}&url=${encodeURIComponent(currentUrl)}`;
+  }
+  if (fbBtn) {
+    fbBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+  }
+  if (lineBtn) {
+    lineBtn.href = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(currentUrl)}`;
+  }
+
+  if (nativeBtn && navigator.share) {
+    nativeBtn.style.display = 'inline-flex';
+    nativeBtn.addEventListener('click', async () => {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: `${kanji.kanji}: ${meanSummary}`,
+          url: currentUrl
+        });
+      } catch {}
+    });
+  }
+
+  const openModal = () => {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => modal.style.opacity = '1', 10);
+    if (urlInput) {
+      urlInput.select();
+    }
+  };
+
+  const closeModal = () => {
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 250);
+  };
+
+  shareBtn.addEventListener('click', openModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      closeModal();
+    }
+  });
+
+  if (copyBtn && urlInput) {
+    copyBtn.addEventListener('click', async () => {
+      const ok = await copyToClipboard(urlInput.value);
+      if (ok) {
+        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> <span>คัดลอกแล้ว!</span>';
+        copyBtn.style.backgroundColor = '#10b981';
+        copyBtn.style.color = '#ffffff';
+        showToast('คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!');
+        setTimeout(() => {
+          copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i> <span>คัดลอก</span>';
+          copyBtn.style.backgroundColor = '';
+          copyBtn.style.color = '';
+        }, 2000);
+      } else {
+        showToast('ไม่สามารถคัดลอกลิงก์ได้', '⚠️');
+      }
+    });
+  }
+}
+

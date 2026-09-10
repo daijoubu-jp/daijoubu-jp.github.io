@@ -145,13 +145,31 @@ export async function searchKanji(query, options = {}) {
       score += 70;
     }
 
-    // 3. Thai meaning match
+    // 3. Jinmei (name readings) match
+    const jinmei = (item.jinmei || item.nanori || []).join(' ');
+    const jinmeiKata = toKatakana(jinmei);
+    if (jinmeiKata === qKata) {
+      score += 110;
+    } else if (jinmeiKata.includes(qKata)) {
+      score += 65;
+    }
+
+    // 4. Japanese meaning match (字義)
+    const jaMatches = (item.meanings_ja || []).some(m => m === q || m === qKana);
+    const jaSubMatches = (item.meanings_ja || []).some(m => m.includes(q) || m.includes(qKana));
+    if (jaMatches) {
+      score += 85;
+    } else if (jaSubMatches) {
+      score += 60;
+    }
+
+    // 5. Thai meaning match
     const thaiMatches = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
     if (thaiMatches) {
       score += 80;
     }
 
-    // 4. English meaning match
+    // 6. English meaning match
     const enMatches = (item.meanings_en || []).some(m => m.toLowerCase() === q);
     const enSubMatches = (item.meanings_en || []).some(m => m.toLowerCase().includes(q));
     if (enMatches) {
@@ -160,7 +178,7 @@ export async function searchKanji(query, options = {}) {
       score += 65;
     }
 
-    // 5. Example compounds match
+    // 7. Example compounds match
     if (item.examples && item.examples.some(ex => ex.word.includes(q) || (ex.reading && ex.reading.includes(qKata)) || (ex.meaning_th && ex.meaning_th.includes(q)))) {
       score += 40;
     }

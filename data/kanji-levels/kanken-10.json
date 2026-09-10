@@ -26,7 +26,6 @@
       "อันดับหนึ่ง"
     ],
     "joyo": true,
-    "traditionalForm": "壹",
     "handwritingTip": null,
     "nanori": [
       "かず",
@@ -37,7 +36,7 @@
       {
         "word": "一日",
         "reading": "ついたち / いちにち",
-        "meaning_en": "1st day of month / one day",
+        "meaning_en": "",
         "meaning_th": "วันที่ 1 / หนึ่งวัน",
         "sentence_ja": "毎月一日は神社にお参りします。",
         "sentence_th": "ทุกวันที่หนึ่งของเดือนฉันจะไปไหว้พระที่ศาลเจ้า",
@@ -46,7 +45,7 @@
       {
         "word": "一番",
         "reading": "いちばん",
-        "meaning_en": "number one, best",
+        "meaning_en": "",
         "meaning_th": "อันดับหนึ่ง, ที่สุด",
         "sentence_ja": "健康が何よりも一番大切です。",
         "sentence_th": "สุขภาพเป็นสิ่งสำคัญที่สุดเหนือสิ่งอื่นใด",
@@ -55,7 +54,7 @@
       {
         "word": "一人",
         "reading": "ひとり",
-        "meaning_en": "one person, alone",
+        "meaning_en": "",
         "meaning_th": "คนเดียว, หนึ่งคน",
         "sentence_ja": "週末は一人で映画を見に行きました。",
         "sentence_th": "สุดสัปดาห์ฉันไปดูภาพยนตร์คนเดียว",
@@ -63,7 +62,19 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "jinmei": [
+      "かず",
+      "い",
+      "かつ"
+    ],
+    "meanings_ja": [
+      "ひとつ",
+      "はじめ",
+      "おなじ",
+      "すべて"
+    ],
+    "notes": "The Kanji 一 is easily mistaken with other characters. Therefore, it is sometimes replaced by 壱 in financial documents. (ในเอกสารทางการเงินนิยมใช้ 壱 แทนเพื่อป้องกันการแก้ไข)"
   },
   {
     "kanji": "山",
@@ -88,7 +99,6 @@
       "เขา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "たか",
@@ -98,7 +108,7 @@
       {
         "word": "富士山",
         "reading": "ふじさん",
-        "meaning_en": "Mt. Fuji",
+        "meaning_en": "",
         "meaning_th": "ภูเขาไฟฟูจิ",
         "sentence_ja": "富士山は日本で一番高い山です。",
         "sentence_th": "ภูเขาไฟฟูจิเป็นภูเขาที่สูงที่สุดในประเทศญี่ปุ่น",
@@ -107,7 +117,7 @@
       {
         "word": "火山",
         "reading": "かざん",
-        "meaning_en": "volcano",
+        "meaning_en": "",
         "meaning_th": "ภูเขาไฟ",
         "sentence_ja": "日本にはたくさんの活火山があります。",
         "sentence_th": "ในประเทศญี่ปุ่นมีภูเขาไฟที่ยังมีพลังอยู่มากมาย",
@@ -116,7 +126,7 @@
       {
         "word": "山登り",
         "reading": "やまのぼり",
-        "meaning_en": "mountain climbing",
+        "meaning_en": "",
         "meaning_th": "การปีนเขา",
         "sentence_ja": "秋の連休に友達と山登りに行きました。",
         "sentence_th": "ช่วงวันหยุดยาวฤดูใบไม้ร่วงฉันไปปีนเขากับเพื่อนๆ",
@@ -126,7 +136,14 @@
     "onyomi_hyougai": [
       "セン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "jinmei": [
+      "たか",
+      "のぼる"
+    ],
+    "meanings_ja": [
+      "やま"
+    ]
   },
   {
     "kanji": "日",
@@ -157,7 +174,6 @@
       "ประเทศญี่ปุ่น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "あき",
@@ -168,7 +184,7 @@
       {
         "word": "日本",
         "reading": "にほん",
-        "meaning_en": "Japan",
+        "meaning_en": "",
         "meaning_th": "ประเทศญี่ปุ่น",
         "sentence_ja": "来年、日本へ桜を見に行きたいです。",
         "sentence_th": "ปีหน้าฉันอยากไปดูซากุระที่ประเทศญี่ปุ่น",
@@ -177,7 +193,7 @@
       {
         "word": "今日",
         "reading": "きょう",
-        "meaning_en": "today",
+        "meaning_en": "",
         "meaning_th": "วันนี้",
         "sentence_ja": "今日の天気はとてもいいですね。",
         "sentence_th": "วันนี้อากาศดีมากเลยนะครับ",
@@ -186,7 +202,7 @@
       {
         "word": "日曜日",
         "reading": "にちようび",
-        "meaning_en": "Sunday",
+        "meaning_en": "",
         "meaning_th": "วันอาทิตย์",
         "sentence_ja": "日曜日は家族とゆっくり過ごします。",
         "sentence_th": "วันอาทิตย์ฉันใช้เวลาพักผ่อนสบายๆ กับครอบครัว",
@@ -197,6 +213,15 @@
     "kunyomi_hyougai": [
       "-び",
       "-か"
+    ],
+    "jinmei": [
+      "あき",
+      "いる",
+      "く"
+    ],
+    "meanings_ja": [
+      "ひ",
+      "か"
     ]
   },
   {
@@ -224,7 +249,6 @@
       "เดือน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "おと",
@@ -235,7 +259,7 @@
       {
         "word": "月曜日",
         "reading": "げつようび",
-        "meaning_en": "Monday",
+        "meaning_en": "",
         "meaning_th": "วันจันทร์",
         "sentence_ja": "月曜日から新しい仕事が始まります。",
         "sentence_th": "งานใหม่จะเริ่มตั้งแต่วันจันทร์",
@@ -244,7 +268,7 @@
       {
         "word": "満月",
         "reading": "まんげつ",
-        "meaning_en": "full moon",
+        "meaning_en": "",
         "meaning_th": "พระจันทร์เต็มดวง",
         "sentence_ja": "今夜は空にきれいな満月が出ています。",
         "sentence_th": "คืนนี้มีพระจันทร์เต็มดวงสวยงามลอยเด่นบนท้องฟ้า",
@@ -253,7 +277,7 @@
       {
         "word": "今月",
         "reading": "こんげつ",
-        "meaning_en": "this month",
+        "meaning_en": "",
         "meaning_th": "เดือนนี้",
         "sentence_ja": "今月は日本語能力試験があります。",
         "sentence_th": "เดือนนี้มีการสอบวัดระดับภาษาญี่ปุ่น (JLPT)",
@@ -261,7 +285,15 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "jinmei": [
+      "おと",
+      "がっ",
+      "す"
+    ],
+    "meanings_ja": [
+      "つき"
+    ]
   },
   {
     "kanji": "木",
@@ -289,7 +321,6 @@
       "ไม้"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: ขีดแนวตั้งตรงกลาง สามารถเขียนแบบหยุดนิ่ง (とめ) หรือตวัดขึ้น (はね) ก็ได้ ถูกต้องทั้งสองแบบ",
     "nanori": [
       "ぐ",
@@ -299,7 +330,7 @@
       {
         "word": "木曜日",
         "reading": "もくようび",
-        "meaning_en": "Thursday",
+        "meaning_en": "",
         "meaning_th": "วันพฤหัสบดี",
         "sentence_ja": "木曜日の午後に会議があります。",
         "sentence_th": "ช่วงบ่ายวันพฤหัสบดีมีการประชุม",
@@ -308,7 +339,7 @@
       {
         "word": "大木",
         "reading": "たいぼく",
-        "meaning_en": "large tree",
+        "meaning_en": "",
         "meaning_th": "ต้นไม้ใหญ่",
         "sentence_ja": "神社には樹齢数百年の大木があります。",
         "sentence_th": "ที่ศาลเจ้ามีต้นไม้ใหญ่อายุหลายร้อยปี",
@@ -317,7 +348,7 @@
       {
         "word": "木造",
         "reading": "もくぞう",
-        "meaning_en": "wooden, made of wood",
+        "meaning_en": "",
         "meaning_th": "สร้างด้วยไม้",
         "sentence_ja": "京都には歴史ある木造建築が多いです。",
         "sentence_th": "ที่เกียวโตมีสถาปัตยกรรมไม้เก่าแก่ทางประวัติศาสตร์มากมาย",
@@ -327,6 +358,14 @@
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "こ-"
+    ],
+    "jinmei": [
+      "ぐ",
+      "もท"
+    ],
+    "meanings_ja": [
+      "き",
+      "こ"
     ]
   },
   {
@@ -352,7 +391,6 @@
       "ของเหลว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "うず",
@@ -362,7 +400,7 @@
       {
         "word": "水曜日",
         "reading": "すいようび",
-        "meaning_en": "Wednesday",
+        "meaning_en": "",
         "meaning_th": "วันพุธ",
         "sentence_ja": "水曜日は定休日です。",
         "sentence_th": "วันพุธเป็นวันหยุดประจำของร้าน",
@@ -371,7 +409,7 @@
       {
         "word": "水泳",
         "reading": "すいえい",
-        "meaning_en": "swimming",
+        "meaning_en": "",
         "meaning_th": "การว่ายน้ำ",
         "sentence_ja": "毎朝、健康のために水泳をしています。",
         "sentence_th": "ฉันว่ายน้ำทุกเช้าเพื่อสุขภาพ",
@@ -380,7 +418,7 @@
       {
         "word": "冷水",
         "reading": "れいすい",
-        "meaning_en": "cold water",
+        "meaning_en": "",
         "meaning_th": "น้ำเย็น",
         "sentence_ja": "運動の後に冷水を一杯飲みました。",
         "sentence_th": "หลังออกกำลังกายฉันดื่มน้ำเย็นไปหนึ่งแก้ว",
@@ -390,6 +428,13 @@
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "みず-"
+    ],
+    "jinmei": [
+      "うず",
+      "ゆ"
+    ],
+    "meanings_ja": [
+      "みず"
     ]
   },
   {
@@ -416,7 +461,6 @@
       "เปลวเพลิง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "ほ"
@@ -425,7 +469,7 @@
       {
         "word": "火曜日",
         "reading": "かようび",
-        "meaning_en": "Tuesday",
+        "meaning_en": "",
         "meaning_th": "วันอังคาร",
         "sentence_ja": "火曜日に燃えるゴミを出します。",
         "sentence_th": "วันอังคารเป็นวันทิ้งขยะที่เผาได้",
@@ -434,7 +478,7 @@
       {
         "word": "花火",
         "reading": "はなび",
-        "meaning_en": "fireworks",
+        "meaning_en": "",
         "meaning_th": "ดอกไม้ไฟ",
         "sentence_ja": "夏の夜に川沿いで花火大会を楽しみました。",
         "sentence_th": "ในคืนฤดูร้อนฉันเพลิดเพลินกับเทศกาลดอกไม้ไฟริมแม่น้ำ",
@@ -443,7 +487,7 @@
       {
         "word": "火事",
         "reading": "かじ",
-        "meaning_en": "fire, conflagration",
+        "meaning_en": "",
         "meaning_th": "อัคคีภัย, ไฟไหม้",
         "sentence_ja": "冬は空気が乾燥するので火事に気をつけましょう。",
         "sentence_th": "ในฤดูหนาวอากาศแห้งจึงควรระมัดระวังเรื่องไฟไหม้",
@@ -456,6 +500,13 @@
     "kunyomi_hyougai": [
       "-び",
       "ほ-"
+    ],
+    "jinmei": [
+      "ほ"
+    ],
+    "meanings_ja": [
+      "ひ",
+      "ほ"
     ]
   },
   {
@@ -484,12 +535,17 @@
       "เจ็ด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "なな",
+      "ななつ",
+      "なの",
+      "しかる"
+    ]
   },
   {
     "kanji": "三",
@@ -515,12 +571,17 @@
       "สาม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みっつ",
+      "みつ",
+      "たびたび"
+    ],
+    "notes": "The Kanji 三 is replaced by 参 in financial and legal documents. (ในเอกสารทางการเงินนิยมใช้ 参 แทน)"
   },
   {
     "kanji": "上",
@@ -555,12 +616,21 @@
       "ขึ้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あがる",
+      "あげる",
+      "うえ",
+      "のぼす",
+      "うわ",
+      "のぼせる",
+      "のぼる",
+      "かみ"
+    ]
   },
   {
     "kanji": "下",
@@ -601,12 +671,23 @@
       "ลงมา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おりる",
+      "おろす",
+      "くだす",
+      "もと",
+      "さげる",
+      "くだる",
+      "くださる",
+      "した",
+      "しも",
+      "さがる"
+    ]
   },
   {
     "kanji": "中",
@@ -637,13 +718,15 @@
       "กลาง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あ.たる"
+    ],
+    "meanings_ja": [
+      "なか"
     ]
   },
   {
@@ -670,12 +753,15 @@
       "เก้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ここの",
+      "ここのつ"
+    ]
   },
   {
     "kanji": "二",
@@ -702,14 +788,19 @@
       "สองราก (หมายเลข 7)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ジ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ふたつ",
+      "ふたたび",
+      "ならぶ"
+    ],
+    "notes": "The Kanji 二 is easily altered to 三. Therefore, it is replaced by 弐 in financial and legal documents. (ในเอกสารทางการเงินนิยมใช้ 弐 แทน)"
   },
   {
     "kanji": "五",
@@ -734,12 +825,15 @@
       "ห้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いつ",
+      "いつつ"
+    ]
   },
   {
     "kanji": "人",
@@ -764,14 +858,13 @@
       "คน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [
       {
         "word": "人生",
         "reading": "じんせい",
-        "meaning_en": "human life",
+        "meaning_en": "",
         "meaning_th": "ชีวิตมนุษย์",
         "sentence_ja": "一度きりの人生を大切に生きましょう。",
         "sentence_th": "จงใช้ชีวิตที่มีเพียงครั้งเดียวนี้อย่างคุ้มค่า",
@@ -780,7 +873,7 @@
       {
         "word": "人間",
         "reading": "にんげん",
-        "meaning_en": "human being",
+        "meaning_en": "",
         "meaning_th": "มนุษย์",
         "sentence_ja": "人間関係を良好に保つことは大切です。",
         "sentence_th": "การรักษาความสัมพันธ์อันดีระหว่างมนุษย์เป็นสิ่งสำคัญ",
@@ -788,7 +881,10 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ひと"
+    ]
   },
   {
     "kanji": "休",
@@ -819,14 +915,13 @@
       "เกษียณอายุ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [
       {
         "word": "休日",
         "reading": "きゅうじつ",
-        "meaning_en": "holiday, day off",
+        "meaning_en": "",
         "meaning_th": "วันหยุด",
         "sentence_ja": "次の休日は家でゆっくり読書をします。",
         "sentence_th": "วันหยุดหน้าฉันจะพักผ่อนอ่านหนังสืออยู่ที่บ้าน",
@@ -835,7 +930,7 @@
       {
         "word": "休憩",
         "reading": "きゅうけい",
-        "meaning_en": "break, recess",
+        "meaning_en": "",
         "meaning_th": "การหยุดพักสั้นๆ",
         "sentence_ja": "一時間勉強した後に十分間休憩します。",
         "sentence_th": "หลังจากเรียนไปหนึ่งชั่วโมงฉันจะพักสิบนาที",
@@ -843,7 +938,12 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "やすまる",
+      "やすむ",
+      "やすめる"
+    ]
   },
   {
     "kanji": "先",
@@ -873,13 +973,15 @@
       "ก่อนหน้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "ま.ず"
+    ],
+    "meanings_ja": [
+      "さき"
     ]
   },
   {
@@ -908,12 +1010,16 @@
       "แทรก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いる",
+      "いれる",
+      "はいる"
+    ]
   },
   {
     "kanji": "八",
@@ -942,12 +1048,17 @@
       "แปดหัวรุนแรง (หมายเลข 12)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: ปลายเส้นด้านบนจะแตะชิดกันหรือเว้นช่องว่างเล็กน้อย ถือว่าถูกต้องทั้งสองแบบ",
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "や",
+      "やつ",
+      "やっつ",
+      "よう"
+    ]
   },
   {
     "kanji": "六",
@@ -974,12 +1085,17 @@
       "หก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "む",
+      "むい",
+      "むつ",
+      "むっつ"
+    ]
   },
   {
     "kanji": "円",
@@ -1007,7 +1123,6 @@
       "รอบ"
     ],
     "joyo": true,
-    "traditionalForm": "圓",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1015,6 +1130,9 @@
     "kunyomi_hyougai": [
       "つぶら.か",
       "まど.か"
+    ],
+    "meanings_ja": [
+      "まるい"
     ]
   },
   {
@@ -1048,12 +1166,15 @@
       "ออกไป"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "だす",
+      "でる"
+    ]
   },
   {
     "kanji": "力",
@@ -1085,13 +1206,15 @@
       "แข็งแรง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "つと.める"
+    ],
+    "meanings_ja": [
+      "ちから"
     ]
   },
   {
@@ -1118,12 +1241,18 @@
       "สิบ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "とお",
+      "じゅう",
+      "そろう",
+      "みつ"
+    ],
+    "notes": "The Kanji 十 is replaced by 拾 in financial and legal documents. (ในเอกสารทางการเงินนิยมใช้ 拾 แทน)"
   },
   {
     "kanji": "千",
@@ -1147,12 +1276,14 @@
       "พัน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ち"
+    ]
   },
   {
     "kanji": "口",
@@ -1177,12 +1308,14 @@
       "ปาก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "くち"
+    ]
   },
   {
     "kanji": "右",
@@ -1207,12 +1340,14 @@
       "ถูกต้อง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みぎ"
+    ]
   },
   {
     "kanji": "名",
@@ -1242,12 +1377,14 @@
       "โดดเด่น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "な"
+    ]
   },
   {
     "kanji": "四",
@@ -1274,12 +1411,17 @@
       "สี่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "よっつ",
+      "よ",
+      "よん",
+      "よつ"
+    ]
   },
   {
     "kanji": "土",
@@ -1309,12 +1451,14 @@
       "พื้นดิน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "つち"
+    ]
   },
   {
     "kanji": "夕",
@@ -1338,13 +1482,15 @@
       "ตอนเย็น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "ゆう.べ"
+    ],
+    "meanings_ja": [
+      "ゆう"
     ]
   },
   {
@@ -1373,12 +1519,16 @@
       "ใหญ่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おお",
+      "おおいに",
+      "おおきい"
+    ]
   },
   {
     "kanji": "天",
@@ -1407,13 +1557,16 @@
       "จักรวรรดิ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "そら"
+    ],
+    "meanings_ja": [
+      "あま",
+      "あめ"
     ]
   },
   {
@@ -1443,12 +1596,15 @@
       "หญิง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "め",
+      "おんな"
+    ]
   },
   {
     "kanji": "子",
@@ -1478,12 +1634,14 @@
       "23.00-01.00 น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "こ"
+    ]
   },
   {
     "kanji": "学",
@@ -1511,12 +1669,14 @@
       "วิทยาศาสตร์"
     ],
     "joyo": true,
-    "traditionalForm": "學",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "まなぶ"
+    ]
   },
   {
     "kanji": "小",
@@ -1544,12 +1704,16 @@
       "เล็ก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "お",
+      "こ",
+      "ちいさい"
+    ]
   },
   {
     "kanji": "川",
@@ -1577,12 +1741,14 @@
       "แม่น้ำหรือแม่น้ำสามจังหวะหัวรุนแรง (หมายเลข 47)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かわ"
+    ]
   },
   {
     "kanji": "左",
@@ -1606,12 +1772,14 @@
       "ซ้าย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ひだり"
+    ]
   },
   {
     "kanji": "年",
@@ -1637,7 +1805,6 @@
       "เคาน์เตอร์เป็นเวลาหลายปี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1646,6 +1813,9 @@
     ],
     "kunyomi_hyougai": [
       "とせ"
+    ],
+    "meanings_ja": [
+      "とし"
     ]
   },
   {
@@ -1671,14 +1841,17 @@
       "มือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ズ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "て",
+      "た"
+    ]
   },
   {
     "kanji": "文",
@@ -1712,13 +1885,15 @@
       "สไตล์"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: จุดด้านบนกับเส้นขวางจะแตะติดกันหรือเว้นระยะเล็กน้อยได้",
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あや"
+    ],
+    "meanings_ja": [
+      "ふみ"
     ]
   },
   {
@@ -1748,12 +1923,16 @@
       "รวดเร็ว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はやい",
+      "はやまる",
+      "はやめる"
+    ]
   },
   {
     "kanji": "本",
@@ -1785,14 +1964,13 @@
       "หลัก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [
       {
         "word": "本当",
         "reading": "ほんとう",
-        "meaning_en": "truth, reality",
+        "meaning_en": "",
         "meaning_th": "ความจริง, จริงๆ",
         "sentence_ja": "それは本当の話ですか。",
         "sentence_th": "นั่นเป็นเรื่องจริงหรือเปล่าครับ",
@@ -1801,7 +1979,7 @@
       {
         "word": "本屋",
         "reading": "ほんや",
-        "meaning_en": "bookstore",
+        "meaning_en": "",
         "meaning_th": "ร้านหนังสือ",
         "sentence_ja": "駅前の本屋で辞書を買いました。",
         "sentence_th": "ฉันซื้อพจนานุกรมที่ร้านหนังสือหน้าสถานี",
@@ -1809,7 +1987,10 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "もと"
+    ]
   },
   {
     "kanji": "村",
@@ -1835,12 +2016,14 @@
       "เมือง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "むら"
+    ]
   },
   {
     "kanji": "林",
@@ -1866,13 +2049,15 @@
       "ป่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: ขีดแนวตั้งของหมวดนำ 'きへん' สามารถหยุดนิ่งหรือตวัดขึ้นได้ทั้งสองแบบ",
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "おお.い"
+    ],
+    "meanings_ja": [
+      "はやし"
     ]
   },
   {
@@ -1901,7 +2086,6 @@
       "การพิมพ์"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1911,6 +2095,12 @@
     "kunyomi_hyougai": [
       "あぜ",
       "かせ"
+    ],
+    "meanings_ja": [
+      "がっこう",
+      "くらべる",
+      "ただす",
+      "かんがえる"
     ]
   },
   {
@@ -1936,12 +2126,14 @@
       "ป่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: ขีดแนวตั้งของตัว '木' ทั้งสามตำแหน่งสามารถหยุดหรือตวัดปลายได้",
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "もり"
+    ]
   },
   {
     "kanji": "正",
@@ -1973,12 +2165,16 @@
       "ชอบธรรม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ただしい",
+      "ただす",
+      "まさ"
+    ]
   },
   {
     "kanji": "気",
@@ -2010,13 +2206,16 @@
       "อากาศ"
     ],
     "joyo": true,
-    "traditionalForm": "氣",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "いき"
+    ],
+    "meanings_ja": [
+      "いき",
+      "き"
     ]
   },
   {
@@ -2041,12 +2240,14 @@
       "สุนัข"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いぬ"
+    ]
   },
   {
     "kanji": "玉",
@@ -2072,14 +2273,16 @@
       "ลูกบอล"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ゴク"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たま"
+    ]
   },
   {
     "kanji": "王",
@@ -2105,13 +2308,18 @@
       "เจ้าสัว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "きみ"
+    ],
+    "meanings_ja": [
+      "きみ",
+      "おおきみ",
+      "かしら",
+      "統治者"
     ]
   },
   {
@@ -2150,12 +2358,23 @@
       "การเกิด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いきる",
+      "いかす",
+      "なま",
+      "うむ",
+      "はえる",
+      "き",
+      "おう",
+      "いける",
+      "うまれる",
+      "はやす"
+    ]
   },
   {
     "kanji": "田",
@@ -2181,12 +2400,14 @@
       "ข้าวเปลือก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "た"
+    ]
   },
   {
     "kanji": "男",
@@ -2211,13 +2432,15 @@
       "ชาย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "おのこ"
+    ],
+    "meanings_ja": [
+      "おとこ"
     ]
   },
   {
@@ -2247,7 +2470,6 @@
       "บล็อก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2256,6 +2478,9 @@
     ],
     "kunyomi_hyougai": [
       "あぜみち"
+    ],
+    "meanings_ja": [
+      "まち"
     ]
   },
   {
@@ -2283,12 +2508,16 @@
       "ขาว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "しろい",
+      "しろ",
+      "しら"
+    ]
   },
   {
     "kanji": "百",
@@ -2312,7 +2541,6 @@
       "ร้อย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2320,6 +2548,9 @@
       "ハク"
     ],
     "kunyomi_hyougai": [
+      "もも"
+    ],
+    "meanings_ja": [
       "もも"
     ]
   },
@@ -2355,12 +2586,15 @@
       "ดูสิ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "め",
+      "ま"
+    ]
   },
   {
     "kanji": "石",
@@ -2386,12 +2620,14 @@
       "หิน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いし"
+    ]
   },
   {
     "kanji": "立",
@@ -2422,12 +2658,15 @@
       "ตั้งค่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たつ",
+      "たてる"
+    ]
   },
   {
     "kanji": "竹",
@@ -2451,14 +2690,16 @@
       "ไม้ไผ่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "シツ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たけ"
+    ]
   },
   {
     "kanji": "糸",
@@ -2482,14 +2723,16 @@
       "ด้าย"
     ],
     "joyo": true,
-    "traditionalForm": "絲",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ベキ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いと"
+    ]
   },
   {
     "kanji": "耳",
@@ -2513,7 +2756,6 @@
       "หู"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2522,6 +2764,9 @@
     ],
     "kunyomi_hyougai": [
       "のみ"
+    ],
+    "meanings_ja": [
+      "みみ"
     ]
   },
   {
@@ -2553,12 +2798,14 @@
       "สมุนไพร"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "くさ"
+    ]
   },
   {
     "kanji": "虫",
@@ -2586,14 +2833,16 @@
       "อารมณ์"
     ],
     "joyo": true,
-    "traditionalForm": "蟲",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "キ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "むし"
+    ]
   },
   {
     "kanji": "見",
@@ -2627,14 +2876,13 @@
       "โอกาส"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [
       {
         "word": "意見",
         "reading": "いけん",
-        "meaning_en": "opinion",
+        "meaning_en": "",
         "meaning_th": "ความคิดเห็น",
         "sentence_ja": "会議で自分の意見を述べました。",
         "sentence_th": "ฉันได้แสดงความคิดเห็นของตนเองในที่ประชุม",
@@ -2643,7 +2891,7 @@
       {
         "word": "見学",
         "reading": "けんがく",
-        "meaning_en": "field trip, study tour",
+        "meaning_en": "",
         "meaning_th": "การทัศนศึกษาดูงาน",
         "sentence_ja": "来週、自動車工場を見学します。",
         "sentence_th": "สัปดาห์หน้าเราจะไปทัศนศึกษาดูงานที่โรงงานผลิตรถยนต์",
@@ -2651,7 +2899,12 @@
       }
     ],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みえる",
+      "みせる",
+      "みる"
+    ]
   },
   {
     "kanji": "貝",
@@ -2675,14 +2928,16 @@
       "หอย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "バイ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かい"
+    ]
   },
   {
     "kanji": "赤",
@@ -2710,12 +2965,17 @@
       "สีแดง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あか",
+      "あかい",
+      "あからむ",
+      "あからめる"
+    ]
   },
   {
     "kanji": "足",
@@ -2747,12 +3007,17 @@
       "เพียงพอ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あし",
+      "たす",
+      "たりる",
+      "たる"
+    ]
   },
   {
     "kanji": "車",
@@ -2776,12 +3041,14 @@
       "รถ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "くるま"
+    ]
   },
   {
     "kanji": "金",
@@ -2807,12 +3074,15 @@
       "ทอง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かな",
+      "かね"
+    ]
   },
   {
     "kanji": "青",
@@ -2840,12 +3110,15 @@
       "สีเขียว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あおい",
+      "あお"
+    ]
   },
   {
     "kanji": "音",
@@ -2873,12 +3146,15 @@
       "เสียงรบกวน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おと",
+      "ね"
+    ]
   },
   {
     "kanji": "字",
@@ -2906,7 +3182,6 @@
       "ตัวหนังสือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "あざ",
@@ -2916,7 +3191,7 @@
       {
         "word": "文字",
         "reading": "もじ",
-        "meaning_en": "letter, character",
+        "meaning_en": "",
         "meaning_th": "ตัวอักษร",
         "sentence_ja": "この本は文字が大きくて読みやすいです。",
         "sentence_th": "หนังสือเล่มนี้ตัวอักษรใหญ่และอ่านง่าย",
@@ -2925,7 +3200,7 @@
       {
         "word": "数字",
         "reading": "すうじ",
-        "meaning_en": "number, numeral",
+        "meaning_en": "",
         "meaning_th": "ตัวเลข",
         "sentence_ja": "暗証番号の数字を四桁入力してください。",
         "sentence_th": "กรุณากรอกตัวเลขรหัสผ่าน 4 หลัก",
@@ -2938,6 +3213,13 @@
     "kunyomi_hyougai": [
       "あざな",
       "-な"
+    ],
+    "jinmei": [
+      "あざ",
+      "すけ"
+    ],
+    "meanings_ja": [
+      "あざ"
     ]
   },
   {
@@ -2964,7 +3246,6 @@
       "บุปผา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "はる",
@@ -2974,7 +3255,7 @@
       {
         "word": "花見",
         "reading": "はなみ",
-        "meaning_en": "cherry blossom viewing",
+        "meaning_en": "",
         "meaning_th": "การชมดอกไม้ (ฮานามิ)",
         "sentence_ja": "春になると公園で花見をします。",
         "sentence_th": "เมื่อเข้าสู่ฤดูใบไม้ผลิ ผู้คนจะไปชมดอกไม้ที่สวนสาธารณะ",
@@ -2983,7 +3264,7 @@
       {
         "word": "生け花",
         "reading": "いけばな",
-        "meaning_en": "flower arrangement",
+        "meaning_en": "",
         "meaning_th": "การจัดดอกไม้แบบญี่ปุ่น",
         "sentence_ja": "母は生け花の教室に通っています。",
         "sentence_th": "คุณแม่ไปเรียนคลาสจัดดอกไม้แบบญี่ปุ่น",
@@ -2992,7 +3273,7 @@
       {
         "word": "花束",
         "reading": "はなたば",
-        "meaning_en": "bouquet",
+        "meaning_en": "",
         "meaning_th": "ช่อดอกไม้",
         "sentence_ja": "誕生日にきれいな花束をもらいました。",
         "sentence_th": "ฉันได้รับช่อดอกไม้สวยงามในวันเกิด",
@@ -3002,7 +3283,14 @@
     "onyomi_hyougai": [
       "ケ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "jinmei": [
+      "はる",
+      "も"
+    ],
+    "meanings_ja": [
+      "はな"
+    ]
   },
   {
     "kanji": "空",
@@ -3035,7 +3323,6 @@
       "อากาศ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "たか",
@@ -3045,7 +3332,7 @@
       {
         "word": "空港",
         "reading": "くうこう",
-        "meaning_en": "airport",
+        "meaning_en": "",
         "meaning_th": "สนามบิน",
         "sentence_ja": "電車で成田空港へ向かいました。",
         "sentence_th": "ฉันนั่งรถไฟมุ่งหน้าไปยังสนามบินนาริตะ",
@@ -3054,7 +3341,7 @@
       {
         "word": "空気",
         "reading": "くうき",
-        "meaning_en": "air, atmosphere",
+        "meaning_en": "",
         "meaning_th": "อากาศ, บรรยากาศ",
         "sentence_ja": "山の上は空気が澄んでいておいしいです。",
         "sentence_th": "บนยอดเขาอากาศบริสุทธิ์สดชื่นมาก",
@@ -3063,7 +3350,7 @@
       {
         "word": "青空",
         "reading": "あおぞら",
-        "meaning_en": "blue sky",
+        "meaning_en": "",
         "meaning_th": "ท้องฟ้าสีคราม",
         "sentence_ja": "見上げると一面の青空が広がっていました。",
         "sentence_th": "เมื่อแหงนมองขึ้นไป ท้องฟ้าสีครามแผ่กว้างสุดสายตา",
@@ -3076,6 +3363,16 @@
       "す.く",
       "す.かす",
       "むな.しい"
+    ],
+    "jinmei": [
+      "たか",
+      "そら"
+    ],
+    "meanings_ja": [
+      "そら",
+      "あく",
+      "あける",
+      "から"
     ]
   },
   {
@@ -3102,7 +3399,6 @@
       "สายฝน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": "ตามเกณฑ์文化庁 2016: จุดทั้งสี่จุดด้านในสามารถแต้มเป็นจุดกลมหรือลากปัดเฉียงสั้นๆ ล้วนถูกต้อง",
     "nanori": [
       "あめ"
@@ -3111,7 +3407,7 @@
       {
         "word": "大雨",
         "reading": "おおあめ",
-        "meaning_en": "heavy rain",
+        "meaning_en": "",
         "meaning_th": "ฝนตกหนัก",
         "sentence_ja": "大雨のため電車が一時運転を見合わせました。",
         "sentence_th": "เนื่องจากฝนตกหนัก รถไฟจึงหยุดให้บริการชั่วคราว",
@@ -3120,7 +3416,7 @@
       {
         "word": "雨季",
         "reading": "うき",
-        "meaning_en": "rainy season",
+        "meaning_en": "",
         "meaning_th": "ฤดูฝน",
         "sentence_ja": "タイの雨季はスコールがよく降ります。",
         "sentence_th": "ในฤดูฝนของประเทศไทยมักมีฝนซู่ตกหนัก",
@@ -3129,7 +3425,7 @@
       {
         "word": "梅雨",
         "reading": "つゆ",
-        "meaning_en": "rainy season (June-July in Japan)",
+        "meaning_en": "",
         "meaning_th": "ฤดูฝนสึยุในญี่ปุ่น",
         "sentence_ja": "六月になると日本は梅雨の時期に入ります。",
         "sentence_th": "พอถึงเดือนมิถุนายน ประเทศญี่ปุ่นจะเข้าสู่ช่วงฤดูฝนสึยุ",
@@ -3140,6 +3436,13 @@
     "kunyomi_hyougai": [
       "あま-",
       "-さめ"
+    ],
+    "jinmei": [
+      "あめ"
+    ],
+    "meanings_ja": [
+      "あめ",
+      "あま"
     ]
   }
 ]

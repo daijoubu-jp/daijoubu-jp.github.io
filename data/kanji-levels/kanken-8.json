@@ -19,7 +19,9 @@
       "street",
       "ward",
       "town",
-      "counter for guns, tools, leaves or cakes of something",
+      "counter for guns",
+      "tools",
+      "leaves or cakes of something",
       "even number",
       "4th calendar sign"
     ],
@@ -29,13 +31,15 @@
       "เมือง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あ.たる",
+      "ひのと"
+    ],
+    "meanings_ja": [
       "ひのと"
     ]
   },
@@ -67,12 +71,14 @@
       "สังคม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "よ"
+    ]
   },
   {
     "kanji": "両",
@@ -93,7 +99,8 @@
     "meanings_en": [
       "both",
       "old Japanese coin",
-      "counter for carriages (e.g., in a train)",
+      "counter for carriages (e.g.",
+      "in a train)",
       "two"
     ],
     "meanings_th": [
@@ -102,13 +109,16 @@
       "เคาน์เตอร์ตู้โดยสาร (เช่น ในรถไฟ)"
     ],
     "joyo": true,
-    "traditionalForm": "兩",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "ふた.つ"
+    ],
+    "meanings_ja": [
+      "てる",
+      "ふたつ"
     ]
   },
   {
@@ -141,12 +151,15 @@
       "อาจารย์"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おも",
+      "ぬし"
+    ]
   },
   {
     "kanji": "乗",
@@ -180,14 +193,17 @@
       "การคูณ"
     ],
     "joyo": true,
-    "traditionalForm": "乘",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ショウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "のせる",
+      "のる"
+    ]
   },
   {
     "kanji": "予",
@@ -216,7 +232,6 @@
       "ตัวฉันเอง"
     ],
     "joyo": true,
-    "traditionalForm": "豫",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -225,6 +240,9 @@
       "あらかじ.め",
       "かね.て",
       "あた.える"
+    ],
+    "meanings_ja": [
+      "あらかじめ"
     ]
   },
   {
@@ -257,13 +275,15 @@
       "ความจริง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "つか.える"
+    ],
+    "meanings_ja": [
+      "こと"
     ]
   },
   {
@@ -294,13 +314,15 @@
       "เป็นทางการ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "つかまつ.る"
+    ],
+    "meanings_ja": [
+      "つかえる"
     ]
   },
   {
@@ -329,12 +351,14 @@
       "คนอื่น ๆ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ほか"
+    ]
   },
   {
     "kanji": "代",
@@ -362,7 +386,9 @@
       "replace",
       "period",
       "age",
-      "counter for decades of ages, eras, etc.",
+      "counter for decades of ages",
+      "eras",
+      "etc.",
       "generation",
       "charge",
       "rate",
@@ -374,12 +400,17 @@
       "แปลง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かえる",
+      "かわる",
+      "よ",
+      "しろ"
+    ]
   },
   {
     "kanji": "住",
@@ -408,14 +439,17 @@
       "มีชีวิตอยู่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "チュウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "すまう",
+      "すむ"
+    ]
   },
   {
     "kanji": "使",
@@ -447,13 +481,15 @@
       "สั่งซื้อ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "つか.わす"
+    ],
+    "meanings_ja": [
+      "つかう"
     ]
   },
   {
@@ -484,13 +520,16 @@
       "หน้าที่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "かか.わる"
+    ],
+    "meanings_ja": [
+      "かかり",
+      "かかる"
     ]
   },
   {
@@ -518,7 +557,6 @@
       "ครั้ง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -528,6 +566,11 @@
     "kunyomi_hyougai": [
       "そむ.く",
       "ま.す"
+    ],
+    "meanings_ja": [
+      "ます",
+      "かさなる",
+      "二倍"
     ]
   },
   {
@@ -557,14 +600,17 @@
       "ทั้งหมด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "セン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "すべて",
+      "まったく"
+    ]
   },
   {
     "kanji": "具",
@@ -588,7 +634,9 @@
       "means",
       "possess",
       "ingredients",
-      "counter for armor, suits, sets of furniture"
+      "counter for armor",
+      "suits",
+      "sets of furniture"
     ],
     "meanings_th": [
       "เครื่องมือ",
@@ -596,7 +644,6 @@
       "หมายถึง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -605,6 +652,10 @@
       "つぶさ.に",
       "つま",
       "そな.える"
+    ],
+    "meanings_ja": [
+      "そなえる",
+      "つぶさに"
     ]
   },
   {
@@ -634,12 +685,15 @@
       "อธิบาย"
     ],
     "joyo": true,
-    "traditionalForm": "寫",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "うつす",
+      "うつる"
+    ]
   },
   {
     "kanji": "列",
@@ -667,7 +721,6 @@
       "อันดับ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -676,6 +729,11 @@
       "つら.なる",
       "つら.ねる",
       "なら.べる"
+    ],
+    "meanings_ja": [
+      "ならぶ",
+      "つらなる",
+      "れつ"
     ]
   },
   {
@@ -705,12 +763,16 @@
       "ช่วยเหลือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たすかる",
+      "たすける",
+      "すけ"
+    ]
   },
   {
     "kanji": "勉",
@@ -741,13 +803,15 @@
       "ให้กำลังใจ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "つと.める"
+    ],
+    "meanings_ja": [
+      "つとめる"
     ]
   },
   {
@@ -780,14 +844,17 @@
       "การเปลี่ยนแปลง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "トウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "うごかす",
+      "うごく"
+    ]
   },
   {
     "kanji": "勝",
@@ -817,13 +884,16 @@
       "เหนือกว่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "すぐ.れる"
+    ],
+    "meanings_ja": [
+      "かつ",
+      "まさる"
     ]
   },
   {
@@ -857,12 +927,15 @@
       "อิทธิพล"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ばかす",
+      "ばける"
+    ]
   },
   {
     "kanji": "区",
@@ -886,14 +959,19 @@
       "อำเภอ"
     ],
     "joyo": true,
-    "traditionalForm": "區",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "オウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "わける",
+      "くぎる",
+      "まち",
+      "区域"
+    ]
   },
   {
     "kanji": "医",
@@ -921,13 +999,17 @@
       "ยา"
     ],
     "joyo": true,
-    "traditionalForm": "醫",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "い.やす",
+      "くすし"
+    ],
+    "meanings_ja": [
+      "いやす",
+      "いする",
       "くすし"
     ]
   },
@@ -962,12 +1044,14 @@
       "ลาออก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さる"
+    ]
   },
   {
     "kanji": "反",
@@ -994,12 +1078,15 @@
       "ต่อต้าน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "そらす",
+      "そる"
+    ]
   },
   {
     "kanji": "取",
@@ -1027,12 +1114,14 @@
       "ใช้เวลาขึ้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "とる"
+    ]
   },
   {
     "kanji": "受",
@@ -1065,14 +1154,17 @@
       "ตอบ (โทรศัพท์)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ズ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "うかる",
+      "うける"
+    ]
   },
   {
     "kanji": "号",
@@ -1105,14 +1197,17 @@
       "รายการ"
     ],
     "joyo": true,
-    "traditionalForm": "號",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "コウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さけぶ",
+      "よびな"
+    ]
   },
   {
     "kanji": "向",
@@ -1147,12 +1242,17 @@
       "เกินกว่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "むかう",
+      "むく",
+      "むける",
+      "むこう"
+    ]
   },
   {
     "kanji": "君",
@@ -1181,12 +1281,14 @@
       "ไม้บรรทัด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "きみ"
+    ]
   },
   {
     "kanji": "味",
@@ -1212,14 +1314,17 @@
       "รสชาติ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ビ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あじ",
+      "あじわう"
+    ]
   },
   {
     "kanji": "命",
@@ -1251,13 +1356,15 @@
       "กฤษฎีกา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "おお.せ"
+    ],
+    "meanings_ja": [
+      "いのち"
     ]
   },
   {
@@ -1289,13 +1396,16 @@
       "ความสงบสุข"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "やわ.らぐ"
+    ],
+    "meanings_ja": [
+      "なごむ",
+      "なごやか"
     ]
   },
   {
@@ -1326,14 +1436,16 @@
       "ศักดิ์ศรี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ホン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "しな"
+    ]
   },
   {
     "kanji": "員",
@@ -1360,7 +1472,6 @@
       "หมายเลข"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1370,6 +1481,12 @@
     ],
     "kunyomi_hyougai": [
       "かず"
+    ],
+    "meanings_ja": [
+      "かず",
+      "なかま",
+      "人",
+      "つとめる"
     ]
   },
   {
@@ -1399,7 +1516,6 @@
       "ซื้อขายใน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1407,6 +1523,9 @@
     "kunyomi_hyougai": [
       "あきな.い",
       "はか.る"
+    ],
+    "meanings_ja": [
+      "あきなう"
     ]
   },
   {
@@ -1437,12 +1556,16 @@
       "ปัญหา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "とい",
+      "とう",
+      "とん"
+    ]
   },
   {
     "kanji": "坂",
@@ -1470,14 +1593,16 @@
       "เนินเขา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "バン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さか"
+    ]
   },
   {
     "kanji": "央",
@@ -1501,14 +1626,18 @@
       "กลาง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "エイ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "まんなか",
+      "なかば",
+      "中心"
+    ]
   },
   {
     "kanji": "始",
@@ -1534,12 +1663,15 @@
       "เริ่มต้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はじまる",
+      "はじめる"
+    ]
   },
   {
     "kanji": "委",
@@ -1569,7 +1701,6 @@
       "ออกไป"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1577,6 +1708,9 @@
     "kunyomi_hyougai": [
       "お.く",
       "くわ.しい"
+    ],
+    "meanings_ja": [
+      "ゆだねる"
     ]
   },
   {
@@ -1607,12 +1741,15 @@
       "ปกป้อง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "まもる",
+      "もり"
+    ]
   },
   {
     "kanji": "安",
@@ -1644,7 +1781,6 @@
       "ต่ำ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1652,6 +1788,9 @@
     "kunyomi_hyougai": [
       "いずく.んぞ",
       "やす.んじる"
+    ],
+    "meanings_ja": [
+      "やすい"
     ]
   },
   {
@@ -1684,12 +1823,16 @@
       "สร้าง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さだまる",
+      "さだめる",
+      "さだか"
+    ]
   },
   {
     "kanji": "実",
@@ -1720,13 +1863,16 @@
       "เมล็ดพันธุ์"
     ],
     "joyo": true,
-    "traditionalForm": "實",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "さね"
+    ],
+    "meanings_ja": [
+      "み",
+      "みのる"
     ]
   },
   {
@@ -1755,13 +1901,17 @@
       "ลูกค้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "まろうど"
+    ],
+    "meanings_ja": [
+      "まろうど",
+      "たずねてくる人",
+      "きゃく"
     ]
   },
   {
@@ -1793,12 +1943,14 @@
       "พระราชวัง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みや"
+    ]
   },
   {
     "kanji": "宿",
@@ -1833,12 +1985,16 @@
       "สถานีถ่ายทอด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "やど",
+      "やどす",
+      "やどる"
+    ]
   },
   {
     "kanji": "寒",
@@ -1862,13 +2018,15 @@
       "หนาว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "いや.しい"
+    ],
+    "meanings_ja": [
+      "さむい"
     ]
   },
   {
@@ -1907,7 +2065,6 @@
       "แม้กระทั่ง"
     ],
     "joyo": true,
-    "traditionalForm": "對",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1915,6 +2072,14 @@
     "kunyomi_hyougai": [
       "こた.える",
       "そろ.い"
+    ],
+    "meanings_ja": [
+      "あいて",
+      "こたえる",
+      "そろい",
+      "つれあい",
+      "ならぶ",
+      "むかう"
     ]
   },
   {
@@ -1948,12 +2113,14 @@
       "สำนักงาน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
+      "つぼね"
+    ],
+    "meanings_ja": [
       "つぼね"
     ]
   },
@@ -1985,7 +2152,6 @@
       "ร้านค้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -1993,6 +2159,9 @@
     "kunyomi_hyougai": [
       "いえ",
       "やね"
+    ],
+    "meanings_ja": [
+      "や"
     ]
   },
   {
@@ -2017,13 +2186,15 @@
       "ชายหาด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "かどだ.つ"
+    ],
+    "meanings_ja": [
+      "きし"
     ]
   },
   {
@@ -2048,12 +2219,14 @@
       "เกาะ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "しま"
+    ]
   },
   {
     "kanji": "州",
@@ -2079,7 +2252,6 @@
       "จังหวัด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2088,6 +2260,9 @@
     ],
     "kunyomi_hyougai": [
       "くに"
+    ],
+    "meanings_ja": [
+      "す"
     ]
   },
   {
@@ -2120,7 +2295,6 @@
       "อัลบั้ม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2128,6 +2302,9 @@
     "kunyomi_hyougai": [
       "とばり",
       "はり"
+    ],
+    "meanings_ja": [
+      "とばり"
     ]
   },
   {
@@ -2158,12 +2335,15 @@
       "ความสงบสุข"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たいら",
+      "ひら"
+    ]
   },
   {
     "kanji": "幸",
@@ -2193,12 +2373,16 @@
       "โชคลาภ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さいわい",
+      "しあわせ",
+      "さち"
+    ]
   },
   {
     "kanji": "度",
@@ -2231,12 +2415,14 @@
       "เวลา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たび"
+    ]
   },
   {
     "kanji": "庫",
@@ -2263,12 +2449,14 @@
       "โกดัง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
+      "くら"
+    ],
+    "meanings_ja": [
       "くら"
     ]
   },
@@ -2298,12 +2486,14 @@
       "ลาน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "にわ"
+    ]
   },
   {
     "kanji": "式",
@@ -2334,7 +2524,6 @@
       "พิธีกรรม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2344,6 +2533,12 @@
     "kunyomi_hyougai": [
       "のっと.る",
       "のり"
+    ],
+    "meanings_ja": [
+      "のっと",
+      "かた",
+      "ぎしき",
+      "手本"
     ]
   },
   {
@@ -2375,12 +2570,17 @@
       "แคมเปญ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "つとめ",
+      "はたらき",
+      "いくさ",
+      "役に立つ"
+    ]
   },
   {
     "kanji": "待",
@@ -2406,12 +2606,14 @@
       "ขึ้นอยู่กับ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "まつ"
+    ]
   },
   {
     "kanji": "急",
@@ -2440,13 +2642,15 @@
       "ฉับพลัน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "せ.く"
+    ],
+    "meanings_ja": [
+      "いそぐ"
     ]
   },
   {
@@ -2478,7 +2682,6 @@
       "ลูกชาย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2486,6 +2689,9 @@
     "kunyomi_hyougai": [
       "いこ.う",
       "やす.む"
+    ],
+    "meanings_ja": [
+      "いき"
     ]
   },
   {
@@ -2518,13 +2724,15 @@
       "คนพาล"
     ],
     "joyo": true,
-    "traditionalForm": "惡",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あ.し"
+    ],
+    "meanings_ja": [
+      "わるい"
     ]
   },
   {
@@ -2554,12 +2762,15 @@
       "เศร้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かなしい",
+      "かなしむ"
+    ]
   },
   {
     "kanji": "想",
@@ -2588,13 +2799,15 @@
       "คิด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "おも.う"
+    ],
+    "meanings_ja": [
+      "おもう"
     ]
   },
   {
@@ -2626,7 +2839,6 @@
       "หัวใจ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2634,6 +2846,12 @@
     "kunyomi_hyougai": [
       "おも.う",
       "こころ"
+    ],
+    "meanings_ja": [
+      "こころ",
+      "おもい",
+      "わけ",
+      "いと"
     ]
   },
   {
@@ -2659,13 +2877,17 @@
       "ความรู้สึก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "かま.ける"
+    ],
+    "meanings_ja": [
+      "かんじる",
+      "こころをうごかす",
+      "おもう"
     ]
   },
   {
@@ -2692,14 +2914,16 @@
       "ขอบเขต"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ソ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ところ"
+    ]
   },
   {
     "kanji": "打",
@@ -2729,7 +2953,6 @@
       "เคาะ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2737,7 +2960,10 @@
       "チョウ",
       "ダース"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "うつ"
+    ]
   },
   {
     "kanji": "投",
@@ -2771,12 +2997,14 @@
       "ละทิ้ง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "なげる"
+    ]
   },
   {
     "kanji": "拾",
@@ -2807,14 +3035,17 @@
       "ค้นหา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "とお"
-    ]
+    ],
+    "meanings_ja": [
+      "ひろう"
+    ],
+    "notes": "大字 (Daiji) for 十 used in legal and financial documents to prevent fraud. (อักษรคันจิทางการสำหรับเลข 10 เพื่อป้องกันการแก้ไขในเอกสารการเงิน)"
   },
   {
     "kanji": "持",
@@ -2840,14 +3071,16 @@
       "มี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "チ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "もつ"
+    ]
   },
   {
     "kanji": "指",
@@ -2879,12 +3112,15 @@
       "ระบุ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さす",
+      "ゆび"
+    ]
   },
   {
     "kanji": "放",
@@ -2919,12 +3155,17 @@
       "ไฟไหม้"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はなす",
+      "はなつ",
+      "はなれる",
+      "ほうる"
+    ]
   },
   {
     "kanji": "整",
@@ -2956,12 +3197,15 @@
       "ปรับแต่ง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ととのう",
+      "ととのえる"
+    ]
   },
   {
     "kanji": "旅",
@@ -2986,7 +3230,6 @@
       "การเดินทาง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -2995,6 +3238,9 @@
     ],
     "kunyomi_hyougai": [
       "いくさ"
+    ],
+    "meanings_ja": [
+      "たび"
     ]
   },
   {
@@ -3019,13 +3265,18 @@
       "ครอบครัว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "やから"
+    ],
+    "meanings_ja": [
+      "やから",
+      "なかま",
+      "一族",
+      "あつまる"
     ]
   },
   {
@@ -3055,12 +3306,14 @@
       "สมัยเก่า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "むかし"
+    ]
   },
   {
     "kanji": "昭",
@@ -3084,13 +3337,17 @@
       "สดใส"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あき.らか"
+    ],
+    "meanings_ja": [
+      "あきらか",
+      "かがやく",
+      "明るい"
     ]
   },
   {
@@ -3118,12 +3375,14 @@
       "ฤดูร้อน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あつい"
+    ]
   },
   {
     "kanji": "暗",
@@ -3154,7 +3413,6 @@
       "ร่มเงา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3162,6 +3420,9 @@
     "kunyomi_hyougai": [
       "そら.んじる",
       "やみ"
+    ],
+    "meanings_ja": [
+      "くらい"
     ]
   },
   {
@@ -3199,13 +3460,16 @@
       "ทำนอง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "かね"
+    ],
+    "meanings_ja": [
+      "まがる",
+      "まげる"
     ]
   },
   {
@@ -3238,13 +3502,15 @@
       "มีอยู่จริง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "も.つ"
+    ],
+    "meanings_ja": [
+      "ある"
     ]
   },
   {
@@ -3272,7 +3538,6 @@
       "เชื่อฟัง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3281,6 +3546,12 @@
       "きもの",
       "き.る",
       "したが.う"
+    ],
+    "meanings_ja": [
+      "ころも",
+      "きる",
+      "したがう",
+      "のむ"
     ]
   },
   {
@@ -3309,7 +3580,6 @@
       "วันที่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3317,6 +3587,12 @@
     "kunyomi_hyougai": [
       "き.める",
       "ちぎ.る"
+    ],
+    "meanings_ja": [
+      "とき",
+      "ごく",
+      "ちぎる",
+      "まつ"
     ]
   },
   {
@@ -3347,12 +3623,14 @@
       "จาน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "いた"
+    ]
   },
   {
     "kanji": "柱",
@@ -3381,12 +3659,14 @@
       "กระบอก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はしら"
+    ]
   },
   {
     "kanji": "根",
@@ -3414,12 +3694,14 @@
       "หัว (สิว)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ね"
+    ]
   },
   {
     "kanji": "植",
@@ -3444,14 +3726,17 @@
       "ปลูก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "チ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "うえる",
+      "うわる"
+    ]
   },
   {
     "kanji": "業",
@@ -3481,12 +3766,14 @@
       "ศิลปะ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "わざ"
+    ]
   },
   {
     "kanji": "様",
@@ -3516,12 +3803,14 @@
       "ลักษณะ"
     ],
     "joyo": true,
-    "traditionalForm": "樣",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さま"
+    ]
   },
   {
     "kanji": "横",
@@ -3552,7 +3841,6 @@
       "แนวนอน"
     ],
     "joyo": true,
-    "traditionalForm": "橫",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3561,6 +3849,9 @@
     ],
     "kunyomi_hyougai": [
       "よこ.たわる"
+    ],
+    "meanings_ja": [
+      "よこ"
     ]
   },
   {
@@ -3585,12 +3876,14 @@
       "สะพาน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はし"
+    ]
   },
   {
     "kanji": "次",
@@ -3620,12 +3913,15 @@
       "ลำดับ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "つぎ",
+      "つぐ"
+    ]
   },
   {
     "kanji": "歯",
@@ -3651,12 +3947,14 @@
       "ฟันเฟือง"
     ],
     "joyo": true,
-    "traditionalForm": "齒",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "は"
+    ]
   },
   {
     "kanji": "死",
@@ -3682,12 +3980,14 @@
       "ตาย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "しぬ"
+    ]
   },
   {
     "kanji": "氷",
@@ -3718,13 +4018,16 @@
       "ลูกเห็บ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "こお.る"
+    ],
+    "meanings_ja": [
+      "こおり",
+      "ひ"
     ]
   },
   {
@@ -3755,12 +4058,15 @@
       "เห็นด้วย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "きまる",
+      "きめる"
+    ]
   },
   {
     "kanji": "油",
@@ -3786,14 +4092,16 @@
       "อ้วน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ユウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あぶら"
+    ]
   },
   {
     "kanji": "波",
@@ -3820,12 +4128,14 @@
       "โปแลนด์"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "なみ"
+    ]
   },
   {
     "kanji": "注",
@@ -3858,7 +4168,6 @@
       "หลั่งน้ำตา (น้ำตา)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3866,6 +4175,9 @@
     "kunyomi_hyougai": [
       "さ.す",
       "つ.ぐ"
+    ],
+    "meanings_ja": [
+      "そそぐ"
     ]
   },
   {
@@ -3890,12 +4202,14 @@
       "ว่ายน้ำ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "およぐ"
+    ]
   },
   {
     "kanji": "洋",
@@ -3922,7 +4236,6 @@
       "ต่างประเทศ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -3931,6 +4244,12 @@
       "うみ",
       "なだ",
       "ひろ.い"
+    ],
+    "meanings_ja": [
+      "うみ",
+      "ひろい",
+      "おおらか",
+      "西洋"
     ]
   },
   {
@@ -3962,12 +4281,15 @@
       "ไหล"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ながす",
+      "ながれる"
+    ]
   },
   {
     "kanji": "消",
@@ -3998,12 +4320,15 @@
       "ปิด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "きえる",
+      "けす"
+    ]
   },
   {
     "kanji": "深",
@@ -4034,12 +4359,16 @@
       "เข้มข้นขึ้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ふかい",
+      "ふかまる",
+      "ふかめる"
+    ]
   },
   {
     "kanji": "温",
@@ -4066,12 +4395,17 @@
       "อบอุ่น"
     ],
     "joyo": true,
-    "traditionalForm": "溫",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あたたか",
+      "あたたかい",
+      "あたたまる",
+      "あたためる"
+    ]
   },
   {
     "kanji": "港",
@@ -4095,12 +4429,14 @@
       "ท่าเรือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みなと"
+    ]
   },
   {
     "kanji": "湖",
@@ -4124,12 +4460,14 @@
       "ทะเลสาบ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みずうみ"
+    ]
   },
   {
     "kanji": "湯",
@@ -4157,14 +4495,16 @@
       "น้ำพุร้อน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ショウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ゆ"
+    ]
   },
   {
     "kanji": "炭",
@@ -4190,12 +4530,14 @@
       "ถ่านหิน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "すみ"
+    ]
   },
   {
     "kanji": "物",
@@ -4224,12 +4566,14 @@
       "เรื่อง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "もの"
+    ]
   },
   {
     "kanji": "球",
@@ -4255,12 +4599,14 @@
       "ทรงกลม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "たま"
+    ]
   },
   {
     "kanji": "由",
@@ -4288,12 +4634,14 @@
       "เหตุผล"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "よし"
+    ]
   },
   {
     "kanji": "申",
@@ -4322,7 +4670,6 @@
       "15.00-17.00 น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -4330,6 +4677,9 @@
     "kunyomi_hyougai": [
       "かさ.ねる",
       "さる"
+    ],
+    "meanings_ja": [
+      "もうす"
     ]
   },
   {
@@ -4354,13 +4704,18 @@
       "ขอบเขต"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "さかい"
+    ],
+    "meanings_ja": [
+      "さかい",
+      "くぎり",
+      "よのなか",
+      "世界"
     ]
   },
   {
@@ -4390,12 +4745,15 @@
       "สวน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はた",
+      "はたけ"
+    ]
   },
   {
     "kanji": "病",
@@ -4422,12 +4780,15 @@
       "ป่วย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "やまい",
+      "やむ"
+    ]
   },
   {
     "kanji": "発",
@@ -4464,7 +4825,6 @@
       "เผยแพร่"
     ],
     "joyo": true,
-    "traditionalForm": "發",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -4472,6 +4832,13 @@
     "kunyomi_hyougai": [
       "あば.く",
       "た.つ"
+    ],
+    "meanings_ja": [
+      "たつ",
+      "あばく",
+      "おこる",
+      "つかわす",
+      "はなつ"
     ]
   },
   {
@@ -4499,12 +4866,14 @@
       "ปีนขึ้นไป"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "のぼる"
+    ]
   },
   {
     "kanji": "皮",
@@ -4534,12 +4903,14 @@
       "ซ่อน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かわ"
+    ]
   },
   {
     "kanji": "皿",
@@ -4566,14 +4937,16 @@
       "การช่วยเหลือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ベイ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さら"
+    ]
   },
   {
     "kanji": "相",
@@ -4608,13 +4981,15 @@
       "ด้วยกัน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "ありさま"
+    ],
+    "meanings_ja": [
+      "あい"
     ]
   },
   {
@@ -4639,13 +5014,15 @@
       "จังหวัด"
     ],
     "joyo": true,
-    "traditionalForm": "縣",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "あがた"
+    ],
+    "meanings_ja": [
+      "かける"
     ]
   },
   {
@@ -4674,13 +5051,15 @@
       "นิกายพุทธศาสนา"
     ],
     "joyo": true,
-    "traditionalForm": "眞",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "まこと"
+    ],
+    "meanings_ja": [
+      "ま"
     ]
   },
   {
@@ -4715,12 +5094,17 @@
       "สวมใส่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "きせる",
+      "きる",
+      "つく",
+      "つける"
+    ]
   },
   {
     "kanji": "短",
@@ -4750,12 +5134,14 @@
       "ความผิด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みじかい"
+    ]
   },
   {
     "kanji": "研",
@@ -4783,7 +5169,6 @@
       "เหลา"
     ],
     "joyo": true,
-    "traditionalForm": "硏",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -4792,6 +5177,9 @@
     ],
     "kunyomi_hyougai": [
       "みが.く"
+    ],
+    "meanings_ja": [
+      "とぐ"
     ]
   },
   {
@@ -4821,7 +5209,6 @@
       "พิธี"
     ],
     "joyo": true,
-    "traditionalForm": "禮",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -4829,6 +5216,12 @@
     "kunyomi_hyougai": [
       "うやま.う",
       "のり"
+    ],
+    "meanings_ja": [
+      "れい",
+      "のっと",
+      "うやまう",
+      "お礼"
     ]
   },
   {
@@ -4860,12 +5253,16 @@
       "จิตวิญญาณ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かみ",
+      "かん",
+      "こう"
+    ]
   },
   {
     "kanji": "祭",
@@ -4897,12 +5294,15 @@
       "เฉลิมฉลอง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "まつり",
+      "まつる"
+    ]
   },
   {
     "kanji": "福",
@@ -4929,13 +5329,17 @@
       "โชค"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "さいわ.い"
+    ],
+    "meanings_ja": [
+      "さいわい",
+      "しあわせ",
+      "めぐみ"
     ]
   },
   {
@@ -4958,13 +5362,17 @@
       "วินาที (1/60 นาที)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "のぎ"
+    ],
+    "meanings_ja": [
+      "のぎ",
+      "ごくわずかな時間",
+      "びょう"
     ]
   },
   {
@@ -4991,7 +5399,6 @@
       "การศึกษา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5000,6 +5407,9 @@
     ],
     "kunyomi_hyougai": [
       "きわ.まる"
+    ],
+    "meanings_ja": [
+      "きわめる"
     ]
   },
   {
@@ -5028,7 +5438,6 @@
       "องค์ประกอบ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5037,6 +5446,12 @@
       "あや",
       "しるし",
       "ふみ"
+    ],
+    "meanings_ja": [
+      "あや",
+      "しるし",
+      "ひとくぎり",
+      "文章"
     ]
   },
   {
@@ -5063,7 +5478,6 @@
       "เด็ก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5072,6 +5486,9 @@
     ],
     "kunyomi_hyougai": [
       "わらわ"
+    ],
+    "meanings_ja": [
+      "わらべ"
     ]
   },
   {
@@ -5103,14 +5520,16 @@
       "ท่อ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ジャク"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ふえ"
+    ]
   },
   {
     "kanji": "第",
@@ -5134,7 +5553,6 @@
       "ถิ่นที่อยู่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5143,6 +5561,11 @@
     ],
     "kunyomi_hyougai": [
       "つい.で",
+      "やしき"
+    ],
+    "meanings_ja": [
+      "じゅんばん",
+      "しだい",
       "やしき"
     ]
   },
@@ -5173,12 +5596,14 @@
       "แปรงทาสี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ふで"
+    ]
   },
   {
     "kanji": "等",
@@ -5209,7 +5634,6 @@
       "ชั้นเรียน (ครั้งแรก)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5217,6 +5641,9 @@
     "kunyomi_hyougai": [
       "など",
       "ら"
+    ],
+    "meanings_ja": [
+      "ひとしい"
     ]
   },
   {
@@ -5247,7 +5674,6 @@
       "กรณี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5255,7 +5681,10 @@
       "ショウ",
       "ソウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はこ"
+    ]
   },
   {
     "kanji": "級",
@@ -5281,7 +5710,6 @@
       "เกรด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5289,6 +5717,12 @@
     "kunyomi_hyougai": [
       "くび",
       "しな"
+    ],
+    "meanings_ja": [
+      "しな",
+      "くらい",
+      "だん",
+      "きゅう"
     ]
   },
   {
@@ -5316,13 +5750,16 @@
       "เสร็จสิ้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "しま.う"
+    ],
+    "meanings_ja": [
+      "おえる",
+      "おわる"
     ]
   },
   {
@@ -5348,12 +5785,14 @@
       "สีเขียว"
     ],
     "joyo": true,
-    "traditionalForm": "綠",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "みどり"
+    ]
   },
   {
     "kanji": "練",
@@ -5384,13 +5823,15 @@
       "รถไฟ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "ねりぎぬ"
+    ],
+    "meanings_ja": [
+      "ねる"
     ]
   },
   {
@@ -5415,12 +5856,14 @@
       "แกะ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ひつじ"
+    ]
   },
   {
     "kanji": "美",
@@ -5446,7 +5889,6 @@
       "สวยงาม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5455,6 +5897,9 @@
     ],
     "kunyomi_hyougai": [
       "ほ.める"
+    ],
+    "meanings_ja": [
+      "うつくしい"
     ]
   },
   {
@@ -5479,14 +5924,16 @@
       "เรียนรู้"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ジュウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ならう"
+    ]
   },
   {
     "kanji": "者",
@@ -5512,12 +5959,14 @@
       "คน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "もの"
+    ]
   },
   {
     "kanji": "育",
@@ -5548,12 +5997,16 @@
       "ยก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "そだつ",
+      "そだてる",
+      "はぐくむ"
+    ]
   },
   {
     "kanji": "苦",
@@ -5588,12 +6041,18 @@
       "กังวล"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "くるしい",
+      "くるしむ",
+      "くるしめる",
+      "にがる",
+      "にがい"
+    ]
   },
   {
     "kanji": "荷",
@@ -5625,7 +6084,6 @@
       "แบก (ภาระ)"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5633,6 +6091,9 @@
     "kunyomi_hyougai": [
       "にな.う",
       "はす"
+    ],
+    "meanings_ja": [
+      "に"
     ]
   },
   {
@@ -5664,13 +6125,16 @@
       "ลงมา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "さと"
+    ],
+    "meanings_ja": [
+      "おちる",
+      "おとす"
     ]
   },
   {
@@ -5705,7 +6169,6 @@
       "กลีบ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5714,6 +6177,9 @@
     ],
     "kunyomi_hyougai": [
       "かみ"
+    ],
+    "meanings_ja": [
+      "は"
     ]
   },
   {
@@ -5744,12 +6210,14 @@
       "เคลือบฟัน"
     ],
     "joyo": true,
-    "traditionalForm": "藥",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "くすり"
+    ]
   },
   {
     "kanji": "血",
@@ -5773,14 +6241,16 @@
       "เลือด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ケチ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ち"
+    ]
   },
   {
     "kanji": "表",
@@ -5811,12 +6281,16 @@
       "แผนภูมิ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あらわす",
+      "あらわれる",
+      "おもて"
+    ]
   },
   {
     "kanji": "詩",
@@ -5841,12 +6315,14 @@
       "บทกวี"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
+      "うた"
+    ],
+    "meanings_ja": [
       "うた"
     ]
   },
@@ -5885,12 +6361,16 @@
       "เมตร"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "しらべる",
+      "ととのう",
+      "ととのえる"
+    ]
   },
   {
     "kanji": "談",
@@ -5914,7 +6394,6 @@
       "พูดคุย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -5923,6 +6402,11 @@
     ],
     "kunyomi_hyougai": [
       "かた.る"
+    ],
+    "meanings_ja": [
+      "はなす",
+      "かたる",
+      "そうだん"
     ]
   },
   {
@@ -5951,13 +6435,15 @@
       "คนแคระ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "たかつき"
+    ],
+    "meanings_ja": [
+      "まめ"
     ]
   },
   {
@@ -5992,12 +6478,16 @@
       "- -"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おう",
+      "まかす",
+      "まける"
+    ]
   },
   {
     "kanji": "起",
@@ -6027,12 +6517,16 @@
       "ลุกขึ้น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おきる",
+      "おこす",
+      "おこる"
+    ]
   },
   {
     "kanji": "路",
@@ -6060,7 +6554,6 @@
       "ถนน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6068,6 +6561,9 @@
     "kunyomi_hyougai": [
       "くるま",
       "みち"
+    ],
+    "meanings_ja": [
+      "じ"
     ]
   },
   {
@@ -6096,13 +6592,15 @@
       "สถานีในชีวิตของคนๆ หนึ่ง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "みずか.ら"
+    ],
+    "meanings_ja": [
+      "み"
     ]
   },
   {
@@ -6134,12 +6632,17 @@
       "การเปลี่ยนแปลง"
     ],
     "joyo": true,
-    "traditionalForm": "轉",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "ころがす",
+      "ころがる",
+      "ころげる",
+      "ころぶ"
+    ]
   },
   {
     "kanji": "軽",
@@ -6168,14 +6671,17 @@
       "ไม่สำคัญ"
     ],
     "joyo": true,
-    "traditionalForm": "輕",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "キン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かるい",
+      "かろやか"
+    ]
   },
   {
     "kanji": "農",
@@ -6199,7 +6705,6 @@
       "เกษตรกร"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6208,6 +6713,11 @@
     ],
     "kunyomi_hyougai": [
       "たがや.す"
+    ],
+    "meanings_ja": [
+      "たがやす",
+      "つくる",
+      "のうぎょう"
     ]
   },
   {
@@ -6238,14 +6748,17 @@
       "จางหายไป"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "ハン"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "かえす",
+      "かえる"
+    ]
   },
   {
     "kanji": "追",
@@ -6275,12 +6788,14 @@
       "ทำตาม"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おう"
+    ]
   },
   {
     "kanji": "送",
@@ -6306,12 +6821,14 @@
       "ส่ง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おくる"
+    ]
   },
   {
     "kanji": "速",
@@ -6339,12 +6856,17 @@
       "รวดเร็ว"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "はやい",
+      "はやまる",
+      "はやめる",
+      "すみやか"
+    ]
   },
   {
     "kanji": "進",
@@ -6374,12 +6896,15 @@
       "ความคืบหน้า"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "すすむ",
+      "すすめる"
+    ]
   },
   {
     "kanji": "遊",
@@ -6404,12 +6929,14 @@
       "เล่น"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あそぶ"
+    ]
   },
   {
     "kanji": "運",
@@ -6442,13 +6969,15 @@
       "โชคชะตา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "さだめ"
+    ],
+    "meanings_ja": [
+      "はこぶ"
     ]
   },
   {
@@ -6482,7 +7011,6 @@
       "แผนก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6492,6 +7020,9 @@
     "kunyomi_hyougai": [
       "くみ",
       "す.べる"
+    ],
+    "meanings_ja": [
+      "-べ"
     ]
   },
   {
@@ -6522,13 +7053,15 @@
       "ทั้งหมด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "すべ.て"
+    ],
+    "meanings_ja": [
+      "みやこ"
     ]
   },
   {
@@ -6558,7 +7091,6 @@
       "เนรเทศ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6566,6 +7098,9 @@
     "kunyomi_hyougai": [
       "つれあい",
       "なが.す"
+    ],
+    "meanings_ja": [
+      "くばる"
     ]
   },
   {
@@ -6593,14 +7128,17 @@
       "แอลกอฮอล์"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [
       "シュウ"
     ],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "さか",
+      "さけ"
+    ]
   },
   {
     "kanji": "重",
@@ -6637,12 +7175,17 @@
       "นับถือ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おもい",
+      "かさなる",
+      "かさねる",
+      "え"
+    ]
   },
   {
     "kanji": "鉄",
@@ -6666,13 +7209,15 @@
       "เหล็ก"
     ],
     "joyo": true,
-    "traditionalForm": "鐵",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "かね",
+      "くろがね"
+    ],
+    "meanings_ja": [
       "くろがね"
     ]
   },
@@ -6698,12 +7243,14 @@
       "เงิน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
+      "しろがね"
+    ],
+    "meanings_ja": [
       "しろがね"
     ]
   },
@@ -6736,12 +7283,17 @@
       "เปิดผนึก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あく",
+      "あける",
+      "ひらく",
+      "ひらける"
+    ]
   },
   {
     "kanji": "院",
@@ -6768,7 +7320,6 @@
       "วัด"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6776,6 +7327,12 @@
     "kunyomi_hyougai": [
       "かき",
       "かこい"
+    ],
+    "meanings_ja": [
+      "かき",
+      "やしき",
+      "寺",
+      "いん"
     ]
   },
   {
@@ -6807,7 +7364,6 @@
       "บวก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6816,6 +7372,9 @@
       "いつわ.る",
       "ひ",
       "ひなた"
+    ],
+    "meanings_ja": [
+      "ひ"
     ]
   },
   {
@@ -6844,7 +7403,6 @@
       "เคาน์เตอร์ชั้นของอาคาร"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6852,6 +7410,9 @@
     "kunyomi_hyougai": [
       "きざはし",
       "しな"
+    ],
+    "meanings_ja": [
+      "きざはし"
     ]
   },
   {
@@ -6884,12 +7445,16 @@
       "ชุมนุมกัน"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "あつまる",
+      "あつめる",
+      "つどう"
+    ]
   },
   {
     "kanji": "面",
@@ -6920,12 +7485,16 @@
       "คุณสมบัติ"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
-    "kunyomi_hyougai": []
+    "kunyomi_hyougai": [],
+    "meanings_ja": [
+      "おも",
+      "おもて",
+      "つら"
+    ]
   },
   {
     "kanji": "題",
@@ -6949,7 +7518,6 @@
       "เรื่อง"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6958,6 +7526,12 @@
     ],
     "kunyomi_hyougai": [
       "ひたい"
+    ],
+    "meanings_ja": [
+      "ひたい",
+      "みだし",
+      "だい",
+      "問題"
     ]
   },
   {
@@ -6986,7 +7560,6 @@
       "ใช้เวลา"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -6995,6 +7568,9 @@
     ],
     "kunyomi_hyougai": [
       "の.ます"
+    ],
+    "meanings_ja": [
+      "のむ"
     ]
   },
   {
@@ -7024,7 +7600,6 @@
       "อาคารขนาดใหญ่"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
@@ -7032,6 +7607,9 @@
     "kunyomi_hyougai": [
       "たち",
       "たて"
+    ],
+    "meanings_ja": [
+      "やかた"
     ]
   },
   {
@@ -7054,13 +7632,17 @@
       "สถานี"
     ],
     "joyo": true,
-    "traditionalForm": "驛",
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "うまや"
+    ],
+    "meanings_ja": [
+      "うまや",
+      "えき",
+      "宿場"
     ]
   },
   {
@@ -7086,13 +7668,15 @@
       "จมูก"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [],
     "examples": [],
     "onyomi_hyougai": [],
     "kunyomi_hyougai": [
       "はじ.め"
+    ],
+    "meanings_ja": [
+      "はな"
     ]
   },
   {
@@ -7121,7 +7705,6 @@
       "ลูกผู้ชาย"
     ],
     "joyo": true,
-    "traditionalForm": null,
     "handwritingTip": null,
     "nanori": [
       "くに",
@@ -7131,7 +7714,7 @@
       {
         "word": "漢字",
         "reading": "かんじ",
-        "meaning_en": "kanji, Chinese characters",
+        "meaning_en": "",
         "meaning_th": "อักษรคันจิ",
         "sentence_ja": "常用漢字は全部で二千百三十六字あります。",
         "sentence_th": "ตารางโจโยคันจิมีทั้งหมด 2,136 ตัวอักษร",
@@ -7140,7 +7723,7 @@
       {
         "word": "漢検",
         "reading": "かんけん",
-        "meaning_en": "Kanji Kentei exam",
+        "meaning_en": "",
         "meaning_th": "การสอบวัดระดับคันจิ (คันเค็น)",
         "sentence_ja": "来月、漢検二級に挑戦する予定です。",
         "sentence_th": "เดือนหน้าฉันมีกำหนดจะท้าทายสอบคันเค็นระดับ 2",
@@ -7151,6 +7734,16 @@
     "kunyomi_hyougai": [
       "おとこ",
       "から"
+    ],
+    "jinmei": [
+      "くに",
+      "あや"
+    ],
+    "meanings_ja": [
+      "から",
+      "おとこ",
+      "中国",
+      "かん"
     ]
   }
 ]
