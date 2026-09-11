@@ -4,8 +4,8 @@
  * Logic for the browse/catalog page (filtering, sorting, responsive grid, pagination).
  */
 
-import { loadKanjiData, filterKanji, sortKanji } from './search.js?v=1788415658';
-import { isFavorite, addFavorite, removeFavorite, getFavorites } from './storage.js?v=1788415658';
+import { loadKanjiData, filterKanji, sortKanji } from './search.js';
+import { isFavorite, addFavorite, removeFavorite, getFavorites } from './storage.js';
 
 const ITEMS_PER_PAGE = 36;
 let currentKanjiList = [];

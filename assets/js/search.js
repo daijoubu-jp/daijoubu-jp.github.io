@@ -4,27 +4,49 @@
  * Data fetching, caching, filtering and smart search (Kanji, Kana, Romaji, English, Thai).
  */
 
-let cachedKanjiData = null;
+/**
+ * Wrap an async loader so concurrent callers share one in-flight promise.
+ * The cache resets after a rejection, allowing a later call to retry.
+ * @param {() => Promise<*>} loader
+ * @returns {{ get: () => Promise<*> }}
+ */
+export function createPromiseCache(loader) {
+  let promise = null;
+
+  return {
+    get() {
+      if (!promise) {
+        promise = Promise.resolve()
+          .then(loader)
+          .catch((err) => {
+            promise = null;
+            throw err;
+          });
+      }
+      return promise;
+    }
+  };
+}
+
+const kanjiDataCache = createPromiseCache(async () => {
+  // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)
+  const dataUrl = new URL('../../data/kanji.min.json?v=1788410559', import.meta.url).href;
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  return res.json();
+});
 
 /**
  * Load the modular kanji datasets concurrently with bundle fallback.
  * @returns {Promise<Array>}
  */
 export async function loadKanjiData() {
-  if (cachedKanjiData) return cachedKanjiData;
-
   try {
-    // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)
-    const dataUrl = new URL('../../data/kanji.min.json?v=1788410559', import.meta.url).href;
-    const res = await fetch(dataUrl);
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-    cachedKanjiData = await res.json();
+    return await kanjiDataCache.get();
   } catch (err) {
-    console.error('Fatal: Failed to load kanji.min.json. Did you forget to run scripts/build-data.py?', err);
-    cachedKanjiData = [];
+    console.error('Fatal: Failed to load kanji.min.json. Did you forget to run scripts/compile_content.py?', err);
+    return [];
   }
-
-  return cachedKanjiData;
 }
 
 /**

@@ -5,7 +5,7 @@
  * Supported themes: 6 Japanese themes (Spring, Summer, Autumn, Winter, Anime, Ukiyoe) × 2 Modes (Light, Dark) = 12 Variations.
  */
 
-import { getTheme, setTheme, getThemeMode, setThemeMode } from './storage.js?v=1788415658';
+import { getTheme, setTheme, getThemeMode, setThemeMode } from './storage.js';
 
 export const THEMES = [
   {
