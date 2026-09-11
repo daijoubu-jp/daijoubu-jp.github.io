@@ -19,8 +19,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Internal authoring & processing tools (not published to GitHub)
-content/
-scripts/
+# Internal revision log (not published to GitHub)
 revisions.md
 
