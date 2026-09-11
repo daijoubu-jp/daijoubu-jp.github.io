@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v3'; // Bumped version for directory restructuring
+const CACHE_NAME = 'kanjithai-cache-v4'; // v4: local KanjiVG stroke SVGs
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -19,8 +19,23 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
+  // Cache-First for vendored KanjiVG stroke SVGs (immutable files)
+  if (url.pathname.includes('/data/kanjivg/')) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) return cachedResponse;
+        return fetch(event.request).then((networkResponse) => {
+          if (networkResponse.ok) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+          }
+          return networkResponse;
+        });
+      })
+    );
+  }
   // Stale-While-Revalidate for Data (JSON) to allow seamless background updates
-  if (url.pathname.includes('/data/')) {
+  else if (url.pathname.includes('/data/')) {
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
         const fetchPromise = fetch(event.request).then((networkResponse) => {

@@ -862,7 +862,7 @@ async function loadStrokeOrder(kanji) {
   if (!container) return;
 
   const hex = (kanji.codepoint || '').toLowerCase().padStart(5, '0');
-  const url = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${hex}.svg`;
+  const url = new URL(`../../data/kanjivg/${hex}.svg`, import.meta.url).href;
 
   try {
     const res = await fetch(url);
