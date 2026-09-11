@@ -1291,8 +1291,9 @@ input[type="search"]::-ms-reveal {
 
 .stroke-order-view {
   font-size: 0; /* Bulletproof fix for rogue DOCTYPE text */
-  width: 200px;
-  height: 200px;
+  width: min(100%, 360px);
+  height: auto;
+  aspect-ratio: 1 / 1;
   margin: 0 auto var(--spacing-md);
   border: 1px dashed var(--color-border);
   border-radius: var(--border-radius-sm);
@@ -1931,8 +1932,9 @@ input[type="search"]::-ms-reveal {
   }
 
   .stroke-order-view {
-    width: 160px;
-    height: 160px;
+    width: min(100%, 260px);
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 }
 
