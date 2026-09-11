@@ -351,27 +351,17 @@ function setupFilterControls() {
     joyoCb.checked = currentFilters.joyoOnly;
     joyoCb.addEventListener('change', () => {
       currentFilters.joyoOnly = joyoCb.checked;
-      if (joyoCb.checked && currentFilters.nonJoyoOnly) {
-        currentFilters.nonJoyoOnly = false;
-        const nonJoyoCb = document.getElementById('filter-nonjoyo-only');
-        if (nonJoyoCb) nonJoyoCb.checked = false;
-      }
       currentPage = 1;
       applyCurrentFilters();
     });
   }
 
-  // Non-Joyo Only Checkbox
+  // Non-Joyo (Hyougai) Only Checkbox
   const nonJoyoCb = document.getElementById('filter-nonjoyo-only');
   if (nonJoyoCb) {
     nonJoyoCb.checked = currentFilters.nonJoyoOnly;
     nonJoyoCb.addEventListener('change', () => {
       currentFilters.nonJoyoOnly = nonJoyoCb.checked;
-      if (nonJoyoCb.checked && currentFilters.joyoOnly) {
-        currentFilters.joyoOnly = false;
-        const jCb = document.getElementById('filter-joyo-only');
-        if (jCb) jCb.checked = false;
-      }
       currentPage = 1;
       applyCurrentFilters();
     });
@@ -485,7 +475,7 @@ function renderActiveFilterTags() {
   }
 
   if (currentFilters.nonJoyoOnly) {
-    tags.push({ label: `👑 非常用 (Non-Joyo)`, clear: () => { currentFilters.nonJoyoOnly = false; const el = document.getElementById('filter-nonjoyo-only'); if (el) el.checked = false; } });
+    tags.push({ label: `👑 表外 (Hyougai)`, clear: () => { currentFilters.nonJoyoOnly = false; const el = document.getElementById('filter-nonjoyo-only'); if (el) el.checked = false; } });
   }
 
   currentFilters.jlpt.forEach(lvl => {
