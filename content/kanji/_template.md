@@ -1,4 +1,6 @@
-# Entry template — copy the block below into the correct content/kanji file.
+# Entry template
+
+Copy the block below into the correct `content/kanji` file.
 
 ## 字
 
