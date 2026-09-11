@@ -18,14 +18,16 @@ python3 scripts/compile_content.py   # Python 3.12+
 ```
 
 The compiler is deterministic. Running it twice produces identical output.
+GitHub Pages applies gzip compression itself, so no `.gz` files are generated
+or committed.
 
 ## Generated files
 
 | File | Purpose |
 | --- | --- |
-| `data/kanji.min.json` (+ `.gz`) | Full kanji bundle for browse/detail/worksheet |
+| `data/kanji.min.json` | Full kanji bundle for browse/detail/worksheet |
 | `data/kanji-levels/*.json` | Per-Kanken-level split of the full bundle |
-| `data/search-index.min.json` (+ `.gz`) | Slim index for home-page search and daily kanji |
+| `data/search-index.min.json` | Slim index for home-page search and daily kanji |
 | `data/vocabulary.json` | Vocabulary / manga-anime glossary |
 | `data/kanji-origins.json` | 成り立ち origin explanations |
 | `data/fuhyo-special-readings.json` | 付表 special readings |

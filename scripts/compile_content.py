@@ -8,7 +8,6 @@ with automatic Furigana-to-Ruby conversion, validation, and minification.
 import os
 import json
 import re
-import gzip
 import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -421,16 +420,10 @@ def compile_kanji():
     if validation_errors:
         return validation_errors
 
-    # Save minified kanji.min.json
+    # Save minified kanji.min.json (GitHub Pages serves gzip itself)
     payload = json.dumps(master_list, ensure_ascii=False, separators=(",", ":"))
     with open(kanji_master_path, "w", encoding="utf-8") as f:
         f.write(payload)
-
-    # Also save gzip version (mtime=0 keeps the output reproducible in CI)
-    gz_path = kanji_master_path + ".gz"
-    with open(gz_path, "wb") as raw:
-        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0) as gz:
-            gz.write(payload.encode("utf-8"))
 
     # Sync to data/kanji-levels/*.json
     levels_dir = os.path.join(DATA_DIR, "kanji-levels")
@@ -477,10 +470,6 @@ def compile_search_index():
     out_path = os.path.join(DATA_DIR, "search-index.min.json")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(payload)
-
-    with open(out_path + ".gz", "wb") as raw:
-        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0) as gz:
-            gz.write(payload.encode("utf-8"))
 
     print(f"  ✅ Compiled slim search index ({len(index)} entries) to {out_path}")
 
