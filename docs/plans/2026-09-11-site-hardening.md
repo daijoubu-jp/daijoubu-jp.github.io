@@ -9,6 +9,7 @@
 **Tech Stack:** HTML/CSS/vanilla ES modules, Python 3.14 (target 3.12+), Node 20 (`node --test`), GitHub Actions.
 
 **User decisions (2026-09-11):**
+
 1. Vendor all KanjiVG SVGs into the repo.
 2. Track `content/` and `scripts/` in git. `revisions.md` stays ignored.
 3. Slim search index for the home page autocomplete only. Header keys stay long/readable (short keys save <5KB gzip; not worth dual formats).
@@ -16,6 +17,7 @@
 **Execution order note:** recommended order was 3 → 4 → 2 → 1 → 5. Tracking comes first here (Task 1) because all later tasks create/edit files under `scripts/` that should be versioned as they are written. Everything else follows the recommended risk order.
 
 **Rules for every task:**
+
 - Verify before commit (run the listed commands, read output).
 - One task = one commit, Conventional Commits style.
 - Do not push. Do not touch `revisions.md`.
@@ -23,9 +25,10 @@
 
 ---
 
-### Task 1: Track authoring source + AGENTS.md
+## Task 1: Track authoring source + AGENTS.md
 
 **Files:**
+
 - Modify: `.gitignore`
 - Create: `AGENTS.md`
 - Add: `content/`, `scripts/`, `docs/`
@@ -52,11 +55,12 @@ git commit -m "chore: track authoring content and pipeline scripts"
 
 ---
 
-### Task 2: Dedupe ES module URLs + promise-cache the kanji data
+## Task 2: Dedupe ES module URLs + promise-cache the kanji data
 
 **Problem:** `browse.js:7-8` imports `search.js?v=...` / `storage.js?v=...`, `theme.js:8` imports `storage.js?v=...`, while `main.js` and `kanji-detail.js` import them unversioned. Different specifiers = separate module instances, duplicate downloads, separate in-memory caches. `loadKanjiData()` caches the result, not the promise, so home prefetch + daily kanji race = two 2.5MB fetches.
 
 **Files:**
+
 - Modify: `assets/js/browse.js:7-8`
 - Modify: `assets/js/theme.js:8`
 - Modify: `assets/js/search.js:7-28`
@@ -82,11 +86,12 @@ git commit -m "fix(js): dedupe module URLs and cache kanji data as a promise"
 
 ---
 
-### Task 3: Vendor KanjiVG stroke SVGs
+## Task 3: Vendor KanjiVG stroke SVGs
 
 **Problem:** `kanji-detail.js:865` fetches every stroke animation from `raw.githubusercontent.com` (rate limits, latency, not a CDN).
 
 **Files:**
+
 - Create: `scripts/fetch_kanjivg.py`
 - Create: `data/kanjivg/` (5,867 SVGs + `README.md` with CC BY-SA 3.0 attribution)
 - Modify: `assets/js/kanji-detail.js:860-889`
@@ -110,11 +115,12 @@ Note: this commit is large (~20-40MB). Keep it isolated.
 
 ---
 
-### Task 4: One pipeline, validation, CI
+## Task 4: One pipeline, validation, CI
 
 **Problem:** `data/README.md` says edit `kanji-levels/` → `build-data.py`; `compile_content.py` does the reverse and overwrites level files. Parser skips unknown characters silently.
 
 **Files:**
+
 - Modify: `data/README.md` (rewrite)
 - Delete: `scripts/build-data.py`
 - Modify: `scripts/compile_content.py` (validation + Python 3.12 portability)
@@ -138,13 +144,14 @@ git commit -m "refactor(data): markdown as single source of truth, add validatio
 
 ---
 
-### Task 5: Home search index
+## Task 5: Home search index
 
 **Problem:** home loads 2.5MB (403KB gzip) of full data just to autocomplete and render the daily kanji. A slim home index with short matching scope drops that to ~257KB gzip (first-2 meanings) or ~190KB (first-1).
 
 **Decision:** index keeps `kanji`, `codepoint` (drop), `grade`, `jlpt`, `kanken`, `strokes`, `radical`, `radicalChar`, `joyo`, `onyomi`, `kunyomi`, `jinmei`, `onyomi_hyougai`, `kunyomi_hyougai`, and the **first 2** items of `meanings_ja/th/en`. Long, readable keys. Autocomplete matching uses readings + first-2 meanings; pressing Enter still runs full search on the browse page, so matches on 3rd+ meanings remain reachable.
 
 **Files:**
+
 - Modify: `scripts/compile_content.py` (emit `data/search-index.min.json` + `.gz`)
 - Modify: `assets/js/search.js` (add `loadSearchIndex`, `searchKanjiIndex`, `getDailyKanjiFromIndex`, `createPromiseCache` reuse)
 - Modify: `assets/js/main.js` (home uses index; no `loadKanjiData` prefetch)

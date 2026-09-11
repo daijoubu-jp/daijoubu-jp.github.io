@@ -9,6 +9,7 @@ import os
 import json
 import re
 import gzip
+import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
@@ -145,7 +146,8 @@ def compile_vocabulary():
             if furigana_raw:
                 item["ruby_html"] = furigana_to_ruby(furigana_raw)
             else:
-                item["ruby_html"] = f"<ruby>{word}<rt>{item["reading"]}</rt></ruby>"
+                reading = item["reading"]
+                item["ruby_html"] = f"<ruby>{word}<rt>{reading}</rt></ruby>"
 
             vocab_list.append(item)
 
@@ -284,6 +286,8 @@ def compile_kanji():
     # Index by kanji char
     kanji_map = {k["kanji"]: k for k in master_list}
     updated_count = 0
+    validation_errors = []
+    seen_chars = {}
 
     if os.path.exists(kanji_dir):
         kanji_files = []
@@ -293,6 +297,7 @@ def compile_kanji():
                     kanji_files.append(os.path.join(root, f))
 
         for fpath in sorted(kanji_files):
+            rel_path = os.path.relpath(fpath, BASE_DIR)
             with open(fpath, "r", encoding="utf-8") as f:
                 content = f.read()
 
@@ -303,7 +308,16 @@ def compile_kanji():
                     continue
 
                 char = lines[0].strip().split()[0]
+                if char in seen_chars:
+                    validation_errors.append(
+                        f"Duplicate entry {char!r} in {rel_path} (already defined in {seen_chars[char]})")
+                else:
+                    seen_chars[char] = rel_path
+
                 if char not in kanji_map:
+                    validation_errors.append(
+                        f"Unknown kanji {char!r} in {rel_path} — not present in "
+                        f"{os.path.relpath(kanji_master_path, BASE_DIR)}")
                     continue
 
                 target = kanji_map[char]
@@ -389,14 +403,34 @@ def compile_kanji():
     for k in master_list:
         k.pop("traditionalForm", None)
 
-    # Save minified kanji.min.json
-    with open(kanji_master_path, "w", encoding="utf-8") as f:
-        json.dump(master_list, f, ensure_ascii=False, separators=(",", ":"))
+    # Validate the merged dataset before writing anything
+    for k in master_list:
+        char = k.get("kanji", "?")
+        if not k.get("strokes"):
+            validation_errors.append(f"{char}: missing strokes")
+        if not (k.get("onyomi") or k.get("kunyomi")):
+            validation_errors.append(f"{char}: missing onyomi/kunyomi")
+        for field in ("meanings_th", "meanings_en", "meanings_ja"):
+            if not k.get(field):
+                validation_errors.append(f"{char}: missing {field}")
+        if not k.get("kanken"):
+            validation_errors.append(f"{char}: missing kanken")
+        if not k.get("radical"):
+            validation_errors.append(f"{char}: missing radical")
 
-    # Also save gzip version
+    if validation_errors:
+        return validation_errors
+
+    # Save minified kanji.min.json
+    payload = json.dumps(master_list, ensure_ascii=False, separators=(",", ":"))
+    with open(kanji_master_path, "w", encoding="utf-8") as f:
+        f.write(payload)
+
+    # Also save gzip version (mtime=0 keeps the output reproducible in CI)
     gz_path = kanji_master_path + ".gz"
-    with gzip.open(gz_path, "wt", encoding="utf-8") as f:
-        json.dump(master_list, f, ensure_ascii=False, separators=(",", ":"))
+    with open(gz_path, "wb") as raw:
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0) as gz:
+            gz.write(payload.encode("utf-8"))
 
     # Sync to data/kanji-levels/*.json
     levels_dir = os.path.join(DATA_DIR, "kanji-levels")
@@ -412,6 +446,7 @@ def compile_kanji():
                 json.dump(k_items, f, ensure_ascii=False, indent=2)
 
     print(f"  ✅ Compiled and synced {updated_count} kanji to {kanji_master_path} and kanji-levels/")
+    return validation_errors
 
 
 def main():
@@ -419,7 +454,16 @@ def main():
     compile_vocabulary()
     compile_origins()
     compile_special_readings()
-    compile_kanji()
+    errors = compile_kanji() or []
+
+    if errors:
+        print(f"\n❌ Validation failed with {len(errors)} issue(s). Data files were NOT written:")
+        for err in errors[:50]:
+            print(f"   - {err}")
+        if len(errors) > 50:
+            print(f"   ... and {len(errors) - 50} more")
+        sys.exit(1)
+
     print("✨ Compilation complete! Production JSON files are updated.")
 
 

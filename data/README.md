@@ -1,36 +1,53 @@
-# 🗄️ Kanji Database Structure & Maintenance
+# 🗄️ Kanji Data Structure & Maintenance
 
-## 📝 How to Edit Kanji Data (Source of Truth)
+## Source of truth
 
-Do **NOT** manually edit `kanji.json` or `kanji.min.json`. Those are generated bundles and any manual edits will be overwritten.
+The source of truth is `content/*.md`.
 
-The true source of truth is located in the `kanji-levels/` directory. The data is split by Kanken levels to make it easy to edit without freezing your code editor:
-
-- `kanken-10.json` (Grade 1 Joyo)
-- `kanken-9.json` (Grade 2 Joyo)
-- ...
-- `kanken-1.json` (Non-Joyo, Kanken 1)
-
-**To edit or add a Kanji:**
-
-1. Open the corresponding `kanken-*.json` file.
-2. Edit the data safely using standard JSON format.
-3. Save the file.
-
-## 🚀 How to Build the Website Data (Optimization)
-
-After editing any file in `kanji-levels/`, you must compile them into the optimized format used by the website to ensure fast loading.
-
-Run the build script from the project root:
-
-```bash
-python3 scripts/build-data.py
+```text
+content/*.md  →  python3 scripts/compile_content.py  →  data/*.json  →  browser
 ```
 
-**What the script does:**
+Do **not** hand-edit anything under `data/`. The compiler overwrites generated
+files, and CI fails if they drift from the markdown source.
 
-1. Merges all 12 level files into a single bundle.
-2. Minifies the JSON by stripping all whitespace and indentation.
-3. Outputs `data/kanji.min.json` (reduces size from 3.5MB down to 2.4MB plaintext, or ~138KB over the network with gzip).
+## Build
 
-The website (`assets/js/search.js`) is configured to fetch only the optimized `kanji.min.json` file.
+```bash
+python3 scripts/compile_content.py   # Python 3.12+
+```
+
+The compiler is deterministic. Running it twice produces identical output.
+
+## Generated files
+
+| File | Purpose |
+| --- | --- |
+| `data/kanji.min.json` (+ `.gz`) | Full kanji bundle for browse/detail/worksheet |
+| `data/kanji-levels/*.json` | Per-Kanken-level split of the full bundle |
+| `data/search-index.min.json` (+ `.gz`) | Slim index for home-page search and daily kanji |
+| `data/vocabulary.json` | Vocabulary / manga-anime glossary |
+| `data/kanji-origins.json` | 成り立ち origin explanations |
+| `data/fuhyo-special-readings.json` | 付表 special readings |
+
+`data/kanjivg/` holds vendored stroke-order SVGs from KanjiVG (CC BY-SA 3.0).
+Re-download only when needed:
+
+```bash
+python3 scripts/fetch_kanjivg.py --force
+```
+
+## Validation
+
+`compile_content.py` reports and refuses to write when it finds:
+
+- kanji characters in markdown that do not exist in the current master data,
+- duplicate entries for the same character,
+- entries missing strokes, readings, meanings, Kanken level, or radical.
+
+Exit code is non-zero on validation failure; generated files are left untouched.
+
+## CI
+
+`.github/workflows/ci.yml` runs the compiler, verifies `git diff --exit-code -- data/`,
+runs `npm test`, and lints markdown on every push and pull request.
