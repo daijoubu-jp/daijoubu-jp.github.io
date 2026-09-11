@@ -449,6 +449,42 @@ def compile_kanji():
     return validation_errors
 
 
+SEARCH_INDEX_FIELDS = (
+    "kanji", "grade", "jlpt", "kanken", "strokes",
+    "joyo", "onyomi", "kunyomi", "jinmei", "onyomi_hyougai", "kunyomi_hyougai",
+)
+SEARCH_INDEX_MEANING_LIMIT = 2
+
+
+def compile_search_index():
+    """Build the slim home-page index (readings + first meanings per language)."""
+    master_path = os.path.join(DATA_DIR, "kanji.min.json")
+    if not os.path.exists(master_path):
+        print("⚠️ kanji.min.json not found, skipping search index.")
+        return
+
+    with open(master_path, "r", encoding="utf-8") as f:
+        master = json.load(f)
+
+    index = []
+    for entry in master:
+        item = {field: entry[field] for field in SEARCH_INDEX_FIELDS if field in entry}
+        for field in ("meanings_ja", "meanings_th", "meanings_en"):
+            item[field] = (entry.get(field) or [])[:SEARCH_INDEX_MEANING_LIMIT]
+        index.append(item)
+
+    payload = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
+    out_path = os.path.join(DATA_DIR, "search-index.min.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(payload)
+
+    with open(out_path + ".gz", "wb") as raw:
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", mtime=0) as gz:
+            gz.write(payload.encode("utf-8"))
+
+    print(f"  ✅ Compiled slim search index ({len(index)} entries) to {out_path}")
+
+
 def main():
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
@@ -464,6 +500,7 @@ def main():
             print(f"   ... and {len(errors) - 50} more")
         sys.exit(1)
 
+    compile_search_index()
     print("✨ Compilation complete! Production JSON files are updated.")
 
 

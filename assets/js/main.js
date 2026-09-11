@@ -5,7 +5,7 @@
  */
 
 import { initTheme } from './theme.js';
-import { searchKanji, getDailyKanji, loadKanjiData } from './search.js';
+import { loadSearchIndex, searchKanjiIndex, getDailyKanjiFromIndex } from './search.js';
 import { getRecentSearches, addRecentSearch, getFavorites } from './storage.js';
 import { initBrowsePage } from './browse.js';
 import { initDetailPage } from './kanji-detail.js';
@@ -181,8 +181,8 @@ async function initHomePage() {
   const clearBtn = document.getElementById('search-clear-btn');
   const searchForm = document.getElementById('hero-search-form');
 
-  // Prefetch the kanji database asynchronously so search is instantaneous
-  loadKanjiData().catch(e => console.warn('Prefetch failed:', e));
+  // Prefetch the slim home search index so autocomplete is instantaneous
+  loadSearchIndex().catch(e => console.warn('Prefetch failed:', e));
 
   // Load Kanji of the Day
   renderDailyKanji();
@@ -214,7 +214,8 @@ async function initHomePage() {
     }
 
     debounceTimer = setTimeout(async () => {
-      const results = await searchKanji(q, { limit: 8 });
+      const index = await loadSearchIndex();
+      const results = searchKanjiIndex(index, q, { limit: 8 });
       renderAutocomplete(dropdown, results);
     }, 150);
   });
@@ -291,7 +292,8 @@ async function renderDailyKanji() {
   const dailyEl = document.getElementById('daily-kanji-container');
   if (!dailyEl) return;
 
-  const kanji = await getDailyKanji();
+  const index = await loadSearchIndex();
+  const kanji = getDailyKanjiFromIndex(index);
   if (!kanji) return;
 
   const onyomi = (kanji.onyomi || []).join(', ') || '-';

@@ -49,6 +49,26 @@ export async function loadKanjiData() {
   }
 }
 
+const searchIndexCache = createPromiseCache(async () => {
+  const dataUrl = new URL('../../data/search-index.min.json?v=20260911', import.meta.url).href;
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  return res.json();
+});
+
+/**
+ * Load the slim home-page search index (readings + first meanings only).
+ * @returns {Promise<Array>}
+ */
+export async function loadSearchIndex() {
+  try {
+    return await searchIndexCache.get();
+  } catch (err) {
+    console.error('Fatal: Failed to load search-index.min.json. Did you forget to run scripts/compile_content.py?', err);
+    return [];
+  }
+}
+
 /**
  * Check if a character is a CJK Kanji.
  */
@@ -122,89 +142,101 @@ function toKatakana(str) {
 }
 
 /**
- * Search the dataset with multi-language smart scoring.
- * @param {string} query
- * @param {object} [options]
- * @returns {Promise<Array>}
+ * Score one kanji entry against a prepared query. Shared by the full search
+ * (searchKanji) and the slim home index (searchKanjiIndex).
+ * @param {object} item
+ * @param {string} q Lowercased query
+ * @param {string} qKana Query converted to hiragana
+ * @param {string} qKata Query converted to katakana
+ * @returns {number}
  */
-export async function searchKanji(query, options = {}) {
-  const data = await loadKanjiData();
+function scoreEntry(item, q, qKana, qKata) {
+  let score = 0;
+
+  // 1. Exact Kanji match (highest priority)
+  if (item.kanji === q) {
+    score += 300;
+  } else if (item.kanji.includes(q)) {
+    score += 120;
+  }
+
+  // 2. Readings match (Onyomi / Kunyomi - Table & Hyougai)
+  const joyoOn = (item.onyomi || []).join(' ');
+  const joyoKun = (item.kunyomi || []).map(k => k.replace(/\./g, '')).join(' ');
+  const hyougaiOn = (item.onyomi_hyougai || []).join(' ');
+  const hyougaiKun = (item.kunyomi_hyougai || []).map(k => k.replace(/\./g, '')).join(' ');
+
+  const joyoKunKata = toKatakana(joyoKun);
+  const hyougaiKunKata = toKatakana(hyougaiKun);
+
+  if (joyoOn === qKata || joyoKunKata === qKata) {
+    score += 150;
+  } else if (joyoOn.includes(qKata) || joyoKunKata.includes(qKata)) {
+    score += 95;
+  } else if (hyougaiOn === qKata || hyougaiKunKata === qKata) {
+    score += 120;
+  } else if (hyougaiOn.includes(qKata) || hyougaiKunKata.includes(qKata)) {
+    score += 70;
+  }
+
+  // 3. Jinmei (name readings) match
+  const jinmei = (item.jinmei || item.nanori || []).join(' ');
+  const jinmeiKata = toKatakana(jinmei);
+  if (jinmeiKata === qKata) {
+    score += 110;
+  } else if (jinmeiKata.includes(qKata)) {
+    score += 65;
+  }
+
+  // 4. Japanese meaning match (字義)
+  const jaMatches = (item.meanings_ja || []).some(m => m === q || m === qKana);
+  const jaSubMatches = (item.meanings_ja || []).some(m => m.includes(q) || m.includes(qKana));
+  if (jaMatches) {
+    score += 85;
+  } else if (jaSubMatches) {
+    score += 60;
+  }
+
+  // 5. Thai meaning match
+  const thaiMatches = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
+  if (thaiMatches) {
+    score += 80;
+  }
+
+  // 6. English meaning match
+  const enMatches = (item.meanings_en || []).some(m => m.toLowerCase() === q);
+  const enSubMatches = (item.meanings_en || []).some(m => m.toLowerCase().includes(q));
+  if (enMatches) {
+    score += 85;
+  } else if (enSubMatches) {
+    score += 65;
+  }
+
+  // 7. Example compounds match (only present in the full dataset)
+  if (item.examples && item.examples.some(ex => ex.word.includes(q) || (ex.reading && ex.reading.includes(qKata)) || (ex.meaning_th && ex.meaning_th.includes(q)))) {
+    score += 40;
+  }
+
+  return score;
+}
+
+/**
+ * Rank entries by score and return the top `limit`.
+ * @param {Array} data
+ * @param {string} query
+ * @param {number} limit
+ * @returns {Array}
+ */
+function rankEntries(data, query, limit) {
   const q = (query || '').trim().toLowerCase();
   if (!q) return [];
 
-  const limit = options.limit || 50;
   const qKana = romajiToHiragana(q);
   const qKata = toKatakana(qKana);
 
   const scoredResults = [];
-
   for (const item of data) {
-    let score = 0;
-
-    // 1. Exact Kanji match (highest priority)
-    if (item.kanji === q) {
-      score += 300;
-    } else if (item.kanji.includes(q)) {
-      score += 120;
-    }
-
-    // 2. Readings match (Onyomi / Kunyomi - Table & Hyougai)
-    const joyoOn = (item.onyomi || []).join(' ');
-    const joyoKun = (item.kunyomi || []).map(k => k.replace(/\./g, '')).join(' ');
-    const hyougaiOn = (item.onyomi_hyougai || []).join(' ');
-    const hyougaiKun = (item.kunyomi_hyougai || []).map(k => k.replace(/\./g, '')).join(' ');
-
-    const joyoKunKata = toKatakana(joyoKun);
-    const hyougaiKunKata = toKatakana(hyougaiKun);
-
-    if (joyoOn === qKata || joyoKunKata === qKata) {
-      score += 150;
-    } else if (joyoOn.includes(qKata) || joyoKunKata.includes(qKata)) {
-      score += 95;
-    } else if (hyougaiOn === qKata || hyougaiKunKata === qKata) {
-      score += 120;
-    } else if (hyougaiOn.includes(qKata) || hyougaiKunKata.includes(qKata)) {
-      score += 70;
-    }
-
-    // 3. Jinmei (name readings) match
-    const jinmei = (item.jinmei || item.nanori || []).join(' ');
-    const jinmeiKata = toKatakana(jinmei);
-    if (jinmeiKata === qKata) {
-      score += 110;
-    } else if (jinmeiKata.includes(qKata)) {
-      score += 65;
-    }
-
-    // 4. Japanese meaning match (字義)
-    const jaMatches = (item.meanings_ja || []).some(m => m === q || m === qKana);
-    const jaSubMatches = (item.meanings_ja || []).some(m => m.includes(q) || m.includes(qKana));
-    if (jaMatches) {
-      score += 85;
-    } else if (jaSubMatches) {
-      score += 60;
-    }
-
-    // 5. Thai meaning match
-    const thaiMatches = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
-    if (thaiMatches) {
-      score += 80;
-    }
-
-    // 6. English meaning match
-    const enMatches = (item.meanings_en || []).some(m => m.toLowerCase() === q);
-    const enSubMatches = (item.meanings_en || []).some(m => m.toLowerCase().includes(q));
-    if (enMatches) {
-      score += 85;
-    } else if (enSubMatches) {
-      score += 65;
-    }
-
-    // 7. Example compounds match
-    if (item.examples && item.examples.some(ex => ex.word.includes(q) || (ex.reading && ex.reading.includes(qKata)) || (ex.meaning_th && ex.meaning_th.includes(q)))) {
-      score += 40;
-    }
-
+    const score = scoreEntry(item, q, qKana, qKata);
     if (score > 0) {
       scoredResults.push({ item, score });
     }
@@ -212,6 +244,28 @@ export async function searchKanji(query, options = {}) {
 
   scoredResults.sort((a, b) => b.score - a.score);
   return scoredResults.slice(0, limit).map(res => res.item);
+}
+
+/**
+ * Search the dataset with multi-language smart scoring.
+ * @param {string} query
+ * @param {object} [options] `data` overrides the loaded dataset (tests), `limit` caps results.
+ * @returns {Promise<Array>}
+ */
+export async function searchKanji(query, options = {}) {
+  const data = options.data || await loadKanjiData();
+  return rankEntries(data, query, options.limit || 50);
+}
+
+/**
+ * Search the slim home-page index (readings + first meanings per language).
+ * @param {Array} index
+ * @param {string} query
+ * @param {object} [options]
+ * @returns {Array}
+ */
+export function searchKanjiIndex(index, query, options = {}) {
+  return rankEntries(index || [], query, options.limit || 50);
 }
 
 /**
@@ -403,16 +457,16 @@ function mulberry32(a) {
 }
 
 /**
- * Get the deterministic Kanji of the Day based on the current date using PRNG.
- * Produces an evenly distributed random kanji from the entire dataset for each day.
- * @returns {Promise<object>}
+ * Get the deterministic Kanji of the Day from a dataset (full data or slim index)
+ * using a PRNG seeded by the local date.
+ * @param {Array} data
+ * @param {Date} [date]
+ * @returns {object|null}
  */
-export async function getDailyKanji() {
-  const data = await loadKanjiData();
-  if (!data.length) return null;
+export function getDailyKanjiFromIndex(data, date = new Date()) {
+  if (!data || !data.length) return null;
 
-  const today = new Date();
-  const dateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
   const seed = hashDateString(dateStr);
   const rng = mulberry32(seed);
 
