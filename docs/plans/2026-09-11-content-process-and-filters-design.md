@@ -51,6 +51,7 @@ data/fuhyo-special-readings.json     special readings
 ## Phase 1 — Filter + stroke UI
 
 ### 1a. Kanji scope: 常用 / 表外 independent
+
 - `browse/index.html:166-176` — rename `非常用` → `表外`, keep two checkboxes.
 - `browse.js:349-370` — remove the code that unchecks the other box on change.
 - `search.js` `filterKanji` — scope applies only when exactly one of `joyoOnly` /
@@ -58,12 +59,14 @@ data/fuhyo-special-readings.json     special readings
 - URL stays `joyo=true` / `nonjoyo=true`; both may be present.
 
 ### 1b. Grade filter → Kanken school stages
+
 - `browse/index.html:228-236` options: `1`–`6`, `mid`, `high`, `univ`.
 - `filterKanji` matches numeric `grade` for 1–6 and `item.kanken` for stages.
 - Presets `browse.js:186-205`: replace `elementary`/`secondary` with stage presets.
 - Align detail badge wording in `kanji-detail.js:516-518`.
 
 ### 1c. Responsive square stroke view
+
 - `components.css:1292` and `:1933`: `width: min(100%, 360px); height: auto;
   aspect-ratio: 1/1` (mobile keeps a smaller max).
 - `browse/kanji.html:333` modal view: `min(90vw, 90vh)` while square.
@@ -71,6 +74,7 @@ data/fuhyo-special-readings.json     special readings
 ## Phase 2 — Origins into content/kanji + process docs
 
 ### Markdown schema
+
 ```markdown
 ## 日
 
@@ -89,6 +93,7 @@ data/fuhyo-special-readings.json     special readings
 ```
 
 ### Steps
+
 1. One-off `scripts/migrate_origins_to_kanji.py` reads `content/origins/*.md`, locates
    each character's `## <char>` section in `content/kanji/**`, and appends the origin
    fields/section before `### Examples` (or at section end). Idempotent; aborts on a

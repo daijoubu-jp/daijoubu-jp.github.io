@@ -194,6 +194,7 @@ aspect-ratio: 1 / 1;
 ```
 
 Keep the mobile override but with `width: min(100%, 260px); height: auto; aspect-ratio: 1/1;`.
+
 - Modal `#stroke-modal-view`: set `width: min(90vw, 90vh); max-width: none; height: auto; aspect-ratio: 1/1;`.
 - Manual check at 360px, 768px, and desktop widths: SVG stays centered and undistorted; modal fills the viewport while square.
 - Commit: `fix(stroke): responsive 1:1 stroke view (inline + modal)`.
@@ -343,6 +344,7 @@ const nameUseBadge = `<span class="badge badge--grade">${kanji.nameUse ? 'ใช
 ```
 
 with label `คันจิสำหรับชื่อคน (人名用漢字)`.
+
 - `browse/index.html`: add `<input type="checkbox" id="filter-nameuse"> เฉพาะคันจิที่ใช้ตั้งชื่อได้` to the scope group.
 - `browse.js`: `currentFilters.nameUseOnly = false`; read `nameuse=true`, write it, sync the checkbox, reset it.
 - `search.js` `filterKanji`: `if (filters.nameUseOnly && !item.nameUse) return false;`.
