@@ -299,8 +299,8 @@ const KANKEN_ORDER = {
  * @param {object} filters
  * @returns {Promise<Array>}
  */
-export async function filterKanji(filters = {}) {
-  const data = await loadKanjiData();
+export async function filterKanji(filters = {}, options = {}) {
+  const data = options.data || await loadKanjiData();
 
   return data.filter(item => {
     // 1. Text Query Filter (Kanji, Kana, Romaji, English, Thai, Compounds, Joyo & Hyougai)
@@ -329,15 +329,14 @@ export async function filterKanji(filters = {}) {
       if (!filters.jlpt.includes(item.jlpt)) return false;
     }
 
-    // 3. School Grade filter (1-6: Elementary, 8: Secondary/High School, 'nonjoyo' / 0: Outside Joyo)
+    // 3. School grade (1-6) or Kanken-derived school stage (mid / high / univ)
     if (filters.grade && filters.grade.length > 0) {
-      const hasElementary = filters.grade.some(g => typeof g === 'number' && g >= 1 && g <= 6 && item.grade === g);
-      const hasSecondary = (filters.grade.includes(8) || filters.grade.includes('secondary')) && (item.grade === 8 || (!item.grade && item.joyo));
-      const hasNonJoyo = (filters.grade.includes(0) || filters.grade.includes('nonjoyo')) && !item.joyo;
-
-      if (!hasElementary && !hasSecondary && !hasNonJoyo) {
-        return false;
-      }
+      const stageKanken = { mid: ['4', '3'], high: ['jun2', '2'], univ: ['jun1', '1'] };
+      const grades = filters.grade.filter(g => /^[1-6]$/.test(String(g))).map(Number);
+      const stages = filters.grade.filter(g => typeof g === 'string' && stageKanken[g]);
+      const matchesGrade = grades.includes(item.grade);
+      const matchesStage = stages.some(s => stageKanken[s].includes(String(item.kanken)));
+      if (!matchesGrade && !matchesStage) return false;
     }
 
     // 4. Kanken level filter (e.g. ['10', '9', 'jun1', '1'])
@@ -345,26 +344,23 @@ export async function filterKanji(filters = {}) {
       if (!filters.kanken.includes(String(item.kanken))) return false;
     }
 
-    // 5. Joyo only filter
-    if (filters.joyoOnly && !item.joyo) {
-      return false;
+    // 5. Kanji scope: only restrict when exactly one box is checked
+    const scopeActive = Boolean(filters.joyoOnly) !== Boolean(filters.nonJoyoOnly);
+    if (scopeActive) {
+      if (filters.joyoOnly && !item.joyo) return false;
+      if (filters.nonJoyoOnly && item.joyo) return false;
     }
 
-    // 6. Non-Joyo only filter
-    if (filters.nonJoyoOnly && item.joyo) {
-      return false;
-    }
-
-    // 7. Radical filter (1-214)
+    // 6. Radical filter (1-214)
     if (filters.radical) {
       if (Number(item.radical) !== Number(filters.radical)) return false;
     }
 
-    // 8. Stroke count range
+    // 7. Stroke count range
     if (filters.strokeMin && item.strokes < filters.strokeMin) return false;
     if (filters.strokeMax && item.strokes > filters.strokeMax) return false;
 
-    // 9. Exact stroke count
+    // 8. Exact stroke count
     if (filters.strokes && item.strokes !== filters.strokes) return false;
 
     return true;

@@ -5,7 +5,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { createPromiseCache, romajiToHiragana, searchKanji, searchKanjiIndex, getDailyKanjiFromIndex } from '../assets/js/search.js';
+import { createPromiseCache, romajiToHiragana, searchKanji, searchKanjiIndex, getDailyKanjiFromIndex, filterKanji } from '../assets/js/search.js';
 
 const FIXTURE = [
   {
@@ -96,4 +96,30 @@ test('getDailyKanjiFromIndex is deterministic within one day', () => {
   const night = getDailyKanjiFromIndex(FIXTURE, new Date('2026-09-11T23:59:59'));
   assert.ok(FIXTURE.includes(morning));
   assert.equal(morning.kanji, night.kanji);
+});
+
+const FILTER_FIXTURE = [
+  { kanji: '山', joyo: true, grade: 3, kanken: '8', nameUse: true },
+  { kanji: '亜', joyo: true, grade: 8, kanken: '2', nameUse: true },
+  { kanji: '硫', joyo: true, grade: 8, kanken: '4', nameUse: true },
+  { kanji: '刹', joyo: false, grade: null, kanken: 'jun1', nameUse: false },
+];
+
+test('filterKanji: both scope boxes checked = all kanji', async () => {
+  const out = await filterKanji({ joyoOnly: true, nonJoyoOnly: true }, { data: FILTER_FIXTURE });
+  assert.equal(out.length, 4);
+});
+
+test('filterKanji: one scope box checked filters', async () => {
+  const out = await filterKanji({ joyoOnly: true, nonJoyoOnly: false }, { data: FILTER_FIXTURE });
+  assert.deepEqual(out.map(k => k.kanji), ['山', '亜', '硫']);
+});
+
+test('filterKanji: school stage maps to Kanken levels', async () => {
+  const mid = await filterKanji({ grade: ['mid'] }, { data: FILTER_FIXTURE });
+  const high = await filterKanji({ grade: ['high'] }, { data: FILTER_FIXTURE });
+  const univ = await filterKanji({ grade: ['univ'] }, { data: FILTER_FIXTURE });
+  assert.deepEqual(mid.map(k => k.kanji), ['硫']);
+  assert.deepEqual(high.map(k => k.kanji), ['亜']);
+  assert.deepEqual(univ.map(k => k.kanji), ['刹']);
 });
