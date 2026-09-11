@@ -87,10 +87,11 @@ function setupMobileNav() {
     document.body.style.overflow = '';
     // Reset all accordions
     navLinks.querySelectorAll('.accordion-open').forEach(el => el.classList.remove('accordion-open'));
+    navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(el => el.setAttribute('aria-expanded', 'false'));
   };
 
-  // Setup click handling on nav links
-  navLinks.querySelectorAll('a').forEach(link => {
+  // Setup click handling on nav links and dropdown toggle buttons
+  navLinks.querySelectorAll('a, button.nav-dropdown-toggle').forEach(link => {
     link.addEventListener('click', (e) => {
       const isMobile = window.innerWidth <= 768;
 
@@ -103,6 +104,7 @@ function setupMobileNav() {
           e.preventDefault();
           e.stopPropagation();
           parentDropdown.classList.toggle('accordion-open');
+          link.setAttribute('aria-expanded', String(parentDropdown.classList.contains('accordion-open')));
           return;
         }
 

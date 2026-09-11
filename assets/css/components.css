@@ -95,6 +95,17 @@
   text-decoration: none;
 }
 
+/* Dropdown parent rendered as a button so it does not duplicate the first submenu link */
+button.nav-link {
+  font: inherit;
+  font-size: var(--font-size-sm);
+  background: none;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
 /* Base style for desktop navitem bottom border expanding from middle */
 @media (min-width: 769px) {
   .nav-link {
