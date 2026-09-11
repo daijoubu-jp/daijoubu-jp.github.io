@@ -197,10 +197,13 @@ function scoreEntry(item, q, qKana, qKata) {
     score += 60;
   }
 
-  // 5. Thai meaning match
-  const thaiMatches = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
-  if (thaiMatches) {
-    score += 80;
+  // 5. Thai meaning match (exact beats substring)
+  const thaiExact = (item.meanings_th || []).some(m => m.toLowerCase() === q);
+  const thaiSub = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
+  if (thaiExact) {
+    score += 95;
+  } else if (thaiSub) {
+    score += 60;
   }
 
   // 6. English meaning match

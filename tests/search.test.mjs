@@ -128,3 +128,13 @@ test('filterKanji: nameUseOnly keeps only name-legal kanji', async () => {
   const out = await filterKanji({ nameUseOnly: true }, { data: FILTER_FIXTURE });
   assert.deepEqual(out.map(k => k.kanji), ['山', '亜', '硫']);
 });
+
+const THAI_EXACT_FIXTURE = [
+  { kanji: '省', onyomi: [], kunyomi: [], meanings_th: ['อนุรักษ์'], meanings_en: ['conserve'] },
+  { kanji: '愛', onyomi: [], kunyomi: [], meanings_th: ['รัก'], meanings_en: ['love'] },
+];
+
+test('searchKanjiIndex ranks exact Thai meaning above substring', () => {
+  const r = searchKanjiIndex(THAI_EXACT_FIXTURE, 'รัก', { limit: 2 });
+  assert.equal(r[0].kanji, '愛');
+});
