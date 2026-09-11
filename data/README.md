@@ -29,8 +29,10 @@ or committed.
 | `data/kanji-levels/*.json` | Per-Kanken-level split of the full bundle |
 | `data/search-index.min.json` | Slim index for home-page search and daily kanji |
 | `data/vocabulary.json` | Vocabulary / manga-anime glossary |
-| `data/kanji-origins.json` | 成り立ち origin explanations |
 | `data/fuhyo-special-readings.json` | 付表 special readings |
+
+Origin (成り立ち) data is stored inline in the kanji bundle as `origin_type`,
+`origin_type_th`, `origin_description`, and optional `origin_components`.
 
 `data/kanjivg/` holds vendored stroke-order SVGs from KanjiVG (CC BY-SA 3.0).
 Re-download only when needed:

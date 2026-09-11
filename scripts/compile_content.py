@@ -156,77 +156,6 @@ def compile_vocabulary():
     print(f"  ✅ Compiled {len(vocab_list)} vocabulary items to {out_file}")
 
 
-def compile_origins():
-    origins_dir = os.path.join(CONTENT_DIR, "origins")
-    if not os.path.exists(origins_dir):
-        print("⚠️ content/origins not found, skipping.")
-        return
-
-    origins_dict = {}
-
-    for fname in sorted(os.listdir(origins_dir)):
-        if not fname.endswith(".md"):
-            continue
-
-        fpath = os.path.join(origins_dir, fname)
-        with open(fpath, "r", encoding="utf-8") as f:
-            content = f.read()
-
-        sections = re.split(r"\n##\s+", "\n" + content)
-        for sec in sections[1:]:
-            lines = sec.strip().split("\n")
-            if not lines:
-                continue
-
-            kanji_char = lines[0].strip().split()[0]
-            entry = {
-                "type": "",
-                "type_th": "",
-                "desc": "",
-                "components": []
-            }
-
-            mode = "kv"
-            for line in lines[1:]:
-                line_str = line.strip()
-                if line_str == "---":
-                    continue
-                if line_str.startswith("### Description"):
-                    mode = "desc"
-                    continue
-                elif line_str.startswith("### Components"):
-                    mode = "comps"
-                    continue
-
-                if mode == "kv":
-                    k, v = parse_key_value_line(line)
-                    if k == "type":
-                        entry["type"] = v
-                    elif k == "type_th":
-                        entry["type_th"] = v
-                elif mode == "desc":
-                    if line_str and not line_str.startswith("#"):
-                        if entry["desc"]:
-                            entry["desc"] += "\n" + line_str
-                        else:
-                            entry["desc"] = line_str
-                elif mode == "comps":
-                    comp_m = re.match(r"^-\s+\*\*([^*]+)\*\*\s*\(([^)]+)\):\s*(.*)$", line_str)
-                    if comp_m:
-                        entry["components"].append({
-                            "part": comp_m.group(1).strip(),
-                            "role": comp_m.group(2).strip(),
-                            "desc": comp_m.group(3).strip()
-                        })
-
-            origins_dict[kanji_char] = entry
-
-    out_file = os.path.join(DATA_DIR, "kanji-origins.json")
-    with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(origins_dict, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ Compiled {len(origins_dict)} kanji origins to {out_file}")
-
-
 def compile_special_readings():
     fpath = os.path.join(CONTENT_DIR, "special-readings", "ateji.md")
     if not os.path.exists(fpath):
@@ -292,7 +221,7 @@ def compile_kanji():
         kanji_files = []
         for root, _, files in os.walk(kanji_dir):
             for f in files:
-                if f.endswith(".md"):
+                if f.endswith(".md") and not f.startswith("_"):
                     kanji_files.append(os.path.join(root, f))
 
         for fpath in sorted(kanji_files):
@@ -323,6 +252,7 @@ def compile_kanji():
                 mode = "kv"
                 current_ex = None
                 examples = []
+                origin_comps = []
 
                 for line in lines[1:]:
                     line_str = line.strip()
@@ -330,6 +260,9 @@ def compile_kanji():
                         continue
                     if line_str.startswith("### Examples"):
                         mode = "examples"
+                        continue
+                    if line_str.startswith("### Origin Components"):
+                        mode = "origin_comps"
                         continue
 
                     if mode == "kv":
@@ -362,6 +295,12 @@ def compile_kanji():
                             target["meanings_en"] = [x.strip() for x in v.split(",") if x.strip()]
                         elif k == "notes":
                             target["notes"] = v
+                        elif k == "origin_type":
+                            target["origin_type"] = v
+                        elif k == "origin_type_th":
+                            target["origin_type_th"] = v
+                        elif k == "origin_description":
+                            target["origin_description"] = v
                         elif k == "traditional":
                             pass  # Traditional form is removed
                     elif mode == "examples":
@@ -386,12 +325,23 @@ def compile_kanji():
                                 current_ex["sentence_th"] = v
                             elif k == "ruby":
                                 current_ex["sentence_ruby"] = furigana_to_ruby(v)
+                    elif mode == "origin_comps":
+                        comp_m = re.match(r"^-\s+\*\*([^*]+)\*\*\s*\(([^)]+)\):\s*(.*)$", line_str)
+                        if comp_m:
+                            origin_comps.append({
+                                "part": comp_m.group(1).strip(),
+                                "role": comp_m.group(2).strip(),
+                                "desc": comp_m.group(3).strip(),
+                            })
 
                 if current_ex:
                     examples.append(current_ex)
 
                 if examples:
                     target["examples"] = examples
+
+                if origin_comps:
+                    target["origin_components"] = origin_comps
                 
                 # Remove traditionalForm if present
                 target.pop("traditionalForm", None)
@@ -416,6 +366,10 @@ def compile_kanji():
             validation_errors.append(f"{char}: missing kanken")
         if not k.get("radical"):
             validation_errors.append(f"{char}: missing radical")
+        has_origin = any(k.get(f) for f in
+                         ("origin_type", "origin_type_th", "origin_description", "origin_components"))
+        if has_origin and not (k.get("origin_type") and k.get("origin_description")):
+            validation_errors.append(f"{char}: incomplete origin data")
 
     if validation_errors:
         return validation_errors
@@ -477,7 +431,6 @@ def compile_search_index():
 def main():
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
-    compile_origins()
     compile_special_readings()
     errors = compile_kanji() or []
 

@@ -110,59 +110,6 @@ def export_vocabulary():
         print(f"  ✅ Exported {len(items)} items to {filepath}")
 
 
-def export_origins():
-    origins_path = os.path.join(DATA_DIR, "kanji-origins.json")
-    if not os.path.exists(origins_path):
-        print("⚠️ kanji-origins.json not found, skipping.")
-        return
-
-    with open(origins_path, "r", encoding="utf-8") as f:
-        origins_dict = json.load(f)
-
-    out_dir = os.path.join(CONTENT_DIR, "origins")
-    os.makedirs(out_dir, exist_ok=True)
-
-    type_groups = {
-        "shoukei.md": ("象形文字 - อักษรภาพเลียนรูปทรง", ["象形文字", "象形・仮借"]),
-        "shiji.md": ("指事文字 - อักษรสัญลักษณ์ชี้บอก", ["指事文字"]),
-        "kaii.md": ("会意文字 - อักษรผสมความหมาย", ["会意文字"]),
-        "keisei.md": ("形声文字 - อักษรผสมรูปและเสียง", ["形声文字", "会意・形声"]),
-    }
-
-    for filename, (title, type_keys) in type_groups.items():
-        entries = [(k, v) for k, v in origins_dict.items() if v.get("type") in type_keys]
-        if not entries:
-            continue
-
-        filepath = os.path.join(out_dir, filename)
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(f"# {title}\n\n")
-            f.write("---\n")
-            f.write(f"title: \"{title}\"\n")
-            f.write("---\n\n")
-
-            for kanji_char, data in entries:
-                f.write(f"## {kanji_char}\n")
-                f.write(f"- type: {data.get("type", "")}\n")
-                f.write(f"- type_th: {data.get("type_th", "")}\n")
-                f.write("\n### Description\n")
-                f.write(f"{data.get("desc", "").strip()}\n\n")
-
-                comps = data.get("components") or []
-                if comps:
-                    f.write("### Components\n")
-                    for c in comps:
-                        part = c.get("part", "")
-                        role = c.get("role", "")
-                        desc = c.get("desc", "")
-                        f.write(f"- **{part}** ({role}): {desc}\n")
-                    f.write("\n")
-
-                f.write("---\n\n")
-
-        print(f"  ✅ Exported {len(entries)} origin entries to {filepath}")
-
-
 def export_special_readings():
     fuhyo_path = os.path.join(DATA_DIR, "fuhyo-special-readings.json")
     if not os.path.exists(fuhyo_path):
@@ -248,6 +195,19 @@ def write_kanji_markdown(filepath, title, kanken_level, category_name, items):
                 f.write(f"- radical: {radical} ({radical_char})\n")
             if notes:
                 f.write(f"- notes: {notes}\n")
+
+            if k.get("origin_type"):
+                f.write(f"- origin_type: {k['origin_type']}\n")
+                if k.get("origin_type_th"):
+                    f.write(f"- origin_type_th: {k['origin_type_th']}\n")
+                if k.get("origin_description"):
+                    f.write(f"- origin_description: {k['origin_description']}\n")
+
+            origin_comps = k.get("origin_components") or []
+            if origin_comps:
+                f.write("\n### Origin Components\n\n")
+                for c in origin_comps:
+                    f.write(f"- **{c.get('part', '')}** ({c.get('role', '')}): {c.get('desc', '')}\n")
 
             if examples:
                 f.write("\n### Examples\n")
@@ -359,7 +319,6 @@ def main():
     print("🚀 Starting Export from JSON to Markdown (1 file per category)...")
     os.makedirs(CONTENT_DIR, exist_ok=True)
     export_vocabulary()
-    export_origins()
     export_special_readings()
     export_kanji()
     print("✨ Export complete! Files are ready in content/")

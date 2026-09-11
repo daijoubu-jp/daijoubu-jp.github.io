@@ -25,7 +25,7 @@ Thai-language kanji dictionary for learners. Static site, no runtime framework, 
   - `data/kanji.min.json`
   - `data/kanji-levels/*.json`
   - `data/search-index.min.json`
-  - `data/vocabulary.json`, `data/kanji-origins.json`, `data/fuhyo-special-readings.json`
+  - `data/vocabulary.json`, `data/fuhyo-special-readings.json`
 - After editing markdown, run `python3 scripts/compile_content.py` and commit the regenerated data in the same commit.
 - CI fails if generated data is out of date (`git diff --exit-code -- data/`).
 

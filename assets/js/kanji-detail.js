@@ -418,30 +418,19 @@ function renderMeanings(kanji) {
   }
 }
 
-let originsCache = null;
-
-async function loadOriginsData() {
-  if (originsCache) return originsCache;
-  try {
-    const dataUrl = new URL('../../data/kanji-origins.json?v=1788444334', import.meta.url).href;
-    const res = await fetch(dataUrl);
-    if (res.ok) {
-      originsCache = await res.json();
-    } else {
-      originsCache = {};
-    }
-  } catch {
-    originsCache = {};
-  }
-  return originsCache;
-}
-
-async function renderOrigin(kanji) {
+function renderOrigin(kanji) {
   const container = document.getElementById('detail-origin');
   if (!container) return;
 
-  const origins = await loadOriginsData();
-  let origin = origins[kanji.kanji];
+  let origin = null;
+  if (kanji.origin_type) {
+    origin = {
+      type: kanji.origin_type,
+      type_th: kanji.origin_type_th || '',
+      desc: kanji.origin_description || '',
+      components: kanji.origin_components || [],
+    };
+  }
 
   if (!origin) {
     const isRadicalItself = kanji.kanji === kanji.radicalChar;
