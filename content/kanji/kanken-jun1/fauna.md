@@ -31,6 +31,8 @@ count: 99
 - kanken: jun1
 - radical: 93 (牛)
 
+- name_use: yes
+
 ---
 
 ## 牡
@@ -43,6 +45,8 @@ count: 99
 - strokes: 7
 - kanken: jun1
 - radical: 93 (牛)
+
+- name_use: yes
 
 ---
 
@@ -135,6 +139,8 @@ count: 99
 - kanken: jun1
 - radical: 94 (犬)
 
+- name_use: yes
+
 ---
 
 ## 狽
@@ -172,6 +178,8 @@ count: 99
 - kanken: jun1
 - radical: 153 (豸)
 
+- name_use: yes
+
 ---
 
 ## 隼
@@ -184,6 +192,8 @@ count: 99
 - strokes: 10
 - kanken: jun1
 - radical: 172 (隹)
+
+- name_use: yes
 
 ---
 
@@ -198,6 +208,8 @@ count: 99
 - kanken: jun1
 - radical: 93 (牛)
 
+- name_use: yes
+
 ---
 
 ## 猪
@@ -210,6 +222,8 @@ count: 99
 - strokes: 11
 - kanken: jun1
 - radical: 94 (犬)
+
+- name_use: yes
 
 ---
 
@@ -250,6 +264,8 @@ count: 99
 - kanken: jun1
 - radical: 172 (隹)
 
+- name_use: yes
+
 ---
 
 ## 犀
@@ -262,6 +278,8 @@ count: 99
 - strokes: 12
 - kanken: jun1
 - radical: 93 (牛)
+
+- name_use: yes
 
 ---
 
@@ -328,6 +346,8 @@ count: 99
 - kanken: jun1
 - radical: 172 (隹)
 
+- name_use: yes
+
 ---
 
 ## 猷
@@ -353,6 +373,8 @@ count: 99
 - strokes: 13
 - kanken: jun1
 - radical: 94 (犬)
+
+- name_use: yes
 
 ---
 
@@ -406,6 +428,8 @@ count: 99
 - kanken: jun1
 - radical: 187 (馬)
 
+- name_use: yes
+
 ---
 
 ## 馴
@@ -419,6 +443,8 @@ count: 99
 - kanken: jun1
 - radical: 187 (馬)
 
+- name_use: yes
+
 ---
 
 ## 鳩
@@ -431,6 +457,8 @@ count: 99
 - strokes: 13
 - kanken: jun1
 - radical: 196 (鳥)
+
+- name_use: yes
 
 ---
 
@@ -484,6 +512,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 鳶
@@ -496,6 +526,8 @@ count: 99
 - strokes: 14
 - kanken: jun1
 - radical: 196 (鳥)
+
+- name_use: yes
 
 ---
 
@@ -536,6 +568,8 @@ count: 99
 - kanken: jun1
 - radical: 142 (虫)
 
+- name_use: yes
+
 ---
 
 ## 蝱
@@ -560,6 +594,8 @@ count: 99
 - strokes: 15
 - kanken: jun1
 - radical: 142 (虫)
+
+- name_use: yes
 
 ---
 
@@ -587,6 +623,8 @@ count: 99
 - kanken: jun1
 - radical: 187 (馬)
 
+- name_use: yes
+
 ---
 
 ## 駕
@@ -600,6 +638,8 @@ count: 99
 - kanken: jun1
 - radical: 187 (馬)
 
+- name_use: yes
+
 ---
 
 ## 魯
@@ -612,6 +652,8 @@ count: 99
 - strokes: 15
 - kanken: jun1
 - radical: 195 (魚)
+
+- name_use: yes
 
 ---
 
@@ -665,6 +707,8 @@ count: 99
 - kanken: jun1
 - radical: 195 (魚)
 
+- name_use: yes
+
 ---
 
 ## 鮒
@@ -717,6 +761,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 鴫
@@ -755,6 +801,8 @@ count: 99
 - kanken: jun1
 - radical: 142 (虫)
 
+- name_use: yes
+
 ---
 
 ## 駿
@@ -767,6 +815,8 @@ count: 99
 - strokes: 17
 - kanken: jun1
 - radical: 187 (馬)
+
+- name_use: yes
 
 ---
 
@@ -820,6 +870,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 蟬
@@ -832,6 +884,8 @@ count: 99
 - strokes: 18
 - kanken: jun1
 - radical: 142 (虫)
+
+- name_use: yes
 
 ---
 
@@ -846,6 +900,8 @@ count: 99
 - kanken: jun1
 - radical: 172 (隹)
 
+- name_use: yes
+
 ---
 
 ## 鯉
@@ -859,6 +915,8 @@ count: 99
 - kanken: jun1
 - radical: 195 (魚)
 
+- name_use: yes
+
 ---
 
 ## 鵜
@@ -871,6 +929,8 @@ count: 99
 - strokes: 18
 - kanken: jun1
 - radical: 196 (鳥)
+
+- name_use: yes
 
 ---
 
@@ -897,6 +957,8 @@ count: 99
 - strokes: 19
 - kanken: jun1
 - radical: 142 (虫)
+
+- name_use: yes
 
 ---
 
@@ -975,6 +1037,8 @@ count: 99
 - kanken: jun1
 - radical: 195 (魚)
 
+- name_use: yes
+
 ---
 
 ## 鯵
@@ -1013,6 +1077,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 麒
@@ -1025,6 +1091,8 @@ count: 99
 - strokes: 19
 - kanken: jun1
 - radical: 198 (鹿)
+
+- name_use: yes
 
 ---
 
@@ -1078,6 +1146,8 @@ count: 99
 - kanken: jun1
 - radical: 142 (虫)
 
+- name_use: yes
+
 ---
 
 ## 鰭
@@ -1102,6 +1172,8 @@ count: 99
 - strokes: 21
 - kanken: jun1
 - radical: 195 (魚)
+
+- name_use: yes
 
 ---
 
@@ -1181,6 +1253,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 鰹
@@ -1207,6 +1281,8 @@ count: 99
 - kanken: jun1
 - radical: 195 (魚)
 
+- name_use: yes
+
 ---
 
 ## 鷲
@@ -1219,6 +1295,8 @@ count: 99
 - strokes: 23
 - kanken: jun1
 - radical: 196 (鳥)
+
+- name_use: yes
 
 ---
 
@@ -1233,6 +1311,8 @@ count: 99
 - kanken: jun1
 - radical: 195 (魚)
 
+- name_use: yes
+
 ---
 
 ## 鷹
@@ -1245,6 +1325,8 @@ count: 99
 - strokes: 24
 - kanken: jun1
 - radical: 196 (鳥)
+
+- name_use: yes
 
 ---
 
@@ -1259,6 +1341,8 @@ count: 99
 - kanken: jun1
 - radical: 196 (鳥)
 
+- name_use: yes
+
 ---
 
 ## 麟
@@ -1271,6 +1355,8 @@ count: 99
 - strokes: 24
 - kanken: jun1
 - radical: 198 (鹿)
+
+- name_use: yes
 
 ---
 

@@ -23,6 +23,8 @@ count: 160
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: มาจากภาพวาดอวัยวะหัวใจมนุษย์พร้อมหลอดเลือดและห้องหัวใจ หมายถึง 'หัวใจ / จิตใจ / ความรู้สึก'
 
+- name_use: yes
+
 ### Examples
 
 - **安心** (あんしん) : ความสบายใจ, โล่งอก
@@ -53,6 +55,8 @@ count: 160
 - radical: 1 (一)
 - notes: 大字 (Daiji) 萬 is the traditional form of 万, used in financial documents. (รูปโบราณของ 万 มักใช้ในเอกสารการเงิน)
 
+- name_use: yes
+
 ---
 
 ## 丸
@@ -66,6 +70,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 3 (丶)
+
+- name_use: yes
 
 ---
 
@@ -81,6 +87,8 @@ count: 160
 - kanken: 9
 - radical: 8 (亠)
 
+- name_use: yes
+
 ---
 
 ## 京
@@ -94,6 +102,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 8 (亠)
+
+- name_use: yes
 
 ---
 
@@ -109,6 +119,8 @@ count: 160
 - kanken: 9
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 会
@@ -122,6 +134,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -137,6 +151,8 @@ count: 160
 - kanken: 9
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 何
@@ -150,6 +166,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -165,6 +183,8 @@ count: 160
 - kanken: 9
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 元
@@ -178,6 +198,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 10 (儿)
+
+- name_use: yes
 
 ---
 
@@ -193,6 +215,8 @@ count: 160
 - kanken: 9
 - radical: 10 (儿)
 
+- name_use: yes
+
 ---
 
 ## 光
@@ -206,6 +230,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 10 (儿)
+
+- name_use: yes
 
 ---
 
@@ -221,6 +247,8 @@ count: 160
 - kanken: 9
 - radical: 12 (八)
 
+- name_use: yes
+
 ---
 
 ## 内
@@ -234,6 +262,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 13 (冂)
+
+- name_use: yes
 
 ---
 
@@ -249,6 +279,8 @@ count: 160
 - kanken: 9
 - radical: 15 (冫)
 
+- name_use: yes
+
 ---
 
 ## 刀
@@ -262,6 +294,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 18 (刀)
+
+- name_use: yes
 
 ---
 
@@ -277,6 +311,8 @@ count: 160
 - kanken: 9
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 切
@@ -290,6 +326,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 18 (刀)
+
+- name_use: yes
 
 ---
 
@@ -305,6 +343,8 @@ count: 160
 - kanken: 9
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 北
@@ -318,6 +358,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 21 (匕)
+
+- name_use: yes
 
 ---
 
@@ -333,6 +375,8 @@ count: 160
 - kanken: 9
 - radical: 24 (十)
 
+- name_use: yes
+
 ---
 
 ## 半
@@ -346,6 +390,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 24 (十)
+
+- name_use: yes
 
 ---
 
@@ -361,6 +407,8 @@ count: 160
 - kanken: 9
 - radical: 24 (十)
 
+- name_use: yes
+
 ---
 
 ## 原
@@ -374,6 +422,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 27 (厂)
+
+- name_use: yes
 
 ---
 
@@ -389,6 +439,8 @@ count: 160
 - kanken: 9
 - radical: 29 (又)
 
+- name_use: yes
+
 ---
 
 ## 古
@@ -402,6 +454,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 30 (口)
+
+- name_use: yes
 
 ---
 
@@ -417,6 +471,8 @@ count: 160
 - kanken: 9
 - radical: 30 (口)
 
+- name_use: yes
+
 ---
 
 ## 合
@@ -430,6 +486,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 30 (口)
+
+- name_use: yes
 
 ---
 
@@ -445,6 +503,8 @@ count: 160
 - kanken: 9
 - radical: 30 (口)
 
+- name_use: yes
+
 ---
 
 ## 回
@@ -458,6 +518,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 31 (囗)
+
+- name_use: yes
 
 ---
 
@@ -473,6 +535,8 @@ count: 160
 - kanken: 9
 - radical: 31 (囗)
 
+- name_use: yes
+
 ---
 
 ## 国
@@ -486,6 +550,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 31 (囗)
+
+- name_use: yes
 
 ---
 
@@ -501,6 +567,8 @@ count: 160
 - kanken: 9
 - radical: 31 (囗)
 
+- name_use: yes
+
 ---
 
 ## 地
@@ -513,6 +581,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -528,6 +598,8 @@ count: 160
 - kanken: 9
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 声
@@ -541,6 +613,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 33 (士)
+
+- name_use: yes
 
 ---
 
@@ -556,6 +630,8 @@ count: 160
 - kanken: 9
 - radical: 33 (士)
 
+- name_use: yes
+
 ---
 
 ## 夏
@@ -569,6 +645,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 35 (夊)
+
+- name_use: yes
 
 ---
 
@@ -584,6 +662,8 @@ count: 160
 - kanken: 9
 - radical: 36 (夕)
 
+- name_use: yes
+
 ---
 
 ## 多
@@ -597,6 +677,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 36 (夕)
+
+- name_use: yes
 
 ---
 
@@ -612,6 +694,8 @@ count: 160
 - kanken: 9
 - radical: 36 (夕)
 
+- name_use: yes
+
 ---
 
 ## 太
@@ -625,6 +709,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 37 (大)
+
+- name_use: yes
 
 ---
 
@@ -640,6 +726,8 @@ count: 160
 - kanken: 9
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 姉
@@ -653,6 +741,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 38 (女)
+
+- name_use: yes
 
 ---
 
@@ -668,6 +758,8 @@ count: 160
 - kanken: 9
 - radical: 40 (宀)
 
+- name_use: yes
+
 ---
 
 ## 家
@@ -681,6 +773,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 40 (宀)
+
+- name_use: yes
 
 ---
 
@@ -696,6 +790,8 @@ count: 160
 - kanken: 9
 - radical: 41 (寸)
 
+- name_use: yes
+
 ---
 
 ## 少
@@ -709,6 +805,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 42 (小)
+
+- name_use: yes
 
 ---
 
@@ -728,6 +826,8 @@ count: 160
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: เกิดจาก 山 (ภูเขา) + 石 (ก้อนหิน) สื่อถึงก้อนหินมหึมาที่ตั้งตระหง่านอยู่บนยอดเขา หมายถึง 'หินผา / โขดหิน'
 
+- name_use: yes
+
 ---
 
 ## 工
@@ -740,6 +840,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 48 (工)
+
+- name_use: yes
 
 ---
 
@@ -755,6 +857,8 @@ count: 160
 - kanken: 9
 - radical: 50 (巾)
 
+- name_use: yes
+
 ---
 
 ## 帰
@@ -768,6 +872,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 50 (巾)
+
+- name_use: yes
 
 ---
 
@@ -783,6 +889,8 @@ count: 160
 - kanken: 9
 - radical: 53 (广)
 
+- name_use: yes
+
 ---
 
 ## 店
@@ -796,6 +904,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 53 (广)
+
+- name_use: yes
 
 ---
 
@@ -811,6 +921,8 @@ count: 160
 - kanken: 9
 - radical: 57 (弓)
 
+- name_use: yes
+
 ---
 
 ## 引
@@ -824,6 +936,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 57 (弓)
+
+- name_use: yes
 
 ---
 
@@ -839,6 +953,8 @@ count: 160
 - kanken: 9
 - radical: 57 (弓)
 
+- name_use: yes
+
 ---
 
 ## 弱
@@ -852,6 +968,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 57 (弓)
+
+- name_use: yes
 
 ---
 
@@ -867,6 +985,8 @@ count: 160
 - kanken: 9
 - radical: 57 (弓)
 
+- name_use: yes
+
 ---
 
 ## 当
@@ -880,6 +1000,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 58 (彐)
+
+- name_use: yes
 
 ---
 
@@ -895,6 +1017,8 @@ count: 160
 - kanken: 9
 - radical: 59 (彡)
 
+- name_use: yes
+
 ---
 
 ## 後
@@ -908,6 +1032,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 60 (彳)
+
+- name_use: yes
 
 ---
 
@@ -923,6 +1049,8 @@ count: 160
 - kanken: 9
 - radical: 61 (心)
 
+- name_use: yes
+
 ---
 
 ## 戸
@@ -937,6 +1065,8 @@ count: 160
 - kanken: 9
 - radical: 63 (戶)
 
+- name_use: yes
+
 ---
 
 ## 才
@@ -949,6 +1079,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -964,6 +1096,8 @@ count: 160
 - kanken: 9
 - radical: 66 (攴)
 
+- name_use: yes
+
 ---
 
 ## 数
@@ -977,6 +1111,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 66 (攴)
+
+- name_use: yes
 
 ---
 
@@ -992,6 +1128,8 @@ count: 160
 - kanken: 9
 - radical: 69 (斤)
 
+- name_use: yes
+
 ---
 
 ## 方
@@ -1005,6 +1143,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 70 (方)
+
+- name_use: yes
 
 ---
 
@@ -1024,6 +1164,8 @@ count: 160
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: รวมสองแหล่งกำเนิดแสงที่สว่างที่สุดบนท้องฟ้าระหว่าง 日 (ดวงอาทิตย์ยามกลางวัน) และ 月 (ดวงจันทร์ยามค่ำคืน) บ่งบอกถึง 'ความสว่างไสว / ชัดเจน / แจ่มแจ้ง'
 
+- name_use: yes
+
 ---
 
 ## 春
@@ -1037,6 +1179,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1052,6 +1196,8 @@ count: 160
 - kanken: 9
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 時
@@ -1065,6 +1211,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1080,6 +1228,8 @@ count: 160
 - kanken: 9
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 曜
@@ -1092,6 +1242,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1110,6 +1262,8 @@ count: 160
 - origin_type: 会意文字
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: ส่วนบน 聿 สื่อถึงมือที่กำลังจับด้ามพู่กันเขียนหนังสือ ส่วนล่าง 日 (เดิมคือ 曰 หรือภาชนะรองหมึก) สื่อถึงการจารึกถ้อยคำลงบนแผ่นป้าย หมายถึง 'เขียน / หนังสือ / ลายลักษณ์อักษร'
+
+- name_use: yes
 
 ### Examples
 
@@ -1136,6 +1290,8 @@ count: 160
 - kanken: 9
 - radical: 74 (月)
 
+- name_use: yes
+
 ---
 
 ## 来
@@ -1154,6 +1310,8 @@ count: 160
 - origin_type_th: อักษรภาพและยืมเสียง
 - origin_description: เดิมในอักษรโบราณคือภาพรวงข้าวสาลีที่สุกงอม ต่อมาถูกยืมเสียงมาใช้แทนคำกริยา 'มา / มาถึง' (เนื่องจากเสียงพ้องกับคำว่าข้าวสาลีที่พระเจ้าประทานลงมายังโลกมนุษย์)
 
+- name_use: yes
+
 ---
 
 ## 東
@@ -1167,6 +1325,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1182,6 +1342,8 @@ count: 160
 - kanken: 9
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 歌
@@ -1195,6 +1357,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 76 (欠)
+
+- name_use: yes
 
 ---
 
@@ -1210,6 +1374,8 @@ count: 160
 - kanken: 9
 - radical: 77 (止)
 
+- name_use: yes
+
 ---
 
 ## 歩
@@ -1223,6 +1389,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 77 (止)
+
+- name_use: yes
 
 ---
 
@@ -1238,6 +1406,8 @@ count: 160
 - kanken: 9
 - radical: 80 (毋)
 
+- name_use: yes
+
 ---
 
 ## 毎
@@ -1251,6 +1421,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 80 (毋)
+
+- name_use: yes
 
 ---
 
@@ -1266,6 +1438,8 @@ count: 160
 - kanken: 9
 - radical: 82 (毛)
 
+- name_use: yes
+
 ---
 
 ## 池
@@ -1280,6 +1454,8 @@ count: 160
 - kanken: 9
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 汽
@@ -1292,6 +1468,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1307,6 +1485,8 @@ count: 160
 - kanken: 9
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 点
@@ -1320,6 +1500,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -1335,6 +1517,8 @@ count: 160
 - kanken: 9
 - radical: 88 (父)
 
+- name_use: yes
+
 ---
 
 ## 牛
@@ -1348,6 +1532,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 93 (牛)
+
+- name_use: yes
 
 ---
 
@@ -1363,6 +1549,8 @@ count: 160
 - kanken: 9
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 用
@@ -1376,6 +1564,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 101 (用)
+
+- name_use: yes
 
 ---
 
@@ -1391,6 +1581,8 @@ count: 160
 - kanken: 9
 - radical: 102 (田)
 
+- name_use: yes
+
 ---
 
 ## 番
@@ -1404,6 +1596,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 102 (田)
+
+- name_use: yes
 
 ---
 
@@ -1419,6 +1613,8 @@ count: 160
 - kanken: 9
 - radical: 109 (目)
 
+- name_use: yes
+
 ---
 
 ## 矢
@@ -1432,6 +1628,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 111 (矢)
+
+- name_use: yes
 
 ---
 
@@ -1447,6 +1645,8 @@ count: 160
 - kanken: 9
 - radical: 111 (矢)
 
+- name_use: yes
+
 ---
 
 ## 社
@@ -1460,6 +1660,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 113 (示)
+
+- name_use: yes
 
 ---
 
@@ -1475,6 +1677,8 @@ count: 160
 - kanken: 9
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 科
@@ -1487,6 +1691,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 115 (禾)
+
+- name_use: yes
 
 ---
 
@@ -1502,6 +1708,8 @@ count: 160
 - kanken: 9
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 算
@@ -1515,6 +1723,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -1530,6 +1740,8 @@ count: 160
 - kanken: 9
 - radical: 119 (米)
 
+- name_use: yes
+
 ---
 
 ## 紙
@@ -1543,6 +1755,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -1558,6 +1772,8 @@ count: 160
 - kanken: 9
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 組
@@ -1572,6 +1788,8 @@ count: 160
 - kanken: 9
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 絵
@@ -1584,6 +1802,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -1599,6 +1819,8 @@ count: 160
 - kanken: 9
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 羽
@@ -1613,6 +1835,8 @@ count: 160
 - kanken: 9
 - radical: 124 (羽)
 
+- name_use: yes
+
 ---
 
 ## 考
@@ -1626,6 +1850,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 125 (老)
+
+- name_use: yes
 
 ---
 
@@ -1644,6 +1870,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วนนอก 門 (ซุ้มประตู) ทำหน้าที่เป็นส่วนบอกเสียงอ่าน (ブン) ส่วนด้านใน 耳 (ใบหู) เป็นส่วนบ่งบอกความหมาย สื่อถึงการแนบหูฟังที่ประตูเพื่อรับฟังข่าวสาร หมายถึง 'ได้ยิน / ฟัง / ไต่ถาม'
+
+- name_use: yes
 
 ### Examples
 
@@ -1666,6 +1894,8 @@ count: 160
 - kanken: 9
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 自
@@ -1679,6 +1909,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 132 (自)
+
+- name_use: yes
 
 ---
 
@@ -1694,6 +1926,8 @@ count: 160
 - kanken: 9
 - radical: 137 (舟)
 
+- name_use: yes
+
 ---
 
 ## 色
@@ -1708,6 +1942,8 @@ count: 160
 - kanken: 9
 - radical: 139 (色)
 
+- name_use: yes
+
 ---
 
 ## 茶
@@ -1720,6 +1956,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1739,6 +1977,8 @@ count: 160
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: มาจากภาพวาดทางแยกสี่แพร่ง (十字路) ของถนนในเมืองโบราณ สื่อถึงเส้นทางสัญจรที่ผู้คนเดินสัญจรไปมา หมายถึง 'ไป / เดินทาง / ปฏิบัติ'
 
+- name_use: yes
+
 ---
 
 ## 西
@@ -1752,6 +1992,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 146 (襾)
+
+- name_use: yes
 
 ---
 
@@ -1767,6 +2009,8 @@ count: 160
 - kanken: 9
 - radical: 147 (見)
 
+- name_use: yes
+
 ---
 
 ## 角
@@ -1780,6 +2024,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 148 (角)
+
+- name_use: yes
 
 ---
 
@@ -1799,6 +2045,8 @@ count: 160
 - origin_type_th: อักษรสัญลักษณ์เชิงนามธรรม
 - origin_description: ด้านล่าง 口 คือปาก และมีเส้นขีดแต้มเหนือปากขึ้นไปหลายชั้นแทนเสียงพูดที่เปล่งพุ่งออกจากช่องปาก หมายถึง 'คำพูด / ภาษา / วาจา'
 
+- name_use: yes
+
 ---
 
 ## 計
@@ -1812,6 +2060,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 
@@ -1827,6 +2077,8 @@ count: 160
 - kanken: 9
 - radical: 149 (言)
 
+- name_use: yes
+
 ---
 
 ## 話
@@ -1840,6 +2092,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 
@@ -1859,6 +2113,8 @@ count: 160
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วนซ้าย 言 (คำพูด/วาจา) บ่งบอกความหมาย ส่วนขวา 売 (เดิมคือ 𧸇: โทคุ) ทำหน้าที่เป็นส่วนบอกเสียงอ่าน สื่อถึงการเปล่งเสียงอ่านข้อความออกมาเป็นถ้อยคำ หมายถึง 'อ่าน'
 
+- name_use: yes
+
 ---
 
 ## 谷
@@ -1872,6 +2128,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 150 (谷)
+
+- name_use: yes
 
 ---
 
@@ -1887,6 +2145,8 @@ count: 160
 - kanken: 9
 - radical: 154 (貝)
 
+- name_use: yes
+
 ---
 
 ## 走
@@ -1900,6 +2160,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 156 (走)
+
+- name_use: yes
 
 ---
 
@@ -1915,6 +2177,8 @@ count: 160
 - kanken: 9
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 通
@@ -1929,6 +2193,8 @@ count: 160
 - kanken: 9
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 週
@@ -1941,6 +2207,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -1959,6 +2227,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วน 辶 (辵: การก้าวเดินบนถนน) เป็นส่วนบอกความหมาย ส่วน 首 (ศีรษะ/มุ่งหน้า) ทำหน้าที่บอกเสียงอ่านและทิศทาง สื่อถึงการก้าวเดินมุ่งหน้าไปตามทาง หมายถึง 'ถนน / เส้นทาง / วิถีทางคุณธรรม'
+
+- name_use: yes
 
 ### Origin Components
 
@@ -1989,6 +2259,8 @@ count: 160
 - kanken: 9
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 里
@@ -2002,6 +2274,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 166 (里)
+
+- name_use: yes
 
 ---
 
@@ -2017,6 +2291,8 @@ count: 160
 - kanken: 9
 - radical: 166 (里)
 
+- name_use: yes
+
 ---
 
 ## 長
@@ -2030,6 +2306,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 168 (長)
+
+- name_use: yes
 
 ---
 
@@ -2049,6 +2327,8 @@ count: 160
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: มาจากภาพวาดซุ้มประตูใหญ่สองบานที่เปิดปิดประกบกัน หมายถึง 'ซุ้มประตู / ประตูทางเข้า'
 
+- name_use: yes
+
 ---
 
 ## 間
@@ -2062,6 +2342,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 169 (門)
+
+- name_use: yes
 
 ---
 
@@ -2077,6 +2359,8 @@ count: 160
 - kanken: 9
 - radical: 173 (雨)
 
+- name_use: yes
+
 ---
 
 ## 雲
@@ -2091,6 +2375,8 @@ count: 160
 - kanken: 9
 - radical: 173 (雨)
 
+- name_use: yes
+
 ---
 
 ## 電
@@ -2103,6 +2389,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 173 (雨)
+
+- name_use: yes
 
 ---
 
@@ -2118,6 +2406,8 @@ count: 160
 - kanken: 9
 - radical: 181 (頁)
 
+- name_use: yes
+
 ---
 
 ## 顔
@@ -2131,6 +2421,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 
@@ -2150,6 +2442,8 @@ count: 160
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: ส่วนบน 亼 คือฝาปิดครอบภาชนะ ส่วนล่าง 皀 คือชามอาหารทรงสูงมีเชิงที่มีข้าวพูนอยู่ด้านใน สื่อถึง 'การรับประทานอาหารอันโอชะ'
 
+- name_use: yes
+
 ---
 
 ## 首
@@ -2163,6 +2457,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 185 (首)
+
+- name_use: yes
 
 ---
 
@@ -2182,6 +2478,8 @@ count: 160
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: มาจากภาพวาดม้าศึกเต็มตัว มีแผงคอด้านบน ตาโต ขาทั้งสี่ข้าง และหางพวง หมายถึง 'ม้า / อาชา'
 
+- name_use: yes
+
 ---
 
 ## 高
@@ -2195,6 +2493,8 @@ count: 160
 - jlpt: 5
 - kanken: 9
 - radical: 189 (高)
+
+- name_use: yes
 
 ---
 
@@ -2214,6 +2514,8 @@ count: 160
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: ส่วนบนคือหัวปลาแหลมคม ส่วนกลาง 田 คือเกล็ดและลำตัวปลา และส่วนล่าง 灬 คือครีบและหางปลาที่กำลังแหวกว่ายในสายน้ำ หมายถึง 'ปลา / มัจฉา'
 
+- name_use: yes
+
 ---
 
 ## 鳥
@@ -2231,6 +2533,8 @@ count: 160
 - origin_type: 象形文字
 - origin_type_th: อักษรภาพเลียนรูปทรง
 - origin_description: มาจากภาพวาดนกเกาะกิ่งไม้ โดยมีจะงอยปากแหลมคม ตา หางยาวสยาย และกรงเล็บ หมายถึง 'นก / สกุณา'
+
+- name_use: yes
 
 ---
 
@@ -2250,6 +2554,8 @@ count: 160
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: เกิดจาก 口 (ปาก) + 鳥 (นก) สื่อภาพนกที่กำลังอ้าปากส่งเสียงร้องขับขาน หมายถึง 'ส่งเสียงร้อง (สัตว์) / ดังกังวาน'
 
+- name_use: yes
+
 ---
 
 ## 麦
@@ -2263,6 +2569,8 @@ count: 160
 - jlpt: 1
 - kanken: 9
 - radical: 199 (麥)
+
+- name_use: yes
 
 ---
 
@@ -2278,6 +2586,8 @@ count: 160
 - kanken: 9
 - radical: 201 (黃)
 
+- name_use: yes
+
 ---
 
 ## 黒
@@ -2291,6 +2601,8 @@ count: 160
 - jlpt: 4
 - kanken: 9
 - radical: 203 (黑)
+
+- name_use: yes
 
 ---
 
@@ -2310,6 +2622,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วนบน 日 (ดวงอาทิตย์/แสงสว่างบนฟ้า) บ่งบอกความหมายดวงดาวระยิบระยับ ส่วนล่าง 生 ทำหน้าที่เป็นส่วนบอกเสียงอ่าน (音符: เซย์) สื่อถึงแสงดาวที่กำเนิดระยิบระยับบนฟ้าคราม หมายถึง 'ดวงดาว'
+
+- name_use: yes
 
 ### Examples
 
@@ -2340,6 +2654,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วนซ้าย 氵 (水: น้ำ) บ่งบอกความหมาย (意符) ว่าเกี่ยวกับผืนน้ำอันกว้างใหญ่ ส่วนขวา 毎 ทำหน้าที่เป็นส่วนบอกเสียงอ่าน (音符: ไค) และสื่อถึงความมืดมิดลึกล้ำ หมายถึง 'ทะเล / มหาสมุทร'
+
+- name_use: yes
 
 ### Examples
 
@@ -2374,6 +2690,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: กรอบนอก 几 สื่อถึงสายลมที่พัดกระพือโอบล้อม ส่วนด้านใน 虫 (แมลง) ตามความเชื่อจีนโบราณว่าสายลมในฤดูใบไม้ผลิพัดพาแมลงตัวเล็กๆ ให้ฟื้นตื่นขึ้น หมายถึง 'สายลม / บรรยากาศ'
+
+- name_use: yes
 
 ### Origin Components
 
@@ -2412,6 +2730,8 @@ count: 160
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: ส่วนซ้าย 言 (คำพูด/วาจา) เป็นส่วนบ่งบอกความหมาย (意符) ส่วนขวา 吾 (ข้าพเจ้า/ตนเอง) ทำหน้าที่เป็นส่วนบอกเสียงอ่าน (音符: โก) หมายถึง 'การเปล่งถ้อยคำเพื่อบอกเล่าความคิดของตนเอง ➔ ภาษา / ถ้อยคำ'
+
+- name_use: yes
 
 ### Examples
 

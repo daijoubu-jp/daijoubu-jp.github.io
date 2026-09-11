@@ -44,6 +44,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 伊
@@ -56,6 +58,8 @@ count: 74
 - strokes: 6
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -70,6 +74,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 肋
@@ -82,6 +88,8 @@ count: 74
 - strokes: 6
 - kanken: jun1
 - radical: 130 (肉)
+
+- name_use: yes
 
 ---
 
@@ -96,6 +104,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 伽
@@ -108,6 +118,8 @@ count: 74
 - strokes: 7
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -122,6 +134,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 佑
@@ -134,6 +148,8 @@ count: 74
 - strokes: 7
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -161,6 +177,8 @@ count: 74
 - kanken: jun1
 - radical: 39 (子)
 
+- name_use: yes
+
 ---
 
 ## 佼
@@ -186,6 +204,8 @@ count: 74
 - strokes: 8
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -252,6 +272,8 @@ count: 74
 - kanken: jun1
 - radical: 39 (子)
 
+- name_use: yes
+
 ---
 
 ## 肱
@@ -278,6 +300,8 @@ count: 74
 - kanken: jun1
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 俄
@@ -290,6 +314,8 @@ count: 74
 - strokes: 9
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -304,6 +330,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 俣
@@ -317,6 +345,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 姥
@@ -329,6 +359,8 @@ count: 74
 - strokes: 9
 - kanken: jun1
 - radical: 38 (女)
+
+- name_use: yes
 
 ---
 
@@ -356,6 +388,8 @@ count: 74
 - kanken: jun1
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 姶
@@ -382,6 +416,8 @@ count: 74
 - kanken: jun1
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 耶
@@ -394,6 +430,8 @@ count: 74
 - strokes: 9
 - kanken: jun1
 - radical: 128 (耳)
+
+- name_use: yes
 
 ---
 
@@ -408,6 +446,8 @@ count: 74
 - kanken: jun1
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 胤
@@ -420,6 +460,8 @@ count: 74
 - strokes: 9
 - kanken: jun1
 - radical: 130 (肉)
+
+- name_use: yes
 
 ---
 
@@ -434,6 +476,8 @@ count: 74
 - kanken: jun1
 - radical: 181 (頁)
 
+- name_use: yes
+
 ---
 
 ## 俱
@@ -446,6 +490,8 @@ count: 74
 - strokes: 10
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -460,6 +506,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 倦
@@ -473,6 +521,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 倭
@@ -485,6 +535,8 @@ count: 74
 - strokes: 10
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -512,6 +564,8 @@ count: 74
 - kanken: jun1
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 疹
@@ -537,6 +591,8 @@ count: 74
 - strokes: 10
 - kanken: jun1
 - radical: 128 (耳)
+
+- name_use: yes
 
 ---
 
@@ -576,6 +632,8 @@ count: 74
 - strokes: 11
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -642,6 +700,8 @@ count: 74
 - kanken: jun1
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 腔
@@ -655,6 +715,8 @@ count: 74
 - kanken: jun1
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 傭
@@ -667,6 +729,8 @@ count: 74
 - strokes: 13
 - kanken: jun1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -694,6 +758,8 @@ count: 74
 - kanken: jun1
 - radical: 128 (耳)
 
+- name_use: yes
+
 ---
 
 ## 腿
@@ -720,6 +786,8 @@ count: 74
 - kanken: jun1
 - radical: 130 (肉)
 
+- name_use: yes
+
 ---
 
 ## 頗
@@ -732,6 +800,8 @@ count: 74
 - strokes: 14
 - kanken: jun1
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 
@@ -771,6 +841,8 @@ count: 74
 - strokes: 15
 - kanken: jun1
 - radical: 38 (女)
+
+- name_use: yes
 
 ---
 
@@ -875,6 +947,8 @@ count: 74
 - kanken: jun1
 - radical: 109 (目)
 
+- name_use: yes
+
 ---
 
 ## 聯
@@ -914,6 +988,8 @@ count: 74
 - kanken: jun1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 軀
@@ -939,6 +1015,8 @@ count: 74
 - strokes: 19
 - kanken: jun1
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 

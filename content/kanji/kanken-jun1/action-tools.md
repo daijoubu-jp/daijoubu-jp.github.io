@@ -31,6 +31,8 @@ count: 102
 - kanken: jun1
 - radical: 57 (弓)
 
+- name_use: yes
+
 ---
 
 ## 戊
@@ -44,6 +46,8 @@ count: 102
 - kanken: jun1
 - radical: 62 (戈)
 
+- name_use: yes
+
 ---
 
 ## 弛
@@ -56,6 +60,8 @@ count: 102
 - strokes: 6
 - kanken: jun1
 - radical: 57 (弓)
+
+- name_use: yes
 
 ---
 
@@ -83,6 +89,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 辻
@@ -94,6 +102,8 @@ count: 102
 - strokes: 6
 - kanken: jun1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -121,6 +131,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 迂
@@ -133,6 +145,8 @@ count: 102
 - strokes: 7
 - kanken: jun1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -147,6 +161,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 或
@@ -159,6 +175,8 @@ count: 102
 - strokes: 8
 - kanken: jun1
 - radical: 62 (戈)
+
+- name_use: yes
 
 ---
 
@@ -173,6 +191,8 @@ count: 102
 - kanken: jun1
 - radical: 69 (斤)
 
+- name_use: yes
+
 ---
 
 ## 於
@@ -185,6 +205,8 @@ count: 102
 - strokes: 8
 - kanken: jun1
 - radical: 70 (方)
+
+- name_use: yes
 
 ---
 
@@ -212,6 +234,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 矧
@@ -238,6 +262,8 @@ count: 102
 - kanken: jun1
 - radical: 145 (衣)
 
+- name_use: yes
+
 ---
 
 ## 迦
@@ -249,6 +275,8 @@ count: 102
 - strokes: 9
 - kanken: jun1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -263,6 +291,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 挽
@@ -275,6 +305,8 @@ count: 102
 - strokes: 10
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -302,6 +334,8 @@ count: 102
 - kanken: jun1
 - radical: 111 (矢)
 
+- name_use: yes
+
 ---
 
 ## 紐
@@ -314,6 +348,8 @@ count: 102
 - strokes: 10
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -328,6 +364,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 紘
@@ -340,6 +378,8 @@ count: 102
 - strokes: 10
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -367,6 +407,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 捲
@@ -379,6 +421,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -393,6 +437,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 捺
@@ -406,6 +452,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 掠
@@ -418,6 +466,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -444,6 +494,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -484,6 +536,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 絃
@@ -496,6 +550,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -510,6 +566,8 @@ count: 102
 - kanken: jun1
 - radical: 137 (舟)
 
+- name_use: yes
+
 ---
 
 ## 袈
@@ -521,6 +579,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 145 (衣)
+
+- name_use: yes
 
 ---
 
@@ -534,6 +594,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 145 (衣)
+
+- name_use: yes
 
 ---
 
@@ -561,6 +623,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 這
@@ -574,6 +638,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 逢
@@ -586,6 +652,8 @@ count: 102
 - strokes: 11
 - kanken: jun1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -613,6 +681,8 @@ count: 102
 - kanken: jun1
 - radical: 62 (戈)
 
+- name_use: yes
+
 ---
 
 ## 揃
@@ -625,6 +695,8 @@ count: 102
 - strokes: 12
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -652,6 +724,8 @@ count: 102
 - kanken: jun1
 - radical: 66 (攴)
 
+- name_use: yes
+
 ---
 
 ## 斯
@@ -664,6 +738,8 @@ count: 102
 - strokes: 12
 - kanken: jun1
 - radical: 69 (斤)
+
+- name_use: yes
 
 ---
 
@@ -678,6 +754,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 裡
@@ -691,6 +769,8 @@ count: 102
 - kanken: jun1
 - radical: 145 (衣)
 
+- name_use: yes
+
 ---
 
 ## 遥
@@ -703,6 +783,8 @@ count: 102
 - strokes: 12
 - kanken: jun1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -742,6 +824,8 @@ count: 102
 - kanken: jun1
 - radical: 145 (衣)
 
+- name_use: yes
+
 ---
 
 ## 跨
@@ -754,6 +838,8 @@ count: 102
 - strokes: 13
 - kanken: jun1
 - radical: 157 (足)
+
+- name_use: yes
 
 ---
 
@@ -781,6 +867,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 劃
@@ -807,6 +895,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 摺
@@ -820,6 +910,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 綜
@@ -832,6 +924,8 @@ count: 102
 - strokes: 14
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -859,6 +953,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 綾
@@ -871,6 +967,8 @@ count: 102
 - strokes: 14
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -885,6 +983,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 裳
@@ -897,6 +997,8 @@ count: 102
 - strokes: 14
 - kanken: jun1
 - radical: 145 (衣)
+
+- name_use: yes
 
 ---
 
@@ -911,6 +1013,8 @@ count: 102
 - kanken: jun1
 - radical: 159 (車)
 
+- name_use: yes
+
 ---
 
 ## 劉
@@ -924,6 +1028,8 @@ count: 102
 - kanken: jun1
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 撒
@@ -936,6 +1042,8 @@ count: 102
 - strokes: 15
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -963,6 +1071,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 撫
@@ -975,6 +1085,8 @@ count: 102
 - strokes: 15
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -989,6 +1101,8 @@ count: 102
 - kanken: jun1
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 撰
@@ -1001,6 +1115,8 @@ count: 102
 - strokes: 15
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -1041,6 +1157,8 @@ count: 102
 - kanken: jun1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 彊
@@ -1067,6 +1185,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 蹄
@@ -1079,6 +1199,8 @@ count: 102
 - strokes: 16
 - kanken: jun1
 - radical: 157 (足)
+
+- name_use: yes
 
 ---
 
@@ -1093,6 +1215,8 @@ count: 102
 - kanken: jun1
 - radical: 159 (車)
 
+- name_use: yes
+
 ---
 
 ## 徽
@@ -1106,6 +1230,8 @@ count: 102
 - kanken: jun1
 - radical: 60 (彳)
 
+- name_use: yes
+
 ---
 
 ## 擢
@@ -1118,6 +1244,8 @@ count: 102
 - strokes: 17
 - kanken: jun1
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -1171,6 +1299,8 @@ count: 102
 - kanken: jun1
 - radical: 159 (車)
 
+- name_use: yes
+
 ---
 
 ## 擾
@@ -1197,6 +1327,8 @@ count: 102
 - kanken: jun1
 - radical: 145 (衣)
 
+- name_use: yes
+
 ---
 
 ## 蹟
@@ -1209,6 +1341,8 @@ count: 102
 - strokes: 18
 - kanken: jun1
 - radical: 157 (足)
+
+- name_use: yes
 
 ---
 
@@ -1223,6 +1357,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 繫
@@ -1235,6 +1371,8 @@ count: 102
 - strokes: 19
 - kanken: jun1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -1262,6 +1400,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 纏
@@ -1275,6 +1415,8 @@ count: 102
 - kanken: jun1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 轟
@@ -1287,6 +1429,8 @@ count: 102
 - strokes: 21
 - kanken: jun1
 - radical: 159 (車)
+
+- name_use: yes
 
 ---
 

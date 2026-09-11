@@ -34,7 +34,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "とぼしい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "乙",
@@ -78,7 +79,8 @@
     "meanings_ja": [
       "おと-",
       "きのと"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "了",
@@ -115,7 +117,8 @@
       "おわる",
       "さとる",
       "了解"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "企",
@@ -154,7 +157,8 @@
     ],
     "meanings_ja": [
       "くわだてる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "伏",
@@ -195,7 +199,8 @@
     "meanings_ja": [
       "ふす",
       "ふせる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "伐",
@@ -240,7 +245,8 @@
       "きる",
       "そむく",
       "うつ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "伴",
@@ -279,7 +285,8 @@
     ],
     "meanings_ja": [
       "ともなう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "伸",
@@ -319,7 +326,8 @@
       "のばす",
       "のびる",
       "のべる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "佳",
@@ -358,7 +366,8 @@
       "よい",
       "うつくしい",
       "佳作"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "侍",
@@ -398,7 +407,8 @@
     ],
     "meanings_ja": [
       "さむらい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "促",
@@ -436,7 +446,8 @@
     ],
     "meanings_ja": [
       "うながす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "倣",
@@ -468,7 +479,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ならう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "倹",
@@ -507,7 +519,8 @@
     "meanings_ja": [
       "つましい",
       "つづまやか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "偶",
@@ -548,7 +561,8 @@
     ],
     "meanings_ja": [
       "たま"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "催",
@@ -586,7 +600,8 @@
     ],
     "meanings_ja": [
       "もよおす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "債",
@@ -624,7 +639,8 @@
       "かり",
       "負債",
       "債権"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "克",
@@ -662,7 +678,8 @@
     ],
     "meanings_ja": [
       "かつ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "免",
@@ -699,7 +716,8 @@
     ],
     "meanings_ja": [
       "まぬかれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "冗",
@@ -734,7 +752,8 @@
       "むだ",
       "あまり",
       "冗談"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "冠",
@@ -771,7 +790,8 @@
     ],
     "meanings_ja": [
       "かんむり"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "凍",
@@ -810,7 +830,8 @@
     "meanings_ja": [
       "こおる",
       "こごえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "凝",
@@ -850,7 +871,8 @@
     "meanings_ja": [
       "こらす",
       "こる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "刑",
@@ -891,7 +913,8 @@
       "つみ",
       "しおき",
       "けいばつ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "削",
@@ -931,7 +954,8 @@
     ],
     "meanings_ja": [
       "けずる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "励",
@@ -968,7 +992,8 @@
     "meanings_ja": [
       "はげます",
       "はげむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "勘",
@@ -1008,7 +1033,8 @@
       "しらべる",
       "直感",
       "勘定"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "募",
@@ -1047,7 +1073,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "つのる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "匠",
@@ -1084,7 +1111,8 @@
     ],
     "meanings_ja": [
       "たくみ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "匿",
@@ -1124,7 +1152,8 @@
     ],
     "meanings_ja": [
       "かくまう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "卑",
@@ -1165,7 +1194,8 @@
       "いやしい",
       "いやしむ",
       "いやしめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "卓",
@@ -1207,7 +1237,8 @@
       "すぐれる",
       "机",
       "卓越"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "卸",
@@ -1242,7 +1273,8 @@
     "meanings_ja": [
       "おろし",
       "おろす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "厘",
@@ -1280,7 +1312,8 @@
       "りん",
       "わずか",
       "一厘"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "又",
@@ -1320,7 +1353,8 @@
     ],
     "meanings_ja": [
       "また"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "双",
@@ -1356,7 +1390,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ふた"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "吉",
@@ -1394,7 +1429,8 @@
     ],
     "meanings_ja": [
       "よし"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "吏",
@@ -1429,7 +1465,8 @@
       "役人",
       "つかさ",
       "官吏"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "哀",
@@ -1468,7 +1505,8 @@
     "meanings_ja": [
       "あわれ",
       "あわれむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "哲",
@@ -1506,7 +1544,8 @@
     "meanings_ja": [
       "さとい",
       "あきらか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "啓",
@@ -1546,7 +1585,8 @@
     "meanings_ja": [
       "ひらく",
       "さとす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "喚",
@@ -1587,7 +1627,8 @@
     ],
     "meanings_ja": [
       "わめく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "喫",
@@ -1628,7 +1669,8 @@
     ],
     "meanings_ja": [
       "のむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "嘱",
@@ -1667,7 +1709,8 @@
     "meanings_ja": [
       "しょくする",
       "たのむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "坑",
@@ -1702,7 +1745,8 @@
       "あな",
       "こうどう",
       "金坑"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "埋",
@@ -1741,7 +1785,8 @@
       "うまる",
       "うめる",
       "うもれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "塊",
@@ -1780,7 +1825,8 @@
     ],
     "meanings_ja": [
       "かたまり"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "塗",
@@ -1820,7 +1866,8 @@
     ],
     "meanings_ja": [
       "ぬる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "墜",
@@ -1858,7 +1905,8 @@
     "meanings_ja": [
       "おちる",
       "おつ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "墨",
@@ -1896,7 +1944,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "すみ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "墳",
@@ -1931,7 +1980,8 @@
       "つちやま",
       "はか",
       "古墳"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "墾",
@@ -1968,7 +2018,8 @@
     "meanings_ja": [
       "はる",
       "ひらく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "壇",
@@ -2005,7 +2056,8 @@
       "だん",
       "土盛りした場所",
       "祭壇"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "奉",
@@ -2044,7 +2096,8 @@
     ],
     "meanings_ja": [
       "たてまつる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "契",
@@ -2083,7 +2136,8 @@
     ],
     "meanings_ja": [
       "ちぎる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "奪",
@@ -2123,7 +2177,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "うばう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "如",
@@ -2166,7 +2221,8 @@
     ],
     "meanings_ja": [
       "ごとし"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "妨",
@@ -2204,7 +2260,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "さまたげる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "姫",
@@ -2237,7 +2294,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ひめ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "娯",
@@ -2272,7 +2330,8 @@
       "たのしむ",
       "気晴らし",
       "ごらく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "婆",
@@ -2311,7 +2370,8 @@
     "meanings_ja": [
       "ばば",
       "ばあ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "婿",
@@ -2344,7 +2404,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "むこ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "嫁",
@@ -2379,7 +2440,8 @@
     "meanings_ja": [
       "とつぐ",
       "よめ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "嬢",
@@ -2417,7 +2479,8 @@
     ],
     "meanings_ja": [
       "むすめ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "孔",
@@ -2460,7 +2523,8 @@
     ],
     "meanings_ja": [
       "あな"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "孤",
@@ -2497,7 +2561,8 @@
       "ひとり",
       "みなしご",
       "孤立"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "宴",
@@ -2535,7 +2600,8 @@
     ],
     "meanings_ja": [
       "うたげ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "審",
@@ -2574,7 +2640,8 @@
     "meanings_ja": [
       "つまびらか",
       "つぶさに"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "寿",
@@ -2613,7 +2680,8 @@
     ],
     "meanings_ja": [
       "ことぶき"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "封",
@@ -2651,7 +2719,8 @@
       "つつむ",
       "領地",
       "封筒"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "尿",
@@ -2690,7 +2759,8 @@
       "ゆばり",
       "いばり",
       "しと"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "岳",
@@ -2725,7 +2795,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "たけ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "峡",
@@ -2760,7 +2831,8 @@
     ],
     "meanings_ja": [
       "はざま"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "崩",
@@ -2798,7 +2870,8 @@
     "meanings_ja": [
       "くずす",
       "くずれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "巧",
@@ -2836,7 +2909,8 @@
     ],
     "meanings_ja": [
       "たくみ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "帆",
@@ -2867,7 +2941,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ほ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "帝",
@@ -2907,7 +2982,8 @@
     ],
     "meanings_ja": [
       "みかど"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "幻",
@@ -2946,7 +3022,8 @@
     ],
     "meanings_ja": [
       "まぼろし"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "幽",
@@ -2996,7 +3073,8 @@
       "かすか",
       "くらい",
       "しろい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "廉",
@@ -3046,7 +3124,8 @@
       "やすい",
       "かど",
       "清廉"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "廊",
@@ -3083,7 +3162,8 @@
       "わた殿",
       "わたり廊下",
       "廊下"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "弧",
@@ -3120,7 +3200,8 @@
       "ゆみ",
       "円弧",
       "弧線"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "彫",
@@ -3154,7 +3235,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ほる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "徐",
@@ -3192,7 +3274,8 @@
     ],
     "meanings_ja": [
       "おもむろに"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "忌",
@@ -3230,7 +3313,8 @@
     "meanings_ja": [
       "いまわしい",
       "いむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "怠",
@@ -3267,7 +3351,8 @@
     "meanings_ja": [
       "おこたる",
       "なまける"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "怪",
@@ -3306,7 +3391,8 @@
     "meanings_ja": [
       "あやしい",
       "あやしむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "恨",
@@ -3345,7 +3431,8 @@
     "meanings_ja": [
       "うらむ",
       "うらめしい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "悔",
@@ -3382,7 +3469,8 @@
       "くいる",
       "くやしい",
       "くやむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "悟",
@@ -3419,7 +3507,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "さとる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "悦",
@@ -3457,7 +3546,8 @@
     "meanings_ja": [
       "よろこぶ",
       "よろこばす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "惜",
@@ -3498,7 +3588,8 @@
     "meanings_ja": [
       "おしい",
       "おしむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "愚",
@@ -3534,7 +3625,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "おろか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "慈",
@@ -3565,7 +3657,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "いつくしむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "慌",
@@ -3602,7 +3695,8 @@
     "meanings_ja": [
       "あわただしい",
       "あわてる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "慕",
@@ -3640,7 +3734,8 @@
     ],
     "meanings_ja": [
       "したう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "慨",
@@ -3681,7 +3776,8 @@
     ],
     "meanings_ja": [
       "なげく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "慰",
@@ -3722,7 +3818,8 @@
     "meanings_ja": [
       "なぐさむ",
       "なぐさめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "憂",
@@ -3764,7 +3861,8 @@
       "うれい",
       "うれえる",
       "うい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "憎",
@@ -3803,7 +3901,8 @@
       "にくしみ",
       "にくむ",
       "にくらしい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "憩",
@@ -3841,7 +3940,8 @@
     "meanings_ja": [
       "いこい",
       "いこう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "房",
@@ -3885,7 +3985,8 @@
     ],
     "meanings_ja": [
       "ふさ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "抑",
@@ -3929,7 +4030,8 @@
     ],
     "meanings_ja": [
       "おさえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "択",
@@ -3966,7 +4068,8 @@
     ],
     "meanings_ja": [
       "えらぶ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "抽",
@@ -4005,7 +4108,8 @@
     ],
     "meanings_ja": [
       "ひき-"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "拘",
@@ -4046,7 +4150,8 @@
     ],
     "meanings_ja": [
       "かかわる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "掃",
@@ -4081,7 +4186,8 @@
     ],
     "meanings_ja": [
       "はく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "掌",
@@ -4123,7 +4229,8 @@
     "meanings_ja": [
       "てのひら",
       "たなごころ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "排",
@@ -4164,7 +4271,8 @@
       "おしのける",
       "ひらく",
       "はいじょ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "掛",
@@ -4209,7 +4317,8 @@
       "かかり",
       "かかる",
       "かける"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "控",
@@ -4249,7 +4358,8 @@
     ],
     "meanings_ja": [
       "ひかえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "措",
@@ -4292,7 +4402,8 @@
     ],
     "meanings_ja": [
       "おく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "掲",
@@ -4331,7 +4442,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "かかげる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "揚",
@@ -4371,7 +4483,8 @@
     "meanings_ja": [
       "あがる",
       "あげる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "換",
@@ -4411,7 +4524,8 @@
     "meanings_ja": [
       "かえる",
       "かわる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "揺",
@@ -4461,7 +4575,8 @@
       "ゆれる",
       "ゆらぐ",
       "ゆる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "携",
@@ -4501,7 +4616,8 @@
     "meanings_ja": [
       "たずさえる",
       "たずさわる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "搾",
@@ -4532,7 +4648,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "しぼる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "摂",
@@ -4577,7 +4694,8 @@
       "おさめる",
       "かねる",
       "とる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "撮",
@@ -4612,7 +4730,8 @@
     ],
     "meanings_ja": [
       "とる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "擁",
@@ -4653,7 +4772,8 @@
       "いだく",
       "まもる",
       "擁護"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "擦",
@@ -4695,7 +4815,8 @@
     "meanings_ja": [
       "する",
       "すれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "敢",
@@ -4738,7 +4859,8 @@
       "あえて",
       "あえない",
       "あえず"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "斗",
@@ -4779,7 +4901,8 @@
       "ます",
       "ひしゃく",
       "北斗七星"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "斤",
@@ -4818,7 +4941,8 @@
       "おの",
       "きん",
       "斤量"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "斥",
@@ -4859,7 +4983,8 @@
     ],
     "meanings_ja": [
       "しりぞける"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "施",
@@ -4898,7 +5023,8 @@
     ],
     "meanings_ja": [
       "ほどこす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "既",
@@ -4933,7 +5059,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "すでに"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "昇",
@@ -4964,7 +5091,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "のぼる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "晶",
@@ -5001,7 +5129,8 @@
       "あきらか",
       "かがやく",
       "結晶"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "暫",
@@ -5040,7 +5169,8 @@
     ],
     "meanings_ja": [
       "しばらく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "架",
@@ -5082,7 +5212,8 @@
     "meanings_ja": [
       "かかる",
       "かける"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "某",
@@ -5125,7 +5256,8 @@
     "meanings_ja": [
       "それがし",
       "なにがし"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "桑",
@@ -5156,7 +5288,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "くわ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "棄",
@@ -5196,7 +5329,8 @@
     ],
     "meanings_ja": [
       "すてる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "棋",
@@ -5233,7 +5367,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ご"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "楼",
@@ -5271,7 +5406,8 @@
     ],
     "meanings_ja": [
       "たかどの"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "概",
@@ -5311,7 +5447,8 @@
     ],
     "meanings_ja": [
       "おおむね"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "欧",
@@ -5346,7 +5483,8 @@
     "meanings_ja": [
       "うたう",
       "はく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "欺",
@@ -5382,7 +5520,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "あざむく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "殊",
@@ -5416,7 +5555,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "こと"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "殴",
@@ -5455,7 +5595,8 @@
     ],
     "meanings_ja": [
       "なぐる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "没",
@@ -5502,7 +5643,8 @@
       "おぼれる",
       "しずむ",
       "ない"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "泌",
@@ -5541,7 +5683,8 @@
     "meanings_ja": [
       "にじみ出る",
       "分泌"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "浪",
@@ -5583,7 +5726,8 @@
       "さすらう",
       "ほしいまま",
       "放浪"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "湾",
@@ -5617,7 +5761,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "いりえ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "湿",
@@ -5655,7 +5800,8 @@
     "meanings_ja": [
       "しめす",
       "しめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "滅",
@@ -5694,7 +5840,8 @@
     "meanings_ja": [
       "ほろびる",
       "ほろぼす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "滑",
@@ -5732,7 +5879,8 @@
     "meanings_ja": [
       "すべる",
       "なめらか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "滝",
@@ -5769,7 +5917,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "たき"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "滞",
@@ -5805,7 +5954,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "とどこおる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "漂",
@@ -5840,7 +5990,8 @@
     ],
     "meanings_ja": [
       "ただよう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "漏",
@@ -5879,7 +6030,8 @@
       "もらす",
       "もる",
       "もれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "潜",
@@ -5920,7 +6072,8 @@
     "meanings_ja": [
       "ひそむ",
       "もぐる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "潤",
@@ -5963,7 +6116,8 @@
       "うるおう",
       "うるおす",
       "うるむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "濫",
@@ -6004,7 +6158,8 @@
     "meanings_ja": [
       "みだりに",
       "みだりがましい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "瀬",
@@ -6043,7 +6198,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "せ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "炉",
@@ -6082,7 +6238,8 @@
     ],
     "meanings_ja": [
       "いろり"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "炊",
@@ -6117,7 +6274,8 @@
     ],
     "meanings_ja": [
       "たく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "炎",
@@ -6157,7 +6315,8 @@
     ],
     "origin_type": "会意文字",
     "origin_type_th": "อักษรประสมความหมาย",
-    "origin_description": "นำ 火 (ไฟ) สองดวงมาซ้อนทับกัน แสดงถึงเปลวเพลิงที่กำลังโหมกระหน่ำลุกโชติช่วงเป็นทวีคูณ หมายถึง 'เปลวไฟ / ร้อนแรง / อักเสบ'"
+    "origin_description": "นำ 火 (ไฟ) สองดวงมาซ้อนทับกัน แสดงถึงเปลวเพลิงที่กำลังโหมกระหน่ำลุกโชติช่วงเป็นทวีคูณ หมายถึง 'เปลวไฟ / ร้อนแรง / อักเสบ'",
+    "nameUse": true
   },
   {
     "kanji": "焦",
@@ -6202,7 +6361,8 @@
       "こがれる",
       "こげる",
       "あせる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "牲",
@@ -6236,7 +6396,8 @@
     "meanings_ja": [
       "いけにえ",
       "ぎせい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "犠",
@@ -6271,7 +6432,8 @@
     ],
     "meanings_ja": [
       "いけにえ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "猟",
@@ -6312,7 +6474,8 @@
     "meanings_ja": [
       "かり",
       "かる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "獄",
@@ -6347,7 +6510,8 @@
       "ひとや",
       "牢獄",
       "地獄"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "甲",
@@ -6390,7 +6554,8 @@
     ],
     "meanings_ja": [
       "きのえ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "畔",
@@ -6431,7 +6596,8 @@
       "あぜ",
       "くろ",
       "ほとり"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "畜",
@@ -6469,7 +6635,8 @@
       "かう",
       "養う",
       "かちく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "疾",
@@ -6504,7 +6671,8 @@
     ],
     "meanings_ja": [
       "はやい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "痘",
@@ -6538,7 +6706,8 @@
     "meanings_ja": [
       "天然痘",
       "ほうそう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "癖",
@@ -6576,7 +6745,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "くせ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "硬",
@@ -6609,7 +6779,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "かたい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "碑",
@@ -6644,7 +6815,8 @@
     ],
     "meanings_ja": [
       "いしぶみ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "礎",
@@ -6677,7 +6849,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "いしずえ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "祉",
@@ -6711,7 +6884,8 @@
     "meanings_ja": [
       "さいわい",
       "ふくし"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "稚",
@@ -6753,7 +6927,8 @@
       "おさない",
       "おくて",
       "おでる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "穂",
@@ -6789,7 +6964,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ほ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "穏",
@@ -6826,7 +7002,8 @@
     ],
     "meanings_ja": [
       "おだやか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "穫",
@@ -6861,7 +7038,8 @@
       "かる",
       "とりいれる",
       "収穫"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "窒",
@@ -6896,7 +7074,8 @@
       "ふさぐ",
       "息が詰まる",
       "窒息"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "符",
@@ -6936,7 +7115,8 @@
       "しるし",
       "符号",
       "切符"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "篤",
@@ -6975,7 +7155,8 @@
     ],
     "meanings_ja": [
       "あつい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "簿",
@@ -7012,7 +7193,8 @@
       "ちょうめん",
       "帳簿",
       "名簿"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "籍",
@@ -7053,7 +7235,8 @@
       "帳簿",
       "戸籍",
       "国籍"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "粋",
@@ -7093,7 +7276,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "いき"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "粗",
@@ -7129,7 +7313,8 @@
     ],
     "meanings_ja": [
       "あらい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "粘",
@@ -7166,7 +7351,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ねばる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "糧",
@@ -7202,7 +7388,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "かて"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "紛",
@@ -7244,7 +7431,8 @@
       "まぎらわしい",
       "まぎらわす",
       "まぎれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "紺",
@@ -7277,7 +7465,8 @@
       "こん",
       "濃い青色",
       "紺色"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "絞",
@@ -7316,7 +7505,8 @@
       "しぼる",
       "しまる",
       "しめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "綱",
@@ -7353,7 +7543,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "つな"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "緊",
@@ -7396,7 +7587,8 @@
     "meanings_ja": [
       "しめる",
       "しまる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "締",
@@ -7437,7 +7629,8 @@
     "meanings_ja": [
       "しまる",
       "しめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "緩",
@@ -7481,7 +7674,8 @@
       "ゆるむ",
       "ゆるめる",
       "ゆるやか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "縛",
@@ -7522,7 +7716,8 @@
     ],
     "meanings_ja": [
       "しばる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "縫",
@@ -7557,7 +7752,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ぬう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "繕",
@@ -7597,7 +7793,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "つくろう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "翻",
@@ -7638,7 +7835,8 @@
     "meanings_ja": [
       "ひるがえす",
       "ひるがえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "聴",
@@ -7678,7 +7876,8 @@
     ],
     "meanings_ja": [
       "きく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "肝",
@@ -7714,7 +7913,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "きも"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "胆",
@@ -7754,7 +7954,8 @@
     ],
     "meanings_ja": [
       "きも"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "胎",
@@ -7789,7 +7990,8 @@
       "やどす",
       "胎児",
       "胎生"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "胞",
@@ -7827,7 +8029,8 @@
       "つつむ",
       "細胞",
       "同胞"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "脅",
@@ -7864,7 +8067,8 @@
       "おどかす",
       "おどす",
       "おびやかす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "膜",
@@ -7899,7 +8103,8 @@
       "まく",
       "薄皮",
       "皮膜"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "膨",
@@ -7938,7 +8143,8 @@
     "meanings_ja": [
       "ふくらむ",
       "ふくれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "芳",
@@ -7977,7 +8183,8 @@
     ],
     "meanings_ja": [
       "かんばしい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "苗",
@@ -8016,7 +8223,8 @@
     "meanings_ja": [
       "なえ",
       "なわ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "菊",
@@ -8047,7 +8255,8 @@
       "きく",
       "菊の花",
       "菊花"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "華",
@@ -8091,7 +8300,8 @@
     ],
     "meanings_ja": [
       "はな"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "葬",
@@ -8126,7 +8336,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ほうむる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "藩",
@@ -8161,7 +8372,8 @@
       "まがき",
       "諸侯の領地",
       "藩主"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "虐",
@@ -8196,7 +8408,8 @@
     ],
     "meanings_ja": [
       "しいたげる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "虚",
@@ -8240,7 +8453,8 @@
     "meanings_ja": [
       "むなしい",
       "うつろ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "蛮",
@@ -8273,7 +8487,8 @@
     ],
     "meanings_ja": [
       "えびす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "衝",
@@ -8315,7 +8530,8 @@
     ],
     "meanings_ja": [
       "つく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "衰",
@@ -8353,7 +8569,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "おとろえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "袋",
@@ -8389,7 +8606,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ふくろ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "裂",
@@ -8428,7 +8646,8 @@
     "meanings_ja": [
       "さく",
       "さける"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "裸",
@@ -8464,7 +8683,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "はだか"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "覆",
@@ -8505,7 +8725,8 @@
       "おおう",
       "くつがえす",
       "くつがえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "訂",
@@ -8543,7 +8764,8 @@
     ],
     "meanings_ja": [
       "ただす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "託",
@@ -8587,7 +8809,8 @@
     "meanings_ja": [
       "かこつける",
       "かこつ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "詠",
@@ -8626,7 +8849,8 @@
     ],
     "meanings_ja": [
       "よむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "該",
@@ -8666,7 +8890,8 @@
       "あたる",
       "かねる",
       "該当"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "誘",
@@ -8709,7 +8934,8 @@
     ],
     "meanings_ja": [
       "さそう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "請",
@@ -8747,7 +8973,8 @@
     "meanings_ja": [
       "うける",
       "こう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "諮",
@@ -8780,7 +9007,8 @@
     ],
     "meanings_ja": [
       "はかる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "諾",
@@ -8816,7 +9044,8 @@
       "うべなう",
       "承諾",
       "はいと答える"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "謀",
@@ -8859,7 +9088,8 @@
     ],
     "meanings_ja": [
       "はかる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "譲",
@@ -8897,7 +9127,8 @@
     ],
     "meanings_ja": [
       "ゆずる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "豚",
@@ -8930,7 +9161,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "ぶた"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "貫",
@@ -8970,7 +9202,8 @@
     ],
     "meanings_ja": [
       "つらぬく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "賊",
@@ -9009,7 +9242,8 @@
       "そこなう",
       "ぬすびと",
       "海賊"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "賢",
@@ -9047,7 +9281,8 @@
     ],
     "meanings_ja": [
       "かしこい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "赦",
@@ -9082,7 +9317,8 @@
     ],
     "meanings_ja": [
       "ゆるす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "赴",
@@ -9120,7 +9356,8 @@
     ],
     "meanings_ja": [
       "おもむく"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "超",
@@ -9157,7 +9394,8 @@
     "meanings_ja": [
       "こえる",
       "こす"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "軌",
@@ -9197,7 +9435,8 @@
       "すじみち",
       "軌道",
       "軌跡"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "軸",
@@ -9239,7 +9478,8 @@
       "心棒",
       "軸足",
       "巻物"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "辛",
@@ -9278,7 +9518,8 @@
     ],
     "meanings_ja": [
       "からい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "辱",
@@ -9317,7 +9558,8 @@
     ],
     "meanings_ja": [
       "はずかしめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "逮",
@@ -9355,7 +9597,8 @@
       "およぶ",
       "とらえる",
       "逮捕"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "遂",
@@ -9395,7 +9638,8 @@
     ],
     "meanings_ja": [
       "とげる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "遇",
@@ -9439,7 +9683,8 @@
     ],
     "meanings_ja": [
       "あう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "遭",
@@ -9477,7 +9722,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "あう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "遵",
@@ -9517,7 +9763,8 @@
       "したがう",
       "まもる",
       "遵守"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "邦",
@@ -9554,7 +9801,8 @@
     ],
     "meanings_ja": [
       "くに"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "邪",
@@ -9594,7 +9842,8 @@
     ],
     "meanings_ja": [
       "よこしま"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "郊",
@@ -9628,7 +9877,8 @@
       "まちのそと",
       "こうがい",
       "近郊"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "郭",
@@ -9666,7 +9916,8 @@
     ],
     "meanings_ja": [
       "くるわ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "酔",
@@ -9703,7 +9954,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "よう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "酵",
@@ -9738,7 +9990,8 @@
       "酒のもと",
       "発酵",
       "酵母"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鋳",
@@ -9773,7 +10026,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "いる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "錠",
@@ -9810,7 +10064,8 @@
       "じょうまえ",
       "くすりのつぶ",
       "施錠"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "錬",
@@ -9849,7 +10104,8 @@
     ],
     "meanings_ja": [
       "ねる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "錯",
@@ -9890,7 +10146,8 @@
       "あやまる",
       "錯誤",
       "交錯"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鍛",
@@ -9925,7 +10182,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "きたえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鎮",
@@ -9962,7 +10220,8 @@
     "meanings_ja": [
       "しずまる",
       "しずめる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鐘",
@@ -9999,7 +10258,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "かね"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "閲",
@@ -10037,7 +10297,8 @@
     ],
     "meanings_ja": [
       "けみする"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "阻",
@@ -10078,7 +10339,8 @@
     ],
     "meanings_ja": [
       "はばむ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "陪",
@@ -10117,7 +10379,8 @@
       "そえる",
       "陪審",
       "陪席"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "陳",
@@ -10158,7 +10421,8 @@
     ],
     "meanings_ja": [
       "ひねる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "陵",
@@ -10197,7 +10461,8 @@
     ],
     "meanings_ja": [
       "みささぎ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "陶",
@@ -10234,7 +10499,8 @@
     ],
     "meanings_ja": [
       "すえ"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "隆",
@@ -10274,7 +10540,8 @@
       "さかえる",
       "隆盛",
       "隆起"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "随",
@@ -10323,7 +10590,8 @@
     "meanings_ja": [
       "まにまに",
       "したがう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "隔",
@@ -10362,7 +10630,8 @@
     "meanings_ja": [
       "へだたる",
       "へだてる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "隻",
@@ -10402,7 +10671,8 @@
       "ひとつ",
       "一隻",
       "隻手"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "雇",
@@ -10434,7 +10704,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "やとう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "零",
@@ -10479,7 +10750,8 @@
       "ぜろ",
       "こぼす",
       "こぼれる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "霊",
@@ -10515,7 +10787,8 @@
     ],
     "meanings_ja": [
       "たま"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "顧",
@@ -10552,7 +10825,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "かえりみる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "飽",
@@ -10590,7 +10864,8 @@
     "meanings_ja": [
       "あかす",
       "あきる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "餓",
@@ -10628,7 +10903,8 @@
     ],
     "meanings_ja": [
       "うえる"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "駐",
@@ -10668,7 +10944,8 @@
       "馬をとめる",
       "駐屯",
       "駐車"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "騎",
@@ -10706,7 +10983,8 @@
       "馬に乗る",
       "騎士",
       "騎手"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "髄",
@@ -10742,7 +11020,8 @@
       "骨の髄",
       "真髄",
       "骨髄"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "魂",
@@ -10776,7 +11055,8 @@
     ],
     "meanings_ja": [
       "たましい"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "魅",
@@ -10817,7 +11097,8 @@
       "ひきつける",
       "魅力",
       "魅惑"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "魔",
@@ -10854,7 +11135,8 @@
       "ま",
       "あくま",
       "まほう"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鯨",
@@ -10887,7 +11169,8 @@
     "kunyomi_hyougai": [],
     "meanings_ja": [
       "くじら"
-    ]
+    ],
+    "nameUse": true
   },
   {
     "kanji": "鶏",
@@ -10920,6 +11203,7 @@
     ],
     "meanings_ja": [
       "にわとり"
-    ]
+    ],
+    "nameUse": true
   }
 ]

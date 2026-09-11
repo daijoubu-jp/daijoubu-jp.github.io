@@ -135,6 +135,8 @@ count: 460
 - kanken: 1
 - radical: 49 (己)
 
+- name_use: yes
+
 ---
 
 ## 弋
@@ -628,6 +630,8 @@ count: 460
 - kanken: 1
 - radical: 48 (工)
 
+- name_use: yes
+
 ---
 
 ## 巵
@@ -1016,6 +1020,8 @@ count: 460
 - kanken: 1
 - radical: 116 (穴)
 
+- name_use: yes
+
 ---
 
 ## 竏
@@ -1094,6 +1100,8 @@ count: 460
 - kanken: 1
 - radical: 19 (力)
 
+- name_use: yes
+
 ---
 
 ## 匍
@@ -1171,6 +1179,8 @@ count: 460
 - strokes: 9
 - kanken: 1
 - radical: 37 (大)
+
+- name_use: yes
 
 ---
 
@@ -1313,6 +1323,8 @@ count: 460
 - kanken: 1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 珈
@@ -1325,6 +1337,8 @@ count: 460
 - strokes: 9
 - kanken: 1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -2155,6 +2169,8 @@ count: 460
 - kanken: 1
 - radical: 58 (彐)
 
+- name_use: yes
+
 ---
 
 ## 斛
@@ -2245,6 +2261,8 @@ count: 460
 - strokes: 11
 - kanken: 1
 - radical: 82 (毛)
+
+- name_use: yes
 
 ---
 
@@ -2645,6 +2663,8 @@ count: 460
 - kanken: 1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 琲
@@ -2747,6 +2767,8 @@ count: 460
 - strokes: 12
 - kanken: 1
 - radical: 106 (白)
+
+- name_use: yes
 
 ---
 
@@ -2851,6 +2873,8 @@ count: 460
 - strokes: 12
 - kanken: 1
 - radical: 124 (羽)
+
+- name_use: yes
 
 ---
 
@@ -2968,6 +2992,8 @@ count: 460
 - strokes: 12
 - kanken: 1
 - radical: 165 (釆)
+
+- name_use: yes
 
 ---
 
@@ -3251,6 +3277,8 @@ count: 460
 - strokes: 13
 - kanken: 1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -3924,6 +3952,8 @@ count: 460
 - kanken: 1
 - radical: 15 (冫)
 
+- name_use: yes
+
 ---
 
 ## 凜
@@ -3936,6 +3966,8 @@ count: 460
 - strokes: 15
 - kanken: 1
 - radical: 15 (冫)
+
+- name_use: yes
 
 ---
 
@@ -4310,6 +4342,8 @@ count: 460
 - strokes: 15
 - kanken: 1
 - radical: 202 (黍)
+
+- name_use: yes
 
 ---
 
@@ -5593,6 +5627,8 @@ count: 460
 - strokes: 21
 - kanken: 1
 - radical: 183 (飛)
+
+- name_use: yes
 
 ---
 

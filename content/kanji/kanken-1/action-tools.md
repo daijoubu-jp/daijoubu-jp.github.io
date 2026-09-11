@@ -639,6 +639,8 @@ count: 441
 - kanken: 1
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 剄
@@ -1314,6 +1316,8 @@ count: 441
 - kanken: 1
 - radical: 156 (走)
 
+- name_use: yes
+
 ---
 
 ## 迴
@@ -1665,6 +1669,8 @@ count: 441
 - kanken: 1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 舳
@@ -1946,6 +1952,8 @@ count: 441
 - strokes: 11
 - kanken: 1
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -3238,6 +3246,8 @@ count: 441
 - kanken: 1
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 綺
@@ -3250,6 +3260,8 @@ count: 441
 - strokes: 14
 - kanken: 1
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 

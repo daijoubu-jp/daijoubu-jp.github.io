@@ -18,6 +18,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 圭
@@ -30,6 +32,8 @@ count: 158
 - strokes: 6
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -44,6 +48,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 汐
@@ -56,6 +62,8 @@ count: 158
 - strokes: 6
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -70,6 +78,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 坐
@@ -82,6 +92,8 @@ count: 158
 - strokes: 7
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -96,6 +108,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 沌
@@ -108,6 +122,8 @@ count: 158
 - strokes: 7
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -122,6 +138,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 灼
@@ -134,6 +152,8 @@ count: 158
 - strokes: 7
 - kanken: jun1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -161,6 +181,8 @@ count: 158
 - kanken: jun1
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 尭
@@ -173,6 +195,8 @@ count: 158
 - strokes: 8
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -212,6 +236,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 昌
@@ -224,6 +250,8 @@ count: 158
 - strokes: 8
 - kanken: jun1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -238,6 +266,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 朋
@@ -250,6 +280,8 @@ count: 158
 - strokes: 8
 - kanken: jun1
 - radical: 74 (月)
+
+- name_use: yes
 
 ---
 
@@ -264,6 +296,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 沫
@@ -276,6 +310,8 @@ count: 158
 - strokes: 8
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -303,6 +339,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 洩
@@ -329,6 +367,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 峨
@@ -341,6 +381,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 46 (山)
+
+- name_use: yes
 
 ---
 
@@ -368,6 +410,8 @@ count: 158
 - kanken: jun1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 峻
@@ -380,6 +424,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 46 (山)
+
+- name_use: yes
 
 ---
 
@@ -394,6 +440,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 晋
@@ -406,6 +454,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -420,6 +470,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 朔
@@ -432,6 +484,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 74 (月)
+
+- name_use: yes
 
 ---
 
@@ -446,6 +500,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 浬
@@ -458,6 +514,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -511,6 +569,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 砥
@@ -524,6 +584,8 @@ count: 158
 - kanken: jun1
 - radical: 112 (石)
 
+- name_use: yes
+
 ---
 
 ## 砧
@@ -536,6 +598,8 @@ count: 158
 - strokes: 10
 - kanken: jun1
 - radical: 112 (石)
+
+- name_use: yes
 
 ---
 
@@ -576,6 +640,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 埜
@@ -588,6 +654,8 @@ count: 158
 - strokes: 11
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -615,6 +683,8 @@ count: 158
 - kanken: jun1
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 崕
@@ -641,6 +711,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 淀
@@ -654,6 +726,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 淋
@@ -666,6 +740,8 @@ count: 158
 - strokes: 11
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -693,6 +769,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 渕
@@ -718,6 +796,8 @@ count: 158
 - strokes: 11
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -758,6 +838,8 @@ count: 158
 - kanken: jun1
 - radical: 112 (石)
 
+- name_use: yes
+
 ---
 
 ## 釦
@@ -784,6 +866,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 雫
@@ -796,6 +880,8 @@ count: 158
 - strokes: 11
 - kanken: jun1
 - radical: 173 (雨)
+
+- name_use: yes
 
 ---
 
@@ -810,6 +896,8 @@ count: 158
 - kanken: jun1
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 堵
@@ -822,6 +910,8 @@ count: 158
 - strokes: 12
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -836,6 +926,8 @@ count: 158
 - kanken: jun1
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 智
@@ -849,6 +941,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 淵
@@ -861,6 +955,8 @@ count: 158
 - strokes: 12
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -888,6 +984,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 湊
@@ -901,6 +999,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 湘
@@ -912,6 +1012,8 @@ count: 158
 - strokes: 12
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -925,6 +1027,8 @@ count: 158
 - strokes: 12
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -952,6 +1056,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 焰
@@ -965,6 +1071,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 硯
@@ -977,6 +1085,8 @@ count: 158
 - strokes: 12
 - kanken: jun1
 - radical: 112 (石)
+
+- name_use: yes
 
 ---
 
@@ -1029,6 +1139,8 @@ count: 158
 - kanken: jun1
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 嵩
@@ -1042,6 +1154,8 @@ count: 158
 - kanken: jun1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 嵯
@@ -1054,6 +1168,8 @@ count: 158
 - strokes: 13
 - kanken: jun1
 - radical: 46 (山)
+
+- name_use: yes
 
 ---
 
@@ -1081,6 +1197,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 溢
@@ -1093,6 +1211,8 @@ count: 158
 - strokes: 13
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1120,6 +1240,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 煤
@@ -1132,6 +1254,8 @@ count: 158
 - strokes: 13
 - kanken: jun1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -1172,6 +1296,8 @@ count: 158
 - kanken: jun1
 - radical: 112 (石)
 
+- name_use: yes
+
 ---
 
 ## 碗
@@ -1184,6 +1310,8 @@ count: 158
 - strokes: 13
 - kanken: jun1
 - radical: 112 (石)
+
+- name_use: yes
 
 ---
 
@@ -1249,6 +1377,8 @@ count: 158
 - kanken: jun1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 暢
@@ -1261,6 +1391,8 @@ count: 158
 - strokes: 14
 - kanken: jun1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1288,6 +1420,8 @@ count: 158
 - kanken: jun1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 漣
@@ -1300,6 +1434,8 @@ count: 158
 - strokes: 14
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1353,6 +1489,8 @@ count: 158
 - kanken: jun1
 - radical: 112 (石)
 
+- name_use: yes
+
 ---
 
 ## 碩
@@ -1365,6 +1503,8 @@ count: 158
 - strokes: 14
 - kanken: jun1
 - radical: 112 (石)
+
+- name_use: yes
 
 ---
 
@@ -1391,6 +1531,8 @@ count: 158
 - strokes: 14
 - kanken: jun1
 - radical: 167 (金)
+
+- name_use: yes
 
 ---
 
@@ -1470,6 +1612,8 @@ count: 158
 - kanken: jun1
 - radical: 112 (石)
 
+- name_use: yes
+
 ---
 
 ## 鋒
@@ -1482,6 +1626,8 @@ count: 158
 - strokes: 15
 - kanken: jun1
 - radical: 167 (金)
+
+- name_use: yes
 
 ---
 
@@ -1548,6 +1694,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 鋸
@@ -1560,6 +1708,8 @@ count: 158
 - strokes: 16
 - kanken: jun1
 - radical: 167 (金)
+
+- name_use: yes
 
 ---
 
@@ -1574,6 +1724,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 錐
@@ -1587,6 +1739,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 錘
@@ -1599,6 +1753,8 @@ count: 158
 - strokes: 16
 - kanken: jun1
 - radical: 167 (金)
+
+- name_use: yes
 
 ---
 
@@ -1626,6 +1782,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 壕
@@ -1638,6 +1796,8 @@ count: 158
 - strokes: 17
 - kanken: jun1
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -1652,6 +1812,8 @@ count: 158
 - kanken: jun1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 曙
@@ -1664,6 +1826,8 @@ count: 158
 - strokes: 17
 - kanken: jun1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1690,6 +1854,8 @@ count: 158
 - strokes: 17
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1729,6 +1895,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 燭
@@ -1742,6 +1910,8 @@ count: 158
 - kanken: jun1
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 磯
@@ -1754,6 +1924,8 @@ count: 158
 - strokes: 17
 - kanken: jun1
 - radical: 112 (石)
+
+- name_use: yes
 
 ---
 
@@ -1794,6 +1966,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 鍾
@@ -1819,6 +1993,8 @@ count: 158
 - strokes: 17
 - kanken: jun1
 - radical: 173 (雨)
+
+- name_use: yes
 
 ---
 
@@ -1885,6 +2061,8 @@ count: 158
 - kanken: jun1
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 曝
@@ -1898,6 +2076,8 @@ count: 158
 - kanken: jun1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 瀕
@@ -1910,6 +2090,8 @@ count: 158
 - strokes: 19
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1976,6 +2158,8 @@ count: 158
 - kanken: jun1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 灌
@@ -2040,6 +2224,8 @@ count: 158
 - strokes: 22
 - kanken: jun1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 

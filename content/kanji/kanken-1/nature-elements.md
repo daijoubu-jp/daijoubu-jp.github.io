@@ -405,6 +405,8 @@ count: 407
 - kanken: 1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 沮
@@ -677,6 +679,8 @@ count: 407
 - kanken: 1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 昵
@@ -794,6 +798,8 @@ count: 407
 - kanken: 1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 洶
@@ -819,6 +825,8 @@ count: 407
 - strokes: 9
 - kanken: 1
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1027,6 +1035,8 @@ count: 407
 - kanken: 1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 晟
@@ -1039,6 +1049,8 @@ count: 407
 - strokes: 10
 - kanken: 1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1296,6 +1308,8 @@ count: 407
 - kanken: 1
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 崛
@@ -1412,6 +1426,8 @@ count: 407
 - strokes: 11
 - kanken: 1
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1866,6 +1882,8 @@ count: 407
 - kanken: 1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 湃
@@ -2161,6 +2179,8 @@ count: 407
 - kanken: 1
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 暘
@@ -2303,6 +2323,8 @@ count: 407
 - kanken: 1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 滓
@@ -2341,6 +2363,8 @@ count: 407
 - strokes: 13
 - kanken: 1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -2756,6 +2780,8 @@ count: 407
 - kanken: 1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 漲
@@ -2950,6 +2976,8 @@ count: 407
 - strokes: 14
 - kanken: 1
 - radical: 182 (風)
+
+- name_use: yes
 
 ---
 
@@ -3181,6 +3209,8 @@ count: 407
 - strokes: 15
 - kanken: 1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -3531,6 +3561,8 @@ count: 407
 - kanken: 1
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 澳
@@ -3620,6 +3652,8 @@ count: 407
 - strokes: 16
 - kanken: 1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -4277,6 +4311,8 @@ count: 407
 - strokes: 18
 - kanken: 1
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 

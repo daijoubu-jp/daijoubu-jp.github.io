@@ -301,6 +301,14 @@ def compile_kanji():
                             target["origin_type_th"] = v
                         elif k == "origin_description":
                             target["origin_description"] = v
+                        elif k == "name_use":
+                            val = v.strip().lower()
+                            if val in ("yes", "true", "1"):
+                                target["nameUse"] = True
+                            elif val in ("no", "false", "0"):
+                                target["nameUse"] = False
+                            else:
+                                validation_errors.append(f"{char}: invalid name_use {v!r}")
                         elif k == "traditional":
                             pass  # Traditional form is removed
                     elif mode == "examples":

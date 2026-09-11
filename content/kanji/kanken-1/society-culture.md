@@ -2267,6 +2267,8 @@ count: 451
 - kanken: 1
 - radical: 61 (心)
 
+- name_use: yes
+
 ---
 
 ## 惻
@@ -2796,6 +2798,8 @@ count: 451
 - strokes: 13
 - kanken: 1
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 
@@ -3729,6 +3733,8 @@ count: 451
 - strokes: 15
 - kanken: 1
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 

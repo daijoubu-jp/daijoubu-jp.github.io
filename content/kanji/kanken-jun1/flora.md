@@ -18,6 +18,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 李
@@ -31,6 +33,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 杏
@@ -43,6 +47,8 @@ count: 203
 - strokes: 7
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -70,6 +76,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 杜
@@ -82,6 +90,8 @@ count: 203
 - strokes: 7
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -121,6 +131,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 芥
@@ -134,6 +146,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 芭
@@ -145,6 +159,8 @@ count: 203
 - strokes: 7
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -158,6 +174,8 @@ count: 203
 - strokes: 7
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -185,6 +203,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 杵
@@ -197,6 +217,8 @@ count: 203
 - strokes: 8
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -211,6 +233,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 枇
@@ -223,6 +247,8 @@ count: 203
 - strokes: 8
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -237,6 +263,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 苑
@@ -249,6 +277,8 @@ count: 203
 - strokes: 8
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -289,6 +319,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 苧
@@ -328,6 +360,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 茅
@@ -340,6 +374,8 @@ count: 203
 - strokes: 8
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -367,6 +403,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 柏
@@ -379,6 +417,8 @@ count: 203
 - strokes: 9
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -393,6 +433,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 柘
@@ -405,6 +447,8 @@ count: 203
 - strokes: 9
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -419,6 +463,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 柾
@@ -430,6 +476,8 @@ count: 203
 - strokes: 9
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -457,6 +505,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 籾
@@ -468,6 +518,8 @@ count: 203
 - strokes: 9
 - kanken: jun1
 - radical: 119 (米)
+
+- name_use: yes
 
 ---
 
@@ -507,6 +559,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 茸
@@ -519,6 +573,8 @@ count: 203
 - strokes: 9
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -559,6 +615,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 栖
@@ -572,6 +630,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 栗
@@ -584,6 +644,8 @@ count: 203
 - strokes: 10
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -611,6 +673,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 桐
@@ -623,6 +687,8 @@ count: 203
 - strokes: 10
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -648,6 +714,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 桧
@@ -660,6 +728,8 @@ count: 203
 - strokes: 10
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -674,6 +744,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 秦
@@ -687,6 +759,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 笈
@@ -699,6 +773,8 @@ count: 203
 - strokes: 10
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -726,6 +802,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 莞
@@ -739,6 +817,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 莫
@@ -751,6 +831,8 @@ count: 203
 - strokes: 10
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -791,6 +873,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梁
@@ -803,6 +887,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -817,6 +903,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梢
@@ -829,6 +917,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -843,6 +933,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梯
@@ -855,6 +947,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -882,6 +976,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梼
@@ -907,6 +1003,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 笠
@@ -919,6 +1017,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -944,6 +1044,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -971,6 +1073,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 菖
@@ -984,6 +1088,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 菩
@@ -995,6 +1101,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1009,6 +1117,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 萄
@@ -1020,6 +1130,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1034,6 +1146,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 萌
@@ -1047,6 +1161,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 萠
@@ -1059,6 +1175,8 @@ count: 203
 - strokes: 11
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1086,6 +1204,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 椀
@@ -1099,6 +1219,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 椋
@@ -1111,6 +1233,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1137,6 +1261,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 筈
@@ -1149,6 +1275,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -1175,6 +1303,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 粟
@@ -1188,6 +1318,8 @@ count: 203
 - kanken: jun1
 - radical: 119 (米)
 
+- name_use: yes
+
 ---
 
 ## 粥
@@ -1200,6 +1332,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 119 (米)
+
+- name_use: yes
 
 ---
 
@@ -1240,6 +1374,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 萱
@@ -1252,6 +1388,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1277,6 +1415,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1304,6 +1444,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 葱
@@ -1330,6 +1472,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 葺
@@ -1342,6 +1486,8 @@ count: 203
 - strokes: 12
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1369,6 +1515,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 楊
@@ -1381,6 +1529,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1395,6 +1545,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 楕
@@ -1406,6 +1558,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1420,6 +1574,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 楠
@@ -1432,6 +1588,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1446,6 +1604,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 楯
@@ -1458,6 +1618,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1485,6 +1647,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 稗
@@ -1511,6 +1675,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 葦
@@ -1523,6 +1689,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1550,6 +1718,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蒔
@@ -1563,6 +1733,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蒙
@@ -1575,6 +1747,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1602,6 +1776,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蒼
@@ -1615,6 +1791,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蓉
@@ -1626,6 +1804,8 @@ count: 203
 - strokes: 13
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1640,6 +1820,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蓮
@@ -1653,6 +1835,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 榊
@@ -1664,6 +1848,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1678,6 +1864,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 榛
@@ -1690,6 +1878,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1704,6 +1894,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 槍
@@ -1716,6 +1908,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1730,6 +1924,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 樺
@@ -1742,6 +1938,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1769,6 +1967,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 箕
@@ -1782,6 +1982,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 蓬
@@ -1794,6 +1996,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1821,6 +2025,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蔚
@@ -1847,6 +2053,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蔦
@@ -1859,6 +2067,8 @@ count: 203
 - strokes: 14
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -1873,6 +2083,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 槻
@@ -1886,6 +2098,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 樋
@@ -1898,6 +2112,8 @@ count: 203
 - strokes: 15
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1924,6 +2140,8 @@ count: 203
 - strokes: 15
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1964,6 +2182,8 @@ count: 203
 - kanken: jun1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 糊
@@ -1976,6 +2196,8 @@ count: 203
 - strokes: 15
 - kanken: jun1
 - radical: 119 (米)
+
+- name_use: yes
 
 ---
 
@@ -2003,6 +2225,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蕉
@@ -2014,6 +2238,8 @@ count: 203
 - strokes: 15
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2054,6 +2280,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蕨
@@ -2066,6 +2294,8 @@ count: 203
 - strokes: 15
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2093,6 +2323,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 樫
@@ -2104,6 +2336,8 @@ count: 203
 - strokes: 16
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -2131,6 +2365,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 橘
@@ -2143,6 +2379,8 @@ count: 203
 - strokes: 16
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -2247,6 +2485,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 薇
@@ -2300,6 +2540,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 薙
@@ -2312,6 +2554,8 @@ count: 203
 - strokes: 16
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2352,6 +2596,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 檎
@@ -2363,6 +2609,8 @@ count: 203
 - strokes: 17
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -2377,6 +2625,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 篠
@@ -2389,6 +2639,8 @@ count: 203
 - strokes: 17
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -2441,6 +2693,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 薯
@@ -2466,6 +2720,8 @@ count: 203
 - strokes: 17
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2493,6 +2749,8 @@ count: 203
 - kanken: jun1
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 簞
@@ -2505,6 +2763,8 @@ count: 203
 - strokes: 18
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -2532,6 +2792,8 @@ count: 203
 - kanken: jun1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 櫛
@@ -2544,6 +2806,8 @@ count: 203
 - strokes: 19
 - kanken: jun1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -2570,6 +2834,8 @@ count: 203
 - strokes: 19
 - kanken: jun1
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -2610,6 +2876,8 @@ count: 203
 - kanken: jun1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 蘭
@@ -2622,6 +2890,8 @@ count: 203
 - strokes: 19
 - kanken: jun1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 

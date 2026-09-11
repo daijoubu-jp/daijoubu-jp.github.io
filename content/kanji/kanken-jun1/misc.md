@@ -18,6 +18,8 @@ count: 173
 - kanken: jun1
 - radical: 4 (丿)
 
+- name_use: yes
+
 ---
 
 ## 卜
@@ -30,6 +32,8 @@ count: 173
 - strokes: 2
 - kanken: jun1
 - radical: 25 (卜)
+
+- name_use: yes
 
 ---
 
@@ -57,6 +61,8 @@ count: 173
 - kanken: jun1
 - radical: 4 (丿)
 
+- name_use: yes
+
 ---
 
 ## 也
@@ -70,6 +76,8 @@ count: 173
 - kanken: jun1
 - radical: 5 (乙)
 
+- name_use: yes
+
 ---
 
 ## 勺
@@ -81,6 +89,8 @@ count: 173
 - strokes: 3
 - kanken: jun1
 - radical: 20 (勹)
+
+- name_use: yes
 
 ---
 
@@ -95,6 +105,8 @@ count: 173
 - kanken: jun1
 - radical: 29 (又)
 
+- name_use: yes
+
 ---
 
 ## 丑
@@ -107,6 +119,8 @@ count: 173
 - strokes: 4
 - kanken: jun1
 - radical: 1 (一)
+
+- name_use: yes
 
 ---
 
@@ -121,6 +135,8 @@ count: 173
 - kanken: jun1
 - radical: 7 (二)
 
+- name_use: yes
+
 ---
 
 ## 允
@@ -133,6 +149,8 @@ count: 173
 - strokes: 4
 - kanken: jun1
 - radical: 10 (儿)
+
+- name_use: yes
 
 ---
 
@@ -147,6 +165,8 @@ count: 173
 - kanken: jun1
 - radical: 20 (勹)
 
+- name_use: yes
+
 ---
 
 ## 匁
@@ -158,6 +178,8 @@ count: 173
 - strokes: 4
 - kanken: jun1
 - radical: 20 (勹)
+
+- name_use: yes
 
 ---
 
@@ -172,6 +194,8 @@ count: 173
 - kanken: jun1
 - radical: 33 (士)
 
+- name_use: yes
+
 ---
 
 ## 尤
@@ -185,6 +209,8 @@ count: 173
 - kanken: jun1
 - radical: 43 (尢)
 
+- name_use: yes
+
 ---
 
 ## 巴
@@ -197,6 +223,8 @@ count: 173
 - strokes: 4
 - kanken: jun1
 - radical: 49 (己)
+
+- name_use: yes
 
 ---
 
@@ -224,6 +252,8 @@ count: 173
 - kanken: jun1
 - radical: 55 (廾)
 
+- name_use: yes
+
 ---
 
 ## 乍
@@ -250,6 +280,8 @@ count: 173
 - kanken: jun1
 - radical: 4 (丿)
 
+- name_use: yes
+
 ---
 
 ## 凧
@@ -261,6 +293,8 @@ count: 173
 - strokes: 5
 - kanken: jun1
 - radical: 16 (几)
+
+- name_use: yes
 
 ---
 
@@ -288,6 +322,8 @@ count: 173
 - kanken: jun1
 - radical: 26 (卩)
 
+- name_use: yes
+
 ---
 
 ## 疋
@@ -300,6 +336,8 @@ count: 173
 - strokes: 5
 - kanken: jun1
 - radical: 103 (疋)
+
+- name_use: yes
 
 ---
 
@@ -314,6 +352,8 @@ count: 173
 - kanken: jun1
 - radical: 1 (一)
 
+- name_use: yes
+
 ---
 
 ## 亘
@@ -326,6 +366,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 7 (二)
+
+- name_use: yes
 
 ---
 
@@ -340,6 +382,8 @@ count: 173
 - kanken: jun1
 - radical: 7 (二)
 
+- name_use: yes
+
 ---
 
 ## 亥
@@ -353,6 +397,8 @@ count: 173
 - kanken: jun1
 - radical: 8 (亠)
 
+- name_use: yes
+
 ---
 
 ## 亦
@@ -365,6 +411,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 8 (亠)
+
+- name_use: yes
 
 ---
 
@@ -391,6 +439,8 @@ count: 173
 - kanken: jun1
 - radical: 16 (几)
 
+- name_use: yes
+
 ---
 
 ## 匡
@@ -403,6 +453,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 22 (匚)
+
+- name_use: yes
 
 ---
 
@@ -430,6 +482,8 @@ count: 173
 - kanken: jun1
 - radical: 37 (大)
 
+- name_use: yes
+
 ---
 
 ## 尖
@@ -442,6 +496,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 42 (小)
+
+- name_use: yes
 
 ---
 
@@ -456,6 +512,8 @@ count: 173
 - kanken: jun1
 - radical: 73 (曰)
 
+- name_use: yes
+
 ---
 
 ## 此
@@ -468,6 +526,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 77 (止)
+
+- name_use: yes
 
 ---
 
@@ -482,6 +542,8 @@ count: 173
 - kanken: jun1
 - radical: 97 (瓜)
 
+- name_use: yes
+
 ---
 
 ## 而
@@ -494,6 +556,8 @@ count: 173
 - strokes: 6
 - kanken: jun1
 - radical: 126 (而)
+
+- name_use: yes
 
 ---
 
@@ -534,6 +598,8 @@ count: 173
 - kanken: jun1
 - radical: 8 (亠)
 
+- name_use: yes
+
 ---
 
 ## 兎
@@ -546,6 +612,8 @@ count: 173
 - strokes: 7
 - kanken: jun1
 - radical: 10 (儿)
+
+- name_use: yes
 
 ---
 
@@ -560,6 +628,8 @@ count: 173
 - kanken: jun1
 - radical: 15 (冫)
 
+- name_use: yes
+
 ---
 
 ## 劫
@@ -573,6 +643,8 @@ count: 173
 - kanken: jun1
 - radical: 19 (力)
 
+- name_use: yes
+
 ---
 
 ## 玖
@@ -584,6 +656,8 @@ count: 173
 - strokes: 7
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -598,6 +672,8 @@ count: 173
 - kanken: jun1
 - radical: 101 (用)
 
+- name_use: yes
+
 ---
 
 ## 辰
@@ -611,6 +687,8 @@ count: 173
 - kanken: jun1
 - radical: 161 (辰)
 
+- name_use: yes
+
 ---
 
 ## 些
@@ -623,6 +701,8 @@ count: 173
 - strokes: 8
 - kanken: jun1
 - radical: 7 (二)
+
+- name_use: yes
 
 ---
 
@@ -650,6 +730,8 @@ count: 173
 - kanken: jun1
 - radical: 12 (八)
 
+- name_use: yes
+
 ---
 
 ## 函
@@ -662,6 +744,8 @@ count: 173
 - strokes: 8
 - kanken: jun1
 - radical: 17 (凵)
+
+- name_use: yes
 
 ---
 
@@ -689,6 +773,8 @@ count: 173
 - kanken: jun1
 - radical: 37 (大)
 
+- name_use: yes
+
 ---
 
 ## 帖
@@ -701,6 +787,8 @@ count: 173
 - strokes: 8
 - kanken: jun1
 - radical: 50 (巾)
+
+- name_use: yes
 
 ---
 
@@ -715,6 +803,8 @@ count: 173
 - kanken: jun1
 - radical: 76 (欠)
 
+- name_use: yes
+
 ---
 
 ## 亮
@@ -727,6 +817,8 @@ count: 173
 - strokes: 9
 - kanken: jun1
 - radical: 8 (亠)
+
+- name_use: yes
 
 ---
 
@@ -780,6 +872,8 @@ count: 173
 - kanken: jun1
 - radical: 49 (己)
 
+- name_use: yes
+
 ---
 
 ## 廻
@@ -792,6 +886,8 @@ count: 173
 - strokes: 9
 - kanken: jun1
 - radical: 54 (廴)
+
+- name_use: yes
 
 ---
 
@@ -819,6 +915,8 @@ count: 173
 - kanken: jun1
 - radical: 59 (彡)
 
+- name_use: yes
+
 ---
 
 ## 歪
@@ -844,6 +942,8 @@ count: 173
 - strokes: 9
 - kanken: jun1
 - radical: 78 (歹)
+
+- name_use: yes
 
 ---
 
@@ -871,6 +971,8 @@ count: 173
 - kanken: jun1
 - radical: 81 (比)
 
+- name_use: yes
+
 ---
 
 ## 玲
@@ -883,6 +985,8 @@ count: 173
 - kanken: jun1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 珂
@@ -894,6 +998,8 @@ count: 173
 - strokes: 9
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -908,6 +1014,8 @@ count: 173
 - kanken: jun1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 穿
@@ -921,6 +1029,8 @@ count: 173
 - kanken: jun1
 - radical: 116 (穴)
 
+- name_use: yes
+
 ---
 
 ## 臥
@@ -933,6 +1043,8 @@ count: 173
 - strokes: 9
 - kanken: jun1
 - radical: 131 (臣)
+
+- name_use: yes
 
 ---
 
@@ -986,6 +1098,8 @@ count: 173
 - kanken: jun1
 - radical: 15 (冫)
 
+- name_use: yes
+
 ---
 
 ## 匪
@@ -1012,6 +1126,8 @@ count: 173
 - kanken: jun1
 - radical: 31 (囗)
 
+- name_use: yes
+
 ---
 
 ## 套
@@ -1025,6 +1141,8 @@ count: 173
 - kanken: jun1
 - radical: 37 (大)
 
+- name_use: yes
+
 ---
 
 ## 屑
@@ -1037,6 +1155,8 @@ count: 173
 - strokes: 10
 - kanken: jun1
 - radical: 44 (尸)
+
+- name_use: yes
 
 ---
 
@@ -1062,6 +1182,8 @@ count: 173
 - strokes: 10
 - kanken: jun1
 - radical: 102 (田)
+
+- name_use: yes
 
 ---
 
@@ -1089,6 +1211,8 @@ count: 173
 - kanken: jun1
 - radical: 116 (穴)
 
+- name_use: yes
+
 ---
 
 ## 翆
@@ -1115,6 +1239,8 @@ count: 173
 - kanken: jun1
 - radical: 10 (儿)
 
+- name_use: yes
+
 ---
 
 ## 凰
@@ -1127,6 +1253,8 @@ count: 173
 - strokes: 11
 - kanken: jun1
 - radical: 16 (几)
+
+- name_use: yes
 
 ---
 
@@ -1167,6 +1295,8 @@ count: 173
 - kanken: jun1
 - radical: 59 (彡)
 
+- name_use: yes
+
 ---
 
 ## 彬
@@ -1180,6 +1310,8 @@ count: 173
 - kanken: jun1
 - radical: 59 (彡)
 
+- name_use: yes
+
 ---
 
 ## 琉
@@ -1191,6 +1323,8 @@ count: 173
 - strokes: 11
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1204,6 +1338,8 @@ count: 173
 - strokes: 11
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1231,6 +1367,8 @@ count: 173
 - kanken: jun1
 - radical: 102 (田)
 
+- name_use: yes
+
 ---
 
 ## 畦
@@ -1257,6 +1395,8 @@ count: 173
 - kanken: jun1
 - radical: 106 (白)
 
+- name_use: yes
+
 ---
 
 ## 凱
@@ -1269,6 +1409,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 16 (几)
+
+- name_use: yes
 
 ---
 
@@ -1283,6 +1425,8 @@ count: 173
 - kanken: jun1
 - radical: 26 (卩)
 
+- name_use: yes
+
 ---
 
 ## 厨
@@ -1295,6 +1439,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 27 (厂)
+
+- name_use: yes
 
 ---
 
@@ -1335,6 +1481,8 @@ count: 173
 - kanken: jun1
 - radical: 49 (己)
 
+- name_use: yes
+
 ---
 
 ## 斌
@@ -1361,6 +1509,8 @@ count: 173
 - kanken: jun1
 - radical: 67 (文)
 
+- name_use: yes
+
 ---
 
 ## 欽
@@ -1373,6 +1523,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 76 (欠)
+
+- name_use: yes
 
 ---
 
@@ -1399,6 +1551,8 @@ count: 173
 - kanken: jun1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 琵
@@ -1410,6 +1564,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1423,6 +1579,8 @@ count: 173
 - kanken: jun1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 瑛
@@ -1434,6 +1592,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1448,6 +1608,8 @@ count: 173
 - kanken: jun1
 - radical: 100 (生)
 
+- name_use: yes
+
 ---
 
 ## 疏
@@ -1461,6 +1623,8 @@ count: 173
 - kanken: jun1
 - radical: 103 (疋)
 
+- name_use: yes
+
 ---
 
 ## 竣
@@ -1473,6 +1637,8 @@ count: 173
 - strokes: 12
 - kanken: jun1
 - radical: 117 (立)
+
+- name_use: yes
 
 ---
 
@@ -1552,6 +1718,8 @@ count: 173
 - kanken: jun1
 - radical: 50 (巾)
 
+- name_use: yes
+
 ---
 
 ## 爺
@@ -1578,6 +1746,8 @@ count: 173
 - kanken: jun1
 - radical: 91 (片)
 
+- name_use: yes
+
 ---
 
 ## 瑚
@@ -1589,6 +1759,8 @@ count: 173
 - strokes: 13
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1602,6 +1774,8 @@ count: 173
 - strokes: 13
 - kanken: jun1
 - radical: 96 (玉)
+
+- name_use: yes
 
 ---
 
@@ -1629,6 +1803,8 @@ count: 173
 - kanken: jun1
 - radical: 114 (禸)
 
+- name_use: yes
+
 ---
 
 ## 罫
@@ -1654,6 +1830,8 @@ count: 173
 - kanken: jun1
 - radical: 136 (舛)
 
+- name_use: yes
+
 ---
 
 ## 靖
@@ -1667,6 +1845,8 @@ count: 173
 - kanken: jun1
 - radical: 174 (靑)
 
+- name_use: yes
+
 ---
 
 ## 鼎
@@ -1679,6 +1859,8 @@ count: 173
 - strokes: 13
 - kanken: jun1
 - radical: 206 (鼎)
+
+- name_use: yes
 
 ---
 
@@ -1705,6 +1887,8 @@ count: 173
 - strokes: 14
 - kanken: jun1
 - radical: 27 (厂)
+
+- name_use: yes
 
 ---
 
@@ -1758,6 +1942,8 @@ count: 173
 - kanken: jun1
 - radical: 68 (斗)
 
+- name_use: yes
+
 ---
 
 ## 爾
@@ -1770,6 +1956,8 @@ count: 173
 - strokes: 14
 - kanken: jun1
 - radical: 89 (爻)
+
+- name_use: yes
 
 ---
 
@@ -1784,6 +1972,8 @@ count: 173
 - kanken: jun1
 - radical: 96 (玉)
 
+- name_use: yes
+
 ---
 
 ## 窪
@@ -1796,6 +1986,8 @@ count: 173
 - strokes: 14
 - kanken: jun1
 - radical: 116 (穴)
+
+- name_use: yes
 
 ---
 
@@ -1810,6 +2002,8 @@ count: 173
 - kanken: jun1
 - radical: 117 (立)
 
+- name_use: yes
+
 ---
 
 ## 翠
@@ -1823,6 +2017,8 @@ count: 173
 - kanken: jun1
 - radical: 124 (羽)
 
+- name_use: yes
+
 ---
 
 ## 肇
@@ -1835,6 +2031,8 @@ count: 173
 - strokes: 14
 - kanken: jun1
 - radical: 129 (聿)
+
+- name_use: yes
 
 ---
 
@@ -1862,6 +2060,8 @@ count: 173
 - kanken: jun1
 - radical: 177 (革)
 
+- name_use: yes
+
 ---
 
 ## 㵎
@@ -1888,6 +2088,8 @@ count: 173
 - kanken: jun1
 - radical: 50 (巾)
 
+- name_use: yes
+
 ---
 
 ## 歎
@@ -1901,6 +2103,8 @@ count: 173
 - kanken: jun1
 - radical: 76 (欠)
 
+- name_use: yes
+
 ---
 
 ## 毅
@@ -1913,6 +2117,8 @@ count: 173
 - strokes: 15
 - kanken: jun1
 - radical: 79 (殳)
+
+- name_use: yes
 
 ---
 
@@ -1939,6 +2145,8 @@ count: 173
 - strokes: 15
 - kanken: jun1
 - radical: 177 (革)
+
+- name_use: yes
 
 ---
 
@@ -1979,6 +2187,8 @@ count: 173
 - kanken: jun1
 - radical: 29 (又)
 
+- name_use: yes
+
 ---
 
 ## 窺
@@ -1991,6 +2201,8 @@ count: 173
 - strokes: 16
 - kanken: jun1
 - radical: 116 (穴)
+
+- name_use: yes
 
 ---
 
@@ -2031,6 +2243,8 @@ count: 173
 - kanken: jun1
 - radical: 177 (革)
 
+- name_use: yes
+
 ---
 
 ## 髭
@@ -2057,6 +2271,8 @@ count: 173
 - kanken: jun1
 - radical: 203 (黑)
 
+- name_use: yes
+
 ---
 
 ## 瓢
@@ -2069,6 +2285,8 @@ count: 173
 - strokes: 17
 - kanken: jun1
 - radical: 97 (瓜)
+
+- name_use: yes
 
 ---
 
@@ -2109,6 +2327,8 @@ count: 173
 - kanken: jun1
 - radical: 177 (革)
 
+- name_use: yes
+
 ---
 
 ## 叢
@@ -2121,6 +2341,8 @@ count: 173
 - strokes: 18
 - kanken: jun1
 - radical: 29 (又)
+
+- name_use: yes
 
 ---
 
@@ -2135,6 +2357,8 @@ count: 173
 - kanken: jun1
 - radical: 177 (革)
 
+- name_use: yes
+
 ---
 
 ## 麿
@@ -2146,6 +2370,8 @@ count: 173
 - strokes: 18
 - kanken: jun1
 - radical: 200 (麻)
+
+- name_use: yes
 
 ---
 
@@ -2186,6 +2412,8 @@ count: 173
 - kanken: jun1
 - radical: 124 (羽)
 
+- name_use: yes
+
 ---
 
 ## 馨
@@ -2198,6 +2426,8 @@ count: 173
 - strokes: 20
 - kanken: jun1
 - radical: 186 (香)
+
+- name_use: yes
 
 ---
 

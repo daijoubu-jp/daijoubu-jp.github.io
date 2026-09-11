@@ -17,6 +17,8 @@ count: 202
 - kanken: 7
 - radical: 1 (一)
 
+- name_use: yes
+
 ---
 
 ## 争
@@ -30,6 +32,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 6 (亅)
+
+- name_use: yes
 
 ---
 
@@ -45,6 +49,8 @@ count: 202
 - kanken: 7
 - radical: 7 (二)
 
+- name_use: yes
+
 ---
 
 ## 付
@@ -59,6 +65,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 令
@@ -71,6 +79,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -86,6 +96,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 仲
@@ -99,6 +111,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -114,6 +128,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 位
@@ -127,6 +143,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -142,6 +160,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 佐
@@ -154,6 +174,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -169,6 +191,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 便
@@ -182,6 +206,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -200,6 +226,8 @@ count: 202
 - origin_type_th: อักษรประสมความหมาย
 - origin_description: เกิดจาก 人 (มนุษย์) + 言 (คำพูด) สื่อถึง 'คำพูดของมนุษย์ที่ยึดถือได้และไม่บิดเบือน' หมายถึง 'ความจริงใจ / ความเชื่อถือ / ศรัทธา'
 
+- name_use: yes
+
 ---
 
 ## 倉
@@ -213,6 +241,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -228,6 +258,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 借
@@ -241,6 +273,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -256,6 +290,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 側
@@ -269,6 +305,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -284,6 +322,8 @@ count: 202
 - kanken: 7
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 億
@@ -296,6 +336,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -311,6 +353,8 @@ count: 202
 - kanken: 7
 - radical: 10 (儿)
 
+- name_use: yes
+
 ---
 
 ## 児
@@ -324,6 +368,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 10 (儿)
+
+- name_use: yes
 
 ---
 
@@ -339,6 +385,8 @@ count: 202
 - kanken: 7
 - radical: 12 (八)
 
+- name_use: yes
+
 ---
 
 ## 兵
@@ -352,6 +400,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 12 (八)
+
+- name_use: yes
 
 ---
 
@@ -367,6 +417,8 @@ count: 202
 - kanken: 7
 - radical: 12 (八)
 
+- name_use: yes
+
 ---
 
 ## 冷
@@ -380,6 +432,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 15 (冫)
+
+- name_use: yes
 
 ---
 
@@ -395,6 +449,8 @@ count: 202
 - kanken: 7
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 別
@@ -408,6 +464,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 18 (刀)
+
+- name_use: yes
 
 ---
 
@@ -423,6 +481,8 @@ count: 202
 - kanken: 7
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 刷
@@ -437,6 +497,8 @@ count: 202
 - kanken: 7
 - radical: 18 (刀)
 
+- name_use: yes
+
 ---
 
 ## 副
@@ -449,6 +511,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 18 (刀)
+
+- name_use: yes
 
 ---
 
@@ -464,6 +528,8 @@ count: 202
 - kanken: 7
 - radical: 19 (力)
 
+- name_use: yes
+
 ---
 
 ## 加
@@ -477,6 +543,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 19 (力)
+
+- name_use: yes
 
 ---
 
@@ -492,6 +560,8 @@ count: 202
 - kanken: 7
 - radical: 19 (力)
 
+- name_use: yes
+
 ---
 
 ## 労
@@ -505,6 +575,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 19 (力)
+
+- name_use: yes
 
 ---
 
@@ -520,6 +592,8 @@ count: 202
 - kanken: 7
 - radical: 19 (力)
 
+- name_use: yes
+
 ---
 
 ## 包
@@ -533,6 +607,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 20 (勹)
+
+- name_use: yes
 
 ---
 
@@ -548,6 +624,8 @@ count: 202
 - kanken: 7
 - radical: 24 (十)
 
+- name_use: yes
+
 ---
 
 ## 協
@@ -560,6 +638,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 24 (十)
+
+- name_use: yes
 
 ---
 
@@ -575,6 +655,8 @@ count: 202
 - kanken: 7
 - radical: 24 (十)
 
+- name_use: yes
+
 ---
 
 ## 博
@@ -587,6 +669,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 24 (十)
+
+- name_use: yes
 
 ---
 
@@ -601,6 +685,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 26 (卩)
+
+- name_use: yes
 
 ---
 
@@ -617,6 +703,8 @@ count: 202
 - radical: 28 (厶)
 - notes: 大字 (Daiji) for 三 used in legal and financial documents to prevent fraud. (อักษรคันจิทางการสำหรับเลข 3 เพื่อป้องกันการแก้ไขในเอกสารการเงิน)
 
+- name_use: yes
+
 ---
 
 ## 司
@@ -630,6 +718,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 30 (口)
+
+- name_use: yes
 
 ---
 
@@ -645,6 +735,8 @@ count: 202
 - kanken: 7
 - radical: 30 (口)
 
+- name_use: yes
+
 ---
 
 ## 周
@@ -658,6 +750,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 30 (口)
+
+- name_use: yes
 
 ---
 
@@ -673,6 +767,8 @@ count: 202
 - kanken: 7
 - radical: 30 (口)
 
+- name_use: yes
+
 ---
 
 ## 器
@@ -686,6 +782,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 30 (口)
+
+- name_use: yes
 
 ---
 
@@ -701,6 +799,8 @@ count: 202
 - kanken: 7
 - radical: 31 (囗)
 
+- name_use: yes
+
 ---
 
 ## 城
@@ -714,6 +814,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -729,6 +831,8 @@ count: 202
 - kanken: 7
 - radical: 32 (土)
 
+- name_use: yes
+
 ---
 
 ## 塩
@@ -742,6 +846,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 32 (土)
+
+- name_use: yes
 
 ---
 
@@ -757,6 +863,8 @@ count: 202
 - kanken: 7
 - radical: 34 (夂)
 
+- name_use: yes
+
 ---
 
 ## 夫
@@ -770,6 +878,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 37 (大)
+
+- name_use: yes
 
 ---
 
@@ -785,6 +895,8 @@ count: 202
 - kanken: 7
 - radical: 37 (大)
 
+- name_use: yes
+
 ---
 
 ## 奈
@@ -798,6 +910,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 37 (大)
+
+- name_use: yes
 
 ---
 
@@ -813,6 +927,8 @@ count: 202
 - kanken: 7
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 媛
@@ -827,6 +943,8 @@ count: 202
 - kanken: 7
 - radical: 38 (女)
 
+- name_use: yes
+
 ---
 
 ## 季
@@ -839,6 +957,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 39 (子)
+
+- name_use: yes
 
 ---
 
@@ -854,6 +974,8 @@ count: 202
 - kanken: 7
 - radical: 39 (子)
 
+- name_use: yes
+
 ---
 
 ## 完
@@ -866,6 +988,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 40 (宀)
+
+- name_use: yes
 
 ---
 
@@ -880,6 +1004,8 @@ count: 202
 - kanken: 7
 - radical: 40 (宀)
 
+- name_use: yes
+
 ---
 
 ## 害
@@ -892,6 +1018,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 40 (宀)
+
+- name_use: yes
 
 ---
 
@@ -907,6 +1035,8 @@ count: 202
 - kanken: 7
 - radical: 40 (宀)
 
+- name_use: yes
+
 ---
 
 ## 察
@@ -920,6 +1050,8 @@ count: 202
 - kanken: 7
 - radical: 40 (宀)
 
+- name_use: yes
+
 ---
 
 ## 岐
@@ -932,6 +1064,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 46 (山)
+
+- name_use: yes
 
 ---
 
@@ -947,6 +1081,8 @@ count: 202
 - kanken: 7
 - radical: 46 (山)
 
+- name_use: yes
+
 ---
 
 ## 崎
@@ -960,6 +1096,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 46 (山)
+
+- name_use: yes
 
 ---
 
@@ -975,6 +1113,8 @@ count: 202
 - kanken: 7
 - radical: 47 (巛)
 
+- name_use: yes
+
 ---
 
 ## 差
@@ -988,6 +1128,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 48 (工)
+
+- name_use: yes
 
 ---
 
@@ -1003,6 +1145,8 @@ count: 202
 - kanken: 7
 - radical: 50 (巾)
 
+- name_use: yes
+
 ---
 
 ## 席
@@ -1016,6 +1160,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 50 (巾)
+
+- name_use: yes
 
 ---
 
@@ -1031,6 +1177,8 @@ count: 202
 - kanken: 7
 - radical: 50 (巾)
 
+- name_use: yes
+
 ---
 
 ## 底
@@ -1045,6 +1193,8 @@ count: 202
 - kanken: 7
 - radical: 53 (广)
 
+- name_use: yes
+
 ---
 
 ## 府
@@ -1058,6 +1208,8 @@ count: 202
 - kanken: 7
 - radical: 53 (广)
 
+- name_use: yes
+
 ---
 
 ## 康
@@ -1070,6 +1222,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 53 (广)
+
+- name_use: yes
 
 ---
 
@@ -1085,6 +1239,8 @@ count: 202
 - kanken: 7
 - radical: 54 (廴)
 
+- name_use: yes
+
 ---
 
 ## 径
@@ -1098,6 +1254,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 60 (彳)
+
+- name_use: yes
 
 ---
 
@@ -1113,6 +1271,8 @@ count: 202
 - kanken: 7
 - radical: 60 (彳)
 
+- name_use: yes
+
 ---
 
 ## 徳
@@ -1125,6 +1285,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 60 (彳)
+
+- name_use: yes
 
 ---
 
@@ -1140,6 +1302,8 @@ count: 202
 - kanken: 7
 - radical: 61 (心)
 
+- name_use: yes
+
 ---
 
 ## 念
@@ -1152,6 +1316,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 61 (心)
+
+- name_use: yes
 
 ---
 
@@ -1167,6 +1333,8 @@ count: 202
 - kanken: 7
 - radical: 62 (戈)
 
+- name_use: yes
+
 ---
 
 ## 戦
@@ -1180,6 +1348,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 62 (戈)
+
+- name_use: yes
 
 ---
 
@@ -1195,6 +1365,8 @@ count: 202
 - kanken: 7
 - radical: 64 (手)
 
+- name_use: yes
+
 ---
 
 ## 挙
@@ -1208,6 +1380,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 64 (手)
+
+- name_use: yes
 
 ---
 
@@ -1223,6 +1397,8 @@ count: 202
 - kanken: 7
 - radical: 66 (攴)
 
+- name_use: yes
+
 ---
 
 ## 敗
@@ -1236,6 +1412,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 66 (攴)
+
+- name_use: yes
 
 ---
 
@@ -1251,6 +1429,8 @@ count: 202
 - kanken: 7
 - radical: 66 (攴)
 
+- name_use: yes
+
 ---
 
 ## 料
@@ -1263,6 +1443,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 68 (斗)
+
+- name_use: yes
 
 ---
 
@@ -1278,6 +1460,8 @@ count: 202
 - kanken: 7
 - radical: 70 (方)
 
+- name_use: yes
+
 ---
 
 ## 昨
@@ -1291,6 +1475,8 @@ count: 202
 - kanken: 7
 - radical: 72 (日)
 
+- name_use: yes
+
 ---
 
 ## 景
@@ -1303,6 +1489,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 72 (日)
+
+- name_use: yes
 
 ---
 
@@ -1318,6 +1506,8 @@ count: 202
 - kanken: 7
 - radical: 73 (曰)
 
+- name_use: yes
+
 ---
 
 ## 望
@@ -1332,6 +1522,8 @@ count: 202
 - kanken: 7
 - radical: 74 (月)
 
+- name_use: yes
+
 ---
 
 ## 未
@@ -1345,6 +1537,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1363,6 +1557,8 @@ count: 202
 - origin_type: 指事文字
 - origin_type_th: อักษรสัญลักษณ์เชิงนามธรรม
 - origin_description: ต่อยอดจากคันจิ 木 (ต้นไม้) โดยเติมขีดแนวนอนยาวที่บริเวณยอดกิ่งไม้ด้านบน เพื่อชี้ระบุถึง 'ปลายยอดไม้' แล้วขยายความหมายสู่ 'ปลายทาง / ท้ายสุด'
+
+- name_use: yes
 
 ### Origin Components
 
@@ -1383,6 +1579,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 材
@@ -1395,6 +1593,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1410,6 +1610,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 松
@@ -1423,6 +1625,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1438,6 +1642,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 栃
@@ -1451,6 +1657,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1466,6 +1674,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 案
@@ -1479,6 +1689,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1494,6 +1706,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梨
@@ -1507,6 +1721,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1522,6 +1738,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 極
@@ -1535,6 +1753,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1550,6 +1770,8 @@ count: 202
 - kanken: 7
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 機
@@ -1563,6 +1785,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
@@ -1578,6 +1802,8 @@ count: 202
 - kanken: 7
 - radical: 76 (欠)
 
+- name_use: yes
+
 ---
 
 ## 残
@@ -1591,6 +1817,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 78 (歹)
+
+- name_use: yes
 
 ---
 
@@ -1606,6 +1834,8 @@ count: 202
 - kanken: 7
 - radical: 83 (氏)
 
+- name_use: yes
+
 ---
 
 ## 民
@@ -1619,6 +1849,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 83 (氏)
+
+- name_use: yes
 
 ---
 
@@ -1634,6 +1866,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 沖
@@ -1647,6 +1881,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1662,6 +1898,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 法
@@ -1675,6 +1913,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1690,6 +1930,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 浅
@@ -1703,6 +1945,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1718,6 +1962,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 清
@@ -1731,6 +1977,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1746,6 +1994,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 滋
@@ -1758,6 +2008,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1773,6 +2025,8 @@ count: 202
 - kanken: 7
 - radical: 85 (水)
 
+- name_use: yes
+
 ---
 
 ## 潟
@@ -1786,6 +2040,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 85 (水)
+
+- name_use: yes
 
 ---
 
@@ -1801,6 +2057,8 @@ count: 202
 - kanken: 7
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 無
@@ -1814,6 +2072,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -1829,6 +2089,8 @@ count: 202
 - kanken: 7
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 焼
@@ -1842,6 +2104,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -1857,6 +2121,8 @@ count: 202
 - kanken: 7
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 熊
@@ -1870,6 +2136,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 86 (火)
+
+- name_use: yes
 
 ---
 
@@ -1885,6 +2153,8 @@ count: 202
 - kanken: 7
 - radical: 86 (火)
 
+- name_use: yes
+
 ---
 
 ## 牧
@@ -1899,6 +2169,8 @@ count: 202
 - kanken: 7
 - radical: 93 (牛)
 
+- name_use: yes
+
 ---
 
 ## 特
@@ -1911,6 +2183,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 93 (牛)
+
+- name_use: yes
 
 ---
 
@@ -1926,6 +2200,8 @@ count: 202
 - kanken: 7
 - radical: 100 (生)
 
+- name_use: yes
+
 ---
 
 ## 的
@@ -1939,6 +2215,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 106 (白)
+
+- name_use: yes
 
 ---
 
@@ -1954,6 +2232,8 @@ count: 202
 - kanken: 7
 - radical: 109 (目)
 
+- name_use: yes
+
 ---
 
 ## 祝
@@ -1968,6 +2248,8 @@ count: 202
 - kanken: 7
 - radical: 113 (示)
 
+- name_use: yes
+
 ---
 
 ## 票
@@ -1980,6 +2262,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 113 (示)
+
+- name_use: yes
 
 ---
 
@@ -1995,6 +2279,8 @@ count: 202
 - kanken: 7
 - radical: 115 (禾)
 
+- name_use: yes
+
 ---
 
 ## 積
@@ -2008,6 +2294,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 115 (禾)
+
+- name_use: yes
 
 ---
 
@@ -2023,6 +2311,8 @@ count: 202
 - kanken: 7
 - radical: 117 (立)
 
+- name_use: yes
+
 ---
 
 ## 笑
@@ -2036,6 +2326,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -2051,6 +2343,8 @@ count: 202
 - kanken: 7
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 節
@@ -2064,6 +2358,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 118 (竹)
+
+- name_use: yes
 
 ---
 
@@ -2079,6 +2375,8 @@ count: 202
 - kanken: 7
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 結
@@ -2092,6 +2390,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -2107,6 +2407,8 @@ count: 202
 - kanken: 7
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 続
@@ -2120,6 +2422,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 120 (糸)
+
+- name_use: yes
 
 ---
 
@@ -2135,6 +2439,8 @@ count: 202
 - kanken: 7
 - radical: 120 (糸)
 
+- name_use: yes
+
 ---
 
 ## 置
@@ -2148,6 +2454,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 122 (网)
+
+- name_use: yes
 
 ---
 
@@ -2163,6 +2471,8 @@ count: 202
 - kanken: 7
 - radical: 123 (羊)
 
+- name_use: yes
+
 ---
 
 ## 老
@@ -2177,6 +2487,8 @@ count: 202
 - kanken: 7
 - radical: 125 (老)
 
+- name_use: yes
+
 ---
 
 ## 臣
@@ -2189,6 +2501,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 131 (臣)
+
+- name_use: yes
 
 ---
 
@@ -2204,6 +2518,8 @@ count: 202
 - kanken: 7
 - radical: 138 (艮)
 
+- name_use: yes
+
 ---
 
 ## 芸
@@ -2217,6 +2533,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2232,6 +2550,8 @@ count: 202
 - kanken: 7
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 英
@@ -2245,6 +2565,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2260,6 +2582,8 @@ count: 202
 - kanken: 7
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 菜
@@ -2273,6 +2597,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2288,6 +2614,8 @@ count: 202
 - kanken: 7
 - radical: 144 (行)
 
+- name_use: yes
+
 ---
 
 ## 衣
@@ -2301,6 +2629,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 145 (衣)
+
+- name_use: yes
 
 ---
 
@@ -2316,6 +2646,8 @@ count: 202
 - kanken: 7
 - radical: 146 (襾)
 
+- name_use: yes
+
 ---
 
 ## 覚
@@ -2329,6 +2661,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 147 (見)
+
+- name_use: yes
 
 ---
 
@@ -2344,6 +2678,8 @@ count: 202
 - kanken: 7
 - radical: 147 (見)
 
+- name_use: yes
+
 ---
 
 ## 訓
@@ -2357,6 +2693,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 
@@ -2372,6 +2710,8 @@ count: 202
 - kanken: 7
 - radical: 149 (言)
 
+- name_use: yes
+
 ---
 
 ## 説
@@ -2386,6 +2726,8 @@ count: 202
 - kanken: 7
 - radical: 149 (言)
 
+- name_use: yes
+
 ---
 
 ## 課
@@ -2399,6 +2741,8 @@ count: 202
 - kanken: 7
 - radical: 149 (言)
 
+- name_use: yes
+
 ---
 
 ## 議
@@ -2411,6 +2755,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 149 (言)
+
+- name_use: yes
 
 ---
 
@@ -2426,6 +2772,8 @@ count: 202
 - kanken: 7
 - radical: 154 (貝)
 
+- name_use: yes
+
 ---
 
 ## 賀
@@ -2438,6 +2786,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 154 (貝)
+
+- name_use: yes
 
 ---
 
@@ -2453,6 +2803,8 @@ count: 202
 - kanken: 7
 - radical: 159 (車)
 
+- name_use: yes
+
 ---
 
 ## 輪
@@ -2466,6 +2818,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 159 (車)
+
+- name_use: yes
 
 ---
 
@@ -2481,6 +2835,8 @@ count: 202
 - kanken: 7
 - radical: 160 (辛)
 
+- name_use: yes
+
 ---
 
 ## 辺
@@ -2494,6 +2850,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -2509,6 +2867,8 @@ count: 202
 - kanken: 7
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 達
@@ -2522,6 +2882,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 162 (辵)
+
+- name_use: yes
 
 ---
 
@@ -2537,6 +2899,8 @@ count: 202
 - kanken: 7
 - radical: 162 (辵)
 
+- name_use: yes
+
 ---
 
 ## 郡
@@ -2550,6 +2914,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 163 (邑)
+
+- name_use: yes
 
 ---
 
@@ -2565,6 +2931,8 @@ count: 202
 - kanken: 7
 - radical: 166 (里)
 
+- name_use: yes
+
 ---
 
 ## 録
@@ -2578,6 +2946,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 167 (金)
+
+- name_use: yes
 
 ---
 
@@ -2593,6 +2963,8 @@ count: 202
 - kanken: 7
 - radical: 167 (金)
 
+- name_use: yes
+
 ---
 
 ## 関
@@ -2607,6 +2979,8 @@ count: 202
 - kanken: 7
 - radical: 169 (門)
 
+- name_use: yes
+
 ---
 
 ## 阜
@@ -2619,6 +2993,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 170 (阜)
+
+- name_use: yes
 
 ---
 
@@ -2634,6 +3010,8 @@ count: 202
 - kanken: 7
 - radical: 170 (阜)
 
+- name_use: yes
+
 ---
 
 ## 陸
@@ -2648,6 +3026,8 @@ count: 202
 - kanken: 7
 - radical: 170 (阜)
 
+- name_use: yes
+
 ---
 
 ## 隊
@@ -2660,6 +3040,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 170 (阜)
+
+- name_use: yes
 
 ---
 
@@ -2675,6 +3057,8 @@ count: 202
 - kanken: 7
 - radical: 174 (靑)
 
+- name_use: yes
+
 ---
 
 ## 順
@@ -2687,6 +3071,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 
@@ -2702,6 +3088,8 @@ count: 202
 - kanken: 7
 - radical: 181 (頁)
 
+- name_use: yes
+
 ---
 
 ## 類
@@ -2715,6 +3103,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 
@@ -2730,6 +3120,8 @@ count: 202
 - kanken: 7
 - radical: 183 (飛)
 
+- name_use: yes
+
 ---
 
 ## 飯
@@ -2743,6 +3135,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 184 (食)
+
+- name_use: yes
 
 ---
 
@@ -2758,6 +3152,8 @@ count: 202
 - kanken: 7
 - radical: 184 (食)
 
+- name_use: yes
+
 ---
 
 ## 香
@@ -2771,6 +3167,8 @@ count: 202
 - jlpt: 3
 - kanken: 7
 - radical: 186 (香)
+
+- name_use: yes
 
 ---
 
@@ -2786,6 +3184,8 @@ count: 202
 - kanken: 7
 - radical: 187 (馬)
 
+- name_use: yes
+
 ---
 
 ## 鹿
@@ -2799,6 +3199,8 @@ count: 202
 - jlpt: 1
 - kanken: 7
 - radical: 198 (鹿)
+
+- name_use: yes
 
 ---
 
@@ -2818,6 +3220,8 @@ count: 202
 - origin_type: 形声文字
 - origin_type_th: อักษรประสมเสียงและความหมาย
 - origin_description: เกิดจาก 旡 (หันหลังมอง) + 心 (หัวใจ) + 夊 (การก้าวเท้าเดินช้าๆ) สื่อภาพคนที่กำลังก้าวเท้าเดินจากไปแต่ในหัวใจยังคงผูกพันอาลัยอาวรณ์จนต้องเหลียวหลังกลับมามองซ้ำแล้วซ้ำเล่า หมายถึง 'ความรัก / ความเสน่หาผูกพัน'
+
+- name_use: yes
 
 ### Examples
 

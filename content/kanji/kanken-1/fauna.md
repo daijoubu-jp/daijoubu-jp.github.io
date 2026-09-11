@@ -406,6 +406,8 @@ count: 313
 - kanken: 1
 - radical: 123 (羊)
 
+- name_use: yes
+
 ---
 
 ## 羝
@@ -3542,6 +3544,8 @@ count: 313
 - strokes: 22
 - kanken: 1
 - radical: 187 (馬)
+
+- name_use: yes
 
 ---
 

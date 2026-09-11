@@ -511,6 +511,8 @@ count: 336
 - kanken: 1
 - radical: 9 (人)
 
+- name_use: yes
+
 ---
 
 ## 侖
@@ -651,6 +653,8 @@ count: 336
 - strokes: 9
 - kanken: 1
 - radical: 9 (人)
+
+- name_use: yes
 
 ---
 
@@ -1802,6 +1806,8 @@ count: 336
 - kanken: 1
 - radical: 109 (目)
 
+- name_use: yes
+
 ---
 
 ## 聆
@@ -1866,6 +1872,8 @@ count: 336
 - strokes: 11
 - kanken: 1
 - radical: 130 (肉)
+
+- name_use: yes
 
 ---
 
@@ -2540,6 +2548,8 @@ count: 336
 - strokes: 13
 - kanken: 1
 - radical: 181 (頁)
+
+- name_use: yes
 
 ---
 

@@ -198,6 +198,8 @@ count: 381
 - kanken: 1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 芫
@@ -507,6 +509,8 @@ count: 381
 - kanken: 1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 苻
@@ -557,6 +561,8 @@ count: 381
 - strokes: 8
 - kanken: 1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -943,6 +949,8 @@ count: 381
 - kanken: 1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 栩
@@ -1266,6 +1274,8 @@ count: 381
 - kanken: 1
 - radical: 140 (艸)
 
+- name_use: yes
+
 ---
 
 ## 莎
@@ -1486,6 +1496,8 @@ count: 381
 - kanken: 1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 梟
@@ -1613,6 +1625,8 @@ count: 381
 - kanken: 1
 - radical: 118 (竹)
 
+- name_use: yes
+
 ---
 
 ## 笞
@@ -1728,6 +1742,8 @@ count: 381
 - strokes: 11
 - kanken: 1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -2257,6 +2273,8 @@ count: 381
 - kanken: 1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 椶
@@ -2448,6 +2466,8 @@ count: 381
 - strokes: 13
 - kanken: 1
 - radical: 115 (禾)
+
+- name_use: yes
 
 ---
 
@@ -3608,6 +3628,8 @@ count: 381
 - kanken: 1
 - radical: 75 (木)
 
+- name_use: yes
+
 ---
 
 ## 橦
@@ -3762,6 +3784,8 @@ count: 381
 - strokes: 16
 - kanken: 1
 - radical: 140 (艸)
+
+- name_use: yes
 
 ---
 
@@ -4239,6 +4263,8 @@ count: 381
 - strokes: 18
 - kanken: 1
 - radical: 75 (木)
+
+- name_use: yes
 
 ---
 
