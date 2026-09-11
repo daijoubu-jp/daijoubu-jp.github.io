@@ -195,7 +195,7 @@ aspect-ratio: 1 / 1;
 
 Keep the mobile override but with `width: min(100%, 260px); height: auto; aspect-ratio: 1/1;`.
 
-- Modal `#stroke-modal-view`: set `width: min(90vw, 90vh); max-width: none; height: auto; aspect-ratio: 1/1;`.
+- Modal `#stroke-modal-view`: keep it container-relative — `width: 100%; max-width: 420px; height: auto; aspect-ratio: 1/1`. Do not use `vw`/`vh`: the view sits in a ~430px grid column of a max-width 960px dialog, so viewport units overflow it and overlap the readings panel.
 - Manual check at 360px, 768px, and desktop widths: SVG stays centered and undistorted; modal fills the viewport while square.
 - Commit: `fix(stroke): responsive 1:1 stroke view (inline + modal)`.
 

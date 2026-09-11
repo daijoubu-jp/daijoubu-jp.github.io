@@ -69,7 +69,8 @@ data/fuhyo-special-readings.json     special readings
 
 - `components.css:1292` and `:1933`: `width: min(100%, 360px); height: auto;
   aspect-ratio: 1/1` (mobile keeps a smaller max).
-- `browse/kanji.html:333` modal view: `min(90vw, 90vh)` while square.
+- `browse/kanji.html:333` modal view: `width: 100%; max-width: 420px; height: auto; aspect-ratio: 1/1`
+  (container-relative — never `vw`/`vh`, or it overflows the modal grid column).
 
 ## Phase 2 — Origins into content/kanji + process docs
 
