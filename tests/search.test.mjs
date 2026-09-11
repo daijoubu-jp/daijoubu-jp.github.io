@@ -123,3 +123,8 @@ test('filterKanji: school stage maps to Kanken levels', async () => {
   assert.deepEqual(high.map(k => k.kanji), ['亜']);
   assert.deepEqual(univ.map(k => k.kanji), ['刹']);
 });
+
+test('filterKanji: nameUseOnly keeps only name-legal kanji', async () => {
+  const out = await filterKanji({ nameUseOnly: true }, { data: FILTER_FIXTURE });
+  assert.deepEqual(out.map(k => k.kanji), ['山', '亜', '硫']);
+});

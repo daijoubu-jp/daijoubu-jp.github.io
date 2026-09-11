@@ -351,6 +351,9 @@ export async function filterKanji(filters = {}, options = {}) {
       if (filters.nonJoyoOnly && item.joyo) return false;
     }
 
+    // 5b. Name-legal kanji only (人名用漢字)
+    if (filters.nameUseOnly && !item.nameUse) return false;
+
     // 6. Radical filter (1-214)
     if (filters.radical) {
       if (Number(item.radical) !== Number(filters.radical)) return false;

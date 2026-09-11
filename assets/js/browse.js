@@ -18,6 +18,7 @@ let currentFilters = {
   kanken: [],
   joyoOnly: true,
   nonJoyoOnly: false,
+  nameUseOnly: false,
   strokeMin: null,
   strokeMax: null,
   radical: null,
@@ -115,6 +116,9 @@ function readFiltersFromURL() {
   if (params.has('nonjoyo')) {
     currentFilters.nonJoyoOnly = params.get('nonjoyo') === 'true';
   }
+  if (params.has('nameuse')) {
+    currentFilters.nameUseOnly = params.get('nameuse') === 'true';
+  }
   if (params.has('strokeMin')) {
     currentFilters.strokeMin = parseInt(params.get('strokeMin'), 10) || null;
   }
@@ -145,6 +149,7 @@ function updateURL() {
   if (currentFilters.kanken.length) params.set('kanken', currentFilters.kanken.join(','));
   if (currentFilters.joyoOnly) params.set('joyo', 'true');
   if (currentFilters.nonJoyoOnly) params.set('nonjoyo', 'true');
+  if (currentFilters.nameUseOnly) params.set('nameuse', 'true');
   if (currentFilters.strokeMin) params.set('strokeMin', currentFilters.strokeMin);
   if (currentFilters.strokeMax) params.set('strokeMax', currentFilters.strokeMax);
   if (currentFilters.radical) params.set('radical', currentFilters.radical);
@@ -195,6 +200,7 @@ function setupPresetButtons() {
       currentFilters.kanken = [];
       currentFilters.joyoOnly = false;
       currentFilters.nonJoyoOnly = false;
+      currentFilters.nameUseOnly = false;
       currentFilters.strokeMin = null;
       currentFilters.strokeMax = null;
       currentFilters.radical = null;
@@ -266,6 +272,9 @@ function syncControlsWithState() {
 
   const nonJoyoCb = document.getElementById('filter-nonjoyo-only');
   if (nonJoyoCb) nonJoyoCb.checked = currentFilters.nonJoyoOnly;
+
+  const nameUseCb = document.getElementById('filter-nameuse');
+  if (nameUseCb) nameUseCb.checked = currentFilters.nameUseOnly;
 
   // Strokes
   const minInput = document.getElementById('filter-stroke-min');
@@ -386,6 +395,17 @@ function setupFilterControls() {
     });
   }
 
+  // Name-legal (人名用漢字) Checkbox
+  const nameUseCb = document.getElementById('filter-nameuse');
+  if (nameUseCb) {
+    nameUseCb.checked = currentFilters.nameUseOnly;
+    nameUseCb.addEventListener('change', () => {
+      currentFilters.nameUseOnly = nameUseCb.checked;
+      currentPage = 1;
+      applyCurrentFilters();
+    });
+  }
+
   // Stroke range inputs with live debounced input and change handling
   const minStrokeInput = document.getElementById('filter-stroke-min');
   const maxStrokeInput = document.getElementById('filter-stroke-max');
@@ -449,6 +469,7 @@ function setupFilterControls() {
         kanken: [],
         joyoOnly: true,
         nonJoyoOnly: false,
+        nameUseOnly: false,
         strokeMin: null,
         strokeMax: null,
         radical: null,
@@ -495,6 +516,10 @@ function renderActiveFilterTags() {
 
   if (currentFilters.nonJoyoOnly) {
     tags.push({ label: `👑 表外 (Hyougai)`, clear: () => { currentFilters.nonJoyoOnly = false; const el = document.getElementById('filter-nonjoyo-only'); if (el) el.checked = false; } });
+  }
+
+  if (currentFilters.nameUseOnly) {
+    tags.push({ label: `🈶 ใช้ตั้งชื่อได้ (人名用)`, clear: () => { currentFilters.nameUseOnly = false; const el = document.getElementById('filter-nameuse'); if (el) el.checked = false; } });
   }
 
   currentFilters.jlpt.forEach(lvl => {

@@ -520,6 +520,7 @@ function renderMeta(kanji) {
     : '-';
 
   const gradeBadge = `<span class="badge badge--grade">${gradeDisplay}</span>`;
+  const nameUseBadge = `<span class="badge badge--grade">${kanji.nameUse ? 'ใช้ได้' : 'ใช้ไม่ได้'}</span>`;
 
   const radicalLink = kanji.radical 
     ? `<a href="radicals.html#rad-${kanji.radical}" class="meta-radical-link" title="ดูรายละเอียดหมวดอักษร #${kanji.radical}">${kanji.radicalChar || ''} (#${kanji.radical})</a>`
@@ -541,6 +542,10 @@ function renderMeta(kanji) {
     <div class="meta-item">
       <div class="meta-item-label">ระดับชั้นเรียน</div>
       <div class="meta-item-value">${gradeBadge}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-item-label">คันจิสำหรับชื่อคน (人名用漢字)</div>
+      <div class="meta-item-value">${nameUseBadge}</div>
     </div>
     <div class="meta-item">
       <div class="meta-item-label">หมวดอักษร (Radical)</div>
