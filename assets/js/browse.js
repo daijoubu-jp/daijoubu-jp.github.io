@@ -91,7 +91,16 @@ function readFiltersFromURL() {
     currentFilters.jlpt = params.get('jlpt').split(',').map(Number);
   }
   if (params.has('grade')) {
-    currentFilters.grade = params.get('grade').split(',').map(x => (x === 'nonjoyo' ? 'nonjoyo' : Number(x)));
+    const LEGACY_GRADE = { '8': 'mid', 'secondary': 'mid' };
+    currentFilters.grade = params.get('grade').split(',').reduce((acc, x) => {
+      if (x === 'nonjoyo') {
+        currentFilters.nonJoyoOnly = true;
+        currentFilters.joyoOnly = false;
+      } else {
+        acc.push(LEGACY_GRADE[x] || (/^[1-6]$/.test(x) ? Number(x) : x));
+      }
+      return acc;
+    }, []);
   }
   if (params.has('kanken')) {
     currentFilters.kanken = params.get('kanken').split(',');
@@ -160,6 +169,12 @@ function setupPresetButtons() {
     } else if (currentFilters.jlpt.length === 1 && preset === `jlpt-n${currentFilters.jlpt[0]}`) {
       document.querySelectorAll('.filter-preset-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+    } else if (preset === 'elementary' && currentFilters.grade.length === 6 && currentFilters.grade.every(g => g >= 1 && g <= 6)) {
+      document.querySelectorAll('.filter-preset-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    } else if (['mid', 'high', 'univ'].includes(preset) && currentFilters.grade.length === 1 && currentFilters.grade[0] === preset) {
+      document.querySelectorAll('.filter-preset-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
     } else if (currentFilters.joyoOnly && !currentFilters.favoritesOnly && !currentFilters.jlpt.length && !currentFilters.grade.length && !currentFilters.kanken.length && preset === 'joyo') {
       document.querySelectorAll('.filter-preset-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
@@ -198,8 +213,12 @@ function setupPresetButtons() {
         currentFilters.nonJoyoOnly = false;
       } else if (preset === 'elementary') {
         currentFilters.grade = [1, 2, 3, 4, 5, 6];
-      } else if (preset === 'secondary') {
-        currentFilters.grade = [8];
+      } else if (preset === 'mid') {
+        currentFilters.grade = ['mid'];
+      } else if (preset === 'high') {
+        currentFilters.grade = ['high'];
+      } else if (preset === 'univ') {
+        currentFilters.grade = ['univ'];
       } else if (preset === 'kanken-advanced') {
         currentFilters.kanken = ['jun1', '1'];
       } else if (preset === 'jlpt-n5') {
@@ -232,7 +251,7 @@ function syncControlsWithState() {
 
   // Grade
   document.querySelectorAll('input[name="filter-grade"]').forEach(cb => {
-    const val = cb.value === 'nonjoyo' ? 'nonjoyo' : Number(cb.value);
+    const val = /^[1-6]$/.test(cb.value) ? Number(cb.value) : cb.value;
     cb.checked = currentFilters.grade.includes(val);
   });
 
@@ -317,7 +336,7 @@ function setupFilterControls() {
 
   // Grade Checkboxes
   document.querySelectorAll('input[name="filter-grade"]').forEach(cb => {
-    const val = cb.value === 'nonjoyo' ? 'nonjoyo' : Number(cb.value);
+    const val = /^[1-6]$/.test(cb.value) ? Number(cb.value) : cb.value;
     cb.checked = currentFilters.grade.includes(val);
     cb.addEventListener('change', () => {
       if (cb.checked) {
@@ -483,7 +502,7 @@ function renderActiveFilterTags() {
   });
 
   currentFilters.grade.forEach(g => {
-    const gradeLabel = g === 8 ? 'มัธยมศึกษา' : (g === 'nonjoyo' ? 'นอกเกณฑ์โจโย' : `ป.${g}`);
+    const gradeLabel = ({ mid: 'มัธยมต้น', high: 'มัธยมปลาย', univ: 'อุดมศึกษาขึ้นไป' })[g] || `ป.${g}`;
     tags.push({ label: `ชั้น: ${gradeLabel}`, clear: () => { currentFilters.grade = currentFilters.grade.filter(x => x !== g); const el = document.querySelector(`input[name="filter-grade"][value="${g}"]`); if (el) el.checked = false; } });
   });
 

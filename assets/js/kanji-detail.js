@@ -86,7 +86,9 @@ async function setupBreadcrumbsAndSeqNav(kanji) {
     if (kanji.jlpt) {
       breadcrumbLevel.innerHTML = `<a href="index.html?jlpt=${kanji.jlpt}">JLPT N${kanji.jlpt}</a>`;
     } else if (kanji.grade) {
-      breadcrumbLevel.innerHTML = `<a href="index.html?grade=${kanji.grade}">ประถมศึกษาปีที่ ${kanji.grade}</a>`;
+      const label = kanji.grade <= 6 ? `ประถมศึกษาปีที่ ${kanji.grade}` : 'มัธยมต้น';
+      const href = kanji.grade <= 6 ? `index.html?grade=${kanji.grade}` : 'index.html?grade=mid';
+      breadcrumbLevel.innerHTML = `<a href="${href}">${label}</a>`;
     } else {
       breadcrumbLevel.innerHTML = `<a href="index.html">ทั่วไป</a>`;
     }
@@ -513,9 +515,12 @@ function renderMeta(kanji) {
   };
   const kankenDisplay = kanji.kanken ? (kankenNames[String(kanji.kanken)] || `${kanji.kanken}級`) : '-';
 
-  const gradeDisplay = kanji.grade 
-    ? `ป.${kanji.grade}` 
-    : (kanji.joyo ? 'มัธยมศึกษา (常用)' : (kanji.kanken === 'jun1' ? 'นอกเกณฑ์โจโย (準1級)' : 'นอกเกณฑ์โจโย (1級)'));
+  const stageByKanken = { '4': 'มัธยมต้น', '3': 'มัธยมต้น', 'jun2': 'มัธยมปลาย', '2': 'มัธยมปลาย', 'jun1': 'อุดมศึกษาขึ้นไป', '1': 'อุดมศึกษาขึ้นไป' };
+  const stage = stageByKanken[String(kanji.kanken)];
+
+  const gradeDisplay = kanji.grade
+    ? (kanji.grade <= 6 ? `ป.${kanji.grade}` : (stage || 'มัธยมต้น'))
+    : (stage || 'อุดมศึกษาขึ้นไป');
 
   const jlptBadge = kanji.jlpt 
     ? `<span class="badge badge--jlpt badge--jlpt-n${kanji.jlpt}">N${kanji.jlpt}</span>` 
