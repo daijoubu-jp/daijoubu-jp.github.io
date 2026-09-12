@@ -58,6 +58,9 @@ async function startApp() {
   } else if (pageType === 'game-kanji-in-kanji') {
     const { initKanjiInKanji } = await import('./games/kanji-in-kanji.js');
     await initKanjiInKanji();
+  } else if (pageType === 'game-quick-compound') {
+    const { initQuickCompound } = await import('./games/quick-compound.js');
+    await initQuickCompound();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }

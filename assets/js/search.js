@@ -89,6 +89,26 @@ export async function loadKanjiComponents() {
   }
 }
 
+const compoundsCache = createPromiseCache(async () => {
+  const dataUrl = new URL('../../data/compounds.min.json?v=20260912', import.meta.url).href;
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  return res.json();
+});
+
+/**
+ * Load the JMdict compound word list for the Quick Compound game.
+ * @returns {Promise<{ words: string[][], byKanji: Record<string, number[]> }>}
+ */
+export async function loadCompoundsData() {
+  try {
+    return await compoundsCache.get();
+  } catch (err) {
+    console.error('Fatal: Failed to load compounds.min.json. Did you forget to run scripts/build_compounds.py?', err);
+    return { words: [], byKanji: {} };
+  }
+}
+
 /**
  * Check if a character is a CJK Kanji.
  */
