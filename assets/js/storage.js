@@ -22,6 +22,7 @@ const KEYS = Object.freeze({
   RECENT:   'kanji-recent',
   DAILY:    'kanji-daily',
   SETTINGS: 'kanji-settings',
+  GAMES:    'kanji-games',
 });
 
 const MAX_RECENT_SEARCHES = 10;
@@ -247,6 +248,43 @@ export function getSettings() {
 export function updateSettings(partial) {
   const current = getSettings();
   writeJSON(KEYS.SETTINGS, { ...current, ...partial });
+}
+
+// ─── Game Stats ───────────────────────────────────────────────────────────────
+
+/**
+ * Returns all stored game stats: `{ [gameId]: { [bandId]: { best, last } } }`.
+ * @returns {object}
+ */
+export function getGameStats() {
+  return readJSON(KEYS.GAMES, {});
+}
+
+/**
+ * Returns the stored result for one game + band, defaulting to zeros.
+ * @param {string} gameId
+ * @param {string} bandId
+ * @returns {{ best: number, last: number }}
+ */
+export function getGameResult(gameId, bandId) {
+  const stats = getGameStats();
+  return stats[gameId]?.[bandId] || { best: 0, last: 0 };
+}
+
+/**
+ * Persists a run's score, keeping the best and last score per game + band.
+ * @param {string} gameId
+ * @param {string} bandId
+ * @param {number} score
+ * @returns {{ best: number, last: number }}
+ */
+export function saveGameResult(gameId, bandId, score) {
+  const stats = getGameStats();
+  const current = stats[gameId]?.[bandId] || { best: 0, last: 0 };
+  const updated = { best: Math.max(current.best || 0, score), last: score };
+  stats[gameId] = { ...(stats[gameId] || {}), [bandId]: updated };
+  writeJSON(KEYS.GAMES, stats);
+  return updated;
 }
 
 // ─── Cross-Browser Clipboard Helper ──────────────────────────────────────────
