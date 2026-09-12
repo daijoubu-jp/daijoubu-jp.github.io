@@ -69,6 +69,26 @@ export async function loadSearchIndex() {
   }
 }
 
+const componentsCache = createPromiseCache(async () => {
+  const dataUrl = new URL('../../data/kanji-components.min.json?v=20260912', import.meta.url).href;
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  return res.json();
+});
+
+/**
+ * Load the KRADFILE component decomposition data for the Kanji in Kanji game.
+ * @returns {Promise<{ entries: Record<string, string[]>, pool: string[] }>}
+ */
+export async function loadKanjiComponents() {
+  try {
+    return await componentsCache.get();
+  } catch (err) {
+    console.error('Fatal: Failed to load kanji-components.min.json. Did you forget to run scripts/build_components.py?', err);
+    return { entries: {}, pool: [] };
+  }
+}
+
 /**
  * Check if a character is a CJK Kanji.
  */

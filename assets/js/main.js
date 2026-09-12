@@ -55,6 +55,9 @@ async function startApp() {
   } else if (pageType === 'game-time-attack') {
     const { initTimeAttack } = await import('./games/time-attack.js');
     await initTimeAttack();
+  } else if (pageType === 'game-kanji-in-kanji') {
+    const { initKanjiInKanji } = await import('./games/kanji-in-kanji.js');
+    await initKanjiInKanji();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }

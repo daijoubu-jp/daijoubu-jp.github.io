@@ -12,13 +12,14 @@ const html = readFileSync(
   'utf8'
 );
 
-test('games hub exposes exactly one live game', () => {
-  assert.equal((html.match(/class="hub-card"/g) || []).length, 1);
+test('games hub exposes two live games', () => {
+  assert.equal((html.match(/class="hub-card"/g) || []).length, 2);
   assert.match(html, /href="time-attack.html" class="hub-card"/);
+  assert.match(html, /href="kanji-in-kanji.html" class="hub-card"/);
 });
 
-test('games hub lists two disabled placeholders', () => {
-  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 2);
+test('games hub lists one disabled placeholder', () => {
+  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 1);
 });
 
 test('games hub titles are present', () => {
@@ -32,8 +33,8 @@ test('time attack page has the scoreboard HUD layout', () => {
     fileURLToPath(new URL('../games/time-attack.html', import.meta.url)),
     'utf8'
   );
-  assert.match(page, /class="ta-scoreboard"/);
-  assert.match(page, /class="ta-stat-label">คะแนน/);
-  assert.match(page, /class="ta-stat-label">เหลือเวลา/);
+  assert.match(page, /class="game-scoreboard"/);
+  assert.match(page, /class="game-stat-label">คะแนน/);
+  assert.match(page, /class="game-stat-label">เหลือเวลา/);
   assert.match(page, /id="ta-timer"[^>]*role="progressbar"/);
 });
