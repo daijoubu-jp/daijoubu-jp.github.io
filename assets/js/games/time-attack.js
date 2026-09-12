@@ -27,6 +27,7 @@ export async function initTimeAttack() {
   const scoreEl = document.getElementById('ta-score');
   const timeEl = document.getElementById('ta-time');
   const timerFill = document.getElementById('ta-timer-fill');
+  const timerEl = document.getElementById('ta-timer');
   const feedbackEl = document.getElementById('ta-feedback');
   const finalEl = document.getElementById('ta-final');
   const bestEl = document.getElementById('ta-best');
@@ -126,6 +127,7 @@ export async function initTimeAttack() {
       const remaining = Math.max(0, ROUND_SECONDS - (Date.now() - startedAt) / 1000);
       timeEl.textContent = String(Math.ceil(remaining));
       timerFill.style.width = `${(remaining / ROUND_SECONDS) * 100}%`;
+      timerEl?.setAttribute('aria-valuenow', String(Math.ceil(remaining)));
       if (remaining <= 0) endGame();
     }, 100);
   }
@@ -152,6 +154,7 @@ export async function initTimeAttack() {
     scoreEl.textContent = '0';
     timeEl.textContent = String(ROUND_SECONDS);
     timerFill.style.width = '100%';
+    timerEl?.setAttribute('aria-valuenow', String(ROUND_SECONDS));
     feedbackEl.textContent = '';
     feedbackEl.classList.remove('is-correct');
     newBestEl.hidden = true;

@@ -73,9 +73,51 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.ta-scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.ta-stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+}
+
+.ta-stat-label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.ta-stat-value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.ta-stat-unit {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
 .ta-timer {
-  height: 10px;
+  height: 14px;
   background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   overflow: hidden;
 }
@@ -85,14 +127,6 @@
   width: 100%;
   background: var(--color-accent);
   transition: width 0.1s linear;
-}
-
-.ta-hud-stats {
-  display: flex;
-  justify-content: space-between;
-  margin-top: var(--spacing-xs);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
 }
 
 /* Question -------------------------------------------------------------- */

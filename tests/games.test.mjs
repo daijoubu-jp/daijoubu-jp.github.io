@@ -26,3 +26,14 @@ test('games hub titles are present', () => {
   assert.match(html, /漢字の中に漢字/);
   assert.match(html, /スピード熟語/);
 });
+
+test('time attack page has the scoreboard HUD layout', () => {
+  const page = readFileSync(
+    fileURLToPath(new URL('../games/time-attack.html', import.meta.url)),
+    'utf8'
+  );
+  assert.match(page, /class="ta-scoreboard"/);
+  assert.match(page, /class="ta-stat-label">คะแนน/);
+  assert.match(page, /class="ta-stat-label">เหลือเวลา/);
+  assert.match(page, /id="ta-timer"[^>]*role="progressbar"/);
+});
