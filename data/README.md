@@ -29,6 +29,7 @@ or committed.
 | `data/kanji-levels/*.json` | Per-Kanken-level split of the full bundle |
 | `data/search-index.min.json` | Slim index for home-page search and daily kanji |
 | `data/kanji-components.min.json` | Kanji in Kanji decompositions (KRADFILE-u, EDRDG) |
+| `data/compounds.min.json` | Quick Compound word list (JMdict_e, EDRDG) |
 | `data/vocabulary.json` | Vocabulary / manga-anime glossary |
 | `data/fuhyo-special-readings.json` | 付表 special readings |
 
