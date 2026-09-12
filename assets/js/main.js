@@ -52,6 +52,9 @@ async function startApp() {
   } else if (pageType === 'worksheet') {
     const { initWorksheetPage } = await import('./worksheet.js');
     await initWorksheetPage();
+  } else if (pageType === 'game-time-attack') {
+    const { initTimeAttack } = await import('./games/time-attack.js');
+    await initTimeAttack();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }

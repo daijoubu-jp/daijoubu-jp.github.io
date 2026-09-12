@@ -1,0 +1,252 @@
+/* ==========================================================================
+   GAMES — loaded only on game pages
+   ========================================================================== */
+
+.game-hero-jp {
+  font-size: 0.6em;
+  color: var(--color-text-muted);
+}
+
+.game-container {
+  max-width: 760px;
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-3xl);
+}
+
+.game-screen {
+  animation: gameFadeIn 0.25s ease;
+}
+
+.game-heading {
+  text-align: center;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.game-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+/* Band selection -------------------------------------------------------- */
+
+.band-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+  gap: var(--spacing-sm);
+}
+
+.band-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.band-chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.band-chip-label {
+  font-weight: 700;
+}
+
+.band-chip-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* HUD ------------------------------------------------------------------- */
+
+.ta-hud {
+  margin-bottom: var(--spacing-lg);
+}
+
+.ta-timer {
+  height: 10px;
+  background: var(--color-surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.ta-timer-fill {
+  height: 100%;
+  width: 100%;
+  background: var(--color-accent);
+  transition: width 0.1s linear;
+}
+
+.ta-hud-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Question -------------------------------------------------------------- */
+
+.ta-question {
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.ta-kanji {
+  font-family: var(--font-display-jp);
+  font-size: clamp(4rem, 18vw, 7rem);
+  line-height: 1;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.ta-prompt {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.ta-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+  text-align: left;
+}
+
+@media (min-width: 520px) {
+  .ta-options {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ta-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  min-height: 48px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--font-size-md);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.ta-option:hover {
+  border-color: var(--color-accent);
+}
+
+.ta-option.correct {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.14);
+}
+
+.ta-option.wrong {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.14);
+}
+
+.ta-option-key {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: var(--font-size-xs);
+}
+
+.ta-feedback {
+  min-height: 1.5rem;
+  margin-top: var(--spacing-sm);
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.ta-feedback.is-correct {
+  color: #16a34a;
+}
+
+/* Result ---------------------------------------------------------------- */
+
+.game-result {
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.game-result-icon {
+  font-size: 3rem;
+}
+
+.game-result-score {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.game-result-score strong {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+}
+
+.game-result-best {
+  color: var(--color-text-muted);
+}
+
+.game-newbest {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+/* Motion ---------------------------------------------------------------- */
+
+@keyframes gameFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-screen {
+    animation: none;
+  }
+
+  .ta-timer-fill {
+    transition: none;
+  }
+}

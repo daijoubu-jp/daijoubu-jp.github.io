@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="spring">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFF9FB">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Daijoubu JP">
+  <title>คันจิไทม์แอทแทค (漢字タイムショック) | KanjiThai</title>
+  <meta name="description" content="มินิเกมตอบความหมายคันจิให้ได้มากที่สุดใน 60 วินาที เลือกระดับ JLPT หรือคันเค็นได้">
+
+  <!-- SEO & Social Sharing (Open Graph) -->
+  <meta property="og:title" content="คันจิไทม์แอทแทค (漢字タイムショック) | KanjiThai">
+  <meta property="og:description" content="ตอบความหมายคันจิให้ได้มากที่สุดใน 60 วินาที">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+
+  <!-- PWA Manifest & Icons -->
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/base.css?v=1788492100">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/games.css">
+  <link rel="stylesheet" href="../assets/css/themes/spring.css">
+  <link rel="stylesheet" href="../assets/css/themes/summer.css">
+  <link rel="stylesheet" href="../assets/css/themes/autumn.css">
+  <link rel="stylesheet" href="../assets/css/themes/winter.css">
+  <link rel="stylesheet" href="../assets/css/themes/anime.css">
+  <link rel="stylesheet" href="../assets/css/themes/ukiyoe.css">
+
+  <!-- Theme Setup (Anti-FOUC) -->
+  <script>
+    (function() {
+      try {
+        var now = new Date();
+        var m = now.getMonth() + 1;
+        var defaultTheme = (m >= 4 && m <= 6) ? 'spring' : (m >= 7 && m <= 9) ? 'summer' : (m >= 10 && m <= 12) ? 'autumn' : 'winter';
+        var h = now.getHours();
+        var defaultMode = (h >= 6 && h < 18) ? 'light' : 'dark';
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || defaultTheme;
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || defaultMode;
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="game-time-attack">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <!-- 1. Left: Mobile Navigation Menu Toggle (Hamburger) -->
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 2. Middle (Mobile) / Left (Desktop): Brand -->
+      <a href="../index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Daijoubu JP</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิครบเครื่อง</span>
+        </div>
+      </a>      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="dictionary" aria-expanded="false" aria-haspopup="true">พจนานุกรม</button>
+            <ul class="dropdown-menu">
+              <li><a href="../browse/index.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="../browse/vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="../browse/vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="../browse/special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="../browse/radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="knowledge" aria-expanded="false" aria-haspopup="true">คลังความรู้</button>
+            <ul class="dropdown-menu">
+              <li><a href="../knowledge/index.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="../knowledge/history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="../knowledge/handwriting.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="../knowledge/kanken.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="../knowledge/radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="../knowledge/jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="../games/index.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="tools" aria-expanded="false" aria-haspopup="true">เครื่องมือ</button>
+            <ul class="dropdown-menu">
+              <li><a href="../tools/worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="../tools/index.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Right: Theme Switcher -->
+      <div class="nav-actions">
+                <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section class="hero-section game-hero">
+      <div class="container">
+        <h1 class="hero-title">คันจิไทม์แอทแทค <br><span class="game-hero-jp">(漢字タイムショック)</span></h1>
+        <p class="hero-subtitle">เลือกช่วงระดับ แล้วตอบความหมายคันจิให้ได้มากที่สุดใน 60 วินาที</p>
+      </div>
+    </section>
+
+    <div class="container game-container">
+
+      <!-- Start screen -->
+      <section id="ta-start" class="game-screen">
+        <h2 class="game-heading">เลือกระดับความยาก</h2>
+        <div id="ta-bands" class="band-chips"></div>
+      </section>
+
+      <!-- Playing screen -->
+      <section id="ta-game" class="game-screen" hidden>
+        <div class="ta-hud">
+          <div class="ta-timer" role="progressbar" aria-label="เวลาที่เหลือ">
+            <div id="ta-timer-fill" class="ta-timer-fill"></div>
+          </div>
+          <div class="ta-hud-stats">
+            <span>เวลา: <strong id="ta-time">60</strong>s</span>
+            <span>คะแนน: <strong id="ta-score" aria-live="polite">0</strong></span>
+          </div>
+        </div>
+
+        <div class="ta-question">
+          <div id="ta-kanji" class="ta-kanji" lang="ja"></div>
+          <p class="ta-prompt">ความหมายภาษาไทยของคันจิตัวนี้คือข้อใด?</p>
+          <div id="ta-options" class="ta-options"></div>
+          <div id="ta-feedback" class="ta-feedback" aria-live="assertive"></div>
+        </div>
+      </section>
+
+      <!-- Result screen -->
+      <section id="ta-result" class="game-screen" hidden>
+        <div class="game-result">
+          <div class="game-result-icon">🎯</div>
+          <h2 class="game-heading">จบเกม!</h2>
+          <p class="game-result-score"><strong id="ta-final">0</strong> คะแนน</p>
+          <p class="game-result-best">สถิติสูงสุด: <strong id="ta-best">0</strong></p>
+          <p id="ta-newbest" class="game-newbest" hidden>🎉 สถิติใหม่!</p>
+          <div class="game-actions">
+            <button type="button" id="ta-replay" class="action-btn">เล่นอีกครั้ง</button>
+            <button type="button" id="ta-change-band" class="action-btn">เปลี่ยนระดับ</button>
+            <a href="index.html" class="action-btn">กลับหน้าเกม</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table & KANJIDIC2 & KanjiVG (CC BY-SA) | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
