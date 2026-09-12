@@ -18,12 +18,13 @@ test('compound data has a healthy size', () => {
   assert.ok(Object.keys(byKanji).length >= 2000, 'expected >= 2000 covered kanji');
 });
 
-test('every compound is 2-4 all-kanji characters with a reading and gloss', () => {
-  for (const [surface, reading, gloss] of words) {
+test('every compound is 2-4 all-kanji characters with a reading, English gloss and Thai field', () => {
+  for (const [surface, reading, meaningEn, meaningTh] of words) {
     assert.ok(surface.length >= 2 && surface.length <= 4, `bad length: ${surface}`);
     assert.ok([...surface].every(isKanji), `non-kanji surface: ${surface}`);
     assert.ok(reading && reading.length > 0, `missing reading: ${surface}`);
-    assert.ok(gloss && gloss.length > 0, `missing gloss: ${surface}`);
+    assert.ok(meaningEn && meaningEn.length > 0, `missing meaning_en: ${surface}`);
+    assert.equal(typeof meaningTh, 'string', `meaning_th must be a string: ${surface}`);
   }
 });
 

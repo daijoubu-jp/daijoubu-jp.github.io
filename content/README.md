@@ -19,6 +19,7 @@ same commit.
 | Path | Contents |
 | --- | --- |
 | `content/kanji/*.md` | One file per Kanken level; `kanken-1/` and `kanken-jun1/` are split thematically |
+| `content/compounds/*.md` | Quick Compound word list, split into gojuuon buckets |
 | `content/vocabulary/*.md` | Vocabulary / manga-anime glossary |
 | `content/special-readings/ateji.md` | 付表 special readings |
 
@@ -93,6 +94,35 @@ Optional, only when a character has meaningful components:
 - **子** (音符・意符): ทารก / การเพิ่มพูน
 ```
 
+## Compounds (Quick Compound game)
+
+`content/compounds/*.md` is the source of truth for `data/compounds.min.json`.
+Files are split into gojuuon buckets (`ka.md`, `sa.md`, …) for editing
+convenience; the compiler reads every `*.md` under the directory regardless of
+file name.
+
+```markdown
+## 日本 (にほん)
+
+- meaning_en: Japan
+- meaning_th: ญี่ปุ่น
+
+---
+```
+
+- The heading must be `surface (reading)`; the surface is 2–4 kanji characters.
+- `meaning_en` is required (imported from JMdict); `meaning_th` is optional and
+  overrides the English gloss in the game when present.
+- To import new words from JMdict without touching existing entries:
+
+```bash
+python3 scripts/build_compounds.py            # downloads JMdict_e
+python3 scripts/build_compounds.py --source /path/to/JMdict_e.gz
+```
+
+After editing, run `python3 scripts/compile_content.py` and commit the
+regenerated `data/compounds.min.json` in the same commit.
+
 ## Validation
 
 `scripts/compile_content.py` refuses to write and exits non-zero when it finds:
@@ -100,7 +130,9 @@ Optional, only when a character has meaningful components:
 - a character whose section is not present in the master data,
 - duplicate entries for the same character,
 - missing strokes, readings, meanings, Kanken level, or radical,
-- partial origin data (type/description required together).
+- partial origin data (type/description required together),
+- malformed compound entries (bad heading, non-2–4-Kanji surface, missing
+  reading or `meaning_en`) or duplicate `surface (reading)` pairs.
 
 ## Conventions
 

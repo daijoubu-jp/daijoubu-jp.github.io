@@ -436,11 +436,98 @@ def compile_search_index():
     print(f"  ✅ Compiled slim search index ({len(index)} entries) to {out_path}")
 
 
+COMPOUNDS_DIR = os.path.join(CONTENT_DIR, "compounds")
+COMPOUNDS_OUT = os.path.join(DATA_DIR, "compounds.min.json")
+COMPOUND_HEADING_RE = re.compile(r"^(.*\S)\s+\(([^)]+)\)\s*$")
+COMPOUND_SURFACE_RE = re.compile(r"^[\u3400-\u4DBF\u4E00-\u9FFF]{2,4}$")
+
+
+def compile_compounds():
+    """Compile content/compounds/*.md into data/compounds.min.json."""
+    if not os.path.exists(COMPOUNDS_DIR):
+        print("⚠️ content/compounds not found, skipping.")
+        return []
+
+    errors = []
+    words = {}
+    seen_paths = {}
+
+    files = []
+    for root, _, filenames in os.walk(COMPOUNDS_DIR):
+        for fname in filenames:
+            if fname.endswith(".md") and not fname.startswith("_"):
+                files.append(os.path.join(root, fname))
+
+    for fpath in sorted(files):
+        rel_path = os.path.relpath(fpath, BASE_DIR)
+        with open(fpath, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        for sec in re.split(r"\n##\s+", "\n" + content)[1:]:
+            lines = sec.strip().split("\n")
+            if not lines:
+                continue
+
+            heading = lines[0].strip()
+            match = COMPOUND_HEADING_RE.match(heading)
+            if not match:
+                errors.append(f"{rel_path}: bad compound heading {heading!r} (expected 'surface (reading)')")
+                continue
+
+            surface = match.group(1).strip()
+            reading = match.group(2).strip()
+
+            if not COMPOUND_SURFACE_RE.match(surface):
+                errors.append(f"{rel_path}: {surface!r} is not a 2-4 character kanji compound")
+                continue
+            if not reading:
+                errors.append(f"{rel_path}: {surface}: missing reading")
+
+            meaning_en = ""
+            meaning_th = ""
+            for line in lines[1:]:
+                k, v = parse_key_value_line(line)
+                if k == "meaning_en":
+                    meaning_en = v
+                elif k == "meaning_th":
+                    meaning_th = v
+
+            if not meaning_en:
+                errors.append(f"{rel_path}: {surface}: missing meaning_en")
+
+            key = (surface, reading)
+            if key in words:
+                errors.append(f"{rel_path}: duplicate compound {surface} ({reading}) (also {seen_paths[key]})")
+            else:
+                seen_paths[key] = rel_path
+                words[key] = [surface, reading, meaning_en, meaning_th]
+
+    if errors:
+        return errors
+
+    ordered = sorted(words.values(), key=lambda w: (w[0], w[1]))
+    by_kanji = {}
+    for index, (surface, _reading, _en, _th) in enumerate(ordered):
+        for char in dict.fromkeys(surface):
+            by_kanji.setdefault(char, []).append(index)
+
+    payload = {
+        "words": ordered,
+        "byKanji": {k: by_kanji[k] for k in sorted(by_kanji)},
+    }
+    with open(COMPOUNDS_OUT, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+
+    print(f"  ✅ Compiled {len(ordered)} compounds to {COMPOUNDS_OUT}")
+    return []
+
+
 def main():
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
     compile_special_readings()
     errors = compile_kanji() or []
+    errors += compile_compounds()
 
     if errors:
         print(f"\n❌ Validation failed with {len(errors)} issue(s). Data files were NOT written:")

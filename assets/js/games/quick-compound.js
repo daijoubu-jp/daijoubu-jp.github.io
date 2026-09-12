@@ -105,12 +105,12 @@ export async function initQuickCompound() {
     const round = currentRound();
     if (state.selected.has(wordIndex)) return;
 
-    const [surface, reading, gloss] = data.words[wordIndex];
+    const [surface, reading, glossEn, glossTh] = data.words[wordIndex];
 
     if (round.valid.includes(wordIndex)) {
       state.selected.add(wordIndex);
       btn.classList.add('selected');
-      feedbackEl.textContent = `${surface} (${reading}) — ${gloss}`;
+      feedbackEl.textContent = `${surface} (${reading}) — ${glossTh || glossEn}`;
       feedbackEl.classList.remove('is-wrong');
 
       if (isRoundComplete([...state.selected], round.valid)) {
