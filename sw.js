@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v4'; // v4: local KanjiVG stroke SVGs
+const CACHE_NAME = 'kanjithai-cache-v5'; // v5: bust HTTP cache for app code
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -17,6 +17,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
+
   const url = new URL(event.request.url);
 
   // Cache-First for vendored KanjiVG stroke SVGs (immutable files)
@@ -38,7 +40,7 @@ self.addEventListener('fetch', (event) => {
   else if (url.pathname.includes('/data/')) {
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
-        const fetchPromise = fetch(event.request).then((networkResponse) => {
+        const fetchPromise = fetch(event.request, { cache: 'no-store' }).then((networkResponse) => {
           const responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
           return networkResponse;
@@ -61,9 +63,9 @@ self.addEventListener('fetch', (event) => {
       })
     );
   } else {
-    // Network-First (fallback to cache) for HTML, JS, CSS to ensure updates
+    // Network-First, bypassing the HTTP cache, so app code (HTML/JS/CSS) is always fresh
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { cache: 'no-store' })
         .then((networkResponse) => {
           const responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
