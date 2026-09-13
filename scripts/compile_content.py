@@ -7,6 +7,7 @@ with automatic Furigana-to-Ruby conversion, validation, and minification.
 
 import os
 import json
+import math
 import re
 import sys
 
@@ -547,12 +548,196 @@ def compile_compounds():
     return []
 
 
+PREFECTURES_DIR = os.path.join(CONTENT_DIR, "prefectures")
+PREFECTURES_OUT = os.path.join(DATA_DIR, "prefectures.json")
+PREFECTURE_FIELDS = {
+    "code", "slug", "name_ja", "name_hira", "name_romaji", "name_th", "region",
+    "capital", "capital_reading", "population", "population_year", "area_km2",
+    "flower", "tree", "bird", "etymology",
+}
+PREFECTURE_REQUIRED_FIELDS = (
+    "slug", "name_ja", "name_hira", "name_romaji", "name_th", "region",
+    "capital", "capital_reading", "flower", "tree", "bird", "etymology",
+)
+PREFECTURE_LIST_SEPARATOR = "\uff5c"
+
+
+def parse_list_entry_line(line):
+    """Parse a list item into {"name", "th"}; ｜-separated thai gloss is optional."""
+    line = line.strip()
+    if not line.startswith("- "):
+        return None
+    name, th = line[2:].strip(), None
+    if PREFECTURE_LIST_SEPARATOR in name:
+        name, th = [part.strip() for part in name.split(PREFECTURE_LIST_SEPARATOR, 1)]
+    return {"name": name, "th": th}
+
+
+def parse_prefecture_markdown(content, rel_path, errors):
+    """Parse one prefecture markdown file into a dict, or None on error."""
+    lines = content.strip().split("\n")
+    if not lines or not lines[0].startswith("## "):
+        errors.append(f"{rel_path}: missing '## <name_ja>' heading")
+        return None
+
+    entry = {"places": [], "products": []}
+    section = None
+    for line in lines[1:]:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("### "):
+            section_name = stripped[4:].strip()
+            if section_name not in ("Places", "Products"):
+                errors.append(f"{rel_path}: unexpected section heading {section_name!r}")
+            elif stripped == "### Places":
+                section = entry["places"]
+            else:
+                section = entry["products"]
+            continue
+        if section is not None:
+            item = parse_list_entry_line(line)
+            if item is None:
+                errors.append(f"{rel_path}: bad list entry {stripped!r}")
+            elif not item["name"]:
+                errors.append(f"{rel_path}: list entry with empty name {stripped!r}")
+            else:
+                section.append(item)
+            continue
+        k, v = parse_key_value_line(line)
+        if k is None:
+            errors.append(f"{rel_path}: unrecognized line {stripped!r}")
+        elif k not in PREFECTURE_FIELDS:
+            errors.append(f"{rel_path}: unknown key {k!r} (schema is closed)")
+        elif k in entry:
+            errors.append(f"{rel_path}: duplicate key {k!r}")
+        else:
+            entry[k] = v
+
+    return entry
+
+
+def compile_prefectures():
+    """Compile content/prefectures/*.md into data/prefectures.json."""
+    if not os.path.exists(PREFECTURES_DIR):
+        print("⚠️ content/prefectures not found, skipping.")
+        return []
+
+    errors = []
+    entries = {}
+
+    for fname in sorted(os.listdir(PREFECTURES_DIR)):
+        if not fname.endswith(".md") or fname.startswith("_"):
+            continue
+        fpath = os.path.join(PREFECTURES_DIR, fname)
+        rel_path = os.path.relpath(fpath, BASE_DIR)
+        with open(fpath, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        entry = parse_prefecture_markdown(content, rel_path, errors)
+        if entry is None:
+            continue
+
+        name_ja = entry.get("name_ja", "")
+        heading = next(
+            (line[3:].strip() for line in content.strip().split("\n") if line.startswith("## ")),
+            "",
+        )
+        if heading != name_ja:
+            errors.append(f"{rel_path}: heading {heading!r} does not match name_ja {name_ja!r}")
+
+        for field in PREFECTURE_REQUIRED_FIELDS:
+            if not entry.get(field):
+                errors.append(f"{rel_path}: missing required field {field!r}")
+
+        code = entry.get("code", "")
+        if not code.isdigit():
+            errors.append(f"{rel_path}: bad code {code!r}")
+        elif code in entries:
+            errors.append(f"{rel_path}: duplicate code {code!r} (also {entries[code]['_rel']})")
+        elif len(code) != 2:
+            errors.append(f"{rel_path}: code {code!r} is not 2 digits")
+
+        slug = entry.get("slug", "")
+        if not re.match(r"^[a-z]+$", slug):
+            errors.append(f"{rel_path}: bad slug {slug!r} (must be lowercase ascii)")
+        elif slug in [e["slug"] for e in entries.values()]:
+            errors.append(f"{rel_path}: duplicate slug {slug!r}")
+
+        population = entry.get("population", "")
+        try:
+            population = int(str(population).replace(",", ""))
+            if population <= 0:
+                raise ValueError
+        except ValueError:
+            errors.append(f"{rel_path}: bad population {population!r}")
+
+        area = entry.get("area_km2", "")
+        try:
+            area = float(str(area).replace(",", ""))
+            if not math.isfinite(area) or area <= 0:
+                raise ValueError
+        except ValueError:
+            errors.append(f"{rel_path}: bad area_km2 {area!r}")
+
+        if "population_year" not in entry:
+            errors.append(f"{rel_path}: missing required field 'population_year'")
+        elif not re.match(r"^\d{4}$", entry["population_year"]):
+            errors.append(f"{rel_path}: bad population_year {entry['population_year']!r}")
+
+        if len(entry["places"]) < 3:
+            errors.append(f"{rel_path}: needs >= 3 places (has {len(entry['places'])})")
+        if len(entry["products"]) < 3:
+            errors.append(f"{rel_path}: needs >= 3 products (has {len(entry['products'])})")
+
+        entry["_rel"] = rel_path
+        if code:
+            entries[code] = entry
+
+    if errors:
+        return errors
+
+    if len(entries) != 47:
+        return [f"expected 47 prefecture files, found {len(entries)}"]
+
+    compiled = [
+        {
+            "code": code,
+            "slug": entry["slug"],
+            "name_ja": entry["name_ja"],
+            "name_hira": entry["name_hira"],
+            "name_romaji": entry["name_romaji"],
+            "name_th": entry["name_th"],
+            "region": entry["region"],
+            "capital": entry["capital"],
+            "capital_reading": entry["capital_reading"],
+            "population": int(str(entry["population"]).replace(",", "")),
+            "population_year": entry["population_year"],
+            "area_km2": float(str(entry["area_km2"]).replace(",", "")),
+            "flower": entry["flower"],
+            "tree": entry["tree"],
+            "bird": entry["bird"],
+            "etymology": entry["etymology"],
+            "places": entry["places"],
+            "products": entry["products"],
+        }
+        for code, entry in sorted(entries.items())
+    ]
+
+    with open(PREFECTURES_OUT, "w", encoding="utf-8") as f:
+        json.dump({"prefectures": compiled}, f, ensure_ascii=False, separators=(",", ":"))
+
+    print(f"  ✅ Compiled {len(compiled)} prefectures to {PREFECTURES_OUT}")
+    return []
+
+
 def main():
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
     compile_special_readings()
     errors = compile_kanji() or []
     errors += compile_compounds()
+    errors += compile_prefectures()
 
     if errors:
         print(f"\n❌ Validation failed with {len(errors)} issue(s). Data files were NOT written:")
