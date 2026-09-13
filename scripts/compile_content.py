@@ -405,7 +405,7 @@ def compile_kanji():
 
 
 SEARCH_INDEX_FIELDS = (
-    "kanji", "grade", "jlpt", "kanken", "strokes",
+    "kanji", "grade", "jlpt", "kanken", "strokes", "radical", "radicalChar",
     "joyo", "onyomi", "kunyomi", "jinmei", "onyomi_hyougai", "kunyomi_hyougai",
 )
 SEARCH_INDEX_MEANING_LIMIT = 2
