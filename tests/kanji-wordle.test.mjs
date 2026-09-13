@@ -26,8 +26,18 @@ const FIXTURE = [
   { kanji: '刹', strokes: 7, radical: 18, radicalChar: '刀', kanken: 'jun1', jlpt: null, grade: null, joyo: false },
 ];
 
-test('there are six hint columns', () => {
-  assert.deepEqual(COLUMNS.map(c => c.id), ['strokes', 'radical', 'kanken', 'jlpt', 'stage', 'joyo']);
+test('there are seven columns including the guessed kanji', () => {
+  assert.deepEqual(COLUMNS.map(c => c.id), ['kanji', 'strokes', 'radical', 'kanken', 'jlpt', 'stage', 'joyo']);
+});
+
+test('guessed kanji column displays character and matches target', () => {
+  const match = feedback(TARGET, TARGET).find(c => c.id === 'kanji');
+  assert.equal(match.state, 'correct');
+  assert.equal(match.display, '明');
+
+  const wrong = feedback(FIXTURE[1], TARGET).find(c => c.id === 'kanji');
+  assert.equal(wrong.state, 'wrong');
+  assert.equal(wrong.display, '暗');
 });
 
 test('an exact match is all correct', () => {
@@ -36,11 +46,12 @@ test('an exact match is all correct', () => {
 });
 
 test('stroke differences point to the target', () => {
-  const [strokes] = feedback(FIXTURE[1], TARGET);
+  const strokes = feedback(FIXTURE[1], TARGET).find(c => c.id === 'strokes');
   assert.equal(strokes.id, 'strokes');
   assert.equal(strokes.state, 'lower'); // target has fewer strokes
   assert.equal(strokes.display, 13);
-  assert.equal(feedback(FIXTURE[2], TARGET)[0].state, 'higher'); // target has more
+  const strokes2 = feedback(FIXTURE[2], TARGET).find(c => c.id === 'strokes');
+  assert.equal(strokes2.state, 'higher'); // target has more
 });
 
 test('kanken and stage use explicit rank order', () => {

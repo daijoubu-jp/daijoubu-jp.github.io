@@ -88,10 +88,11 @@ export async function initKanjiWordle() {
       wrong: 'is-wrong',
       higher: 'is-higher',
       lower: 'is-lower',
-    }[cell.state];
+    }[cell.state] || '';
     const arrow = cell.state === 'higher' ? '<span class="kwl-arrow">▲</span>'
       : cell.state === 'lower' ? '<span class="kwl-arrow">▼</span>' : '';
-    return `<div class="kwl-cell ${stateClass}">${cell.display}${arrow}</div>`;
+    const extraClass = cell.id === 'kanji' ? ' kwl-cell-kanji' : '';
+    return `<div class="kwl-cell ${stateClass}${extraClass}">${cell.display}${arrow}</div>`;
   }
 
   function renderGrid() {

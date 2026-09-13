@@ -466,7 +466,7 @@
 
 .kwl-row {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 6px;
 }
 
@@ -484,12 +484,19 @@
   border-radius: var(--border-radius-sm);
 }
 
+.kwl-cell-kanji {
+  font-family: var(--font-display-jp);
+  font-size: 1.35rem;
+}
+
 .kwl-head .kwl-cell {
   min-height: 32px;
   font-size: var(--font-size-xs);
   color: var(--color-text-muted);
   background: transparent;
   border-color: transparent;
+  padding: 2px;
+  line-height: 1.2;
 }
 
 .kwl-cell.is-correct {

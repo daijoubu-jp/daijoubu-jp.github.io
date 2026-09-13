@@ -68,6 +68,14 @@ function stageLabel(entry) {
  */
 export const COLUMNS = [
   {
+    id: 'kanji',
+    label: 'คันจิ',
+    cell: (guess, target) => ({
+      state: guess.kanji === target.kanji ? 'correct' : 'wrong',
+      display: guess.kanji,
+    }),
+  },
+  {
     id: 'strokes',
     label: 'จำนวนขีด',
     cell: (guess, target) => ({
