@@ -1,0 +1,595 @@
+/**
+ * chinese-zodiacs.css
+ * Styling for the 12 Japanese Zodiacs (十二支) interactive wheel and guide.
+ */
+
+.zodiac-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 992px) {
+  .zodiac-layout {
+    grid-template-columns: minmax(360px, 520px) minmax(320px, 1fr);
+    gap: var(--spacing-2xl);
+  }
+}
+
+/* Toolbar & Mode Controls ------------------------------------------------ */
+
+.zodiac-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.zodiac-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-md);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast),
+              border-color var(--transition-fast),
+              color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.zodiac-tool-btn:hover {
+  border-color: var(--color-accent);
+  background: var(--color-surface-2);
+  transform: translateY(-1px);
+}
+
+.zodiac-tool-btn:active {
+  transform: translateY(0);
+}
+
+.zodiac-tool-btn.is-active {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.zodiac-sound-btn {
+  font-size: 1.1rem;
+  padding: 6px 12px;
+}
+
+/* SVG Wheel -------------------------------------------------------------- */
+
+.zodiac-wheel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zodiac-wheel-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.12));
+}
+
+[data-theme-mode="dark"] .zodiac-wheel-svg,
+[data-mode="dark"] .zodiac-wheel-svg {
+  filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.45));
+}
+
+/* Wheel Structural Elements */
+
+.wheel-outer-ring {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 2.5;
+}
+
+/* Direction Ring */
+
+.wheel-dir-path {
+  fill: var(--color-surface-2);
+  stroke: var(--color-border-subtle);
+  stroke-width: 1;
+  transition: fill var(--transition-fast);
+}
+
+.wheel-dir-text {
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--color-text-muted);
+  font-family: var(--font-body);
+  transition: fill var(--transition-fast), font-weight var(--transition-fast);
+}
+
+.wheel-dir-sector.is-active .wheel-dir-path {
+  fill: var(--color-surface-hover);
+}
+
+.wheel-dir-sector.is-active .wheel-dir-text {
+  fill: var(--color-accent);
+  font-weight: 800;
+}
+
+/* Main Zodiac Slices */
+
+.wheel-slice {
+  cursor: pointer;
+  outline: none;
+  transform-origin: 350px 350px;
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.wheel-slice-path {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  transition: fill var(--transition-fast),
+              stroke var(--transition-fast),
+              stroke-width var(--transition-fast),
+              filter var(--transition-fast);
+}
+
+.wheel-kanji {
+  font-family: var(--font-display-jp);
+  font-size: 26px;
+  font-weight: 800;
+  fill: var(--color-text);
+  pointer-events: none;
+  transition: fill var(--transition-fast), transform var(--transition-fast);
+}
+
+.wheel-emoji {
+  font-size: 19px;
+  pointer-events: none;
+  transition: transform var(--transition-fast);
+}
+
+/* Hover & Focus State */
+
+.wheel-slice:hover .wheel-slice-path,
+.wheel-slice:focus-visible .wheel-slice-path {
+  fill: var(--color-surface-2);
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+}
+
+.wheel-slice:hover .wheel-kanji,
+.wheel-slice:focus-visible .wheel-kanji {
+  fill: var(--color-accent);
+}
+
+/* Active / Selected Slice */
+
+.wheel-slice.is-active {
+  z-index: 10;
+}
+
+.wheel-slice.is-active .wheel-slice-path {
+  fill: var(--color-surface-2);
+  stroke: var(--color-accent);
+  stroke-width: 3.5;
+  filter: url(#wheel-glow);
+}
+
+.wheel-slice.is-active .wheel-kanji {
+  fill: var(--color-accent);
+  font-weight: 900;
+}
+
+/* Clockwise Entrance Animation ------------------------------------------- */
+
+.wheel-slice.is-animating {
+  animation: sliceClockwiseEntrance 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: calc(var(--slice-index, 0) * 60ms);
+}
+
+@keyframes sliceClockwiseEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.65) rotate(-18deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.04) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wheel-slice.is-animating {
+    animation: none !important;
+  }
+}
+
+/* Five Elements Styling -------------------------------------------------- */
+
+.elem-wood .wheel-slice-path { fill: rgba(46, 125, 50, 0.08); }
+.elem-fire .wheel-slice-path { fill: rgba(198, 40, 40, 0.08); }
+.elem-earth .wheel-slice-path { fill: rgba(245, 124, 0, 0.08); }
+.elem-metal .wheel-slice-path { fill: rgba(84, 110, 122, 0.08); }
+.elem-water .wheel-slice-path { fill: rgba(21, 101, 192, 0.08); }
+
+.mode-elements .elem-wood .wheel-slice-path { fill: rgba(46, 125, 50, 0.22); stroke: #2e7d32; }
+.mode-elements .elem-fire .wheel-slice-path { fill: rgba(198, 40, 40, 0.22); stroke: #c62828; }
+.mode-elements .elem-earth .wheel-slice-path { fill: rgba(245, 124, 0, 0.22); stroke: #f57c00; }
+.mode-elements .elem-metal .wheel-slice-path { fill: rgba(84, 110, 122, 0.22); stroke: #546e7a; }
+.mode-elements .elem-water .wheel-slice-path { fill: rgba(21, 101, 192, 0.22); stroke: #1565c0; }
+
+/* Direction / Compass Highlights */
+
+.mode-directions .wheel-dir-path {
+  fill: var(--color-surface-hover);
+  stroke: var(--color-accent);
+}
+
+.mode-directions .compass-label {
+  fill: var(--color-accent);
+  font-weight: 900;
+}
+
+/* Inner Bell & 24h Ring -------------------------------------------------- */
+
+.wheel-bell-path {
+  fill: var(--color-surface);
+  stroke: var(--color-border-subtle);
+  stroke-width: 1;
+  transition: fill var(--transition-fast);
+}
+
+.wheel-bell-path.phase-night {
+  fill: rgba(30, 41, 59, 0.06);
+}
+
+[data-theme-mode="dark"] .wheel-bell-path.phase-night,
+[data-mode="dark"] .wheel-bell-path.phase-night {
+  fill: rgba(0, 0, 0, 0.25);
+}
+
+.wheel-bell-text {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--color-text);
+  font-family: var(--font-body);
+}
+
+.wheel-hour-text {
+  font-size: 9px;
+  font-weight: 500;
+  fill: var(--color-text-muted);
+  font-family: var(--font-body);
+}
+
+.wheel-bell-sector.is-active .wheel-bell-path {
+  fill: var(--color-accent-light);
+  stroke: var(--color-accent);
+}
+
+.wheel-bell-sector.is-active .wheel-bell-text {
+  fill: var(--color-accent);
+}
+
+/* Center Hub ------------------------------------------------------------- */
+
+.hub-base-circle {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 2;
+}
+
+.hub-night-bg {
+  fill: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme-mode="dark"] .hub-night-bg,
+[data-mode="dark"] .hub-night-bg {
+  fill: rgba(15, 23, 42, 0.45);
+}
+
+.hub-day-bg {
+  fill: rgba(251, 191, 36, 0.1);
+}
+
+.hub-divider {
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+}
+
+.hub-core-circle {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 2;
+}
+
+.hub-title-jp {
+  font-family: var(--font-display-jp);
+  font-size: 20px;
+  font-weight: 800;
+  fill: var(--color-accent);
+}
+
+.hub-label {
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--color-text-muted);
+}
+
+/* Compass Labels */
+
+.compass-label {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--color-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.compass-label.is-north {
+  fill: var(--color-accent);
+}
+
+.compass-pip {
+  fill: var(--color-accent);
+}
+
+/* Inspector Card --------------------------------------------------------- */
+
+.zodiac-inspector {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.zi-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-border-subtle);
+}
+
+.zi-kanji-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-surface-2);
+  border: 2px solid var(--color-border);
+}
+
+.zi-kanji {
+  font-family: var(--font-display-jp);
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.zi-title-area {
+  flex: 1;
+}
+
+.zi-animal-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zi-readings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.zi-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: var(--color-surface-2);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text);
+}
+
+.zi-gate-badge {
+  display: inline-block;
+  background: #dc2626;
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--border-radius-full);
+  margin-top: 6px;
+}
+
+/* Attributes Grid */
+
+.zi-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (min-width: 480px) {
+  .zi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.zi-cell {
+  background: var(--color-surface-2);
+  padding: 10px 14px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.zi-cell-label {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.zi-cell-val {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* Badge Element */
+
+.badge-elem {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: #fff;
+}
+
+.badge-elem.elem-wood { background: #2e7d32; }
+.badge-elem.elem-fire { background: #c62828; }
+.badge-elem.elem-earth { background: #f57c00; }
+.badge-elem.elem-metal { background: #546e7a; }
+.badge-elem.elem-water { background: #1565c0; }
+
+/* In-depth info boxes */
+
+.zi-info-box {
+  background: var(--color-surface-2);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-left: 4px solid var(--color-accent);
+}
+
+.zi-info-box h4 {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.zi-info-box p {
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.zi-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.zi-dict-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.zi-dict-btn:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+/* Reference Table -------------------------------------------------------- */
+
+.zodiac-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--spacing-2xl);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.zodiac-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+  background: var(--color-surface);
+  text-align: left;
+}
+
+.zodiac-table th {
+  background: var(--color-surface-2);
+  padding: 12px 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.zodiac-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  color: var(--color-text);
+  vertical-align: middle;
+}
+
+.zodiac-table tr:last-child td {
+  border-bottom: none;
+}
+
+.zodiac-table tr:hover td {
+  background-color: var(--color-surface-hover);
+}
+
+.zodiac-table-kanji {
+  font-family: var(--font-display-jp);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-accent);
+}

@@ -64,6 +64,9 @@ async function startApp() {
   } else if (pageType === 'game-kanji-wordle') {
     const { initKanjiWordle } = await import('./games/kanji-wordle.js');
     await initKanjiWordle();
+  } else if (pageType === 'chinese-zodiacs') {
+    const { initChineseZodiacs } = await import('./chinese-zodiacs.js');
+    initChineseZodiacs();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }
