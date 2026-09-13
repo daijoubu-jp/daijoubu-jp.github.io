@@ -7,30 +7,30 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Daijoubu JP">
-  <title>เกมคันจิ (Kanji Games) | KanjiThai</title>
-  <meta name="description" content="พจนานุกรมคันจิออนไลน์สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย ครอบคลุมคันจิโจโย 2,136 ตัว และคันจิคันเค็นระดับสูง พร้อมเสียงอ่าน ความหมายภาษาไทย และลำดับขีด">
-  
+  <title>คันจิเวิร์ดเดิล (漢字・WORDLE) | KanjiThai</title>
+  <meta name="description" content="เกมทายคันจิรายวัน ใช้เบาะแสจำนวนขีด หมวดอักษร ระดับคันเค็น JLPT ชั้นเรียน และโจโย">
+
   <!-- SEO & Social Sharing (Open Graph) -->
-  <meta property="og:title" content="พจนานุกรมคันจิ สำหรับคนไทย | KanjiThai">
-  <meta property="og:description" content="พจนานุกรมคันจิออนไลน์สำหรับผู้เรียนภาษาญี่ปุ่นชาวไทย ครอบคลุมคันจิโจโย 2,136 ตัว และคันจิคันเค็นระดับสูง">
+  <meta property="og:title" content="คันจิเวิร์ดเดิล (漢字・WORDLE) | KanjiThai">
+  <meta property="og:description" content="ทายคันจิจากเบาะแสจำนวนขีด หมวดอักษร ระดับคันเค็น JLPT และอื่น ๆ">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/06f22.svg">
   <meta name="twitter:card" content="summary">
-  
+
   <!-- PWA Manifest & Icons -->
   <link rel="manifest" href="../manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>漢</text></svg>">
-  
+
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+Thai+Looped:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
-  
+
     <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="../assets/css/base.css?v=1788492100">
   <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/games.css">
   <link rel="stylesheet" href="../assets/css/themes/spring.css">
   <link rel="stylesheet" href="../assets/css/themes/summer.css">
   <link rel="stylesheet" href="../assets/css/themes/autumn.css">
@@ -55,7 +55,7 @@
     })();
   </script>
 </head>
-<body data-page="games">
+<body data-page="game-kanji-wordle">
 
   <!-- Site Header -->
   <header class="site-header">
@@ -139,53 +139,80 @@
 
   <!-- Main Content -->
   <main class="main-content">
-    
-    <section class="hero-section">
+
+    <section class="hero-section game-hero">
       <div class="container">
-        <h1 class="hero-title">ลานประลองคันจิ <br> (Kanji Games)</h1>
-        <p class="hero-subtitle" style="max-width: 600px; margin: 0 auto;">สนุกไปกับการเรียนรู้และทบทวนคันจิผ่านมินิเกม</p>
+        <h1 class="hero-title">คันจิเวิร์ดเดิล <br><span class="game-hero-jp">(漢字・WORDLE)</span></h1>
+        <p class="hero-subtitle">ทายคันจิเป้าหมายจากเบาะแส 6 ด้าน ภายใน 6 ครั้ง</p>
       </div>
     </section>
 
-    <div class="container" style="padding-top: var(--spacing-xl);">
-      <div class="hub-grid">
-        <!-- Kanji Time Attack (Live) -->
-        <a href="time-attack.html" class="hub-card">
-          <div class="hub-card-icon">⏱️</div>
-          <div class="hub-card-title">คันจิไทม์แอทแทค (漢字タイムショック)</div>
-          <div class="hub-card-desc">ตอบความหมายคันจิให้ได้มากที่สุดภายใน 60 วินาที</div>
-        </a>
+    <div class="container game-container">
 
-        <!-- Kanji in Kanji (Live) -->
-        <a href="kanji-in-kanji.html" class="hub-card">
-          <div class="hub-card-icon">🧩</div>
-          <div class="hub-card-title">คันจิซ่อนคันจิ (漢字の中に漢字)</div>
-          <div class="hub-card-desc">หาคันจิที่ประกอบอยู่ภายในตัวคันจิที่ซับซ้อนให้ได้มากที่สุด</div>
-        </a>
+      <!-- Start screen -->
+      <section id="kwl-start" class="game-screen">
+        <div class="kwl-modes">
+          <button type="button" id="kwl-daily" class="action-btn kwl-daily-btn">📅 เล่นประจำวัน (Daily)</button>
+          <p id="kwl-streak" class="kwl-streak"></p>
+          <h2 class="game-heading kwl-practice-title">หรือฝึกเล่นตามระดับ</h2>
+          <div id="kwl-bands" class="band-chips"></div>
+        </div>
+      </section>
 
-        <!-- Quick Compound (Live) -->
-        <a href="quick-compound.html" class="hub-card">
-          <div class="hub-card-icon">⚡</div>
-          <div class="hub-card-title">สปีดคำประสม (スピード熟語)</div>
-          <div class="hub-card-desc">เลือกคำประสมคันจิที่มีคันจิเป้าหมายให้ครบก่อนเวลาหมด</div>
-        </a>
+      <!-- Playing screen -->
+      <section id="kwl-game" class="game-screen" hidden>
+        <div class="game-hud">
+          <div class="game-scoreboard">
+            <div class="game-stat-card">
+              <span class="game-stat-label">โหมด</span>
+              <span class="game-stat-value kwl-mode" id="kwl-mode">รายวัน</span>
+            </div>
+            <div class="game-stat-card">
+              <span class="game-stat-label">ครั้งที่ทาย</span>
+              <span class="game-stat-value" id="kwl-attempts">0/6</span>
+            </div>
+          </div>
+        </div>
 
-        <!-- Kanji Wordle (Live) -->
-        <a href="kanji-wordle.html" class="hub-card">
-          <div class="hub-card-icon">🧠</div>
-          <div class="hub-card-title">คันจิเวิร์ดเดิล (漢字・WORDLE)</div>
-          <div class="hub-card-desc">ทายคันจิเป้าหมายจากเบาะแสจำนวนขีด หมวดอักษร ระดับสอบ และชั้นเรียน</div>
-        </a>
-      </div>
+        <div class="kwl-search">
+          <input type="search" id="kwl-guess-input" class="search-input" placeholder="พิมพ์คันจิ / ไทย / โรมาจิ / อังกฤษ แล้วเลือก" autocomplete="off" aria-label="ช่องทายคันจิ">
+          <div id="kwl-suggestions" class="autocomplete-dropdown kwl-suggestions"></div>
+        </div>
+
+        <div id="kwl-grid" class="kwl-grid"></div>
+
+        <p class="kwl-legend">🟩 ตรง · 🟨 ลูกศรบอกทิศทางของคำตอบ (▲ มากกว่า / ▼ น้อยกว่า) · ⬜ ไม่ตรง</p>
+        <p id="kwl-message" class="kwl-message" aria-live="assertive"></p>
+
+        <div class="game-actions">
+          <button type="button" id="kwl-giveup" class="action-btn" hidden>เฉลย</button>
+          <button type="button" id="kwl-change-mode" class="action-btn">เปลี่ยนโหมด</button>
+        </div>
+      </section>
+
+      <!-- Result screen -->
+      <section id="kwl-result" class="game-screen" hidden>
+        <div class="game-result">
+          <div class="game-result-icon" id="kwl-result-icon">🎉</div>
+          <h2 class="game-heading" id="kwl-result-title">ชนะ!</h2>
+          <p class="game-result-score">คันจิเป้าหมาย: <strong id="kwl-target" lang="ja"></strong></p>
+          <p class="game-result-best" id="kwl-result-sub"></p>
+          <div class="game-actions">
+            <button type="button" id="kwl-again" class="action-btn">เล่นอีกครั้ง</button>
+            <button type="button" id="kwl-result-mode" class="action-btn">เปลี่ยนโหมด</button>
+            <a href="index.html" class="action-btn">กลับหน้าเกม</a>
+          </div>
+        </div>
+      </section>
+
     </div>
-
   </main>
 
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-bottom">
-        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table & KANJIDIC2 & KanjiVG (CC BY-SA) | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย
+        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table & KANJIDIC2 & KanjiVG & KRADFILE & JMdict (CC BY-SA) | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย
       </div>
     </div>
   </footer>

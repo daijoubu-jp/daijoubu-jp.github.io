@@ -12,11 +12,12 @@ const html = readFileSync(
   'utf8'
 );
 
-test('games hub exposes all three live games', () => {
-  assert.equal((html.match(/class="hub-card"/g) || []).length, 3);
+test('games hub exposes all four live games', () => {
+  assert.equal((html.match(/class="hub-card"/g) || []).length, 4);
   assert.match(html, /href="time-attack.html" class="hub-card"/);
   assert.match(html, /href="kanji-in-kanji.html" class="hub-card"/);
   assert.match(html, /href="quick-compound.html" class="hub-card"/);
+  assert.match(html, /href="kanji-wordle.html" class="hub-card"/);
 });
 
 test('games hub lists no disabled placeholders', () => {

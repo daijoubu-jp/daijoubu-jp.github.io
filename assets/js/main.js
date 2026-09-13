@@ -61,6 +61,9 @@ async function startApp() {
   } else if (pageType === 'game-quick-compound') {
     const { initQuickCompound } = await import('./games/quick-compound.js');
     await initQuickCompound();
+  } else if (pageType === 'game-kanji-wordle') {
+    const { initKanjiWordle } = await import('./games/kanji-wordle.js');
+    await initKanjiWordle();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }

@@ -433,6 +433,98 @@
   color: #dc2626;
 }
 
+/* Kanji Wordle ---------------------------------------------------------- */
+
+.kwl-modes {
+  text-align: center;
+}
+
+.kwl-streak {
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+.kwl-practice-title {
+  margin-top: var(--spacing-xl);
+  font-size: var(--font-size-md);
+}
+
+.kwl-mode {
+  font-size: var(--font-size-md) !important;
+}
+
+.kwl-search {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+}
+
+.kwl-grid {
+  display: grid;
+  gap: 6px;
+  margin-bottom: var(--spacing-md);
+}
+
+.kwl-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.kwl-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 44px;
+  padding: var(--spacing-sm) 4px;
+  text-align: center;
+  font-weight: 700;
+  background: var(--color-surface-2);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+}
+
+.kwl-head .kwl-cell {
+  min-height: 32px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  background: transparent;
+  border-color: transparent;
+}
+
+.kwl-cell.is-correct {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.16);
+}
+
+.kwl-cell.is-wrong {
+  color: var(--color-text-muted);
+}
+
+.kwl-cell.is-higher,
+.kwl-cell.is-lower {
+  border-color: #eab308;
+  background: rgba(234, 179, 8, 0.18);
+}
+
+.kwl-arrow {
+  font-size: 0.75em;
+}
+
+.kwl-legend {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.kwl-message {
+  min-height: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
 /* Motion ---------------------------------------------------------------- */
 
 @keyframes gameFadeIn {
