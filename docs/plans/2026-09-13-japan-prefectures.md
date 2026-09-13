@@ -12,15 +12,16 @@
 
 ---
 
-### Task 0: Push pending commits
+## Task 0: Push pending commits
 
 **Step 1:** `git push` — clears the revisions.md TODO ("Push to Github"). 3 commits pending (2 zodiac + design doc).
 
 ---
 
-### Task 1: Canonical prefecture table + map build script
+## Task 1: Canonical prefecture table + map build script
 
 **Files:**
+
 - Create: `scripts/build_prefectures_map.py`
 - Generate: `data/prefectures-map.json`
 
@@ -137,9 +138,10 @@ def main():
 
 ---
 
-### Task 2: Facts importer → content/prefectures/*.md
+## Task 2: Facts importer → content/prefectures/*.md
 
 **Files:**
+
 - Create: `scripts/build_prefecture_facts.py`
 - Generate: `content/prefectures/*.md` (47 files)
 
@@ -206,9 +208,10 @@ Match rows to the table by `nameJa` (strip trailing 都/道/府/県 handled by d
 
 ---
 
-### Task 3: compile_prefectures() (TDD)
+## Task 3: compile_prefectures() (TDD)
 
 **Files:**
+
 - Modify: `scripts/compile_content.py` (add function + call in `main()` after `compile_compounds()`)
 - Create: `tests/prefectures.test.mjs`
 - Generate: `data/prefectures.json`
@@ -270,9 +273,10 @@ test('content markdown count matches 47', () => {
 
 ---
 
-### Task 4: Map page
+## Task 4: Map page
 
 **Files:**
+
 - Create: `knowledge/jp-prefectures.html` (copy head/nav/footer structure from `knowledge/chinese-zodiacs.html`; `data-page="prefectures-map"`; css link → `../assets/css/prefectures.css`)
 - Create: `assets/js/prefectures-map.js`
 - Create: `assets/css/prefectures.css`
@@ -319,9 +323,10 @@ export function initPrefecturesMap() { // DOM: fetch map JSON + facts, innerHTML
 
 ---
 
-### Task 5: Detail page
+## Task 5: Detail page
 
 **Files:**
+
 - Create: `knowledge/jp-prefecture.html` (`data-page="prefecture-detail"`, same base structure)
 - Create: `assets/js/prefecture-detail.js`
 - Modify: `assets/js/main.js` (route `prefecture-detail`)
@@ -357,9 +362,10 @@ export async function initPrefectureDetail() {
 
 ---
 
-### Task 6: Site integration
+## Task 6: Site integration
 
 **Files:**
+
 - Modify: nav in **every** HTML page (23 files; brand.test.mjs lists them) — add after the zodiacs line in the คลังความรู้ dropdown:
 
 ```html
@@ -367,6 +373,7 @@ export async function initPrefectureDetail() {
 ```
 
 Root-level pages (`index.html`, `about.html`, root `*.html`) use `knowledge/...` (no `../`). Use `edit` with `replaceAll` — **no patch scripts** (AGENTS.md).
+
 - Modify: `knowledge/index.html` — featured card (first position, pattern of zodiac card): icon 🗾, title `แผนที่ 47 จังหวัดญี่ปุ่น (都道府県)`, desc `สำรวจแผนที่ญี่ปุ่นแบบ Interactive ครบ 47 จังหวัด ชื่อ ที่มา ข้อมูล และสัญลักษณ์ประจำจังหวัด พร้อมลิงก์สู่คันจิในพจนานุกรม`.
 - Modify: `about.html` — data sources section: MLIT 国土数値情報 (CC BY 4.0, via dataofjapan/land MIT) + Wikidata (CC0) for prefecture facts.
 - Modify: `sw.js` — `CACHE_NAME` bump `v5` → `v6`.
@@ -378,9 +385,10 @@ Root-level pages (`index.html`, `about.html`, root `*.html`) use `knowledge/...`
 
 ---
 
-### Task 7: Full test suite + HTML contract tests
+## Task 7: Full test suite + HTML contract tests
 
 **Files:**
+
 - Modify: `tests/prefectures.test.mjs` — add page contract tests (pattern `tests/games.test.mjs`):
 
 ```js
@@ -405,7 +413,7 @@ test('prefectures pages declare data-page, css link, and nav entry', () => {
 
 ---
 
-### Task 8: Final gates + revisions.md + push
+## Task 8: Final gates + revisions.md + push
 
 **Step 1:** `python3 scripts/compile_content.py && git diff --exit-code -- data/` → no drift.
 **Step 2:** `npm test` → all green. `npx markdownlint-cli2 "**/*.md"` → 0 issues (content/prefectures included).

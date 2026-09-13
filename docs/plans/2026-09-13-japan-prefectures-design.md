@@ -51,7 +51,7 @@ Modified:
 
 ## Data flow
 
-```
+```text
 MLIT GeoJSON ─ build_prefectures_map.py ─▶ data/prefectures-map.json (committed)
 Wikidata ───── build_prefecture_facts.py ─▶ content/prefectures/*.md (seeds, additive)
 content/prefectures/*.md ─ compile_content.py ─▶ data/prefectures.json
