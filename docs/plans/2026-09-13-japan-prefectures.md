@@ -167,14 +167,16 @@ Markdown schema (exact; compiled by Task 3):
 
 ### Places
 
-- 旭山動物園
-- 富良野のラベンダー畑
+- 旭山動物園 ｜ สวนสัตว์อาซาฮิยามะ
+- 富良野のラベンダー畑 ｜ ทุ่งลาเวนเดอร์ฟุราโนะ
 
 ### Products
 
-- ジンギスカン
-- じゃがいも
+- ジンギスカン ｜ จิงกิสกัง (หมู่ย่างเสียบ)
+- じゃがいも ｜ มันฝรั่ง
 ```
+
+> **Amendment (2026-09-13):** Places/Products entries use `name ｜ thai-gloss` (fullwidth ｜ U+FF5C). Plain `name` entries are tolerated (th = null). Compiles to `places`/`products` arrays of `{"name": ..., "th": ...}`.
 
 **Step 1: Create `scripts/build_prefecture_facts.py`.**
 
@@ -256,10 +258,10 @@ test('content markdown count matches 47', () => {
 
 **Step 3: Implement `compile_prefectures()`** in `scripts/compile_content.py` (pattern `compile_compounds()`):
 
-- Parse each `content/prefectures/*.md`: `## <name_ja>` heading + `- key: value` lines + `### Places`/`### Products` list items.
+- Parse each `content/prefectures/*.md`: `## <name_ja>` heading + `- key: value` lines + `### Places`/`### Products` list items (`name ｜ thai-gloss` → `{"name","th"}`; plain `name` → `"th": null`).
 - Validate: heading matches `name_ja`; code/slug present; exactly 47 files; duplicates in code or slug abort; required fields non-empty (population/area may be blank at first — allow empty until Task 2 fills them, then tighten per tests).
 - Abort without writing on any error (match existing `errors` handling in `main()`).
-- Write `data/prefectures.json`: `{"prefectures": [ {code, slug, name_ja, name_hira, name_romaji, name_th, region, capital, capital_reading, population, population_year, area_km2, flower, tree, bird, etymology, places: [], products: []} ]}` sorted by code, compact separators, `ensure_ascii=False`.
+- Write `data/prefectures.json`: `{"prefectures": [ {code, slug, name_ja, name_hira, name_romaji, name_th, region, capital, capital_reading, population, population_year, area_km2, flower, tree, bird, etymology, places: [{"name","th"}], products: [{"name","th"}]} ]}` sorted by code, compact separators, `ensure_ascii=False`.
 - Call from `main()`.
 
 **Step 4: Run.** `python3 scripts/compile_content.py` then `node --test tests/prefectures.test.mjs` → PASS.
@@ -342,7 +344,7 @@ export async function initPrefectureDetail() {
   //   stats grid: capital / population (snapshot year) / area
   //   symbols cards: 花/木/鳥
   //   etymology card
-  //   Places + Products lists
+  //   Places + Products lists (name + Thai gloss line when th present)
   //   dictionary bridge: uniqueKanji(name_ja) → ../browse/kanji.html?k=<char>
   //   prev/next nav by code (01↔47 wrap, hidden at ends)
   // document.title + meta description update per prefecture
