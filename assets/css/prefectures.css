@@ -686,6 +686,10 @@
   margin-bottom: 0;
 }
 
+.pref-detail-error-card .action-btn {
+  margin-top: var(--spacing-md);
+}
+
 /* Hidden TTS buttons (Web Speech API unavailable) */
 
 .pref-detail-container .audio-btn[hidden] {

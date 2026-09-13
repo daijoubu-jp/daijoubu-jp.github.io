@@ -206,13 +206,21 @@ export function prefectureDescription(p) {
   return `ข้อมูลจังหวัด${p.name_th} (${p.name_ja}) ภูมิภาค${p.region} เมืองหลวง${p.capital} พร้อมที่มาของชื่อ ประชากร พื้นที่ สัญลักษณ์ประจำจังหวัด สถานที่ท่องเที่ยว และผลิตภัณฑ์ท้องถิ่น`;
 }
 
+/**
+ * Renders the error/empty state card and unhides it.
+ * @param {HTMLElement|null} errorBox
+ * @param {HTMLElement|null} container
+ * @param {string} title Plain-text heading; escaped before insertion.
+ * @param {string} detailHtml Trusted HTML markup built by this module.
+ */
 function showErrorCard(errorBox, container, title, detailHtml) {
+  if (!container || !errorBox) return;
   container.innerHTML = '';
   errorBox.innerHTML = `
       <div class="pref-detail-error-icon">⚠️</div>
-      <h2>${title}</h2>
+      <h2>${escapeHtml(title)}</h2>
       ${detailHtml}
-      <a href="jp-prefectures.html" class="action-btn" style="margin-top: 1rem; display: inline-flex;">กลับไปหน้าแผนที่ 47 จังหวัด</a>
+      <a href="jp-prefectures.html" class="action-btn">กลับไปหน้าแผนที่ 47 จังหวัด</a>
   `;
   errorBox.hidden = false;
 }
@@ -293,13 +301,13 @@ export async function initPrefectureDetail() {
     list = (data && data.prefectures) || [];
   } catch (err) {
     console.warn('Prefecture detail failed to load:', err);
-    showErrorCard(errorBox, container, 'ไม่สามารถโหลดข้อมูลจังหวัดได้ในขณะนี้', '<p style="color: var(--color-text-muted);">กรุณาลองใหม่ภายหลัง</p>');
+    showErrorCard(errorBox, container, 'ไม่สามารถโหลดข้อมูลจังหวัดได้ในขณะนี้', '<p>กรุณาลองใหม่ภายหลัง</p>');
     return;
   }
 
   const prefecture = findPrefecture(list, slug);
   if (!prefecture) {
-    showErrorCard(errorBox, container, 'ไม่พบจังหวัดที่ระบุ', `<p style="color: var(--color-text-muted);">ไม่พบจังหวัดสำหรับ 「${escapeHtml(slug)}」 กรุณาเลือกจังหวัดจากแผนที่</p>`);
+    showErrorCard(errorBox, container, 'ไม่พบจังหวัดที่ระบุ', `<p>ไม่พบจังหวัดสำหรับ 「${escapeHtml(slug)}」 กรุณาเลือกจังหวัดจากแผนที่</p>`);
     return;
   }
 
