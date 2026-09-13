@@ -590,7 +590,7 @@ def parse_prefecture_markdown(content, rel_path, errors):
             section_name = stripped[4:].strip()
             if section_name not in ("Places", "Products"):
                 errors.append(f"{rel_path}: unexpected section heading {section_name!r}")
-            elif stripped == "### Places":
+            elif section_name == "Places":
                 section = entry["places"]
             else:
                 section = entry["products"]
@@ -651,12 +651,10 @@ def compile_prefectures():
                 errors.append(f"{rel_path}: missing required field {field!r}")
 
         code = entry.get("code", "")
-        if not code.isdigit():
+        if not re.fullmatch(r"[0-9]{2}", code):
             errors.append(f"{rel_path}: bad code {code!r}")
         elif code in entries:
             errors.append(f"{rel_path}: duplicate code {code!r} (also {entries[code]['_rel']})")
-        elif len(code) != 2:
-            errors.append(f"{rel_path}: code {code!r} is not 2 digits")
 
         slug = entry.get("slug", "")
         if not re.match(r"^[a-z]+$", slug):
@@ -682,7 +680,7 @@ def compile_prefectures():
 
         if "population_year" not in entry:
             errors.append(f"{rel_path}: missing required field 'population_year'")
-        elif not re.match(r"^\d{4}$", entry["population_year"]):
+        elif not re.fullmatch(r"[0-9]{4}", entry["population_year"]):
             errors.append(f"{rel_path}: bad population_year {entry['population_year']!r}")
 
         if len(entry["places"]) < 3:
