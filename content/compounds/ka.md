@@ -52,7 +52,7 @@
 ## 下品 (げひん)
 
 - meaning_en: vulgar
-- meaning_th:
+- meaning_th: หยาบคาย
 
 ---
 
@@ -129,7 +129,7 @@
 ## 下手 (へた)
 
 - meaning_en: unskillful
-- meaning_th:
+- meaning_th: ไม่ชำนาญ
 
 ---
 
@@ -178,7 +178,7 @@
 ## 下水道 (げすいどう)
 
 - meaning_en: sewer
-- meaning_th:
+- meaning_th: ท่อระบายน้ำ
 
 ---
 
@@ -227,21 +227,21 @@
 ## 下痢 (げり)
 
 - meaning_en: diarrhea
-- meaning_th:
+- meaning_th: ท้องเสีย
 
 ---
 
 ## 下着 (したぎ)
 
 - meaning_en: underwear
-- meaning_th:
+- meaning_th: ชุดชั้นใน
 
 ---
 
 ## 下等 (かとう)
 
 - meaning_en: inferior
-- meaning_th:
+- meaning_th: ด้อยกว่า
 
 ---
 
@@ -269,7 +269,7 @@
 ## 下腹部 (かふくぶ)
 
 - meaning_en: (lower) abdomen
-- meaning_th:
+- meaning_th: หน้าท้อง
 
 ---
 
@@ -297,7 +297,7 @@
 ## 下記 (かき)
 
 - meaning_en: the following
-- meaning_th:
+- meaning_th: ต่อไปนี้
 
 ---
 
@@ -353,7 +353,7 @@
 ## 下馬評 (げばひょう)
 
 - meaning_en: rumor
-- meaning_th:
+- meaning_th: ข่าวลือ
 
 ---
 
@@ -367,21 +367,21 @@
 ## 丘陵 (きゅうりょう)
 
 - meaning_en: hill
-- meaning_th:
+- meaning_th: เนินเขา
 
 ---
 
 ## 丸太 (まるた)
 
 - meaning_en: log
-- meaning_th:
+- meaning_th: เข้าสู่ระบบ
 
 ---
 
 ## 丸木 (まるき)
 
 - meaning_en: log
-- meaning_th:
+- meaning_th: เข้าสู่ระบบ
 
 ---
 
@@ -465,7 +465,7 @@
 ## 乞食 (こじき)
 
 - meaning_en: beggar
-- meaning_th:
+- meaning_th: ขอทาน
 
 ---
 
@@ -521,7 +521,7 @@
 ## 亀裂 (きれつ)
 
 - meaning_en: crack
-- meaning_th:
+- meaning_th: ร้าว
 
 ---
 
@@ -535,14 +535,14 @@
 ## 互換 (ごかん)
 
 - meaning_en: interchange
-- meaning_th:
+- meaning_th: การแลกเปลี่ยน
 
 ---
 
 ## 互角 (ごかく)
 
 - meaning_en: equal (in ability)
-- meaning_th:
+- meaning_th: เท่ากัน
 
 ---
 
@@ -570,7 +570,7 @@
 ## 五分 (ごぶ)
 
 - meaning_en: half
-- meaning_th:
+- meaning_th: ครึ่งหนึ่ง
 
 ---
 
@@ -619,7 +619,7 @@
 ## 五線 (ごせん)
 
 - meaning_en: staff
-- meaning_th:
+- meaning_th: พนักงาน
 
 ---
 
@@ -661,14 +661,14 @@
 ## 亢進 (こうしん)
 
 - meaning_en: rising
-- meaning_th:
+- meaning_th: เพิ่มขึ้น
 
 ---
 
 ## 交互 (こうご)
 
 - meaning_en: alternate
-- meaning_th:
+- meaning_th: สลับกัน
 
 ---
 
@@ -682,7 +682,7 @@
 ## 交代 (こうたい)
 
 - meaning_en: change
-- meaning_th:
+- meaning_th: การเปลี่ยนแปลง
 
 ---
 
@@ -696,7 +696,7 @@
 ## 交友 (こうゆう)
 
 - meaning_en: friend
-- meaning_th:
+- meaning_th: เพื่อน
 
 ---
 
@@ -710,14 +710,14 @@
 ## 交差 (こうさ)
 
 - meaning_en: crossing
-- meaning_th:
+- meaning_th: ข้าม
 
 ---
 
 ## 交差点 (こうさてん)
 
 - meaning_en: crossing
-- meaning_th:
+- meaning_th: ข้าม
 
 ---
 
@@ -731,7 +731,7 @@
 ## 交戦 (こうせん)
 
 - meaning_en: war
-- meaning_th:
+- meaning_th: สงคราม
 
 ---
 
@@ -745,7 +745,7 @@
 ## 交換 (こうかん)
 
 - meaning_en: exchange
-- meaning_th:
+- meaning_th: แลกเปลี่ยน
 
 ---
 
@@ -766,7 +766,7 @@
 ## 交易 (こうえき)
 
 - meaning_en: trade
-- meaning_th:
+- meaning_th: การค้าขาย
 
 ---
 
@@ -780,7 +780,7 @@
 ## 交流 (こうりゅう)
 
 - meaning_en: exchange (e.g. cultural)
-- meaning_th:
+- meaning_th: แลกเปลี่ยน
 
 ---
 
@@ -794,14 +794,14 @@
 ## 交番 (こうばん)
 
 - meaning_en: police box
-- meaning_th:
+- meaning_th: ป้อมตำรวจ
 
 ---
 
 ## 交通 (こうつう)
 
 - meaning_en: traffic
-- meaning_th:
+- meaning_th: การจราจร, คมนาคม
 
 ---
 
@@ -836,7 +836,7 @@
 ## 交遊 (こうゆう)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
@@ -850,14 +850,14 @@
 ## 交錯 (こうさく)
 
 - meaning_en: mixture
-- meaning_th:
+- meaning_th: ส่วนผสม
 
 ---
 
 ## 交際 (こうさい)
 
 - meaning_en: company
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -899,7 +899,7 @@
 ## 享受 (きょうじゅ)
 
 - meaning_en: enjoyment (of freedom, beauty, etc.)
-- meaning_th:
+- meaning_th: ความเพลิดเพลิน
 
 ---
 
@@ -920,7 +920,7 @@
 ## 京都 (きょうと)
 
 - meaning_en: Kyoto (city, prefecture)
-- meaning_th:
+- meaning_th: เกียวโต
 
 ---
 
@@ -941,7 +941,7 @@
 ## 今回 (こんかい)
 
 - meaning_en: this time
-- meaning_th:
+- meaning_th: ครั้งนี้
 
 ---
 
@@ -962,7 +962,7 @@
 ## 今夜 (こんや)
 
 - meaning_en: this evening
-- meaning_th:
+- meaning_th: คืนนี้
 
 ---
 
@@ -1011,7 +1011,7 @@
 ## 今日 (きょう)
 
 - meaning_en: today
-- meaning_th:
+- meaning_th: วันนี้
 
 ---
 
@@ -1053,14 +1053,14 @@
 ## 今更 (いまさら)
 
 - meaning_en: now (when it is already much too late)
-- meaning_th:
+- meaning_th: ตอนนี้
 
 ---
 
 ## 今月 (こんげつ)
 
 - meaning_en: this month
-- meaning_th:
+- meaning_th: เดือนนี้
 
 ---
 
@@ -1095,7 +1095,7 @@
 ## 今般 (こんぱん)
 
 - meaning_en: now
-- meaning_th:
+- meaning_th: ตอนนี้
 
 ---
 
@@ -1137,21 +1137,21 @@
 ## 介助 (かいじょ)
 
 - meaning_en: help
-- meaning_th:
+- meaning_th: ช่วยด้วย
 
 ---
 
 ## 介在 (かいざい)
 
 - meaning_en: existing (between)
-- meaning_th:
+- meaning_th: ที่มีอยู่
 
 ---
 
 ## 介護 (かいご)
 
 - meaning_en: nursing
-- meaning_th:
+- meaning_th: การพยาบาล
 
 ---
 
@@ -1221,7 +1221,7 @@
 ## 仮眠 (かみん)
 
 - meaning_en: nap
-- meaning_th:
+- meaning_th: งีบหลับ
 
 ---
 
@@ -1256,7 +1256,7 @@
 ## 仮面 (かめん)
 
 - meaning_en: mask
-- meaning_th:
+- meaning_th: หน้ากาก
 
 ---
 
@@ -1284,7 +1284,7 @@
 ## 企図 (きと)
 
 - meaning_en: plan
-- meaning_th:
+- meaning_th: แผน
 
 ---
 
@@ -1361,14 +1361,14 @@
 ## 休息 (きゅうそく)
 
 - meaning_en: rest
-- meaning_th:
+- meaning_th: ส่วนที่เหลือ
 
 ---
 
 ## 休憩 (きゅうけい)
 
 - meaning_en: rest
-- meaning_th:
+- meaning_th: ส่วนที่เหลือ
 
 ---
 
@@ -1473,7 +1473,7 @@
 ## 休養 (きゅうよう)
 
 - meaning_en: rest
-- meaning_th:
+- meaning_th: ส่วนที่เหลือ
 
 ---
 
@@ -1494,14 +1494,14 @@
 ## 会合 (かいごう)
 
 - meaning_en: meeting
-- meaning_th:
+- meaning_th: การประชุม
 
 ---
 
 ## 会員 (かいいん)
 
 - meaning_en: member
-- meaning_th:
+- meaning_th: สมาชิก
 
 ---
 
@@ -1557,7 +1557,7 @@
 ## 会社 (かいしゃ)
 
 - meaning_en: company
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -1578,7 +1578,7 @@
 ## 会見 (かいけん)
 
 - meaning_en: interview
-- meaning_th:
+- meaning_th: สัมภาษณ์
 
 ---
 
@@ -1606,7 +1606,7 @@
 ## 会話 (かいわ)
 
 - meaning_en: conversation
-- meaning_th:
+- meaning_th: บทสนทนา
 
 ---
 
@@ -1620,7 +1620,7 @@
 ## 会議 (かいぎ)
 
 - meaning_en: meeting
-- meaning_th:
+- meaning_th: การประชุม
 
 ---
 
@@ -1648,7 +1648,7 @@
 ## 会長 (かいちょう)
 
 - meaning_en: president (of a society)
-- meaning_th:
+- meaning_th: ประธานบริษัท, นายกสมาคม
 
 ---
 
@@ -1676,14 +1676,14 @@
 ## 伽藍 (がらん)
 
 - meaning_en: temple (esp. large one)
-- meaning_th:
+- meaning_th: วัด
 
 ---
 
 ## 何事 (なにごと)
 
 - meaning_en: what
-- meaning_th:
+- meaning_th: อะไร
 
 ---
 
@@ -1711,7 +1711,7 @@
 ## 何分 (なにぶん)
 
 - meaning_en: some
-- meaning_th:
+- meaning_th: บางส่วน
 
 ---
 
@@ -1767,14 +1767,14 @@
 ## 何故 (なぜ)
 
 - meaning_en: why
-- meaning_th:
+- meaning_th: ทำไม
 
 ---
 
 ## 何故 (なにゆえ)
 
 - meaning_en: why
-- meaning_th:
+- meaning_th: ทำไม
 
 ---
 
@@ -1788,7 +1788,7 @@
 ## 何方 (どなた)
 
 - meaning_en: who
-- meaning_th:
+- meaning_th: ใคร
 
 ---
 
@@ -1802,7 +1802,7 @@
 ## 何時 (いつ)
 
 - meaning_en: when
-- meaning_th:
+- meaning_th: เมื่อ
 
 ---
 
@@ -1844,7 +1844,7 @@
 ## 何者 (なにもの)
 
 - meaning_en: who
-- meaning_th:
+- meaning_th: ใคร
 
 ---
 
@@ -1886,14 +1886,14 @@
 ## 供物 (くもつ)
 
 - meaning_en: offering (e.g. to the gods)
-- meaning_th:
+- meaning_th: การเสนอขาย
 
 ---
 
 ## 供給 (きょうきゅう)
 
 - meaning_en: supply
-- meaning_th:
+- meaning_th: อุปทาน
 
 ---
 
@@ -1907,7 +1907,7 @@
 ## 供託 (きょうたく)
 
 - meaning_en: deposit
-- meaning_th:
+- meaning_th: เงินฝาก
 
 ---
 
@@ -1935,7 +1935,7 @@
 ## 価値 (かち)
 
 - meaning_en: value
-- meaning_th:
+- meaning_th: ค่า
 
 ---
 
@@ -1956,7 +1956,7 @@
 ## 価格 (かかく)
 
 - meaning_en: price
-- meaning_th:
+- meaning_th: ราคา
 
 ---
 
@@ -1970,21 +1970,21 @@
 ## 侯爵 (こうしゃく)
 
 - meaning_en: marquis
-- meaning_th:
+- meaning_th: มาร์ควิส
 
 ---
 
 ## 係争 (けいそう)
 
 - meaning_en: dispute
-- meaning_th:
+- meaning_th: ข้อพิพาท
 
 ---
 
 ## 係員 (かかりいん)
 
 - meaning_en: person in charge
-- meaning_th:
+- meaning_th: บุคคลที่รับผิดชอบ
 
 ---
 
@@ -2019,7 +2019,7 @@
 ## 個人 (こじん)
 
 - meaning_en: individual
-- meaning_th:
+- meaning_th: รายบุคคล
 
 ---
 
@@ -2047,21 +2047,21 @@
 ## 個体 (こたい)
 
 - meaning_en: individual
-- meaning_th:
+- meaning_th: รายบุคคล
 
 ---
 
 ## 個別 (こべつ)
 
 - meaning_en: individual
-- meaning_th:
+- meaning_th: รายบุคคล
 
 ---
 
 ## 個室 (こしつ)
 
 - meaning_en: single (room)
-- meaning_th:
+- meaning_th: โสด
 
 ---
 
@@ -2082,7 +2082,7 @@
 ## 個性的 (こせいてき)
 
 - meaning_en: individual
-- meaning_th:
+- meaning_th: รายบุคคล
 
 ---
 
@@ -2117,7 +2117,7 @@
 ## 倶楽部 (クラブ)
 
 - meaning_en: club
-- meaning_th:
+- meaning_th: สโมสร
 
 ---
 
@@ -2138,7 +2138,7 @@
 ## 健全 (けんぜん)
 
 - meaning_en: healthy
-- meaning_th:
+- meaning_th: มีสุขภาพดี
 
 ---
 
@@ -2159,7 +2159,7 @@
 ## 健康 (けんこう)
 
 - meaning_en: health
-- meaning_th:
+- meaning_th: สุขภาพ
 
 ---
 
@@ -2194,7 +2194,7 @@
 ## 健気 (けなげ)
 
 - meaning_en: admirable
-- meaning_th:
+- meaning_th: น่าชื่นชม
 
 ---
 
@@ -2229,14 +2229,14 @@
 ## 偶像 (ぐうぞう)
 
 - meaning_en: image
-- meaning_th:
+- meaning_th: รูปภาพ
 
 ---
 
 ## 偶数 (ぐうすう)
 
 - meaning_en: even number
-- meaning_th:
+- meaning_th: เลขคู่
 
 ---
 
@@ -2292,7 +2292,7 @@
 ## 偽造 (ぎぞう)
 
 - meaning_en: forgery
-- meaning_th:
+- meaning_th: การปลอมแปลง
 
 ---
 
@@ -2334,7 +2334,7 @@
 ## 傾城 (けいせい)
 
 - meaning_en: beauty
-- meaning_th:
+- meaning_th: ความงาม
 
 ---
 
@@ -2362,21 +2362,21 @@
 ## 儀典 (ぎてん)
 
 - meaning_en: ceremony
-- meaning_th:
+- meaning_th: พิธี
 
 ---
 
 ## 儀式 (ぎしき)
 
 - meaning_en: ceremony
-- meaning_th:
+- meaning_th: พิธี
 
 ---
 
 ## 儀礼 (ぎれい)
 
 - meaning_en: courtesy
-- meaning_th:
+- meaning_th: ความสุภาพ
 
 ---
 
@@ -2432,7 +2432,7 @@
 ## 元手 (もとで)
 
 - meaning_en: capital
-- meaning_th:
+- meaning_th: ทุน
 
 ---
 
@@ -2467,7 +2467,7 @@
 ## 元気 (げんき)
 
 - meaning_en: lively
-- meaning_th:
+- meaning_th: มีชีวิตชีวา
 
 ---
 
@@ -2509,7 +2509,7 @@
 ## 元首 (げんしゅ)
 
 - meaning_en: sovereign
-- meaning_th:
+- meaning_th: อธิปไตย
 
 ---
 
@@ -2523,7 +2523,7 @@
 ## 兄弟 (きょうだい)
 
 - meaning_en: brothers and sisters
-- meaning_th:
+- meaning_th: พี่น้อง
 
 ---
 
@@ -2537,7 +2537,7 @@
 ## 兄貴 (あにき)
 
 - meaning_en: elder brother
-- meaning_th:
+- meaning_th: พี่ชาย
 
 ---
 
@@ -2565,7 +2565,7 @@
 ## 光彩 (こうさい)
 
 - meaning_en: brilliance
-- meaning_th:
+- meaning_th: ความฉลาด
 
 ---
 
@@ -2579,7 +2579,7 @@
 ## 光景 (こうけい)
 
 - meaning_en: scene
-- meaning_th:
+- meaning_th: ฉาก
 
 ---
 
@@ -2593,7 +2593,7 @@
 ## 光沢 (こうたく)
 
 - meaning_en: brilliance
-- meaning_th:
+- meaning_th: ความฉลาด
 
 ---
 
@@ -2621,7 +2621,7 @@
 ## 光線 (こうせん)
 
 - meaning_en: ray (of light)
-- meaning_th:
+- meaning_th: รังสี
 
 ---
 
@@ -2642,7 +2642,7 @@
 ## 克明 (こくめい)
 
 - meaning_en: detailed
-- meaning_th:
+- meaning_th: รายละเอียด
 
 ---
 
@@ -2705,7 +2705,7 @@
 ## 公共 (こうきょう)
 
 - meaning_en: public (facilities, service, etc.)
-- meaning_th:
+- meaning_th: สาธารณะ
 
 ---
 
@@ -2761,7 +2761,7 @@
 ## 公司 (コンス)
 
 - meaning_en: company (in China)
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -2796,7 +2796,7 @@
 ## 公園 (こうえん)
 
 - meaning_en: (public) park
-- meaning_th:
+- meaning_th: สวนสาธารณะ
 
 ---
 
@@ -2824,7 +2824,7 @@
 ## 公定 (こうてい)
 
 - meaning_en: official (rate, price, etc.)
-- meaning_th:
+- meaning_th: เป็นทางการ
 
 ---
 
@@ -2887,7 +2887,7 @@
 ## 公式 (こうしき)
 
 - meaning_en: official
-- meaning_th:
+- meaning_th: เป็นทางการ
 
 ---
 
@@ -2929,7 +2929,7 @@
 ## 公明正大 (こうめいせいだい)
 
 - meaning_en: fair
-- meaning_th:
+- meaning_th: ยุติธรรม
 
 ---
 
@@ -2943,7 +2943,7 @@
 ## 公正 (こうせい)
 
 - meaning_en: justice
-- meaning_th:
+- meaning_th: ความยุติธรรม
 
 ---
 
@@ -2992,14 +2992,14 @@
 ## 公然 (こうぜん)
 
 - meaning_en: open
-- meaning_th:
+- meaning_th: เปิด
 
 ---
 
 ## 公爵 (こうしゃく)
 
 - meaning_en: prince
-- meaning_th:
+- meaning_th: เจ้าชาย
 
 ---
 
@@ -3020,7 +3020,7 @@
 ## 公的 (こうてき)
 
 - meaning_en: public
-- meaning_th:
+- meaning_th: สาธารณะ
 
 ---
 
@@ -3076,7 +3076,7 @@
 ## 公立 (こうりつ)
 
 - meaning_en: public (institution)
-- meaning_th:
+- meaning_th: สาธารณะ
 
 ---
 
@@ -3153,7 +3153,7 @@
 ## 公設 (こうせつ)
 
 - meaning_en: public (institution)
-- meaning_th:
+- meaning_th: สาธารณะ
 
 ---
 
@@ -3181,7 +3181,7 @@
 ## 公論 (こうろん)
 
 - meaning_en: public opinion
-- meaning_th:
+- meaning_th: ความคิดเห็นของประชาชน
 
 ---
 
@@ -3265,7 +3265,7 @@
 ## 共同 (きょうどう)
 
 - meaning_en: cooperation
-- meaning_th:
+- meaning_th: ความร่วมมือ
 
 ---
 
@@ -3328,7 +3328,7 @@
 ## 共感 (きょうかん)
 
 - meaning_en: sympathy
-- meaning_th:
+- meaning_th: ความเห็นอกเห็นใจ
 
 ---
 
@@ -3468,7 +3468,7 @@
 ## 其奴 (そいつ)
 
 - meaning_en: he
-- meaning_th:
+- meaning_th: เขา
 
 ---
 
@@ -3503,7 +3503,7 @@
 ## 具合 (ぐあい)
 
 - meaning_en: condition
-- meaning_th:
+- meaning_th: สภาพ
 
 ---
 
@@ -3622,7 +3622,7 @@
 ## 凝視 (ぎょうし)
 
 - meaning_en: stare
-- meaning_th:
+- meaning_th: จ้องมอง
 
 ---
 
@@ -3650,7 +3650,7 @@
 ## 凱歌 (がいか)
 
 - meaning_en: victory song
-- meaning_th:
+- meaning_th: เพลงแห่งชัยชนะ
 
 ---
 
@@ -3678,7 +3678,7 @@
 ## 凶悪 (きょうあく)
 
 - meaning_en: atrocious
-- meaning_th:
+- meaning_th: เลวร้าย
 
 ---
 
@@ -3727,7 +3727,7 @@
 ## 刑務所 (けいむしょ)
 
 - meaning_en: prison
-- meaning_th:
+- meaning_th: คุก
 
 ---
 
@@ -3748,7 +3748,7 @@
 ## 刑罰 (けいばつ)
 
 - meaning_en: (criminal) punishment
-- meaning_th:
+- meaning_th: การลงโทษ
 
 ---
 
@@ -3825,7 +3825,7 @@
 ## 割合 (わりあい)
 
 - meaning_en: rate
-- meaning_th:
+- meaning_th: สัดส่วน, อัตราส่วน
 
 ---
 
@@ -3846,7 +3846,7 @@
 ## 割引 (わりびき)
 
 - meaning_en: discount
-- meaning_th:
+- meaning_th: ส่วนลด
 
 ---
 
@@ -3979,7 +3979,7 @@
 ## 功労 (こうろう)
 
 - meaning_en: meritorious deed
-- meaning_th:
+- meaning_th: การกระทำอันทรงเกียรติ
 
 ---
 
@@ -3993,7 +3993,7 @@
 ## 功績 (こうせき)
 
 - meaning_en: achievement
-- meaning_th:
+- meaning_th: ความสำเร็จ
 
 ---
 
@@ -4063,14 +4063,14 @@
 ## 加担 (かたん)
 
 - meaning_en: support
-- meaning_th:
+- meaning_th: สนับสนุน
 
 ---
 
 ## 加減 (かげん)
 
 - meaning_en: degree
-- meaning_th:
+- meaning_th: องศา
 
 ---
 
@@ -4133,7 +4133,7 @@
 ## 加算 (かさん)
 
 - meaning_en: addition
-- meaning_th:
+- meaning_th: นอกจากนี้
 
 ---
 
@@ -4175,14 +4175,14 @@
 ## 効力 (こうりょく)
 
 - meaning_en: effect
-- meaning_th:
+- meaning_th: ผล
 
 ---
 
 ## 効果 (こうか)
 
 - meaning_en: effect
-- meaning_th:
+- meaning_th: ผล
 
 ---
 
@@ -4196,7 +4196,7 @@
 ## 効率 (こうりつ)
 
 - meaning_en: efficiency
-- meaning_th:
+- meaning_th: ประสิทธิภาพ
 
 ---
 
@@ -4210,14 +4210,14 @@
 ## 効用 (こうよう)
 
 - meaning_en: use
-- meaning_th:
+- meaning_th: ใช้
 
 ---
 
 ## 効能 (こうのう)
 
 - meaning_en: effect
-- meaning_th:
+- meaning_th: ผล
 
 ---
 
@@ -4231,7 +4231,7 @@
 ## 勘弁 (かんべん)
 
 - meaning_en: pardon
-- meaning_th:
+- meaning_th: ขออภัย
 
 ---
 
@@ -4245,7 +4245,7 @@
 ## 勤労 (きんろう)
 
 - meaning_en: labor
-- meaning_th:
+- meaning_th: แรงงาน
 
 ---
 
@@ -4259,14 +4259,14 @@
 ## 勤勉 (きんべん)
 
 - meaning_en: diligent
-- meaning_th:
+- meaning_th: ขยัน
 
 ---
 
 ## 勤務 (きんむ)
 
 - meaning_en: service
-- meaning_th:
+- meaning_th: บริการ
 
 ---
 
@@ -4308,7 +4308,7 @@
 ## 勧業 (かんぎょう)
 
 - meaning_en: (encouragement of) industry
-- meaning_th:
+- meaning_th: อุตสาหกรรม
 
 ---
 
@@ -4336,7 +4336,7 @@
 ## 勲章 (くんしょう)
 
 - meaning_en: decoration
-- meaning_th:
+- meaning_th: ตกแต่ง
 
 ---
 
@@ -4357,7 +4357,7 @@
 ## 勾配 (こうばい)
 
 - meaning_en: slope
-- meaning_th:
+- meaning_th: ความลาดชัน
 
 ---
 
@@ -4371,7 +4371,7 @@
 ## 化合物 (かごうぶつ)
 
 - meaning_en: compound
-- meaning_th:
+- meaning_th: สารประกอบ
 
 ---
 
@@ -4420,7 +4420,7 @@
 ## 化成 (かせい)
 
 - meaning_en: change
-- meaning_th:
+- meaning_th: การเปลี่ยนแปลง
 
 ---
 
@@ -4476,7 +4476,7 @@
 ## 区別 (くべつ)
 
 - meaning_en: distinction
-- meaning_th:
+- meaning_th: ความแตกต่าง
 
 ---
 
@@ -4539,14 +4539,14 @@
 ## 区間 (くかん)
 
 - meaning_en: section (of track, etc.)
-- meaning_th:
+- meaning_th: ส่วน
 
 ---
 
 ## 午前 (ごぜん)
 
 - meaning_en: morning
-- meaning_th:
+- meaning_th: ตอนเช้า
 
 ---
 
@@ -4567,14 +4567,14 @@
 ## 協会 (きょうかい)
 
 - meaning_en: association
-- meaning_th:
+- meaning_th: สมาคม
 
 ---
 
 ## 協力 (きょうりょく)
 
 - meaning_en: cooperation
-- meaning_th:
+- meaning_th: ความร่วมมือ
 
 ---
 
@@ -4595,7 +4595,7 @@
 ## 協商 (きょうしょう)
 
 - meaning_en: agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
@@ -4609,7 +4609,7 @@
 ## 協定 (きょうてい)
 
 - meaning_en: arrangement
-- meaning_th:
+- meaning_th: การจัดการ
 
 ---
 
@@ -4623,7 +4623,7 @@
 ## 協調 (きょうちょう)
 
 - meaning_en: cooperation
-- meaning_th:
+- meaning_th: ความร่วมมือ
 
 ---
 
@@ -4637,21 +4637,21 @@
 ## 協賛 (きょうさん)
 
 - meaning_en: support
-- meaning_th:
+- meaning_th: สนับสนุน
 
 ---
 
 ## 危害 (きがい)
 
 - meaning_en: injury
-- meaning_th:
+- meaning_th: การบาดเจ็บ
 
 ---
 
 ## 危急 (ききゅう)
 
 - meaning_en: emergency
-- meaning_th:
+- meaning_th: กรณีฉุกเฉิน
 
 ---
 
@@ -4679,14 +4679,14 @@
 ## 危険 (きけん)
 
 - meaning_en: danger
-- meaning_th:
+- meaning_th: อันตราย
 
 ---
 
 ## 危険性 (きけんせい)
 
 - meaning_en: (degree of) risk
-- meaning_th:
+- meaning_th: ความเสี่ยง
 
 ---
 
@@ -4714,14 +4714,14 @@
 ## 厚意 (こうい)
 
 - meaning_en: kindness (shown by others)
-- meaning_th:
+- meaning_th: ความเมตตา
 
 ---
 
 ## 厚手 (あつで)
 
 - meaning_en: thick (paper, cloth, etc.)
-- meaning_th:
+- meaning_th: หนา
 
 ---
 
@@ -4735,7 +4735,7 @@
 ## 厚生 (こうせい)
 
 - meaning_en: welfare
-- meaning_th:
+- meaning_th: สวัสดิการ
 
 ---
 
@@ -4826,14 +4826,14 @@
 ## 原典 (げんてん)
 
 - meaning_en: original (text)
-- meaning_th:
+- meaning_th: ต้นฉบับ
 
 ---
 
 ## 原初 (げんしょ)
 
 - meaning_en: origin
-- meaning_th:
+- meaning_th: ต้นกำเนิด
 
 ---
 
@@ -4847,7 +4847,7 @@
 ## 原則 (げんそく)
 
 - meaning_en: principle
-- meaning_th:
+- meaning_th: หลักการ
 
 ---
 
@@ -4875,21 +4875,21 @@
 ## 原因 (げんいん)
 
 - meaning_en: cause
-- meaning_th:
+- meaning_th: สาเหตุ
 
 ---
 
 ## 原型 (げんけい)
 
 - meaning_en: model
-- meaning_th:
+- meaning_th: โมเดล
 
 ---
 
 ## 原始 (げんし)
 
 - meaning_en: origin
-- meaning_th:
+- meaning_th: ต้นกำเนิด
 
 ---
 
@@ -4917,7 +4917,7 @@
 ## 原子核 (げんしかく)
 
 - meaning_en: nucleus
-- meaning_th:
+- meaning_th: นิวเคลียส
 
 ---
 
@@ -4987,7 +4987,7 @@
 ## 原本 (げんぽん)
 
 - meaning_en: original (document, copy, work, text, etc.)
-- meaning_th:
+- meaning_th: ต้นฉบับ
 
 ---
 
@@ -5050,14 +5050,14 @@
 ## 原版 (げんぱん)
 
 - meaning_en: form (printing)
-- meaning_th:
+- meaning_th: แบบฟอร์ม
 
 ---
 
 ## 原理 (げんり)
 
 - meaning_en: principle
-- meaning_th:
+- meaning_th: หลักการ
 
 ---
 
@@ -5099,7 +5099,7 @@
 ## 原石 (げんせき)
 
 - meaning_en: (raw) ore
-- meaning_th:
+- meaning_th: แร่
 
 ---
 
@@ -5113,7 +5113,7 @@
 ## 原稿 (げんこう)
 
 - meaning_en: manuscript
-- meaning_th:
+- meaning_th: ต้นฉบับ
 
 ---
 
@@ -5169,7 +5169,7 @@
 ## 原資 (げんし)
 
 - meaning_en: capital
-- meaning_th:
+- meaning_th: ทุน
 
 ---
 
@@ -5218,7 +5218,7 @@
 ## 厳密 (げんみつ)
 
 - meaning_en: strict
-- meaning_th:
+- meaning_th: เข้มงวด
 
 ---
 
@@ -5239,21 +5239,21 @@
 ## 厳格 (げんかく)
 
 - meaning_en: strict
-- meaning_th:
+- meaning_th: เข้มงวด
 
 ---
 
 ## 厳正 (げんせい)
 
 - meaning_en: strict
-- meaning_th:
+- meaning_th: เข้มงวด
 
 ---
 
 ## 厳然 (げんぜん)
 
 - meaning_en: grave
-- meaning_th:
+- meaning_th: หลุมฝังศพ
 
 ---
 
@@ -5267,7 +5267,7 @@
 ## 厳粛 (げんしゅく)
 
 - meaning_en: grave
-- meaning_th:
+- meaning_th: หลุมฝังศพ
 
 ---
 
@@ -5288,7 +5288,7 @@
 ## 厳重 (げんじゅう)
 
 - meaning_en: strict
-- meaning_th:
+- meaning_th: เข้มงวด
 
 ---
 
@@ -5309,7 +5309,7 @@
 ## 去年 (きょねん)
 
 - meaning_en: last year
-- meaning_th:
+- meaning_th: ปีที่แล้ว
 
 ---
 
@@ -5365,21 +5365,21 @@
 ## 口喧嘩 (くちげんか)
 
 - meaning_en: quarrel
-- meaning_th:
+- meaning_th: ทะเลาะ
 
 ---
 
 ## 口実 (こうじつ)
 
 - meaning_en: excuse
-- meaning_th:
+- meaning_th: ข้อแก้ตัว
 
 ---
 
 ## 口座 (こうざ)
 
 - meaning_en: account (e.g. bank)
-- meaning_th:
+- meaning_th: บัญชี
 
 ---
 
@@ -5393,7 +5393,7 @@
 ## 口径 (こうけい)
 
 - meaning_en: aperture
-- meaning_th:
+- meaning_th: รูรับแสง
 
 ---
 
@@ -5407,7 +5407,7 @@
 ## 口火 (くちび)
 
 - meaning_en: fuse
-- meaning_th:
+- meaning_th: ฟิวส์
 
 ---
 
@@ -5477,14 +5477,14 @@
 ## 口調 (くちょう)
 
 - meaning_en: tone (of voice)
-- meaning_th:
+- meaning_th: โทนเสียง
 
 ---
 
 ## 口論 (こうろん)
 
 - meaning_en: quarrel
-- meaning_th:
+- meaning_th: ทะเลาะ
 
 ---
 
@@ -5498,7 +5498,7 @@
 ## 口金 (くちがね)
 
 - meaning_en: (metal) cap
-- meaning_th:
+- meaning_th: หมวก
 
 ---
 
@@ -5708,7 +5708,7 @@
 ## 古老 (ころう)
 
 - meaning_en: old person (knowledgeable about events of the distant past)
-- meaning_th:
+- meaning_th: คนแก่
 
 ---
 
@@ -5806,7 +5806,7 @@
 ## 可哀想 (かわいそう)
 
 - meaning_en: poor
-- meaning_th:
+- meaning_th: ยากจน
 
 ---
 
@@ -5820,14 +5820,14 @@
 ## 可憐 (かれん)
 
 - meaning_en: sweet (e.g. young girls, flowers blooming)
-- meaning_th:
+- meaning_th: หวาน
 
 ---
 
 ## 可決 (かけつ)
 
 - meaning_en: approval
-- meaning_th:
+- meaning_th: การอนุมัติ
 
 ---
 
@@ -5883,7 +5883,7 @@
 ## 号令 (ごうれい)
 
 - meaning_en: order (esp. to a number of people)
-- meaning_th:
+- meaning_th: สั่งซื้อ
 
 ---
 
@@ -5974,7 +5974,7 @@
 ## 各自 (かくじ)
 
 - meaning_en: each (person)
-- meaning_th:
+- meaning_th: แต่ละคน
 
 ---
 
@@ -6051,7 +6051,7 @@
 ## 合図 (あいず)
 
 - meaning_en: sign
-- meaning_th:
+- meaning_th: ลงชื่อ
 
 ---
 
@@ -6079,14 +6079,14 @@
 ## 合従連衡 (がっしょうれんこう)
 
 - meaning_en: alliance (of the Six Kingdoms against the Qin dynasty, and of individual Kingdoms with the Qin dynasty)
-- meaning_th:
+- meaning_th: พันธมิตร
 
 ---
 
 ## 合意 (ごうい)
 
 - meaning_en: (coming to an) agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
@@ -6100,7 +6100,7 @@
 ## 合成 (ごうせい)
 
 - meaning_en: composition
-- meaning_th:
+- meaning_th: องค์ประกอบ
 
 ---
 
@@ -6135,7 +6135,7 @@
 ## 合戦 (かっせん)
 
 - meaning_en: battle
-- meaning_th:
+- meaning_th: การต่อสู้
 
 ---
 
@@ -6191,7 +6191,7 @@
 ## 合点 (がてん)
 
 - meaning_en: consent
-- meaning_th:
+- meaning_th: ยินยอม
 
 ---
 
@@ -6247,7 +6247,7 @@
 ## 合致 (がっち)
 
 - meaning_en: agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
@@ -6275,7 +6275,7 @@
 ## 合議 (ごうぎ)
 
 - meaning_en: consultation
-- meaning_th:
+- meaning_th: การให้คำปรึกษา
 
 ---
 
@@ -6289,7 +6289,7 @@
 ## 合間 (あいま)
 
 - meaning_en: interval
-- meaning_th:
+- meaning_th: ช่วงเวลา
 
 ---
 
@@ -6443,7 +6443,7 @@
 ## 呉服 (ごふく)
 
 - meaning_en: cloth (for Japanese clothes)
-- meaning_th:
+- meaning_th: ผ้า
 
 ---
 
@@ -6492,7 +6492,7 @@
 ## 告訴 (こくそ)
 
 - meaning_en: accusation
-- meaning_th:
+- meaning_th: ข้อกล่าวหา
 
 ---
 
@@ -6520,28 +6520,28 @@
 ## 呼称 (こしょう)
 
 - meaning_en: name
-- meaning_th:
+- meaning_th: ชื่อ
 
 ---
 
 ## 啓発 (けいはつ)
 
 - meaning_en: enlightenment
-- meaning_th:
+- meaning_th: การตรัสรู้
 
 ---
 
 ## 啓示 (けいじ)
 
 - meaning_en: (divine) revelation
-- meaning_th:
+- meaning_th: การเปิดเผย
 
 ---
 
 ## 啓蒙 (けいもう)
 
 - meaning_en: enlightenment
-- meaning_th:
+- meaning_th: การตรัสรู้
 
 ---
 
@@ -6562,7 +6562,7 @@
 ## 喚声 (かんせい)
 
 - meaning_en: shout (of excitement)
-- meaning_th:
+- meaning_th: ตะโกน
 
 ---
 
@@ -6618,7 +6618,7 @@
 ## 喧嘩 (けんか)
 
 - meaning_en: quarrel
-- meaning_th:
+- meaning_th: ทะเลาะ
 
 ---
 
@@ -6639,7 +6639,7 @@
 ## 喫緊 (きっきん)
 
 - meaning_en: urgent
-- meaning_th:
+- meaning_th: เร่งด่วน
 
 ---
 
@@ -6667,14 +6667,14 @@
 ## 器具 (きぐ)
 
 - meaning_en: utensil
-- meaning_th:
+- meaning_th: ภาชนะ
 
 ---
 
 ## 器官 (きかん)
 
 - meaning_en: organ
-- meaning_th:
+- meaning_th: อวัยวะ
 
 ---
 
@@ -6702,21 +6702,21 @@
 ## 器物 (きぶつ)
 
 - meaning_en: receptacle
-- meaning_th:
+- meaning_th: ที่รองรับ
 
 ---
 
 ## 器用 (きよう)
 
 - meaning_en: skillful
-- meaning_th:
+- meaning_th: เก่ง
 
 ---
 
 ## 器量 (きりょう)
 
 - meaning_en: looks (esp. of a woman)
-- meaning_th:
+- meaning_th: ดู
 
 ---
 
@@ -6744,7 +6744,7 @@
 ## 回帰 (かいき)
 
 - meaning_en: return (to)
-- meaning_th:
+- meaning_th: กลับมา
 
 ---
 
@@ -6758,7 +6758,7 @@
 ## 回廊 (かいろう)
 
 - meaning_en: corridor
-- meaning_th:
+- meaning_th: ทางเดิน
 
 ---
 
@@ -6779,7 +6779,7 @@
 ## 回想 (かいそう)
 
 - meaning_en: recollection
-- meaning_th:
+- meaning_th: ความทรงจำ
 
 ---
 
@@ -6828,7 +6828,7 @@
 ## 回線 (かいせん)
 
 - meaning_en: circuit
-- meaning_th:
+- meaning_th: วงจร
 
 ---
 
@@ -6842,14 +6842,14 @@
 ## 回路 (かいろ)
 
 - meaning_en: circuit
-- meaning_th:
+- meaning_th: วงจร
 
 ---
 
 ## 回転 (かいてん)
 
 - meaning_en: rotation
-- meaning_th:
+- meaning_th: การหมุน
 
 ---
 
@@ -6898,21 +6898,21 @@
 ## 困窮 (こんきゅう)
 
 - meaning_en: poverty
-- meaning_th:
+- meaning_th: ความยากจน
 
 ---
 
 ## 困難 (こんなん)
 
 - meaning_en: difficulty
-- meaning_th:
+- meaning_th: ความยากลำบาก
 
 ---
 
 ## 固体 (こたい)
 
 - meaning_en: solid (body)
-- meaning_th:
+- meaning_th: ของแข็ง
 
 ---
 
@@ -6968,7 +6968,7 @@
 ## 固形 (こけい)
 
 - meaning_en: solid (body)
-- meaning_th:
+- meaning_th: ของแข็ง
 
 ---
 
@@ -7150,7 +7150,7 @@
 ## 国土 (こくど)
 
 - meaning_en: country
-- meaning_th:
+- meaning_th: ประเทศ
 
 ---
 
@@ -7171,7 +7171,7 @@
 ## 国境 (こっきょう)
 
 - meaning_en: border (between countries)
-- meaning_th:
+- meaning_th: ชายแดน
 
 ---
 
@@ -7220,7 +7220,7 @@
 ## 国家 (こっか)
 
 - meaning_en: state
-- meaning_th:
+- meaning_th: รัฐ
 
 ---
 
@@ -7374,7 +7374,7 @@
 ## 国民 (こくみん)
 
 - meaning_en: people (of a country)
-- meaning_th:
+- meaning_th: คน
 
 ---
 
@@ -7430,7 +7430,7 @@
 ## 国王 (こくおう)
 
 - meaning_en: king
-- meaning_th:
+- meaning_th: กษัตริย์
 
 ---
 
@@ -7549,7 +7549,7 @@
 ## 国論 (こくろん)
 
 - meaning_en: public opinion
-- meaning_th:
+- meaning_th: ความคิดเห็นของประชาชน
 
 ---
 
@@ -7612,7 +7612,7 @@
 ## 国際 (こくさい)
 
 - meaning_en: international
-- meaning_th:
+- meaning_th: นานาชาติ, สากล
 
 ---
 
@@ -7675,14 +7675,14 @@
 ## 圏内 (けんない)
 
 - meaning_en: inside (a region, area, etc.)
-- meaning_th:
+- meaning_th: ภายใน
 
 ---
 
 ## 圏外 (けんがい)
 
 - meaning_en: outside (a region, area, etc.)
-- meaning_th:
+- meaning_th: ภายนอก
 
 ---
 
@@ -7703,14 +7703,14 @@
 ## 均等 (きんとう)
 
 - meaning_en: equal (distribution, treatment, level, etc.)
-- meaning_th:
+- meaning_th: เท่ากัน
 
 ---
 
 ## 均衡 (きんこう)
 
 - meaning_en: balance
-- meaning_th:
+- meaning_th: ความสมดุล
 
 ---
 
@@ -7745,7 +7745,7 @@
 ## 型式 (かたしき)
 
 - meaning_en: model (e.g. of a vehicle)
-- meaning_th:
+- meaning_th: โมเดล
 
 ---
 
@@ -7773,7 +7773,7 @@
 ## 基地 (きち)
 
 - meaning_en: base (military, expedition, etc.)
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
@@ -7787,7 +7787,7 @@
 ## 基底 (きてい)
 
 - meaning_en: base
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
@@ -7801,7 +7801,7 @@
 ## 基本 (きほん)
 
 - meaning_en: basics
-- meaning_th:
+- meaning_th: พื้นฐาน
 
 ---
 
@@ -7822,14 +7822,14 @@
 ## 基板 (きばん)
 
 - meaning_en: (circuit) board
-- meaning_th:
+- meaning_th: คณะกรรมการ
 
 ---
 
 ## 基準 (きじゅん)
 
 - meaning_en: standard
-- meaning_th:
+- meaning_th: มาตรฐาน
 
 ---
 
@@ -7850,7 +7850,7 @@
 ## 基盤 (きばん)
 
 - meaning_en: base
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
@@ -7864,7 +7864,7 @@
 ## 基礎 (きそ)
 
 - meaning_en: foundation
-- meaning_th:
+- meaning_th: รากฐาน
 
 ---
 
@@ -7899,7 +7899,7 @@
 ## 基部 (きぶ)
 
 - meaning_en: base
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
@@ -7913,14 +7913,14 @@
 ## 堀川 (ほりかわ)
 
 - meaning_en: canal
-- meaning_th:
+- meaning_th: คลอง
 
 ---
 
 ## 堀江 (ほりえ)
 
 - meaning_en: canal
-- meaning_th:
+- meaning_th: คลอง
 
 ---
 
@@ -7934,7 +7934,7 @@
 ## 堅固 (けんご)
 
 - meaning_en: solid
-- meaning_th:
+- meaning_th: ของแข็ง
 
 ---
 
@@ -7962,14 +7962,14 @@
 ## 堅気 (かたぎ)
 
 - meaning_en: honest
-- meaning_th:
+- meaning_th: ซื่อสัตย์
 
 ---
 
 ## 堅調 (けんちょう)
 
 - meaning_en: firm (market)
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -7990,21 +7990,21 @@
 ## 境内 (けいだい)
 
 - meaning_en: grounds (esp. of shrines and temples)
-- meaning_th:
+- meaning_th: บริเวณ
 
 ---
 
 ## 境地 (きょうち)
 
 - meaning_en: state (of mind)
-- meaning_th:
+- meaning_th: รัฐ
 
 ---
 
 ## 境界 (きょうかい)
 
 - meaning_en: boundary
-- meaning_th:
+- meaning_th: ขอบเขต
 
 ---
 
@@ -8151,7 +8151,7 @@
 ## 外人 (がいじん)
 
 - meaning_en: foreigner (esp. one of European ancestry)
-- meaning_th:
+- meaning_th: ชาวต่างชาติ
 
 ---
 
@@ -8193,7 +8193,7 @@
 ## 外出 (がいしゅつ)
 
 - meaning_en: going out
-- meaning_th:
+- meaning_th: การออกไปข้างนอก
 
 ---
 
@@ -8235,7 +8235,7 @@
 ## 外国 (がいこく)
 
 - meaning_en: foreign country
-- meaning_th:
+- meaning_th: ต่างประเทศ
 
 ---
 
@@ -8305,7 +8305,7 @@
 ## 外来 (がいらい)
 
 - meaning_en: foreign
-- meaning_th:
+- meaning_th: ต่างประเทศ
 
 ---
 
@@ -8340,7 +8340,7 @@
 ## 外洋 (がいよう)
 
 - meaning_en: open sea
-- meaning_th:
+- meaning_th: ทะเลเปิด
 
 ---
 
@@ -8459,7 +8459,7 @@
 ## 外部 (がいぶ)
 
 - meaning_en: outside (e.g. of a building)
-- meaning_th:
+- meaning_th: ภายนอก
 
 ---
 
@@ -8536,7 +8536,7 @@
 ## 奇妙 (きみょう)
 
 - meaning_en: strange
-- meaning_th:
+- meaning_th: แปลก
 
 ---
 
@@ -8550,7 +8550,7 @@
 ## 奇怪 (きかい)
 
 - meaning_en: strange
-- meaning_th:
+- meaning_th: แปลก
 
 ---
 
@@ -8564,14 +8564,14 @@
 ## 奇抜 (きばつ)
 
 - meaning_en: (very) unusual
-- meaning_th:
+- meaning_th: ผิดปกติ
 
 ---
 
 ## 奇数 (きすう)
 
 - meaning_en: odd number
-- meaning_th:
+- meaning_th: เลขคี่
 
 ---
 
@@ -8613,21 +8613,21 @@
 ## 契機 (けいき)
 
 - meaning_en: opportunity
-- meaning_th:
+- meaning_th: โอกาส
 
 ---
 
 ## 契約 (けいやく)
 
 - meaning_en: contract
-- meaning_th:
+- meaning_th: สัญญา
 
 ---
 
 ## 契約書 (けいやくしょ)
 
 - meaning_en: (written) contract
-- meaning_th:
+- meaning_th: สัญญา
 
 ---
 
@@ -8655,7 +8655,7 @@
 ## 好奇心 (こうきしん)
 
 - meaning_en: curiosity
-- meaning_th:
+- meaning_th: ความอยากรู้อยากเห็น
 
 ---
 
@@ -8669,7 +8669,7 @@
 ## 好意 (こうい)
 
 - meaning_en: kindness
-- meaning_th:
+- meaning_th: ความเมตตา
 
 ---
 
@@ -8781,7 +8781,7 @@
 ## 好調 (こうちょう)
 
 - meaning_en: favourable
-- meaning_th:
+- meaning_th: ดี
 
 ---
 
@@ -8830,7 +8830,7 @@
 ## 娯楽 (ごらく)
 
 - meaning_en: amusement
-- meaning_th:
+- meaning_th: ความบันเทิง
 
 ---
 
@@ -8844,7 +8844,7 @@
 ## 婚姻 (こんいん)
 
 - meaning_en: marriage
-- meaning_th:
+- meaning_th: การแต่งงาน
 
 ---
 
@@ -8879,14 +8879,14 @@
 ## 嫌悪感 (けんおかん)
 
 - meaning_en: (feeling of) hatred
-- meaning_th:
+- meaning_th: ความเกลียดชัง
 
 ---
 
 ## 嫌気 (いやき)
 
 - meaning_en: dislike
-- meaning_th:
+- meaning_th: ไม่ชอบ
 
 ---
 
@@ -8914,7 +8914,7 @@
 ## 孝行 (こうこう)
 
 - meaning_en: filial piety
-- meaning_th:
+- meaning_th: ความกตัญญูกตเวที
 
 ---
 
@@ -8928,7 +8928,7 @@
 ## 季節 (きせつ)
 
 - meaning_en: season
-- meaning_th:
+- meaning_th: ฤดูกาล
 
 ---
 
@@ -8949,7 +8949,7 @@
 ## 孤児 (こじ)
 
 - meaning_en: orphan
-- meaning_th:
+- meaning_th: เด็กกำพร้า
 
 ---
 
@@ -9019,7 +9019,7 @@
 ## 学位 (がくい)
 
 - meaning_en: (academic) degree
-- meaning_th:
+- meaning_th: องศา
 
 ---
 
@@ -9096,7 +9096,7 @@
 ## 学問 (がくもん)
 
 - meaning_en: study
-- meaning_th:
+- meaning_th: การศึกษา
 
 ---
 
@@ -9138,7 +9138,7 @@
 ## 学年 (がくねん)
 
 - meaning_en: academic year
-- meaning_th:
+- meaning_th: ชั้นปี, ปีการศึกษา
 
 ---
 
@@ -9159,7 +9159,7 @@
 ## 学校 (がっこう)
 
 - meaning_en: school
-- meaning_th:
+- meaning_th: โรงเรียน
 
 ---
 
@@ -9194,7 +9194,7 @@
 ## 学派 (がくは)
 
 - meaning_en: school (of thought)
-- meaning_th:
+- meaning_th: โรงเรียน
 
 ---
 
@@ -9208,7 +9208,7 @@
 ## 学生 (がくせい)
 
 - meaning_en: student (esp. a university student)
-- meaning_th:
+- meaning_th: นักเรียน, นักศึกษา
 
 ---
 
@@ -9236,14 +9236,14 @@
 ## 学科 (がっか)
 
 - meaning_en: subject (of study)
-- meaning_th:
+- meaning_th: สาขาวิชา
 
 ---
 
 ## 学究 (がっきゅう)
 
 - meaning_en: scholar
-- meaning_th:
+- meaning_th: นักวิชาการ
 
 ---
 
@@ -9264,28 +9264,28 @@
 ## 学級 (がっきゅう)
 
 - meaning_en: (school) class
-- meaning_th:
+- meaning_th: ชั้นเรียน
 
 ---
 
 ## 学習 (がくしゅう)
 
 - meaning_en: learning
-- meaning_th:
+- meaning_th: การเรียนรู้
 
 ---
 
 ## 学者 (がくしゃ)
 
 - meaning_en: scholar
-- meaning_th:
+- meaning_th: นักวิชาการ
 
 ---
 
 ## 学舎 (がくしゃ)
 
 - meaning_en: school (building)
-- meaning_th:
+- meaning_th: โรงเรียน
 
 ---
 
@@ -9306,7 +9306,7 @@
 ## 学術 (がくじゅつ)
 
 - meaning_en: science
-- meaning_th:
+- meaning_th: วิทยาศาสตร์
 
 ---
 
@@ -9320,14 +9320,14 @@
 ## 学説 (がくせつ)
 
 - meaning_en: theory
-- meaning_th:
+- meaning_th: ทฤษฎี
 
 ---
 
 ## 学課 (がっか)
 
 - meaning_en: lesson
-- meaning_th:
+- meaning_th: บทเรียน
 
 ---
 
@@ -9355,7 +9355,7 @@
 ## 学部 (がくぶ)
 
 - meaning_en: faculty (of a university)
-- meaning_th:
+- meaning_th: คณะ (มหาวิทยาลัย)
 
 ---
 
@@ -9397,7 +9397,7 @@
 ## 完了 (かんりょう)
 
 - meaning_en: completion
-- meaning_th:
+- meaning_th: เสร็จสิ้น
 
 ---
 
@@ -9411,7 +9411,7 @@
 ## 完全 (かんぜん)
 
 - meaning_en: perfect
-- meaning_th:
+- meaning_th: สมบูรณ์แบบ, ครบถ้วน
 
 ---
 
@@ -9460,7 +9460,7 @@
 ## 完成 (かんせい)
 
 - meaning_en: completion
-- meaning_th:
+- meaning_th: เสร็จสิ้น
 
 ---
 
@@ -9502,7 +9502,7 @@
 ## 完璧 (かんぺき)
 
 - meaning_en: perfect
-- meaning_th:
+- meaning_th: สมบูรณ์แบบ
 
 ---
 
@@ -9544,7 +9544,7 @@
 ## 官僚 (かんりょう)
 
 - meaning_en: bureaucrat
-- meaning_th:
+- meaning_th: ข้าราชการ
 
 ---
 
@@ -9572,7 +9572,7 @@
 ## 官庁 (かんちょう)
 
 - meaning_en: government office
-- meaning_th:
+- meaning_th: สถานที่ราชการ
 
 ---
 
@@ -9761,7 +9761,7 @@
 ## 宮中 (きゅうちゅう)
 
 - meaning_en: imperial court
-- meaning_th:
+- meaning_th: ศาลอิมพีเรียล
 
 ---
 
@@ -9789,21 +9789,21 @@
 ## 宮廷 (きゅうてい)
 
 - meaning_en: imperial court
-- meaning_th:
+- meaning_th: ศาลอิมพีเรียล
 
 ---
 
 ## 宮殿 (きゅうでん)
 
 - meaning_en: palace
-- meaning_th:
+- meaning_th: พระราชวัง
 
 ---
 
 ## 害悪 (がいあく)
 
 - meaning_en: harm
-- meaning_th:
+- meaning_th: อันตราย
 
 ---
 
@@ -9831,7 +9831,7 @@
 ## 家事 (かじ)
 
 - meaning_en: housework
-- meaning_th:
+- meaning_th: งานบ้าน
 
 ---
 
@@ -9859,7 +9859,7 @@
 ## 家内 (かない)
 
 - meaning_en: (my) wife
-- meaning_th:
+- meaning_th: ภรรยา
 
 ---
 
@@ -9873,7 +9873,7 @@
 ## 家名 (かめい)
 
 - meaning_en: family name
-- meaning_th:
+- meaning_th: ชื่อสกุล
 
 ---
 
@@ -9887,14 +9887,14 @@
 ## 家屋 (かおく)
 
 - meaning_en: house
-- meaning_th:
+- meaning_th: บ้าน
 
 ---
 
 ## 家庭 (かてい)
 
 - meaning_en: home
-- meaning_th:
+- meaning_th: บ้าน
 
 ---
 
@@ -9915,7 +9915,7 @@
 ## 家庭教師 (かていきょうし)
 
 - meaning_en: (home) tutor
-- meaning_th:
+- meaning_th: ครูสอนพิเศษ
 
 ---
 
@@ -9950,7 +9950,7 @@
 ## 家族 (かぞく)
 
 - meaning_en: family
-- meaning_th:
+- meaning_th: ครอบครัว
 
 ---
 
@@ -9971,7 +9971,7 @@
 ## 家来 (けらい)
 
 - meaning_en: retainer
-- meaning_th:
+- meaning_th: รีเทนเนอร์
 
 ---
 
@@ -10006,14 +10006,14 @@
 ## 家督 (かとく)
 
 - meaning_en: heir
-- meaning_th:
+- meaning_th: ทายาท
 
 ---
 
 ## 家筋 (いえすじ)
 
 - meaning_en: lineage
-- meaning_th:
+- meaning_th: เชื้อสาย
 
 ---
 
@@ -10027,7 +10027,7 @@
 ## 家紋 (かもん)
 
 - meaning_en: family crest
-- meaning_th:
+- meaning_th: ยอดครอบครัว
 
 ---
 
@@ -10076,7 +10076,7 @@
 ## 家賃 (やちん)
 
 - meaning_en: rent
-- meaning_th:
+- meaning_th: เช่า
 
 ---
 
@@ -10111,7 +10111,7 @@
 ## 家鴨 (アヒル)
 
 - meaning_en: domestic duck
-- meaning_th:
+- meaning_th: เป็ดบ้าน
 
 ---
 
@@ -10139,7 +10139,7 @@
 ## 寄宿 (きしゅく)
 
 - meaning_en: lodging
-- meaning_th:
+- meaning_th: ที่พัก
 
 ---
 
@@ -10188,7 +10188,7 @@
 ## 寄託 (きたく)
 
 - meaning_en: deposit
-- meaning_th:
+- meaning_th: เงินฝาก
 
 ---
 
@@ -10216,7 +10216,7 @@
 ## 寒冷 (かんれい)
 
 - meaning_en: cold
-- meaning_th:
+- meaning_th: หนาว
 
 ---
 
@@ -10265,14 +10265,14 @@
 ## 寒気 (かんき)
 
 - meaning_en: cold
-- meaning_th:
+- meaning_th: หนาว
 
 ---
 
 ## 寒気 (さむけ)
 
 - meaning_en: chill
-- meaning_th:
+- meaning_th: ชิล
 
 ---
 
@@ -10307,7 +10307,7 @@
 ## 寛大 (かんだい)
 
 - meaning_en: tolerant
-- meaning_th:
+- meaning_th: อดทน
 
 ---
 
@@ -10335,7 +10335,7 @@
 ## 寡婦 (かふ)
 
 - meaning_en: widow
-- meaning_th:
+- meaning_th: แม่หม้าย
 
 ---
 
@@ -10349,7 +10349,7 @@
 ## 尻尾 (しっぽ)
 
 - meaning_en: tail (of an animal)
-- meaning_th:
+- meaning_th: หาง
 
 ---
 
@@ -10370,7 +10370,7 @@
 ## 局所 (きょくしょ)
 
 - meaning_en: part
-- meaning_th:
+- meaning_th: ส่วนหนึ่ง
 
 ---
 
@@ -10384,7 +10384,7 @@
 ## 局部 (きょくぶ)
 
 - meaning_en: part
-- meaning_th:
+- meaning_th: ส่วนหนึ่ง
 
 ---
 
@@ -10405,14 +10405,14 @@
 ## 居住 (きょじゅう)
 
 - meaning_en: residence
-- meaning_th:
+- meaning_th: ถิ่นที่อยู่
 
 ---
 
 ## 居住者 (きょじゅうしゃ)
 
 - meaning_en: resident
-- meaning_th:
+- meaning_th: ถิ่นที่อยู่
 
 ---
 
@@ -10468,14 +10468,14 @@
 ## 居留 (きょりゅう)
 
 - meaning_en: residence
-- meaning_th:
+- meaning_th: ถิ่นที่อยู่
 
 ---
 
 ## 居留民 (きょりゅうみん)
 
 - meaning_en: resident
-- meaning_th:
+- meaning_th: ถิ่นที่อยู่
 
 ---
 
@@ -10503,7 +10503,7 @@
 ## 屈強 (くっきょう)
 
 - meaning_en: robust
-- meaning_th:
+- meaning_th: แข็งแกร่ง
 
 ---
 
@@ -10517,7 +10517,7 @@
 ## 屈指 (くっし)
 
 - meaning_en: leading
-- meaning_th:
+- meaning_th: ชั้นนำ
 
 ---
 
@@ -10531,14 +10531,14 @@
 ## 屈託 (くったく)
 
 - meaning_en: worry
-- meaning_th:
+- meaning_th: กังวล
 
 ---
 
 ## 屈辱 (くつじょく)
 
 - meaning_en: disgrace
-- meaning_th:
+- meaning_th: ความอับอายขายหน้า
 
 ---
 
@@ -10587,7 +10587,7 @@
 ## 岩屋 (いわや)
 
 - meaning_en: cave
-- meaning_th:
+- meaning_th: ถ้ำ
 
 ---
 
@@ -10615,14 +10615,14 @@
 ## 岩石 (がんせき)
 
 - meaning_en: rock
-- meaning_th:
+- meaning_th: ร็อค
 
 ---
 
 ## 岩礁 (がんしょう)
 
 - meaning_en: reef
-- meaning_th:
+- meaning_th: แนวปะการัง
 
 ---
 
@@ -10650,14 +10650,14 @@
 ## 岸辺 (きしべ)
 
 - meaning_en: shore
-- meaning_th:
+- meaning_th: ฝั่ง
 
 ---
 
 ## 峡谷 (きょうこく)
 
 - meaning_en: gorge
-- meaning_th:
+- meaning_th: ช่องเขา
 
 ---
 
@@ -10685,7 +10685,7 @@
 ## 工作員 (こうさくいん)
 
 - meaning_en: spy
-- meaning_th:
+- meaning_th: สายลับ
 
 ---
 
@@ -10706,7 +10706,7 @@
 ## 工具 (こうぐ)
 
 - meaning_en: tool
-- meaning_th:
+- meaning_th: เครื่องมือ
 
 ---
 
@@ -10727,7 +10727,7 @@
 ## 工場 (こうじょう)
 
 - meaning_en: factory
-- meaning_th:
+- meaning_th: โรงงาน
 
 ---
 
@@ -10755,14 +10755,14 @@
 ## 工房 (こうぼう)
 
 - meaning_en: workshop
-- meaning_th:
+- meaning_th: การประชุมเชิงปฏิบัติการ
 
 ---
 
 ## 工業 (こうぎょう)
 
 - meaning_en: (manufacturing) industry
-- meaning_th:
+- meaning_th: อุตสาหกรรม
 
 ---
 
@@ -10825,14 +10825,14 @@
 ## 巧拙 (こうせつ)
 
 - meaning_en: skill
-- meaning_th:
+- meaning_th: ทักษะ
 
 ---
 
 ## 巧者 (こうしゃ)
 
 - meaning_en: cleverness
-- meaning_th:
+- meaning_th: ความฉลาด
 
 ---
 
@@ -10860,14 +10860,14 @@
 ## 巨匠 (きょしょう)
 
 - meaning_en: master
-- meaning_th:
+- meaning_th: อาจารย์
 
 ---
 
 ## 巨大 (きょだい)
 
 - meaning_en: huge
-- meaning_th:
+- meaning_th: ใหญ่โต
 
 ---
 
@@ -10951,21 +10951,21 @@
 ## 巻頭 (かんとう)
 
 - meaning_en: beginning (of a book, magazine, etc.)
-- meaning_th:
+- meaning_th: การเริ่มต้น
 
 ---
 
 ## 希少 (きしょう)
 
 - meaning_en: scarce
-- meaning_th:
+- meaning_th: หายาก
 
 ---
 
 ## 希望 (きぼう)
 
 - meaning_en: hope
-- meaning_th:
+- meaning_th: ความหวัง, ความปรารถนา
 
 ---
 
@@ -10979,7 +10979,7 @@
 ## 希求 (ききゅう)
 
 - meaning_en: longing
-- meaning_th:
+- meaning_th: ความปรารถนา
 
 ---
 
@@ -10993,7 +10993,7 @@
 ## 希薄 (きはく)
 
 - meaning_en: thin (air)
-- meaning_th:
+- meaning_th: ผอม
 
 ---
 
@@ -11014,7 +11014,7 @@
 ## 帰休 (ききゅう)
 
 - meaning_en: leave
-- meaning_th:
+- meaning_th: ลาออก
 
 ---
 
@@ -11035,7 +11035,7 @@
 ## 帰国 (きこく)
 
 - meaning_en: return to one's country
-- meaning_th:
+- meaning_th: การกลับประเทศ
 
 ---
 
@@ -11063,14 +11063,14 @@
 ## 帰省 (きせい)
 
 - meaning_en: homecoming
-- meaning_th:
+- meaning_th: กลับบ้าน
 
 ---
 
 ## 帰着 (きちゃく)
 
 - meaning_en: return
-- meaning_th:
+- meaning_th: กลับมา
 
 ---
 
@@ -11098,14 +11098,14 @@
 ## 帰還 (きかん)
 
 - meaning_en: return (home)
-- meaning_th:
+- meaning_th: กลับมา
 
 ---
 
 ## 帰郷 (ききょう)
 
 - meaning_en: homecoming
-- meaning_th:
+- meaning_th: กลับบ้าน
 
 ---
 
@@ -11154,14 +11154,14 @@
 ## 幸福 (こうふく)
 
 - meaning_en: happiness
-- meaning_th:
+- meaning_th: ความสุข
 
 ---
 
 ## 幸運 (こううん)
 
 - meaning_en: good luck
-- meaning_th:
+- meaning_th: โชคดี
 
 ---
 
@@ -11189,14 +11189,14 @@
 ## 幻影 (げんえい)
 
 - meaning_en: phantom
-- meaning_th:
+- meaning_th: ผี
 
 ---
 
 ## 幻惑 (げんわく)
 
 - meaning_en: fascination
-- meaning_th:
+- meaning_th: ความหลงใหล
 
 ---
 
@@ -11252,7 +11252,7 @@
 ## 幾多 (いくた)
 
 - meaning_en: many
-- meaning_th:
+- meaning_th: มากมาย
 
 ---
 
@@ -11308,7 +11308,7 @@
 ## 広大 (こうだい)
 
 - meaning_en: vast
-- meaning_th:
+- meaning_th: กว้างใหญ่
 
 ---
 
@@ -11336,14 +11336,14 @@
 ## 広範 (こうはん)
 
 - meaning_en: wide
-- meaning_th:
+- meaning_th: กว้าง
 
 ---
 
 ## 広範囲 (こうはんい)
 
 - meaning_en: extensive
-- meaning_th:
+- meaning_th: กว้างขวาง
 
 ---
 
@@ -11378,7 +11378,7 @@
 ## 広間 (ひろま)
 
 - meaning_en: hall
-- meaning_th:
+- meaning_th: ห้องโถง
 
 ---
 
@@ -11399,7 +11399,7 @@
 ## 建前 (たてまえ)
 
 - meaning_en: face
-- meaning_th:
+- meaning_th: ใบหน้า
 
 ---
 
@@ -11427,21 +11427,21 @@
 ## 建物 (たてもの)
 
 - meaning_en: building
-- meaning_th:
+- meaning_th: อาคาร
 
 ---
 
 ## 建立 (こんりゅう)
 
 - meaning_en: (act of) building (temple, monument, etc.)
-- meaning_th:
+- meaning_th: อาคาร
 
 ---
 
 ## 建築 (けんちく)
 
 - meaning_en: construction
-- meaning_th:
+- meaning_th: การก่อสร้าง
 
 ---
 
@@ -11469,14 +11469,14 @@
 ## 建築物 (けんちくぶつ)
 
 - meaning_en: building
-- meaning_th:
+- meaning_th: อาคาร
 
 ---
 
 ## 建設 (けんせつ)
 
 - meaning_en: construction
-- meaning_th:
+- meaning_th: การก่อสร้าง
 
 ---
 
@@ -11504,14 +11504,14 @@
 ## 建造 (けんぞう)
 
 - meaning_en: building
-- meaning_th:
+- meaning_th: อาคาร
 
 ---
 
 ## 建造物 (けんぞうぶつ)
 
 - meaning_en: structure
-- meaning_th:
+- meaning_th: โครงสร้าง
 
 ---
 
@@ -11560,7 +11560,7 @@
 ## 強力 (きょうりょく)
 
 - meaning_en: powerful
-- meaning_th:
+- meaning_th: ทรงพลัง
 
 ---
 
@@ -11574,7 +11574,7 @@
 ## 強固 (きょうこ)
 
 - meaning_en: firm
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -11588,7 +11588,7 @@
 ## 強圧 (きょうあつ)
 
 - meaning_en: pressure
-- meaning_th:
+- meaning_th: ความกดดัน
 
 ---
 
@@ -11602,7 +11602,7 @@
 ## 強大 (きょうだい)
 
 - meaning_en: powerful
-- meaning_th:
+- meaning_th: ทรงพลัง
 
 ---
 
@@ -11616,14 +11616,14 @@
 ## 強姦 (ごうかん)
 
 - meaning_en: rape
-- meaning_th:
+- meaning_th: ข่มขืน
 
 ---
 
 ## 強度 (きょうど)
 
 - meaning_en: strength
-- meaning_th:
+- meaning_th: ความแข็งแรง
 
 ---
 
@@ -11651,7 +11651,7 @@
 ## 強情 (ごうじょう)
 
 - meaning_en: obstinate
-- meaning_th:
+- meaning_th: ดื้อรั้น
 
 ---
 
@@ -11693,7 +11693,7 @@
 ## 強烈 (きょうれつ)
 
 - meaning_en: strong
-- meaning_th:
+- meaning_th: แข็งแรง
 
 ---
 
@@ -11707,7 +11707,7 @@
 ## 強硬 (きょうこう)
 
 - meaning_en: firm
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
@@ -11749,7 +11749,7 @@
 ## 強襲 (きょうしゅう)
 
 - meaning_en: assault
-- meaning_th:
+- meaning_th: การโจมตี
 
 ---
 
@@ -11805,7 +11805,7 @@
 ## 形勢 (けいせい)
 
 - meaning_en: condition
-- meaning_th:
+- meaning_th: สภาพ
 
 ---
 
@@ -11826,7 +11826,7 @@
 ## 形式 (けいしき)
 
 - meaning_en: form (as opposed to substance)
-- meaning_th:
+- meaning_th: แบบฟอร์ม
 
 ---
 
@@ -11847,7 +11847,7 @@
 ## 形態 (けいたい)
 
 - meaning_en: form
-- meaning_th:
+- meaning_th: แบบฟอร์ม
 
 ---
 
@@ -11868,14 +11868,14 @@
 ## 形状 (けいじょう)
 
 - meaning_en: shape
-- meaning_th:
+- meaning_th: รูปร่าง
 
 ---
 
 ## 形相 (ぎょうそう)
 
 - meaning_en: look (esp. an angry or upset look)
-- meaning_th:
+- meaning_th: ดูสิ
 
 ---
 
@@ -11889,7 +11889,7 @@
 ## 形象 (けいしょう)
 
 - meaning_en: shape
-- meaning_th:
+- meaning_th: รูปร่าง
 
 ---
 
@@ -11903,14 +11903,14 @@
 ## 形跡 (けいせき)
 
 - meaning_en: traces
-- meaning_th:
+- meaning_th: ร่องรอย
 
 ---
 
 ## 形骸 (けいがい)
 
 - meaning_en: (soulless) body
-- meaning_th:
+- meaning_th: ร่างกาย
 
 ---
 
@@ -11994,14 +11994,14 @@
 ## 後始末 (あとしまつ)
 
 - meaning_en: settlement (of a matter)
-- meaning_th:
+- meaning_th: การตั้งถิ่นฐาน
 
 ---
 
 ## 後宮 (こうきゅう)
 
 - meaning_en: inner palace (reserved for women)
-- meaning_th:
+- meaning_th: พระราชวังชั้นใน
 
 ---
 
@@ -12015,7 +12015,7 @@
 ## 後悔 (こうかい)
 
 - meaning_en: regret
-- meaning_th:
+- meaning_th: เสียใจ
 
 ---
 
@@ -12029,14 +12029,14 @@
 ## 後援 (こうえん)
 
 - meaning_en: support
-- meaning_th:
+- meaning_th: สนับสนุน
 
 ---
 
 ## 後方 (こうほう)
 
 - meaning_en: rear
-- meaning_th:
+- meaning_th: ด้านหลัง
 
 ---
 
@@ -12099,7 +12099,7 @@
 ## 後者 (こうしゃ)
 
 - meaning_en: the latter
-- meaning_th:
+- meaning_th: หลัง
 
 ---
 
@@ -12113,14 +12113,14 @@
 ## 後記 (こうき)
 
 - meaning_en: postscript
-- meaning_th:
+- meaning_th: คำลงท้าย
 
 ---
 
 ## 後輩 (こうはい)
 
 - meaning_en: junior (at work, school, etc.)
-- meaning_th:
+- meaning_th: จูเนียร์
 
 ---
 
@@ -12134,7 +12134,7 @@
 ## 後退 (こうたい)
 
 - meaning_en: retreat
-- meaning_th:
+- meaning_th: ล่าถอย
 
 ---
 
@@ -12162,7 +12162,7 @@
 ## 後部 (こうぶ)
 
 - meaning_en: rear
-- meaning_th:
+- meaning_th: ด้านหลัง
 
 ---
 
@@ -12218,14 +12218,14 @@
 ## 御殿 (ごてん)
 
 - meaning_en: palace
-- meaning_th:
+- meaning_th: พระราชวัง
 
 ---
 
 ## 御用 (ごよう)
 
 - meaning_en: (your) business
-- meaning_th:
+- meaning_th: ธุรกิจ
 
 ---
 
@@ -12351,14 +12351,14 @@
 ## 快楽 (かいらく)
 
 - meaning_en: pleasure
-- meaning_th:
+- meaning_th: ความสุข
 
 ---
 
 ## 快活 (かいかつ)
 
 - meaning_en: cheerful
-- meaning_th:
+- meaning_th: ร่าเริง
 
 ---
 
@@ -12372,7 +12372,7 @@
 ## 快調 (かいちょう)
 
 - meaning_en: good (condition)
-- meaning_th:
+- meaning_th: ดี
 
 ---
 
@@ -12400,7 +12400,7 @@
 ## 快適 (かいてき)
 
 - meaning_en: pleasant
-- meaning_th:
+- meaning_th: น่ารื่นรมย์
 
 ---
 
@@ -12435,7 +12435,7 @@
 ## 急場 (きゅうば)
 
 - meaning_en: emergency
-- meaning_th:
+- meaning_th: กรณีฉุกเฉิน
 
 ---
 
@@ -12498,7 +12498,7 @@
 ## 急激 (きゅうげき)
 
 - meaning_en: sudden
-- meaning_th:
+- meaning_th: ฉับพลัน
 
 ---
 
@@ -12533,7 +12533,7 @@
 ## 急襲 (きゅうしゅう)
 
 - meaning_en: raid
-- meaning_th:
+- meaning_th: การจู่โจม
 
 ---
 
@@ -12617,7 +12617,7 @@
 ## 怪我 (けが)
 
 - meaning_en: injury
-- meaning_th:
+- meaning_th: การบาดเจ็บ
 
 ---
 
@@ -12659,7 +12659,7 @@
 ## 恍惚 (こうこつ)
 
 - meaning_en: ecstasy
-- meaning_th:
+- meaning_th: ความปีติยินดี
 
 ---
 
@@ -12673,7 +12673,7 @@
 ## 恐怖 (きょうふ)
 
 - meaning_en: fear
-- meaning_th:
+- meaning_th: ความกลัว
 
 ---
 
@@ -12708,7 +12708,7 @@
 ## 恒久 (こうきゅう)
 
 - meaning_en: permanence
-- meaning_th:
+- meaning_th: ความคงทน
 
 ---
 
@@ -12722,14 +12722,14 @@
 ## 恒常 (こうじょう)
 
 - meaning_en: constancy
-- meaning_th:
+- meaning_th: ความมั่นคง
 
 ---
 
 ## 恒星 (こうせい)
 
 - meaning_en: star
-- meaning_th:
+- meaning_th: ดาว
 
 ---
 
@@ -12757,7 +12757,7 @@
 ## 愚図愚図 (ぐずぐず)
 
 - meaning_en: slowly
-- meaning_th:
+- meaning_th: ช้าๆ
 
 ---
 
@@ -12827,7 +12827,7 @@
 ## 感化 (かんか)
 
 - meaning_en: influence (on someone)
-- meaning_th:
+- meaning_th: อิทธิพล
 
 ---
 
@@ -12883,7 +12883,7 @@
 ## 感情 (かんじょう)
 
 - meaning_en: emotion
-- meaning_th:
+- meaning_th: อารมณ์
 
 ---
 
@@ -12946,7 +12946,7 @@
 ## 感涙 (かんるい)
 
 - meaning_en: tears (from being deeply moved)
-- meaning_th:
+- meaning_th: น้ำตา
 
 ---
 
@@ -12960,7 +12960,7 @@
 ## 感知 (かんち)
 
 - meaning_en: perception
-- meaning_th:
+- meaning_th: การรับรู้
 
 ---
 
@@ -12974,7 +12974,7 @@
 ## 感覚 (かんかく)
 
 - meaning_en: sense
-- meaning_th:
+- meaning_th: ความรู้สึก
 
 ---
 
@@ -12995,14 +12995,14 @@
 ## 感触 (かんしょく)
 
 - meaning_en: feel (of something)
-- meaning_th:
+- meaning_th: รู้สึก
 
 ---
 
 ## 感謝 (かんしゃ)
 
 - meaning_en: thanks
-- meaning_th:
+- meaning_th: ความขอบคุณ, ซาบซึ้งใจ
 
 ---
 
@@ -13023,7 +13023,7 @@
 ## 慣例 (かんれい)
 
 - meaning_en: custom
-- meaning_th:
+- meaning_th: กำหนดเอง
 
 ---
 
@@ -13051,7 +13051,7 @@
 ## 慣習 (かんしゅう)
 
 - meaning_en: custom
-- meaning_th:
+- meaning_th: กำหนดเอง
 
 ---
 
@@ -13107,7 +13107,7 @@
 ## 憲法 (けんぽう)
 
 - meaning_en: constitution
-- meaning_th:
+- meaning_th: รัฐธรรมนูญ
 
 ---
 
@@ -13128,14 +13128,14 @@
 ## 懇意 (こんい)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
 ## 懇親 (こんしん)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
@@ -13177,14 +13177,14 @@
 ## 懐中電灯 (かいちゅうでんとう)
 
 - meaning_en: (electric) torch
-- meaning_th:
+- meaning_th: คบเพลิง
 
 ---
 
 ## 懐刀 (ふところがたな)
 
 - meaning_en: dagger
-- meaning_th:
+- meaning_th: กริช
 
 ---
 
@@ -13198,7 +13198,7 @@
 ## 懐妊 (かいにん)
 
 - meaning_en: pregnancy
-- meaning_th:
+- meaning_th: การตั้งครรภ์
 
 ---
 
@@ -13212,7 +13212,7 @@
 ## 懐疑 (かいぎ)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -13240,7 +13240,7 @@
 ## 懸念 (けねん)
 
 - meaning_en: worry
-- meaning_th:
+- meaning_th: กังวล
 
 ---
 
@@ -13261,7 +13261,7 @@
 ## 我儘 (わがまま)
 
 - meaning_en: selfish
-- meaning_th:
+- meaning_th: เห็นแก่ตัว
 
 ---
 
@@ -13275,7 +13275,7 @@
 ## 我楽多 (ガラクタ)
 
 - meaning_en: junk
-- meaning_th:
+- meaning_th: ขยะ
 
 ---
 
@@ -13289,7 +13289,7 @@
 ## 我輩 (わがはい)
 
 - meaning_en: I
-- meaning_th:
+- meaning_th: ฉัน
 
 ---
 
@@ -13324,7 +13324,7 @@
 ## 戯曲 (ぎきょく)
 
 - meaning_en: drama
-- meaning_th:
+- meaning_th: ละคร
 
 ---
 
@@ -13359,7 +13359,7 @@
 ## 戸口 (とぐち)
 
 - meaning_en: door
-- meaning_th:
+- meaning_th: ประตู
 
 ---
 
@@ -13415,7 +13415,7 @@
 ## 技巧 (ぎこう)
 
 - meaning_en: technique
-- meaning_th:
+- meaning_th: เทคนิค
 
 ---
 
@@ -13429,7 +13429,7 @@
 ## 技法 (ぎほう)
 
 - meaning_en: technique
-- meaning_th:
+- meaning_th: เทคนิค
 
 ---
 
@@ -13478,7 +13478,7 @@
 ## 技量 (ぎりょう)
 
 - meaning_en: ability
-- meaning_th:
+- meaning_th: ความสามารถ
 
 ---
 
@@ -13604,7 +13604,7 @@
 ## 拘留 (こうりゅう)
 
 - meaning_en: custody
-- meaning_th:
+- meaning_th: การดูแล
 
 ---
 
@@ -13625,7 +13625,7 @@
 ## 拘置所 (こうちしょ)
 
 - meaning_en: prison
-- meaning_th:
+- meaning_th: คุก
 
 ---
 
@@ -13639,7 +13639,7 @@
 ## 拠点 (きょてん)
 
 - meaning_en: base (of operations)
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
@@ -13723,14 +13723,14 @@
 ## 拳骨 (げんこつ)
 
 - meaning_en: (clenched) fist
-- meaning_th:
+- meaning_th: กำปั้น
 
 ---
 
 ## 拷問 (ごうもん)
 
 - meaning_en: torture
-- meaning_th:
+- meaning_th: การทรมาน
 
 ---
 
@@ -13744,14 +13744,14 @@
 ## 挙動 (きょどう)
 
 - meaning_en: conduct
-- meaning_th:
+- meaning_th: ประพฤติตน
 
 ---
 
 ## 挙句 (あげく)
 
 - meaning_en: after (a long process)
-- meaning_th:
+- meaning_th: หลังจากนั้น
 
 ---
 
@@ -13870,7 +13870,7 @@
 ## 揮毫 (きごう)
 
 - meaning_en: writing (esp. commissioned calligraphy)
-- meaning_th:
+- meaning_th: การเขียน
 
 ---
 
@@ -13947,7 +13947,7 @@
 ## 改修 (かいしゅう)
 
 - meaning_en: repair
-- meaning_th:
+- meaning_th: ซ่อมแซม
 
 ---
 
@@ -13968,7 +13968,7 @@
 ## 改変 (かいへん)
 
 - meaning_en: change
-- meaning_th:
+- meaning_th: การเปลี่ยนแปลง
 
 ---
 
@@ -13982,7 +13982,7 @@
 ## 改定 (かいてい)
 
 - meaning_en: revision (of a rule, price, etc.)
-- meaning_th:
+- meaning_th: การแก้ไข
 
 ---
 
@@ -14017,7 +14017,7 @@
 ## 改新 (かいしん)
 
 - meaning_en: reformation
-- meaning_th:
+- meaning_th: การปฏิรูป
 
 ---
 
@@ -14038,7 +14038,7 @@
 ## 改正 (かいせい)
 
 - meaning_en: revision
-- meaning_th:
+- meaning_th: การแก้ไข
 
 ---
 
@@ -14087,7 +14087,7 @@
 ## 改訂 (かいてい)
 
 - meaning_en: revision (of text)
-- meaning_th:
+- meaning_th: การแก้ไข
 
 ---
 
@@ -14115,7 +14115,7 @@
 ## 改革 (かいかく)
 
 - meaning_en: reform
-- meaning_th:
+- meaning_th: การปฏิรูป
 
 ---
 
@@ -14143,14 +14143,14 @@
 ## 攻撃 (こうげき)
 
 - meaning_en: attack
-- meaning_th:
+- meaning_th: โจมตี
 
 ---
 
 ## 攻略 (こうりゃく)
 
 - meaning_en: capture (of enemy territory)
-- meaning_th:
+- meaning_th: จับภาพ
 
 ---
 
@@ -14206,14 +14206,14 @@
 ## 故障 (こしょう)
 
 - meaning_en: fault
-- meaning_th:
+- meaning_th: ความผิด
 
 ---
 
 ## 救世 (きゅうせい)
 
 - meaning_en: salvation (of the world)
-- meaning_th:
+- meaning_th: ความรอด
 
 ---
 
@@ -14234,7 +14234,7 @@
 ## 救出 (きゅうしゅつ)
 
 - meaning_en: rescue
-- meaning_th:
+- meaning_th: ช่วยเหลือ
 
 ---
 
@@ -14311,7 +14311,7 @@
 ## 救難 (きゅうなん)
 
 - meaning_en: rescue
-- meaning_th:
+- meaning_th: ช่วยเหลือ
 
 ---
 
@@ -14360,7 +14360,7 @@
 ## 教員 (きょういん)
 
 - meaning_en: teacher
-- meaning_th:
+- meaning_th: ครู
 
 ---
 
@@ -14395,21 +14395,21 @@
 ## 教官 (きょうかん)
 
 - meaning_en: teacher
-- meaning_th:
+- meaning_th: ครู
 
 ---
 
 ## 教室 (きょうしつ)
 
 - meaning_en: classroom
-- meaning_th:
+- meaning_th: ห้องเรียน
 
 ---
 
 ## 教師 (きょうし)
 
 - meaning_en: teacher
-- meaning_th:
+- meaning_th: ครู
 
 ---
 
@@ -14458,7 +14458,7 @@
 ## 教示 (きょうじ)
 
 - meaning_en: instruction
-- meaning_th:
+- meaning_th: การเรียนการสอน
 
 ---
 
@@ -14472,7 +14472,7 @@
 ## 教科 (きょうか)
 
 - meaning_en: subject
-- meaning_th:
+- meaning_th: เรื่อง
 
 ---
 
@@ -14493,7 +14493,7 @@
 ## 教習 (きょうしゅう)
 
 - meaning_en: training
-- meaning_th:
+- meaning_th: การฝึกอบรม
 
 ---
 
@@ -14514,7 +14514,7 @@
 ## 教育 (きょういく)
 
 - meaning_en: education
-- meaning_th:
+- meaning_th: การศึกษา
 
 ---
 
@@ -14535,14 +14535,14 @@
 ## 教訓 (きょうくん)
 
 - meaning_en: lesson
-- meaning_th:
+- meaning_th: บทเรียน
 
 ---
 
 ## 教諭 (きょうゆ)
 
 - meaning_en: (licensed) teacher
-- meaning_th:
+- meaning_th: ครู
 
 ---
 
@@ -14598,7 +14598,7 @@
 ## 敬意 (けいい)
 
 - meaning_en: respect
-- meaning_th:
+- meaning_th: เคารพ
 
 ---
 
@@ -14619,7 +14619,7 @@
 ## 敬礼 (けいれい)
 
 - meaning_en: salute
-- meaning_th:
+- meaning_th: ทักทาย
 
 ---
 
@@ -14654,7 +14654,7 @@
 ## 旗印 (はたじるし)
 
 - meaning_en: design (on a banner)
-- meaning_th:
+- meaning_th: การออกแบบ
 
 ---
 
@@ -14675,14 +14675,14 @@
 ## 旗色 (はたいろ)
 
 - meaning_en: situation
-- meaning_th:
+- meaning_th: สถานการณ์
 
 ---
 
 ## 旗頭 (はたがしら)
 
 - meaning_en: leader
-- meaning_th:
+- meaning_th: ผู้นำ
 
 ---
 
@@ -14703,7 +14703,7 @@
 ## 既存 (きそん)
 
 - meaning_en: existing
-- meaning_th:
+- meaning_th: ที่มีอยู่
 
 ---
 
@@ -14808,7 +14808,7 @@
 ## 旧友 (きゅうゆう)
 
 - meaning_en: old friend
-- meaning_th:
+- meaning_th: เพื่อนเก่า
 
 ---
 
@@ -14906,7 +14906,7 @@
 ## 旧知 (きゅうち)
 
 - meaning_en: old friend
-- meaning_th:
+- meaning_th: เพื่อนเก่า
 
 ---
 
@@ -14934,7 +14934,7 @@
 ## 旭日 (きょくじつ)
 
 - meaning_en: rising sun
-- meaning_th:
+- meaning_th: พระอาทิตย์ขึ้น
 
 ---
 
@@ -14948,7 +14948,7 @@
 ## 昆虫 (こんちゅう)
 
 - meaning_en: insect
-- meaning_th:
+- meaning_th: แมลง
 
 ---
 
@@ -14969,7 +14969,7 @@
 ## 景品 (けいひん)
 
 - meaning_en: gift
-- meaning_th:
+- meaning_th: ของขวัญ
 
 ---
 
@@ -14983,28 +14983,28 @@
 ## 景況 (けいきょう)
 
 - meaning_en: situation
-- meaning_th:
+- meaning_th: สถานการณ์
 
 ---
 
 ## 景色 (けしき)
 
 - meaning_en: scenery
-- meaning_th:
+- meaning_th: ทิวทัศน์
 
 ---
 
 ## 景観 (けいかん)
 
 - meaning_en: scenery
-- meaning_th:
+- meaning_th: ทิวทัศน์
 
 ---
 
 ## 暁星 (ぎょうせい)
 
 - meaning_en: morning star
-- meaning_th:
+- meaning_th: ดาวรุ่ง
 
 ---
 
@@ -15025,7 +15025,7 @@
 ## 曲線 (きょくせん)
 
 - meaning_en: curve
-- meaning_th:
+- meaning_th: เส้นโค้ง
 
 ---
 
@@ -15088,7 +15088,7 @@
 ## 更迭 (こうてつ)
 
 - meaning_en: change (of personnel)
-- meaning_th:
+- meaning_th: การเปลี่ยนแปลง
 
 ---
 
@@ -15158,7 +15158,7 @@
 ## 月日 (つきひ)
 
 - meaning_en: time
-- meaning_th:
+- meaning_th: เวลา
 
 ---
 
@@ -15263,7 +15263,7 @@
 ## 期待 (きたい)
 
 - meaning_en: expectation
-- meaning_th:
+- meaning_th: ความคาดหวัง
 
 ---
 
@@ -15298,7 +15298,7 @@
 ## 期間 (きかん)
 
 - meaning_en: period
-- meaning_th:
+- meaning_th: ระยะเวลา
 
 ---
 
@@ -15312,7 +15312,7 @@
 ## 期限 (きげん)
 
 - meaning_en: term
-- meaning_th:
+- meaning_th: ระยะ
 
 ---
 
@@ -15333,7 +15333,7 @@
 ## 果実 (かじつ)
 
 - meaning_en: fruit
-- meaning_th:
+- meaning_th: ผลไม้
 
 ---
 
@@ -15375,7 +15375,7 @@
 ## 果物 (くだもの)
 
 - meaning_en: fruit
-- meaning_th:
+- meaning_th: ผลไม้
 
 ---
 
@@ -15431,14 +15431,14 @@
 ## 架設 (かせつ)
 
 - meaning_en: construction
-- meaning_th:
+- meaning_th: การก่อสร้าง
 
 ---
 
 ## 柑橘類 (かんきつるい)
 
 - meaning_en: citrus
-- meaning_th:
+- meaning_th: ส้ม
 
 ---
 
@@ -15543,7 +15543,7 @@
 ## 校閲 (こうえつ)
 
 - meaning_en: revision
-- meaning_th:
+- meaning_th: การแก้ไข
 
 ---
 
@@ -15592,7 +15592,7 @@
 ## 核心 (かくしん)
 
 - meaning_en: core
-- meaning_th:
+- meaning_th: แกนกลาง
 
 ---
 
@@ -15634,21 +15634,21 @@
 ## 根城 (ねじろ)
 
 - meaning_en: stronghold
-- meaning_th:
+- meaning_th: ฐานที่มั่น
 
 ---
 
 ## 根幹 (こんかん)
 
 - meaning_en: foundation
-- meaning_th:
+- meaning_th: รากฐาน
 
 ---
 
 ## 根底 (こんてい)
 
 - meaning_en: root
-- meaning_th:
+- meaning_th: ราก
 
 ---
 
@@ -15669,14 +15669,14 @@
 ## 根拠地 (こんきょち)
 
 - meaning_en: base (of operations)
-- meaning_th:
+- meaning_th: ฐาน
 
 ---
 
 ## 根本 (こんぽん)
 
 - meaning_en: root
-- meaning_th:
+- meaning_th: ราก
 
 ---
 
@@ -15704,7 +15704,7 @@
 ## 根源 (こんげん)
 
 - meaning_en: root
-- meaning_th:
+- meaning_th: ราก
 
 ---
 
@@ -15725,7 +15725,7 @@
 ## 格好 (かっこう)
 
 - meaning_en: shape
-- meaning_th:
+- meaning_th: รูปร่าง
 
 ---
 
@@ -15739,7 +15739,7 @@
 ## 格安 (かくやす)
 
 - meaning_en: (very) cheap
-- meaning_th:
+- meaning_th: ราคาถูก
 
 ---
 
@@ -15788,14 +15788,14 @@
 ## 格調 (かくちょう)
 
 - meaning_en: tone (of speech, writing, etc.)
-- meaning_th:
+- meaning_th: โทนเสียง
 
 ---
 
 ## 格闘 (かくとう)
 
 - meaning_en: (hand-to-hand) fight
-- meaning_th:
+- meaning_th: ต่อสู้
 
 ---
 
@@ -15893,7 +15893,7 @@
 ## 検体 (けんたい)
 
 - meaning_en: specimen
-- meaning_th:
+- meaning_th: ตัวอย่าง
 
 ---
 
@@ -15914,14 +15914,14 @@
 ## 検分 (けんぶん)
 
 - meaning_en: inspection
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
 ## 検問 (けんもん)
 
 - meaning_en: inspection
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -15935,7 +15935,7 @@
 ## 検察 (けんさつ)
 
 - meaning_en: criminal investigation
-- meaning_th:
+- meaning_th: การสืบสวนคดีอาญา
 
 ---
 
@@ -15956,14 +15956,14 @@
 ## 検挙 (けんきょ)
 
 - meaning_en: arrest
-- meaning_th:
+- meaning_th: การจับกุม
 
 ---
 
 ## 検査 (けんさ)
 
 - meaning_en: inspection (e.g. customs, factory)
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -16019,7 +16019,7 @@
 ## 検証 (けんしょう)
 
 - meaning_en: verification
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -16040,7 +16040,7 @@
 ## 業務 (ぎょうむ)
 
 - meaning_en: business
-- meaning_th:
+- meaning_th: ธุรกิจ
 
 ---
 
@@ -16075,7 +16075,7 @@
 ## 業績 (ぎょうせき)
 
 - meaning_en: achievement
-- meaning_th:
+- meaning_th: ความสำเร็จ
 
 ---
 
@@ -16194,7 +16194,7 @@
 ## 極点 (きょくてん)
 
 - meaning_en: pole (north, south)
-- meaning_th:
+- meaning_th: เสา
 
 ---
 
@@ -16208,7 +16208,7 @@
 ## 極端 (きょくたん)
 
 - meaning_en: extreme
-- meaning_th:
+- meaning_th: สุดขีด
 
 ---
 
@@ -16236,14 +16236,14 @@
 ## 極貧 (ごくひん)
 
 - meaning_en: destitution
-- meaning_th:
+- meaning_th: ความยากจนข้นแค้น
 
 ---
 
 ## 極道 (ごくどう)
 
 - meaning_en: wicked
-- meaning_th:
+- meaning_th: ชั่วร้าย
 
 ---
 
@@ -16383,28 +16383,28 @@
 ## 概況 (がいきょう)
 
 - meaning_en: outlook
-- meaning_th:
+- meaning_th: แนวโน้ม
 
 ---
 
 ## 概略 (がいりゃく)
 
 - meaning_en: outline
-- meaning_th:
+- meaning_th: โครงร่าง
 
 ---
 
 ## 概算 (がいさん)
 
 - meaning_en: approximation
-- meaning_th:
+- meaning_th: การประมาณ
 
 ---
 
 ## 概要 (がいよう)
 
 - meaning_en: outline
-- meaning_th:
+- meaning_th: โครงร่าง
 
 ---
 
@@ -16439,49 +16439,49 @@
 ## 構図 (こうず)
 
 - meaning_en: composition (of painting)
-- meaning_th:
+- meaning_th: องค์ประกอบ
 
 ---
 
 ## 構想 (こうそう)
 
 - meaning_en: plan
-- meaning_th:
+- meaning_th: แผน
 
 ---
 
 ## 構成 (こうせい)
 
 - meaning_en: composition
-- meaning_th:
+- meaning_th: องค์ประกอบ
 
 ---
 
 ## 構築 (こうちく)
 
 - meaning_en: construction
-- meaning_th:
+- meaning_th: การก่อสร้าง
 
 ---
 
 ## 構造 (こうぞう)
 
 - meaning_en: structure
-- meaning_th:
+- meaning_th: โครงสร้าง
 
 ---
 
 ## 構造物 (こうぞうぶつ)
 
 - meaning_en: structure
-- meaning_th:
+- meaning_th: โครงสร้าง
 
 ---
 
 ## 権利 (けんり)
 
 - meaning_en: right
-- meaning_th:
+- meaning_th: ถูกต้อง
 
 ---
 
@@ -16495,14 +16495,14 @@
 ## 権力 (けんりょく)
 
 - meaning_en: (political) power
-- meaning_th:
+- meaning_th: อำนาจ
 
 ---
 
 ## 権勢 (けんせい)
 
 - meaning_en: power
-- meaning_th:
+- meaning_th: อำนาจ
 
 ---
 
@@ -16516,7 +16516,7 @@
 ## 権威 (けんい)
 
 - meaning_en: authority
-- meaning_th:
+- meaning_th: ผู้มีอำนาจ
 
 ---
 
@@ -16537,7 +16537,7 @@
 ## 権限 (けんげん)
 
 - meaning_en: power
-- meaning_th:
+- meaning_th: อำนาจ
 
 ---
 
@@ -16558,7 +16558,7 @@
 ## 機会 (きかい)
 
 - meaning_en: chance
-- meaning_th:
+- meaning_th: โอกาส
 
 ---
 
@@ -16586,7 +16586,7 @@
 ## 機動 (きどう)
 
 - meaning_en: maneuver (usu. of military force)
-- meaning_th:
+- meaning_th: การซ้อมรบ
 
 ---
 
@@ -16614,7 +16614,7 @@
 ## 機密 (きみつ)
 
 - meaning_en: secrecy
-- meaning_th:
+- meaning_th: ความลับ
 
 ---
 
@@ -16649,7 +16649,7 @@
 ## 機敏 (きびん)
 
 - meaning_en: quick
-- meaning_th:
+- meaning_th: รวดเร็ว
 
 ---
 
@@ -16663,7 +16663,7 @@
 ## 機械 (きかい)
 
 - meaning_en: machine
-- meaning_th:
+- meaning_th: เครื่องจักร
 
 ---
 
@@ -16677,7 +16677,7 @@
 ## 機構 (きこう)
 
 - meaning_en: mechanism
-- meaning_th:
+- meaning_th: กลไก
 
 ---
 
@@ -16691,7 +16691,7 @@
 ## 機種 (きしゅ)
 
 - meaning_en: model (of machine, device)
-- meaning_th:
+- meaning_th: โมเดล
 
 ---
 
@@ -16712,14 +16712,14 @@
 ## 機軸 (きじく)
 
 - meaning_en: axis
-- meaning_th:
+- meaning_th: แกน
 
 ---
 
 ## 機運 (きうん)
 
 - meaning_en: opportunity
-- meaning_th:
+- meaning_th: โอกาส
 
 ---
 
@@ -16775,14 +16775,14 @@
 ## 機雷 (きらい)
 
 - meaning_en: (sea) mine
-- meaning_th:
+- meaning_th: ของฉัน
 
 ---
 
 ## 機首 (きしゅ)
 
 - meaning_en: nose (of plane)
-- meaning_th:
+- meaning_th: จมูก
 
 ---
 
@@ -16824,7 +16824,7 @@
 ## 欠如 (けつじょ)
 
 - meaning_en: lack
-- meaning_th:
+- meaning_th: ขาด
 
 ---
 
@@ -16845,7 +16845,7 @@
 ## 欠点 (けってん)
 
 - meaning_en: fault
-- meaning_th:
+- meaning_th: ความผิด
 
 ---
 
@@ -16866,7 +16866,7 @@
 ## 欠落 (けつらく)
 
 - meaning_en: lack
-- meaning_th:
+- meaning_th: ขาด
 
 ---
 
@@ -16880,7 +16880,7 @@
 ## 欺瞞 (ぎまん)
 
 - meaning_en: deception
-- meaning_th:
+- meaning_th: การหลอกลวง
 
 ---
 
@@ -16922,7 +16922,7 @@
 ## 歌唱 (かしょう)
 
 - meaning_en: song
-- meaning_th:
+- meaning_th: เพลง
 
 ---
 
@@ -16957,14 +16957,14 @@
 ## 歌手 (かしゅ)
 
 - meaning_en: singer
-- meaning_th:
+- meaning_th: นักร้อง
 
 ---
 
 ## 歌曲 (かきょく)
 
 - meaning_en: melody
-- meaning_th:
+- meaning_th: ทำนอง
 
 ---
 
@@ -16999,7 +16999,7 @@
 ## 歌謡 (かよう)
 
 - meaning_en: song
-- meaning_th:
+- meaning_th: เพลง
 
 ---
 
@@ -17027,7 +17027,7 @@
 ## 歓喜 (かんき)
 
 - meaning_en: delight
-- meaning_th:
+- meaning_th: ความสุข
 
 ---
 
@@ -17062,7 +17062,7 @@
 ## 歓迎 (かんげい)
 
 - meaning_en: welcome
-- meaning_th:
+- meaning_th: ยินดีต้อนรับ
 
 ---
 
@@ -17076,7 +17076,7 @@
 ## 毀損 (きそん)
 
 - meaning_en: damage
-- meaning_th:
+- meaning_th: ความเสียหาย
 
 ---
 
@@ -17104,14 +17104,14 @@
 ## 気候 (きこう)
 
 - meaning_en: climate
-- meaning_th:
+- meaning_th: สภาพภูมิอากาศ
 
 ---
 
 ## 気分 (きぶん)
 
 - meaning_en: feeling
-- meaning_th:
+- meaning_th: อารมณ์, ความรู้สึก
 
 ---
 
@@ -17125,7 +17125,7 @@
 ## 気前 (きまえ)
 
 - meaning_en: generosity
-- meaning_th:
+- meaning_th: ความเอื้ออาทร
 
 ---
 
@@ -17153,14 +17153,14 @@
 ## 気合 (きあい)
 
 - meaning_en: (fighting) spirit
-- meaning_th:
+- meaning_th: จิตวิญญาณ
 
 ---
 
 ## 気味 (きみ)
 
 - meaning_en: sensation
-- meaning_th:
+- meaning_th: ความรู้สึก
 
 ---
 
@@ -17174,7 +17174,7 @@
 ## 気品 (きひん)
 
 - meaning_en: elegance
-- meaning_th:
+- meaning_th: ความสง่างาม
 
 ---
 
@@ -17202,7 +17202,7 @@
 ## 気心 (きごころ)
 
 - meaning_en: temper
-- meaning_th:
+- meaning_th: อารมณ์
 
 ---
 
@@ -17244,14 +17244,14 @@
 ## 気温 (きおん)
 
 - meaning_en: (air) temperature
-- meaning_th:
+- meaning_th: อุณหภูมิอากาศ
 
 ---
 
 ## 気炎 (きえん)
 
 - meaning_en: high spirits
-- meaning_th:
+- meaning_th: วิญญาณสูง
 
 ---
 
@@ -17265,7 +17265,7 @@
 ## 気筒 (きとう)
 
 - meaning_en: cylinder
-- meaning_th:
+- meaning_th: กระบอก
 
 ---
 
@@ -17293,21 +17293,21 @@
 ## 気絶 (きぜつ)
 
 - meaning_en: faint
-- meaning_th:
+- meaning_th: เป็นลม
 
 ---
 
 ## 気苦労 (きぐろう)
 
 - meaning_en: worry
-- meaning_th:
+- meaning_th: กังวล
 
 ---
 
 ## 気象 (きしょう)
 
 - meaning_en: weather (conditions)
-- meaning_th:
+- meaning_th: สภาพอากาศ
 
 ---
 
@@ -17349,7 +17349,7 @@
 ## 気迫 (きはく)
 
 - meaning_en: spirit
-- meaning_th:
+- meaning_th: จิตวิญญาณ
 
 ---
 
@@ -17398,7 +17398,7 @@
 ## 気骨 (きこつ)
 
 - meaning_en: (moral) backbone
-- meaning_th:
+- meaning_th: กระดูกสันหลัง
 
 ---
 
@@ -17482,7 +17482,7 @@
 ## 決別 (けつべつ)
 
 - meaning_en: separation
-- meaning_th:
+- meaning_th: การแยก
 
 ---
 
@@ -17517,7 +17517,7 @@
 ## 決定 (けってい)
 
 - meaning_en: decision
-- meaning_th:
+- meaning_th: การตัดสินใจ
 
 ---
 
@@ -17545,7 +17545,7 @@
 ## 決意 (けつい)
 
 - meaning_en: decision
-- meaning_th:
+- meaning_th: การตัดสินใจ
 
 ---
 
@@ -17559,7 +17559,7 @@
 ## 決断 (けつだん)
 
 - meaning_en: decision
-- meaning_th:
+- meaning_th: การตัดสินใจ
 
 ---
 
@@ -17573,7 +17573,7 @@
 ## 決済 (けっさい)
 
 - meaning_en: settlement (of an account)
-- meaning_th:
+- meaning_th: การตั้งถิ่นฐาน
 
 ---
 
@@ -17608,7 +17608,7 @@
 ## 決行 (けっこう)
 
 - meaning_en: doing (with resolve)
-- meaning_th:
+- meaning_th: กำลังทำ
 
 ---
 
@@ -17720,7 +17720,7 @@
 ## 洪水 (こうずい)
 
 - meaning_en: flood
-- meaning_th:
+- meaning_th: น้ำท่วม
 
 ---
 
@@ -17748,7 +17748,7 @@
 ## 活動 (かつどう)
 
 - meaning_en: activity (of a person, organization, animal, volcano, etc.)
-- meaning_th:
+- meaning_th: กิจกรรม
 
 ---
 
@@ -17762,7 +17762,7 @@
 ## 活字 (かつじ)
 
 - meaning_en: (piece of) type
-- meaning_th:
+- meaning_th: ประเภท
 
 ---
 
@@ -17790,7 +17790,7 @@
 ## 活気 (かっき)
 
 - meaning_en: energy
-- meaning_th:
+- meaning_th: พลังงาน
 
 ---
 
@@ -17811,7 +17811,7 @@
 ## 活版 (かっぱん)
 
 - meaning_en: form (of type)
-- meaning_th:
+- meaning_th: แบบฟอร์ม
 
 ---
 
@@ -17825,7 +17825,7 @@
 ## 活発 (かっぱつ)
 
 - meaning_en: lively
-- meaning_th:
+- meaning_th: มีชีวิตชีวา
 
 ---
 
@@ -17853,7 +17853,7 @@
 ## 海上 (かいじょう)
 
 - meaning_en: (on the) sea
-- meaning_th:
+- meaning_th: ทะเล
 
 ---
 
@@ -17888,7 +17888,7 @@
 ## 海原 (うなばら)
 
 - meaning_en: ocean
-- meaning_th:
+- meaning_th: มหาสมุทร
 
 ---
 
@@ -17909,7 +17909,7 @@
 ## 海外 (かいがい)
 
 - meaning_en: foreign
-- meaning_th:
+- meaning_th: ต่างประเทศ
 
 ---
 
@@ -17944,7 +17944,7 @@
 ## 海岸 (かいがん)
 
 - meaning_en: seashore
-- meaning_th:
+- meaning_th: ชายฝั่ง, ชายหาด
 
 ---
 
@@ -18007,7 +18007,7 @@
 ## 海洋 (かいよう)
 
 - meaning_en: ocean
-- meaning_th:
+- meaning_th: มหาสมุทร
 
 ---
 
@@ -18021,14 +18021,14 @@
 ## 海浜 (かいひん)
 
 - meaning_en: seashore
-- meaning_th:
+- meaning_th: ชายทะเล
 
 ---
 
 ## 海港 (かいこう)
 
 - meaning_en: port
-- meaning_th:
+- meaning_th: พอร์ต
 
 ---
 
@@ -18063,7 +18063,7 @@
 ## 海老 (えび)
 
 - meaning_en: prawn
-- meaning_th:
+- meaning_th: กุ้ง
 
 ---
 
@@ -18084,7 +18084,7 @@
 ## 海藻 (かいそう)
 
 - meaning_en: seaweed
-- meaning_th:
+- meaning_th: สาหร่ายทะเล
 
 ---
 
@@ -18119,14 +18119,14 @@
 ## 海軍 (かいぐん)
 
 - meaning_en: navy
-- meaning_th:
+- meaning_th: กองทัพเรือ
 
 ---
 
 ## 海辺 (うみべ)
 
 - meaning_en: beach
-- meaning_th:
+- meaning_th: ชายหาด
 
 ---
 
@@ -18182,7 +18182,7 @@
 ## 混乱 (こんらん)
 
 - meaning_en: disorder
-- meaning_th:
+- meaning_th: ความผิดปกติ
 
 ---
 
@@ -18196,7 +18196,7 @@
 ## 混入 (こんにゅう)
 
 - meaning_en: mixing
-- meaning_th:
+- meaning_th: การผสม
 
 ---
 
@@ -18210,14 +18210,14 @@
 ## 混合 (こんごう)
 
 - meaning_en: mixing
-- meaning_th:
+- meaning_th: การผสม
 
 ---
 
 ## 混同 (こんどう)
 
 - meaning_en: confusion
-- meaning_th:
+- meaning_th: ความสับสน
 
 ---
 
@@ -18238,7 +18238,7 @@
 ## 混成 (こんせい)
 
 - meaning_en: mixed (e.g. team, chorus)
-- meaning_th:
+- meaning_th: ผสม
 
 ---
 
@@ -18280,7 +18280,7 @@
 ## 混迷 (こんめい)
 
 - meaning_en: turmoil
-- meaning_th:
+- meaning_th: ความวุ่นวาย
 
 ---
 
@@ -18308,14 +18308,14 @@
 ## 渓流 (けいりゅう)
 
 - meaning_en: mountain stream
-- meaning_th:
+- meaning_th: ธารน้ำจากภูเขา
 
 ---
 
 ## 渓谷 (けいこく)
 
 - meaning_en: valley (with a river running through it)
-- meaning_th:
+- meaning_th: หุบเขา
 
 ---
 
@@ -18357,7 +18357,7 @@
 ## 減収 (げんしゅう)
 
 - meaning_en: fall
-- meaning_th:
+- meaning_th: ตก
 
 ---
 
@@ -18385,7 +18385,7 @@
 ## 減少 (げんしょう)
 
 - meaning_en: decrease
-- meaning_th:
+- meaning_th: ลดลง
 
 ---
 
@@ -18448,7 +18448,7 @@
 ## 減退 (げんたい)
 
 - meaning_en: decline
-- meaning_th:
+- meaning_th: ลดลง
 
 ---
 
@@ -18490,7 +18490,7 @@
 ## 渦中 (かちゅう)
 
 - meaning_en: vortex
-- meaning_th:
+- meaning_th: กระแสน้ำวน
 
 ---
 
@@ -18518,7 +18518,7 @@
 ## 渾然 (こんぜん)
 
 - meaning_en: whole
-- meaning_th:
+- meaning_th: ทั้งหมด
 
 ---
 
@@ -18539,14 +18539,14 @@
 ## 湖水 (こすい)
 
 - meaning_en: lake
-- meaning_th:
+- meaning_th: ทะเลสาบ
 
 ---
 
 ## 湖沼 (こしょう)
 
 - meaning_en: lake
-- meaning_th:
+- meaning_th: ทะเลสาบ
 
 ---
 
@@ -18574,21 +18574,21 @@
 ## 源泉 (げんせん)
 
 - meaning_en: source (of a spring, etc.)
-- meaning_th:
+- meaning_th: แหล่งที่มา
 
 ---
 
 ## 源流 (げんりゅう)
 
 - meaning_en: source (e.g. of a river)
-- meaning_th:
+- meaning_th: แหล่งที่มา
 
 ---
 
 ## 滑稽 (こっけい)
 
 - meaning_en: funny
-- meaning_th:
+- meaning_th: ตลกดี
 
 ---
 
@@ -18623,7 +18623,7 @@
 ## 滑車 (かっしゃ)
 
 - meaning_en: pulley
-- meaning_th:
+- meaning_th: ลูกรอก
 
 ---
 
@@ -18644,7 +18644,7 @@
 ## 漁労 (ぎょろう)
 
 - meaning_en: fishing
-- meaning_th:
+- meaning_th: ตกปลา
 
 ---
 
@@ -18700,7 +18700,7 @@
 ## 漁獲 (ぎょかく)
 
 - meaning_en: fishery
-- meaning_th:
+- meaning_th: ประมง
 
 ---
 
@@ -18791,7 +18791,7 @@
 ## 潔白 (けっぱく)
 
 - meaning_en: innocence
-- meaning_th:
+- meaning_th: ความไร้เดียงสา
 
 ---
 
@@ -18847,7 +18847,7 @@
 ## 激怒 (げきど)
 
 - meaning_en: rage
-- meaning_th:
+- meaning_th: ความโกรธ
 
 ---
 
@@ -18882,14 +18882,14 @@
 ## 激烈 (げきれつ)
 
 - meaning_en: violence
-- meaning_th:
+- meaning_th: ความรุนแรง
 
 ---
 
 ## 激甚 (げきじん)
 
 - meaning_en: intense
-- meaning_th:
+- meaning_th: เข้มข้น
 
 ---
 
@@ -18903,7 +18903,7 @@
 ## 激突 (げきとつ)
 
 - meaning_en: crash
-- meaning_th:
+- meaning_th: ผิดพลาด
 
 ---
 
@@ -18959,7 +18959,7 @@
 ## 火事 (かじ)
 
 - meaning_en: fire
-- meaning_th:
+- meaning_th: ไฟไหม้
 
 ---
 
@@ -18973,7 +18973,7 @@
 ## 火傷 (やけど)
 
 - meaning_en: burn
-- meaning_th:
+- meaning_th: เผาไหม้
 
 ---
 
@@ -19057,7 +19057,7 @@
 ## 火気 (かき)
 
 - meaning_en: fire
-- meaning_th:
+- meaning_th: ไฟไหม้
 
 ---
 
@@ -19078,7 +19078,7 @@
 ## 火炎 (かえん)
 
 - meaning_en: flame
-- meaning_th:
+- meaning_th: เปลวไฟ
 
 ---
 
@@ -19099,7 +19099,7 @@
 ## 火砲 (かほう)
 
 - meaning_en: (large) gun
-- meaning_th:
+- meaning_th: ปืน
 
 ---
 
@@ -19183,7 +19183,7 @@
 ## 牙城 (がじょう)
 
 - meaning_en: stronghold (esp. of an enemy or opponent)
-- meaning_th:
+- meaning_th: ฐานที่มั่น
 
 ---
 
@@ -19204,7 +19204,7 @@
 ## 牛乳 (ぎゅうにゅう)
 
 - meaning_en: (cow's) milk
-- meaning_th:
+- meaning_th: นม
 
 ---
 
@@ -19253,14 +19253,14 @@
 ## 犠打 (ぎだ)
 
 - meaning_en: sacrifice (bunt or fly)
-- meaning_th:
+- meaning_th: การเสียสละ
 
 ---
 
 ## 犠牲 (ぎせい)
 
 - meaning_en: sacrifice
-- meaning_th:
+- meaning_th: การเสียสละ
 
 ---
 
@@ -19288,7 +19288,7 @@
 ## 狂人 (きょうじん)
 
 - meaning_en: lunatic
-- meaning_th:
+- meaning_th: คนบ้า
 
 ---
 
@@ -19358,7 +19358,7 @@
 ## 狭間 (はざま)
 
 - meaning_en: gap
-- meaning_th:
+- meaning_th: ช่องว่าง
 
 ---
 
@@ -19435,21 +19435,21 @@
 ## 獲物 (えもの)
 
 - meaning_en: prey
-- meaning_th:
+- meaning_th: เหยื่อ
 
 ---
 
 ## 玄人 (くろうと)
 
 - meaning_en: expert
-- meaning_th:
+- meaning_th: ผู้เชี่ยวชาญ
 
 ---
 
 ## 玄米 (げんまい)
 
 - meaning_en: unpolished rice
-- meaning_th:
+- meaning_th: ข้าวไม่ขัดสี
 
 ---
 
@@ -19477,7 +19477,7 @@
 ## 玉蜀黍 (とうもろこし)
 
 - meaning_en: corn (Zea mays)
-- meaning_th:
+- meaning_th: ข้าวโพด
 
 ---
 
@@ -19561,7 +19561,7 @@
 ## 現住所 (げんじゅうしょ)
 
 - meaning_en: (present) address
-- meaning_th:
+- meaning_th: ที่อยู่
 
 ---
 
@@ -19575,7 +19575,7 @@
 ## 現出 (げんしゅつ)
 
 - meaning_en: appearance
-- meaning_th:
+- meaning_th: ลักษณะที่ปรากฏ
 
 ---
 
@@ -19610,14 +19610,14 @@
 ## 現存 (げんぞん)
 
 - meaning_en: existing
-- meaning_th:
+- meaning_th: ที่มีอยู่
 
 ---
 
 ## 現実 (げんじつ)
 
 - meaning_en: reality
-- meaning_th:
+- meaning_th: ความเป็นจริง
 
 ---
 
@@ -19645,7 +19645,7 @@
 ## 現有 (げんゆう)
 
 - meaning_en: present
-- meaning_th:
+- meaning_th: ปัจจุบัน
 
 ---
 
@@ -19694,7 +19694,7 @@
 ## 現行 (げんこう)
 
 - meaning_en: present
-- meaning_th:
+- meaning_th: ปัจจุบัน
 
 ---
 
@@ -19715,14 +19715,14 @@
 ## 現金 (げんきん)
 
 - meaning_en: cash
-- meaning_th:
+- meaning_th: เงินสด
 
 ---
 
 ## 球体 (きゅうたい)
 
 - meaning_en: sphere
-- meaning_th:
+- meaning_th: ทรงกลม
 
 ---
 
@@ -19806,21 +19806,21 @@
 ## 琥珀 (こはく)
 
 - meaning_en: amber
-- meaning_th:
+- meaning_th: อำพัน
 
 ---
 
 ## 瑕疵 (かし)
 
 - meaning_en: flaw
-- meaning_th:
+- meaning_th: ข้อบกพร่อง
 
 ---
 
 ## 環境 (かんきょう)
 
 - meaning_en: environment
-- meaning_th:
+- meaning_th: สิ่งแวดล้อม
 
 ---
 
@@ -19862,7 +19862,7 @@
 ## 環濠 (かんごう)
 
 - meaning_en: (circular) moat
-- meaning_th:
+- meaning_th: คูเมือง
 
 ---
 
@@ -19918,7 +19918,7 @@
 ## 瓦解 (がかい)
 
 - meaning_en: collapse
-- meaning_th:
+- meaning_th: ยุบ
 
 ---
 
@@ -19953,7 +19953,7 @@
 ## 甘美 (かんび)
 
 - meaning_en: sweet (taste)
-- meaning_th:
+- meaning_th: หวาน
 
 ---
 
@@ -20065,7 +20065,7 @@
 ## 画像 (がぞう)
 
 - meaning_en: image
-- meaning_th:
+- meaning_th: รูปภาพ
 
 ---
 
@@ -20114,7 +20114,7 @@
 ## 画期的 (かっきてき)
 
 - meaning_en: ground-breaking
-- meaning_th:
+- meaning_th: แหวกแนว
 
 ---
 
@@ -20128,7 +20128,7 @@
 ## 画業 (がぎょう)
 
 - meaning_en: painting (as a profession)
-- meaning_th:
+- meaning_th: จิตรกรรม
 
 ---
 
@@ -20156,14 +20156,14 @@
 ## 画面 (がめん)
 
 - meaning_en: screen (of a TV, computer, etc.)
-- meaning_th:
+- meaning_th: หน้าจอ
 
 ---
 
 ## 画題 (がだい)
 
 - meaning_en: subject (of a painting)
-- meaning_th:
+- meaning_th: เรื่อง
 
 ---
 
@@ -20198,7 +20198,7 @@
 ## 疑問 (ぎもん)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -20212,14 +20212,14 @@
 ## 疑問符 (ぎもんふ)
 
 - meaning_en: question mark
-- meaning_th:
+- meaning_th: เครื่องหมายคำถาม
 
 ---
 
 ## 疑心 (ぎしん)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -20233,14 +20233,14 @@
 ## 疑念 (ぎねん)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
 ## 疑惑 (ぎわく)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -20254,14 +20254,14 @@
 ## 疑義 (ぎぎ)
 
 - meaning_en: doubt
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
 ## 痕跡 (こんせき)
 
 - meaning_en: trace
-- meaning_th:
+- meaning_th: ติดตาม
 
 ---
 
@@ -20282,7 +20282,7 @@
 ## 皆目 (かいもく)
 
 - meaning_en: entirely
-- meaning_th:
+- meaning_th: โดยสิ้นเชิง
 
 ---
 
@@ -20303,7 +20303,7 @@
 ## 監察 (かんさつ)
 
 - meaning_en: inspection
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -20324,7 +20324,7 @@
 ## 監査 (かんさ)
 
 - meaning_en: inspection
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -20338,7 +20338,7 @@
 ## 監獄 (かんごく)
 
 - meaning_en: prison
-- meaning_th:
+- meaning_th: คุก
 
 ---
 
@@ -20359,7 +20359,7 @@
 ## 監禁 (かんきん)
 
 - meaning_en: confinement
-- meaning_th:
+- meaning_th: การคุมขัง
 
 ---
 
@@ -20387,35 +20387,35 @@
 ## 看板 (かんばん)
 
 - meaning_en: signboard
-- meaning_th:
+- meaning_th: ป้ายบอกทาง
 
 ---
 
 ## 看病 (かんびょう)
 
 - meaning_en: nursing (a patient)
-- meaning_th:
+- meaning_th: การพยาบาล
 
 ---
 
 ## 看護 (かんご)
 
 - meaning_en: nursing
-- meaning_th:
+- meaning_th: การพยาบาล
 
 ---
 
 ## 看護婦 (かんごふ)
 
 - meaning_en: (female) nurse
-- meaning_th:
+- meaning_th: พยาบาล
 
 ---
 
 ## 看護師 (かんごし)
 
 - meaning_en: (hospital) nurse
-- meaning_th:
+- meaning_th: พยาบาล
 
 ---
 
@@ -20583,14 +20583,14 @@
 ## 眼球 (がんきゅう)
 
 - meaning_en: eyeball
-- meaning_th:
+- meaning_th: ลูกตา
 
 ---
 
 ## 眼目 (がんもく)
 
 - meaning_en: main point
-- meaning_th:
+- meaning_th: จุดหลัก
 
 ---
 
@@ -20639,7 +20639,7 @@
 ## 研修 (けんしゅう)
 
 - meaning_en: training (esp. in-service)
-- meaning_th:
+- meaning_th: การฝึกอบรม
 
 ---
 
@@ -20660,7 +20660,7 @@
 ## 研究 (けんきゅう)
 
 - meaning_en: research
-- meaning_th:
+- meaning_th: การวิจัย
 
 ---
 
@@ -20730,14 +20730,14 @@
 ## 硬度 (こうど)
 
 - meaning_en: hardness
-- meaning_th:
+- meaning_th: ความแข็ง
 
 ---
 
 ## 硬式 (こうしき)
 
 - meaning_en: hard (esp. of hardball, tennis, etc.)
-- meaning_th:
+- meaning_th: ยาก
 
 ---
 
@@ -20765,14 +20765,14 @@
 ## 硬貨 (こうか)
 
 - meaning_en: coin
-- meaning_th:
+- meaning_th: เหรียญ
 
 ---
 
 ## 硬質 (こうしつ)
 
 - meaning_en: hardness
-- meaning_th:
+- meaning_th: ความแข็ง
 
 ---
 
@@ -20786,7 +20786,7 @@
 ## 硬骨 (こうこつ)
 
 - meaning_en: bone
-- meaning_th:
+- meaning_th: กระดูก
 
 ---
 
@@ -20814,14 +20814,14 @@
 ## 確固 (かっこ)
 
 - meaning_en: firm
-- meaning_th:
+- meaning_th: บริษัท
 
 ---
 
 ## 確執 (かくしつ)
 
 - meaning_en: discord
-- meaning_th:
+- meaning_th: ความไม่ลงรอยกัน
 
 ---
 
@@ -20835,14 +20835,14 @@
 ## 確定 (かくてい)
 
 - meaning_en: decision
-- meaning_th:
+- meaning_th: การตัดสินใจ
 
 ---
 
 ## 確実 (かくじつ)
 
 - meaning_en: certain
-- meaning_th:
+- meaning_th: แน่นอน
 
 ---
 
@@ -20863,7 +20863,7 @@
 ## 確立 (かくりつ)
 
 - meaning_en: establishment
-- meaning_th:
+- meaning_th: สถานประกอบการ
 
 ---
 
@@ -20891,7 +20891,7 @@
 ## 磯辺 (いそべ)
 
 - meaning_en: seashore
-- meaning_th:
+- meaning_th: ชายทะเล
 
 ---
 
@@ -20919,7 +20919,7 @@
 ## 禁制 (きんせい)
 
 - meaning_en: prohibition
-- meaning_th:
+- meaning_th: ข้อห้าม
 
 ---
 
@@ -20947,7 +20947,7 @@
 ## 禁断 (きんだん)
 
 - meaning_en: prohibition
-- meaning_th:
+- meaning_th: ข้อห้าม
 
 ---
 
@@ -20968,7 +20968,7 @@
 ## 禁止 (きんし)
 
 - meaning_en: prohibition
-- meaning_th:
+- meaning_th: ข้อห้าม
 
 ---
 
@@ -21010,7 +21010,7 @@
 ## 禁足 (きんそく)
 
 - meaning_en: confinement (indoors, to quarters, etc.)
-- meaning_th:
+- meaning_th: การคุมขัง
 
 ---
 
@@ -21052,7 +21052,7 @@
 ## 科学 (かがく)
 
 - meaning_en: science
-- meaning_th:
+- meaning_th: วิทยาศาสตร์
 
 ---
 
@@ -21087,7 +21087,7 @@
 ## 科目 (かもく)
 
 - meaning_en: (school) subject
-- meaning_th:
+- meaning_th: เรื่อง
 
 ---
 
@@ -21108,14 +21108,14 @@
 ## 稼業 (かぎょう)
 
 - meaning_en: trade
-- meaning_th:
+- meaning_th: การค้าขาย
 
 ---
 
 ## 稽古 (けいこ)
 
 - meaning_en: practice
-- meaning_th:
+- meaning_th: การปฏิบัติ
 
 ---
 
@@ -21136,14 +21136,14 @@
 ## 穀物 (こくもつ)
 
 - meaning_en: grain
-- meaning_th:
+- meaning_th: เมล็ดพืช
 
 ---
 
 ## 穀類 (こくるい)
 
 - meaning_en: grains
-- meaning_th:
+- meaning_th: ธัญพืช
 
 ---
 
@@ -21157,7 +21157,7 @@
 ## 穴熊 (あなぐま)
 
 - meaning_en: badger
-- meaning_th:
+- meaning_th: แบดเจอร์
 
 ---
 
@@ -21276,21 +21276,21 @@
 ## 空気 (くうき)
 
 - meaning_en: air
-- meaning_th:
+- meaning_th: อากาศ
 
 ---
 
 ## 空洞 (くうどう)
 
 - meaning_en: cavity
-- meaning_th:
+- meaning_th: โพรง
 
 ---
 
 ## 空港 (くうこう)
 
 - meaning_en: airport
-- meaning_th:
+- meaning_th: สนามบิน
 
 ---
 
@@ -21304,7 +21304,7 @@
 ## 空疎 (くうそ)
 
 - meaning_en: empty (e.g. argument)
-- meaning_th:
+- meaning_th: ว่างเปล่า
 
 ---
 
@@ -21332,7 +21332,7 @@
 ## 空虚 (くうきょ)
 
 - meaning_en: emptiness
-- meaning_th:
+- meaning_th: ความว่างเปล่า
 
 ---
 
@@ -21360,7 +21360,7 @@
 ## 空費 (くうひ)
 
 - meaning_en: waste
-- meaning_th:
+- meaning_th: ของเสีย
 
 ---
 
@@ -21402,7 +21402,7 @@
 ## 空間 (くうかん)
 
 - meaning_en: space
-- meaning_th:
+- meaning_th: พื้นที่
 
 ---
 
@@ -21416,7 +21416,7 @@
 ## 窮乏 (きゅうぼう)
 
 - meaning_en: poverty
-- meaning_th:
+- meaning_th: ความยากจน
 
 ---
 
@@ -21437,14 +21437,14 @@
 ## 窮屈 (きゅうくつ)
 
 - meaning_en: narrow
-- meaning_th:
+- meaning_th: แคบ
 
 ---
 
 ## 窮状 (きゅうじょう)
 
 - meaning_en: distress
-- meaning_th:
+- meaning_th: ความทุกข์
 
 ---
 
@@ -21493,14 +21493,14 @@
 ## 競売 (きょうばい)
 
 - meaning_en: auction
-- meaning_th:
+- meaning_th: การประมูล
 
 ---
 
 ## 競技 (きょうぎ)
 
 - meaning_en: game
-- meaning_th:
+- meaning_th: เกม
 
 ---
 
@@ -21542,7 +21542,7 @@
 ## 競走 (きょうそう)
 
 - meaning_en: race
-- meaning_th:
+- meaning_th: แข่ง
 
 ---
 
@@ -21584,14 +21584,14 @@
 ## 筋合 (すじあい)
 
 - meaning_en: reason
-- meaning_th:
+- meaning_th: เหตุผล
 
 ---
 
 ## 筋肉 (きんにく)
 
 - meaning_en: muscle
-- meaning_th:
+- meaning_th: กล้ามเนื้อ
 
 ---
 
@@ -21605,7 +21605,7 @@
 ## 筋道 (すじみち)
 
 - meaning_en: reason
-- meaning_th:
+- meaning_th: เหตุผล
 
 ---
 
@@ -21619,14 +21619,14 @@
 ## 筐体 (きょうたい)
 
 - meaning_en: case (of a machine, computer, etc.)
-- meaning_th:
+- meaning_th: กรณี
 
 ---
 
 ## 箇所 (かしょ)
 
 - meaning_en: place
-- meaning_th:
+- meaning_th: สถานที่
 
 ---
 
@@ -21640,7 +21640,7 @@
 ## 管制 (かんせい)
 
 - meaning_en: control (by the state)
-- meaning_th:
+- meaning_th: การควบคุม
 
 ---
 
@@ -21661,7 +21661,7 @@
 ## 管区 (かんく)
 
 - meaning_en: jurisdiction
-- meaning_th:
+- meaning_th: เขตอำนาจศาล
 
 ---
 
@@ -21682,14 +21682,14 @@
 ## 管楽器 (かんがっき)
 
 - meaning_en: wind instrument
-- meaning_th:
+- meaning_th: เครื่องเป่าลม
 
 ---
 
 ## 管理 (かんり)
 
 - meaning_en: control
-- meaning_th:
+- meaning_th: การดูแลจัดการ, บริหาร
 
 ---
 
@@ -21703,7 +21703,7 @@
 ## 管理者 (かんりしゃ)
 
 - meaning_en: manager
-- meaning_th:
+- meaning_th: ผู้จัดการ
 
 ---
 
@@ -21724,7 +21724,7 @@
 ## 管轄 (かんかつ)
 
 - meaning_en: jurisdiction
-- meaning_th:
+- meaning_th: เขตอำนาจศาล
 
 ---
 
@@ -21738,14 +21738,14 @@
 ## 簡便 (かんべん)
 
 - meaning_en: simple
-- meaning_th:
+- meaning_th: เรียบง่าย
 
 ---
 
 ## 簡単 (かんたん)
 
 - meaning_en: simple
-- meaning_th:
+- meaning_th: ง่าย, เรียบง่าย
 
 ---
 
@@ -21759,7 +21759,7 @@
 ## 簡易 (かんい)
 
 - meaning_en: simple
-- meaning_th:
+- meaning_th: เรียบง่าย
 
 ---
 
@@ -21780,14 +21780,14 @@
 ## 簡略 (かんりゃく)
 
 - meaning_en: simple
-- meaning_th:
+- meaning_th: เรียบง่าย
 
 ---
 
 ## 簡素 (かんそ)
 
 - meaning_en: simple
-- meaning_th:
+- meaning_th: เรียบง่าย
 
 ---
 
@@ -21801,7 +21801,7 @@
 ## 系列 (けいれつ)
 
 - meaning_en: series
-- meaning_th:
+- meaning_th: ซีรีส์
 
 ---
 
@@ -21815,7 +21815,7 @@
 ## 系統 (けいとう)
 
 - meaning_en: system
-- meaning_th:
+- meaning_th: ระบบ
 
 ---
 
@@ -21829,7 +21829,7 @@
 ## 系譜 (けいふ)
 
 - meaning_en: genealogy
-- meaning_th:
+- meaning_th: ลำดับวงศ์ตระกูล
 
 ---
 
@@ -21843,7 +21843,7 @@
 ## 糾弾 (きゅうだん)
 
 - meaning_en: censure
-- meaning_th:
+- meaning_th: ตำหนิ
 
 ---
 
@@ -21899,7 +21899,7 @@
 ## 紅色 (べにいろ)
 
 - meaning_en: red
-- meaning_th:
+- meaning_th: สีแดง
 
 ---
 
@@ -21927,7 +21927,7 @@
 ## 紅葉 (もみじ)
 
 - meaning_en: maple (tree)
-- meaning_th:
+- meaning_th: เมเปิ้ล
 
 ---
 
@@ -21983,14 +21983,14 @@
 ## 経営者 (けいえいしゃ)
 
 - meaning_en: manager
-- meaning_th:
+- meaning_th: ผู้จัดการ
 
 ---
 
 ## 経国 (けいこく)
 
 - meaning_en: government
-- meaning_th:
+- meaning_th: รัฐบาล
 
 ---
 
@@ -22011,7 +22011,7 @@
 ## 経常 (けいじょう)
 
 - meaning_en: ordinary
-- meaning_th:
+- meaning_th: สามัญ
 
 ---
 
@@ -22025,7 +22025,7 @@
 ## 経度 (けいど)
 
 - meaning_en: longitude
-- meaning_th:
+- meaning_th: ลองจิจูด
 
 ---
 
@@ -22039,7 +22039,7 @@
 ## 経済 (けいざい)
 
 - meaning_en: economy
-- meaning_th:
+- meaning_th: เศรษฐกิจ
 
 ---
 
@@ -22102,7 +22102,7 @@
 ## 経路 (けいろ)
 
 - meaning_en: course
-- meaning_th:
+- meaning_th: แน่นอน
 
 ---
 
@@ -22116,7 +22116,7 @@
 ## 経験 (けいけん)
 
 - meaning_en: experience
-- meaning_th:
+- meaning_th: ประสบการณ์
 
 ---
 
@@ -22144,7 +22144,7 @@
 ## 経験豊富 (けいけんほうふ)
 
 - meaning_en: experienced
-- meaning_th:
+- meaning_th: มีประสบการณ์
 
 ---
 
@@ -22172,7 +22172,7 @@
 ## 結婚 (けっこん)
 
 - meaning_en: marriage
-- meaning_th:
+- meaning_th: การแต่งงาน
 
 ---
 
@@ -22221,14 +22221,14 @@
 ## 結晶 (けっしょう)
 
 - meaning_en: crystal
-- meaning_th:
+- meaning_th: คริสตัล
 
 ---
 
 ## 結末 (けつまつ)
 
 - meaning_en: end
-- meaning_th:
+- meaning_th: สิ้นสุด
 
 ---
 
@@ -22242,7 +22242,7 @@
 ## 結果 (けっか)
 
 - meaning_en: result
-- meaning_th:
+- meaning_th: ผลลัพธ์
 
 ---
 
@@ -22263,7 +22263,7 @@
 ## 結構 (けっこう)
 
 - meaning_en: splendid
-- meaning_th:
+- meaning_th: งดงาม
 
 ---
 
@@ -22277,14 +22277,14 @@
 ## 結社 (けっしゃ)
 
 - meaning_en: association
-- meaning_th:
+- meaning_th: สมาคม
 
 ---
 
 ## 結節 (けっせつ)
 
 - meaning_en: knot
-- meaning_th:
+- meaning_th: ปม
 
 ---
 
@@ -22319,7 +22319,7 @@
 ## 結論 (けつろん)
 
 - meaning_en: conclusion (of an argument, discussion, study, etc.)
-- meaning_th:
+- meaning_th: ข้อสรุป
 
 ---
 
@@ -22361,7 +22361,7 @@
 ## 給与 (きゅうよ)
 
 - meaning_en: pay
-- meaning_th:
+- meaning_th: จ่าย
 
 ---
 
@@ -22375,14 +22375,14 @@
 ## 給付 (きゅうふ)
 
 - meaning_en: provision (of money or goods)
-- meaning_th:
+- meaning_th: บทบัญญัติ
 
 ---
 
 ## 給料 (きゅうりょう)
 
 - meaning_en: salary
-- meaning_th:
+- meaning_th: เงินเดือน
 
 ---
 
@@ -22431,7 +22431,7 @@
 ## 給金 (きゅうきん)
 
 - meaning_en: (one's) pay
-- meaning_th:
+- meaning_th: จ่าย
 
 ---
 
@@ -22445,7 +22445,7 @@
 ## 絹布 (けんぷ)
 
 - meaning_en: silk
-- meaning_th:
+- meaning_th: ไหม
 
 ---
 
@@ -22487,14 +22487,14 @@
 ## 継続 (けいぞく)
 
 - meaning_en: continuation
-- meaning_th:
+- meaning_th: ความต่อเนื่อง
 
 ---
 
 ## 継続的 (けいぞくてき)
 
 - meaning_en: continuous
-- meaning_th:
+- meaning_th: อย่างต่อเนื่อง
 
 ---
 
@@ -22585,7 +22585,7 @@
 ## 緩慢 (かんまん)
 
 - meaning_en: slow
-- meaning_th:
+- meaning_th: ช้า
 
 ---
 
@@ -22655,7 +22655,7 @@
 ## 群衆 (ぐんしゅう)
 
 - meaning_en: group (of people)
-- meaning_th:
+- meaning_th: กลุ่ม
 
 ---
 
@@ -22669,7 +22669,7 @@
 ## 群集 (ぐんしゅう)
 
 - meaning_en: crowd
-- meaning_th:
+- meaning_th: ฝูงชน
 
 ---
 
@@ -22697,7 +22697,7 @@
 ## 義務 (ぎむ)
 
 - meaning_en: duty
-- meaning_th:
+- meaning_th: หน้าที่
 
 ---
 
@@ -22767,21 +22767,21 @@
 ## 義母 (ぎぼ)
 
 - meaning_en: mother-in-law
-- meaning_th:
+- meaning_th: แม่สามี
 
 ---
 
 ## 義父 (ぎふ)
 
 - meaning_en: father-in-law
-- meaning_th:
+- meaning_th: พ่อตา
 
 ---
 
 ## 義理 (ぎり)
 
 - meaning_en: duty
-- meaning_th:
+- meaning_th: หน้าที่
 
 ---
 
@@ -22816,14 +22816,14 @@
 ## 考査 (こうさ)
 
 - meaning_en: examination
-- meaning_th:
+- meaning_th: การสอบ
 
 ---
 
 ## 考案 (こうあん)
 
 - meaning_en: plan
-- meaning_th:
+- meaning_th: แผน
 
 ---
 
@@ -22844,14 +22844,14 @@
 ## 耕地 (こうち)
 
 - meaning_en: arable land
-- meaning_th:
+- meaning_th: ที่ดินทำกิน
 
 ---
 
 ## 肌着 (はだぎ)
 
 - meaning_en: underwear
-- meaning_th:
+- meaning_th: ชุดชั้นใน
 
 ---
 
@@ -22865,14 +22865,14 @@
 ## 肌身 (はだみ)
 
 - meaning_en: body
-- meaning_th:
+- meaning_th: ร่างกาย
 
 ---
 
 ## 肛門 (こうもん)
 
 - meaning_en: anus
-- meaning_th:
+- meaning_th: ทวารหนัก
 
 ---
 
@@ -22900,7 +22900,7 @@
 ## 肝臓 (かんぞう)
 
 - meaning_en: liver
-- meaning_th:
+- meaning_th: ตับ
 
 ---
 
@@ -22949,7 +22949,7 @@
 ## 胸元 (むなもと)
 
 - meaning_en: breast
-- meaning_th:
+- meaning_th: เต้านม
 
 ---
 
@@ -22963,21 +22963,21 @@
 ## 胸部 (きょうぶ)
 
 - meaning_en: chest
-- meaning_th:
+- meaning_th: หน้าอก
 
 ---
 
 ## 脅威 (きょうい)
 
 - meaning_en: threat
-- meaning_th:
+- meaning_th: ภัยคุกคาม
 
 ---
 
 ## 脅迫 (きょうはく)
 
 - meaning_en: threat
-- meaning_th:
+- meaning_th: ภัยคุกคาม
 
 ---
 
@@ -23054,7 +23054,7 @@
 ## 興味 (きょうみ)
 
 - meaning_en: interest (in something)
-- meaning_th:
+- meaning_th: ความสนใจ
 
 ---
 
@@ -23075,21 +23075,21 @@
 ## 興行 (こうぎょう)
 
 - meaning_en: show
-- meaning_th:
+- meaning_th: แสดง
 
 ---
 
 ## 興起 (こうき)
 
 - meaning_en: rise
-- meaning_th:
+- meaning_th: เพิ่มขึ้น
 
 ---
 
 ## 興隆 (こうりゅう)
 
 - meaning_en: rise
-- meaning_th:
+- meaning_th: เพิ่มขึ้น
 
 ---
 
@@ -23166,7 +23166,7 @@
 ## 航行 (こうこう)
 
 - meaning_en: cruise
-- meaning_th:
+- meaning_th: ล่องเรือ
 
 ---
 
@@ -23180,7 +23180,7 @@
 ## 航路 (こうろ)
 
 - meaning_en: (air or sea) route
-- meaning_th:
+- meaning_th: เส้นทาง
 
 ---
 
@@ -23243,14 +23243,14 @@
 ## 花婿 (はなむこ)
 
 - meaning_en: bridegroom
-- meaning_th:
+- meaning_th: เจ้าบ่าว
 
 ---
 
 ## 花嫁 (はなよめ)
 
 - meaning_en: bride
-- meaning_th:
+- meaning_th: เจ้าสาว
 
 ---
 
@@ -23292,14 +23292,14 @@
 ## 花柳 (かりゅう)
 
 - meaning_en: red-light district
-- meaning_th:
+- meaning_th: ย่านโคมแดง
 
 ---
 
 ## 花柳界 (かりゅうかい)
 
 - meaning_en: red-light district
-- meaning_th:
+- meaning_th: ย่านโคมแดง
 
 ---
 
@@ -23320,7 +23320,7 @@
 ## 花瓶 (かびん)
 
 - meaning_en: (flower) vase
-- meaning_th:
+- meaning_th: แจกัน
 
 ---
 
@@ -23411,7 +23411,7 @@
 ## 芸妓 (げいぎ)
 
 - meaning_en: geisha
-- meaning_th:
+- meaning_th: เกอิชา
 
 ---
 
@@ -23425,7 +23425,7 @@
 ## 芸者 (げいしゃ)
 
 - meaning_en: geisha
-- meaning_th:
+- meaning_th: เกอิชา
 
 ---
 
@@ -23439,14 +23439,14 @@
 ## 芸能人 (げいのうじん)
 
 - meaning_en: entertainer
-- meaning_th:
+- meaning_th: ผู้ให้ความบันเทิง
 
 ---
 
 ## 芸術 (げいじゅつ)
 
 - meaning_en: art
-- meaning_th:
+- meaning_th: ศิลปะ
 
 ---
 
@@ -23488,7 +23488,7 @@
 ## 苦労 (くろう)
 
 - meaning_en: trouble
-- meaning_th:
+- meaning_th: ปัญหา
 
 ---
 
@@ -23502,7 +23502,7 @@
 ## 苦味 (にがみ)
 
 - meaning_en: bitterness
-- meaning_th:
+- meaning_th: ความขมขื่น
 
 ---
 
@@ -23530,7 +23530,7 @@
 ## 苦悩 (くのう)
 
 - meaning_en: (mental) agony
-- meaning_th:
+- meaning_th: ความทุกข์ทรมาน
 
 ---
 
@@ -23558,7 +23558,7 @@
 ## 苦手 (にがて)
 
 - meaning_en: poor (at)
-- meaning_th:
+- meaning_th: ยากจน
 
 ---
 
@@ -23579,14 +23579,14 @@
 ## 苦渋 (くじゅう)
 
 - meaning_en: bitterness
-- meaning_th:
+- meaning_th: ความขมขื่น
 
 ---
 
 ## 苦痛 (くつう)
 
 - meaning_en: pain
-- meaning_th:
+- meaning_th: ความเจ็บปวด
 
 ---
 
@@ -23628,14 +23628,14 @@
 ## 苦難 (くなん)
 
 - meaning_en: suffering
-- meaning_th:
+- meaning_th: ความทุกข์ทรมาน
 
 ---
 
 ## 茄子 (なす)
 
 - meaning_en: eggplant (Solanum melongena)
-- meaning_th:
+- meaning_th: มะเขือยาว
 
 ---
 
@@ -23677,7 +23677,7 @@
 ## 荒廃 (こうはい)
 
 - meaning_en: ruin
-- meaning_th:
+- meaning_th: ทำลาย
 
 ---
 
@@ -23740,7 +23740,7 @@
 ## 荷札 (にふだ)
 
 - meaning_en: label
-- meaning_th:
+- meaning_th: ฉลาก
 
 ---
 
@@ -23761,7 +23761,7 @@
 ## 菌類 (きんるい)
 
 - meaning_en: fungus
-- meaning_th:
+- meaning_th: เชื้อรา
 
 ---
 
@@ -23796,7 +23796,7 @@
 ## 華族 (かぞく)
 
 - meaning_en: peerage (in Japan; 1869-1947)
-- meaning_th:
+- meaning_th: ขุนนาง
 
 ---
 
@@ -23810,7 +23810,7 @@
 ## 華美 (かび)
 
 - meaning_en: splendor
-- meaning_th:
+- meaning_th: ความงดงาม
 
 ---
 
@@ -23824,7 +23824,7 @@
 ## 華麗 (かれい)
 
 - meaning_en: splendid
-- meaning_th:
+- meaning_th: งดงาม
 
 ---
 
@@ -23845,21 +23845,21 @@
 ## 虐待 (ぎゃくたい)
 
 - meaning_en: abuse
-- meaning_th:
+- meaning_th: การละเมิด
 
 ---
 
 ## 虐殺 (ぎゃくさつ)
 
 - meaning_en: slaughter
-- meaning_th:
+- meaning_th: เชือด
 
 ---
 
 ## 虚偽 (きょぎ)
 
 - meaning_en: falsehood
-- meaning_th:
+- meaning_th: ความเท็จ
 
 ---
 
@@ -23943,7 +23943,7 @@
 ## 虚言 (きょげん)
 
 - meaning_en: falsehood
-- meaning_th:
+- meaning_th: ความเท็จ
 
 ---
 
@@ -23978,7 +23978,7 @@
 ## 蝸牛 (かたつむり)
 
 - meaning_en: snail
-- meaning_th:
+- meaning_th: หอยทาก
 
 ---
 
@@ -24020,7 +24020,7 @@
 ## 血液 (けつえき)
 
 - meaning_en: blood
-- meaning_th:
+- meaning_th: เลือด
 
 ---
 
@@ -24055,7 +24055,7 @@
 ## 血相 (けっそう)
 
 - meaning_en: expression
-- meaning_th:
+- meaning_th: การแสดงออก
 
 ---
 
@@ -24076,7 +24076,7 @@
 ## 血筋 (ちすじ)
 
 - meaning_en: lineage
-- meaning_th:
+- meaning_th: เชื้อสาย
 
 ---
 
@@ -24104,7 +24104,7 @@
 ## 血統 (けっとう)
 
 - meaning_en: lineage
-- meaning_th:
+- meaning_th: เชื้อสาย
 
 ---
 
@@ -24160,21 +24160,21 @@
 ## 行使 (こうし)
 
 - meaning_en: use
-- meaning_th:
+- meaning_th: ใช้
 
 ---
 
 ## 行儀 (ぎょうぎ)
 
 - meaning_en: manners
-- meaning_th:
+- meaning_th: มารยาท
 
 ---
 
 ## 行列 (ぎょうれつ)
 
 - meaning_en: line
-- meaning_th:
+- meaning_th: เส้น
 
 ---
 
@@ -24293,7 +24293,7 @@
 ## 行為 (こうい)
 
 - meaning_en: act
-- meaning_th:
+- meaning_th: กระทำ
 
 ---
 
@@ -24307,7 +24307,7 @@
 ## 行程 (こうてい)
 
 - meaning_en: journey
-- meaning_th:
+- meaning_th: การเดินทาง
 
 ---
 
@@ -24363,7 +24363,7 @@
 ## 街区 (がいく)
 
 - meaning_en: block (of land)
-- meaning_th:
+- meaning_th: บล็อก
 
 ---
 
@@ -24391,7 +24391,7 @@
 ## 街路 (がいろ)
 
 - meaning_en: road
-- meaning_th:
+- meaning_th: ถนน
 
 ---
 
@@ -24405,14 +24405,14 @@
 ## 街道 (かいどう)
 
 - meaning_en: highway (esp. one existing from the Edo period)
-- meaning_th:
+- meaning_th: ทางหลวง
 
 ---
 
 ## 街頭 (がいとう)
 
 - meaning_en: (on the) street
-- meaning_th:
+- meaning_th: ถนน
 
 ---
 
@@ -24433,7 +24433,7 @@
 ## 裾野 (すその)
 
 - meaning_en: foot of a mountain
-- meaning_th:
+- meaning_th: เชิงเขา
 
 ---
 
@@ -24447,7 +24447,7 @@
 ## 襟元 (えりもと)
 
 - meaning_en: (around the) neck
-- meaning_th:
+- meaning_th: คอ
 
 ---
 
@@ -24461,7 +24461,7 @@
 ## 見事 (みごと)
 
 - meaning_en: splendid
-- meaning_th:
+- meaning_th: งดงาม
 
 ---
 
@@ -24475,14 +24475,14 @@
 ## 見学 (けんがく)
 
 - meaning_en: inspection
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
 ## 見当 (けんとう)
 
 - meaning_en: estimate
-- meaning_th:
+- meaning_th: ประมาณ
 
 ---
 
@@ -24510,7 +24510,7 @@
 ## 見栄 (みえ)
 
 - meaning_en: show
-- meaning_th:
+- meaning_th: แสดง
 
 ---
 
@@ -24538,7 +24538,7 @@
 ## 見解 (けんかい)
 
 - meaning_en: opinion
-- meaning_th:
+- meaning_th: ความคิดเห็น
 
 ---
 
@@ -24552,14 +24552,14 @@
 ## 規制 (きせい)
 
 - meaning_en: regulation
-- meaning_th:
+- meaning_th: กฎระเบียบ
 
 ---
 
 ## 規則 (きそく)
 
 - meaning_en: rule
-- meaning_th:
+- meaning_th: กฎ
 
 ---
 
@@ -24580,21 +24580,21 @@
 ## 規律 (きりつ)
 
 - meaning_en: order
-- meaning_th:
+- meaning_th: สั่งซื้อ
 
 ---
 
 ## 規格 (きかく)
 
 - meaning_en: standard
-- meaning_th:
+- meaning_th: มาตรฐาน
 
 ---
 
 ## 規模 (きぼ)
 
 - meaning_en: scale
-- meaning_th:
+- meaning_th: ขนาด
 
 ---
 
@@ -24615,14 +24615,14 @@
 ## 規範 (きはん)
 
 - meaning_en: model
-- meaning_th:
+- meaning_th: โมเดล
 
 ---
 
 ## 規約 (きやく)
 
 - meaning_en: agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
@@ -24692,7 +24692,7 @@
 ## 観念 (かんねん)
 
 - meaning_en: idea
-- meaning_th:
+- meaning_th: ความคิด
 
 ---
 
@@ -24755,7 +24755,7 @@
 ## 観閲 (かんえつ)
 
 - meaning_en: inspection (of troops)
-- meaning_th:
+- meaning_th: การตรวจสอบ
 
 ---
 
@@ -24776,7 +24776,7 @@
 ## 角度 (かくど)
 
 - meaning_en: angle
-- meaning_th:
+- meaning_th: มุม
 
 ---
 
@@ -24811,14 +24811,14 @@
 ## 解任 (かいにん)
 
 - meaning_en: dismissal (from a post)
-- meaning_th:
+- meaning_th: การเลิกจ้าง
 
 ---
 
 ## 解体 (かいたい)
 
 - meaning_en: demolition
-- meaning_th:
+- meaning_th: การรื้อถอน
 
 ---
 
@@ -24860,7 +24860,7 @@
 ## 解放 (かいほう)
 
 - meaning_en: release
-- meaning_th:
+- meaning_th: ปล่อย
 
 ---
 
@@ -24895,7 +24895,7 @@
 ## 解決 (かいけつ)
 
 - meaning_en: settlement
-- meaning_th:
+- meaning_th: การตั้งถิ่นฐาน
 
 ---
 
@@ -24909,7 +24909,7 @@
 ## 解決策 (かいけつさく)
 
 - meaning_en: solution
-- meaning_th:
+- meaning_th: วิธีการแก้ปัญหา
 
 ---
 
@@ -24944,7 +24944,7 @@
 ## 解答 (かいとう)
 
 - meaning_en: answer
-- meaning_th:
+- meaning_th: ตอบ
 
 ---
 
@@ -24958,7 +24958,7 @@
 ## 解職 (かいしょく)
 
 - meaning_en: discharge
-- meaning_th:
+- meaning_th: ปล่อย
 
 ---
 
@@ -24972,7 +24972,7 @@
 ## 解説 (かいせつ)
 
 - meaning_en: explanation
-- meaning_th:
+- meaning_th: คำอธิบาย
 
 ---
 
@@ -25000,7 +25000,7 @@
 ## 解雇 (かいこ)
 
 - meaning_en: dismissal (of an employee)
-- meaning_th:
+- meaning_th: การเลิกจ้าง
 
 ---
 
@@ -25014,7 +25014,7 @@
 ## 言下 (げんか)
 
 - meaning_en: promptly
-- meaning_th:
+- meaning_th: ทันที
 
 ---
 
@@ -25112,7 +25112,7 @@
 ## 計器 (けいき)
 
 - meaning_en: meter
-- meaning_th:
+- meaning_th: เมตร
 
 ---
 
@@ -25126,7 +25126,7 @@
 ## 計画 (けいかく)
 
 - meaning_en: plan
-- meaning_th:
+- meaning_th: แผนการ
 
 ---
 
@@ -25175,35 +25175,35 @@
 ## 訓告 (くんこく)
 
 - meaning_en: reprimand
-- meaning_th:
+- meaning_th: ตำหนิ
 
 ---
 
 ## 訓戒 (くんかい)
 
 - meaning_en: warning
-- meaning_th:
+- meaning_th: คำเตือน
 
 ---
 
 ## 訓示 (くんじ)
 
 - meaning_en: instruction
-- meaning_th:
+- meaning_th: การเรียนการสอน
 
 ---
 
 ## 訓練 (くんれん)
 
 - meaning_en: training
-- meaning_th:
+- meaning_th: การฝึกอบรม
 
 ---
 
 ## 記事 (きじ)
 
 - meaning_en: article
-- meaning_th:
+- meaning_th: บทความ
 
 ---
 
@@ -25217,14 +25217,14 @@
 ## 記号 (きごう)
 
 - meaning_en: sign
-- meaning_th:
+- meaning_th: ลงชื่อ
 
 ---
 
 ## 記名 (きめい)
 
 - meaning_en: signature
-- meaning_th:
+- meaning_th: ลายเซ็น
 
 ---
 
@@ -25259,14 +25259,14 @@
 ## 記憶 (きおく)
 
 - meaning_en: memory
-- meaning_th:
+- meaning_th: ความทรงจำ
 
 ---
 
 ## 記章 (きしょう)
 
 - meaning_en: medal
-- meaning_th:
+- meaning_th: เหรียญรางวัล
 
 ---
 
@@ -25287,7 +25287,7 @@
 ## 記載 (きさい)
 
 - meaning_en: mention (in a document)
-- meaning_th:
+- meaning_th: กล่าวถึง
 
 ---
 
@@ -25301,21 +25301,21 @@
 ## 記録 (きろく)
 
 - meaning_en: record
-- meaning_th:
+- meaning_th: บันทึก
 
 ---
 
 ## 記録的 (きろくてき)
 
 - meaning_en: record
-- meaning_th:
+- meaning_th: บันทึก
 
 ---
 
 ## 許可 (きょか)
 
 - meaning_en: permission
-- meaning_th:
+- meaning_th: การอนุญาต
 
 ---
 
@@ -25329,7 +25329,7 @@
 ## 許諾 (きょだく)
 
 - meaning_en: consent
-- meaning_th:
+- meaning_th: ยินยอม
 
 ---
 
@@ -25434,7 +25434,7 @@
 ## 語気 (ごき)
 
 - meaning_en: tone
-- meaning_th:
+- meaning_th: โทนเสียง
 
 ---
 
@@ -25574,7 +25574,7 @@
 ## 課程 (かてい)
 
 - meaning_en: course
-- meaning_th:
+- meaning_th: แน่นอน
 
 ---
 
@@ -25595,14 +25595,14 @@
 ## 課題 (かだい)
 
 - meaning_en: subject
-- meaning_th:
+- meaning_th: เรื่อง
 
 ---
 
 ## 謙虚 (けんきょ)
 
 - meaning_en: modest
-- meaning_th:
+- meaning_th: เจียมเนื้อเจียมตัว
 
 ---
 
@@ -25637,28 +25637,28 @@
 ## 講座 (こうざ)
 
 - meaning_en: course (e.g. of lectures)
-- meaning_th:
+- meaning_th: แน่นอน
 
 ---
 
 ## 講演 (こうえん)
 
 - meaning_en: lecture
-- meaning_th:
+- meaning_th: การบรรยาย
 
 ---
 
 ## 講演会 (こうえんかい)
 
 - meaning_en: lecture (esp. special engagement by noted speaker)
-- meaning_th:
+- meaning_th: การบรรยาย
 
 ---
 
 ## 講義 (こうぎ)
 
 - meaning_en: lecture
-- meaning_th:
+- meaning_th: การบรรยาย
 
 ---
 
@@ -25672,14 +25672,14 @@
 ## 講評 (こうひょう)
 
 - meaning_en: criticism (by a teacher or coach, with commentary, especially at a poetry reading)
-- meaning_th:
+- meaning_th: การวิพากษ์วิจารณ์
 
 ---
 
 ## 講話 (こうわ)
 
 - meaning_en: lecture
-- meaning_th:
+- meaning_th: การบรรยาย
 
 ---
 
@@ -25693,14 +25693,14 @@
 ## 講釈 (こうしゃく)
 
 - meaning_en: explanation (of a text, phrase, etc.)
-- meaning_th:
+- meaning_th: คำอธิบาย
 
 ---
 
 ## 謹厳 (きんげん)
 
 - meaning_en: stern
-- meaning_th:
+- meaning_th: เข้มงวด
 
 ---
 
@@ -25721,7 +25721,7 @@
 ## 警備 (けいび)
 
 - meaning_en: defense
-- meaning_th:
+- meaning_th: การป้องกัน
 
 ---
 
@@ -25742,14 +25742,14 @@
 ## 警告 (けいこく)
 
 - meaning_en: warning
-- meaning_th:
+- meaning_th: คำเตือน
 
 ---
 
 ## 警報 (けいほう)
 
 - meaning_en: warning
-- meaning_th:
+- meaning_th: คำเตือน
 
 ---
 
@@ -25770,7 +25770,7 @@
 ## 警察 (けいさつ)
 
 - meaning_en: police
-- meaning_th:
+- meaning_th: ตำรวจ
 
 ---
 
@@ -25805,7 +25805,7 @@
 ## 警察署 (けいさつしょ)
 
 - meaning_en: police station
-- meaning_th:
+- meaning_th: สถานีตำรวจ
 
 ---
 
@@ -25819,14 +25819,14 @@
 ## 警棒 (けいぼう)
 
 - meaning_en: (police officer's) baton
-- meaning_th:
+- meaning_th: กระบอง
 
 ---
 
 ## 警笛 (けいてき)
 
 - meaning_en: horn
-- meaning_th:
+- meaning_th: แตร
 
 ---
 
@@ -25952,14 +25952,14 @@
 ## 議論 (ぎろん)
 
 - meaning_en: argument
-- meaning_th:
+- meaning_th: อาร์กิวเมนต์
 
 ---
 
 ## 議長 (ぎちょう)
 
 - meaning_en: chair
-- meaning_th:
+- meaning_th: เก้าอี้
 
 ---
 
@@ -26008,7 +26008,7 @@
 ## 護衛 (ごえい)
 
 - meaning_en: guard
-- meaning_th:
+- meaning_th: ยาม
 
 ---
 
@@ -26029,7 +26029,7 @@
 ## 護送 (ごそう)
 
 - meaning_en: escort (e.g. under guard)
-- meaning_th:
+- meaning_th: คุ้มกัน
 
 ---
 
@@ -26043,7 +26043,7 @@
 ## 谷川 (たにがわ)
 
 - meaning_en: mountain stream
-- meaning_th:
+- meaning_th: ธารน้ำจากภูเขา
 
 ---
 
@@ -26057,21 +26057,21 @@
 ## 谷間 (たにま)
 
 - meaning_en: valley
-- meaning_th:
+- meaning_th: หุบเขา
 
 ---
 
 ## 豪傑 (ごうけつ)
 
 - meaning_en: hero
-- meaning_th:
+- meaning_th: ฮีโร่
 
 ---
 
 ## 豪勢 (ごうせい)
 
 - meaning_en: grand
-- meaning_th:
+- meaning_th: ยิ่งใหญ่
 
 ---
 
@@ -26120,7 +26120,7 @@
 ## 豪語 (ごうご)
 
 - meaning_en: boasting
-- meaning_th:
+- meaning_th: โม้
 
 ---
 
@@ -26155,7 +26155,7 @@
 ## 貨幣 (かへい)
 
 - meaning_en: money
-- meaning_th:
+- meaning_th: เงิน
 
 ---
 
@@ -26211,21 +26211,21 @@
 ## 貴婦人 (きふじん)
 
 - meaning_en: lady
-- meaning_th:
+- meaning_th: ท่านหญิง
 
 ---
 
 ## 貴方 (あなた)
 
 - meaning_en: you
-- meaning_th:
+- meaning_th: คุณ
 
 ---
 
 ## 貴方 (あんた)
 
 - meaning_en: you
-- meaning_th:
+- meaning_th: คุณ
 
 ---
 
@@ -26253,7 +26253,7 @@
 ## 貴重 (きちょう)
 
 - meaning_en: precious
-- meaning_th:
+- meaning_th: ล้ำค่า
 
 ---
 
@@ -26302,7 +26302,7 @@
 ## 賢明 (けんめい)
 
 - meaning_en: wise
-- meaning_th:
+- meaning_th: ฉลาด
 
 ---
 
@@ -26351,7 +26351,7 @@
 ## 贋作 (がんさく)
 
 - meaning_en: fake (work)
-- meaning_th:
+- meaning_th: ของปลอม
 
 ---
 
@@ -26393,7 +26393,7 @@
 ## 起床 (きしょう)
 
 - meaning_en: rising (from one's bed)
-- meaning_th:
+- meaning_th: เพิ่มขึ้น
 
 ---
 
@@ -26414,7 +26414,7 @@
 ## 起源 (きげん)
 
 - meaning_en: origin
-- meaning_th:
+- meaning_th: ต้นกำเนิด
 
 ---
 
@@ -26477,7 +26477,7 @@
 ## 距離 (きょり)
 
 - meaning_en: distance
-- meaning_th:
+- meaning_th: ระยะทาง
 
 ---
 
@@ -26666,7 +26666,7 @@
 ## 軍艦 (ぐんかん)
 
 - meaning_en: warship
-- meaning_th:
+- meaning_th: เรือรบ
 
 ---
 
@@ -26764,21 +26764,21 @@
 ## 軽度 (けいど)
 
 - meaning_en: slight
-- meaning_th:
+- meaning_th: เล็กน้อย
 
 ---
 
 ## 軽微 (けいび)
 
 - meaning_en: slight
-- meaning_th:
+- meaning_th: เล็กน้อย
 
 ---
 
 ## 軽快 (けいかい)
 
 - meaning_en: light (of movements)
-- meaning_th:
+- meaning_th: แสง
 
 ---
 
@@ -26813,7 +26813,7 @@
 ## 軽率 (けいそつ)
 
 - meaning_en: rash
-- meaning_th:
+- meaning_th: ผื่น
 
 ---
 
@@ -26848,7 +26848,7 @@
 ## 軽薄 (けいはく)
 
 - meaning_en: frivolous
-- meaning_th:
+- meaning_th: ไม่สำคัญ
 
 ---
 
@@ -26925,7 +26925,7 @@
 ## 迎撃 (げいげき)
 
 - meaning_en: intercept
-- meaning_th:
+- meaning_th: สกัดกั้น
 
 ---
 
@@ -26988,7 +26988,7 @@
 ## 近所 (きんじょ)
 
 - meaning_en: neighbourhood
-- meaning_th:
+- meaning_th: ละแวกบ้าน, แถวบ้าน
 
 ---
 
@@ -27107,7 +27107,7 @@
 ## 近郊 (きんこう)
 
 - meaning_en: outskirts
-- meaning_th:
+- meaning_th: ชานเมือง
 
 ---
 
@@ -27191,7 +27191,7 @@
 ## 逆転 (ぎゃくてん)
 
 - meaning_en: reversal (of a situation)
-- meaning_th:
+- meaning_th: การกลับรายการ
 
 ---
 
@@ -27275,7 +27275,7 @@
 ## 過大 (かだい)
 
 - meaning_en: excessive
-- meaning_th:
+- meaning_th: มากเกินไป
 
 ---
 
@@ -27324,14 +27324,14 @@
 ## 過度 (かど)
 
 - meaning_en: excessive
-- meaning_th:
+- meaning_th: มากเกินไป
 
 ---
 
 ## 過当 (かとう)
 
 - meaning_en: excessive
-- meaning_th:
+- meaning_th: มากเกินไป
 
 ---
 
@@ -27352,7 +27352,7 @@
 ## 過渡 (かと)
 
 - meaning_en: crossing
-- meaning_th:
+- meaning_th: ข้าม
 
 ---
 
@@ -27366,7 +27366,7 @@
 ## 過激 (かげき)
 
 - meaning_en: extreme (measure, idea, etc.)
-- meaning_th:
+- meaning_th: สุดขีด
 
 ---
 
@@ -27401,14 +27401,14 @@
 ## 過誤 (かご)
 
 - meaning_en: mistake
-- meaning_th:
+- meaning_th: ความผิดพลาด
 
 ---
 
 ## 過酷 (かこく)
 
 - meaning_en: severe
-- meaning_th:
+- meaning_th: รุนแรง
 
 ---
 
@@ -27436,7 +27436,7 @@
 ## 還付 (かんぷ)
 
 - meaning_en: return
-- meaning_th:
+- meaning_th: กลับมา
 
 ---
 
@@ -27478,7 +27478,7 @@
 ## 郷土 (きょうど)
 
 - meaning_en: native place
-- meaning_th:
+- meaning_th: สถานที่พื้นเมือง
 
 ---
 
@@ -27506,7 +27506,7 @@
 ## 酵母 (こうぼ)
 
 - meaning_en: yeast
-- meaning_th:
+- meaning_th: ยีสต์
 
 ---
 
@@ -27667,7 +27667,7 @@
 ## 金星 (きんせい)
 
 - meaning_en: Venus (planet)
-- meaning_th:
+- meaning_th: วีนัส
 
 ---
 
@@ -27695,7 +27695,7 @@
 ## 金槌 (かなづち)
 
 - meaning_en: hammer
-- meaning_th:
+- meaning_th: ค้อน
 
 ---
 
@@ -27716,7 +27716,7 @@
 ## 金目 (かねめ)
 
 - meaning_en: valuable
-- meaning_th:
+- meaning_th: มีคุณค่า
 
 ---
 
@@ -27779,14 +27779,14 @@
 ## 金色 (きんいろ)
 
 - meaning_en: gold (colour, color)
-- meaning_th:
+- meaning_th: ทอง
 
 ---
 
 ## 金融 (きんゆう)
 
 - meaning_en: finance
-- meaning_th:
+- meaning_th: การเงิน
 
 ---
 
@@ -27842,7 +27842,7 @@
 ## 金銭 (きんせん)
 
 - meaning_en: money
-- meaning_th:
+- meaning_th: เงิน
 
 ---
 
@@ -27877,7 +27877,7 @@
 ## 鉱山 (こうざん)
 
 - meaning_en: mine (ore)
-- meaning_th:
+- meaning_th: ของฉัน
 
 ---
 
@@ -27905,21 +27905,21 @@
 ## 鉱物 (こうぶつ)
 
 - meaning_en: mineral
-- meaning_th:
+- meaning_th: แร่
 
 ---
 
 ## 鉱石 (こうせき)
 
 - meaning_en: ore
-- meaning_th:
+- meaning_th: แร่
 
 ---
 
 ## 鉱脈 (こうみゃく)
 
 - meaning_en: vein (of ore)
-- meaning_th:
+- meaning_th: หลอดเลือดดำ
 
 ---
 
@@ -27933,7 +27933,7 @@
 ## 銀幕 (ぎんまく)
 
 - meaning_en: (projection) screen
-- meaning_th:
+- meaning_th: หน้าจอ
 
 ---
 
@@ -27982,14 +27982,14 @@
 ## 銀色 (ぎんいろ)
 
 - meaning_en: silver (color, colour)
-- meaning_th:
+- meaning_th: เงิน
 
 ---
 
 ## 銀行 (ぎんこう)
 
 - meaning_en: bank
-- meaning_th:
+- meaning_th: ธนาคาร
 
 ---
 
@@ -28031,7 +28031,7 @@
 ## 鋼鉄 (こうてつ)
 
 - meaning_en: steel
-- meaning_th:
+- meaning_th: เหล็ก
 
 ---
 
@@ -28087,14 +28087,14 @@
 ## 鑑定 (かんてい)
 
 - meaning_en: judgement
-- meaning_th:
+- meaning_th: การตัดสิน
 
 ---
 
 ## 鑑識 (かんしき)
 
 - meaning_en: judgement
-- meaning_th:
+- meaning_th: การตัดสิน
 
 ---
 
@@ -28108,7 +28108,7 @@
 ## 開会 (かいかい)
 
 - meaning_en: opening of a meeting
-- meaning_th:
+- meaning_th: การเปิดการประชุม
 
 ---
 
@@ -28164,7 +28164,7 @@
 ## 開始 (かいし)
 
 - meaning_en: start
-- meaning_th:
+- meaning_th: การเริ่มต้น
 
 ---
 
@@ -28206,7 +28206,7 @@
 ## 開店 (かいてん)
 
 - meaning_en: opening a new shop
-- meaning_th:
+- meaning_th: การเปิดร้าน
 
 ---
 
@@ -28248,7 +28248,7 @@
 ## 開拓者 (かいたくしゃ)
 
 - meaning_en: pioneer
-- meaning_th:
+- meaning_th: ผู้บุกเบิก
 
 ---
 
@@ -28304,7 +28304,7 @@
 ## 開発 (かいはつ)
 
 - meaning_en: development
-- meaning_th:
+- meaning_th: การพัฒนา
 
 ---
 
@@ -28332,21 +28332,21 @@
 ## 開眼 (かいがん)
 
 - meaning_en: enlightenment
-- meaning_th:
+- meaning_th: การตรัสรู้
 
 ---
 
 ## 開示 (かいじ)
 
 - meaning_en: release (of information, documents, etc.)
-- meaning_th:
+- meaning_th: ปล่อย
 
 ---
 
 ## 開祖 (かいそ)
 
 - meaning_en: (sect) founder
-- meaning_th:
+- meaning_th: ผู้ก่อตั้ง
 
 ---
 
@@ -28374,7 +28374,7 @@
 ## 開設 (かいせつ)
 
 - meaning_en: establishment
-- meaning_th:
+- meaning_th: สถานประกอบการ
 
 ---
 
@@ -28423,21 +28423,21 @@
 ## 閑古鳥 (かんこどり)
 
 - meaning_en: cuckoo
-- meaning_th:
+- meaning_th: นกกาเหว่า
 
 ---
 
 ## 閑散 (かんさん)
 
 - meaning_en: deserted (esp. store, market, town, streets)
-- meaning_th:
+- meaning_th: ร้าง
 
 ---
 
 ## 閑静 (かんせい)
 
 - meaning_en: quiet (e.g. neighbourhood)
-- meaning_th:
+- meaning_th: เงียบ
 
 ---
 
@@ -28514,21 +28514,21 @@
 ## 間柄 (あいだがら)
 
 - meaning_en: relationship
-- meaning_th:
+- meaning_th: ความสัมพันธ์
 
 ---
 
 ## 間近 (まぢか)
 
 - meaning_en: near
-- meaning_th:
+- meaning_th: ใกล้
 
 ---
 
 ## 間隔 (かんかく)
 
 - meaning_en: space
-- meaning_th:
+- meaning_th: พื้นที่
 
 ---
 
@@ -28556,7 +28556,7 @@
 ## 関係 (かんけい)
 
 - meaning_en: relation
-- meaning_th:
+- meaning_th: ความสัมพันธ์, เกี่ยวข้อง
 
 ---
 
@@ -28577,7 +28577,7 @@
 ## 関心 (かんしん)
 
 - meaning_en: concern
-- meaning_th:
+- meaning_th: ความกังวล
 
 ---
 
@@ -28605,14 +28605,14 @@
 ## 関知 (かんち)
 
 - meaning_en: (one's) concern
-- meaning_th:
+- meaning_th: ความกังวล
 
 ---
 
 ## 関税 (かんぜい)
 
 - meaning_en: customs (duties)
-- meaning_th:
+- meaning_th: ศุลกากร
 
 ---
 
@@ -28661,14 +28661,14 @@
 ## 関連 (かんれん)
 
 - meaning_en: relation
-- meaning_th:
+- meaning_th: ความสัมพันธ์
 
 ---
 
 ## 関門 (かんもん)
 
 - meaning_en: barrier
-- meaning_th:
+- meaning_th: สิ่งกีดขวาง
 
 ---
 
@@ -28787,28 +28787,28 @@
 ## 限定 (げんてい)
 
 - meaning_en: limit
-- meaning_th:
+- meaning_th: ขีด จำกัด
 
 ---
 
 ## 限度 (げんど)
 
 - meaning_en: limit
-- meaning_th:
+- meaning_th: ขีด จำกัด
 
 ---
 
 ## 限度額 (げんどがく)
 
 - meaning_en: limit (amount, e.g. on credit card, loan, expenditure)
-- meaning_th:
+- meaning_th: ขีด จำกัด
 
 ---
 
 ## 限界 (げんかい)
 
 - meaning_en: limit
-- meaning_th:
+- meaning_th: ขีด จำกัด
 
 ---
 
@@ -28829,7 +28829,7 @@
 ## 険悪 (けんあく)
 
 - meaning_en: dangerous
-- meaning_th:
+- meaning_th: อันตราย
 
 ---
 
@@ -28843,21 +28843,21 @@
 ## 階層 (かいそう)
 
 - meaning_en: class
-- meaning_th:
+- meaning_th: ชั้นเรียน
 
 ---
 
 ## 階段 (かいだん)
 
 - meaning_en: stairs
-- meaning_th:
+- meaning_th: บันได
 
 ---
 
 ## 階級 (かいきゅう)
 
 - meaning_en: (social) class
-- meaning_th:
+- meaning_th: ชั้นเรียน
 
 ---
 
@@ -28927,7 +28927,7 @@
 ## 隙間 (すきま)
 
 - meaning_en: gap
-- meaning_th:
+- meaning_th: ช่องว่าง
 
 ---
 
@@ -28962,7 +28962,7 @@
 ## 雇用 (こよう)
 
 - meaning_en: employment
-- meaning_th:
+- meaning_th: การจ้างงาน
 
 ---
 
@@ -28976,7 +28976,7 @@
 ## 革新 (かくしん)
 
 - meaning_en: reform
-- meaning_th:
+- meaning_th: การปฏิรูป
 
 ---
 
@@ -28997,7 +28997,7 @@
 ## 靴下 (くつした)
 
 - meaning_en: socks
-- meaning_th:
+- meaning_th: ถุงเท้า
 
 ---
 
@@ -29025,35 +29025,35 @@
 ## 項目 (こうもく)
 
 - meaning_en: item
-- meaning_th:
+- meaning_th: รายการ
 
 ---
 
 ## 頑丈 (がんじょう)
 
 - meaning_en: solid
-- meaning_th:
+- meaning_th: ของแข็ง
 
 ---
 
 ## 頑固 (がんこ)
 
 - meaning_en: stubborn
-- meaning_th:
+- meaning_th: ปากแข็ง
 
 ---
 
 ## 頑強 (がんきょう)
 
 - meaning_en: stubborn
-- meaning_th:
+- meaning_th: ปากแข็ง
 
 ---
 
 ## 額縁 (がくぶち)
 
 - meaning_en: (picture) frame
-- meaning_th:
+- meaning_th: กรอบ
 
 ---
 
@@ -29088,7 +29088,7 @@
 ## 顔面 (がんめん)
 
 - meaning_en: face (of person)
-- meaning_th:
+- meaning_th: ใบหน้า
 
 ---
 
@@ -29116,7 +29116,7 @@
 ## 顕著 (けんちょ)
 
 - meaning_en: remarkable
-- meaning_th:
+- meaning_th: น่าทึ่ง
 
 ---
 
@@ -29130,7 +29130,7 @@
 ## 願望 (がんぼう)
 
 - meaning_en: desire
-- meaning_th:
+- meaning_th: ความปรารถนา
 
 ---
 
@@ -29144,7 +29144,7 @@
 ## 顧客 (こきゃく)
 
 - meaning_en: customer
-- meaning_th:
+- meaning_th: ลูกค้า
 
 ---
 
@@ -29172,7 +29172,7 @@
 ## 餃子 (ギョーザ)
 
 - meaning_en: gyoza
-- meaning_th:
+- meaning_th: เกี๊ยวซ่า
 
 ---
 
@@ -29207,7 +29207,7 @@
 ## 饗宴 (きょうえん)
 
 - meaning_en: feast
-- meaning_th:
+- meaning_th: งานฉลอง
 
 ---
 
@@ -29249,7 +29249,7 @@
 ## 香水 (こうすい)
 
 - meaning_en: perfume
-- meaning_th:
+- meaning_th: น้ำหอม
 
 ---
 
@@ -29277,7 +29277,7 @@
 ## 馴鹿 (となかい)
 
 - meaning_en: reindeer (Rangifer tarandus)
-- meaning_th:
+- meaning_th: กวางเรนเดียร์
 
 ---
 
@@ -29291,7 +29291,7 @@
 ## 駆動 (くどう)
 
 - meaning_en: drive
-- meaning_th:
+- meaning_th: ขับรถ
 
 ---
 
@@ -29340,7 +29340,7 @@
 ## 騎士道 (きしどう)
 
 - meaning_en: chivalry
-- meaning_th:
+- meaning_th: ความกล้าหาญ
 
 ---
 
@@ -29361,7 +29361,7 @@
 ## 驚嘆 (きょうたん)
 
 - meaning_en: wonder
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -29375,7 +29375,7 @@
 ## 驚異 (きょうい)
 
 - meaning_en: wonder
-- meaning_th:
+- meaning_th: สงสัย
 
 ---
 
@@ -29396,7 +29396,7 @@
 ## 骨子 (こっし)
 
 - meaning_en: main point
-- meaning_th:
+- meaning_th: จุดหลัก
 
 ---
 
@@ -29410,7 +29410,7 @@
 ## 骨格 (こっかく)
 
 - meaning_en: skeleton
-- meaning_th:
+- meaning_th: โครงกระดูก
 
 ---
 
@@ -29459,7 +29459,7 @@
 ## 骸骨 (がいこつ)
 
 - meaning_en: skeleton
-- meaning_th:
+- meaning_th: โครงกระดูก
 
 ---
 
@@ -29473,7 +29473,7 @@
 ## 高位 (こうい)
 
 - meaning_en: dignity
-- meaning_th:
+- meaning_th: ศักดิ์ศรี
 
 ---
 
@@ -29620,7 +29620,7 @@
 ## 高尚 (こうしょう)
 
 - meaning_en: high
-- meaning_th:
+- meaning_th: สูง
 
 ---
 
@@ -29634,7 +29634,7 @@
 ## 高山 (こうざん)
 
 - meaning_en: high mountain
-- meaning_th:
+- meaning_th: ภูเขาสูง
 
 ---
 
@@ -29648,7 +29648,7 @@
 ## 高峰 (こうほう)
 
 - meaning_en: high mountain
-- meaning_th:
+- meaning_th: ภูเขาสูง
 
 ---
 
@@ -29662,7 +29662,7 @@
 ## 高年 (こうねん)
 
 - meaning_en: old age
-- meaning_th:
+- meaning_th: อายุมาก
 
 ---
 
@@ -29781,7 +29781,7 @@
 ## 高潔 (こうけつ)
 
 - meaning_en: noble
-- meaning_th:
+- meaning_th: มีเกียรติ
 
 ---
 
@@ -29921,14 +29921,14 @@
 ## 高言 (こうげん)
 
 - meaning_en: boasting
-- meaning_th:
+- meaning_th: โม้
 
 ---
 
 ## 高貴 (こうき)
 
 - meaning_en: noble
-- meaning_th:
+- meaning_th: มีเกียรติ
 
 ---
 
@@ -29949,7 +29949,7 @@
 ## 高速道路 (こうそくどうろ)
 
 - meaning_en: highway
-- meaning_th:
+- meaning_th: ทางหลวง
 
 ---
 
@@ -30012,7 +30012,7 @@
 ## 高齢者 (こうれいしゃ)
 
 - meaning_en: old person
-- meaning_th:
+- meaning_th: คนแก่
 
 ---
 
@@ -30026,7 +30026,7 @@
 ## 鬼才 (きさい)
 
 - meaning_en: wizard
-- meaning_th:
+- meaning_th: ตัวช่วยสร้าง
 
 ---
 
@@ -30096,7 +30096,7 @@
 ## 魚群 (ぎょぐん)
 
 - meaning_en: school of fish
-- meaning_th:
+- meaning_th: โรงเรียนของปลา
 
 ---
 
@@ -30117,7 +30117,7 @@
 ## 魚類 (ぎょるい)
 
 - meaning_en: fish
-- meaning_th:
+- meaning_th: ปลา
 
 ---
 
@@ -30152,7 +30152,7 @@
 ## 麒麟 (きりん)
 
 - meaning_en: giraffe (Giraffa camelopardalis)
-- meaning_th:
+- meaning_th: ยีราฟ
 
 ---
 
@@ -30166,7 +30166,7 @@
 ## 黄昏 (たそがれ)
 
 - meaning_en: dusk
-- meaning_th:
+- meaning_th: พลบค่ำ
 
 ---
 
@@ -30187,7 +30187,7 @@
 ## 黄疸 (おうだん)
 
 - meaning_en: jaundice
-- meaning_th:
+- meaning_th: อาการตัวเหลือง
 
 ---
 
@@ -30201,7 +30201,7 @@
 ## 黄色 (きいろ)
 
 - meaning_en: yellow
-- meaning_th:
+- meaning_th: สีเหลือง
 
 ---
 
@@ -30215,14 +30215,14 @@
 ## 黄金 (おうごん)
 
 - meaning_en: gold (Au)
-- meaning_th:
+- meaning_th: ทอง
 
 ---
 
 ## 黄金 (こがね)
 
 - meaning_en: gold
-- meaning_th:
+- meaning_th: ทอง
 
 ---
 
@@ -30257,7 +30257,7 @@
 ## 黒子 (ほくろ)
 
 - meaning_en: mole
-- meaning_th:
+- meaning_th: ตุ่น
 
 ---
 
@@ -30299,7 +30299,7 @@
 ## 黒木 (くろき)
 
 - meaning_en: unbarked lumber
-- meaning_th:
+- meaning_th: ไม้แปรรูป
 
 ---
 
@@ -30376,7 +30376,7 @@
 ## 黒色 (くろいろ)
 
 - meaning_en: black (colour, color)
-- meaning_th:
+- meaning_th: สีดำ
 
 ---
 
@@ -30411,7 +30411,7 @@
 ## 鼓動 (こどう)
 
 - meaning_en: beat
-- meaning_th:
+- meaning_th: เอาชนะ
 
 ---
 

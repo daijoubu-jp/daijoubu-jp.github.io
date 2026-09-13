@@ -3,7 +3,7 @@
 ## 万一 (まんいち)
 
 - meaning_en: (unlikely event of) emergency
-- meaning_th:
+- meaning_th: กรณีฉุกเฉิน
 
 ---
 
@@ -17,7 +17,7 @@
 ## 万事 (ばんじ)
 
 - meaning_en: all
-- meaning_th:
+- meaning_th: ทั้งหมด
 
 ---
 
@@ -31,7 +31,7 @@
 ## 万全 (ばんぜん)
 
 - meaning_en: perfection
-- meaning_th:
+- meaning_th: ความสมบูรณ์แบบ
 
 ---
 
@@ -87,7 +87,7 @@
 ## 万端 (ばんたん)
 
 - meaning_en: all
-- meaning_th:
+- meaning_th: ทั้งหมด
 
 ---
 
@@ -150,14 +150,14 @@
 ## 免職 (めんしょく)
 
 - meaning_en: dismissal
-- meaning_th:
+- meaning_th: การเลิกจ้าง
 
 ---
 
 ## 免許 (めんきょ)
 
 - meaning_en: license
-- meaning_th:
+- meaning_th: ใบอนุญาต
 
 ---
 
@@ -199,7 +199,7 @@
 ## 名人 (めいじん)
 
 - meaning_en: master
-- meaning_th:
+- meaning_th: อาจารย์
 
 ---
 
@@ -248,7 +248,7 @@
 ## 名前 (なまえ)
 
 - meaning_en: name
-- meaning_th:
+- meaning_th: ชื่อ
 
 ---
 
@@ -353,7 +353,7 @@
 ## 名手 (めいしゅ)
 
 - meaning_en: master
-- meaning_th:
+- meaning_th: อาจารย์
 
 ---
 
@@ -388,7 +388,7 @@
 ## 名札 (なふだ)
 
 - meaning_en: name plate
-- meaning_th:
+- meaning_th: ป้ายชื่อ
 
 ---
 
@@ -409,7 +409,7 @@
 ## 名残 (なごり)
 
 - meaning_en: remains
-- meaning_th:
+- meaning_th: ยังคงอยู่
 
 ---
 
@@ -444,7 +444,7 @@
 ## 名目 (めいもく)
 
 - meaning_en: name
-- meaning_th:
+- meaning_th: ชื่อ
 
 ---
 
@@ -458,7 +458,7 @@
 ## 名称 (めいしょう)
 
 - meaning_en: name
-- meaning_th:
+- meaning_th: ชื่อ
 
 ---
 
@@ -472,7 +472,7 @@
 ## 名義 (めいぎ)
 
 - meaning_en: name (esp. on a deed, contract, work, etc.)
-- meaning_th:
+- meaning_th: ชื่อ
 
 ---
 
@@ -507,7 +507,7 @@
 ## 名誉 (めいよ)
 
 - meaning_en: honor
-- meaning_th:
+- meaning_th: เพื่อเป็นเกียรติแก่
 
 ---
 
@@ -563,28 +563,28 @@
 ## 味方 (みかた)
 
 - meaning_en: friend
-- meaning_th:
+- meaning_th: เพื่อน
 
 ---
 
 ## 味覚 (みかく)
 
 - meaning_en: (sense of) taste
-- meaning_th:
+- meaning_th: รสชาติ
 
 ---
 
 ## 命中 (めいちゅう)
 
 - meaning_en: (direct) hit
-- meaning_th:
+- meaning_th: ตี
 
 ---
 
 ## 命令 (めいれい)
 
 - meaning_en: order
-- meaning_th:
+- meaning_th: สั่งซื้อ
 
 ---
 
@@ -612,14 +612,14 @@
 ## 命脈 (めいみゃく)
 
 - meaning_en: life
-- meaning_th:
+- meaning_th: ชีวิต
 
 ---
 
 ## 命運 (めいうん)
 
 - meaning_en: fate
-- meaning_th:
+- meaning_th: โชคชะตา
 
 ---
 
@@ -647,14 +647,14 @@
 ## 問責 (もんせき)
 
 - meaning_en: blame
-- meaning_th:
+- meaning_th: ตำหนิ
 
 ---
 
 ## 問題 (もんだい)
 
 - meaning_en: question (e.g. on a test)
-- meaning_th:
+- meaning_th: ปัญหา, คำถาม
 
 ---
 
@@ -710,7 +710,7 @@
 ## 夢中 (むちゅう)
 
 - meaning_en: absorbed in
-- meaning_th:
+- meaning_th: ดูดซึมเข้า
 
 ---
 
@@ -724,7 +724,7 @@
 ## 夢想 (むそう)
 
 - meaning_en: dream
-- meaning_th:
+- meaning_th: ฝัน
 
 ---
 
@@ -829,14 +829,14 @@
 ## 密度 (みつど)
 
 - meaning_en: density
-- meaning_th:
+- meaning_th: ความหนาแน่น
 
 ---
 
 ## 密接 (みっせつ)
 
 - meaning_en: close (relationship, connection, etc.)
-- meaning_th:
+- meaning_th: ปิด
 
 ---
 
@@ -1039,7 +1039,7 @@
 ## 摩耗 (まもう)
 
 - meaning_en: wear
-- meaning_th:
+- meaning_th: สวมใส่
 
 ---
 
@@ -1060,7 +1060,7 @@
 ## 明快 (めいかい)
 
 - meaning_en: clear
-- meaning_th:
+- meaning_th: ชัดเจน
 
 ---
 
@@ -1088,7 +1088,7 @@
 ## 明星 (みょうじょう)
 
 - meaning_en: morning star
-- meaning_th:
+- meaning_th: ดาวรุ่ง
 
 ---
 
@@ -1102,7 +1102,7 @@
 ## 明晰 (めいせき)
 
 - meaning_en: clear
-- meaning_th:
+- meaning_th: ชัดเจน
 
 ---
 
@@ -1116,7 +1116,7 @@
 ## 明朗 (めいろう)
 
 - meaning_en: cheerful
-- meaning_th:
+- meaning_th: ร่าเริง
 
 ---
 
@@ -1151,14 +1151,14 @@
 ## 明瞭 (めいりょう)
 
 - meaning_en: clear
-- meaning_th:
+- meaning_th: ชัดเจน
 
 ---
 
 ## 明確 (めいかく)
 
 - meaning_en: clear
-- meaning_th:
+- meaning_th: ชัดเจน
 
 ---
 
@@ -1207,7 +1207,7 @@
 ## 未亡人 (みぼうじん)
 
 - meaning_en: widow
-- meaning_th:
+- meaning_th: แม่หม้าย
 
 ---
 
@@ -1249,7 +1249,7 @@
 ## 未成年 (みせいねん)
 
 - meaning_en: minority (i.e. being under age)
-- meaning_th:
+- meaning_th: ชนกลุ่มน้อย
 
 ---
 
@@ -1270,7 +1270,7 @@
 ## 未来 (みらい)
 
 - meaning_en: (distant) future
-- meaning_th:
+- meaning_th: อนาคต
 
 ---
 
@@ -1417,7 +1417,7 @@
 ## 末尾 (まつび)
 
 - meaning_en: end (e.g. of report, document, paragraph, etc.)
-- meaning_th:
+- meaning_th: สิ้นสุด
 
 ---
 
@@ -1466,14 +1466,14 @@
 ## 末端 (まったん)
 
 - meaning_en: end
-- meaning_th:
+- meaning_th: สิ้นสุด
 
 ---
 
 ## 末裔 (まつえい)
 
 - meaning_en: descendant
-- meaning_th:
+- meaning_th: ลูกหลาน
 
 ---
 
@@ -1515,7 +1515,7 @@
 ## 毎年 (まいとし)
 
 - meaning_en: every year
-- meaning_th:
+- meaning_th: ทุกปี
 
 ---
 
@@ -1529,7 +1529,7 @@
 ## 毎日 (まいにち)
 
 - meaning_en: every day
-- meaning_th:
+- meaning_th: ทุกวัน
 
 ---
 
@@ -1550,7 +1550,7 @@
 ## 毎月 (まいつき)
 
 - meaning_en: every month
-- meaning_th:
+- meaning_th: ทุกเดือน
 
 ---
 
@@ -1571,7 +1571,7 @@
 ## 毎週 (まいしゅう)
 
 - meaning_en: every week
-- meaning_th:
+- meaning_th: ทุกสัปดาห์
 
 ---
 
@@ -1585,21 +1585,21 @@
 ## 毛皮 (けがわ)
 
 - meaning_en: fur
-- meaning_th:
+- meaning_th: ขน
 
 ---
 
 ## 毛穴 (けあな)
 
 - meaning_en: pore (of the skin)
-- meaning_th:
+- meaning_th: รูขุมขน
 
 ---
 
 ## 毛筆 (もうひつ)
 
 - meaning_en: (writing, painting) brush
-- meaning_th:
+- meaning_th: แปรง
 
 ---
 
@@ -1627,14 +1627,14 @@
 ## 毛頭 (もうとう)
 
 - meaning_en: (not) in the least
-- meaning_th:
+- meaning_th: อย่างน้อยที่สุด
 
 ---
 
 ## 毛髪 (もうはつ)
 
 - meaning_en: hair
-- meaning_th:
+- meaning_th: ผม
 
 ---
 
@@ -1774,7 +1774,7 @@
 ## 民族 (みんぞく)
 
 - meaning_en: people
-- meaning_th:
+- meaning_th: คน
 
 ---
 
@@ -1851,7 +1851,7 @@
 ## 民衆 (みんしゅう)
 
 - meaning_en: people
-- meaning_th:
+- meaning_th: คน
 
 ---
 
@@ -1872,7 +1872,7 @@
 ## 民間 (みんかん)
 
 - meaning_en: private
-- meaning_th:
+- meaning_th: ส่วนตัว
 
 ---
 
@@ -1963,7 +1963,7 @@
 ## 満年齢 (まんねんれい)
 
 - meaning_en: age (expressed in the Western style of counting fully completed years)
-- meaning_th:
+- meaning_th: อายุ
 
 ---
 
@@ -1977,14 +1977,14 @@
 ## 満更 (まんざら)
 
 - meaning_en: (not) altogether
-- meaning_th:
+- meaning_th: โดยสิ้นเชิง
 
 ---
 
 ## 満月 (まんげつ)
 
 - meaning_en: full moon
-- meaning_th:
+- meaning_th: พระจันทร์เต็มดวง
 
 ---
 
@@ -1998,7 +1998,7 @@
 ## 満杯 (まんぱい)
 
 - meaning_en: full
-- meaning_th:
+- meaning_th: เต็ม
 
 ---
 
@@ -2026,7 +2026,7 @@
 ## 満足 (まんぞく)
 
 - meaning_en: satisfaction
-- meaning_th:
+- meaning_th: ความพึงพอใจ
 
 ---
 
@@ -2103,7 +2103,7 @@
 ## 漫画 (まんが)
 
 - meaning_en: cartoon
-- meaning_th:
+- meaning_th: มังงะ, การ์ตูน
 
 ---
 
@@ -2117,7 +2117,7 @@
 ## 漫談 (まんだん)
 
 - meaning_en: chat
-- meaning_th:
+- meaning_th: แชท
 
 ---
 
@@ -2159,7 +2159,7 @@
 ## 猛烈 (もうれつ)
 
 - meaning_en: fierce
-- meaning_th:
+- meaning_th: ดุร้าย
 
 ---
 
@@ -2194,7 +2194,7 @@
 ## 盟主 (めいしゅ)
 
 - meaning_en: leader (of an alliance)
-- meaning_th:
+- meaning_th: ผู้นำ
 
 ---
 
@@ -2208,14 +2208,14 @@
 ## 盟約 (めいやく)
 
 - meaning_en: oath
-- meaning_th:
+- meaning_th: คำสาบาน
 
 ---
 
 ## 目上 (めうえ)
 
 - meaning_en: superior
-- meaning_th:
+- meaning_th: เหนือกว่า
 
 ---
 
@@ -2257,7 +2257,7 @@
 ## 目印 (めじるし)
 
 - meaning_en: mark (for quick identification or recognition)
-- meaning_th:
+- meaning_th: ทำเครื่องหมาย
 
 ---
 
@@ -2278,7 +2278,7 @@
 ## 目方 (めかた)
 
 - meaning_en: weight
-- meaning_th:
+- meaning_th: น้ำหนัก
 
 ---
 
@@ -2306,7 +2306,7 @@
 ## 目玉 (めだま)
 
 - meaning_en: eyeball
-- meaning_th:
+- meaning_th: ลูกตา
 
 ---
 
@@ -2327,7 +2327,7 @@
 ## 目的 (もくてき)
 
 - meaning_en: purpose
-- meaning_th:
+- meaning_th: จุดประสงค์, เป้าหมาย
 
 ---
 
@@ -2362,7 +2362,7 @@
 ## 目茶目茶 (めちゃめちゃ)
 
 - meaning_en: disorderly
-- meaning_th:
+- meaning_th: ไม่เป็นระเบียบ
 
 ---
 
@@ -2404,7 +2404,7 @@
 ## 盲人 (もうじん)
 
 - meaning_en: blind person
-- meaning_th:
+- meaning_th: คนตาบอด
 
 ---
 
@@ -2453,7 +2453,7 @@
 ## 眉毛 (まゆげ)
 
 - meaning_en: eyebrow
-- meaning_th:
+- meaning_th: คิ้ว
 
 ---
 
@@ -2481,7 +2481,7 @@
 ## 矛盾 (むじゅん)
 
 - meaning_en: contradiction
-- meaning_th:
+- meaning_th: ความขัดแย้ง
 
 ---
 
@@ -2537,7 +2537,7 @@
 ## 綿密 (めんみつ)
 
 - meaning_en: minute
-- meaning_th:
+- meaning_th: นาที
 
 ---
 
@@ -2572,7 +2572,7 @@
 ## 脈拍 (みゃくはく)
 
 - meaning_en: pulse
-- meaning_th:
+- meaning_th: ชีพจร
 
 ---
 
@@ -2635,7 +2635,7 @@
 ## 迷惑 (めいわく)
 
 - meaning_en: trouble
-- meaning_th:
+- meaning_th: ปัญหา
 
 ---
 
@@ -2656,7 +2656,7 @@
 ## 銘文 (めいぶん)
 
 - meaning_en: inscription
-- meaning_th:
+- meaning_th: จารึก
 
 ---
 
@@ -2733,14 +2733,14 @@
 ## 門徒 (もんと)
 
 - meaning_en: follower (of religion; esp. Jōdo Shinshū practitioners)
-- meaning_th:
+- meaning_th: ผู้ติดตาม
 
 ---
 
 ## 門戸 (もんこ)
 
 - meaning_en: door
-- meaning_th:
+- meaning_th: ประตู
 
 ---
 
@@ -2789,14 +2789,14 @@
 ## 面会 (めんかい)
 
 - meaning_en: meeting (face-to-face)
-- meaning_th:
+- meaning_th: การประชุม
 
 ---
 
 ## 面倒 (めんどう)
 
 - meaning_en: trouble
-- meaning_th:
+- meaning_th: ปัญหา
 
 ---
 
@@ -2810,21 +2810,21 @@
 ## 面子 (メンツ)
 
 - meaning_en: face
-- meaning_th:
+- meaning_th: ใบหน้า
 
 ---
 
 ## 面影 (おもかげ)
 
 - meaning_en: face
-- meaning_th:
+- meaning_th: ใบหน้า
 
 ---
 
 ## 面接 (めんせつ)
 
 - meaning_en: interview (e.g. for a job)
-- meaning_th:
+- meaning_th: สัมภาษณ์
 
 ---
 
@@ -2838,21 +2838,21 @@
 ## 面皰 (にきび)
 
 - meaning_en: pimple
-- meaning_th:
+- meaning_th: สิว
 
 ---
 
 ## 面目 (めんぼく)
 
 - meaning_en: face
-- meaning_th:
+- meaning_th: ใบหน้า
 
 ---
 
 ## 面相 (めんそう)
 
 - meaning_en: countenance
-- meaning_th:
+- meaning_th: สีหน้า
 
 ---
 
@@ -2866,7 +2866,7 @@
 ## 面談 (めんだん)
 
 - meaning_en: interview
-- meaning_th:
+- meaning_th: สัมภาษณ์
 
 ---
 
@@ -2880,14 +2880,14 @@
 ## 魅了 (みりょう)
 
 - meaning_en: charm
-- meaning_th:
+- meaning_th: เสน่ห์
 
 ---
 
 ## 魅力 (みりょく)
 
 - meaning_en: charm
-- meaning_th:
+- meaning_th: เสน่ห์, ความน่าดึงดูด
 
 ---
 
@@ -2901,7 +2901,7 @@
 ## 魅惑 (みわく)
 
 - meaning_en: fascination
-- meaning_th:
+- meaning_th: ความหลงใหล
 
 ---
 
@@ -2915,7 +2915,7 @@
 ## 魔女 (まじょ)
 
 - meaning_en: witch
-- meaning_th:
+- meaning_th: แม่มด
 
 ---
 
@@ -2936,7 +2936,7 @@
 ## 魔物 (まもの)
 
 - meaning_en: demon
-- meaning_th:
+- meaning_th: ปีศาจ
 
 ---
 
@@ -2950,7 +2950,7 @@
 ## 鳴子 (なるこ)
 
 - meaning_en: clapper
-- meaning_th:
+- meaning_th: ปรบมือ
 
 ---
 
@@ -2978,7 +2978,7 @@
 ## 麻痺 (まひ)
 
 - meaning_en: paralysis
-- meaning_th:
+- meaning_th: อัมพาต
 
 ---
 

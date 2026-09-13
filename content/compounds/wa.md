@@ -3,7 +3,7 @@
 ## 和合 (わごう)
 
 - meaning_en: harmony
-- meaning_th:
+- meaning_th: ความสามัคคี
 
 ---
 
@@ -24,7 +24,7 @@
 ## 和声 (わせい)
 
 - meaning_en: harmony
-- meaning_th:
+- meaning_th: ความสามัคคี
 
 ---
 
@@ -45,7 +45,7 @@
 ## 和平 (わへい)
 
 - meaning_en: peace
-- meaning_th:
+- meaning_th: ความสงบสุข
 
 ---
 
@@ -178,21 +178,21 @@
 ## 和音 (わおん)
 
 - meaning_en: chord
-- meaning_th:
+- meaning_th: คอร์ด
 
 ---
 
 ## 和風 (わふう)
 
 - meaning_en: Japanese style
-- meaning_th:
+- meaning_th: สไตล์ญี่ปุ่น
 
 ---
 
 ## 和食 (わしょく)
 
 - meaning_en: Japanese food
-- meaning_th:
+- meaning_th: อาหารญี่ปุ่น
 
 ---
 
@@ -213,7 +213,7 @@
 ## 枠外 (わくがい)
 
 - meaning_en: (beyond the) limits
-- meaning_th:
+- meaning_th: ขีดจำกัด
 
 ---
 
@@ -227,14 +227,14 @@
 ## 湾曲 (わんきょく)
 
 - meaning_en: curve
-- meaning_th:
+- meaning_th: เส้นโค้ง
 
 ---
 
 ## 腕前 (うでまえ)
 
 - meaning_en: ability
-- meaning_th:
+- meaning_th: ความสามารถ
 
 ---
 
@@ -255,7 +255,7 @@
 ## 腕白 (わんぱく)
 
 - meaning_en: naughty
-- meaning_th:
+- meaning_th: ซน
 
 ---
 
@@ -276,13 +276,13 @@
 ## 話題 (わだい)
 
 - meaning_en: topic
-- meaning_th:
+- meaning_th: หัวข้อสนทนา
 
 ---
 
 ## 賄賂 (わいろ)
 
 - meaning_en: bribe
-- meaning_th:
+- meaning_th: สินบน
 
 ---

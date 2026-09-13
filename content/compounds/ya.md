@@ -24,7 +24,7 @@
 ## 予備 (よび)
 
 - meaning_en: reserve
-- meaning_th:
+- meaning_th: สำรอง
 
 ---
 
@@ -73,7 +73,7 @@
 ## 予定 (よてい)
 
 - meaning_en: plans
-- meaning_th:
+- meaning_th: กำหนดการ
 
 ---
 
@@ -115,7 +115,7 @@
 ## 予想外 (よそうがい)
 
 - meaning_en: unexpected
-- meaning_th:
+- meaning_th: ไม่คาดคิด
 
 ---
 
@@ -171,14 +171,14 @@
 ## 予算 (よさん)
 
 - meaning_en: estimate (of costs)
-- meaning_th:
+- meaning_th: ประมาณ
 
 ---
 
 ## 予約 (よやく)
 
 - meaning_en: reservation
-- meaning_th:
+- meaning_th: การจอง
 
 ---
 
@@ -192,7 +192,7 @@
 ## 予習 (よしゅう)
 
 - meaning_en: preparation for a lesson
-- meaning_th:
+- meaning_th: การเตรียมบทเรียนล่วงหน้า
 
 ---
 
@@ -262,7 +262,7 @@
 ## 余剰 (よじょう)
 
 - meaning_en: surplus
-- meaning_th:
+- meaning_th: ส่วนเกิน
 
 ---
 
@@ -290,7 +290,7 @@
 ## 余地 (よち)
 
 - meaning_en: space
-- meaning_th:
+- meaning_th: พื้นที่
 
 ---
 
@@ -304,7 +304,7 @@
 ## 余所 (よそ)
 
 - meaning_en: another place
-- meaning_th:
+- meaning_th: อีกที่หนึ่ง
 
 ---
 
@@ -318,7 +318,7 @@
 ## 余暇 (よか)
 
 - meaning_en: leisure
-- meaning_th:
+- meaning_th: พักผ่อน
 
 ---
 
@@ -353,7 +353,7 @@
 ## 余程 (よほど)
 
 - meaning_en: very
-- meaning_th:
+- meaning_th: มาก
 
 ---
 
@@ -367,14 +367,14 @@
 ## 余興 (よきょう)
 
 - meaning_en: performance (at a party or banquet, etc.)
-- meaning_th:
+- meaning_th: ประสิทธิภาพการทำงาน
 
 ---
 
 ## 余裕 (よゆう)
 
 - meaning_en: surplus
-- meaning_th:
+- meaning_th: ส่วนเกิน
 
 ---
 
@@ -451,7 +451,7 @@
 ## 優劣 (ゆうれつ)
 
 - meaning_en: (relative) merits
-- meaning_th:
+- meaning_th: ข้อดี
 
 ---
 
@@ -493,7 +493,7 @@
 ## 優秀 (ゆうしゅう)
 
 - meaning_en: superior
-- meaning_th:
+- meaning_th: เหนือกว่า
 
 ---
 
@@ -507,21 +507,21 @@
 ## 優美 (ゆうび)
 
 - meaning_en: grace
-- meaning_th:
+- meaning_th: พระคุณ
 
 ---
 
 ## 優良 (ゆうりょう)
 
 - meaning_en: superior
-- meaning_th:
+- meaning_th: เหนือกว่า
 
 ---
 
 ## 優越 (ゆうえつ)
 
 - meaning_en: supremacy
-- meaning_th:
+- meaning_th: อำนาจสูงสุด
 
 ---
 
@@ -542,7 +542,7 @@
 ## 優雅 (ゆうが)
 
 - meaning_en: elegant
-- meaning_th:
+- meaning_th: สง่างาม
 
 ---
 
@@ -577,7 +577,7 @@
 ## 勇敢 (ゆうかん)
 
 - meaning_en: brave
-- meaning_th:
+- meaning_th: กล้าหาญ
 
 ---
 
@@ -591,21 +591,21 @@
 ## 勇気 (ゆうき)
 
 - meaning_en: courage
-- meaning_th:
+- meaning_th: ความกล้าหาญ
 
 ---
 
 ## 勇猛 (ゆうもう)
 
 - meaning_en: daring
-- meaning_th:
+- meaning_th: กล้าหาญ
 
 ---
 
 ## 勇者 (ゆうしゃ)
 
 - meaning_en: hero
-- meaning_th:
+- meaning_th: ฮีโร่
 
 ---
 
@@ -619,7 +619,7 @@
 ## 厄介 (やっかい)
 
 - meaning_en: trouble
-- meaning_th:
+- meaning_th: ปัญหา
 
 ---
 
@@ -640,21 +640,21 @@
 ## 友人 (ゆうじん)
 
 - meaning_en: friend
-- meaning_th:
+- meaning_th: เพื่อน
 
 ---
 
 ## 友好 (ゆうこう)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
 ## 友情 (ゆうじょう)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
@@ -675,14 +675,14 @@
 ## 友誼 (ゆうぎ)
 
 - meaning_en: friendship
-- meaning_th:
+- meaning_th: มิตรภาพ
 
 ---
 
 ## 友達 (ともだち)
 
 - meaning_en: friend
-- meaning_th:
+- meaning_th: เพื่อน
 
 ---
 
@@ -696,7 +696,7 @@
 ## 唯一 (ゆいいつ)
 
 - meaning_en: only
-- meaning_th:
+- meaning_th: เท่านั้น
 
 ---
 
@@ -724,7 +724,7 @@
 ## 夜具 (やぐ)
 
 - meaning_en: bedding
-- meaning_th:
+- meaning_th: เครื่องนอน
 
 ---
 
@@ -822,7 +822,7 @@
 ## 夜間 (やかん)
 
 - meaning_en: night
-- meaning_th:
+- meaning_th: กลางคืน
 
 ---
 
@@ -843,14 +843,14 @@
 ## 妖怪 (ようかい)
 
 - meaning_en: ghost
-- meaning_th:
+- meaning_th: ผี
 
 ---
 
 ## 妖精 (ようせい)
 
 - meaning_en: fairy
-- meaning_th:
+- meaning_th: นางฟ้า
 
 ---
 
@@ -864,28 +864,28 @@
 ## 容器 (ようき)
 
 - meaning_en: container
-- meaning_th:
+- meaning_th: ภาชนะ
 
 ---
 
 ## 容姿 (ようし)
 
 - meaning_en: (physical) appearance (of a person)
-- meaning_th:
+- meaning_th: ลักษณะที่ปรากฏ
 
 ---
 
 ## 容態 (ようだい)
 
 - meaning_en: condition
-- meaning_th:
+- meaning_th: สภาพ
 
 ---
 
 ## 容易 (ようい)
 
 - meaning_en: easy
-- meaning_th:
+- meaning_th: ง่าย
 
 ---
 
@@ -906,35 +906,35 @@
 ## 容積 (ようせき)
 
 - meaning_en: capacity
-- meaning_th:
+- meaning_th: ความจุ
 
 ---
 
 ## 容認 (ようにん)
 
 - meaning_en: approval
-- meaning_th:
+- meaning_th: การอนุมัติ
 
 ---
 
 ## 容赦 (ようしゃ)
 
 - meaning_en: pardon
-- meaning_th:
+- meaning_th: ขออภัย
 
 ---
 
 ## 容量 (ようりょう)
 
 - meaning_en: capacity
-- meaning_th:
+- meaning_th: ความจุ
 
 ---
 
 ## 幼児 (ようじ)
 
 - meaning_en: young child
-- meaning_th:
+- meaning_th: เด็กเล็ก
 
 ---
 
@@ -962,35 +962,35 @@
 ## 幼少 (ようしょう)
 
 - meaning_en: infancy
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
 ## 幼少期 (ようしょうき)
 
 - meaning_en: (early) childhood
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
 ## 幼年 (ようねん)
 
 - meaning_en: childhood
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
 ## 幼年時代 (ようねんじだい)
 
 - meaning_en: childhood
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
 ## 幼時 (ようじ)
 
 - meaning_en: childhood
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
@@ -1004,7 +1004,7 @@
 ## 幼稚 (ようち)
 
 - meaning_en: infancy
-- meaning_th:
+- meaning_th: วัยเด็ก
 
 ---
 
@@ -1032,14 +1032,14 @@
 ## 幽閉 (ゆうへい)
 
 - meaning_en: confinement
-- meaning_th:
+- meaning_th: การคุมขัง
 
 ---
 
 ## 幽霊 (ゆうれい)
 
 - meaning_en: ghost
-- meaning_th:
+- meaning_th: ผี
 
 ---
 
@@ -1053,14 +1053,14 @@
 ## 役割 (やくわり)
 
 - meaning_en: part
-- meaning_th:
+- meaning_th: บทบาท, หน้าที่
 
 ---
 
 ## 役務 (えきむ)
 
 - meaning_en: labor
-- meaning_th:
+- meaning_th: แรงงาน
 
 ---
 
@@ -1074,7 +1074,7 @@
 ## 役員 (やくいん)
 
 - meaning_en: director
-- meaning_th:
+- meaning_th: ผู้อำนวยการ
 
 ---
 
@@ -1088,7 +1088,7 @@
 ## 役所 (やくしょ)
 
 - meaning_en: government office
-- meaning_th:
+- meaning_th: สถานที่ราชการ
 
 ---
 
@@ -1102,21 +1102,21 @@
 ## 役目 (やくめ)
 
 - meaning_en: duty
-- meaning_th:
+- meaning_th: หน้าที่
 
 ---
 
 ## 役者 (やくしゃ)
 
 - meaning_en: actor
-- meaning_th:
+- meaning_th: นักแสดง
 
 ---
 
 ## 役職 (やくしょく)
 
 - meaning_en: post
-- meaning_th:
+- meaning_th: โพสต์
 
 ---
 
@@ -1137,7 +1137,7 @@
 ## 愉快 (ゆかい)
 
 - meaning_en: pleasant
-- meaning_th:
+- meaning_th: น่ารื่นรมย์
 
 ---
 
@@ -1151,28 +1151,28 @@
 ## 憂慮 (ゆうりょ)
 
 - meaning_en: anxiety
-- meaning_th:
+- meaning_th: ความวิตกกังวล
 
 ---
 
 ## 憂鬱 (ゆううつ)
 
 - meaning_en: depression
-- meaning_th:
+- meaning_th: ภาวะซึมเศร้า
 
 ---
 
 ## 抑制 (よくせい)
 
 - meaning_en: control
-- meaning_th:
+- meaning_th: การควบคุม
 
 ---
 
 ## 抑圧 (よくあつ)
 
 - meaning_en: check
-- meaning_th:
+- meaning_th: ตรวจสอบ
 
 ---
 
@@ -1221,7 +1221,7 @@
 ## 擁護 (ようご)
 
 - meaning_en: protection
-- meaning_th:
+- meaning_th: การป้องกัน
 
 ---
 
@@ -1235,7 +1235,7 @@
 ## 有事 (ゆうじ)
 
 - meaning_en: emergency
-- meaning_th:
+- meaning_th: กรณีฉุกเฉิน
 
 ---
 
@@ -1305,7 +1305,7 @@
 ## 有名 (ゆうめい)
 
 - meaning_en: famous
-- meaning_th:
+- meaning_th: มีชื่อเสียง
 
 ---
 
@@ -1382,7 +1382,7 @@
 ## 有様 (ありさま)
 
 - meaning_en: state
-- meaning_th:
+- meaning_th: รัฐ
 
 ---
 
@@ -1494,7 +1494,7 @@
 ## 有罪 (ゆうざい)
 
 - meaning_en: guilt
-- meaning_th:
+- meaning_th: ความรู้สึกผิด
 
 ---
 
@@ -1522,7 +1522,7 @@
 ## 有識者 (ゆうしきしゃ)
 
 - meaning_en: expert
-- meaning_th:
+- meaning_th: ผู้เชี่ยวชาญ
 
 ---
 
@@ -1543,7 +1543,7 @@
 ## 有頂天 (うちょうてん)
 
 - meaning_en: ecstasy
-- meaning_th:
+- meaning_th: ความปีติยินดี
 
 ---
 
@@ -1564,14 +1564,14 @@
 ## 様子 (ようす)
 
 - meaning_en: state (of affairs)
-- meaning_th:
+- meaning_th: รัฐ
 
 ---
 
 ## 様式 (ようしき)
 
 - meaning_en: style
-- meaning_th:
+- meaning_th: สไตล์
 
 ---
 
@@ -1585,14 +1585,14 @@
 ## 欲望 (よくぼう)
 
 - meaning_en: desire
-- meaning_th:
+- meaning_th: ความปรารถนา
 
 ---
 
 ## 欲求 (よっきゅう)
 
 - meaning_en: desire
-- meaning_th:
+- meaning_th: ความปรารถนา
 
 ---
 
@@ -1711,7 +1711,7 @@
 ## 洋杯 (コップ)
 
 - meaning_en: glass (drinking vessel)
-- meaning_th:
+- meaning_th: แก้ว
 
 ---
 
@@ -1900,14 +1900,14 @@
 ## 溶液 (ようえき)
 
 - meaning_en: solution (liquid)
-- meaning_th:
+- meaning_th: วิธีการแก้ปัญหา
 
 ---
 
 ## 溶融 (ようゆう)
 
 - meaning_en: melting
-- meaning_th:
+- meaning_th: ละลาย
 
 ---
 
@@ -1928,7 +1928,7 @@
 ## 熊手 (くまで)
 
 - meaning_en: rake
-- meaning_th:
+- meaning_th: คราด
 
 ---
 
@@ -1949,28 +1949,28 @@
 ## 用事 (ようじ)
 
 - meaning_en: business
-- meaning_th:
+- meaning_th: ธุรกิจ
 
 ---
 
 ## 用件 (ようけん)
 
 - meaning_en: business
-- meaning_th:
+- meaning_th: ธุรกิจ
 
 ---
 
 ## 用例 (ようれい)
 
 - meaning_en: example
-- meaning_th:
+- meaning_th: ตัวอย่าง
 
 ---
 
 ## 用具 (ようぐ)
 
 - meaning_en: tool
-- meaning_th:
+- meaning_th: เครื่องมือ
 
 ---
 
@@ -1991,7 +1991,7 @@
 ## 用地 (ようち)
 
 - meaning_en: site
-- meaning_th:
+- meaning_th: เว็บไซต์
 
 ---
 
@@ -2012,14 +2012,14 @@
 ## 用意 (ようい)
 
 - meaning_en: preparation
-- meaning_th:
+- meaning_th: การเตรียมการ
 
 ---
 
 ## 用材 (ようざい)
 
 - meaning_en: materials
-- meaning_th:
+- meaning_th: วัสดุ
 
 ---
 
@@ -2054,21 +2054,21 @@
 ## 用語 (ようご)
 
 - meaning_en: term
-- meaning_th:
+- meaning_th: ระยะ
 
 ---
 
 ## 用途 (ようと)
 
 - meaning_en: use
-- meaning_th:
+- meaning_th: ใช้
 
 ---
 
 ## 用量 (ようりょう)
 
 - meaning_en: dose
-- meaning_th:
+- meaning_th: ปริมาณ
 
 ---
 
@@ -2082,14 +2082,14 @@
 ## 由来 (ゆらい)
 
 - meaning_en: origin
-- meaning_th:
+- meaning_th: ต้นกำเนิด
 
 ---
 
 ## 由緒 (ゆいしょ)
 
 - meaning_en: history
-- meaning_th:
+- meaning_th: ประวัติศาสตร์
 
 ---
 
@@ -2103,7 +2103,7 @@
 ## 窯元 (かまもと)
 
 - meaning_en: pottery (i.e. the place)
-- meaning_th:
+- meaning_th: เครื่องปั้นดินเผา
 
 ---
 
@@ -2117,14 +2117,14 @@
 ## 約定 (やくじょう)
 
 - meaning_en: agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
 ## 約束 (やくそく)
 
 - meaning_en: promise
-- meaning_th:
+- meaning_th: สัญญา, การนัดหมาย
 
 ---
 
@@ -2138,7 +2138,7 @@
 ## 約款 (やっかん)
 
 - meaning_en: agreement
-- meaning_th:
+- meaning_th: ข้อตกลง
 
 ---
 
@@ -2222,14 +2222,14 @@
 ## 腰縄 (こしなわ)
 
 - meaning_en: leash
-- meaning_th:
+- meaning_th: สายจูง
 
 ---
 
 ## 腰部 (ようぶ)
 
 - meaning_en: loins
-- meaning_th:
+- meaning_th: เนื้อซี่โครง
 
 ---
 
@@ -2285,7 +2285,7 @@
 ## 薬剤 (やくざい)
 
 - meaning_en: medicine
-- meaning_th:
+- meaning_th: ยา
 
 ---
 
@@ -2313,7 +2313,7 @@
 ## 薬品 (やくひん)
 
 - meaning_en: medicine
-- meaning_th:
+- meaning_th: ยา
 
 ---
 
@@ -2362,7 +2362,7 @@
 ## 薬物 (やくぶつ)
 
 - meaning_en: drug
-- meaning_th:
+- meaning_th: ยา
 
 ---
 
@@ -2390,7 +2390,7 @@
 ## 薬缶 (やかん)
 
 - meaning_en: kettle
-- meaning_th:
+- meaning_th: กาต้มน้ำ
 
 ---
 
@@ -2411,7 +2411,7 @@
 ## 融和 (ゆうわ)
 
 - meaning_en: harmony
-- meaning_th:
+- meaning_th: ความสามัคคี
 
 ---
 
@@ -2474,7 +2474,7 @@
 ## 要塞 (ようさい)
 
 - meaning_en: fort
-- meaning_th:
+- meaning_th: ป้อม
 
 ---
 
@@ -2488,7 +2488,7 @@
 ## 要旨 (ようし)
 
 - meaning_en: (main) point
-- meaning_th:
+- meaning_th: จุด
 
 ---
 
@@ -2502,7 +2502,7 @@
 ## 要求 (ようきゅう)
 
 - meaning_en: demand
-- meaning_th:
+- meaning_th: ความต้องการ
 
 ---
 
@@ -2516,14 +2516,14 @@
 ## 要点 (ようてん)
 
 - meaning_en: gist
-- meaning_th:
+- meaning_th: ส่วนสำคัญ
 
 ---
 
 ## 要約 (ようやく)
 
 - meaning_en: summary
-- meaning_th:
+- meaning_th: สรุป
 
 ---
 
@@ -2551,14 +2551,14 @@
 ## 要衝 (ようしょう)
 
 - meaning_en: important point
-- meaning_th:
+- meaning_th: จุดสำคัญ
 
 ---
 
 ## 要覧 (ようらん)
 
 - meaning_en: outline
-- meaning_th:
+- meaning_th: โครงร่าง
 
 ---
 
@@ -2579,7 +2579,7 @@
 ## 要領 (ようりょう)
 
 - meaning_en: point
-- meaning_th:
+- meaning_th: จุด
 
 ---
 
@@ -2635,7 +2635,7 @@
 ## 誘導 (ゆうどう)
 
 - meaning_en: guidance
-- meaning_th:
+- meaning_th: คำแนะนำ
 
 ---
 
@@ -2698,7 +2698,7 @@
 ## 躍如 (やくじょ)
 
 - meaning_en: vivid
-- meaning_th:
+- meaning_th: สดใส
 
 ---
 
@@ -2719,14 +2719,14 @@
 ## 輸入 (ゆにゅう)
 
 - meaning_en: import
-- meaning_th:
+- meaning_th: การนำเข้า
 
 ---
 
 ## 輸出 (ゆしゅつ)
 
 - meaning_en: export
-- meaning_th:
+- meaning_th: การส่งออก
 
 ---
 
@@ -2761,7 +2761,7 @@
 ## 輸送 (ゆそう)
 
 - meaning_en: transport
-- meaning_th:
+- meaning_th: การขนส่ง
 
 ---
 
@@ -2789,7 +2789,7 @@
 ## 遊女 (ゆうじょ)
 
 - meaning_en: prostitute
-- meaning_th:
+- meaning_th: โสเภณี
 
 ---
 
@@ -2810,21 +2810,21 @@
 ## 遊戯 (ゆうぎ)
 
 - meaning_en: play
-- meaning_th:
+- meaning_th: เล่น
 
 ---
 
 ## 遊技 (ゆうぎ)
 
 - meaning_en: game
-- meaning_th:
+- meaning_th: เกม
 
 ---
 
 ## 遊撃 (ゆうげき)
 
 - meaning_en: raid
-- meaning_th:
+- meaning_th: การจู่โจม
 
 ---
 
@@ -2838,7 +2838,7 @@
 ## 遊歩 (ゆうほ)
 
 - meaning_en: walk
-- meaning_th:
+- meaning_th: เดิน
 
 ---
 
@@ -2887,7 +2887,7 @@
 ## 遊離 (ゆうり)
 
 - meaning_en: separation
-- meaning_th:
+- meaning_th: การแยก
 
 ---
 
@@ -2908,7 +2908,7 @@
 ## 郵便局 (ゆうびんきょく)
 
 - meaning_en: post office
-- meaning_th:
+- meaning_th: ที่ทำการไปรษณีย์
 
 ---
 
@@ -2964,7 +2964,7 @@
 ## 野人 (やじん)
 
 - meaning_en: rustic
-- meaning_th:
+- meaning_th: ชนบท
 
 ---
 
@@ -2978,7 +2978,7 @@
 ## 野原 (のはら)
 
 - meaning_en: field
-- meaning_th:
+- meaning_th: สนาม
 
 ---
 
@@ -3027,7 +3027,7 @@
 ## 野心 (やしん)
 
 - meaning_en: ambition
-- meaning_th:
+- meaning_th: ความทะเยอทะยาน
 
 ---
 
@@ -3062,14 +3062,14 @@
 ## 野暮 (やぼ)
 
 - meaning_en: boorish
-- meaning_th:
+- meaning_th: กักขฬะ
 
 ---
 
 ## 野望 (やぼう)
 
 - meaning_en: ambition
-- meaning_th:
+- meaning_th: ความทะเยอทะยาน
 
 ---
 
@@ -3090,7 +3090,7 @@
 ## 野獣 (やじゅう)
 
 - meaning_en: wild beast
-- meaning_th:
+- meaning_th: สัตว์ป่า
 
 ---
 
@@ -3118,7 +3118,7 @@
 ## 野良 (のら)
 
 - meaning_en: field
-- meaning_th:
+- meaning_th: สนาม
 
 ---
 
@@ -3153,21 +3153,21 @@
 ## 野菜 (やさい)
 
 - meaning_en: vegetable
-- meaning_th:
+- meaning_th: ผัก
 
 ---
 
 ## 野蛮 (やばん)
 
 - meaning_en: savage
-- meaning_th:
+- meaning_th: อำมหิต
 
 ---
 
 ## 野辺 (のべ)
 
 - meaning_en: field
-- meaning_th:
+- meaning_th: สนาม
 
 ---
 
@@ -3181,7 +3181,7 @@
 ## 野郎 (やろう)
 
 - meaning_en: guy
-- meaning_th:
+- meaning_th: คนที่แต่งตัวประหลาด
 
 ---
 
@@ -3195,7 +3195,7 @@
 ## 陽光 (ようこう)
 
 - meaning_en: sunshine
-- meaning_th:
+- meaning_th: แสงแดด
 
 ---
 
@@ -3209,14 +3209,14 @@
 ## 陽性 (ようせい)
 
 - meaning_en: positive (result)
-- meaning_th:
+- meaning_th: บวก
 
 ---
 
 ## 陽気 (ようき)
 
 - meaning_en: cheerful
-- meaning_th:
+- meaning_th: ร่าเริง
 
 ---
 
@@ -3237,7 +3237,7 @@
 ## 雄大 (ゆうだい)
 
 - meaning_en: grand
-- meaning_th:
+- meaning_th: ยิ่งใหญ่
 
 ---
 
@@ -3293,7 +3293,7 @@
 ## 預金 (よきん)
 
 - meaning_en: deposit
-- meaning_th:
+- meaning_th: เงินฝาก
 
 ---
 
@@ -3328,7 +3328,7 @@
 ## 養成 (ようせい)
 
 - meaning_en: training
-- meaning_th:
+- meaning_th: การฝึกอบรม
 
 ---
 
@@ -3398,7 +3398,7 @@
 ## 養護 (ようご)
 
 - meaning_en: nursing
-- meaning_th:
+- meaning_th: การพยาบาล
 
 ---
 

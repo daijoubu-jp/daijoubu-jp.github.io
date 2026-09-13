@@ -17,7 +17,7 @@
 ## 乳房 (ちぶさ)
 
 - meaning_en: breast
-- meaning_th:
+- meaning_th: เต้านม
 
 ---
 
@@ -31,7 +31,7 @@
 ## 乳母 (うば)
 
 - meaning_en: wet nurse
-- meaning_th:
+- meaning_th: พยาบาลเปียก
 
 ---
 
@@ -52,7 +52,7 @@
 ## 乳製品 (にゅうせいひん)
 
 - meaning_en: dairy products
-- meaning_th:
+- meaning_th: ผลิตภัณฑ์นม
 
 ---
 
@@ -178,7 +178,7 @@
 ## 二回 (にかい)
 
 - meaning_en: twice
-- meaning_th:
+- meaning_th: สองครั้ง
 
 ---
 
@@ -269,7 +269,7 @@
 ## 二次 (にじ)
 
 - meaning_en: second
-- meaning_th:
+- meaning_th: ประการที่สอง
 
 ---
 
@@ -311,7 +311,7 @@
 ## 二番 (にばん)
 
 - meaning_en: second
-- meaning_th:
+- meaning_th: ประการที่สอง
 
 ---
 
@@ -388,7 +388,7 @@
 ## 二重 (にじゅう)
 
 - meaning_en: double
-- meaning_th:
+- meaning_th: สองเท่า
 
 ---
 
@@ -423,7 +423,7 @@
 ## 任侠 (にんきょう)
 
 - meaning_en: chivalry
-- meaning_th:
+- meaning_th: ความกล้าหาญ
 
 ---
 
@@ -437,7 +437,7 @@
 ## 任務 (にんむ)
 
 - meaning_en: duty
-- meaning_th:
+- meaning_th: หน้าที่
 
 ---
 
@@ -612,7 +612,7 @@
 ## 入念 (にゅうねん)
 
 - meaning_en: careful
-- meaning_th:
+- meaning_th: ระวัง
 
 ---
 
@@ -633,7 +633,7 @@
 ## 入札 (にゅうさつ)
 
 - meaning_en: bid
-- meaning_th:
+- meaning_th: เสนอราคา
 
 ---
 
@@ -654,7 +654,7 @@
 ## 入植 (にゅうしょく)
 
 - meaning_en: settlement
-- meaning_th:
+- meaning_th: การตั้งถิ่นฐาน
 
 ---
 
@@ -801,7 +801,7 @@
 ## 内側 (うちがわ)
 
 - meaning_en: inside
-- meaning_th:
+- meaning_th: ภายใน
 
 ---
 
@@ -871,7 +871,7 @@
 ## 内国 (ないこく)
 
 - meaning_en: home country
-- meaning_th:
+- meaning_th: ประเทศบ้านเกิด
 
 ---
 
@@ -955,7 +955,7 @@
 ## 内容 (ないよう)
 
 - meaning_en: contents
-- meaning_th:
+- meaning_th: เนื้อหา
 
 ---
 
@@ -990,7 +990,7 @@
 ## 内径 (ないけい)
 
 - meaning_en: bore
-- meaning_th:
+- meaning_th: เบื่อ
 
 ---
 
@@ -1032,7 +1032,7 @@
 ## 内気 (うちき)
 
 - meaning_en: shy
-- meaning_th:
+- meaning_th: ขี้อาย
 
 ---
 
@@ -1109,7 +1109,7 @@
 ## 内緒 (ないしょ)
 
 - meaning_en: secrecy
-- meaning_th:
+- meaning_th: ความลับ
 
 ---
 
@@ -1221,7 +1221,7 @@
 ## 内部 (ないぶ)
 
 - meaning_en: interior
-- meaning_th:
+- meaning_th: ภายใน
 
 ---
 
@@ -1277,7 +1277,7 @@
 ## 内面 (ないめん)
 
 - meaning_en: inside
-- meaning_th:
+- meaning_th: ภายใน
 
 ---
 
@@ -1368,7 +1368,7 @@
 ## 南東 (なんとう)
 
 - meaning_en: southeast
-- meaning_th:
+- meaning_th: ตะวันออกเฉียงใต้
 
 ---
 
@@ -1487,14 +1487,14 @@
 ## 奈良 (なら)
 
 - meaning_en: Nara (city, prefecture)
-- meaning_th:
+- meaning_th: นารา
 
 ---
 
 ## 妊娠 (にんしん)
 
 - meaning_en: pregnancy
-- meaning_th:
+- meaning_th: การตั้งครรภ์
 
 ---
 
@@ -1578,7 +1578,7 @@
 ## 年代 (ねんだい)
 
 - meaning_en: age
-- meaning_th:
+- meaning_th: อายุ
 
 ---
 
@@ -1690,7 +1690,7 @@
 ## 年少 (ねんしょう)
 
 - meaning_en: young
-- meaning_th:
+- meaning_th: หนุ่ม
 
 ---
 
@@ -1725,14 +1725,14 @@
 ## 年月日 (ねんがっぴ)
 
 - meaning_en: date (year, month and day)
-- meaning_th:
+- meaning_th: วันที่
 
 ---
 
 ## 年末 (ねんまつ)
 
 - meaning_en: end-of-year
-- meaning_th:
+- meaning_th: ปลายปี
 
 ---
 
@@ -1795,7 +1795,7 @@
 ## 年老 (としおい)
 
 - meaning_en: old person
-- meaning_th:
+- meaning_th: คนแก่
 
 ---
 
@@ -1837,7 +1837,7 @@
 ## 年配 (ねんぱい)
 
 - meaning_en: (approximate) age
-- meaning_th:
+- meaning_th: อายุ
 
 ---
 
@@ -1900,7 +1900,7 @@
 ## 年齢 (ねんれい)
 
 - meaning_en: age
-- meaning_th:
+- meaning_th: อายุ
 
 ---
 
@@ -1949,7 +1949,7 @@
 ## 念頭 (ねんとう)
 
 - meaning_en: (on one's) mind
-- meaning_th:
+- meaning_th: จิตใจ
 
 ---
 
@@ -1963,28 +1963,28 @@
 ## 捻挫 (ねんざ)
 
 - meaning_en: sprain
-- meaning_th:
+- meaning_th: แพลง
 
 ---
 
 ## 日中 (にっちゅう)
 
 - meaning_en: daytime
-- meaning_th:
+- meaning_th: ตอนกลางวัน
 
 ---
 
 ## 日付 (ひづけ)
 
 - meaning_en: date
-- meaning_th:
+- meaning_th: วันที่
 
 ---
 
 ## 日傘 (ひがさ)
 
 - meaning_en: parasol (esp. one carried in the hand)
-- meaning_th:
+- meaning_th: ร่มกันแดด
 
 ---
 
@@ -2033,7 +2033,7 @@
 ## 日和 (ひより)
 
 - meaning_en: weather
-- meaning_th:
+- meaning_th: สภาพอากาศ
 
 ---
 
@@ -2068,7 +2068,7 @@
 ## 日射病 (にっしゃびょう)
 
 - meaning_en: heatstroke
-- meaning_th:
+- meaning_th: โรคลมแดด
 
 ---
 
@@ -2131,7 +2131,7 @@
 ## 日本 (にほん)
 
 - meaning_en: Japan
-- meaning_th:
+- meaning_th: ประเทศญี่ปุ่น
 
 ---
 
@@ -2201,7 +2201,7 @@
 ## 日本式 (にほんしき)
 
 - meaning_en: Japanese style
-- meaning_th:
+- meaning_th: สไตล์ญี่ปุ่น
 
 ---
 
@@ -2271,14 +2271,14 @@
 ## 日本語 (にほんご)
 
 - meaning_en: Japanese (language)
-- meaning_th:
+- meaning_th: ภาษาญี่ปุ่น
 
 ---
 
 ## 日本酒 (にほんしゅ)
 
 - meaning_en: sake (rice wine)
-- meaning_th:
+- meaning_th: สาเก
 
 ---
 
@@ -2292,7 +2292,7 @@
 ## 日没 (にちぼつ)
 
 - meaning_en: sunset
-- meaning_th:
+- meaning_th: พระอาทิตย์ตก
 
 ---
 
@@ -2446,7 +2446,7 @@
 ## 日陰 (ひかげ)
 
 - meaning_en: shade
-- meaning_th:
+- meaning_th: ร่มเงา
 
 ---
 
@@ -2474,7 +2474,7 @@
 ## 濃厚 (のうこう)
 
 - meaning_en: rich (flavor, color, etc.)
-- meaning_th:
+- meaning_th: รวย
 
 ---
 
@@ -2502,7 +2502,7 @@
 ## 濃紺 (のうこん)
 
 - meaning_en: dark blue
-- meaning_th:
+- meaning_th: สีน้ำเงินเข้ม
 
 ---
 
@@ -2537,7 +2537,7 @@
 ## 熱射病 (ねっしゃびょう)
 
 - meaning_en: heatstroke
-- meaning_th:
+- meaning_th: โรคลมแดด
 
 ---
 
@@ -2614,7 +2614,7 @@
 ## 熱気 (ねっき)
 
 - meaning_en: heat
-- meaning_th:
+- meaning_th: ความร้อน
 
 ---
 
@@ -2649,7 +2649,7 @@
 ## 熱烈 (ねつれつ)
 
 - meaning_en: ardent
-- meaning_th:
+- meaning_th: กระตือรือร้น
 
 ---
 
@@ -2663,7 +2663,7 @@
 ## 熱病 (ねつびょう)
 
 - meaning_en: fever
-- meaning_th:
+- meaning_th: มีไข้
 
 ---
 
@@ -2705,14 +2705,14 @@
 ## 燃料 (ねんりょう)
 
 - meaning_en: fuel
-- meaning_th:
+- meaning_th: เชื้อเพลิง
 
 ---
 
 ## 燃焼 (ねんしょう)
 
 - meaning_en: burning
-- meaning_th:
+- meaning_th: การเผาไหม้
 
 ---
 
@@ -2726,7 +2726,7 @@
 ## 粘土 (ねんど)
 
 - meaning_en: clay
-- meaning_th:
+- meaning_th: ดินเหนียว
 
 ---
 
@@ -2782,14 +2782,14 @@
 ## 納屋 (なや)
 
 - meaning_en: barn (for storage)
-- meaning_th:
+- meaning_th: โรงนา
 
 ---
 
 ## 納得 (なっとく)
 
 - meaning_en: consent
-- meaning_th:
+- meaning_th: ยินยอม
 
 ---
 
@@ -2936,7 +2936,7 @@
 ## 肉類 (にくるい)
 
 - meaning_en: (kinds of) meat
-- meaning_th:
+- meaning_th: เนื้อ
 
 ---
 
@@ -2950,7 +2950,7 @@
 ## 能力 (のうりょく)
 
 - meaning_en: ability
-- meaning_th:
+- meaning_th: ความสามารถ
 
 ---
 
@@ -2985,7 +2985,7 @@
 ## 能率 (のうりつ)
 
 - meaning_en: efficiency
-- meaning_th:
+- meaning_th: ประสิทธิภาพ
 
 ---
 
@@ -3006,7 +3006,7 @@
 ## 脳卒中 (のうそっちゅう)
 
 - meaning_en: stroke
-- meaning_th:
+- meaning_th: โรคหลอดเลือดสมอง
 
 ---
 
@@ -3076,7 +3076,7 @@
 ## 認可 (にんか)
 
 - meaning_en: approval
-- meaning_th:
+- meaning_th: การอนุมัติ
 
 ---
 
@@ -3132,14 +3132,14 @@
 ## 軟化 (なんか)
 
 - meaning_en: softening
-- meaning_th:
+- meaning_th: อ่อนลง
 
 ---
 
 ## 軟式 (なんしき)
 
 - meaning_en: soft (esp. of softball, tennis, etc.)
-- meaning_th:
+- meaning_th: อ่อนนุ่ม
 
 ---
 
@@ -3181,7 +3181,7 @@
 ## 軟調 (なんちょう)
 
 - meaning_en: weak (market)
-- meaning_th:
+- meaning_th: อ่อนแอ
 
 ---
 
@@ -3230,7 +3230,7 @@
 ## 農園 (のうえん)
 
 - meaning_en: farm
-- meaning_th:
+- meaning_th: ฟาร์ม
 
 ---
 
@@ -3251,7 +3251,7 @@
 ## 農場 (のうじょう)
 
 - meaning_en: farm (agriculture)
-- meaning_th:
+- meaning_th: ฟาร์ม
 
 ---
 
@@ -3265,7 +3265,7 @@
 ## 農学 (のうがく)
 
 - meaning_en: (science of) agriculture
-- meaning_th:
+- meaning_th: เกษตรกรรม
 
 ---
 
@@ -3314,7 +3314,7 @@
 ## 農業 (のうぎょう)
 
 - meaning_en: agriculture
-- meaning_th:
+- meaning_th: เกษตรกรรม
 
 ---
 
@@ -3405,14 +3405,14 @@
 ## 難事 (なんじ)
 
 - meaning_en: difficulty
-- meaning_th:
+- meaning_th: ความยากลำบาก
 
 ---
 
 ## 難問 (なんもん)
 
 - meaning_en: perplexity
-- meaning_th:
+- meaning_th: ความฉงนสนเท่ห์
 
 ---
 
@@ -3433,7 +3433,7 @@
 ## 難易 (なんい)
 
 - meaning_en: (relative) difficulty
-- meaning_th:
+- meaning_th: ความยากลำบาก
 
 ---
 
@@ -3468,14 +3468,14 @@
 ## 難渋 (なんじゅう)
 
 - meaning_en: suffering
-- meaning_th:
+- meaning_th: ความทุกข์ทรมาน
 
 ---
 
 ## 難点 (なんてん)
 
 - meaning_en: fault
-- meaning_th:
+- meaning_th: ความผิด
 
 ---
 
@@ -3545,7 +3545,7 @@
 ## 難関 (なんかん)
 
 - meaning_en: barrier
-- meaning_th:
+- meaning_th: สิ่งกีดขวาง
 
 ---
 
