@@ -9,6 +9,7 @@
 
 import { getKanji, getKanjiByCodepoint, loadKanjiData } from './search.js';
 import { isFavorite, addFavorite, removeFavorite, copyToClipboard } from './storage.js';
+import { speakJapanese as speakJapaneseShared } from './tts.js';
 
 // Fixed stroke animation timing constants
 const FIXED_STROKE_DURATION = 1.25; // seconds per stroke
@@ -922,39 +923,18 @@ function initGuidelineControls() {
    WEB SPEECH API AUDIO
    ========================================================================== */
 
+/**
+ * Speaks Japanese text via the shared Web Speech helper, preserving this
+ * page's behavior: furigana/HTML stripping and a toast when the API is
+ * unavailable.
+ * @param {string} text
+ * @param {HTMLElement|null} targetBtn
+ */
 export function speakJapanese(text, targetBtn = null) {
-  if (!('speechSynthesis' in window)) {
-    showToast('เบราว์เซอร์ไม่รองรับการออกเสียง Web Speech API', '⚠️');
-    return;
-  }
-  // Safari WebKit quirk: resume paused speech synthesis engine
-  if (window.speechSynthesis.paused) {
-    window.speechSynthesis.resume();
-  }
-  window.speechSynthesis.cancel();
-  const cleanText = text.replace(/<rt>[^<]*<\/rt>/g, '').replace(/<[^>]+>/g, '').replace(/[.・]/g, '').trim();
-  if (!cleanText) return;
-
-  const utterance = new SpeechSynthesisUtterance(cleanText);
-  utterance.lang = 'ja-JP';
-  utterance.rate = 0.88;
-
-  // On iOS Safari / macOS Safari, matching a specific ja-JP voice if available improves reliability
-  const voices = window.speechSynthesis.getVoices();
-  if (voices && voices.length > 0) {
-    const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || (v.lang && v.lang.startsWith('ja')));
-    if (jaVoice) {
-      utterance.voice = jaVoice;
-    }
-  }
-
-  if (targetBtn) {
-    targetBtn.classList.add('playing');
-    utterance.onend = () => targetBtn.classList.remove('playing');
-    utterance.onerror = () => targetBtn.classList.remove('playing');
-  }
-
-  window.speechSynthesis.speak(utterance);
+  speakJapaneseShared(text, targetBtn, {
+    stripRuby: true,
+    onUnsupported: () => showToast('เบราว์เซอร์ไม่รองรับการออกเสียง Web Speech API', '⚠️')
+  });
 }
 
 function initAudioDelegation() {

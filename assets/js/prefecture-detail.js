@@ -6,6 +6,7 @@
  */
 
 import { REGION_INDEX } from './prefectures-map.js';
+import { isSpeechSupported, speakJapanese } from './tts.js';
 
 const PREFECTURES_URL = new URL('../../data/prefectures.json', import.meta.url).href;
 
@@ -226,49 +227,13 @@ function showErrorCard(errorBox, container, title, detailHtml) {
 }
 
 /**
- * Speaks Japanese text via the Web Speech API (mirrors kanji-detail.js
- * conventions: ja-JP, rate 0.88, ja voice preference, playing state).
- * @param {string} text
- * @param {HTMLElement|null} targetBtn
- */
-function speakJapanese(text, targetBtn = null) {
-  if (!('speechSynthesis' in window)) return;
-  if (window.speechSynthesis.paused) {
-    window.speechSynthesis.resume();
-  }
-  window.speechSynthesis.cancel();
-  const cleanText = String(text || '').replace(/[.・]/g, '').trim();
-  if (!cleanText) return;
-
-  const utterance = new SpeechSynthesisUtterance(cleanText);
-  utterance.lang = 'ja-JP';
-  utterance.rate = 0.88;
-
-  const voices = window.speechSynthesis.getVoices();
-  if (voices && voices.length > 0) {
-    const jaVoice = voices.find((v) => v.lang === 'ja-JP' || v.lang === 'ja_JP' || (v.lang && v.lang.startsWith('ja')));
-    if (jaVoice) {
-      utterance.voice = jaVoice;
-    }
-  }
-
-  if (targetBtn) {
-    targetBtn.classList.add('playing');
-    utterance.onend = () => targetBtn.classList.remove('playing');
-    utterance.onerror = () => targetBtn.classList.remove('playing');
-  }
-
-  window.speechSynthesis.speak(utterance);
-}
-
-/**
  * Wires the audio buttons rendered into the detail container; hides them all
  * when the Web Speech API is unavailable (graceful degradation).
  * @param {HTMLElement} container
  */
 function initTtsControls(container) {
   const buttons = container.querySelectorAll('.audio-btn[data-tts]');
-  if (!('speechSynthesis' in window)) {
+  if (!isSpeechSupported()) {
     buttons.forEach((btn) => { btn.hidden = true; });
     return;
   }
