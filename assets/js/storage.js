@@ -310,6 +310,21 @@ export function getWordleStats() {
 }
 
 /**
+ * Checks whether two YYYY-MM-DD date strings are strictly consecutive calendar days.
+ * @param {string|null} prevDateStr
+ * @param {string} curDateStr
+ * @returns {boolean}
+ */
+export function isConsecutiveDay(prevDateStr, curDateStr) {
+  if (!prevDateStr || !curDateStr) return false;
+  const prev = new Date(`${prevDateStr}T00:00:00Z`);
+  const cur = new Date(`${curDateStr}T00:00:00Z`);
+  if (Number.isNaN(prev.getTime()) || Number.isNaN(cur.getTime())) return false;
+  const diffDays = Math.round((cur.getTime() - prev.getTime()) / 86400000);
+  return diffDays === 1;
+}
+
+/**
  * Records one daily result. Idempotent per date: saving twice for the same
  * date leaves the stats unchanged.
  * @param {{ date: string, won: boolean, guesses: number }} result
@@ -322,7 +337,11 @@ export function saveWordleResult({ date, won, guesses }) {
   stats.played += 1;
   if (won) {
     stats.won += 1;
-    stats.currentStreak += 1;
+    if (stats.lastDate && isConsecutiveDay(stats.lastDate, date)) {
+      stats.currentStreak += 1;
+    } else {
+      stats.currentStreak = 1;
+    }
     if (guesses >= 1 && guesses <= stats.distribution.length) {
       stats.distribution[guesses - 1] += 1;
     }
