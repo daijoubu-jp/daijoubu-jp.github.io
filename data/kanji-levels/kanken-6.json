@@ -2,7 +2,7 @@
   {
     "kanji": "久",
     "codepoint": "4E45",
-    "strokes": 5,
+    "strokes": 3,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -37,7 +37,7 @@
   {
     "kanji": "仏",
     "codepoint": "4ECF",
-    "strokes": 5,
+    "strokes": 4,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -75,7 +75,7 @@
   {
     "kanji": "仮",
     "codepoint": "4EEE",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -115,7 +115,7 @@
   {
     "kanji": "件",
     "codepoint": "4EF6",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -154,7 +154,7 @@
   {
     "kanji": "任",
     "codepoint": "4EFB",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -196,7 +196,7 @@
   {
     "kanji": "似",
     "codepoint": "4F3C",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -238,7 +238,7 @@
   {
     "kanji": "余",
     "codepoint": "4F59",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -280,7 +280,7 @@
   {
     "kanji": "価",
     "codepoint": "4FA1",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -314,7 +314,7 @@
   {
     "kanji": "保",
     "codepoint": "4FDD",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -357,7 +357,7 @@
   {
     "kanji": "修",
     "codepoint": "4FEE",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -397,7 +397,7 @@
   {
     "kanji": "個",
     "codepoint": "500B",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -433,7 +433,7 @@
   {
     "kanji": "停",
     "codepoint": "505C",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -471,7 +471,7 @@
   {
     "kanji": "備",
     "codepoint": "5099",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -511,7 +511,7 @@
   {
     "kanji": "像",
     "codepoint": "50CF",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -554,7 +554,7 @@
   {
     "kanji": "再",
     "codepoint": "518D",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -629,7 +629,7 @@
   {
     "kanji": "判",
     "codepoint": "5224",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -670,7 +670,7 @@
   {
     "kanji": "制",
     "codepoint": "5236",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -709,7 +709,7 @@
   {
     "kanji": "則",
     "codepoint": "5247",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -755,7 +755,7 @@
   {
     "kanji": "効",
     "codepoint": "52B9",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -794,7 +794,7 @@
   {
     "kanji": "務",
     "codepoint": "52D9",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -832,7 +832,7 @@
   {
     "kanji": "勢",
     "codepoint": "52E2",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -870,7 +870,7 @@
   {
     "kanji": "厚",
     "codepoint": "539A",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1031,7 +1031,7 @@
   {
     "kanji": "告",
     "codepoint": "544A",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1070,7 +1070,7 @@
   {
     "kanji": "喜",
     "codepoint": "559C",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1104,7 +1104,7 @@
   {
     "kanji": "営",
     "codepoint": "55B6",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1143,7 +1143,7 @@
   {
     "kanji": "因",
     "codepoint": "56E0",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1184,7 +1184,7 @@
   {
     "kanji": "団",
     "codepoint": "56E3",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1224,7 +1224,7 @@
   {
     "kanji": "囲",
     "codepoint": "56F2",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1315,7 +1315,7 @@
   {
     "kanji": "在",
     "codepoint": "5728",
-    "strokes": 5,
+    "strokes": 6,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1354,7 +1354,7 @@
   {
     "kanji": "均",
     "codepoint": "5747",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1393,7 +1393,7 @@
   {
     "kanji": "型",
     "codepoint": "578B",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1429,7 +1429,7 @@
   {
     "kanji": "基",
     "codepoint": "57FA",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1470,7 +1470,7 @@
   {
     "kanji": "堂",
     "codepoint": "5802",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1508,7 +1508,7 @@
   {
     "kanji": "報",
     "codepoint": "5831",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1547,7 +1547,7 @@
   {
     "kanji": "境",
     "codepoint": "5883",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1584,7 +1584,7 @@
   {
     "kanji": "墓",
     "codepoint": "5893",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1617,7 +1617,7 @@
   {
     "kanji": "増",
     "codepoint": "5897",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1659,7 +1659,7 @@
   {
     "kanji": "士",
     "codepoint": "58EB",
-    "strokes": 5,
+    "strokes": 3,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1698,7 +1698,7 @@
   {
     "kanji": "妻",
     "codepoint": "59BB",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1736,7 +1736,7 @@
   {
     "kanji": "婦",
     "codepoint": "5A66",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1775,7 +1775,7 @@
   {
     "kanji": "容",
     "codepoint": "5BB9",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1815,7 +1815,7 @@
   {
     "kanji": "寄",
     "codepoint": "5BC4",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1857,7 +1857,7 @@
   {
     "kanji": "導",
     "codepoint": "5C0E",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -1896,7 +1896,7 @@
   {
     "kanji": "居",
     "codepoint": "5C45",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -1937,7 +1937,7 @@
   {
     "kanji": "属",
     "codepoint": "5C5E",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2024,7 +2024,7 @@
   {
     "kanji": "師",
     "codepoint": "5E2B",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2067,7 +2067,7 @@
   {
     "kanji": "常",
     "codepoint": "5E38",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2109,7 +2109,7 @@
   {
     "kanji": "幹",
     "codepoint": "5E79",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2149,7 +2149,7 @@
   {
     "kanji": "序",
     "codepoint": "5E8F",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -2240,7 +2240,7 @@
   {
     "kanji": "張",
     "codepoint": "5F35",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2277,7 +2277,7 @@
   {
     "kanji": "往",
     "codepoint": "5F80",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2325,7 +2325,7 @@
   {
     "kanji": "得",
     "codepoint": "5F97",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2370,7 +2370,7 @@
   {
     "kanji": "復",
     "codepoint": "5FA9",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2411,7 +2411,7 @@
   {
     "kanji": "志",
     "codepoint": "5FD7",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2455,7 +2455,7 @@
   {
     "kanji": "応",
     "codepoint": "5FDC",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2496,7 +2496,7 @@
   {
     "kanji": "快",
     "codepoint": "5FEB",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2535,7 +2535,7 @@
   {
     "kanji": "性",
     "codepoint": "6027",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2574,7 +2574,7 @@
   {
     "kanji": "情",
     "codepoint": "60C5",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2616,7 +2616,7 @@
   {
     "kanji": "態",
     "codepoint": "614B",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -2659,7 +2659,7 @@
   {
     "kanji": "慣",
     "codepoint": "6163",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2699,7 +2699,7 @@
   {
     "kanji": "技",
     "codepoint": "6280",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2740,7 +2740,7 @@
   {
     "kanji": "招",
     "codepoint": "62DB",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2777,7 +2777,7 @@
   {
     "kanji": "授",
     "codepoint": "6388",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2816,7 +2816,7 @@
   {
     "kanji": "採",
     "codepoint": "63A1",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2853,7 +2853,7 @@
   {
     "kanji": "接",
     "codepoint": "63A5",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2894,7 +2894,7 @@
   {
     "kanji": "提",
     "codepoint": "63D0",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2930,7 +2930,7 @@
   {
     "kanji": "損",
     "codepoint": "640D",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -2972,7 +2972,7 @@
   {
     "kanji": "支",
     "codepoint": "652F",
-    "strokes": 5,
+    "strokes": 4,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3012,7 +3012,7 @@
   {
     "kanji": "政",
     "codepoint": "653F",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3047,7 +3047,7 @@
   {
     "kanji": "故",
     "codepoint": "6545",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3092,7 +3092,7 @@
   {
     "kanji": "救",
     "codepoint": "6551",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3134,7 +3134,7 @@
   {
     "kanji": "断",
     "codepoint": "65AD",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3223,7 +3223,7 @@
   {
     "kanji": "易",
     "codepoint": "6613",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3264,7 +3264,7 @@
   {
     "kanji": "暴",
     "codepoint": "66B4",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3307,7 +3307,7 @@
   {
     "kanji": "条",
     "codepoint": "6761",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3355,7 +3355,7 @@
   {
     "kanji": "枝",
     "codepoint": "679D",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3393,7 +3393,7 @@
   {
     "kanji": "査",
     "codepoint": "67FB",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3427,7 +3427,7 @@
   {
     "kanji": "格",
     "codepoint": "683C",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3468,7 +3468,7 @@
   {
     "kanji": "検",
     "codepoint": "691C",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3502,7 +3502,7 @@
   {
     "kanji": "構",
     "codepoint": "69CB",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3541,7 +3541,7 @@
   {
     "kanji": "武",
     "codepoint": "6B66",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3584,7 +3584,7 @@
   {
     "kanji": "歴",
     "codepoint": "6B74",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3625,7 +3625,7 @@
   {
     "kanji": "殺",
     "codepoint": "6BBA",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -3668,7 +3668,7 @@
   {
     "kanji": "毒",
     "codepoint": "6BD2",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3712,7 +3712,7 @@
   {
     "kanji": "比",
     "codepoint": "6BD4",
-    "strokes": 5,
+    "strokes": 4,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3792,7 +3792,7 @@
   {
     "kanji": "河",
     "codepoint": "6CB3",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3824,7 +3824,7 @@
   {
     "kanji": "液",
     "codepoint": "6DB2",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3864,7 +3864,7 @@
   {
     "kanji": "混",
     "codepoint": "6DF7",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3906,7 +3906,7 @@
   {
     "kanji": "減",
     "codepoint": "6E1B",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3947,7 +3947,7 @@
   {
     "kanji": "測",
     "codepoint": "6E2C",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -3984,7 +3984,7 @@
   {
     "kanji": "準",
     "codepoint": "6E96",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4037,7 +4037,7 @@
   {
     "kanji": "演",
     "codepoint": "6F14",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4079,7 +4079,7 @@
   {
     "kanji": "潔",
     "codepoint": "6F54",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -4119,7 +4119,7 @@
   {
     "kanji": "災",
     "codepoint": "707D",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4156,7 +4156,7 @@
   {
     "kanji": "燃",
     "codepoint": "71C3",
-    "strokes": 5,
+    "strokes": 16,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4196,7 +4196,7 @@
   {
     "kanji": "版",
     "codepoint": "7248",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4276,7 +4276,7 @@
   {
     "kanji": "状",
     "codepoint": "72B6",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -4318,7 +4318,7 @@
   {
     "kanji": "独",
     "codepoint": "72EC",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4357,7 +4357,7 @@
   {
     "kanji": "率",
     "codepoint": "7387",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4401,7 +4401,7 @@
   {
     "kanji": "現",
     "codepoint": "73FE",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -4441,7 +4441,7 @@
   {
     "kanji": "留",
     "codepoint": "7559",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4481,7 +4481,7 @@
   {
     "kanji": "略",
     "codepoint": "7565",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4534,7 +4534,7 @@
   {
     "kanji": "益",
     "codepoint": "76CA",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4575,7 +4575,7 @@
   {
     "kanji": "眼",
     "codepoint": "773C",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4610,7 +4610,7 @@
   {
     "kanji": "破",
     "codepoint": "7834",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4653,7 +4653,7 @@
   {
     "kanji": "確",
     "codepoint": "78BA",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -4739,7 +4739,7 @@
   {
     "kanji": "祖",
     "codepoint": "7956",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4780,7 +4780,7 @@
   {
     "kanji": "禁",
     "codepoint": "7981",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4820,7 +4820,7 @@
   {
     "kanji": "移",
     "codepoint": "79FB",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4862,7 +4862,7 @@
   {
     "kanji": "程",
     "codepoint": "7A0B",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4902,7 +4902,7 @@
   {
     "kanji": "税",
     "codepoint": "7A0E",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4940,7 +4940,7 @@
   {
     "kanji": "築",
     "codepoint": "7BC9",
-    "strokes": 5,
+    "strokes": 16,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -4977,7 +4977,7 @@
   {
     "kanji": "粉",
     "codepoint": "7C89",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5017,7 +5017,7 @@
   {
     "kanji": "精",
     "codepoint": "7CBE",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5065,7 +5065,7 @@
   {
     "kanji": "紀",
     "codepoint": "7D00",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5109,7 +5109,7 @@
   {
     "kanji": "素",
     "codepoint": "7D20",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5150,7 +5150,7 @@
   {
     "kanji": "経",
     "codepoint": "7D4C",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5191,7 +5191,7 @@
   {
     "kanji": "統",
     "codepoint": "7D71",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5231,7 +5231,7 @@
   {
     "kanji": "絶",
     "codepoint": "7D76",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5278,7 +5278,7 @@
   {
     "kanji": "綿",
     "codepoint": "7DBF",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -5314,7 +5314,7 @@
   {
     "kanji": "総",
     "codepoint": "7DCF",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5358,7 +5358,7 @@
   {
     "kanji": "編",
     "codepoint": "7DE8",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5402,7 +5402,7 @@
   {
     "kanji": "績",
     "codepoint": "7E3E",
-    "strokes": 5,
+    "strokes": 17,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5443,7 +5443,7 @@
   {
     "kanji": "織",
     "codepoint": "7E54",
-    "strokes": 5,
+    "strokes": 18,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5480,7 +5480,7 @@
   {
     "kanji": "罪",
     "codepoint": "7F6A",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5519,7 +5519,7 @@
   {
     "kanji": "義",
     "codepoint": "7FA9",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5561,7 +5561,7 @@
   {
     "kanji": "耕",
     "codepoint": "8015",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -5597,7 +5597,7 @@
   {
     "kanji": "職",
     "codepoint": "8077",
-    "strokes": 5,
+    "strokes": 18,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5639,7 +5639,7 @@
   {
     "kanji": "肥",
     "codepoint": "80A5",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5683,7 +5683,7 @@
   {
     "kanji": "能",
     "codepoint": "80FD",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5724,7 +5724,7 @@
   {
     "kanji": "脈",
     "codepoint": "8108",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5762,7 +5762,7 @@
   {
     "kanji": "興",
     "codepoint": "8208",
-    "strokes": 5,
+    "strokes": 16,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5803,7 +5803,7 @@
   {
     "kanji": "舎",
     "codepoint": "820E",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5845,7 +5845,7 @@
   {
     "kanji": "航",
     "codepoint": "822A",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -5885,7 +5885,7 @@
   {
     "kanji": "術",
     "codepoint": "8853",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5930,7 +5930,7 @@
   {
     "kanji": "衛",
     "codepoint": "885B",
-    "strokes": 5,
+    "strokes": 16,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -5967,7 +5967,7 @@
   {
     "kanji": "製",
     "codepoint": "88FD",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6003,7 +6003,7 @@
   {
     "kanji": "複",
     "codepoint": "8907",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6042,7 +6042,7 @@
   {
     "kanji": "規",
     "codepoint": "898F",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6080,7 +6080,7 @@
   {
     "kanji": "解",
     "codepoint": "89E3",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6131,7 +6131,7 @@
   {
     "kanji": "設",
     "codepoint": "8A2D",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6171,7 +6171,7 @@
   {
     "kanji": "許",
     "codepoint": "8A31",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6209,7 +6209,7 @@
   {
     "kanji": "証",
     "codepoint": "8A3C",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6248,7 +6248,7 @@
   {
     "kanji": "評",
     "codepoint": "8A55",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6290,7 +6290,7 @@
   {
     "kanji": "講",
     "codepoint": "8B1B",
-    "strokes": 5,
+    "strokes": 17,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6327,7 +6327,7 @@
   {
     "kanji": "謝",
     "codepoint": "8B1D",
-    "strokes": 5,
+    "strokes": 17,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6366,7 +6366,7 @@
   {
     "kanji": "識",
     "codepoint": "8B58",
-    "strokes": 5,
+    "strokes": 19,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6409,7 +6409,7 @@
   {
     "kanji": "護",
     "codepoint": "8B77",
-    "strokes": 5,
+    "strokes": 20,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6446,7 +6446,7 @@
   {
     "kanji": "豊",
     "codepoint": "8C4A",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6484,7 +6484,7 @@
   {
     "kanji": "象",
     "codepoint": "8C61",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6527,7 +6527,7 @@
   {
     "kanji": "財",
     "codepoint": "8CA1",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6565,7 +6565,7 @@
   {
     "kanji": "貧",
     "codepoint": "8CA7",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6600,7 +6600,7 @@
   {
     "kanji": "責",
     "codepoint": "8CAC",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6638,7 +6638,7 @@
   {
     "kanji": "貯",
     "codepoint": "8CAF",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -6680,7 +6680,7 @@
   {
     "kanji": "貸",
     "codepoint": "8CB8",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6712,7 +6712,7 @@
   {
     "kanji": "費",
     "codepoint": "8CBB",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6751,7 +6751,7 @@
   {
     "kanji": "貿",
     "codepoint": "8CBF",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6787,7 +6787,7 @@
   {
     "kanji": "資",
     "codepoint": "8CC7",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6832,7 +6832,7 @@
   {
     "kanji": "賛",
     "codepoint": "8CDB",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6876,7 +6876,7 @@
   {
     "kanji": "賞",
     "codepoint": "8CDE",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -6914,7 +6914,7 @@
   {
     "kanji": "質",
     "codepoint": "8CEA",
-    "strokes": 5,
+    "strokes": 15,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -6961,7 +6961,7 @@
   {
     "kanji": "輸",
     "codepoint": "8F38",
-    "strokes": 5,
+    "strokes": 16,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7001,7 +7001,7 @@
   {
     "kanji": "述",
     "codepoint": "8FF0",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7038,7 +7038,7 @@
   {
     "kanji": "迷",
     "codepoint": "8FF7",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7079,7 +7079,7 @@
   {
     "kanji": "逆",
     "codepoint": "9006",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7120,7 +7120,7 @@
   {
     "kanji": "造",
     "codepoint": "9020",
-    "strokes": 5,
+    "strokes": 10,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -7160,7 +7160,7 @@
   {
     "kanji": "過",
     "codepoint": "904E",
-    "strokes": 5,
+    "strokes": 12,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -7203,7 +7203,7 @@
   {
     "kanji": "適",
     "codepoint": "9069",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7246,7 +7246,7 @@
   {
     "kanji": "酸",
     "codepoint": "9178",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7286,7 +7286,7 @@
   {
     "kanji": "鉱",
     "codepoint": "9271",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -7321,7 +7321,7 @@
   {
     "kanji": "銅",
     "codepoint": "9285",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 1,
     "kanken": "6",
@@ -7355,7 +7355,7 @@
   {
     "kanji": "防",
     "codepoint": "9632",
-    "strokes": 5,
+    "strokes": 7,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7395,7 +7395,7 @@
   {
     "kanji": "限",
     "codepoint": "9650",
-    "strokes": 5,
+    "strokes": 9,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7434,7 +7434,7 @@
   {
     "kanji": "険",
     "codepoint": "967A",
-    "strokes": 5,
+    "strokes": 11,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7472,7 +7472,7 @@
   {
     "kanji": "際",
     "codepoint": "969B",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 3,
     "kanken": "6",
@@ -7517,7 +7517,7 @@
   {
     "kanji": "雑",
     "codepoint": "96D1",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7555,7 +7555,7 @@
   {
     "kanji": "非",
     "codepoint": "975E",
-    "strokes": 5,
+    "strokes": 8,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7597,7 +7597,7 @@
   {
     "kanji": "領",
     "codepoint": "9818",
-    "strokes": 5,
+    "strokes": 14,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7639,7 +7639,7 @@
   {
     "kanji": "額",
     "codepoint": "984D",
-    "strokes": 5,
+    "strokes": 18,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",
@@ -7682,7 +7682,7 @@
   {
     "kanji": "飼",
     "codepoint": "98FC",
-    "strokes": 5,
+    "strokes": 13,
     "grade": 5,
     "jlpt": 2,
     "kanken": "6",

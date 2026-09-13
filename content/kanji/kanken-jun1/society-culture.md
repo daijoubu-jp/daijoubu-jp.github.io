@@ -381,7 +381,7 @@ count: 133
 - meanings_ja: おおいに, おおきい, さかんに
 - meanings_th: เข้มข้น, ใหญ่
 - meanings_en: intense, large
-- strokes: 8
+- strokes: 7
 - kanken: jun1
 - radical: 113 (示)
 
@@ -527,7 +527,7 @@ count: 133
 - meanings_ja: くにつかみ
 - meanings_th: พระเจ้าประจำชาติหรือท้องถิ่น, เงียบสงบ, เยี่ยมมาก
 - meanings_en: national or local god, peaceful, great
-- strokes: 9
+- strokes: 8
 - kanken: jun1
 - radical: 113 (示)
 
@@ -1207,7 +1207,7 @@ count: 133
 - meanings_ja: うまや
 - meanings_th: โรงนา, มีเสถียรภาพ
 - meanings_en: barn, stable
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 53 (广)
 
@@ -1263,7 +1263,7 @@ count: 133
 - meanings_ja: あめ
 - meanings_th: เยลลี่ข้าว, ลูกอม
 - meanings_en: rice jelly, candy
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 184 (食)
 
@@ -1306,7 +1306,7 @@ count: 133
 - meanings_ja: かまびす（しい, かまびすしい
 - meanings_th: อึกทึก
 - meanings_en: boisterous
-- strokes: 15
+- strokes: 14
 - kanken: jun1
 - radical: 30 (口)
 
@@ -1321,7 +1321,7 @@ count: 133
 - meanings_ja: うそ, はく, ふく
 - meanings_th: หายใจออก, ระเบิดออก, ถอนหายใจลึกๆ
 - meanings_en: exhale, blow out, deep sigh, hiss, praise, flatter, lie
-- strokes: 15
+- strokes: 14
 - kanken: jun1
 - radical: 30 (口)
 
@@ -1787,7 +1787,7 @@ count: 133
 - meanings_ja: わだち, ろ, や
 - meanings_th: ศาลเจ้าบรรพบุรุษ
 - meanings_en: ancestral shrine
-- strokes: 19
+- strokes: 18
 - kanken: jun1
 - radical: 113 (示)
 
@@ -1802,7 +1802,7 @@ count: 133
 - meanings_ja: いのる, まつる
 - meanings_th: อธิษฐาน, ขอร้อง
 - meanings_en: pray, entreat, beg, plead, prayer
-- strokes: 19
+- strokes: 18
 - kanken: jun1
 - radical: 113 (示)
 

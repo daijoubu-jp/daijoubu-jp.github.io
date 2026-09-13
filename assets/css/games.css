@@ -512,13 +512,42 @@
   text-align: center;
 }
 
+.game-mode-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.game-mode-tabs .band-chip.is-active {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.kwl-submode-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.kwl-adv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+}
+
 .kwl-streak {
   color: var(--color-text-muted);
   margin-top: var(--spacing-sm);
 }
 
 .kwl-practice-title {
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-md);
   font-size: var(--font-size-md);
 }
 
@@ -528,19 +557,64 @@
 
 .kwl-search {
   position: relative;
-  margin-bottom: var(--spacing-md);
+  max-width: 480px;
+  margin: 0 auto var(--spacing-md);
+}
+
+.kwl-suggestions {
+  width: 100%;
 }
 
 .kwl-grid {
   display: grid;
   gap: 6px;
-  margin-bottom: var(--spacing-md);
+  max-width: 540px;
+  margin: 0 auto var(--spacing-md);
 }
 
 .kwl-row {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 6px;
+  position: relative;
+}
+
+.kwl-row.is-new-guess {
+  overflow: hidden;
+  animation: kwlRowFadeIn 0.35s ease forwards;
+}
+
+.kwl-row.is-new-guess::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 250%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-45deg);
+  animation: kwlWipeSweep 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  pointer-events: none;
+}
+
+@keyframes kwlRowFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kwlWipeSweep {
+  0% {
+    transform: skewX(-45deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-45deg) translateX(100%);
+  }
 }
 
 .kwl-cell {
@@ -555,6 +629,8 @@
   background: var(--color-surface-2);
   border: 2px solid var(--color-border);
   border-radius: var(--border-radius-sm);
+  word-break: break-all;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
 .kwl-cell-kanji {
@@ -582,7 +658,8 @@
 }
 
 .kwl-cell.is-higher,
-.kwl-cell.is-lower {
+.kwl-cell.is-lower,
+.kwl-cell.is-near {
   border-color: #eab308;
   background: rgba(234, 179, 8, 0.18);
 }

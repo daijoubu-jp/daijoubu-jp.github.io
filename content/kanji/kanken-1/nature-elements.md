@@ -284,7 +284,7 @@ count: 407
 - meanings_ja: さわ, たおれる
 - meanings_th: ฝนตกหนัก, หนองน้ำ
 - meanings_en: big rain, swamp
-- strokes: 7
+- strokes: 8
 - kanken: 1
 - radical: 85 (水)
 
@@ -297,7 +297,7 @@ count: 407
 - meanings_ja: こす
 - meanings_th: กรอง, เซี่ยงไฮ้, แม่น้ำใกล้เซี่ยงไฮ้
 - meanings_en: filter, Shanghai, river near Shanghai
-- strokes: 7
+- strokes: 8
 - kanken: 1
 - radical: 85 (水)
 
@@ -2097,7 +2097,7 @@ count: 407
 - meanings_ja: おか
 - meanings_th: เนินดิน, ใช้ในชื่อสถานที่
 - meanings_en: mound, used in place names
-- strokes: 13
+- strokes: 12
 - kanken: 1
 - radical: 32 (土)
 
@@ -2817,7 +2817,7 @@ count: 407
 - meanings_ja: ああ, たのしむ, ひかる
 - meanings_th: ส่องแสง
 - meanings_en: shine
-- strokes: 14
+- strokes: 13
 - kanken: 1
 - radical: 86 (火)
 
@@ -3415,7 +3415,7 @@ count: 407
 - meanings_ja: おおあめ
 - meanings_th: ฝนตกหนัก, ฝนตกยาวนาน
 - meanings_en: big rain, long rainy spell
-- strokes: 15
+- strokes: 16
 - kanken: 1
 - radical: 173 (雨)
 
@@ -4904,7 +4904,7 @@ count: 407
 - meanings_ja: うがつ, える, しりぞ（ける
 - meanings_th: แกะสลัก, สิ่ว
 - meanings_en: carve, engrave, chisel
-- strokes: 21
+- strokes: 20
 - kanken: 1
 - radical: 167 (金)
 

@@ -2414,7 +2414,7 @@ count: 441
 - meanings_ja: はしる, ほとばしる
 - meanings_th: เพื่อกระจาย, เพื่อขับไล่, ที่จะแตก
 - meanings_en: to scatter, to expel, to crack, to split, to jump
-- strokes: 12
+- strokes: 11
 - kanken: 1
 - radical: 162 (辵)
 
@@ -2970,7 +2970,7 @@ count: 441
 - meanings_ja: さえぎる, たつ, とどめる
 - meanings_th: หยุด, ระงับ
 - meanings_en: stop, suppress
-- strokes: 13
+- strokes: 12
 - kanken: 1
 - radical: 162 (辵)
 
@@ -3946,7 +3946,7 @@ count: 441
 - meanings_ja: すがる
 - meanings_th: เกาะติด, รอก่อน, ขึ้นอยู่กับ
 - meanings_en: cling, hang on, depend
-- strokes: 16
+- strokes: 15
 - kanken: 1
 - radical: 120 (糸)
 
@@ -4193,7 +4193,7 @@ count: 441
 - meanings_ja: すぎる, つとめる
 - meanings_th: ไป, เก่ง
 - meanings_en: go, excel
-- strokes: 16
+- strokes: 17
 - kanken: 1
 - radical: 162 (辵)
 
@@ -4789,7 +4789,7 @@ count: 441
 - meanings_ja: せおいおび, むつき
 - meanings_th: แถวของเหรียญ, โอบิของเด็ก, ผ้าอ้อม
 - meanings_en: string of coins, child's obi, nappy
-- strokes: 18
+- strokes: 17
 - kanken: 1
 - radical: 120 (糸)
 
@@ -5641,7 +5641,7 @@ count: 441
 - meanings_ja: はたぼこ
 - meanings_th: ธง, แบนเนอร์
 - meanings_en: flag, banner
-- strokes: 24
+- strokes: 25
 - kanken: 1
 - radical: 120 (糸)
 

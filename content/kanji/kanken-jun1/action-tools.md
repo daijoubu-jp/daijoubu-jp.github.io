@@ -99,7 +99,7 @@ count: 102
 - meanings_ja: つじ
 - meanings_th: ข้าม, ทางแยก, มุมถนน
 - meanings_en: crossing, crossroad, street corners, (kokuji)
-- strokes: 6
+- strokes: 5
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -127,7 +127,7 @@ count: 102
 - meanings_ja: たどる
 - meanings_th: ตาม (ถนน), ไล่ตาม
 - meanings_en: follow (road), pursue
-- strokes: 7
+- strokes: 6
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -142,7 +142,7 @@ count: 102
 - meanings_ja: とおい, まがる
 - meanings_th: ทางวงเวียน
 - meanings_en: roundabout way
-- strokes: 7
+- strokes: 6
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -157,7 +157,7 @@ count: 102
 - meanings_ja: いたる, およぶ, まで
 - meanings_th: จนกระทั่ง, ขึ้นไป, เท่าที่
 - meanings_en: until, up to, as far as, to the extent
-- strokes: 7
+- strokes: 6
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -272,7 +272,7 @@ count: 102
 - meanings_ja: カ
 - meanings_th: (ใช้ตามสัทศาสตร์)
 - meanings_en: (used phonetically)
-- strokes: 9
+- strokes: 8
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -619,7 +619,7 @@ count: 102
 - meanings_ja: とどまる
 - meanings_th: หยุด
 - meanings_en: stop
-- strokes: 11
+- strokes: 10
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -634,7 +634,7 @@ count: 102
 - meanings_ja: この, これ, はう
 - meanings_th: คลาน, คืบคลาน, โกรเวล
 - meanings_en: crawl, creep, grovel, trail (vines)
-- strokes: 11
+- strokes: 10
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -649,7 +649,7 @@ count: 102
 - meanings_ja: あう, おおきい, むかえる
 - meanings_th: การประชุม, นัดพบ, วันที่
 - meanings_en: meeting, tryst, date, rendezvous
-- strokes: 11
+- strokes: 10
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -795,7 +795,7 @@ count: 102
 - meanings_ja: かく
 - meanings_th: ที่จะเกา
 - meanings_en: to scratch
-- strokes: 13
+- strokes: 12
 - kanken: jun1
 - radical: 64 (手)
 
@@ -850,7 +850,7 @@ count: 102
 - meanings_ja: せまる
 - meanings_th: กระตุ้น, บังคับ, ใกล้เข้ามาแล้ว
 - meanings_en: urge, force, imminent, spur on
-- strokes: 13
+- strokes: 12
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -863,7 +863,7 @@ count: 102
 - meanings_ja: しりごみする, のがれる
 - meanings_th: หนีไป, หลบหนี, หลบเลี่ยง
 - meanings_en: flee, escape, shirk, evade, set free
-- strokes: 13
+- strokes: 12
 - kanken: jun1
 - radical: 162 (辵)
 
@@ -1323,7 +1323,7 @@ count: 102
 - meanings_ja: あお, ふすま, わたいれ
 - meanings_th: ประตูบานเลื่อนทึบแสง
 - meanings_en: opaque sliding door
-- strokes: 18
+- strokes: 17
 - kanken: jun1
 - radical: 145 (衣)
 
@@ -1353,7 +1353,7 @@ count: 102
 - meanings_ja: うつくしい, にしき, ぬいとり
 - meanings_th: ปัก, เย็บปักถักร้อย, เครื่องประดับ
 - meanings_en: embroider, embroidery, ornament
-- strokes: 19
+- strokes: 18
 - kanken: jun1
 - radical: 120 (糸)
 

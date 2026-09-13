@@ -609,7 +609,7 @@ count: 173
 - meanings_ja: うさぎ
 - meanings_th: กระต่าย
 - meanings_en: rabbit, hare
-- strokes: 7
+- strokes: 8
 - kanken: jun1
 - radical: 10 (儿)
 
@@ -1025,7 +1025,7 @@ count: 173
 - meanings_ja: うがつ, つらぬく, はく
 - meanings_th: ใส่ (ที่เท้า), ขุด, เจาะ
 - meanings_en: put on (to the feet), dig, pierce, drill
-- strokes: 9
+- strokes: 10
 - kanken: jun1
 - radical: 116 (穴)
 
@@ -1884,7 +1884,7 @@ count: 173
 - meanings_ja: うまや
 - meanings_th: โรงนา, มีเสถียรภาพ
 - meanings_en: barn, stable
-- strokes: 14
+- strokes: 12
 - kanken: jun1
 - radical: 27 (厂)
 
@@ -2099,7 +2099,7 @@ count: 173
 - meanings_ja: たたえる, なげく
 - meanings_th: ความเศร้าโศก, คร่ำครวญ
 - meanings_en: grief, lamentation
-- strokes: 15
+- strokes: 14
 - kanken: jun1
 - radical: 76 (欠)
 
@@ -2297,7 +2297,7 @@ count: 173
 - meanings_ja: こしき
 - meanings_th: หม้อนึ่งข้าว
 - meanings_en: rice-steaming pot
-- strokes: 17
+- strokes: 16
 - kanken: jun1
 - radical: 98 (瓦)
 

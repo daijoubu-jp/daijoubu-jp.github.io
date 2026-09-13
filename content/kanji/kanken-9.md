@@ -49,7 +49,7 @@ count: 160
 - meanings_ja: よろず
 - meanings_th: หมื่น, 10, 000
 - meanings_en: ten thousand, 10, 000
-- strokes: 5
+- strokes: 3
 - jlpt: 5
 - kanken: 9
 - radical: 1 (一)
@@ -66,7 +66,7 @@ count: 160
 - meanings_ja: まる, まるい, まるめる
 - meanings_th: รอบ, เต็ม (เดือน), ความสมบูรณ์แบบ
 - meanings_en: round, full (month), perfection, -ship, pills, make round, roll up, curl up, seduce, explain away
-- strokes: 5
+- strokes: 3
 - jlpt: 4
 - kanken: 9
 - radical: 3 (丶)
@@ -82,7 +82,7 @@ count: 160
 - meanings_ja: まざる, まじえる, まじる, まぜる, かう, まじわる, かわす
 - meanings_th: ปะปนกัน, การผสม, สมาคม
 - meanings_en: mingle, mixing, association, coming & going
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 8 (亠)
@@ -98,7 +98,7 @@ count: 160
 - meanings_ja: みやこ
 - meanings_th: ทุน, 10**16
 - meanings_en: capital, 10**16
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 8 (亠)
@@ -114,7 +114,7 @@ count: 160
 - meanings_ja: いま
 - meanings_th: ตอนนี้
 - meanings_en: now
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 9 (人)
@@ -130,7 +130,7 @@ count: 160
 - meanings_ja: あう
 - meanings_th: การประชุม, พบกัน, ปาร์ตี้
 - meanings_en: meeting, meet, party, association, interview, join
-- strokes: 5
+- strokes: 6
 - jlpt: 5
 - kanken: 9
 - radical: 9 (人)
@@ -146,7 +146,7 @@ count: 160
 - meanings_ja: からだ
 - meanings_th: ร่างกาย, สาร, วัตถุ
 - meanings_en: body, substance, object, reality, counter for images
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 9 (人)
@@ -162,7 +162,7 @@ count: 160
 - meanings_ja: なに, なん
 - meanings_th: อะไร
 - meanings_en: what
-- strokes: 5
+- strokes: 7
 - jlpt: 5
 - kanken: 9
 - radical: 9 (人)
@@ -178,7 +178,7 @@ count: 160
 - meanings_ja: つくる
 - meanings_th: ทำให้, การผลิต, เตรียมความพร้อม
 - meanings_en: make, production, prepare, build
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 9 (人)
@@ -194,7 +194,7 @@ count: 160
 - meanings_ja: もと
 - meanings_th: การเริ่มต้น, สมัยก่อน, ต้นกำเนิด
 - meanings_en: beginning, former time, origin
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 10 (儿)
@@ -226,7 +226,7 @@ count: 160
 - meanings_ja: ひかり, ひかる
 - meanings_th: รังสี, แสง
 - meanings_en: ray, light
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 10 (儿)
@@ -242,7 +242,7 @@ count: 160
 - meanings_ja: おおやけ
 - meanings_th: สาธารณะ, เจ้าชาย, เป็นทางการ
 - meanings_en: public, prince, official, governmental
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 12 (八)
@@ -258,7 +258,7 @@ count: 160
 - meanings_ja: うち
 - meanings_th: ภายใน, ระหว่าง
 - meanings_en: inside, within, between, among, house, home
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 13 (冂)
@@ -290,7 +290,7 @@ count: 160
 - meanings_ja: かたな
 - meanings_th: ดาบ, กระบี่, มีด
 - meanings_en: sword, saber, knife
-- strokes: 5
+- strokes: 2
 - jlpt: 1
 - kanken: 9
 - radical: 18 (刀)
@@ -306,7 +306,7 @@ count: 160
 - meanings_ja: わかつ, わかる, わかれる, わける
 - meanings_th: ส่วนหนึ่ง, นาทีของเวลา, ส่วน
 - meanings_en: part, minute of time, segment, share, degree, one's lot, duty, understand, know, rate, 1%, chances, shaku/100
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 18 (刀)
@@ -322,7 +322,7 @@ count: 160
 - meanings_ja: きる, きれる
 - meanings_th: ตัด, ทางลัด, มีความคม
 - meanings_en: cut, cutoff, be sharp
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 18 (刀)
@@ -338,7 +338,7 @@ count: 160
 - meanings_ja: まえ
 - meanings_th: ข้างหน้า, ก่อน
 - meanings_en: in front, before
-- strokes: 5
+- strokes: 9
 - jlpt: 5
 - kanken: 9
 - radical: 18 (刀)
@@ -370,7 +370,7 @@ count: 160
 - meanings_ja: うま
 - meanings_th: เที่ยง, สัญลักษณ์ของม้า, 11.00-13.00 น
 - meanings_en: noon, sign of the horse, 11AM-1PM, seventh sign of Chinese zodiac
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 24 (十)
@@ -402,7 +402,7 @@ count: 160
 - meanings_ja: みなみ
 - meanings_th: ทิศใต้
 - meanings_en: south
-- strokes: 5
+- strokes: 9
 - jlpt: 5
 - kanken: 9
 - radical: 24 (十)
@@ -418,7 +418,7 @@ count: 160
 - meanings_ja: はら
 - meanings_th: ทุ่งหญ้า, ต้นฉบับ, ดั้งเดิม
 - meanings_en: meadow, original, primitive, field, plain, prairie, tundra, wilderness
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 27 (厂)
@@ -434,7 +434,7 @@ count: 160
 - meanings_ja: とも
 - meanings_th: เพื่อน
 - meanings_en: friend
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 29 (又)
@@ -482,7 +482,7 @@ count: 160
 - meanings_ja: あう, あわす, あわせる
 - meanings_th: พอดี, สูท, เข้าร่วม
 - meanings_en: fit, suit, join, 0.1
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 30 (口)
@@ -498,7 +498,7 @@ count: 160
 - meanings_ja: おなじ
 - meanings_th: เหมือนกัน, เห็นด้วย, เท่ากัน
 - meanings_en: same, agree, equal
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 30 (口)
@@ -514,7 +514,7 @@ count: 160
 - meanings_ja: まわる, まわす
 - meanings_th: - ครั้ง, รอบ, เกม
 - meanings_en: -times, round, game, revolve, counter for occurrences
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 31 (囗)
@@ -530,7 +530,7 @@ count: 160
 - meanings_ja: はかる
 - meanings_th: แผนที่, การวาดภาพ, แผน
 - meanings_en: map, drawing, plan, extraordinary, audacious
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 31 (囗)
@@ -546,7 +546,7 @@ count: 160
 - meanings_ja: くに
 - meanings_th: ประเทศ
 - meanings_en: country
-- strokes: 5
+- strokes: 8
 - jlpt: 5
 - kanken: 9
 - radical: 31 (囗)
@@ -562,7 +562,7 @@ count: 160
 - meanings_ja: その
 - meanings_th: สวนสาธารณะ, สวน, ลาน
 - meanings_en: park, garden, yard, farm
-- strokes: 5
+- strokes: 13
 - jlpt: 4
 - kanken: 9
 - radical: 31 (囗)
@@ -577,7 +577,7 @@ count: 160
 - meanings_ja: つち, ところ, くに, じ
 - meanings_th: พื้นดิน, โลก
 - meanings_en: ground, earth
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 32 (土)
@@ -593,7 +593,7 @@ count: 160
 - meanings_ja: ば
 - meanings_th: สถานที่
 - meanings_en: location, place
-- strokes: 5
+- strokes: 12
 - jlpt: 4
 - kanken: 9
 - radical: 32 (土)
@@ -609,7 +609,7 @@ count: 160
 - meanings_ja: こえ, こわ
 - meanings_th: เสียง
 - meanings_en: voice
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 33 (士)
@@ -625,7 +625,7 @@ count: 160
 - meanings_ja: うる, うれる
 - meanings_th: ขาย
 - meanings_en: sell
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 33 (士)
@@ -641,7 +641,7 @@ count: 160
 - meanings_ja: なつ
 - meanings_th: ฤดูร้อน
 - meanings_en: summer
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 35 (夊)
@@ -673,7 +673,7 @@ count: 160
 - meanings_ja: おおい
 - meanings_th: มากมาย, บ่อยครั้ง, มาก
 - meanings_en: many, frequent, much
-- strokes: 5
+- strokes: 6
 - jlpt: 5
 - kanken: 9
 - radical: 36 (夕)
@@ -689,7 +689,7 @@ count: 160
 - meanings_ja: よ, よる
 - meanings_th: กลางคืน, ตอนเย็น
 - meanings_en: night, evening
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 36 (夕)
@@ -705,7 +705,7 @@ count: 160
 - meanings_ja: ふとい, ふとる
 - meanings_th: อวบอ้วน, หนา, ใหญ่รอบๆ
 - meanings_en: plump, thick, big around
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 37 (大)
@@ -721,7 +721,7 @@ count: 160
 - meanings_ja: いもうと
 - meanings_th: น้องสาว
 - meanings_en: younger sister
-- strokes: 5
+- strokes: 8
 - jlpt: 1
 - kanken: 9
 - radical: 38 (女)
@@ -737,7 +737,7 @@ count: 160
 - meanings_ja: あね
 - meanings_th: พี่สาว
 - meanings_en: elder sister
-- strokes: 5
+- strokes: 8
 - jlpt: 1
 - kanken: 9
 - radical: 38 (女)
@@ -753,7 +753,7 @@ count: 160
 - meanings_ja: むろ
 - meanings_th: ห้อง, อพาร์ทเมนต์
 - meanings_en: room, apartment, chamber, greenhouse, cellar
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 40 (宀)
@@ -769,7 +769,7 @@ count: 160
 - meanings_ja: いえ, や
 - meanings_th: บ้าน, ครอบครัว
 - meanings_en: house, home, family, professional, expert, performer
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 40 (宀)
@@ -785,7 +785,7 @@ count: 160
 - meanings_ja: てら
 - meanings_th: วัดพุทธ
 - meanings_en: Buddhist temple
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 41 (寸)
@@ -801,7 +801,7 @@ count: 160
 - meanings_ja: すくない, すこし
 - meanings_th: ไม่กี่, น้อย
 - meanings_en: few, little
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 42 (小)
@@ -817,7 +817,7 @@ count: 160
 - meanings_ja: いわ
 - meanings_th: ก้อนหิน, ร็อค, หน้าผา
 - meanings_en: boulder, rock, cliff
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 46 (山)
@@ -836,7 +836,7 @@ count: 160
 - meanings_ja: たくみ, つくる, わざ, つとめ
 - meanings_th: งานฝีมือ, การก่อสร้าง, คาตาคานะ อี หัวรุนแรง (หมายเลข 48)
 - meanings_en: craft, construction, katakana e radical (no. 48)
-- strokes: 5
+- strokes: 3
 - jlpt: 4
 - kanken: 9
 - radical: 48 (工)
@@ -868,7 +868,7 @@ count: 160
 - meanings_ja: かえす, かえる
 - meanings_th: กลับบ้าน, มาถึงที่, นำไปสู่
 - meanings_en: homecoming, arrive at, lead to, result in
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 50 (巾)
@@ -900,7 +900,7 @@ count: 160
 - meanings_ja: みせ
 - meanings_th: เก็บ, ร้านค้า
 - meanings_en: store, shop
-- strokes: 5
+- strokes: 8
 - jlpt: 5
 - kanken: 9
 - radical: 53 (广)
@@ -916,7 +916,7 @@ count: 160
 - meanings_ja: ゆみ
 - meanings_th: โค้งคำนับ, คันธนู (ยิงธนู, ไวโอลิน)
 - meanings_en: bow, bow (archery, violin)
-- strokes: 5
+- strokes: 3
 - jlpt: 1
 - kanken: 9
 - radical: 57 (弓)
@@ -932,7 +932,7 @@ count: 160
 - meanings_ja: ひく, ひける
 - meanings_th: ดึง, ลากจูง, กระตุก
 - meanings_en: pull, tug, jerk, admit, install, quote, refer to
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 57 (弓)
@@ -948,7 +948,7 @@ count: 160
 - meanings_ja: おとうと
 - meanings_th: น้องชาย, การบริการที่ซื่อสัตย์ต่อผู้สูงอายุ
 - meanings_en: younger brother, faithful service to elders
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 57 (弓)
@@ -964,7 +964,7 @@ count: 160
 - meanings_ja: よわい, よわまる, よわめる, よわる
 - meanings_th: อ่อนแอ
 - meanings_en: weak, frail
-- strokes: 5
+- strokes: 10
 - jlpt: 1
 - kanken: 9
 - radical: 57 (弓)
@@ -980,7 +980,7 @@ count: 160
 - meanings_ja: つよい, つよまる, しいる, つよめる
 - meanings_th: แข็งแรง
 - meanings_en: strong
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 57 (弓)
@@ -996,7 +996,7 @@ count: 160
 - meanings_ja: あたる, あてる
 - meanings_th: ตี, ถูกต้อง, เหมาะสม
 - meanings_en: hit, right, appropriate, himself
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 58 (彐)
@@ -1012,7 +1012,7 @@ count: 160
 - meanings_ja: かた, かたち
 - meanings_th: รูปร่าง, แบบฟอร์ม, สไตล์
 - meanings_en: shape, form, style
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 59 (彡)
@@ -1028,7 +1028,7 @@ count: 160
 - meanings_ja: あと, うしろ, おくれる, のち
 - meanings_th: ข้างหลัง, กลับ, ในภายหลัง
 - meanings_en: behind, back, later
-- strokes: 5
+- strokes: 9
 - jlpt: 5
 - kanken: 9
 - radical: 60 (彳)
@@ -1044,7 +1044,7 @@ count: 160
 - meanings_ja: おもう
 - meanings_th: คิด
 - meanings_en: think
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 61 (心)
@@ -1060,7 +1060,7 @@ count: 160
 - meanings_ja: と
 - meanings_th: ประตู, เคาน์เตอร์สำหรับบ้าน, หัวรุนแรงประตู (หมายเลข 63)
 - meanings_en: door, counter for houses, door radical (no. 63)
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 63 (戶)
@@ -1075,7 +1075,7 @@ count: 160
 - meanings_ja: さいのう, はたらき, とし, 才気
 - meanings_th: อัจฉริยะ, อายุปี, ลูกบาศก์ชากุ
 - meanings_en: genius, years old, cubic shaku
-- strokes: 5
+- strokes: 3
 - jlpt: 1
 - kanken: 9
 - radical: 64 (手)
@@ -1091,7 +1091,7 @@ count: 160
 - meanings_ja: おしえる, おそわる
 - meanings_th: สอน, ศรัทธา, หลักคำสอน
 - meanings_en: teach, faith, doctrine
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 66 (攴)
@@ -1107,7 +1107,7 @@ count: 160
 - meanings_ja: かず, かぞえる
 - meanings_th: หมายเลข, ความแข็งแรง, โชคชะตา
 - meanings_en: number, strength, fate, law, figures
-- strokes: 5
+- strokes: 13
 - jlpt: 4
 - kanken: 9
 - radical: 66 (攴)
@@ -1123,7 +1123,7 @@ count: 160
 - meanings_ja: あたらしい, あらた, にい
 - meanings_th: ใหม่
 - meanings_en: new
-- strokes: 5
+- strokes: 13
 - jlpt: 5
 - kanken: 9
 - radical: 69 (斤)
@@ -1139,7 +1139,7 @@ count: 160
 - meanings_ja: かた
 - meanings_th: ทิศทาง, คน, ทางเลือก
 - meanings_en: direction, person, alternative
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 70 (方)
@@ -1155,7 +1155,7 @@ count: 160
 - meanings_ja: あかす, あからむ, あかるむ, あく, あくる, あきらか, あける, あかり, あかるい
 - meanings_th: สดใส, แสง
 - meanings_en: bright, light
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 72 (日)
@@ -1175,7 +1175,7 @@ count: 160
 - meanings_ja: はる
 - meanings_th: ฤดูใบไม้ผลิ, ฤดูใบไม้ผลิ (ฤดูกาล)
 - meanings_en: springtime, spring (season)
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 72 (日)
@@ -1191,7 +1191,7 @@ count: 160
 - meanings_ja: ひる
 - meanings_th: ตอนกลางวัน, เที่ยง
 - meanings_en: daytime, noon
-- strokes: 5
+- strokes: 9
 - jlpt: 1
 - kanken: 9
 - radical: 72 (日)
@@ -1207,7 +1207,7 @@ count: 160
 - meanings_ja: とき
 - meanings_th: เวลา, ชั่วโมง
 - meanings_en: time, hour
-- strokes: 5
+- strokes: 10
 - jlpt: 5
 - kanken: 9
 - radical: 72 (日)
@@ -1223,7 +1223,7 @@ count: 160
 - meanings_ja: はらす, はれる
 - meanings_th: ชัดเจนขึ้น
 - meanings_en: clear up
-- strokes: 5
+- strokes: 12
 - jlpt: 1
 - kanken: 9
 - radical: 72 (日)
@@ -1238,7 +1238,7 @@ count: 160
 - meanings_ja: かがやく, ひかり, ひ, 七曜
 - meanings_th: วันธรรมดา
 - meanings_en: weekday
-- strokes: 5
+- strokes: 18
 - jlpt: 1
 - kanken: 9
 - radical: 72 (日)
@@ -1254,7 +1254,7 @@ count: 160
 - meanings_ja: かく
 - meanings_th: เขียน
 - meanings_en: write
-- strokes: 5
+- strokes: 10
 - jlpt: 5
 - kanken: 9
 - radical: 73 (曰)
@@ -1285,7 +1285,7 @@ count: 160
 - meanings_ja: あさ
 - meanings_th: ตอนเช้า, ราชวงศ์, ระบอบการปกครอง
 - meanings_en: morning, dynasty, regime, epoch, period, (North) Korea
-- strokes: 5
+- strokes: 12
 - jlpt: 4
 - kanken: 9
 - radical: 74 (月)
@@ -1301,7 +1301,7 @@ count: 160
 - meanings_ja: くる, きたす, きたる
 - meanings_th: มา, เนื่องจาก, ถัดไป
 - meanings_en: come, due, next, cause, become
-- strokes: 5
+- strokes: 7
 - jlpt: 5
 - kanken: 9
 - radical: 75 (木)
@@ -1321,7 +1321,7 @@ count: 160
 - meanings_ja: ひがし
 - meanings_th: ตะวันออก
 - meanings_en: east
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 75 (木)
@@ -1337,7 +1337,7 @@ count: 160
 - meanings_ja: たのしい, たのしむ
 - meanings_th: เพลง, ความสะดวกสบาย, สบายใจ
 - meanings_en: music, comfort, ease
-- strokes: 5
+- strokes: 13
 - jlpt: 4
 - kanken: 9
 - radical: 75 (木)
@@ -1353,7 +1353,7 @@ count: 160
 - meanings_ja: うた, うたう
 - meanings_th: เพลง, ร้องเพลง
 - meanings_en: song, sing
-- strokes: 5
+- strokes: 14
 - jlpt: 4
 - kanken: 9
 - radical: 76 (欠)
@@ -1369,7 +1369,7 @@ count: 160
 - meanings_ja: とまる, とめる
 - meanings_th: หยุด
 - meanings_en: stop, halt
-- strokes: 5
+- strokes: 4
 - jlpt: 4
 - kanken: 9
 - radical: 77 (止)
@@ -1385,7 +1385,7 @@ count: 160
 - meanings_ja: あゆむ, あるく
 - meanings_th: เดิน, เคาน์เตอร์สำหรับขั้นตอน
 - meanings_en: walk, counter for steps
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 77 (止)
@@ -1417,7 +1417,7 @@ count: 160
 - meanings_ja: ごと, -ごとに
 - meanings_th: ทุก ๆ
 - meanings_en: every
-- strokes: 5
+- strokes: 6
 - jlpt: 5
 - kanken: 9
 - radical: 80 (毋)
@@ -1433,7 +1433,7 @@ count: 160
 - meanings_ja: け
 - meanings_th: ขน, ผม, ขนนก
 - meanings_en: fur, hair, feather, down
-- strokes: 5
+- strokes: 4
 - jlpt: 1
 - kanken: 9
 - radical: 82 (毛)
@@ -1449,7 +1449,7 @@ count: 160
 - meanings_ja: いけ
 - meanings_th: บ่อน้ำ, ถังน้ำ, สระว่ายน้ำ
 - meanings_en: pond, cistern, pool, reservoir
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 85 (水)
@@ -1464,7 +1464,7 @@ count: 160
 - meanings_ja: ゆげ, じょうき, みずけ
 - meanings_th: ไอ, ไอน้ำ
 - meanings_en: vapor, steam
-- strokes: 5
+- strokes: 7
 - jlpt: 1
 - kanken: 9
 - radical: 85 (水)
@@ -1480,7 +1480,7 @@ count: 160
 - meanings_ja: いきる, いかす, いける
 - meanings_th: มีชีวิตชีวา, การช่วยชีวิต, กำลังได้รับความช่วยเหลือ
 - meanings_en: lively, resuscitation, being helped, living
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 85 (水)
@@ -1496,7 +1496,7 @@ count: 160
 - meanings_ja: つける, つく, たてる, さす, とぼす, ともす, ぼち
 - meanings_th: จุด, ทำเครื่องหมาย
 - meanings_en: spot, point, mark, speck, decimal point
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 86 (火)
@@ -1512,7 +1512,7 @@ count: 160
 - meanings_ja: ちち
 - meanings_th: พ่อ
 - meanings_en: father
-- strokes: 5
+- strokes: 4
 - jlpt: 5
 - kanken: 9
 - radical: 88 (父)
@@ -1528,7 +1528,7 @@ count: 160
 - meanings_ja: うし
 - meanings_th: วัว
 - meanings_en: cow
-- strokes: 5
+- strokes: 4
 - jlpt: 1
 - kanken: 9
 - radical: 93 (牛)
@@ -1544,7 +1544,7 @@ count: 160
 - meanings_ja: ことわり
 - meanings_th: ตรรกะ, การจัดการ, เหตุผล
 - meanings_en: logic, arrangement, reason, justice, truth
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 96 (玉)
@@ -1576,7 +1576,7 @@ count: 160
 - meanings_ja: えがく, かくする, かぎる, はかりごと, はかる
 - meanings_th: แปรงจังหวะ, รูปภาพ
 - meanings_en: brush-stroke, picture
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 102 (田)
@@ -1592,7 +1592,7 @@ count: 160
 - meanings_ja: つがい
 - meanings_th: เลี้ยว, หมายเลขในชุด
 - meanings_en: turn, number in a series
-- strokes: 5
+- strokes: 12
 - jlpt: 4
 - kanken: 9
 - radical: 102 (田)
@@ -1608,7 +1608,7 @@ count: 160
 - meanings_ja: ただちに, なおす, なおる
 - meanings_th: ทันที, ความซื่อสัตย์, ความตรงไปตรงมา
 - meanings_en: straightaway, honesty, frankness, fix, repair
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 109 (目)
@@ -1640,7 +1640,7 @@ count: 160
 - meanings_ja: しる
 - meanings_th: รู้, ภูมิปัญญา
 - meanings_en: know, wisdom
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 111 (矢)
@@ -1656,7 +1656,7 @@ count: 160
 - meanings_ja: やしろ
 - meanings_th: บริษัท, สำนักงาน
 - meanings_en: company, firm, office, association, shrine
-- strokes: 5
+- strokes: 7
 - jlpt: 5
 - kanken: 9
 - radical: 113 (示)
@@ -1672,7 +1672,7 @@ count: 160
 - meanings_ja: あき
 - meanings_th: ฤดูใบไม้ร่วง
 - meanings_en: autumn
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 115 (禾)
@@ -1687,7 +1687,7 @@ count: 160
 - meanings_ja: しな, くぶん, とが, はかる
 - meanings_th: แผนก, แน่นอน, ส่วน
 - meanings_en: department, course, section
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 115 (禾)
@@ -1703,7 +1703,7 @@ count: 160
 - meanings_ja: こたえ, こたえる
 - meanings_th: วิธีการแก้ปัญหา, ตอบ
 - meanings_en: solution, answer
-- strokes: 5
+- strokes: 12
 - jlpt: 4
 - kanken: 9
 - radical: 118 (竹)
@@ -1719,7 +1719,7 @@ count: 160
 - meanings_ja: そろ
 - meanings_th: คำนวณ, ทำนาย, หมายเลข
 - meanings_en: calculate, divining, number, abacus, probability
-- strokes: 5
+- strokes: 14
 - jlpt: 4
 - kanken: 9
 - radical: 118 (竹)
@@ -1735,7 +1735,7 @@ count: 160
 - meanings_ja: こめ
 - meanings_th: ข้าว, สหรัฐอเมริกา, เมตร
 - meanings_en: rice, USA, metre
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 119 (米)
@@ -1751,7 +1751,7 @@ count: 160
 - meanings_ja: かみ
 - meanings_th: กระดาษ
 - meanings_en: paper
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
@@ -1767,7 +1767,7 @@ count: 160
 - meanings_ja: こまか, こまかい, ほそい, ほそる
 - meanings_th: โอชะ, ผอมลง, เรียว
 - meanings_en: dainty, get thin, taper, slender, narrow, detailed, precise
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
@@ -1783,7 +1783,7 @@ count: 160
 - meanings_ja: くみ, くむ
 - meanings_th: สมาคม, ถักเปีย
 - meanings_en: association, braid, plait, construct, assemble, unite, cooperate, grapple
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
@@ -1798,7 +1798,7 @@ count: 160
 - meanings_ja: え, えがく, がぞう, かいが
 - meanings_th: รูปภาพ, การวาดภาพ, จิตรกรรม
 - meanings_en: picture, drawing, painting, sketch
-- strokes: 5
+- strokes: 12
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
@@ -1814,7 +1814,7 @@ count: 160
 - meanings_ja: すじ
 - meanings_th: เส้น, ติดตาม
 - meanings_en: line, track
-- strokes: 5
+- strokes: 15
 - jlpt: 4
 - kanken: 9
 - radical: 120 (糸)
@@ -1830,7 +1830,7 @@ count: 160
 - meanings_ja: はね, は
 - meanings_th: ขนนก, เคาน์เตอร์สำหรับนกกระต่าย
 - meanings_en: feathers, counter for birds, rabbits
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 124 (羽)
@@ -1846,7 +1846,7 @@ count: 160
 - meanings_ja: かんがえる
 - meanings_th: พิจารณา, คิดทบทวน
 - meanings_en: consider, think over
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 125 (老)
@@ -1862,7 +1862,7 @@ count: 160
 - meanings_ja: きく, きこえる
 - meanings_th: ได้ยิน, ถาม, ฟัง
 - meanings_en: hear, ask, listen
-- strokes: 5
+- strokes: 14
 - jlpt: 5
 - kanken: 9
 - radical: 128 (耳)
@@ -1889,7 +1889,7 @@ count: 160
 - meanings_ja: しし
 - meanings_th: เนื้อ
 - meanings_en: meat
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 130 (肉)
@@ -1905,7 +1905,7 @@ count: 160
 - meanings_ja: みずから
 - meanings_th: ตัวเอง
 - meanings_en: oneself
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 132 (自)
@@ -1921,7 +1921,7 @@ count: 160
 - meanings_ja: ふな, ふね
 - meanings_th: เรือ
 - meanings_en: ship, boat
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 137 (舟)
@@ -1937,7 +1937,7 @@ count: 160
 - meanings_ja: いろ
 - meanings_th: สี
 - meanings_en: color
-- strokes: 5
+- strokes: 6
 - jlpt: 4
 - kanken: 9
 - radical: 139 (色)
@@ -1952,7 +1952,7 @@ count: 160
 - meanings_ja: ちゃ, お茶, ちゃのき, 茶道
 - meanings_th: ชา
 - meanings_en: tea
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 140 (艸)
@@ -1968,7 +1968,7 @@ count: 160
 - meanings_ja: いく, おこなう, ゆく
 - meanings_th: ไป, การเดินทาง, ดำเนินการ
 - meanings_en: going, journey, carry out, conduct, act, line, row, bank
-- strokes: 5
+- strokes: 6
 - jlpt: 5
 - kanken: 9
 - radical: 144 (行)
@@ -1988,7 +1988,7 @@ count: 160
 - meanings_ja: にし
 - meanings_th: ตะวันตก, สเปน
 - meanings_en: west, Spain
-- strokes: 5
+- strokes: 6
 - jlpt: 5
 - kanken: 9
 - radical: 146 (襾)
@@ -2004,7 +2004,7 @@ count: 160
 - meanings_ja: おや, したしい, したしむ
 - meanings_th: ผู้ปกครอง, ความใกล้ชิด, ญาติ
 - meanings_en: parent, intimacy, relative, familiarity, dealer (cards)
-- strokes: 5
+- strokes: 16
 - jlpt: 4
 - kanken: 9
 - radical: 147 (見)
@@ -2020,7 +2020,7 @@ count: 160
 - meanings_ja: かど, つの
 - meanings_th: มุม, สี่เหลี่ยมจัตุรัส
 - meanings_en: angle, corner, square, horn, antlers
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 148 (角)
@@ -2036,7 +2036,7 @@ count: 160
 - meanings_ja: いう, こと
 - meanings_th: พูด, คำ
 - meanings_en: say, word
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 149 (言)
@@ -2056,7 +2056,7 @@ count: 160
 - meanings_ja: はからう, はかる
 - meanings_th: พล็อต, แผน, โครงการ
 - meanings_en: plot, plan, scheme, measure
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 149 (言)
@@ -2072,7 +2072,7 @@ count: 160
 - meanings_ja: しるす
 - meanings_th: อาลักษณ์, บัญชี, เรื่องเล่า
 - meanings_en: scribe, account, narrative
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 149 (言)
@@ -2088,7 +2088,7 @@ count: 160
 - meanings_ja: はなし, はなす
 - meanings_th: เรื่อง, พูดคุย
 - meanings_en: tale, talk
-- strokes: 5
+- strokes: 13
 - jlpt: 5
 - kanken: 9
 - radical: 149 (言)
@@ -2104,7 +2104,7 @@ count: 160
 - meanings_ja: よむ
 - meanings_th: อ่าน
 - meanings_en: read
-- strokes: 5
+- strokes: 14
 - jlpt: 5
 - kanken: 9
 - radical: 149 (言)
@@ -2124,7 +2124,7 @@ count: 160
 - meanings_ja: たに
 - meanings_th: หุบเขา
 - meanings_en: valley
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 150 (谷)
@@ -2140,7 +2140,7 @@ count: 160
 - meanings_ja: かう
 - meanings_th: ซื้อ
 - meanings_en: buy
-- strokes: 5
+- strokes: 12
 - jlpt: 5
 - kanken: 9
 - radical: 154 (貝)
@@ -2156,7 +2156,7 @@ count: 160
 - meanings_ja: はしる
 - meanings_th: วิ่ง
 - meanings_en: run
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 156 (走)
@@ -2172,7 +2172,7 @@ count: 160
 - meanings_ja: ちかい
 - meanings_th: ใกล้, ในช่วงต้น, คล้ายกัน
 - meanings_en: near, early, akin, tantamount
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 162 (辵)
@@ -2188,7 +2188,7 @@ count: 160
 - meanings_ja: かよう, とおす, とおる
 - meanings_th: การจราจร, ผ่าน, อเวนิว
 - meanings_en: traffic, pass through, avenue, commute, counter for letters, notes, documents, etc.
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 162 (辵)
@@ -2203,7 +2203,7 @@ count: 160
 - meanings_ja: めぐる, まわる, しゅうかん, 七日間
 - meanings_th: สัปดาห์
 - meanings_en: week
-- strokes: 5
+- strokes: 11
 - jlpt: 5
 - kanken: 9
 - radical: 162 (辵)
@@ -2219,7 +2219,7 @@ count: 160
 - meanings_ja: みち
 - meanings_th: ถนนทาง, ถนน, อำเภอ
 - meanings_en: road-way, street, district, journey, course, moral, teachings
-- strokes: 5
+- strokes: 12
 - jlpt: 5
 - kanken: 9
 - radical: 162 (辵)
@@ -2254,7 +2254,7 @@ count: 160
 - meanings_ja: とおい
 - meanings_th: ห่างไกล, ไกล
 - meanings_en: distant, far
-- strokes: 5
+- strokes: 13
 - jlpt: 4
 - kanken: 9
 - radical: 162 (辵)
@@ -2270,7 +2270,7 @@ count: 160
 - meanings_ja: さと
 - meanings_th: ริ, หมู่บ้าน, บ้านพ่อแม่
 - meanings_en: ri, village, parent's home, league
-- strokes: 5
+- strokes: 7
 - jlpt: 4
 - kanken: 9
 - radical: 166 (里)
@@ -2286,7 +2286,7 @@ count: 160
 - meanings_ja: の
 - meanings_th: ที่ราบ, สนาม, ชนบท
 - meanings_en: plains, field, rustic, civilian life
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 166 (里)
@@ -2302,7 +2302,7 @@ count: 160
 - meanings_ja: ながい
 - meanings_th: ยาว, ผู้นำ, เหนือกว่า
 - meanings_en: long, leader, superior, senior
-- strokes: 5
+- strokes: 8
 - jlpt: 5
 - kanken: 9
 - radical: 168 (長)
@@ -2318,7 +2318,7 @@ count: 160
 - meanings_ja: かど
 - meanings_th: ประตู, เคาน์เตอร์สำหรับปืนใหญ่
 - meanings_en: gate, counter for cannons
-- strokes: 5
+- strokes: 8
 - jlpt: 4
 - kanken: 9
 - radical: 169 (門)
@@ -2338,7 +2338,7 @@ count: 160
 - meanings_ja: あいだ, ま
 - meanings_th: ช่วงเวลา, พื้นที่
 - meanings_en: interval, space
-- strokes: 5
+- strokes: 12
 - jlpt: 5
 - kanken: 9
 - radical: 169 (門)
@@ -2354,7 +2354,7 @@ count: 160
 - meanings_ja: ゆき
 - meanings_th: หิมะ
 - meanings_en: snow
-- strokes: 5
+- strokes: 11
 - jlpt: 1
 - kanken: 9
 - radical: 173 (雨)
@@ -2370,7 +2370,7 @@ count: 160
 - meanings_ja: くも
 - meanings_th: เมฆ
 - meanings_en: cloud
-- strokes: 5
+- strokes: 12
 - jlpt: 1
 - kanken: 9
 - radical: 173 (雨)
@@ -2385,7 +2385,7 @@ count: 160
 - meanings_ja: いなづま, でんき, ひらめく
 - meanings_th: ไฟฟ้า
 - meanings_en: electricity
-- strokes: 5
+- strokes: 13
 - jlpt: 5
 - kanken: 9
 - radical: 173 (雨)
@@ -2401,7 +2401,7 @@ count: 160
 - meanings_ja: あたま, かしら
 - meanings_th: หัว, เคาน์เตอร์สำหรับสัตว์ใหญ่
 - meanings_en: head, counter for large animals
-- strokes: 5
+- strokes: 16
 - jlpt: 4
 - kanken: 9
 - radical: 181 (頁)
@@ -2417,7 +2417,7 @@ count: 160
 - meanings_ja: かお
 - meanings_th: ใบหน้า, การแสดงออก
 - meanings_en: face, expression
-- strokes: 5
+- strokes: 18
 - jlpt: 4
 - kanken: 9
 - radical: 181 (頁)
@@ -2433,7 +2433,7 @@ count: 160
 - meanings_ja: くう, たべる, くらう
 - meanings_th: กิน, อาหาร
 - meanings_en: eat, food
-- strokes: 5
+- strokes: 9
 - jlpt: 5
 - kanken: 9
 - radical: 184 (食)
@@ -2453,7 +2453,7 @@ count: 160
 - meanings_ja: くび
 - meanings_th: คอ, เคาน์เตอร์เพลงและบทกวี
 - meanings_en: neck, counter for songs and poems
-- strokes: 5
+- strokes: 9
 - jlpt: 4
 - kanken: 9
 - radical: 185 (首)
@@ -2469,7 +2469,7 @@ count: 160
 - meanings_ja: うま, ま
 - meanings_th: ม้า
 - meanings_en: horse
-- strokes: 5
+- strokes: 10
 - jlpt: 4
 - kanken: 9
 - radical: 187 (馬)
@@ -2489,7 +2489,7 @@ count: 160
 - meanings_ja: たか, たかい, たかまる, たかめる
 - meanings_th: สูง, ราคาแพง
 - meanings_en: tall, high, expensive
-- strokes: 5
+- strokes: 10
 - jlpt: 5
 - kanken: 9
 - radical: 189 (高)
@@ -2505,7 +2505,7 @@ count: 160
 - meanings_ja: さかな, うお
 - meanings_th: ปลา
 - meanings_en: fish
-- strokes: 5
+- strokes: 11
 - jlpt: 5
 - kanken: 9
 - radical: 195 (魚)
@@ -2525,7 +2525,7 @@ count: 160
 - meanings_ja: とり
 - meanings_th: นก, ไก่
 - meanings_en: bird, chicken
-- strokes: 5
+- strokes: 11
 - jlpt: 1
 - kanken: 9
 - radical: 196 (鳥)
@@ -2545,7 +2545,7 @@ count: 160
 - meanings_ja: なく, ならす, なる
 - meanings_th: เจี๊ยบ, ร้องไห้, เปลือกไม้
 - meanings_en: chirp, cry, bark, sound, ring, echo, honk
-- strokes: 5
+- strokes: 14
 - jlpt: 4
 - kanken: 9
 - radical: 196 (鳥)
@@ -2565,7 +2565,7 @@ count: 160
 - meanings_ja: むぎ
 - meanings_th: ข้าวบาร์เลย์, ข้าวสาลี
 - meanings_en: barley, wheat
-- strokes: 5
+- strokes: 7
 - jlpt: 1
 - kanken: 9
 - radical: 199 (麥)
@@ -2581,7 +2581,7 @@ count: 160
 - meanings_ja: こ, き
 - meanings_th: สีเหลือง
 - meanings_en: yellow
-- strokes: 5
+- strokes: 11
 - jlpt: 1
 - kanken: 9
 - radical: 201 (黃)
@@ -2597,7 +2597,7 @@ count: 160
 - meanings_ja: くろい, くろ
 - meanings_th: สีดำ
 - meanings_en: black
-- strokes: 5
+- strokes: 11
 - jlpt: 4
 - kanken: 9
 - radical: 203 (黑)

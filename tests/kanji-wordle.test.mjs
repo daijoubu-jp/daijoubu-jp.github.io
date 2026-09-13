@@ -9,8 +9,10 @@ import {
   COLUMNS,
   feedback,
   isWin,
-  kankenRank,
-  stageRank,
+  matchOnyomi,
+  matchKunyomi,
+  matchOrigin,
+  getGojuonRow,
   dailyTarget,
   ALL_JOYO_BAND,
   cellToEmoji,
@@ -20,67 +22,170 @@ import {
 } from '../assets/js/games/kanji-wordle-core.js';
 
 const TARGET = {
-  kanji: '明', strokes: 8, radical: 72, radicalChar: '日',
-  kanken: '9', jlpt: 4, grade: 2, joyo: true,
+  kanji: '明',
+  strokes: 8,
+  radical: 72,
+  radicalChar: '日',
+  onyomi: ['メイ', 'ミョウ'],
+  kunyomi: ['あ.かり', 'あか.るい', 'あき.らか'],
+  origin_type: '会意',
+  jlpt: 4,
+  joyo: true,
 };
 
 const FIXTURE = [
   TARGET,
-  { kanji: '暗', strokes: 13, radical: 72, radicalChar: '日', kanken: '8', jlpt: 3, grade: null, joyo: true },
-  { kanji: '日', strokes: 4, radical: 72, radicalChar: '日', kanken: '10', jlpt: 5, grade: 1, joyo: true },
-  { kanji: '刹', strokes: 7, radical: 18, radicalChar: '刀', kanken: 'jun1', jlpt: null, grade: null, joyo: false },
+  // 暗: strokes 13, radical 72, on: アン (A-row), kun: くら.い (K-row), origin: 形声
+  {
+    kanji: '暗',
+    strokes: 13,
+    radical: 72,
+    radicalChar: '日',
+    onyomi: ['アン'],
+    kunyomi: ['くら.い'],
+    origin_type: '形声',
+    jlpt: 3,
+    joyo: true,
+  },
+  // 日: strokes 4, radical 72, on: ニチ, ジツ (N-row), kun: ひ, か, origin: 象形
+  {
+    kanji: '日',
+    strokes: 4,
+    radical: 72,
+    radicalChar: '日',
+    onyomi: ['ニチ', 'ジツ'],
+    kunyomi: ['ひ', 'か'],
+    origin_type: '象形',
+    jlpt: 5,
+    joyo: true,
+  },
+  // 鳴: strokes 14, radical 196, on: メイ (M-row shared!), kun: な.く, origin: 会意 (shared!)
+  {
+    kanji: '鳴',
+    strokes: 14,
+    radical: 196,
+    radicalChar: '鳥',
+    onyomi: ['メイ'],
+    kunyomi: ['な.く'],
+    origin_type: '会意',
+    jlpt: 2,
+    joyo: true,
+  },
 ];
 
-test('there are seven columns including the guessed kanji', () => {
-  assert.deepEqual(COLUMNS.map(c => c.id), ['kanji', 'strokes', 'radical', 'kanken', 'jlpt', 'stage', 'joyo']);
+test('there are six columns in the exact specified order', () => {
+  assert.deepEqual(COLUMNS.map((c) => c.id), [
+    'kanji',
+    'strokes',
+    'radical',
+    'onyomi',
+    'kunyomi',
+    'origin',
+  ]);
 });
 
 test('guessed kanji column displays character and matches target', () => {
-  const match = feedback(TARGET, TARGET).find(c => c.id === 'kanji');
+  const match = feedback(TARGET, TARGET).find((c) => c.id === 'kanji');
   assert.equal(match.state, 'correct');
   assert.equal(match.display, '明');
 
-  const wrong = feedback(FIXTURE[1], TARGET).find(c => c.id === 'kanji');
+  const wrong = feedback(FIXTURE[1], TARGET).find((c) => c.id === 'kanji');
   assert.equal(wrong.state, 'wrong');
   assert.equal(wrong.display, '暗');
 });
 
 test('an exact match is all correct', () => {
   const cells = feedback(TARGET, TARGET);
-  assert.ok(cells.every(c => c.state === 'correct'));
+  assert.ok(cells.every((c) => c.state === 'correct'));
 });
 
 test('stroke differences point to the target', () => {
-  const strokes = feedback(FIXTURE[1], TARGET).find(c => c.id === 'strokes');
-  assert.equal(strokes.id, 'strokes');
-  assert.equal(strokes.state, 'lower'); // target has fewer strokes
+  const strokes = feedback(FIXTURE[1], TARGET).find((c) => c.id === 'strokes');
+  assert.equal(strokes.state, 'lower'); // target has 8, guess has 13 -> lower
   assert.equal(strokes.display, 13);
-  const strokes2 = feedback(FIXTURE[2], TARGET).find(c => c.id === 'strokes');
-  assert.equal(strokes2.state, 'higher'); // target has more
+
+  const strokes2 = feedback(FIXTURE[2], TARGET).find((c) => c.id === 'strokes');
+  assert.equal(strokes2.state, 'higher'); // target has 8, guess has 4 -> higher
+  assert.equal(strokes2.display, 4);
 });
 
-test('kanken and stage use explicit rank order', () => {
-  assert.equal(kankenRank({ kanken: '10' }), 1);
-  assert.equal(kankenRank({ kanken: '1' }), 12);
-  assert.equal(stageRank({ grade: 1 }), 1);
-  assert.equal(stageRank({ grade: 8 }), 7);
-  assert.equal(stageRank({ grade: null }), null);
+test('radical matching is exact-only', () => {
+  const radicalSame = feedback(FIXTURE[1], TARGET).find((c) => c.id === 'radical');
+  assert.equal(radicalSame.state, 'correct');
+  assert.equal(radicalSame.display, '日');
+
+  const radicalDiff = feedback(FIXTURE[3], TARGET).find((c) => c.id === 'radical');
+  assert.equal(radicalDiff.state, 'wrong');
+  assert.equal(radicalDiff.display, '鳥');
 });
 
-test('jlpt differences point to the target and missing jlpt is gray', () => {
-  const jlpt = (g, t) => feedback(g, t).find(c => c.id === 'jlpt');
-  assert.equal(jlpt(FIXTURE[0], FIXTURE[1]).state, 'higher'); // N4 -> N3
-  assert.equal(jlpt(FIXTURE[1], FIXTURE[0]).state, 'lower');
-  assert.equal(jlpt(FIXTURE[3], TARGET).state, 'wrong'); // no JLPT
+test('onyomi matching: exact shared reading, same Gojūon row, or wrong', () => {
+  // 鳴 (メイ) vs 明 (メイ, ミョウ) -> exact match on メイ
+  const exact = matchOnyomi(FIXTURE[3], TARGET);
+  assert.equal(exact.state, 'correct');
+  assert.equal(exact.display, 'メイ');
+
+  // M-row candidate without exact match: 門 (モン - M-row) vs 明 (メイ, ミョウ - M-row) -> near
+  const nearGuess = { onyomi: ['モン'] };
+  const nearResult = matchOnyomi(nearGuess, TARGET);
+  assert.equal(nearResult.state, 'near');
+  assert.equal(nearResult.display, 'モン');
+
+  // Different row: カ行 (コウ) vs M-row (メイ, ミョウ) -> wrong
+  const diffGuess = { onyomi: ['コウ'] };
+  const diffResult = matchOnyomi(diffGuess, TARGET);
+  assert.equal(diffResult.state, 'wrong');
+  assert.equal(diffResult.display, 'コウ');
+
+  // Both have no onyomi -> correct
+  assert.equal(matchOnyomi({ onyomi: [] }, { onyomi: [] }).state, 'correct');
+  // One has no onyomi -> wrong
+  assert.equal(matchOnyomi({ onyomi: [] }, TARGET).state, 'wrong');
 });
 
-test('radical and joyo are exact-only', () => {
-  const radical = (g, t) => feedback(g, t).find(c => c.id === 'radical');
-  const joyo = (g, t) => feedback(g, t).find(c => c.id === 'joyo');
-  assert.equal(radical(FIXTURE[1], TARGET).state, 'correct');
-  assert.equal(radical(FIXTURE[3], TARGET).state, 'wrong');
-  assert.equal(joyo(FIXTURE[2], TARGET).state, 'correct');
-  assert.equal(joyo(FIXTURE[3], TARGET).state, 'wrong');
+test('kunyomi matching: stem match, initial mora match, or wrong', () => {
+  // 赤 (あか, あか.い) vs 明 (あか.るい) -> shares stem 'あか'
+  const stemGuess = { kunyomi: ['あか', 'あか.い'] };
+  const stemResult = matchKunyomi(stemGuess, TARGET);
+  assert.equal(stemResult.state, 'correct');
+
+  // Initial mora match: 雨 (あめ) vs 明 (あか.るい) -> both start with 'あ'
+  const moraGuess = { kunyomi: ['あめ'] };
+  const moraResult = matchKunyomi(moraGuess, TARGET);
+  assert.equal(moraResult.state, 'near');
+  assert.equal(moraResult.display, 'あめ');
+
+  // Different initial: 山 (やま) vs 明 (あか.るい) -> wrong
+  const diffGuess = { kunyomi: ['やま'] };
+  const diffResult = matchKunyomi(diffGuess, TARGET);
+  assert.equal(diffResult.state, 'wrong');
+
+  // Both have no kunyomi (on-only kanji) -> correct
+  assert.equal(matchKunyomi({ kunyomi: [] }, { kunyomi: [] }).state, 'correct');
+  assert.equal(matchKunyomi({ kunyomi: [] }, { kunyomi: [] }).display, '—');
+});
+
+test('origin matching: exact type match or wrong', () => {
+  // 鳴 (会意) vs 明 (会意) -> correct
+  const match = matchOrigin(FIXTURE[3], TARGET);
+  assert.equal(match.state, 'correct');
+  assert.equal(match.display, '会意');
+
+  // 暗 (形声) vs 明 (会意) -> wrong
+  const diff = matchOrigin(FIXTURE[1], TARGET);
+  assert.equal(diff.state, 'wrong');
+  assert.equal(diff.display, '形声');
+});
+
+test('getGojuonRow accurately classifies Hiragana and Katakana consonants', () => {
+  assert.equal(getGojuonRow('サ'), 'S');
+  assert.equal(getGojuonRow('し'), 'S');
+  assert.equal(getGojuonRow('ガ'), 'K');
+  assert.equal(getGojuonRow('か'), 'K');
+  assert.equal(getGojuonRow('ポ'), 'H');
+  assert.equal(getGojuonRow('は'), 'H');
+  assert.equal(getGojuonRow('マ'), 'M');
+  assert.equal(getGojuonRow('あ'), 'A');
 });
 
 test('isWin is an exact character match', () => {
@@ -88,12 +193,19 @@ test('isWin is an exact character match', () => {
   assert.equal(isWin(FIXTURE[1], TARGET), false);
 });
 
-test('dailyTarget is stable within a day and varies across days', () => {
+test('dailyTarget is stable within a day and varies across days and modes', () => {
   const day = new Date('2026-09-12T08:00:00');
   const same = new Date('2026-09-12T23:00:00');
+
+  // Daily Advanced
   const a = dailyTarget(FIXTURE, day);
   const b = dailyTarget(FIXTURE, same);
   assert.equal(a.kanji, b.kanji);
+
+  // Daily Standard with JLPT option
+  const stdN4 = dailyTarget(FIXTURE, day, { jlpt: 4 });
+  assert.ok(stdN4);
+  assert.equal(stdN4.jlpt, 4);
 
   const picks = new Set();
   for (let d = 1; d <= 31; d += 1) {
@@ -114,131 +226,87 @@ test('cellToEmoji maps feedback states to emojis', () => {
   assert.equal(cellToEmoji('correct'), '🟩');
   assert.equal(cellToEmoji('higher'), '🟨');
   assert.equal(cellToEmoji('lower'), '🟨');
+  assert.equal(cellToEmoji('near'), '🟨');
   assert.equal(cellToEmoji('wrong'), '⬜');
   assert.equal(cellToEmoji('unknown'), '⬜');
 });
 
-test('guessToEmojiRow converts 7 columns of feedback into a 7-emoji string', () => {
+test('guessToEmojiRow converts 6 columns of feedback into a 6-emoji string', () => {
   const rowTarget = guessToEmojiRow(TARGET, TARGET);
-  assert.equal(rowTarget, '🟩🟩🟩🟩🟩🟩🟩');
+  assert.equal(rowTarget, '🟩🟩🟩🟩🟩🟩');
 
-  // FIXTURE[1] against TARGET:
+  // FIXTURE[1] (暗) against TARGET (明):
   // kanji: 暗 vs 明 -> wrong (⬜)
   // strokes: 13 vs 8 -> lower (🟨)
   // radical: 72 vs 72 -> correct (🟩)
-  // kanken: 8 (rank 3) vs 9 (rank 2) -> lower (🟨)
-  // jlpt: 3 vs 4 -> higher (🟨)
-  // stage: null vs 2 -> wrong (⬜)
-  // joyo: true vs true -> correct (🟩)
+  // onyomi: アン vs メイ,ミョウ -> wrong (⬜)
+  // kunyomi: くら.い vs あか.るい -> wrong (⬜)
+  // origin: 形声 vs 会意 -> wrong (⬜)
   const rowFixture = guessToEmojiRow(FIXTURE[1], TARGET);
-  assert.equal(rowFixture, '⬜🟨🟩🟨🟨⬜🟩');
+  assert.equal(rowFixture, '⬜🟨🟩⬜⬜⬜');
 });
 
-test('generateEmojiGrid creates multi-line emoji grid', () => {
+test('generateEmojiGrid creates multi-line 6-column emoji grid', () => {
   const grid = generateEmojiGrid([FIXTURE[1], TARGET], TARGET);
   const lines = grid.split('\n');
   assert.equal(lines.length, 2);
-  assert.equal(lines[0], '⬜🟨🟩🟨🟨⬜🟩');
-  assert.equal(lines[1], '🟩🟩🟩🟩🟩🟩🟩');
+  assert.equal(lines[0], '⬜🟨🟩⬜⬜⬜');
+  assert.equal(lines[1], '🟩🟩🟩🟩🟩🟩');
 });
 
-test('formatWordleShare builds correct daily winning share message', () => {
-  const text = formatWordleShare({
+test('formatWordleShare builds correct daily and practice share messages', () => {
+  const textStd = formatWordleShare({
     date: '2026-09-13',
     won: true,
     guesses: [FIXTURE[1], TARGET],
     target: TARGET,
     streak: 5,
     maxGuesses: 6,
-    mode: 'daily',
+    mode: 'daily-standard',
+    jlpt: 4,
     url: 'https://daijoubu-jp.github.io/games/kanji-wordle.html',
   });
 
-  assert.ok(text.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) 2026-09-13'));
-  assert.ok(text.includes('2/6 · สตรีค 5 วัน'));
-  assert.ok(text.includes('⬜🟨🟩🟨🟨⬜🟩\n🟩🟩🟩🟩🟩🟩🟩'));
-  assert.ok(text.endsWith('https://daijoubu-jp.github.io/games/kanji-wordle.html'));
-});
+  assert.ok(textStd.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) (Daily N4) 2026-09-13'));
+  assert.ok(textStd.includes('2/6 · สตรีค 5 วัน'));
+  assert.ok(textStd.includes('⬜🟨🟩⬜⬜⬜\n🟩🟩🟩🟩🟩🟩'));
+  assert.ok(textStd.endsWith('https://daijoubu-jp.github.io/games/kanji-wordle.html'));
 
-test('formatWordleShare builds correct daily lost share message', () => {
-  const text = formatWordleShare({
+  const textAdv = formatWordleShare({
     date: '2026-09-13',
-    won: false,
-    guesses: [FIXTURE[1], FIXTURE[2], FIXTURE[3]],
-    target: TARGET,
-    streak: 0,
-    maxGuesses: 6,
-    mode: 'daily',
-  });
-
-  assert.ok(text.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) 2026-09-13'));
-  assert.ok(text.includes('X/6 · สตรีค 0 วัน'));
-  assert.ok(text.includes('https://daijoubu-jp.github.io/games/kanji-wordle.html'));
-});
-
-test('formatWordleShare handles practice mode and empty guesses gracefully', () => {
-  const practiceWin = formatWordleShare({
     won: true,
     guesses: [TARGET],
     target: TARGET,
-    mode: 'practice',
-  });
-  assert.ok(practiceWin.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) ฝึกฝน'));
-  assert.ok(practiceWin.includes('ชนะใน 1 ครั้ง'));
-
-  const emptyShare = formatWordleShare();
-  assert.ok(emptyShare.includes('คันจิเวิร์ดเดิล (漢字・WORDLE)'));
-  assert.ok(emptyShare.includes('X/6'));
-
-  // When returning to daily after reload where guesses are empty, guessCount fallback prevents 0/6
-  const reloadShare = formatWordleShare({
-    date: '2026-09-13',
-    won: true,
-    guesses: [],
-    guessCount: 4,
-    target: TARGET,
-    streak: 3,
+    streak: 2,
     maxGuesses: 6,
-    mode: 'daily',
+    mode: 'daily-advanced',
   });
-  assert.ok(reloadShare.includes('4/6 · สตรีค 3 วัน'));
-  assert.ok(!reloadShare.includes('0/6'));
-
-  const practiceGiveUp = formatWordleShare({
-    won: false,
-    guesses: [],
-    target: TARGET,
-    mode: 'practice',
-  });
-  assert.ok(practiceGiveUp.includes('หมดโอกาส'));
+  assert.ok(textAdv.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) (Daily Advanced) 2026-09-13'));
+  assert.ok(textAdv.includes('1/6 · สตรีค 2 วัน'));
 });
 
-test('feedback clue discrimination: distinctive match excludes baseline joyo column', () => {
-  // TARGET is 明 (strokes: 8, radical: 72, kanken: '9', jlpt: 4, grade: 2, joyo: true)
-  // Non-matching Joyo kanji: 木 (strokes: 4, radical: 75, kanken: '10', jlpt: 5, grade: 1, joyo: true)
+test('feedback clue discrimination: distinctive match excludes leading kanji column', () => {
+  // Non-matching guess: 木 (strokes: 4, radical: 75, onyomi: ['モク'], kunyomi: ['き'], origin: '象形')
   const nonMatch = {
-    kanji: '木', strokes: 4, radical: 75, radicalChar: '木',
-    kanken: '10', jlpt: 5, grade: 1, joyo: true,
+    kanji: '木',
+    strokes: 4,
+    radical: 75,
+    radicalChar: '木',
+    onyomi: ['モク'],
+    kunyomi: ['き'],
+    origin_type: '象形',
   };
   const cellsNonMatch = feedback(nonMatch, TARGET);
-  // Without joyo/kanji filtering, joyo column would match and be 'correct'
-  const joyoCell = cellsNonMatch.find(c => c.id === 'joyo');
-  assert.equal(joyoCell.state, 'correct');
-
-  // Distinctive match must be false because no real clue (strokes, radical, kanken, jlpt, stage) matched
+  // No clue matched TARGET (which has 8 strokes, radical 72, on: メイ/ミョウ, kun: あかるい, origin: 会意)
   const hasDistinctiveMatch = cellsNonMatch.some(
-    c => c.id !== 'joyo' && c.id !== 'kanji' && c.state === 'correct'
+    (c) => c.id !== 'kanji' && c.state === 'correct'
   );
   assert.equal(hasDistinctiveMatch, false);
 
   // Partial match: 日 (shares radical 72)
-  const radicalMatch = {
-    kanji: '日', strokes: 4, radical: 72, radicalChar: '日',
-    kanken: '10', jlpt: 5, grade: 1, joyo: true,
-  };
-  const cellsRadicalMatch = feedback(radicalMatch, TARGET);
+  const cellsRadicalMatch = feedback(FIXTURE[2], TARGET);
   const hasRadicalClue = cellsRadicalMatch.some(
-    c => c.id !== 'joyo' && c.id !== 'kanji' && c.state === 'correct'
+    (c) => c.id !== 'kanji' && c.state === 'correct'
   );
   assert.equal(hasRadicalClue, true);
 });

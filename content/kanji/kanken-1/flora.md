@@ -2837,7 +2837,7 @@ count: 381
 - meanings_ja: ロウ
 - meanings_th: ต้นพลู
 - meanings_en: betel palm tree
-- strokes: 14
+- strokes: 13
 - kanken: 1
 - radical: 75 (木)
 

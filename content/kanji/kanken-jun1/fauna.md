@@ -551,7 +551,7 @@ count: 99
 - meanings_ja: むしばむ
 - meanings_th: คราส, การซ่อนเร้น, มีข้อบกพร่อง
 - meanings_en: eclipse, occultation, be defective
-- strokes: 15
+- strokes: 14
 - kanken: jun1
 - radical: 142 (虫)
 

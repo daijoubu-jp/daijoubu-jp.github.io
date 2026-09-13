@@ -707,7 +707,7 @@ count: 158
 - meanings_ja: くらい, くらます, つごもり
 - meanings_th: มืด, หายไป
 - meanings_en: dark, disappear
-- strokes: 11
+- strokes: 10
 - kanken: jun1
 - radical: 72 (日)
 
@@ -907,7 +907,7 @@ count: 158
 - meanings_ja: かき
 - meanings_th: รั้ว, ราวบันได, สิ่งที่แนบมา
 - meanings_en: fence, railing, enclosure
-- strokes: 12
+- strokes: 11
 - kanken: jun1
 - radical: 32 (土)
 
@@ -1236,7 +1236,7 @@ count: 158
 - meanings_ja: ねる
 - meanings_th: ปรับแต่งโลหะ, นวดไฟ
 - meanings_en: refine metals, kneading over fire
-- strokes: 13
+- strokes: 12
 - kanken: jun1
 - radical: 86 (火)
 
@@ -1431,7 +1431,7 @@ count: 158
 - meanings_ja: さざなみ
 - meanings_th: ระลอกคลื่น
 - meanings_en: ripples
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 85 (水)
 
@@ -2044,7 +2044,7 @@ count: 158
 - meanings_ja: かなづち, つち
 - meanings_th: ค้อน
 - meanings_en: hammer, mallet
-- strokes: 18
+- strokes: 17
 - kanken: jun1
 - radical: 167 (金)
 
@@ -2087,7 +2087,7 @@ count: 158
 - meanings_ja: せまる, そう, みぎわ
 - meanings_th: ฝั่ง, ขอบ, หมิ่น
 - meanings_en: shore, brink, verge
-- strokes: 19
+- strokes: 20
 - kanken: jun1
 - radical: 85 (水)
 
@@ -2102,7 +2102,7 @@ count: 158
 - meanings_ja: とろ
 - meanings_th: น้ำบริสุทธิ์, น้ำใส, สระน้ำในแม่น้ำ
 - meanings_en: pure water, clear water, pool in a river
-- strokes: 19
+- strokes: 17
 - kanken: jun1
 - radical: 85 (水)
 
@@ -2115,7 +2115,7 @@ count: 158
 - meanings_ja: たまる, みずたまり
 - meanings_th: สระว่ายน้ำ, แอ่งน้ำ
 - meanings_en: pool, puddle
-- strokes: 19
+- strokes: 18
 - kanken: jun1
 - radical: 85 (水)
 
@@ -2221,7 +2221,7 @@ count: 158
 - meanings_ja: なだ, はやせ
 - meanings_th: ทะเลเปิด
 - meanings_en: open sea
-- strokes: 22
+- strokes: 21
 - kanken: jun1
 - radical: 85 (水)
 
@@ -2235,7 +2235,7 @@ count: 158
 - meanings_ja: やり
 - meanings_th: หอก, (โคคุจิ)
 - meanings_en: spear, javelin, (kokuji)
-- strokes: 22
+- strokes: 21
 - kanken: jun1
 - radical: 167 (金)
 

@@ -143,7 +143,7 @@
     <section class="hero-section game-hero">
       <div class="container">
         <h1 class="hero-title">คันจิเวิร์ดเดิล <br><span class="game-hero-jp">(漢字・WORDLE)</span></h1>
-        <p class="hero-subtitle">ทายคันจิเป้าหมายจากเบาะแส 6 ด้าน ภายใน 6 ครั้ง</p>
+        <p class="hero-subtitle">ทายคันจิเป้าหมายจากเบาะแส 5 ด้าน ภายใน 6 ครั้ง</p>
       </div>
     </section>
 
@@ -152,10 +152,30 @@
       <!-- Start screen -->
       <section id="kwl-start" class="game-screen">
         <div class="kwl-modes">
-          <button type="button" id="kwl-daily" class="action-btn kwl-daily-btn">📅 เล่นประจำวัน (Daily)</button>
-          <p id="kwl-streak" class="kwl-streak"></p>
-          <h2 class="game-heading kwl-practice-title">หรือฝึกเล่นตามระดับ</h2>
-          <div id="kwl-bands" class="band-chips"></div>
+          <div class="game-mode-tabs" role="tablist">
+            <button type="button" id="kwl-tab-daily" class="band-chip is-active" role="tab" aria-selected="true">📅 เล่นประจำวัน (Daily)</button>
+            <button type="button" id="kwl-tab-practice" class="band-chip" role="tab" aria-selected="false">🎯 ฝึกซ้อมไม่จำกัด (Practice)</button>
+          </div>
+
+          <!-- Daily Panel -->
+          <div id="kwl-panel-daily" class="kwl-panel">
+            <div class="kwl-submode-box">
+              <button type="button" id="kwl-daily-adv-btn" class="action-btn kwl-adv-btn">🌟 ประจำวัน - ขั้นสูง (Advanced: โจโยทั้งหมด)</button>
+              <h2 class="game-heading kwl-practice-title">หรือประจำวัน - มาตรฐาน (เลือกตามระดับ JLPT)</h2>
+              <div id="kwl-daily-bands" class="band-chips"></div>
+            </div>
+            <p id="kwl-streak" class="kwl-streak"></p>
+          </div>
+
+          <!-- Practice Panel -->
+          <div id="kwl-panel-practice" class="kwl-panel" hidden>
+            <div class="kwl-submode-box">
+              <button type="button" id="kwl-practice-adv-btn" class="action-btn kwl-adv-btn">🌟 ฝึกซ้อม - ขั้นสูง (Advanced: โจโยทั้งหมด)</button>
+              <h2 class="game-heading kwl-practice-title">หรือฝึกซ้อม - มาตรฐาน (เลือกตามระดับ JLPT)</h2>
+              <div id="kwl-practice-bands" class="band-chips"></div>
+            </div>
+            <p id="kwl-practice-best" class="kwl-streak"></p>
+          </div>
         </div>
       </section>
 
@@ -184,7 +204,7 @@
 
         <div id="kwl-grid" class="kwl-grid"></div>
 
-        <p class="kwl-legend">🟩 ตรง · 🟨 ลูกศรบอกทิศทางของคำตอบ (▲ มากกว่า / ▼ น้อยกว่า) · ⬜ ไม่ตรง</p>
+        <p class="kwl-legend">🟩 ตรง · 🟨 ลูกศรขีด (▲ มากกว่า / ▼ น้อยกว่า) หรือเสียงวรรคเดียวกัน · ⬜ ไม่ตรง</p>
         <p id="kwl-message" class="kwl-message" aria-live="assertive"></p>
 
         <div class="game-actions">

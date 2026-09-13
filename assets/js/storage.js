@@ -300,13 +300,19 @@ const EMPTY_WORDLE_STATS = Object.freeze({
   lastResult: null,
 });
 
+function getWordleStorageKey(modeKey = '') {
+  return modeKey ? `${KEYS.WORDLE}-${modeKey}` : KEYS.WORDLE;
+}
+
 /**
  * Returns the Kanji Wordle stats, filling in missing keys.
+ * @param {string} [modeKey=''] - Optional mode key (e.g. 'advanced', 'n5')
  * @returns {{ currentStreak: number, maxStreak: number, played: number, won: number,
  *            distribution: number[], lastDate: string|null, lastResult: object|null }}
  */
-export function getWordleStats() {
-  return { ...EMPTY_WORDLE_STATS, ...readJSON(KEYS.WORDLE, {}) };
+export function getWordleStats(modeKey = '') {
+  const key = getWordleStorageKey(modeKey);
+  return { ...EMPTY_WORDLE_STATS, ...readJSON(key, {}) };
 }
 
 /**
@@ -327,11 +333,12 @@ export function isConsecutiveDay(prevDateStr, curDateStr) {
 /**
  * Records one daily result. Idempotent per date: saving twice for the same
  * date leaves the stats unchanged.
- * @param {{ date: string, won: boolean, guesses: number }} result
+ * @param {{ date: string, won: boolean, guesses: number, modeKey?: string }} result
  * @returns {object} the updated stats
  */
-export function saveWordleResult({ date, won, guesses }) {
-  const stats = getWordleStats();
+export function saveWordleResult({ date, won, guesses, modeKey = '' }) {
+  const key = getWordleStorageKey(modeKey);
+  const stats = getWordleStats(modeKey);
   if (stats.lastDate === date) return stats;
 
   stats.played += 1;
@@ -352,7 +359,7 @@ export function saveWordleResult({ date, won, guesses }) {
   stats.lastDate = date;
   stats.lastResult = { won, guesses };
 
-  writeJSON(KEYS.WORDLE, stats);
+  writeJSON(key, stats);
   return stats;
 }
 

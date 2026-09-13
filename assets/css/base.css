@@ -120,6 +120,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html[data-mode="dark"] {
+  color-scheme: dark;
+}
+
+html[data-mode="light"] {
+  color-scheme: light;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-base);

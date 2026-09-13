@@ -913,7 +913,7 @@ count: 313
 - meanings_ja: ぶと, ぶゆ, ぶよ
 - meanings_th: ริ้น, ยุง
 - meanings_en: gnat, mosquito
-- strokes: 13
+- strokes: 14
 - kanken: 1
 - radical: 142 (虫)
 
@@ -978,7 +978,7 @@ count: 313
 - meanings_ja: すぐれる
 - meanings_th: เก่ง
 - meanings_en: excel
-- strokes: 13
+- strokes: 12
 - kanken: 1
 - radical: 172 (隹)
 
@@ -1577,7 +1577,7 @@ count: 313
 - meanings_ja: からす
 - meanings_th: อีกา, กา
 - meanings_en: crow, raven
-- strokes: 15
+- strokes: 16
 - kanken: 1
 - radical: 196 (鳥)
 
@@ -2366,7 +2366,7 @@ count: 313
 - meanings_ja: さそり
 - meanings_th: แมงป่องชนิดหนึ่ง
 - meanings_en: kind of scorpion
-- strokes: 18
+- strokes: 19
 - kanken: 1
 - radical: 142 (虫)
 
@@ -2858,7 +2858,7 @@ count: 313
 - meanings_ja: はえ, はや, わかさぎ
 - meanings_th: kanken ระดับ 1 คันจิ
 - meanings_en: Kanken Level 1 kanji
-- strokes: 19
+- strokes: 20
 - kanken: 1
 - radical: 195 (魚)
 
@@ -3645,7 +3645,7 @@ count: 313
 - meanings_ja: まだらうま
 - meanings_th: kanken ระดับ 1 คันจิ
 - meanings_en: Kanken Level 1 kanji
-- strokes: 23
+- strokes: 22
 - kanken: 1
 - radical: 187 (馬)
 

@@ -2469,7 +2469,7 @@
   {
     "kanji": "辻",
     "codepoint": "8FBB",
-    "strokes": 6,
+    "strokes": 5,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -2686,7 +2686,7 @@
   {
     "kanji": "兎",
     "codepoint": "514E",
-    "strokes": 7,
+    "strokes": 8,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -4040,7 +4040,7 @@
   {
     "kanji": "辿",
     "codepoint": "8FBF",
-    "strokes": 7,
+    "strokes": 6,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -4074,7 +4074,7 @@
   {
     "kanji": "迂",
     "codepoint": "8FC2",
-    "strokes": 7,
+    "strokes": 6,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -4108,7 +4108,7 @@
   {
     "kanji": "迄",
     "codepoint": "8FC4",
-    "strokes": 7,
+    "strokes": 6,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -5731,7 +5731,7 @@
   {
     "kanji": "祁",
     "codepoint": "7941",
-    "strokes": 8,
+    "strokes": 7,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -7894,7 +7894,7 @@
   {
     "kanji": "祇",
     "codepoint": "7947",
-    "strokes": 9,
+    "strokes": 8,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -8000,7 +8000,7 @@
   {
     "kanji": "穿",
     "codepoint": "7A7F",
-    "strokes": 9,
+    "strokes": 10,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -8570,7 +8570,7 @@
   {
     "kanji": "迦",
     "codepoint": "8FE6",
-    "strokes": 9,
+    "strokes": 8,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -8811,7 +8811,7 @@
   {
     "kanji": "倦",
     "codepoint": "5026",
-    "strokes": 10,
+    "strokes": 11,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -9239,7 +9239,7 @@
   {
     "kanji": "娩",
     "codepoint": "5A29",
-    "strokes": 10,
+    "strokes": 11,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -10863,7 +10863,7 @@
   {
     "kanji": "笈",
     "codepoint": "7B08",
-    "strokes": 10,
+    "strokes": 9,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -12717,7 +12717,7 @@
   {
     "kanji": "晦",
     "codepoint": "6666",
-    "strokes": 11,
+    "strokes": 10,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -14556,7 +14556,7 @@
   {
     "kanji": "逗",
     "codepoint": "9017",
-    "strokes": 11,
+    "strokes": 10,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -14589,7 +14589,7 @@
   {
     "kanji": "這",
     "codepoint": "9019",
-    "strokes": 11,
+    "strokes": 10,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -14630,7 +14630,7 @@
   {
     "kanji": "逢",
     "codepoint": "9022",
-    "strokes": 11,
+    "strokes": 10,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -15103,7 +15103,7 @@
   {
     "kanji": "堵",
     "codepoint": "5835",
-    "strokes": 12,
+    "strokes": 11,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -17025,7 +17025,7 @@
   {
     "kanji": "菟",
     "codepoint": "83DF",
-    "strokes": 12,
+    "strokes": 11,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -18372,7 +18372,7 @@
   {
     "kanji": "搔",
     "codepoint": "6414",
-    "strokes": 13,
+    "strokes": 12,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -18886,7 +18886,7 @@
   {
     "kanji": "煉",
     "codepoint": "7149",
-    "strokes": 13,
+    "strokes": 12,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -19447,7 +19447,7 @@
   {
     "kanji": "稗",
     "codepoint": "7A17",
-    "strokes": 13,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -20216,7 +20216,7 @@
   {
     "kanji": "逼",
     "codepoint": "903C",
-    "strokes": 13,
+    "strokes": 12,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -20254,7 +20254,7 @@
   {
     "kanji": "遁",
     "codepoint": "9041",
-    "strokes": 13,
+    "strokes": 12,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -20691,7 +20691,7 @@
   {
     "kanji": "厩",
     "codepoint": "53A9",
-    "strokes": 14,
+    "strokes": 12,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -21066,7 +21066,7 @@
   {
     "kanji": "廐",
     "codepoint": "5ED0",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -21293,7 +21293,7 @@
   {
     "kanji": "榊",
     "codepoint": "698A",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -21397,7 +21397,7 @@
   {
     "kanji": "槌",
     "codepoint": "69CC",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -21612,7 +21612,7 @@
   {
     "kanji": "漣",
     "codepoint": "6F23",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -22385,7 +22385,7 @@
   {
     "kanji": "腿",
     "codepoint": "817F",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -22461,7 +22461,7 @@
   {
     "kanji": "蓬",
     "codepoint": "84EC",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -23174,7 +23174,7 @@
   {
     "kanji": "飴",
     "codepoint": "98F4",
-    "strokes": 14,
+    "strokes": 13,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -23500,7 +23500,7 @@
   {
     "kanji": "噌",
     "codepoint": "564C",
-    "strokes": 15,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -23535,7 +23535,7 @@
   {
     "kanji": "噓",
     "codepoint": "5653",
-    "strokes": 15,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -24157,7 +24157,7 @@
   {
     "kanji": "樋",
     "codepoint": "6A0B",
-    "strokes": 15,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -24262,7 +24262,7 @@
   {
     "kanji": "歎",
     "codepoint": "6B4E",
-    "strokes": 15,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -25113,7 +25113,7 @@
   {
     "kanji": "蝕",
     "codepoint": "8755",
-    "strokes": 15,
+    "strokes": 14,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -28764,7 +28764,7 @@
   {
     "kanji": "甑",
     "codepoint": "7511",
-    "strokes": 17,
+    "strokes": 16,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -29290,7 +29290,7 @@
   {
     "kanji": "薯",
     "codepoint": "85AF",
-    "strokes": 17,
+    "strokes": 16,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -29906,7 +29906,7 @@
   {
     "kanji": "儲",
     "codepoint": "5132",
-    "strokes": 18,
+    "strokes": 17,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -30315,7 +30315,7 @@
   {
     "kanji": "襖",
     "codepoint": "8956",
-    "strokes": 18,
+    "strokes": 17,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -30557,7 +30557,7 @@
   {
     "kanji": "鎚",
     "codepoint": "939A",
-    "strokes": 18,
+    "strokes": 17,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -30962,7 +30962,7 @@
   {
     "kanji": "櫛",
     "codepoint": "6ADB",
-    "strokes": 19,
+    "strokes": 17,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -30996,7 +30996,7 @@
   {
     "kanji": "瀕",
     "codepoint": "7015",
-    "strokes": 19,
+    "strokes": 20,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31036,7 +31036,7 @@
   {
     "kanji": "瀞",
     "codepoint": "701E",
-    "strokes": 19,
+    "strokes": 17,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31072,7 +31072,7 @@
   {
     "kanji": "瀦",
     "codepoint": "7026",
-    "strokes": 19,
+    "strokes": 18,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31144,7 +31144,7 @@
   {
     "kanji": "禰",
     "codepoint": "79B0",
-    "strokes": 19,
+    "strokes": 18,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31181,7 +31181,7 @@
   {
     "kanji": "禱",
     "codepoint": "79B1",
-    "strokes": 19,
+    "strokes": 18,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31296,7 +31296,7 @@
   {
     "kanji": "繡",
     "codepoint": "7E61",
-    "strokes": 19,
+    "strokes": 18,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -31377,7 +31377,7 @@
   {
     "kanji": "藷",
     "codepoint": "85F7",
-    "strokes": 19,
+    "strokes": 18,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -32864,7 +32864,7 @@
   {
     "kanji": "灘",
     "codepoint": "7058",
-    "strokes": 22,
+    "strokes": 21,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",
@@ -33049,7 +33049,7 @@
   {
     "kanji": "鑓",
     "codepoint": "9453",
-    "strokes": 22,
+    "strokes": 21,
     "grade": null,
     "jlpt": null,
     "kanken": "jun1",

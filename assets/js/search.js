@@ -505,10 +505,10 @@ function mulberry32(a) {
  * @param {Date} [date]
  * @returns {object|null}
  */
-export function getDailyKanjiFromIndex(data, date = new Date()) {
+export function getDailyKanjiFromIndex(data, date = new Date(), salt = '') {
   if (!data || !data.length) return null;
 
-  const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}${salt}`;
   const seed = hashDateString(dateStr);
   const rng = mulberry32(seed);
 

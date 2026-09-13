@@ -1436,7 +1436,7 @@ count: 451
 - meanings_ja: はらい, はらう
 - meanings_th: ไล่ผี
 - meanings_en: exorcise
-- strokes: 10
+- strokes: 9
 - kanken: 1
 - radical: 113 (示)
 
@@ -1616,7 +1616,7 @@ count: 451
 - meanings_ja: すすむ, のぼらせる, のぼる
 - meanings_th: ปีนขึ้นไป, เพิ่มขึ้น
 - meanings_en: climb, rise
-- strokes: 10
+- strokes: 11
 - kanken: 1
 - radical: 170 (阜)
 
@@ -1850,7 +1850,7 @@ count: 451
 - meanings_ja: うむ
 - meanings_th: ให้ความเคารพ, เหนื่อยมากขึ้น
 - meanings_en: be respectful, grow tired
-- strokes: 11
+- strokes: 12
 - kanken: 1
 - radical: 61 (心)
 
@@ -1915,7 +1915,7 @@ count: 451
 - meanings_ja: いぶかしい, いぶかる
 - meanings_th: สงสัย
 - meanings_en: doubt
-- strokes: 11
+- strokes: 12
 - kanken: 1
 - radical: 149 (言)
 
@@ -3771,7 +3771,7 @@ count: 451
 - meanings_ja: へつらう
 - meanings_th: ประจบ
 - meanings_en: flatter
-- strokes: 15
+- strokes: 16
 - kanken: 1
 - radical: 149 (言)
 
@@ -4353,7 +4353,7 @@ count: 451
 - meanings_ja: みち
 - meanings_th: ตก, ไปรอบๆ
 - meanings_en: fall, go around
-- strokes: 16
+- strokes: 15
 - kanken: 1
 - radical: 170 (阜)
 
@@ -4768,7 +4768,7 @@ count: 451
 - meanings_ja: くさめ, くしゃみ, はなひる
 - meanings_th: จาม
 - meanings_en: sneeze
-- strokes: 18
+- strokes: 17
 - kanken: 1
 - radical: 30 (口)
 

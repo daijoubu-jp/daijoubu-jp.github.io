@@ -862,7 +862,7 @@ count: 460
 - meanings_ja: あわせる, ならぶ
 - meanings_th: รวม
 - meanings_en: combine
-- strokes: 8
+- strokes: 6
 - kanken: 1
 - radical: 51 (干)
 
@@ -2415,7 +2415,7 @@ count: 460
 - meanings_ja: こだま, やまびこ
 - meanings_th: จิตวิญญาณของต้นไม้
 - meanings_en: tree spirit
-- strokes: 11
+- strokes: 12
 - kanken: 1
 - radical: 150 (谷)
 
@@ -2532,7 +2532,7 @@ count: 460
 - meanings_ja: さく, ほふる
 - meanings_th: เชือด, คนขายเนื้อ, ฆ่า
 - meanings_en: slaughter, butcher, slay
-- strokes: 12
+- strokes: 11
 - kanken: 1
 - radical: 44 (尸)
 
@@ -3510,7 +3510,7 @@ count: 460
 - meanings_ja: えやみ, といし
 - meanings_th: หินลับมีด, บด, เหลา
 - meanings_en: whetstone, grind, sharpen, whet, encourage
-- strokes: 14
+- strokes: 15
 - kanken: 1
 - radical: 27 (厂)
 
@@ -4574,7 +4574,7 @@ count: 460
 - meanings_ja: あか
 - meanings_th: สีแดงเข้ม
 - meanings_en: deep red
-- strokes: 16
+- strokes: 15
 - kanken: 1
 - radical: 155 (赤)
 
@@ -4678,7 +4678,7 @@ count: 460
 - meanings_ja: こなもち
 - meanings_th: ข้าวปั้นเหนียว
 - meanings_en: sticky rice ball
-- strokes: 16
+- strokes: 12
 - kanken: 1
 - radical: 199 (麥)
 
@@ -4769,7 +4769,7 @@ count: 460
 - meanings_ja: ゆみがた
 - meanings_th: ห้องนิรภัย (แห่งท้องฟ้า), โดม
 - meanings_en: vault (of sky), dome
-- strokes: 17
+- strokes: 16
 - kanken: 1
 - radical: 116 (穴)
 
@@ -5507,7 +5507,7 @@ count: 460
 - meanings_ja: けがす, はずかし（める, はなぢ, はずかしめる
 - meanings_th: ละเลง, ใส่ร้าย, ทำให้เป็นมลทิน
 - meanings_en: smear, slander, defile
-- strokes: 20
+- strokes: 21
 - kanken: 1
 - radical: 143 (血)
 
@@ -5533,7 +5533,7 @@ count: 460
 - meanings_ja: おさめる, かくす
 - meanings_th: สีส้ม, ซ่อน, ปกปิด
 - meanings_en: an orange color, hide, conceal
-- strokes: 20
+- strokes: 19
 - kanken: 1
 - radical: 178 (韋)
 
@@ -5936,7 +5936,7 @@ count: 460
 - meanings_ja: たたかう, たたかい
 - meanings_th: การต่อสู้, ต่อสู้, แข่งขัน
 - meanings_en: struggle, fight, compete, contend
-- strokes: 25
+- strokes: 24
 - kanken: 1
 - radical: 191 (鬥)
 

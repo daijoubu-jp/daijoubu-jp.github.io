@@ -407,6 +407,7 @@ def compile_kanji():
 SEARCH_INDEX_FIELDS = (
     "kanji", "grade", "jlpt", "kanken", "strokes", "radical", "radicalChar",
     "joyo", "onyomi", "kunyomi", "jinmei", "onyomi_hyougai", "kunyomi_hyougai",
+    "origin_type",
 )
 SEARCH_INDEX_MEANING_LIMIT = 2
 
@@ -421,9 +422,30 @@ def compile_search_index():
     with open(master_path, "r", encoding="utf-8") as f:
         master = json.load(f)
 
+    # Load Joyo origins classification reference if present
+    joyo_origins_path = os.path.join(DATA_DIR, "joyo-origins.min.json")
+    joyo_origins = {}
+    if os.path.exists(joyo_origins_path):
+        try:
+            with open(joyo_origins_path, "r", encoding="utf-8") as jf:
+                joyo_origins = json.load(jf)
+        except Exception as e:
+            print(f"⚠️ Warning loading joyo-origins.min.json: {e}")
+
     index = []
     for entry in master:
         item = {field: entry[field] for field in SEARCH_INDEX_FIELDS if field in entry}
+        
+        # Normalize or populate origin_type
+        if "origin_type" in item:
+            ot = item["origin_type"]
+            for prefix in ("象形", "指事", "会意", "形声"):
+                if prefix in ot:
+                    item["origin_type"] = prefix
+                    break
+        elif entry.get("kanji") in joyo_origins:
+            item["origin_type"] = joyo_origins[entry["kanji"]].get("short", "形声")
+
         for field in ("meanings_ja", "meanings_th", "meanings_en"):
             item[field] = (entry.get(field) or [])[:SEARCH_INDEX_MEANING_LIMIT]
         for field in ("onyomi_hyougai", "kunyomi_hyougai"):

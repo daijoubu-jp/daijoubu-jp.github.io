@@ -831,7 +831,7 @@ count: 336
 - meanings_ja: うつくしい
 - meanings_th: สวยงาม
 - meanings_en: beautiful
-- strokes: 9
+- strokes: 8
 - kanken: 1
 - radical: 38 (女)
 
@@ -1975,7 +1975,7 @@ count: 336
 - meanings_ja: あによめ
 - meanings_th: ภรรยาของพี่ชาย
 - meanings_en: elder brother's wife
-- strokes: 12
+- strokes: 13
 - kanken: 1
 - radical: 38 (女)
 
@@ -2586,7 +2586,7 @@ count: 336
 - meanings_ja: せんにん, やまびと
 - meanings_th: ฤาษี
 - meanings_en: hermit
-- strokes: 14
+- strokes: 13
 - kanken: 1
 - radical: 9 (人)
 
@@ -2920,7 +2920,7 @@ count: 336
 - meanings_ja: すぐれる
 - meanings_th: ความเป็นเลิศ, คนที่มีความสามารถ
 - meanings_en: excellence, talented person
-- strokes: 15
+- strokes: 14
 - kanken: 1
 - radical: 9 (人)
 
@@ -3164,7 +3164,7 @@ count: 336
 - meanings_ja: おごる, なぞらえる
 - meanings_th: แย่งชิงอย่างโอ้อวด
 - meanings_en: boastfully usurp
-- strokes: 16
+- strokes: 14
 - kanken: 1
 - radical: 9 (人)
 
@@ -3343,7 +3343,7 @@ count: 336
 - meanings_ja: あご, おとがい, やしなう
 - meanings_th: คาง, กราม
 - meanings_en: chin, jaw
-- strokes: 16
+- strokes: 15
 - kanken: 1
 - radical: 181 (頁)
 
@@ -3822,7 +3822,7 @@ count: 336
 - meanings_ja: ひこばえ, わきばら, わざわい
 - meanings_th: ชั่วร้าย, บุตรชายของนางสนม, ผี
 - meanings_en: evil, son of concubine, ghost
-- strokes: 19
+- strokes: 20
 - kanken: 1
 - radical: 39 (子)
 
@@ -4350,7 +4350,7 @@ count: 336
 - meanings_ja: ひきつる
 - meanings_th: kanken ระดับ 1 คันจิ
 - meanings_en: Kanken Level 1 kanji
-- strokes: 28
+- strokes: 30
 - kanken: 1
 - radical: 104 (疒)
 

@@ -517,7 +517,7 @@ count: 74
 - meanings_ja: あきる, あぐむ
 - meanings_th: หมดความสนใจใน, ยางของ
 - meanings_en: lose interest in, tire of
-- strokes: 10
+- strokes: 11
 - kanken: jun1
 - radical: 9 (人)
 
@@ -560,7 +560,7 @@ count: 74
 - meanings_ja: うむ
 - meanings_th: หมี (เด็ก)
 - meanings_en: bear (children)
-- strokes: 10
+- strokes: 11
 - kanken: jun1
 - radical: 38 (女)
 
@@ -769,7 +769,7 @@ count: 74
 - meanings_ja: もも
 - meanings_th: ต้นขา, กระดูกโคนขา
 - meanings_en: thigh, femur
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 130 (肉)
 
@@ -984,7 +984,7 @@ count: 74
 - meanings_ja: そえ, たくわえる, もうけ
 - meanings_th: มีกำไร, ให้ผลกำไร
 - meanings_en: be profitable, yield profit
-- strokes: 18
+- strokes: 17
 - kanken: jun1
 - radical: 9 (人)
 

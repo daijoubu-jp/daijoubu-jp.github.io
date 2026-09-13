@@ -770,7 +770,7 @@ count: 203
 - meanings_ja: おい
 - meanings_th: ตู้หนังสือกระเป๋าเป้สะพายหลัง
 - meanings_en: backpack bookcase
-- strokes: 10
+- strokes: 9
 - kanken: jun1
 - radical: 118 (竹)
 
@@ -1344,7 +1344,7 @@ count: 203
 - meanings_ja: うさぎ
 - meanings_th: dodder (พืช)
 - meanings_en: dodder (plant)
-- strokes: 12
+- strokes: 11
 - kanken: jun1
 - radical: 140 (艸)
 
@@ -1658,7 +1658,7 @@ count: 203
 - meanings_ja: こまかい, ひえ
 - meanings_th: ถ่อมตัว, หญ้า Deccan
 - meanings_en: humble, deccan grass
-- strokes: 13
+- strokes: 14
 - kanken: jun1
 - radical: 115 (禾)
 
@@ -1845,7 +1845,7 @@ count: 203
 - meanings_ja: さかき
 - meanings_th: ต้นไม้ชินโตศักดิ์สิทธิ์, (โคคุจิ)
 - meanings_en: sacred Shinto tree, (kokuji)
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 75 (木)
 
@@ -1890,7 +1890,7 @@ count: 203
 - meanings_ja: うつ, つち
 - meanings_th: ค้อน
 - meanings_en: hammer, mallet
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 75 (木)
 
@@ -1993,7 +1993,7 @@ count: 203
 - meanings_ja: よもぎ
 - meanings_th: บรัช, ไม้วอร์มวูด, โกฐจุฬาลัมพา
 - meanings_en: sagebrush, wormwood, mugwort
-- strokes: 14
+- strokes: 13
 - kanken: jun1
 - radical: 140 (艸)
 
@@ -2109,7 +2109,7 @@ count: 203
 - meanings_ja: とい, ）, ひ
 - meanings_th: ท่อน้ำ, รางน้ำ
 - meanings_en: water pipe, gutter, downspout, conduit
-- strokes: 15
+- strokes: 14
 - kanken: jun1
 - radical: 75 (木)
 
@@ -2704,7 +2704,7 @@ count: 203
 - meanings_ja: いも
 - meanings_th: มันฝรั่ง
 - meanings_en: potato
-- strokes: 17
+- strokes: 16
 - kanken: jun1
 - radical: 140 (艸)
 
@@ -2803,7 +2803,7 @@ count: 203
 - meanings_ja: くし, くしけずる
 - meanings_th: หวี
 - meanings_en: comb
-- strokes: 19
+- strokes: 17
 - kanken: jun1
 - radical: 75 (木)
 
@@ -2846,7 +2846,7 @@ count: 203
 - meanings_ja: いも, さとうきび
 - meanings_th: มันฝรั่ง
 - meanings_en: potato
-- strokes: 19
+- strokes: 18
 - kanken: jun1
 - radical: 140 (艸)
 
