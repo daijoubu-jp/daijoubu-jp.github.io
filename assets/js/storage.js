@@ -23,6 +23,7 @@ const KEYS = Object.freeze({
   DAILY:    'kanji-daily',
   SETTINGS: 'kanji-settings',
   GAMES:    'kanji-games',
+  WORDLE:   'kanji-wordle',
 });
 
 const MAX_RECENT_SEARCHES = 10;
@@ -285,6 +286,55 @@ export function saveGameResult(gameId, bandId, score) {
   stats[gameId] = { ...(stats[gameId] || {}), [bandId]: updated };
   writeJSON(KEYS.GAMES, stats);
   return updated;
+}
+
+// ─── Kanji Wordle Stats ─────────────────────────────────────────────────────
+
+const EMPTY_WORDLE_STATS = Object.freeze({
+  currentStreak: 0,
+  maxStreak: 0,
+  played: 0,
+  won: 0,
+  distribution: [0, 0, 0, 0, 0, 0],
+  lastDate: null,
+  lastResult: null,
+});
+
+/**
+ * Returns the Kanji Wordle stats, filling in missing keys.
+ * @returns {{ currentStreak: number, maxStreak: number, played: number, won: number,
+ *            distribution: number[], lastDate: string|null, lastResult: object|null }}
+ */
+export function getWordleStats() {
+  return { ...EMPTY_WORDLE_STATS, ...readJSON(KEYS.WORDLE, {}) };
+}
+
+/**
+ * Records one daily result. Idempotent per date: saving twice for the same
+ * date leaves the stats unchanged.
+ * @param {{ date: string, won: boolean, guesses: number }} result
+ * @returns {object} the updated stats
+ */
+export function saveWordleResult({ date, won, guesses }) {
+  const stats = getWordleStats();
+  if (stats.lastDate === date) return stats;
+
+  stats.played += 1;
+  if (won) {
+    stats.won += 1;
+    stats.currentStreak += 1;
+    if (guesses >= 1 && guesses <= stats.distribution.length) {
+      stats.distribution[guesses - 1] += 1;
+    }
+  } else {
+    stats.currentStreak = 0;
+  }
+  stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
+  stats.lastDate = date;
+  stats.lastResult = { won, guesses };
+
+  writeJSON(KEYS.WORDLE, stats);
+  return stats;
 }
 
 // ─── Cross-Browser Clipboard Helper ──────────────────────────────────────────
