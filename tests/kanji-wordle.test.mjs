@@ -12,6 +12,11 @@ import {
   kankenRank,
   stageRank,
   dailyTarget,
+  ALL_JOYO_BAND,
+  cellToEmoji,
+  guessToEmojiRow,
+  generateEmojiGrid,
+  formatWordleShare,
 } from '../assets/js/games/kanji-wordle-core.js';
 
 const TARGET = {
@@ -95,4 +100,115 @@ test('dailyTarget is stable within a day and varies across days', () => {
     picks.add(dailyTarget(FIXTURE, new Date(2026, 8, d)).kanji);
   }
   assert.ok(picks.size > 1, 'daily target should vary across the month');
+});
+
+test('ALL_JOYO_BAND matches joyo characters only', () => {
+  assert.equal(ALL_JOYO_BAND.id, 'all-joyo');
+  assert.equal(ALL_JOYO_BAND.label, 'รวมคันจิโจโยทั้งหมด');
+  assert.equal(ALL_JOYO_BAND.match({ joyo: true }), true);
+  assert.equal(ALL_JOYO_BAND.match({ joyo: false }), false);
+  assert.equal(ALL_JOYO_BAND.match({ joyo: null }), false);
+});
+
+test('cellToEmoji maps feedback states to emojis', () => {
+  assert.equal(cellToEmoji('correct'), '🟩');
+  assert.equal(cellToEmoji('higher'), '🟨');
+  assert.equal(cellToEmoji('lower'), '🟨');
+  assert.equal(cellToEmoji('wrong'), '⬜');
+  assert.equal(cellToEmoji('unknown'), '⬜');
+});
+
+test('guessToEmojiRow converts 7 columns of feedback into a 7-emoji string', () => {
+  const rowTarget = guessToEmojiRow(TARGET, TARGET);
+  assert.equal(rowTarget, '🟩🟩🟩🟩🟩🟩🟩');
+
+  // FIXTURE[1] against TARGET:
+  // kanji: 暗 vs 明 -> wrong (⬜)
+  // strokes: 13 vs 8 -> lower (🟨)
+  // radical: 72 vs 72 -> correct (🟩)
+  // kanken: 8 (rank 3) vs 9 (rank 2) -> lower (🟨)
+  // jlpt: 3 vs 4 -> higher (🟨)
+  // stage: null vs 2 -> wrong (⬜)
+  // joyo: true vs true -> correct (🟩)
+  const rowFixture = guessToEmojiRow(FIXTURE[1], TARGET);
+  assert.equal(rowFixture, '⬜🟨🟩🟨🟨⬜🟩');
+});
+
+test('generateEmojiGrid creates multi-line emoji grid', () => {
+  const grid = generateEmojiGrid([FIXTURE[1], TARGET], TARGET);
+  const lines = grid.split('\n');
+  assert.equal(lines.length, 2);
+  assert.equal(lines[0], '⬜🟨🟩🟨🟨⬜🟩');
+  assert.equal(lines[1], '🟩🟩🟩🟩🟩🟩🟩');
+});
+
+test('formatWordleShare builds correct daily winning share message', () => {
+  const text = formatWordleShare({
+    date: '2026-09-13',
+    won: true,
+    guesses: [FIXTURE[1], TARGET],
+    target: TARGET,
+    streak: 5,
+    maxGuesses: 6,
+    mode: 'daily',
+    url: 'https://daijoubu-jp.github.io/games/kanji-wordle.html',
+  });
+
+  assert.ok(text.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) 2026-09-13'));
+  assert.ok(text.includes('2/6 · สตรีค 5 วัน'));
+  assert.ok(text.includes('⬜🟨🟩🟨🟨⬜🟩\n🟩🟩🟩🟩🟩🟩🟩'));
+  assert.ok(text.endsWith('https://daijoubu-jp.github.io/games/kanji-wordle.html'));
+});
+
+test('formatWordleShare builds correct daily lost share message', () => {
+  const text = formatWordleShare({
+    date: '2026-09-13',
+    won: false,
+    guesses: [FIXTURE[1], FIXTURE[2], FIXTURE[3]],
+    target: TARGET,
+    streak: 0,
+    maxGuesses: 6,
+    mode: 'daily',
+  });
+
+  assert.ok(text.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) 2026-09-13'));
+  assert.ok(text.includes('X/6 · สตรีค 0 วัน'));
+  assert.ok(text.includes('https://daijoubu-jp.github.io/games/kanji-wordle.html'));
+});
+
+test('formatWordleShare handles practice mode and empty guesses gracefully', () => {
+  const practiceWin = formatWordleShare({
+    won: true,
+    guesses: [TARGET],
+    target: TARGET,
+    mode: 'practice',
+  });
+  assert.ok(practiceWin.includes('คันจิเวิร์ดเดิล (漢字・WORDLE) ฝึกฝน'));
+  assert.ok(practiceWin.includes('ชนะใน 1 ครั้ง'));
+
+  const emptyShare = formatWordleShare();
+  assert.ok(emptyShare.includes('คันจิเวิร์ดเดิล (漢字・WORDLE)'));
+  assert.ok(emptyShare.includes('X/6'));
+
+  // When returning to daily after reload where guesses are empty, guessCount fallback prevents 0/6
+  const reloadShare = formatWordleShare({
+    date: '2026-09-13',
+    won: true,
+    guesses: [],
+    guessCount: 4,
+    target: TARGET,
+    streak: 3,
+    maxGuesses: 6,
+    mode: 'daily',
+  });
+  assert.ok(reloadShare.includes('4/6 · สตรีค 3 วัน'));
+  assert.ok(!reloadShare.includes('0/6'));
+
+  const practiceGiveUp = formatWordleShare({
+    won: false,
+    guesses: [],
+    target: TARGET,
+    mode: 'practice',
+  });
+  assert.ok(practiceGiveUp.includes('หมดโอกาส'));
 });

@@ -6,12 +6,12 @@
  * trace boxes, and readings.
  */
 
-import { loadKanjiData, searchKanji } from './search.js';
+import { loadSearchIndex, searchKanjiIndex } from './search.js';
 
 let cachedKanji = null;
 
 export async function initWorksheetPage() {
-  cachedKanji = await loadKanjiData();
+  cachedKanji = await loadSearchIndex();
 
   const presetSelect = document.getElementById('ws-preset-select');
   const customInput = document.getElementById('ws-custom-input');
@@ -108,8 +108,8 @@ function setupKanjiPicker(customInput) {
       resultsContainer.innerHTML = '<span style="font-size: 0.8rem; color: var(--color-text-muted); padding: 6px;">พิมพ์คำค้นหาเพื่อเริ่มค้นหาคันจิ...</span>';
       return;
     }
-    debounce = setTimeout(async () => {
-      const matches = await searchKanji(q, { limit: 24 });
+    debounce = setTimeout(() => {
+      const matches = searchKanjiIndex(cachedKanji || [], q, { limit: 24 });
       if (!matches || !matches.length) {
         resultsContainer.innerHTML = '<span style="font-size: 0.8rem; color: var(--color-text-muted); padding: 6px;">ไม่พบคันจิที่ตรงกับคำค้นหา</span>';
         return;

@@ -40,3 +40,26 @@ test('time attack page has the scoreboard HUD layout', () => {
   assert.match(page, /class="game-stat-label">เหลือเวลา/);
   assert.match(page, /id="ta-timer"[^>]*role="progressbar"/);
 });
+
+test('all four game result screens feature a dictionary bridge action and target link', () => {
+  const games = [
+    { file: '../games/kanji-wordle.html', targetId: 'kwl-target-link', dictId: 'kwl-dict-btn' },
+    { file: '../games/time-attack.html', targetId: 'ta-target-link', dictId: 'ta-dict-btn' },
+    { file: '../games/quick-compound.html', targetId: 'qc-target-link', dictId: 'qc-dict-btn' },
+    { file: '../games/kanji-in-kanji.html', targetId: 'kik-target-link', dictId: 'kik-dict-btn' },
+  ];
+
+  for (const game of games) {
+    const pageHtml = readFileSync(fileURLToPath(new URL(game.file, import.meta.url)), 'utf8');
+    assert.match(pageHtml, new RegExp(`id="${game.targetId}"[^>]*target="_blank"[^>]*rel="noopener"`));
+    assert.match(pageHtml, new RegExp(`id="${game.dictId}"[^>]*target="_blank"[^>]*rel="noopener"`));
+    assert.match(pageHtml, /ดูคันจินี้ในพจนานุกรม/);
+  }
+});
+
+test('kanji wordle page exposes share result button and toast notification', () => {
+  const pageHtml = readFileSync(fileURLToPath(new URL('../games/kanji-wordle.html', import.meta.url)), 'utf8');
+  assert.match(pageHtml, /id="kwl-share"/);
+  assert.match(pageHtml, /แชร์ผลลัพธ์/);
+  assert.match(pageHtml, /id="toast"[^>]*class="[^"]*toast-container/);
+});

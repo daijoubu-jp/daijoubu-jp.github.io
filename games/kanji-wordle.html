@@ -195,9 +195,11 @@
         <div class="game-result">
           <div class="game-result-icon" id="kwl-result-icon">🎉</div>
           <h2 class="game-heading" id="kwl-result-title">ชนะ!</h2>
-          <p class="game-result-score">คันจิเป้าหมาย: <strong id="kwl-target" lang="ja"></strong></p>
+          <p class="game-result-score game-result-target">คันจิเป้าหมาย: <a id="kwl-target-link" href="#" class="game-target-link" title="ดูคันจินี้ในพจนานุกรม" target="_blank" rel="noopener"><strong id="kwl-target" lang="ja"></strong></a></p>
           <p class="game-result-best" id="kwl-result-sub"></p>
           <div class="game-actions">
+            <button type="button" id="kwl-share" class="action-btn kwl-share-btn"><i class="fa-solid fa-share-nodes"></i> แชร์ผลลัพธ์</button>
+            <a id="kwl-dict-btn" href="#" class="action-btn" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> ดูคันจินี้ในพจนานุกรม</a>
             <button type="button" id="kwl-again" class="action-btn">เล่นอีกครั้ง</button>
             <button type="button" id="kwl-result-mode" class="action-btn">เปลี่ยนโหมด</button>
             <a href="index.html" class="action-btn">กลับหน้าเกม</a>
@@ -207,6 +209,12 @@
 
     </div>
   </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-container" role="status" aria-live="polite">
+    <span id="toast-icon">✓</span>
+    <span id="toast-message">คัดลอกผลลัพธ์ไปยังคลิปบอร์ดแล้ว!</span>
+  </div>
 
   <!-- Site Footer -->
   <footer class="site-footer">

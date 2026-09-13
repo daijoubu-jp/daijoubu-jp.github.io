@@ -175,6 +175,30 @@ export async function initTimeAttack() {
     finalEl.textContent = String(state.score);
     bestEl.textContent = String(saved.best);
     newBestEl.hidden = !isNewBest;
+
+    const targetWrap = document.getElementById('ta-target-wrap');
+    const targetEl = document.getElementById('ta-target');
+    const targetLink = document.getElementById('ta-target-link');
+    const dictBtn = document.getElementById('ta-dict-btn');
+
+    const currentQ = state.questions && state.questions.length > 0
+      ? state.questions[state.index % state.questions.length]
+      : null;
+    const target = currentQ?.kanji;
+    if (target) {
+      const dictUrl = `../browse/kanji.html?k=${encodeURIComponent(target)}`;
+      if (targetEl) targetEl.textContent = target;
+      if (targetLink) targetLink.href = dictUrl;
+      if (dictBtn) {
+        dictBtn.href = dictUrl;
+        dictBtn.hidden = false;
+      }
+      if (targetWrap) targetWrap.hidden = false;
+    } else {
+      if (targetWrap) targetWrap.hidden = true;
+      if (dictBtn) dictBtn.hidden = true;
+    }
+
     showScreen('result');
   }
 

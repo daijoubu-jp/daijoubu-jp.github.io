@@ -245,6 +245,43 @@
   color: var(--color-accent);
 }
 
+.game-result-target {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.game-result-target strong {
+  font-family: var(--font-display-jp);
+  font-size: 2.5rem;
+  color: var(--color-accent);
+}
+
+.game-target-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: transform var(--transition-fast), color var(--transition-fast), opacity var(--transition-fast);
+}
+
+.game-target-link:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+.action-btn.is-success {
+  border-color: #16a34a !important;
+  color: #16a34a !important;
+}
+
+[data-mode="dark"] .action-btn.is-success {
+  border-color: #22c55e !important;
+  color: #22c55e !important;
+}
+
 .game-result-best {
   color: var(--color-text-muted);
 }

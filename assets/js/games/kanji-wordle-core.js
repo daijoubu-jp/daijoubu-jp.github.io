@@ -158,3 +158,96 @@ export function isWin(guess, target) {
 export function dailyTarget(pool, date = new Date()) {
   return getDailyKanjiFromIndex(pool, date);
 }
+
+/**
+ * Band representing all Joyo kanji for practice mode.
+ */
+export const ALL_JOYO_BAND = Object.freeze({
+  id: 'all-joyo',
+  label: 'รวมคันจิโจโยทั้งหมด',
+  match: (entry) => Boolean(entry.joyo),
+});
+
+/**
+ * Convert a feedback cell state into an emoji.
+ * 🟩 for correct, 🟨 for higher/lower, ⬜ for wrong.
+ * @param {string} state
+ * @returns {string}
+ */
+export function cellToEmoji(state) {
+  if (state === 'correct') return '🟩';
+  if (state === 'higher' || state === 'lower') return '🟨';
+  return '⬜';
+}
+
+/**
+ * Generates an emoji row for one guess against the target.
+ * @param {object} guess
+ * @param {object} target
+ * @returns {string}
+ */
+export function guessToEmojiRow(guess, target) {
+  return feedback(guess, target).map((c) => cellToEmoji(c.state)).join('');
+}
+
+/**
+ * Generates the full emoji grid string for an array of guesses.
+ * @param {object[]} guesses
+ * @param {object} target
+ * @returns {string}
+ */
+export function generateEmojiGrid(guesses, target) {
+  if (!Array.isArray(guesses) || !target) return '';
+  return guesses.map((g) => guessToEmojiRow(g, target)).join('\n');
+}
+
+/**
+ * Formats the full shareable message text.
+ * @param {object} params
+ * @param {string} [params.date] - YYYY-MM-DD
+ * @param {boolean} params.won
+ * @param {object[]} [params.guesses]
+ * @param {number} [params.guessCount]
+ * @param {object} [params.target]
+ * @param {number} [params.streak]
+ * @param {number} [params.maxGuesses=6]
+ * @param {string} [params.mode='daily']
+ * @param {string} [params.url]
+ * @returns {string}
+ */
+export function formatWordleShare({
+  date = '',
+  won = false,
+  guesses = [],
+  guessCount = null,
+  target = null,
+  streak = 0,
+  maxGuesses = 6,
+  mode = 'daily',
+  url = 'https://daijoubu-jp.github.io/games/kanji-wordle.html',
+} = {}) {
+  const count = guessCount !== null ? guessCount : guesses.length;
+  const guessCountStr = won ? `${count}/${maxGuesses}` : `X/${maxGuesses}`;
+  const title = mode === 'daily'
+    ? `คันจิเวิร์ดเดิล (漢字・WORDLE) ${date}`.trim()
+    : 'คันจิเวิร์ดเดิล (漢字・WORDLE) ฝึกฝน';
+
+  const lines = [title];
+
+  if (mode === 'daily') {
+    lines.push(`${guessCountStr} · สตรีค ${streak} วัน`);
+  } else {
+    lines.push(won ? `ชนะใน ${count} ครั้ง` : 'หมดโอกาส');
+  }
+
+  const grid = generateEmojiGrid(guesses, target);
+  if (grid) {
+    lines.push('');
+    lines.push(grid);
+  }
+
+  lines.push('');
+  lines.push(url);
+
+  return lines.join('\n');
+}

@@ -5,10 +5,10 @@
  * kanji-wordle-core.js; this file wires them to the page.
  */
 
-import { COLUMNS, feedback, isWin, dailyTarget } from './kanji-wordle-core.js';
+import { COLUMNS, feedback, isWin, dailyTarget, ALL_JOYO_BAND, formatWordleShare } from './kanji-wordle-core.js';
 import { BANDS, filterPool } from './time-attack-core.js';
 import { loadSearchIndex, searchKanjiIndex } from '../search.js';
-import { getWordleStats, saveWordleResult, getGameResult, saveGameResult } from '../storage.js';
+import { getWordleStats, saveWordleResult, getGameResult, saveGameResult, copyToClipboard } from '../storage.js';
 
 const DAILY_MAX = 6;
 const PRACTICE_GAME_ID = 'kanji-wordle-practice';
@@ -38,6 +38,9 @@ export async function initKanjiWordle() {
   const resultTitle = document.getElementById('kwl-result-title');
   const resultSub = document.getElementById('kwl-result-sub');
   const targetEl = document.getElementById('kwl-target');
+  const targetLink = document.getElementById('kwl-target-link');
+  const dictBtn = document.getElementById('kwl-dict-btn');
+  const shareBtn = document.getElementById('kwl-share');
 
   let index = [];
   try {
@@ -46,9 +49,13 @@ export async function initKanjiWordle() {
     index = [];
   }
 
-  const bands = BANDS
-    .map((band) => ({ ...band, pool: filterPool(index, band.id) }))
-    .filter((band) => band.pool.length >= 4);
+  const allJoyoPool = index.filter(ALL_JOYO_BAND.match);
+  const bands = [
+    ...(allJoyoPool.length >= 4 ? [{ ...ALL_JOYO_BAND, pool: allJoyoPool }] : []),
+    ...BANDS
+      .map((band) => ({ ...band, pool: filterPool(index, band.id) }))
+      .filter((band) => band.pool.length >= 4),
+  ];
 
   const dailyPool = index.filter((entry) => entry.joyo);
   let state = null;
@@ -132,14 +139,39 @@ export async function initKanjiWordle() {
     }
   }
 
+  function updateTargetBridge(targetKanji) {
+    if (!targetKanji) return;
+    const dictUrl = `../browse/kanji.html?k=${encodeURIComponent(targetKanji)}`;
+    targetEl.textContent = targetKanji;
+    if (targetLink) targetLink.href = dictUrl;
+    if (dictBtn) dictBtn.href = dictUrl;
+  }
+
   function finish(won) {
     state.locked = true;
+    state.won = won;
     const guesses = state.guesses.length;
 
     if (state.mode === 'daily') {
       const stats = saveWordleResult({ date: todayString(), won, guesses });
       resultSub.textContent = `🔥 สตรีค ${stats.currentStreak} วัน · สูงสุด ${stats.maxStreak} · ชนะ ${stats.won}/${stats.played}`;
       againBtn.hidden = true;
+      try {
+        const shareText = formatWordleShare({
+          date: todayString(),
+          won,
+          guesses: state.guesses,
+          target: state.target,
+          streak: stats.currentStreak,
+          maxGuesses: DAILY_MAX,
+          mode: 'daily',
+        });
+        localStorage.setItem('kanji-wordle-last-share', JSON.stringify({
+          date: todayString(),
+          text: shareText,
+          guesses: state.guesses,
+        }));
+      } catch {}
     } else {
       let bestText = '';
       if (won) {
@@ -155,7 +187,7 @@ export async function initKanjiWordle() {
 
     resultIcon.textContent = won ? '🎉' : '😵';
     resultTitle.textContent = won ? `ชนะใน ${guesses} ครั้ง!` : 'หมดโอกาส!';
-    targetEl.textContent = state.target.kanji;
+    updateTargetBridge(state.target.kanji);
     showScreen('result');
   }
 
@@ -165,11 +197,26 @@ export async function initKanjiWordle() {
     const stats = getWordleStats();
 
     if (stats.lastDate === todayString()) {
-      state = { mode: 'daily', target, guesses: [], guessed: new Set(), locked: true };
+      let savedGuesses = [];
+      try {
+        const cached = JSON.parse(localStorage.getItem('kanji-wordle-last-share') || '{}');
+        if (cached.date === todayString() && Array.isArray(cached.guesses)) {
+          savedGuesses = cached.guesses;
+        }
+      } catch {}
+      state = {
+        mode: 'daily',
+        bandId: 'daily',
+        target,
+        guesses: savedGuesses,
+        guessed: new Set(savedGuesses.map((g) => g.kanji)),
+        locked: true,
+        won: Boolean(stats.lastResult?.won),
+      };
       resultIcon.textContent = stats.lastResult?.won ? '🎉' : '😵';
       resultTitle.textContent = 'เล่นวันนี้แล้ว';
       resultSub.textContent = `🔥 สตรีค ${stats.currentStreak} วัน · สูงสุด ${stats.maxStreak} · ชนะ ${stats.won}/${stats.played}`;
-      targetEl.textContent = target.kanji;
+      updateTargetBridge(target.kanji);
       againBtn.hidden = true;
       showScreen('result');
       return;
@@ -275,6 +322,90 @@ export async function initKanjiWordle() {
 
   document.getElementById('kwl-again')?.addEventListener('click', () => {
     if (state && state.mode === 'practice') startPractice(state.bandId);
+  });
+
+  function showShareFeedback(message, isError = false) {
+    if (shareBtn) {
+      const origHtml = shareBtn.innerHTML;
+      shareBtn.innerHTML = isError
+        ? '<i class="fa-solid fa-triangle-exclamation"></i> ไม่สามารถคัดลอกได้'
+        : '<i class="fa-solid fa-check"></i> คัดลอกแล้ว!';
+      if (!isError) shareBtn.classList.add('is-success');
+      setTimeout(() => {
+        shareBtn.innerHTML = origHtml;
+        shareBtn.classList.remove('is-success');
+      }, 2000);
+    }
+
+    const toast = document.getElementById('toast');
+    if (toast) {
+      const msgEl = document.getElementById('toast-message');
+      const iconEl = document.getElementById('toast-icon');
+      if (msgEl) msgEl.textContent = message;
+      if (iconEl) iconEl.textContent = isError ? '⚠️' : '✓';
+      toast.classList.add('show');
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  }
+
+  shareBtn?.addEventListener('click', async () => {
+    if (!state) return;
+    const stats = getWordleStats();
+    let shareText = '';
+
+    if (state.guesses && state.guesses.length > 0) {
+      const won = typeof state.won === 'boolean'
+        ? state.won
+        : isWin(state.guesses[state.guesses.length - 1], state.target);
+      shareText = formatWordleShare({
+        date: todayString(),
+        won,
+        guesses: state.guesses,
+        target: state.target,
+        streak: stats.currentStreak,
+        maxGuesses: DAILY_MAX,
+        mode: state.mode,
+      });
+    } else if (state.mode === 'daily') {
+      try {
+        const cached = JSON.parse(localStorage.getItem('kanji-wordle-last-share') || '{}');
+        if (cached.date === todayString() && cached.text) {
+          shareText = cached.text;
+        }
+      } catch {}
+      if (!shareText) {
+        shareText = formatWordleShare({
+          date: todayString(),
+          won: Boolean(stats.lastResult?.won),
+          guesses: [],
+          guessCount: stats.lastResult?.guesses,
+          target: state.target,
+          streak: stats.currentStreak,
+          maxGuesses: DAILY_MAX,
+          mode: 'daily',
+        });
+      }
+    } else if (state.mode === 'practice') {
+      shareText = formatWordleShare({
+        date: todayString(),
+        won: false,
+        guesses: [],
+        target: state.target,
+        mode: 'practice',
+      });
+    }
+
+    if (!shareText) return;
+
+    const ok = await copyToClipboard(shareText);
+    if (ok) {
+      showShareFeedback('คัดลอกผลลัพธ์ไปยังคลิปบอร์ดแล้ว!');
+    } else {
+      showShareFeedback('ไม่สามารถคัดลอกได้', true);
+    }
   });
 
   giveUpBtn?.addEventListener('click', () => {

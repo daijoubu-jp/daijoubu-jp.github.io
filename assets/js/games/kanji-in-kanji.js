@@ -194,6 +194,30 @@ export async function initKanjiInKanji() {
     finalEl.textContent = String(state.score);
     bestEl.textContent = String(saved.best);
     newBestEl.hidden = !isNewBest;
+
+    const targetWrap = document.getElementById('kik-target-wrap');
+    const targetEl = document.getElementById('kik-target');
+    const targetLink = document.getElementById('kik-target-link');
+    const dictBtn = document.getElementById('kik-dict-btn');
+
+    const currentPuzzle = state.puzzles && state.puzzles.length > 0
+      ? state.puzzles[state.index % state.puzzles.length]
+      : null;
+    const target = currentPuzzle?.kanji;
+    if (target) {
+      const dictUrl = `../browse/kanji.html?k=${encodeURIComponent(target)}`;
+      if (targetEl) targetEl.textContent = target;
+      if (targetLink) targetLink.href = dictUrl;
+      if (dictBtn) {
+        dictBtn.href = dictUrl;
+        dictBtn.hidden = false;
+      }
+      if (targetWrap) targetWrap.hidden = false;
+    } else {
+      if (targetWrap) targetWrap.hidden = true;
+      if (dictBtn) dictBtn.hidden = true;
+    }
+
     showScreen('result');
   }
 
