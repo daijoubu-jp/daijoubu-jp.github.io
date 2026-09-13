@@ -1,5 +1,6 @@
 # Temporary & Scratch files
 scratch/
+ref-screenshots/
 *.tmp
 *.bak
 

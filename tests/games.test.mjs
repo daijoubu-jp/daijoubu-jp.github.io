@@ -1,5 +1,5 @@
 /**
- * Guards the games hub: one live game plus the two planned placeholders.
+ * Guards the games hub: two live games plus two parked pending rule rework.
  */
 
 import { test } from 'node:test';
@@ -12,16 +12,16 @@ const html = readFileSync(
   'utf8'
 );
 
-test('games hub exposes all four live games', () => {
-  assert.equal((html.match(/class="hub-card"/g) || []).length, 4);
+test('games hub exposes two live games', () => {
+  assert.equal((html.match(/class="hub-card"/g) || []).length, 2);
   assert.match(html, /href="time-attack.html" class="hub-card"/);
-  assert.match(html, /href="kanji-in-kanji.html" class="hub-card"/);
-  assert.match(html, /href="quick-compound.html" class="hub-card"/);
   assert.match(html, /href="kanji-wordle.html" class="hub-card"/);
 });
 
-test('games hub lists no disabled placeholders', () => {
-  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 0);
+test('games hub parks Kanji in Kanji and Quick Compound pending rule rework', () => {
+  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 2);
+  assert.equal((html.match(/badge-coming-soon/g) || []).length, 2);
+  assert.match(html, /กำลังปรับปรุงกติกา/);
 });
 
 test('games hub titles are present', () => {
