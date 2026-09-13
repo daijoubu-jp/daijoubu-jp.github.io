@@ -9,6 +9,7 @@ import { BANDS, filterPool } from './time-attack-core.js';
 import { makePuzzles, isComplete } from './kanji-in-kanji-core.js';
 import { loadSearchIndex, loadKanjiComponents } from '../search.js';
 import { getGameResult, saveGameResult } from '../storage.js';
+import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
 
 const GAME_ID = 'kanji-in-kanji';
 const ROUND_SECONDS = 60;
@@ -23,6 +24,8 @@ export async function initKanjiInKanji() {
   const gameScreen = document.getElementById('kik-game');
   const resultScreen = document.getElementById('kik-result');
   if (!startScreen || !gameScreen || !resultScreen) return;
+
+  initSoundToggle();
 
   const bandsEl = document.getElementById('kik-bands');
   const tilesEl = document.getElementById('kik-tiles');
@@ -114,7 +117,10 @@ export async function initKanjiInKanji() {
         scoreEl.textContent = String(state.score);
         feedbackEl.textContent = 'ครบแล้ว!';
         feedbackEl.classList.add('is-complete');
+        playWin();
         window.setTimeout(nextPuzzle, COMPLETE_DELAY_MS);
+      } else {
+        playCorrect();
       }
       return;
     }
@@ -125,6 +131,7 @@ export async function initKanjiInKanji() {
     feedbackEl.textContent = 'ไม่ใช่ส่วนประกอบ';
     feedbackEl.classList.add('is-wrong');
     state.endAt -= WRONG_PENALTY_MS;
+    playWrong();
     window.setTimeout(() => {
       tile.classList.remove('wrong');
       if (!state) return;
@@ -194,6 +201,7 @@ export async function initKanjiInKanji() {
     finalEl.textContent = String(state.score);
     bestEl.textContent = String(saved.best);
     newBestEl.hidden = !isNewBest;
+    if (state.score > 0) playWin();
 
     const targetWrap = document.getElementById('kik-target-wrap');
     const targetEl = document.getElementById('kik-target');

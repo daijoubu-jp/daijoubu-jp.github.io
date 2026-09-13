@@ -9,6 +9,7 @@ import { COLUMNS, feedback, isWin, dailyTarget, ALL_JOYO_BAND, formatWordleShare
 import { BANDS, filterPool } from './time-attack-core.js';
 import { loadSearchIndex, searchKanjiIndex } from '../search.js';
 import { getWordleStats, saveWordleResult, getGameResult, saveGameResult, copyToClipboard } from '../storage.js';
+import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
 
 const DAILY_MAX = 6;
 const PRACTICE_GAME_ID = 'kanji-wordle-practice';
@@ -23,6 +24,8 @@ export async function initKanjiWordle() {
   const gameScreen = document.getElementById('kwl-game');
   const resultScreen = document.getElementById('kwl-result');
   if (!startScreen || !gameScreen || !resultScreen) return;
+
+  initSoundToggle();
 
   const bandsEl = document.getElementById('kwl-bands');
   const input = document.getElementById('kwl-guess-input');
@@ -131,11 +134,22 @@ export async function initKanjiWordle() {
     updateAttempts();
 
     if (isWin(entry, state.target)) {
+      playWin();
       finish(true);
       return;
     }
     if (state.mode === 'daily' && state.guesses.length >= DAILY_MAX) {
+      playWrong();
       finish(false);
+      return;
+    }
+
+    const cells = feedback(entry, state.target);
+    const hasMatch = cells.some((c) => c.state === 'correct');
+    if (hasMatch) {
+      playCorrect();
+    } else {
+      playWrong();
     }
   }
 
@@ -409,7 +423,10 @@ export async function initKanjiWordle() {
   });
 
   giveUpBtn?.addEventListener('click', () => {
-    if (state && state.mode === 'practice') finish(false);
+    if (state && state.mode === 'practice') {
+      playWrong();
+      finish(false);
+    }
   });
 
   renderBands();

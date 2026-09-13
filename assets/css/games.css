@@ -73,6 +73,42 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.game-hud-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.game-sound-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 4px 10px;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.game-sound-toggle:hover {
+  background: var(--color-surface-2);
+  border-color: var(--color-accent);
+}
+
+.game-sound-toggle:active {
+  transform: scale(0.95);
+}
+
+.game-sound-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .game-scoreboard {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -8,6 +8,7 @@
 import { BANDS, filterPool, makeQuestions, scoreResult } from './time-attack-core.js';
 import { loadSearchIndex } from '../search.js';
 import { getGameResult, saveGameResult } from '../storage.js';
+import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
 
 const GAME_ID = 'time-attack';
 const ROUND_SECONDS = 60;
@@ -20,6 +21,8 @@ export async function initTimeAttack() {
   const gameScreen = document.getElementById('ta-game');
   const resultScreen = document.getElementById('ta-result');
   if (!startScreen || !gameScreen || !resultScreen) return;
+
+  initSoundToggle();
 
   const bandsEl = document.getElementById('ta-bands');
   const optionsEl = document.getElementById('ta-options');
@@ -97,12 +100,14 @@ export async function initTimeAttack() {
     const isCorrect = chosen === question.correct;
 
     if (isCorrect) {
+      playCorrect();
       state.score += 1;
       scoreEl.textContent = String(state.score);
       clicked?.classList.add('correct');
       feedbackEl.textContent = 'ถูกต้อง!';
       feedbackEl.classList.add('is-correct');
     } else {
+      playWrong();
       clicked?.classList.add('wrong');
       optionsEl.querySelector('[data-correct="true"]')?.classList.add('correct');
       feedbackEl.textContent = `เฉลย: ${question.correct}`;
@@ -175,6 +180,7 @@ export async function initTimeAttack() {
     finalEl.textContent = String(state.score);
     bestEl.textContent = String(saved.best);
     newBestEl.hidden = !isNewBest;
+    if (state.score > 0) playWin();
 
     const targetWrap = document.getElementById('ta-target-wrap');
     const targetEl = document.getElementById('ta-target');

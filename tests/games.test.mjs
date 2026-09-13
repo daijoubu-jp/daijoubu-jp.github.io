@@ -63,3 +63,19 @@ test('kanji wordle page exposes share result button and toast notification', () 
   assert.match(pageHtml, /แชร์ผลลัพธ์/);
   assert.match(pageHtml, /id="toast"[^>]*class="[^"]*toast-container/);
 });
+
+test('all four game pages feature persistent sound toggle button in the HUD', () => {
+  const games = [
+    { file: '../games/kanji-wordle.html', toggleId: 'kwl-sound-toggle' },
+    { file: '../games/time-attack.html', toggleId: 'ta-sound-toggle' },
+    { file: '../games/quick-compound.html', toggleId: 'qc-sound-toggle' },
+    { file: '../games/kanji-in-kanji.html', toggleId: 'kik-sound-toggle' },
+  ];
+
+  for (const game of games) {
+    const pageHtml = readFileSync(fileURLToPath(new URL(game.file, import.meta.url)), 'utf8');
+    assert.match(pageHtml, new RegExp(`class="game-sound-toggle"[^>]*id="${game.toggleId}"`));
+    assert.match(pageHtml, /class="game-hud-header"/);
+  }
+});
+

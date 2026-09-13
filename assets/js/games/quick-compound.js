@@ -9,6 +9,7 @@ import { BANDS, filterPool } from './time-attack-core.js';
 import { makeRounds, isRoundComplete } from './quick-compound-core.js';
 import { loadSearchIndex, loadCompoundsData } from '../search.js';
 import { getGameResult, saveGameResult } from '../storage.js';
+import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
 
 const GAME_ID = 'quick-compound';
 const ROUND_SECONDS = 60;
@@ -24,6 +25,8 @@ export async function initQuickCompound() {
   const gameScreen = document.getElementById('qc-game');
   const resultScreen = document.getElementById('qc-result');
   if (!startScreen || !gameScreen || !resultScreen) return;
+
+  initSoundToggle();
 
   const bandsEl = document.getElementById('qc-bands');
   const wordsEl = document.getElementById('qc-words');
@@ -119,7 +122,10 @@ export async function initQuickCompound() {
         scoreEl.textContent = String(state.score);
         feedbackEl.textContent = 'ครบแล้ว!';
         feedbackEl.classList.add('is-complete');
+        playWin();
         window.setTimeout(nextRound, COMPLETE_DELAY_MS);
+      } else {
+        playCorrect();
       }
       return;
     }
@@ -129,6 +135,7 @@ export async function initQuickCompound() {
     feedbackEl.textContent = `คำนี้ไม่มีคันจิ ${round.kanji}`;
     feedbackEl.classList.add('is-wrong');
     state.endAt -= WRONG_PENALTY_MS;
+    playWrong();
     window.setTimeout(() => {
       btn.classList.remove('wrong');
       if (!state) return;
@@ -198,6 +205,7 @@ export async function initQuickCompound() {
     finalEl.textContent = String(state.score);
     bestEl.textContent = String(saved.best);
     newBestEl.hidden = !isNewBest;
+    if (state.score > 0) playWin();
 
     const targetWrap = document.getElementById('qc-target-wrap');
     const targetEl = document.getElementById('qc-target');
