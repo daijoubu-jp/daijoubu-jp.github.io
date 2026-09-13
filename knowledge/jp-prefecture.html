@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลจังหวัดญี่ปุ่น (都道府県) | Daijoubu JP</title>
+  <meta name="description" content="ข้อมูลรายละเอียดจังหวัดญี่ปุ่นทั้ง 47 จังหวัด (都道府県) ชื่อ คำอ่าน ที่มาของชื่อ เมืองหลวง ประชากร พื้นที่ สัญลักษณ์ประจำจังหวัด สถานที่ท่องเที่ยว และผลิตภัณฑ์ท้องถิ่น พร้อมลิงก์สู่คันจิในพจนานุกรม">
+  <meta name="keywords" content="จังหวัดญี่ปุ่น, ข้อมูลจังหวัดญี่ปุ่น, 都道府県, todofuken, ที่มาชื่อจังหวัดญี่ปุ่น, สัญลักษณ์จังหวัด, ฮกไกโด, โอซากะ, โตเกียว, โอกินาวะ, ภาษาญี่ปุ่น, คันจิ, Daijoubu JP">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="ข้อมูลจังหวัดญี่ปุ่น (都道府県) | Daijoubu JP">
+  <meta property="og:description" content="ข้อมูลรายจังหวัดของญี่ปุ่นทั้ง 47 จังหวัด พร้อมชื่อภาษาไทย คำอ่านฮิรางานะ ที่มาของชื่อ สัญลักษณ์ประจำจังหวัด และลิงก์สู่คันจิในพจนานุกรม">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://daijoubu-jp.github.io/knowledge/jp-prefecture.html">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/prefectures.css">
+
+  <!-- Inline Theme Initialization (Prevents FOUC) -->
+  <script>
+    (function() {
+      try {
+        var defaultTheme = 'spring';
+        var defaultMode = 'light';
+        var savedTheme = localStorage.getItem('kanji-theme') || localStorage.getItem('kanjithai_theme') || defaultTheme;
+        var savedMode = localStorage.getItem('kanji-theme-mode') || localStorage.getItem('kanjithai_mode') || defaultMode;
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-mode', savedMode);
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body data-page="prefecture-detail">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <button type="button" class="nav-menu-toggle-btn" id="nav-menu-toggle-btn" aria-label="เปิดเมนูหลัก" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <a href="../index.html" class="nav-brand">
+        <div class="nav-brand-logo">漢</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Daijoubu JP</span>
+          <span class="nav-brand-sub">พจนานุกรมคันจิครบเครื่อง</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html" class="nav-link" data-nav="home">หน้าแรก</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="dictionary" aria-expanded="false" aria-haspopup="true">พจนานุกรม</button>
+            <ul class="dropdown-menu">
+              <li><a href="../browse/index.html">คันจิ (漢字)</a></li>
+              <li class="nav-dropdown-submenu">
+                <a href="../browse/vocabulary.html">คำศัพท์ (語彙) <span>▸</span></a>
+                <ul class="dropdown-sub-menu">
+                  <li><a href="../browse/vocabulary.html">ทั้งหมด (All)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=yojijukugo">สุภาษิต 4 ตัวอักษร (四字熟語)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=animals">สัตว์ในคันจิ (動物)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=plants">พืช ดอกไม้ ผลไม้ (植物・花)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=countries">ชื่อประเทศในคันจิ (国名)</a></li>
+                  <li><a href="../browse/vocabulary.html?cat=anime-bleach">มังงะและอนิเมะ (アニメ)</a></li>
+                  <li><a href="../browse/special-readings.html">คำอ่านพิเศษ (付表)</a></li>
+                </ul>
+              </li>
+              <li><a href="../browse/radicals.html">ตารางหมวดอักษร (部首 214 ตัว)</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="knowledge" aria-expanded="false" aria-haspopup="true">คลังความรู้</button>
+            <ul class="dropdown-menu">
+              <li><a href="../knowledge/index.html">ภาพรวมคลังความรู้</a></li>
+              <li><a href="../knowledge/chinese-zodiacs.html">12 นักษัตรญี่ปุ่น (十二支)</a></li>
+              <li><a href="../knowledge/history.html">ประวัติศาสตร์คันจิ</a></li>
+              <li><a href="../knowledge/handwriting.html">มาตรฐานรูปแบบอักษรคันจิ</a></li>
+              <li><a href="../knowledge/kanken.html">การทดสอบคันจิ (漢検)</a></li>
+              <li><a href="../knowledge/radicals.html">เกี่ยวกับ Radicals (部首)</a></li>
+              <li><a href="../knowledge/jukugo.html">เกี่ยวกับ 熟語 (คำประสม)</a></li>
+            </ul>
+          </li>
+          <li><a href="../games/index.html" class="nav-link" data-nav="games">เกมคันจิ</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" data-nav="tools" aria-expanded="false" aria-haspopup="true">เครื่องมือ</button>
+            <ul class="dropdown-menu">
+              <li><a href="../tools/worksheet.html">ตัวสร้างใบงานคัดลายมือ</a></li>
+              <li><a href="../tools/index.html">เครื่องมือทั้งหมด</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html" class="nav-link" data-nav="about">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="mode-toggle-switch header-mode-switch" id="header-mode-switch" role="switch" aria-label="สลับโหมดสว่าง/โหมดมืด" tabindex="0" title="สลับโหมดสว่าง / โหมดมืด">
+          <span class="mode-switch-icon">☀️</span>
+          <span class="mode-switch-icon">🌙</span>
+          <span class="mode-switch-thumb"></span>
+        </div>
+        <div class="theme-switcher">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="เปลี่ยนธีม">
+            <span>🌸</span> <span class="theme-current-name">ฤดูใบไม้ผลิ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="hero-section" style="padding: 2.5rem 0 1.5rem;">
+      <div class="container" style="text-align: center;">
+        <h1 class="hero-title" style="font-size: clamp(1.85rem, 4vw, 2.75rem); margin-bottom: 0.5rem;">
+          ข้อมูลจังหวัดญี่ปุ่น <br>
+          <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--color-accent); font-weight: 600;">(都道府県 • Todōfuken)</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 820px; margin: 0 auto; font-size: var(--font-size-sm); color: var(--color-text-muted);">
+          ข้อมูลรายจังหวัดครบทั้ง 47 จังหวัด ชื่อ คำอ่าน ที่มาของชื่อ เมืองหลวง ประชากร พื้นที่ สัญลักษณ์ประจำจังหวัด สถานที่ท่องเที่ยว และผลิตภัณฑ์ท้องถิ่น พร้อมลิงก์เรียนคันจิจากชื่อจังหวัดในพจนานุกรม
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: var(--spacing-xl); max-width: 1080px;">
+      <div id="prefecture-detail-container" class="pref-detail-container" aria-live="polite">
+        <noscript>
+          <p class="pref-detail-noscript">กรุณาเปิดใช้งาน JavaScript เพื่อดูข้อมูลจังหวัด หรือกลับไปเลือกจังหวัดจาก <a href="jp-prefectures.html">หน้าแผนที่ 47 จังหวัด</a></p>
+        </noscript>
+      </div>
+
+      <div id="pref-detail-error" class="pref-detail-error-card" hidden>
+        <!-- Error / empty state, filled by assets/js/prefecture-detail.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        ข้อมูลคันจิอ้างอิงจาก Bunkachō 2010 Joyo Table & KANJIDIC2 & KanjiVG (CC BY-SA) | พัฒนาขึ้นเพื่อการศึกษาภาษาญี่ปุ่นในประเทศไทย โดย Daijoubu JP
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

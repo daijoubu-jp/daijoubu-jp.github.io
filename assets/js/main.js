@@ -70,6 +70,9 @@ async function startApp() {
   } else if (pageType === 'prefectures-map') {
     const { initPrefecturesMap } = await import('./prefectures-map.js');
     initPrefecturesMap();
+  } else if (pageType === 'prefecture-detail') {
+    const { initPrefectureDetail } = await import('./prefecture-detail.js');
+    initPrefectureDetail();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }

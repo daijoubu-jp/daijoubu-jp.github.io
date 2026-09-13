@@ -284,18 +284,432 @@
   color: var(--color-text-muted);
 }
 
+/* Detail Page (jp-prefecture.html) ----------------------------------------- */
+
+.pref-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.pref-detail-noscript {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--spacing-lg) 0;
+  margin: 0;
+}
+
+.pref-detail-noscript a {
+  color: var(--color-accent);
+}
+
+.pref-detail-back {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.pref-detail-back:hover,
+.pref-detail-back:focus-visible {
+  text-decoration: underline;
+}
+
+.pref-detail-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.pref-detail-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-md);
+}
+
+.pref-detail-card-title [lang="ja"] {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+/* Header card */
+
+.pref-detail-header {
+  text-align: center;
+}
+
+.pref-detail-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.pref-detail-name {
+  font-family: var(--font-display-jp);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.pref-detail-name-row .audio-btn {
+  font-size: 1.35rem;
+}
+
+.pref-detail-readings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--spacing-xs) var(--spacing-md);
+  margin: var(--spacing-xs) 0 0;
+}
+
+.pref-detail-hira {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+.pref-detail-romaji {
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+}
+
+.pref-detail-th {
+  font-family: var(--font-thai);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.pref-detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.pref-badge-region,
+.pref-badge-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  border: 1.5px solid var(--color-border);
+}
+
+.pref-badge-region {
+  background: var(--color-surface);
+  background: color-mix(in srgb, var(--region-fill) 22%, var(--color-surface));
+  border-color: var(--region-fill);
+  color: var(--color-text);
+}
+
+.pref-badge-code {
+  font-family: var(--font-thai);
+  color: var(--color-text-muted);
+  background: var(--color-surface-2);
+}
+
+/* Stats grid */
+
+.pref-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.pref-stat-item {
+  text-align: center;
+  padding: var(--spacing-sm);
+  background: var(--color-surface-2);
+  border-radius: var(--border-radius-md);
+}
+
+.pref-stat-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.pref-stat-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-family: var(--font-thai);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.pref-stat-value [lang="ja"] {
+  font-family: var(--font-display-jp);
+}
+
+.pref-stat-sub {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* Symbols (花/木/鳥) */
+
+.pref-symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.pref-symbol-card {
+  text-align: center;
+}
+
+.pref-symbol-kanji {
+  font-family: var(--font-display-jp);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.3;
+}
+
+.pref-symbol-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin: 2px 0 var(--spacing-sm);
+}
+
+.pref-symbol-value {
+  font-family: var(--font-display-jp);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Etymology */
+
+.pref-etymology-text {
+  margin: 0;
+  font-family: var(--font-thai);
+  font-size: var(--font-size-sm);
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+/* Places + Products lists */
+
+.pref-lists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.pref-place-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.pref-place-item {
+  padding: var(--spacing-sm);
+  background: var(--color-surface-2);
+  border-radius: var(--border-radius-md);
+}
+
+.pref-place-name {
+  display: block;
+  font-family: var(--font-display-jp);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.pref-place-th {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* Dictionary bridge */
+
+.pref-kanji-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.pref-kanji-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  font-family: var(--font-display-jp);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  transition: border-color var(--transition-fast),
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.pref-kanji-link:hover,
+.pref-kanji-link:focus-visible {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Prev/Next navigation */
+
+.pref-detail-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.pref-detail-nav [hidden] {
+  display: none;
+}
+
+.pref-nav-btn {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 48%;
+  padding: 10px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  transition: border-color var(--transition-fast),
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.pref-nav-btn:hover,
+.pref-nav-btn:focus-visible {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.pref-nav-prev {
+  align-items: flex-start;
+}
+
+.pref-nav-next {
+  align-items: flex-end;
+  margin-left: auto;
+  text-align: right;
+}
+
+.pref-nav-label {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-thai);
+  color: var(--color-text-muted);
+}
+
+.pref-nav-name-th {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  font-family: var(--font-thai);
+  color: var(--color-accent);
+}
+
+.pref-nav-name-ja {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-display-jp);
+  color: var(--color-text-muted);
+}
+
+/* Error / empty state card */
+
+.pref-detail-error-card {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.pref-detail-error-card[hidden] {
+  display: none;
+}
+
+.pref-detail-error-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.pref-detail-error-card h2 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pref-detail-error-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* Hidden TTS buttons (Web Speech API unavailable) */
+
+.pref-detail-container .audio-btn[hidden] {
+  display: none;
+}
+
 /* Reduced Motion ------------------------------------------------------------ */
 
 @media (prefers-reduced-motion: reduce) {
   .pref-map-svg path,
   .pref-legend-chip,
-  .pref-list-item {
+  .pref-list-item,
+  .pref-kanji-link,
+  .pref-nav-btn {
     transition: none;
   }
 
   .pref-legend-chip:hover,
   .pref-list-item:hover,
-  .pref-list-item:focus-visible {
+  .pref-list-item:focus-visible,
+  .pref-kanji-link:hover,
+  .pref-kanji-link:focus-visible,
+  .pref-nav-btn:hover,
+  .pref-nav-btn:focus-visible {
     transform: none;
   }
 }
@@ -314,5 +728,26 @@
 
   .pref-filter-label {
     text-align: center;
+  }
+
+  .pref-stats-grid,
+  .pref-symbols-grid,
+  .pref-lists-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pref-detail-card {
+    padding: var(--spacing-md);
+  }
+
+  .pref-detail-nav {
+    flex-direction: column;
+  }
+
+  .pref-nav-btn,
+  .pref-nav-next {
+    max-width: 100%;
+    align-items: flex-start;
+    text-align: left;
   }
 }
