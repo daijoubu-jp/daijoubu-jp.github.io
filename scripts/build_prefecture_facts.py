@@ -25,6 +25,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date
@@ -127,13 +128,18 @@ def fetch_sparql(query):
         try:
             with urllib.request.urlopen(request, timeout=120) as response:
                 return json.load(response)
-        except Exception as error:
+        except urllib.error.HTTPError as error:
+            if 400 <= error.code < 500 and error.code != 429:
+                print(f"❌ SPARQL request rejected (HTTP {error.code}); not retrying: {error}")
+                sys.exit(1)
             last_error = error
-            print(f"   ⚠️  SPARQL attempt {attempt + 1}/{FETCH_RETRIES} failed: {error}")
-            if attempt < FETCH_RETRIES - 1:
-                wait = RETRY_BACKOFF_S * (attempt + 1)
-                print(f"   ⏳ Retrying in {wait}s ...")
-                time.sleep(wait)
+        except (urllib.error.URLError, TimeoutError, OSError) as error:
+            last_error = error
+        print(f"   ⚠️  SPARQL attempt {attempt + 1}/{FETCH_RETRIES} failed: {last_error}")
+        if attempt < FETCH_RETRIES - 1:
+            wait = RETRY_BACKOFF_S * (attempt + 1)
+            print(f"   ⏳ Retrying in {wait}s ...")
+            time.sleep(wait)
     print(f"❌ SPARQL fetch failed after {FETCH_RETRIES} attempts: {last_error}")
     sys.exit(1)
 
@@ -243,7 +249,7 @@ def validate():
 
     required_fields = ["code", "slug", "name_ja", "name_hira", "name_romaji", "name_th",
                        "region", "capital", "capital_reading", "population",
-                       "area_km2", "flower", "tree", "bird", "etymology"]
+                       "population_year", "area_km2", "flower", "tree", "bird", "etymology"]
 
     for meta in PREFECTURES:
         code, slug, _, name_ja, _, _, _, _, _, _, _, _ = meta
