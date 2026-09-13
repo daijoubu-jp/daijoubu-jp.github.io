@@ -4,6 +4,8 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 
 import { createPromiseCache, romajiToHiragana, searchKanji, searchKanjiIndex, getDailyKanjiFromIndex, filterKanji } from '../assets/js/search.js';
 
@@ -138,3 +140,45 @@ test('searchKanjiIndex ranks exact Thai meaning above substring', () => {
   const r = searchKanjiIndex(THAI_EXACT_FIXTURE, 'รัก', { limit: 2 });
   assert.equal(r[0].kanji, '愛');
 });
+
+test('search-index minification: omits empty hyougai arrays and preserves non-empty ones', () => {
+  const raw = readFileSync(
+    fileURLToPath(new URL('../data/search-index.min.json', import.meta.url)),
+    'utf8'
+  );
+  const index = JSON.parse(raw);
+
+  let omittedCount = 0;
+  let presentCount = 0;
+
+  for (const item of index) {
+    if ('onyomi_hyougai' in item) {
+      assert.ok(Array.isArray(item.onyomi_hyougai), `${item.kanji} onyomi_hyougai must be array`);
+      assert.ok(item.onyomi_hyougai.length > 0, `${item.kanji} must omit empty onyomi_hyougai`);
+      presentCount += 1;
+    } else {
+      omittedCount += 1;
+    }
+
+    if ('kunyomi_hyougai' in item) {
+      assert.ok(Array.isArray(item.kunyomi_hyougai), `${item.kanji} kunyomi_hyougai must be array`);
+      assert.ok(item.kunyomi_hyougai.length > 0, `${item.kanji} must omit empty kunyomi_hyougai`);
+      presentCount += 1;
+    }
+  }
+
+  assert.ok(omittedCount > 1000, 'expected over 1000 omitted empty hyougai arrays');
+  assert.ok(presentCount > 500, 'expected valid present hyougai readings preserved');
+
+  // Verify search compatibility with and without hyougai fields
+  const yama = index.find(item => item.kanji === '山');
+  assert.ok(yama && yama.onyomi_hyougai && yama.onyomi_hyougai.includes('セン'));
+  const senResults = searchKanjiIndex(index, 'sen', { limit: 100 });
+  assert.ok(senResults.some(r => r.kanji === '山'), 'should match hyougai onyomi sen for 山');
+
+  const ichi = index.find(item => item.kanji === '一');
+  assert.equal(ichi.onyomi_hyougai, undefined, '一 should omit empty onyomi_hyougai');
+  const ichiResults = searchKanjiIndex(index, 'ichi', { limit: 50 });
+  assert.ok(ichiResults.some(r => r.kanji === '一'), 'should match joyo onyomi ichi for 一 without throwing');
+});
+
