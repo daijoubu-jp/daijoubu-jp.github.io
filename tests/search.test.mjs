@@ -173,7 +173,9 @@ test('search-index minification: omits empty hyougai arrays and preserves non-em
   // Verify search compatibility with and without hyougai fields
   const yama = index.find(item => item.kanji === '山');
   assert.ok(yama && yama.onyomi_hyougai && yama.onyomi_hyougai.includes('セン'));
-  const senResults = searchKanjiIndex(index, 'sen', { limit: 100 });
+  // In the full 5867-kanji index, 89 kanji have 'セン' as primary Joyo/Jinmeiyou onyomi (+150),
+  // ranking above hyougai onyomi matches (+120). Limit >= 100 is required (using 120 for margin).
+  const senResults = searchKanjiIndex(index, 'sen', { limit: 120 });
   assert.ok(senResults.some(r => r.kanji === '山'), 'should match hyougai onyomi sen for 山');
 
   const ichi = index.find(item => item.kanji === '一');

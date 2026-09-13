@@ -29,6 +29,8 @@ export function getAudioContext() {
       } catch {
         audioCtx = null;
       }
+    } else {
+      audioCtx = null;
     }
   }
   return audioCtx;
@@ -53,29 +55,28 @@ export function unlockAudio() {
 
   if (ctx.state === 'suspended' || ctx.state === 'interrupted') {
     ctx.resume().catch(() => {});
+    // Cross-browser iOS Safari unlocking: play silent 1-sample buffer on user gesture
+    try {
+      if (typeof ctx.createBuffer === 'function') {
+        const buffer = ctx.createBuffer(1, 1, 22050);
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+        source.connect(ctx.destination);
+        source.start(0);
+      }
+    } catch {}
   }
-
-  // Cross-browser iOS Safari unlocking: play silent 1-sample buffer on user gesture
-  try {
-    if (typeof ctx.createBuffer === 'function') {
-      const buffer = ctx.createBuffer(1, 1, 22050);
-      const source = ctx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(ctx.destination);
-      source.start(0);
-    }
-  } catch {}
 }
 
 // Auto-register unlock listener on first user gesture
 if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
   const unlock = () => {
     unlockAudio();
-    ['pointerdown', 'touchstart', 'keydown', 'click'].forEach((evt) => {
+    ['pointerdown', 'touchstart', 'touchend', 'keydown', 'click'].forEach((evt) => {
       window.removeEventListener(evt, unlock, { capture: true });
     });
   };
-  ['pointerdown', 'touchstart', 'keydown', 'click'].forEach((evt) => {
+  ['pointerdown', 'touchstart', 'touchend', 'keydown', 'click'].forEach((evt) => {
     window.addEventListener(evt, unlock, { capture: true, passive: true });
   });
 }
@@ -221,7 +222,7 @@ export function playWrong() {
   unlockAudio();
 
   const dur = 0.22;
-  const startTime = Math.max(ctx.currentTime, ctx.currentTime);
+  const startTime = ctx.currentTime;
   const attackTime = startTime + 0.015;
   const decayTime = startTime + dur;
 

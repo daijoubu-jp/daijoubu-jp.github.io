@@ -186,6 +186,38 @@ test('getAudioContext recreates context when existing one is closed', () => {
   }
 });
 
+test('getAudioContext supports webkitAudioContext fallback and handles unsupported browsers', () => {
+  const originalWindow = globalThis.window;
+  let webkitInstantiated = 0;
+
+  // 1. webkitAudioContext fallback when standard AudioContext is absent
+  globalThis.window = {
+    webkitAudioContext: class {
+      constructor() {
+        webkitInstantiated += 1;
+        this.state = 'running';
+      }
+    },
+  };
+
+  try {
+    _resetAudioContextForTest(null);
+    const webkitCtx = getAudioContext();
+    assert.equal(webkitInstantiated, 1);
+    assert.ok(webkitCtx);
+    assert.equal(webkitCtx.state, 'running');
+
+    // 2. Window exists but neither AudioContext nor webkitAudioContext is supported
+    globalThis.window = {};
+    _resetAudioContextForTest(createMockAudioContext('closed'));
+    const unsupported = getAudioContext();
+    assert.equal(unsupported, null, 'must return null and not leak closed context when unsupported');
+  } finally {
+    globalThis.window = originalWindow;
+    _resetAudioContextForTest(null);
+  }
+});
+
 test('unlockAudio resumes suspended or interrupted context and plays silent buffer', () => {
   const suspended = createMockAudioContext('suspended');
   _resetAudioContextForTest(suspended);
@@ -199,6 +231,13 @@ test('unlockAudio resumes suspended or interrupted context and plays silent buff
   _resetAudioContextForTest(interrupted);
   unlockAudio();
   assert.equal(interrupted.resumed, true);
+  assert.equal(interrupted._nodes.bufferSources.length, 1);
+
+  // 3. When context is already running, unlockAudio must NOT allocate dummy buffer sources
+  const running = createMockAudioContext('running');
+  _resetAudioContextForTest(running);
+  unlockAudio();
+  assert.equal(running._nodes.bufferSources.length, 0, 'running context must not leak silent buffer sources');
 
   _resetAudioContextForTest(null);
 });
