@@ -64,13 +64,13 @@ export function buildMapSvg(mapData, facts, opts = {}) {
     const nameJa = entry.name_ja || entry.slug;
     const nameTh = fact.name_th || nameJa;
     const ariaLabel = `${nameTh} (${nameJa})`;
-    return `      <path d="${entry.path}" class="pref-region-${regionIndex} pref-path" fill-rule="evenodd" data-slug="${escapeHtml(entry.slug)}" data-name-ja="${escapeHtml(nameJa)}" data-name-th="${escapeHtml(nameTh)}" tabindex="0" role="link" aria-label="${escapeHtml(ariaLabel)}"></path>`;
+    return `      <path d="${escapeHtml(entry.path)}" class="pref-region-${regionIndex} pref-path" fill-rule="evenodd" data-slug="${escapeHtml(entry.slug)}" data-name-ja="${escapeHtml(nameJa)}" data-name-th="${escapeHtml(nameTh)}" tabindex="0" role="link" aria-label="${escapeHtml(ariaLabel)}"></path>`;
   }).join('\n');
 
   const viewBox = mapData.viewBox || '0 0 455.66 395.47';
   const ariaLabel = opts.ariaLabel || 'แผนที่ประเทศญี่ปุ่น 47 จังหวัด';
 
-  return `<svg viewBox="${escapeHtml(viewBox)}" class="pref-map-svg" id="pref-map-svg" role="img" aria-label="${escapeHtml(ariaLabel)}">
+  return `<svg viewBox="${escapeHtml(viewBox)}" class="pref-map-svg" id="pref-map-svg" role="group" aria-label="${escapeHtml(ariaLabel)}">
 ${paths}
     </svg>`;
 }
@@ -120,6 +120,7 @@ export function initPrefecturesMap() {
         const visible = matchesRegion && matchesQuery;
         path.classList.toggle('pref-path-dim', !visible);
         path.classList.toggle('pref-path-active', visible && activeRegion !== null);
+        path.setAttribute('tabindex', visible ? '0' : '-1');
       });
 
       document.querySelectorAll('.pref-region-group').forEach((group) => {
