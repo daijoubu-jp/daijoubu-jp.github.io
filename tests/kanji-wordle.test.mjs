@@ -212,3 +212,33 @@ test('formatWordleShare handles practice mode and empty guesses gracefully', () 
   });
   assert.ok(practiceGiveUp.includes('หมดโอกาส'));
 });
+
+test('feedback clue discrimination: distinctive match excludes baseline joyo column', () => {
+  // TARGET is 明 (strokes: 8, radical: 72, kanken: '9', jlpt: 4, grade: 2, joyo: true)
+  // Non-matching Joyo kanji: 木 (strokes: 4, radical: 75, kanken: '10', jlpt: 5, grade: 1, joyo: true)
+  const nonMatch = {
+    kanji: '木', strokes: 4, radical: 75, radicalChar: '木',
+    kanken: '10', jlpt: 5, grade: 1, joyo: true,
+  };
+  const cellsNonMatch = feedback(nonMatch, TARGET);
+  // Without joyo/kanji filtering, joyo column would match and be 'correct'
+  const joyoCell = cellsNonMatch.find(c => c.id === 'joyo');
+  assert.equal(joyoCell.state, 'correct');
+
+  // Distinctive match must be false because no real clue (strokes, radical, kanken, jlpt, stage) matched
+  const hasDistinctiveMatch = cellsNonMatch.some(
+    c => c.id !== 'joyo' && c.id !== 'kanji' && c.state === 'correct'
+  );
+  assert.equal(hasDistinctiveMatch, false);
+
+  // Partial match: 日 (shares radical 72)
+  const radicalMatch = {
+    kanji: '日', strokes: 4, radical: 72, radicalChar: '日',
+    kanken: '10', jlpt: 5, grade: 1, joyo: true,
+  };
+  const cellsRadicalMatch = feedback(radicalMatch, TARGET);
+  const hasRadicalClue = cellsRadicalMatch.some(
+    c => c.id !== 'joyo' && c.id !== 'kanji' && c.state === 'correct'
+  );
+  assert.equal(hasRadicalClue, true);
+});

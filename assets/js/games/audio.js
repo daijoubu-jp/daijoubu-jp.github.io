@@ -19,8 +19,9 @@ let audioCtx = null;
  * @returns {AudioContext|null}
  */
 export function getAudioContext() {
+  if (audioCtx && audioCtx.state !== 'closed') return audioCtx;
   if (typeof window === 'undefined') return null;
-  if (!audioCtx) {
+  if (!audioCtx || audioCtx.state === 'closed') {
     const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
     if (AudioCtxClass) {
       try {
@@ -34,17 +35,40 @@ export function getAudioContext() {
 }
 
 /**
- * Unlocks the AudioContext if it was suspended due to autoplay policy.
+ * Resets or overrides the internal audio context reference (primarily for tests).
+ *
+ * @param {AudioContext|null} [mock=null]
+ */
+export function _resetAudioContextForTest(mock = null) {
+  audioCtx = mock;
+}
+
+/**
+ * Unlocks the AudioContext if it was suspended or interrupted due to browser autoplay policy.
+ * Also triggers a silent 1-sample buffer to satisfy iOS WebKit hardware audio unlocking.
  */
 export function unlockAudio() {
   const ctx = getAudioContext();
-  if (ctx && ctx.state === 'suspended') {
+  if (!ctx) return;
+
+  if (ctx.state === 'suspended' || ctx.state === 'interrupted') {
     ctx.resume().catch(() => {});
   }
+
+  // Cross-browser iOS Safari unlocking: play silent 1-sample buffer on user gesture
+  try {
+    if (typeof ctx.createBuffer === 'function') {
+      const buffer = ctx.createBuffer(1, 1, 22050);
+      const source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(ctx.destination);
+      source.start(0);
+    }
+  } catch {}
 }
 
 // Auto-register unlock listener on first user gesture
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
   const unlock = () => {
     unlockAudio();
     ['pointerdown', 'touchstart', 'keydown', 'click'].forEach((evt) => {
@@ -123,8 +147,8 @@ export function initSoundToggle() {
   updateSoundButtons();
   const buttons = document.querySelectorAll('.game-sound-toggle, [data-sound-toggle]');
   buttons.forEach((btn) => {
-    if (btn.dataset.soundBound === 'true') return;
-    btn.dataset.soundBound = 'true';
+    if (btn.getAttribute('data-sound-bound') === 'true') return;
+    btn.setAttribute('data-sound-bound', 'true');
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       unlockAudio();
@@ -159,18 +183,22 @@ export function playCorrect() {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
 
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(freq, time);
+      const startTime = Math.max(time, ctx.currentTime);
+      const attackTime = startTime + 0.015;
+      const decayTime = startTime + dur;
 
-      gain.gain.setValueAtTime(0.0001, time);
-      gain.gain.exponentialRampToValueAtTime(peakGain, time + 0.015);
-      gain.gain.exponentialRampToValueAtTime(0.0001, time + dur);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, startTime);
+
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.exponentialRampToValueAtTime(peakGain, attackTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, decayTime);
 
       osc.connect(gain);
       gain.connect(ctx.destination);
 
-      osc.start(time);
-      osc.stop(time + dur + 0.05);
+      osc.start(startTime);
+      osc.stop(decayTime + 0.05);
 
       osc.onended = () => {
         try {
@@ -192,8 +220,10 @@ export function playWrong() {
   if (!ctx) return;
   unlockAudio();
 
-  const now = ctx.currentTime;
   const dur = 0.22;
+  const startTime = Math.max(ctx.currentTime, ctx.currentTime);
+  const attackTime = startTime + 0.015;
+  const decayTime = startTime + dur;
 
   try {
     const osc = ctx.createOscillator();
@@ -201,18 +231,18 @@ export function playWrong() {
 
     osc.type = 'triangle';
     // Gentle downward frequency ramp: 160 Hz down to 85 Hz
-    osc.frequency.setValueAtTime(160, now);
-    osc.frequency.exponentialRampToValueAtTime(85, now + dur);
+    osc.frequency.setValueAtTime(160, startTime);
+    osc.frequency.exponentialRampToValueAtTime(85, decayTime);
 
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(0.16, now + 0.015);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + dur);
+    gain.gain.setValueAtTime(0.0001, startTime);
+    gain.gain.exponentialRampToValueAtTime(0.16, attackTime);
+    gain.gain.exponentialRampToValueAtTime(0.0001, decayTime);
 
     osc.connect(gain);
     gain.connect(ctx.destination);
 
-    osc.start(now);
-    osc.stop(now + dur + 0.05);
+    osc.start(startTime);
+    osc.stop(decayTime + 0.05);
 
     osc.onended = () => {
       try {
@@ -248,18 +278,22 @@ export function playWin() {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
 
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(freq, time);
+      const startTime = Math.max(time, ctx.currentTime);
+      const attackTime = startTime + 0.02;
+      const decayTime = startTime + dur;
 
-      gain.gain.setValueAtTime(0.0001, time);
-      gain.gain.exponentialRampToValueAtTime(peakGain, time + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.0001, time + dur);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, startTime);
+
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.exponentialRampToValueAtTime(peakGain, attackTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, decayTime);
 
       osc.connect(gain);
       gain.connect(ctx.destination);
 
-      osc.start(time);
-      osc.stop(time + dur + 0.05);
+      osc.start(startTime);
+      osc.stop(decayTime + 0.05);
 
       osc.onended = () => {
         try {

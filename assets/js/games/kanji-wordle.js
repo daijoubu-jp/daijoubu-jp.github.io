@@ -145,7 +145,7 @@ export async function initKanjiWordle() {
     }
 
     const cells = feedback(entry, state.target);
-    const hasMatch = cells.some((c) => c.state === 'correct');
+    const hasMatch = cells.some((c) => c.id !== 'joyo' && c.id !== 'kanji' && c.state === 'correct');
     if (hasMatch) {
       playCorrect();
     } else {

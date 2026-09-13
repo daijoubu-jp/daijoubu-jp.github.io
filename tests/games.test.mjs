@@ -75,6 +75,7 @@ test('all four game pages feature persistent sound toggle button in the HUD', ()
   for (const game of games) {
     const pageHtml = readFileSync(fileURLToPath(new URL(game.file, import.meta.url)), 'utf8');
     assert.match(pageHtml, new RegExp(`class="game-sound-toggle"[^>]*id="${game.toggleId}"`));
+    assert.match(pageHtml, new RegExp(`id="${game.toggleId}"[^>]*aria-pressed="true"`));
     assert.match(pageHtml, /class="game-hud-header"/);
   }
 });
