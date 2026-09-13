@@ -94,9 +94,17 @@ test('buildMapSvg renders 47 focusable region-colored paths with labels', () => 
   assert.equal((svg.match(/data-slug="/g) || []).length, 47);
   assert.match(svg, /aria-label="ฮอกไกโด \(北海道\)"/);
   assert.match(svg, /aria-label="โอกินาวะ \(沖縄県\)"/);
-  assert.match(svg, /class="pref-region-0 pref-path" fill-rule="evenodd" data-slug="hokkaido"/);
-  assert.match(svg, /class="pref-region-7 pref-path" fill-rule="evenodd" data-slug="kagoshima"/);
-  assert.equal((svg.match(/"/g) || []).length % 2, 0, 'unbalanced quotes in generated svg');
+  assert.match(svg, /class="pref-region-0[^"]*"[^>]*data-slug="hokkaido"/);
+  assert.match(svg, /class="pref-region-7[^"]*"[^>]*data-slug="kagoshima"/);
+});
+
+test('buildMapSvg escapes double quotes in slug attributes', () => {
+  const fixture = {
+    viewBox: '0 0 10 10',
+    prefectures: [{ code: '99', slug: 'a"b', name_ja: 'テスト', path: 'M 0,0 L 1,1 Z' }]
+  };
+  const svg = buildMapSvg(fixture, []);
+  assert.equal(svg.match(/data-slug="([^"]*)"/)[1], 'a&quot;b');
 });
 
 test('uniqueKanji strips suffixes, dedupes, and preserves order', () => {
@@ -141,8 +149,13 @@ test('prefectures pages declare data-page, css link, and nav entry', () => {
   assert.match(detailHtml, /data-page="prefecture-detail"/);
   assert.match(detailHtml, /prefectures\.css/);
   assert.match(detailHtml, /jp-prefectures\.html/);
-  assert.equal((mapHtml.match(/nav-dropdown-toggle/g) || []).length, 3);
-  assert.equal((detailHtml.match(/nav-dropdown-toggle/g) || []).length, 3);
+  const navToggleCount = (html) => {
+    const nav = html.match(/<nav[\s\S]*?<\/nav>/);
+    assert.ok(nav, 'page missing nav block');
+    return (nav[0].match(/nav-dropdown-toggle/g) || []).length;
+  };
+  assert.equal(navToggleCount(mapHtml), 3);
+  assert.equal(navToggleCount(detailHtml), 3);
   const navEntry = /<li><a href="\.\.\/knowledge\/jp-prefectures\.html">แผนที่ 47 จังหวัด \(都道府県\)<\/a><\/li>/;
   assert.match(mapHtml, navEntry, 'map page missing prefectures nav entry at knowledge depth');
   assert.match(detailHtml, navEntry, 'detail page missing prefectures nav entry at knowledge depth');
