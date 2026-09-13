@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v5'; // v5: bust HTTP cache for app code
+const CACHE_NAME = 'kanjithai-cache-v6'; // v6: bust HTTP cache for prefecture pages/data
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
