@@ -426,6 +426,9 @@ def compile_search_index():
         item = {field: entry[field] for field in SEARCH_INDEX_FIELDS if field in entry}
         for field in ("meanings_ja", "meanings_th", "meanings_en"):
             item[field] = (entry.get(field) or [])[:SEARCH_INDEX_MEANING_LIMIT]
+        for field in ("onyomi_hyougai", "kunyomi_hyougai"):
+            if field in item and not item[field]:
+                del item[field]
         index.append(item)
 
     payload = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
