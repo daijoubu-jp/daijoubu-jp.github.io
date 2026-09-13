@@ -12,7 +12,8 @@ Usage:
   python3 scripts/build_prefectures_map.py [--source /path/to/japan.geojson]
 
 This is generated reference data (not markdown-sourced). It is committed and
-covered by invariant tests, but excluded from the markdown drift check.
+excluded from the markdown drift check; output is validated at build time
+(count, size, geometry sanity).
 """
 
 import argparse
@@ -165,6 +166,8 @@ def ring_coords(points, tolerance):
         if xy != prev:
             coords.append(xy)
             prev = xy
+    if len(coords) > 1 and coords[0] == coords[-1]:
+        coords.pop()
     return coords if len(coords) >= 3 else []
 
 
@@ -204,6 +207,9 @@ def main():
     for feat in data["features"]:
         feature_coord_lists.append(feature_coords(feat["geometry"], TOLERANCE))
 
+    if not any(feature_coord_lists):
+        print("❌ Source geometry has no usable coordinates.")
+        sys.exit(1)
     minx = min(pt[0] for coords in feature_coord_lists for c in coords for pt in c)
     maxx = max(pt[0] for coords in feature_coord_lists for c in coords for pt in c)
     miny = min(pt[1] for coords in feature_coord_lists for c in coords for pt in c)
@@ -220,7 +226,11 @@ def main():
         if meta is None:
             print(f"❌ Unmatched geometry name: {name!r}")
             sys.exit(1)
-        code = f"{int(props.get('id')):02d}"
+        raw_id = props.get("id")
+        if not isinstance(raw_id, int):
+            print(f"❌ Missing or invalid id for {name!r}.")
+            sys.exit(1)
+        code = f"{raw_id:02d}"
         if code != meta[0]:
             print(f"❌ Geometry id {code} does not match table code {meta[0]} for {name}.")
             sys.exit(1)
