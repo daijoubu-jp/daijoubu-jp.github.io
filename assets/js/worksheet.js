@@ -249,7 +249,7 @@ export function generateWorksheet() {
         </div>
 
         <div class="ws-page-footer">
-          <span>KanjiThai - แหล่งเรียนรู้คันจิออนไลน์</span>
+          <span>Daijoubu JP - แหล่งเรียนรู้คันจิออนไลน์</span>
           <span>หน้า ${pageIdx + 1} / ${pages.length}</span>
         </div>
       </section>
