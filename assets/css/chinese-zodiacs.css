@@ -78,6 +78,17 @@
   justify-content: center;
 }
 
+/* Seasonal flourish: soft accent ring echoing the current theme. */
+.zodiac-wheel-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 4%;
+  border-radius: 50%;
+  border: 2px dashed var(--color-accent);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .zodiac-wheel-svg {
   width: 100%;
   height: 100%;
