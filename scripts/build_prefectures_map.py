@@ -14,6 +14,11 @@ Usage:
 This is generated reference data (not markdown-sourced). It is committed and
 excluded from the markdown drift check; output is validated at build time
 (count, size, geometry sanity).
+
+Remote-island rings whose centroid falls inside EXCLUDE_ZONES are omitted
+from the rendered map (tiny far-flung dots stretch the viewBox and are
+invisible at map scale). Prefecture fact pages remain complete; the map page
+carries a Thai footnote listing the omitted islands.
 """
 
 import argparse
@@ -90,6 +95,16 @@ SCALE = 1000.0
 TOLERANCE = 0.05
 PAD = 10.0
 MAX_SIZE_KB = 2000
+
+# (lon_min, lon_max, lat_min, lat_max, label) — rings whose centroid falls
+# inside a zone are dropped: Tokyo's Ogasawara/Iwo/Minamitorishima and
+# Okinotorishima chains, Okinawa's Daito islands. Mainland arcs, Izu islands,
+# Okinawa main/Miyako/Yaeyama, and the northern territories are unaffected.
+EXCLUDE_ZONES = [
+    (140.5, 180.0, 0.0, 32.5, "Ogasawara/Iwo/Minamitorishima"),
+    (135.5, 137.0, 0.0, 21.0, "Okinotorishima"),
+    (130.8, 132.0, 23.5, 26.5, "Daito islands"),
+]
 
 # Set once in main() so projected paths fit "0 0 W H"; bounds pass fills these.
 OFFSET_X = 0.0
@@ -171,13 +186,23 @@ def ring_coords(points, tolerance):
     return coords if len(coords) >= 3 else []
 
 
+def ring_excluded(points):
+    lon = sum(p[0] for p in points) / len(points)
+    lat = sum(p[1] for p in points) / len(points)
+    return any(x0 <= lon <= x1 and y0 <= lat <= y1 for x0, x1, y0, y1, _ in EXCLUDE_ZONES)
+
+
 def feature_coords(geometry, tolerance):
     coords = []
+    dropped = 0
     for ring in iter_rings(geometry):
+        if ring_excluded(ring):
+            dropped += 1
+            continue
         c = ring_coords(ring, tolerance)
         if c:
             coords.append(c)
-    return coords
+    return coords, dropped
 
 
 def ring_to_path(coords):
@@ -205,7 +230,11 @@ def main():
 
     feature_coord_lists = []
     for feat in data["features"]:
-        feature_coord_lists.append(feature_coords(feat["geometry"], TOLERANCE))
+        coords, dropped = feature_coords(feat["geometry"], TOLERANCE)
+        if dropped:
+            name = feat["properties"].get("nam_ja", "?")
+            print(f"ℹ️  {name}: dropped {dropped} remote-island ring(s).")
+        feature_coord_lists.append(coords)
 
     if not any(feature_coord_lists):
         print("❌ Source geometry has no usable coordinates.")
