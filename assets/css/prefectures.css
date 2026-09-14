@@ -3,17 +3,26 @@
  * Styling for the interactive 47-prefecture map of Japan (都道府県).
  */
 
-/* Map Card ---------------------------------------------------------------- */
+/* Map Card ----------------------------------------------------------------
+   Fixed cartographic palette, independent of the 6 themes: white land on
+   blue water in every theme and mode (user requirement). The seasonal accent
+   appears only on the card's top edge and in interaction states. */
 
 .pref-map-wrap {
   position: relative;
   max-width: 920px;
   margin: 0 auto var(--spacing-xl);
-  background: var(--color-surface);
+  --pref-water: #d9e8f5;
+  background: var(--pref-water);
   border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
   box-shadow: var(--shadow-sm);
+}
+
+[data-mode="dark"] .pref-map-wrap {
+  --pref-water: #17324e;
 }
 
 .pref-map-container {
@@ -27,49 +36,48 @@
 }
 
 .pref-map-svg path {
-  stroke: var(--color-surface);
-  stroke-width: 0.6;
+  fill: #ffffff;
+  stroke: #9db4c8;
+  stroke-width: 0.5;
   cursor: pointer;
   transition: fill var(--transition-fast),
               stroke var(--transition-fast),
-              opacity var(--transition-fast),
-              filter var(--transition-fast);
+              opacity var(--transition-fast);
 }
 
-/* 8 region fills: accent mixed into the surface at descending strengths.
-   The plain var() fallback comes first for browsers without color-mix(). */
-.pref-region-0 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 85%, var(--color-surface)); }
-.pref-region-1 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 75%, var(--color-surface)); }
-.pref-region-2 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 65%, var(--color-surface)); }
-.pref-region-3 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 55%, var(--color-surface)); }
-.pref-region-4 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 45%, var(--color-surface)); }
-.pref-region-5 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 35%, var(--color-surface)); }
-.pref-region-6 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 25%, var(--color-surface)); }
-.pref-region-7 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 15%, var(--color-surface)); }
+/* Region identity colors: --region-fill for legend swatches, --region-tint
+   (stronger, mixed into white) for map hover/selection. Plain var() fallback
+   comes first for browsers without color-mix(). */
+.pref-region-0 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 85%, #ffffff); --region-tint: var(--region-fill); }
+.pref-region-1 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 75%, #ffffff); --region-tint: var(--region-fill); }
+.pref-region-2 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 65%, #ffffff); --region-tint: var(--region-fill); }
+.pref-region-3 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 55%, #ffffff); --region-tint: var(--region-fill); }
+.pref-region-4 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-tint: var(--region-fill); }
+.pref-region-5 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 38%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 45%, #ffffff); }
+.pref-region-6 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 31%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 40%, #ffffff); }
+.pref-region-7 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 24%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 36%, #ffffff); }
 
-.pref-map-svg .pref-region-0,
-.pref-map-svg .pref-region-1,
-.pref-map-svg .pref-region-2,
-.pref-map-svg .pref-region-3,
-.pref-map-svg .pref-region-4,
-.pref-map-svg .pref-region-5,
-.pref-map-svg .pref-region-6,
-.pref-map-svg .pref-region-7 {
-  fill: var(--region-fill);
-}
+/* Hover / keyboard focus / region selection: prefecture highlight only —
+   coastline stroke + region tint, never a rectangular outline. */
 
 .pref-map-svg .pref-path:hover,
 .pref-map-svg .pref-path:focus-visible,
 .pref-map-svg .pref-path.pref-path-active {
-  stroke: var(--color-accent);
-  stroke-width: 1.4;
-  filter: brightness(1.12);
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
+  fill: var(--region-tint, var(--color-accent));
+  stroke: #33506b;
+  stroke-width: 1.2;
 }
 
 .pref-map-svg .pref-path.pref-path-dim {
-  opacity: 0.22;
+  opacity: 0.25;
+}
+
+.pref-map-note {
+  max-width: 920px;
+  margin: 0 auto var(--spacing-xl);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
 }
 
 .pref-map-error {
@@ -324,6 +332,7 @@
 .pref-detail-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-lg);
   box-shadow: var(--shadow-sm);
