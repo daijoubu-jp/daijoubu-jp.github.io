@@ -11,6 +11,7 @@ Thai-language kanji dictionary for learners. Static site, no runtime framework, 
 | Task | Command |
 | --- | --- |
 | Compile content to site data | `python3 scripts/compile_content.py` (Python 3.12+) |
+| Compile + verify data drift (CI-equivalent) | `python3 scripts/compile_content.py --check` |
 | Run JS tests | `npm test` (`node --test tests/`) |
 | Lint markdown | `npx markdownlint-cli2 "**/*.md"` |
 | Local preview | `python3 -m http.server 8000` then open `http://localhost:8000/` |

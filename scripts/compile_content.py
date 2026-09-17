@@ -717,6 +717,7 @@ def compile_prefectures():
 
 
 def main():
+    check_mode = "--check" in sys.argv[1:]
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
     compile_special_readings()
@@ -734,6 +735,18 @@ def main():
 
     compile_search_index()
     print("✨ Compilation complete! Production JSON files are updated.")
+
+    if check_mode:
+        # Same contract as CI: after compiling, data/ must match git HEAD.
+        import subprocess
+
+        drift = subprocess.run(
+            ["git", "diff", "--quiet", "--", "data/"], check=False)
+        if drift.returncode != 0:
+            print("❌ --check: generated data was out of date; it has now "
+                  "been regenerated. Commit the diff (or it fails CI).")
+            sys.exit(1)
+        print("✅ --check: data/ was already in sync with markdown (matches CI).")
 
 
 if __name__ == "__main__":
