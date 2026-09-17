@@ -17,10 +17,14 @@ import os
 import gzip
 import subprocess
 
+# Reference PDFs live outside the deployed site tree (kept the Pages deploy small).
+# Override with KANJI_SOURCE_DOCS=/path/to/pdfs if you store them elsewhere.
+SRC_DOCS = os.environ.get('KANJI_SOURCE_DOCS', '../kanji-website-source-docs')
+
 def main():
     print("Step 1: Parsing Bunkachō frequency table...")
     proc = subprocess.Popen(
-        ['pdftotext', '-layout', 'source-docs/bunkachou-kanji-frequency.pdf', '-'],
+        ['pdftotext', '-layout', os.path.join(SRC_DOCS, 'bunkachou-kanji-frequency.pdf'), '-'],
         stdout=subprocess.PIPE,
         text=True
     )

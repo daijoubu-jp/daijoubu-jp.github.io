@@ -23,3 +23,7 @@ Thumbs.db
 # Internal revision log (not published to GitHub)
 revisions.md
 
+# Reference PDFs — kept outside the repo so GitHub Pages never deploys them
+# (local copy: ../kanji-website-source-docs/, override via KANJI_SOURCE_DOCS)
+source-docs/
+
