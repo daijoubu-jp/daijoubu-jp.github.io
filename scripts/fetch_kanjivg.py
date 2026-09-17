@@ -29,6 +29,21 @@ KANJIVG_COMMIT = "422b5538595676da918c288a4230cb5e22a1ee7e"
 ARCHIVE_URL = f"https://codeload.github.com/KanjiVG/kanjivg/tar.gz/{KANJIVG_COMMIT}"
 MEMBER_RE = re.compile(r"(?:^|/)kanji/([0-9a-f]{5})\.svg$")
 
+ATTRIBUTION = ("<!-- KanjiVG stroke data (C) Ulrich Apel & contributors, "
+               "CC BY-SA 3.0 - https://kanjivg.tagaini.net -->\n")
+
+
+def sanitize(raw: bytes) -> bytes:
+    """Replace KanjiVG's per-file boilerplate (XML prolog + license block) with
+    a one-line attribution comment. Full attribution also lives in about.html
+    and the page footer; this trims ~30% of wire bytes from every SVG.
+    The <svg> element itself is untouched."""
+    text = raw.decode("utf-8")
+    i = text.find("<svg")
+    if i <= 0:
+        return raw
+    return (ATTRIBUTION + text[i:]).encode("utf-8")
+
 
 def load_codepoints():
     """Return the set of 5-digit lowercase hex codepoints used by the site."""
@@ -83,7 +98,7 @@ def fetch_archive(codepoints, force):
                 if source is None:
                     continue
                 with open(target, "wb") as out:
-                    out.write(source.read())
+                    out.write(sanitize(source.read()))
 
                 written += 1
                 if written % 500 == 0:
