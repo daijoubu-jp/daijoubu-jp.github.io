@@ -1,4 +1,20 @@
-const CACHE_NAME = 'kanjithai-cache-v6'; // v6: bust HTTP cache for prefecture pages/data
+const CACHE_NAME = 'kanjithai-cache-v7'; // v7: cache-first versioned data; no HTTP-cache bypass
+
+/**
+ * Store a response in this version's cache, first evicting older entries for
+ * the same path (e.g. a data file under its previous ?v= stamp) so the cache
+ * never accumulates stale copies of multi-megabyte JSON.
+ */
+async function cacheReplace(request, response) {
+  const cache = await caches.open(CACHE_NAME);
+  const keys = await cache.keys();
+  await Promise.all(
+    keys
+      .filter((req) => req.url !== request.url && new URL(req.url).pathname === new URL(request.url).pathname)
+      .map((req) => cache.delete(req))
+  );
+  await cache.put(request, response);
+}
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -28,25 +44,27 @@ self.addEventListener('fetch', (event) => {
         if (cachedResponse) return cachedResponse;
         return fetch(event.request).then((networkResponse) => {
           if (networkResponse.ok) {
-            const responseClone = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+            cacheReplace(event.request, networkResponse.clone());
           }
           return networkResponse;
         });
       })
     );
   }
-  // Stale-While-Revalidate for Data (JSON) to allow seamless background updates
+  // Cache-First for versioned Data (JSON): data URLs carry a ?v= stamp that is
+  // bumped whenever data is regenerated (see DATA_VERSION in assets/js/search.js),
+  // so a cache hit is always the current build and visitors never re-download
+  // multi-MB bundles on repeat visits.
   else if (url.pathname.includes('/data/')) {
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
-        const fetchPromise = fetch(event.request, { cache: 'no-store' }).then((networkResponse) => {
-          const responseClone = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+        if (cachedResponse) return cachedResponse;
+        return fetch(event.request).then((networkResponse) => {
+          if (networkResponse.ok) {
+            cacheReplace(event.request, networkResponse.clone());
+          }
           return networkResponse;
-        }).catch(() => {});
-        
-        return cachedResponse || fetchPromise;
+        });
       })
     );
   }
@@ -56,19 +74,23 @@ self.addEventListener('fetch', (event) => {
       caches.match(event.request).then((cachedResponse) => {
         if (cachedResponse) return cachedResponse;
         return fetch(event.request).then((networkResponse) => {
-          const responseClone = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+          if (networkResponse.ok) {
+            cacheReplace(event.request, networkResponse.clone());
+          }
           return networkResponse;
         });
       })
     );
   } else {
-    // Network-First, bypassing the HTTP cache, so app code (HTML/JS/CSS) is always fresh
+    // Network-First for app code (HTML/JS/CSS) using the normal HTTP cache, so
+    // unchanged files revalidate with cheap 304s instead of full re-downloads;
+    // the SW cache serves them only when offline.
     event.respondWith(
-      fetch(event.request, { cache: 'no-store' })
+      fetch(event.request)
         .then((networkResponse) => {
-          const responseClone = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+          if (networkResponse.ok) {
+            cacheReplace(event.request, networkResponse.clone());
+          }
           return networkResponse;
         })
         .catch(() => caches.match(event.request))
