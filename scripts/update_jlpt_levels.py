@@ -8,13 +8,12 @@ Classifies all 2,136 Joyo Kanji into JLPT N5 ~ N1 based on:
 3. Bunkachō 漢字出現頻度表 (bunkachou-kanji-frequency.pdf - Ver. 1.3)
 
 All 3,731 Non-Joyo kanji have jlpt set to None.
-Updates data/kanji.min.json and data/kanji-levels/*.json.
+Updates data/kanji.min.json.
 """
 
 import json
 import re
 import os
-import gzip
 import subprocess
 
 # Reference PDFs live outside the deployed site tree (kept the Pages deploy small).
@@ -139,43 +138,21 @@ def main():
     for c in N2_CHARS: jlpt_map[c] = 2
     for c in N1_CHARS: jlpt_map[c] = 1
 
-    # Step 4: Update data/kanji-levels/*.json
-    level_files = [
-      'kanken-10.json', 'kanken-9.json', 'kanken-8.json', 'kanken-7.json',
-      'kanken-6.json',  'kanken-5.json', 'kanken-4.json', 'kanken-3.json',
-      'kanken-jun2.json', 'kanken-2.json', 'kanken-jun1.json', 'kanken-1.json'
-    ]
-
-    all_updated = []
-    for file in level_files:
-        path = os.path.join('data', 'kanji-levels', file)
-        if os.path.exists(path):
-            with open(path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            for item in data:
-                char = item['kanji']
-                if item.get('joyo'):
-                    item['jlpt'] = jlpt_map.get(char, 1)
-                else:
-                    item['jlpt'] = None
-                all_updated.append(item)
-            with open(path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"Updated {path} ({len(data)} items)")
-
-    # Step 5: Update data/kanji.min.json and kanji.min.json.gz
+    # Step 4: Update data/kanji.min.json
     min_path = 'data/kanji.min.json'
+    with open(min_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    for item in data:
+        char = item['kanji']
+        if item.get('joyo'):
+            item['jlpt'] = jlpt_map.get(char, 1)
+        else:
+            item['jlpt'] = None
     with open(min_path, 'w', encoding='utf-8') as f:
-        json.dump(all_updated, f, ensure_ascii=False, separators=(',', ':'))
-    print(f"Wrote {min_path} ({len(all_updated)} total entries)")
+        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    print(f"Updated {min_path} ({len(data)} total entries)")
 
-    gz_path = 'data/kanji.min.json.gz'
-    with open(min_path, 'rb') as f_in:
-        with gzip.open(gz_path, 'wb') as f_out:
-            f_out.writelines(f_in)
-    print(f"Compressed to {gz_path}")
-
-    print("Step 6: Validation check on output database...")
+    print("Step 5: Validation check on output database...")
     with open(min_path, 'r', encoding='utf-8') as f:
         check_data = json.load(f)
     counts = {}

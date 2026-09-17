@@ -26,7 +26,6 @@ or committed.
 | File | Purpose |
 | --- | --- |
 | `data/kanji.min.json` | Full kanji bundle for browse/detail/worksheet |
-| `data/kanji-levels/*.json` | Per-Kanken-level split of the full bundle |
 | `data/search-index.min.json` | Slim index for home-page search and daily kanji |
 | `data/kanji-components.min.json` | Kanji in Kanji decompositions (KRADFILE-u, EDRDG) |
 | `data/compounds.min.json` | Quick Compound list, compiled from `content/compounds/*.md` |

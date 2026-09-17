@@ -6,7 +6,7 @@ Enriches kanji database by:
 1. Downloading and parsing KANJIDIC2 XML.
 2. Replacing placeholder English meanings with authentic KANJIDIC2 definitions.
 3. Translating English definitions to Thai for all kanji that currently have placeholder Thai strings.
-4. Preserving and updating all kanji-levels/*.json and data/kanji.min.json.
+4. Updating data/kanji.min.json in place.
 """
 
 import os
@@ -74,19 +74,10 @@ def translate_batch(phrases):
 def main():
     kanjidic = get_kanjidic()
 
-    # Load all current kanji
-    level_files = [
-      'kanken-10.json', 'kanken-9.json', 'kanken-8.json', 'kanken-7.json',
-      'kanken-6.json',  'kanken-5.json', 'kanken-4.json', 'kanken-3.json',
-      'kanken-jun2.json', 'kanken-2.json', 'kanken-jun1.json', 'kanken-1.json'
-    ]
-
-    all_data = {}
-    for f in level_files:
-        path = os.path.join('data', 'kanji-levels', f)
-        if os.path.exists(path):
-            with open(path, 'r', encoding='utf-8') as fp:
-                all_data[f] = json.load(fp)
+    # Load the full master dataset (treated as a single batch by the loops below)
+    min_path = 'data/kanji.min.json'
+    with open(min_path, 'r', encoding='utf-8') as fp:
+        all_data = {'kanji.min.json': json.load(fp)}
 
     # Collect English phrases that need Thai translation
     translation_cache_file = 'data/translation_cache.json'
@@ -162,29 +153,13 @@ def main():
                 if not item.get('kunyomi') and kanjidic[char]['kunyomi']:
                     item['kunyomi'] = kanjidic[char]['kunyomi']
 
-        # Save back to file
-        path = os.path.join('data', 'kanji-levels', f)
-        with open(path, 'w', encoding='utf-8') as fp:
-            json.dump(items, fp, ensure_ascii=False, indent=2)
-        print(f"Saved {path}")
-
     print(f"Enriched {total_enriched} kanji with authentic Thai and English meanings.")
 
-    # Rebuild data/kanji.min.json and gz
-    all_kanji = []
-    for f in level_files:
-        all_kanji.extend(all_data[f])
-
-    min_path = 'data/kanji.min.json'
+    # Write the enriched master dataset back (GitHub Pages serves gzip itself)
+    all_kanji = all_data['kanji.min.json']
     with open(min_path, 'w', encoding='utf-8') as fp:
         json.dump(all_kanji, fp, ensure_ascii=False, separators=(',', ':'))
     print(f"Wrote {min_path} ({len(all_kanji)} entries)")
-
-    gz_path = 'data/kanji.min.json.gz'
-    with open(min_path, 'rb') as f_in:
-        with gzip.open(gz_path, 'wb') as f_out:
-            f_out.writelines(f_in)
-    print(f"Compressed to {gz_path}")
 
 if __name__ == '__main__':
     main()

@@ -388,20 +388,7 @@ def compile_kanji():
     with open(kanji_master_path, "w", encoding="utf-8") as f:
         f.write(payload)
 
-    # Sync to data/kanji-levels/*.json
-    levels_dir = os.path.join(DATA_DIR, "kanji-levels")
-    if os.path.exists(levels_dir):
-        by_level = {}
-        for k in master_list:
-            lvl = str(k.get("kanken") or "")
-            if lvl:
-                by_level.setdefault(lvl, []).append(k)
-        for lvl, k_items in by_level.items():
-            lvl_file = os.path.join(levels_dir, f"kanken-{lvl}.json")
-            with open(lvl_file, "w", encoding="utf-8") as f:
-                json.dump(k_items, f, ensure_ascii=False, indent=2)
-
-    print(f"  ✅ Compiled and synced {updated_count} kanji to {kanji_master_path} and kanji-levels/")
+    print(f"  ✅ Compiled {updated_count} kanji into {kanji_master_path}")
     return validation_errors
 
 
