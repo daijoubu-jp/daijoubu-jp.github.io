@@ -28,9 +28,16 @@ export function createPromiseCache(loader) {
   };
 }
 
+/**
+ * Single cache-busting stamp shared by every generated data file.
+ * Bump this (e.g. YYYYMMDD or a build timestamp) whenever data/*.json is
+ * regenerated — one edit invalidates all data caches instead of four.
+ */
+const DATA_VERSION = '20260917';
+
 const kanjiDataCache = createPromiseCache(async () => {
   // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)
-  const dataUrl = new URL('../../data/kanji.min.json?v=1788410559', import.meta.url).href;
+  const dataUrl = new URL(`../../data/kanji.min.json?v=${DATA_VERSION}`, import.meta.url).href;
   const res = await fetch(dataUrl);
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
   return res.json();
@@ -50,7 +57,7 @@ export async function loadKanjiData() {
 }
 
 const searchIndexCache = createPromiseCache(async () => {
-  const dataUrl = new URL('../../data/search-index.min.json?v=20260911', import.meta.url).href;
+  const dataUrl = new URL(`../../data/search-index.min.json?v=${DATA_VERSION}`, import.meta.url).href;
   const res = await fetch(dataUrl);
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
   return res.json();
@@ -70,7 +77,7 @@ export async function loadSearchIndex() {
 }
 
 const componentsCache = createPromiseCache(async () => {
-  const dataUrl = new URL('../../data/kanji-components.min.json?v=20260912', import.meta.url).href;
+  const dataUrl = new URL(`../../data/kanji-components.min.json?v=${DATA_VERSION}`, import.meta.url).href;
   const res = await fetch(dataUrl);
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
   return res.json();
@@ -90,7 +97,7 @@ export async function loadKanjiComponents() {
 }
 
 const compoundsCache = createPromiseCache(async () => {
-  const dataUrl = new URL('../../data/compounds.min.json?v=20260912', import.meta.url).href;
+  const dataUrl = new URL(`../../data/compounds.min.json?v=${DATA_VERSION}`, import.meta.url).href;
   const res = await fetch(dataUrl);
   if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
   return res.json();
@@ -182,6 +189,41 @@ function toKatakana(str) {
 }
 
 /**
+ * Per-entry normalized search text, memoized in a WeakMap.
+ * Scoring and filtering run on every keystroke over ~5,900 entries; building
+ * the joined/katakana/lowercased strings once per loaded entry (instead of
+ * per query) turns the hot path into plain substring checks.
+ * @param {object} item
+ * @returns {{joyoOn: string, joyoKun: string, hyougaiOn: string, hyougaiKun: string,
+ *            jinmeiKata: string, meaningsJa: string[], meaningsTh: string[],
+ *            meaningsEn: string[], examples: Array<[string, string, string]>}}
+ */
+const derivedCache = new WeakMap();
+function derivedText(item) {
+  let d = derivedCache.get(item);
+  if (!d) {
+    const kunBlob = (list) => toKatakana((list || []).map(k => k.replace(/\./g, '')).join(' '));
+    d = {
+      joyoOn: (item.onyomi || []).join(' '),
+      joyoKun: kunBlob(item.kunyomi),
+      hyougaiOn: (item.onyomi_hyougai || []).join(' '),
+      hyougaiKun: kunBlob(item.kunyomi_hyougai),
+      jinmeiKata: toKatakana((item.jinmei || item.nanori || []).join(' ')),
+      meaningsJa: item.meanings_ja || [],
+      meaningsTh: (item.meanings_th || []).map(m => m.toLowerCase()),
+      meaningsEn: (item.meanings_en || []).map(m => m.toLowerCase()),
+      examples: (item.examples || []).map(ex => [
+        ex.word || '',
+        ex.reading || '',
+        (ex.meaning_th || '').toLowerCase()
+      ]),
+    };
+    derivedCache.set(item, d);
+  }
+  return d;
+}
+
+/**
  * Score one kanji entry against a prepared query. Shared by the full search
  * (searchKanji) and the slim home index (searchKanjiIndex).
  * @param {object} item
@@ -191,6 +233,7 @@ function toKatakana(str) {
  * @returns {number}
  */
 function scoreEntry(item, q, qKana, qKata) {
+  const d = derivedText(item);
   let score = 0;
 
   // 1. Exact Kanji match (highest priority)
@@ -201,36 +244,26 @@ function scoreEntry(item, q, qKana, qKata) {
   }
 
   // 2. Readings match (Onyomi / Kunyomi - Table & Hyougai)
-  const joyoOn = (item.onyomi || []).join(' ');
-  const joyoKun = (item.kunyomi || []).map(k => k.replace(/\./g, '')).join(' ');
-  const hyougaiOn = (item.onyomi_hyougai || []).join(' ');
-  const hyougaiKun = (item.kunyomi_hyougai || []).map(k => k.replace(/\./g, '')).join(' ');
-
-  const joyoKunKata = toKatakana(joyoKun);
-  const hyougaiKunKata = toKatakana(hyougaiKun);
-
-  if (joyoOn === qKata || joyoKunKata === qKata) {
+  if (d.joyoOn === qKata || d.joyoKun === qKata) {
     score += 150;
-  } else if (joyoOn.includes(qKata) || joyoKunKata.includes(qKata)) {
+  } else if (d.joyoOn.includes(qKata) || d.joyoKun.includes(qKata)) {
     score += 95;
-  } else if (hyougaiOn === qKata || hyougaiKunKata === qKata) {
+  } else if (d.hyougaiOn === qKata || d.hyougaiKun === qKata) {
     score += 120;
-  } else if (hyougaiOn.includes(qKata) || hyougaiKunKata.includes(qKata)) {
+  } else if (d.hyougaiOn.includes(qKata) || d.hyougaiKun.includes(qKata)) {
     score += 70;
   }
 
   // 3. Jinmei (name readings) match
-  const jinmei = (item.jinmei || item.nanori || []).join(' ');
-  const jinmeiKata = toKatakana(jinmei);
-  if (jinmeiKata === qKata) {
+  if (d.jinmeiKata === qKata) {
     score += 110;
-  } else if (jinmeiKata.includes(qKata)) {
+  } else if (d.jinmeiKata.includes(qKata)) {
     score += 65;
   }
 
   // 4. Japanese meaning match (字義)
-  const jaMatches = (item.meanings_ja || []).some(m => m === q || m === qKana);
-  const jaSubMatches = (item.meanings_ja || []).some(m => m.includes(q) || m.includes(qKana));
+  const jaMatches = d.meaningsJa.some(m => m === q || m === qKana);
+  const jaSubMatches = d.meaningsJa.some(m => m.includes(q) || m.includes(qKana));
   if (jaMatches) {
     score += 85;
   } else if (jaSubMatches) {
@@ -238,8 +271,8 @@ function scoreEntry(item, q, qKana, qKata) {
   }
 
   // 5. Thai meaning match (exact beats substring)
-  const thaiExact = (item.meanings_th || []).some(m => m.toLowerCase() === q);
-  const thaiSub = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
+  const thaiExact = d.meaningsTh.some(m => m === q);
+  const thaiSub = d.meaningsTh.some(m => m.includes(q));
   if (thaiExact) {
     score += 95;
   } else if (thaiSub) {
@@ -247,16 +280,17 @@ function scoreEntry(item, q, qKana, qKata) {
   }
 
   // 6. English meaning match
-  const enMatches = (item.meanings_en || []).some(m => m.toLowerCase() === q);
-  const enSubMatches = (item.meanings_en || []).some(m => m.toLowerCase().includes(q));
-  if (enMatches) {
+  const enExact = d.meaningsEn.some(m => m === q);
+  const enSub = d.meaningsEn.some(m => m.includes(q));
+  if (enExact) {
     score += 85;
-  } else if (enSubMatches) {
+  } else if (enSub) {
     score += 65;
   }
 
   // 7. Example compounds match (only present in the full dataset)
-  if (item.examples && item.examples.some(ex => ex.word.includes(q) || (ex.reading && ex.reading.includes(qKata)) || (ex.meaning_th && ex.meaning_th.includes(q)))) {
+  if (d.examples.some(([word, reading, th]) =>
+    word.includes(q) || reading.includes(qKata) || th.includes(q))) {
     score += 40;
   }
 
@@ -351,16 +385,15 @@ export async function filterKanji(filters = {}, options = {}) {
       const q = filters.q.trim().toLowerCase();
       const qKana = romajiToHiragana(q);
       const qKata = toKatakana(qKana);
-
-      const allOn = [...(item.onyomi || []), ...(item.onyomi_hyougai || [])];
-      const allKun = [...(item.kunyomi || []), ...(item.kunyomi_hyougai || [])];
+      const d = derivedText(item);
 
       const matchKanji = item.kanji.includes(q);
-      const matchOnyomi = allOn.some(o => o.includes(qKata));
-      const matchKunyomi = allKun.some(k => toKatakana(k.replace(/\./g, '')).includes(qKata));
-      const matchTh = (item.meanings_th || []).some(m => m.toLowerCase().includes(q));
-      const matchEn = (item.meanings_en || []).some(m => m.toLowerCase().includes(q));
-      const matchEx = (item.examples || []).some(ex => ex.word.includes(q) || (ex.reading && ex.reading.includes(qKata)) || (ex.meaning_th && ex.meaning_th.includes(q)));
+      const matchOnyomi = d.joyoOn.includes(qKata) || d.hyougaiOn.includes(qKata);
+      const matchKunyomi = d.joyoKun.includes(qKata) || d.hyougaiKun.includes(qKata);
+      const matchTh = d.meaningsTh.some(m => m.includes(q));
+      const matchEn = d.meaningsEn.some(m => m.includes(q));
+      const matchEx = d.examples.some(([word, reading, th]) =>
+        word.includes(q) || reading.includes(qKata) || th.includes(q));
 
       if (!matchKanji && !matchOnyomi && !matchKunyomi && !matchTh && !matchEn && !matchEx) {
         return false;
