@@ -253,16 +253,21 @@ test('buildMapControlsHtml renders the region select and five zoom buttons', () 
   assert.equal((html.match(/aria-label="/g) || []).length, 7, 'group + select + 5 buttons all labelled');
 });
 
-test('prefectures.css colorizes all 8 regions via --region-base on the default fill', () => {
+test('prefectures.css gives all 8 regions fixed distinct colors in light and dark', () => {
   const css = readFileSync(fileURLToPath(new URL('../assets/css/prefectures.css', import.meta.url)), 'utf8');
-  assert.match(css, /\.pref-map-svg path \{\s*fill: var\(--region-base, #ffffff\);/);
+  assert.match(css, /\.pref-map-svg path \{\s*fill: var\(--region-fill, #ffffff\);/);
+  const hex = '#[0-9a-f]{6}';
+  const light = [];
   for (let i = 0; i < 8; i++) {
-    const rule = new RegExp(`\\.pref-region-${i} \\{[^}]*--region-base: color-mix\\(in srgb, var\\(--color-accent\\) (\\d+)%`);
-    const match = css.match(rule);
-    assert.ok(match, `region ${i} missing --region-base color-mix`);
-    if (i > 0) {
-      const prev = Number(css.match(new RegExp(`\\.pref-region-${i - 1} \\{[^}]*--region-base: color-mix\\(in srgb, var\\(--color-accent\\) (\\d+)%`))[1]);
-      assert.ok(Number(match[1]) < prev, `region ${i} tint must be softer than region ${i - 1}`);
-    }
+    const m = css.match(new RegExp(`^\\.pref-region-${i} \\{ --region-fill: (${hex}); --region-tint: (${hex}); \\}`, 'm'));
+    assert.ok(m, `region ${i} missing fixed light palette entry`);
+    light.push(m[1].toLowerCase());
+    const d = css.match(new RegExp(`^\\[data-mode="dark"\\] \\.pref-region-${i} \\{ --region-fill: (${hex}); --region-tint: (${hex}); \\}`, 'm'));
+    assert.ok(d, `region ${i} missing fixed dark palette entry`);
+    assert.notEqual(d[1], m[1], `region ${i} dark fill must differ from light`);
+    assert.notEqual(d[2], m[2], `region ${i} dark tint must differ from light`);
   }
+  assert.equal(new Set(light).size, 8, 'light palette must have 8 distinct colors');
+  assert.ok(!css.includes('--region-base'), 'theme-derived --region-base tier must be gone');
+  assert.ok(!new RegExp('\\.pref-region-\\d[^}]*color-mix').test(css), 'region colors must not be theme-derived');
 });

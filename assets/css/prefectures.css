@@ -4,11 +4,11 @@
  */
 
 /* Map Card ----------------------------------------------------------------
-   Cartographic palette: pale land on blue water in every theme and mode.
-   Each region carries a soft theme-accent tint (--region-base, mixed into
-   white) so the 8 地方 are distinguishable while the land still reads as
-   land; interaction states deepen to --region-tint, and the seasonal accent
-   also frames the card's top edge. */
+   Cartographic palette: land on blue water in every theme and mode. The 8
+   地方 carry fixed palette colors (--region-fill) independent of the 6
+   seasonal themes, with light and dark variants; interaction states deepen
+   to --region-tint (each region's own stronger hue), and the seasonal accent
+   frames only the card's top edge. */
 
 .pref-map-wrap {
   position: relative;
@@ -38,7 +38,7 @@
 }
 
 .pref-map-svg path {
-  fill: var(--region-base, #ffffff);
+  fill: var(--region-fill, #ffffff);
   stroke: #9db4c8;
   stroke-width: 0.5;
   cursor: pointer;
@@ -47,18 +47,29 @@
               opacity var(--transition-fast);
 }
 
-/* Region identity colors: --region-base (soft, mixed into white) for the
-   default map fill and legend swatches; --region-tint (stronger) for
-   hover/selection; --region-fill for detail-page badges. Plain var()
-   fallbacks come first for browsers without color-mix(). */
-.pref-region-0 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 85%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 52%, #ffffff); }
-.pref-region-1 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 75%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 46%, #ffffff); }
-.pref-region-2 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 65%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 40%, #ffffff); }
-.pref-region-3 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 55%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 34%, #ffffff); }
-.pref-region-4 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 28%, #ffffff); }
-.pref-region-5 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 38%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 22%, #ffffff); }
-.pref-region-6 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 31%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 40%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 16%, #ffffff); }
-.pref-region-7 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 24%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 36%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 10%, #ffffff); }
+/* Region identity colors: a FIXED cartographic palette — 8 distinct hues,
+   north to south, with separate light and dark mode variants. Constant
+   across all 6 seasonal themes by design (maintainer decision 2026-09-23:
+   region identity must not depend on --color-accent). --region-fill is the
+   default map fill, legend/list swatch, and detail badge; --region-tint
+   (deeper in light mode, brighter in dark) marks hover/focus/selection. */
+.pref-region-0 { --region-fill: #a9c7ea; --region-tint: #7ba6d8; } /* 北海道 ice blue */
+.pref-region-1 { --region-fill: #a9d8bd; --region-tint: #7fc9a0; } /* 東北 forest mint */
+.pref-region-2 { --region-fill: #f2bfc9; --region-tint: #e78fa1; } /* 関東 sakura pink */
+.pref-region-3 { --region-fill: #c4de9f; --region-tint: #a6cd72; } /* 中部 leaf green */
+.pref-region-4 { --region-fill: #f2d49b; --region-tint: #ecc172; } /* 近畿 apricot gold */
+.pref-region-5 { --region-fill: #aad9de; --region-tint: #7bc6cf; } /* 中国 seafoam */
+.pref-region-6 { --region-fill: #d9c3ee; --region-tint: #bfa0e0; } /* 四国 wisteria */
+.pref-region-7 { --region-fill: #f5c49b; --region-tint: #eda56b; } /* 九州・沖縄 coral */
+
+[data-mode="dark"] .pref-region-0 { --region-fill: #5b87b8; --region-tint: #7ba6d4; }
+[data-mode="dark"] .pref-region-1 { --region-fill: #57997a; --region-tint: #74b896; }
+[data-mode="dark"] .pref-region-2 { --region-fill: #c4788a; --region-tint: #dc95a6; }
+[data-mode="dark"] .pref-region-3 { --region-fill: #7fa65c; --region-tint: #9cc178; }
+[data-mode="dark"] .pref-region-4 { --region-fill: #c9a05e; --region-tint: #e0b878; }
+[data-mode="dark"] .pref-region-5 { --region-fill: #5ba1ac; --region-tint: #7bbdca; }
+[data-mode="dark"] .pref-region-6 { --region-fill: #9a80c4; --region-tint: #b59ddb; }
+[data-mode="dark"] .pref-region-7 { --region-fill: #d08a58; --region-tint: #e8a877; }
 
 /* Hover / keyboard focus / region selection: prefecture highlight only —
    coastline stroke + region tint, never a rectangular outline. */
@@ -277,7 +288,7 @@
   height: 12px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
-  background: var(--region-base, var(--region-fill));
+  background: var(--region-fill);
   flex-shrink: 0;
 }
 
@@ -354,7 +365,7 @@
   height: 14px;
   border-radius: 4px;
   border: 1px solid var(--color-border);
-  background: var(--region-base, var(--region-fill));
+  background: var(--region-fill);
   flex-shrink: 0;
 }
 

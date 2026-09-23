@@ -69,3 +69,11 @@ and `DATA_VERSION` needs no bump).
 2. Browser QA on `python3 -m http.server`: default tinted map, region select zoom (北海道, 関東, 九州・沖縄),
    in/out/reset, vertical pan clamping at both ends, hover/tooltip still correct while zoomed,
    click-through navigation still works, dark mode + a second theme (e.g. summer/anime), reduced-motion jump.
+
+## Postscript (2026-09-23 19:57)
+
+The theme-derived `--region-base` tier described above was superseded the same evening by a
+maintainer correction: "based on the current theme" was a mistake. Region identity is now a
+FIXED light/dark cartographic palette — 8 distinct hues with `[data-mode="dark"]` variants,
+constant across all 6 seasonal themes — and hover/selection uses each region's own stronger
+hue. See the 2026-09-23 19:57 `revisions.md` entry.

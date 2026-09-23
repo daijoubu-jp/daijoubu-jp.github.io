@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v8'; // v8: prefecture map zoom controls + region tinting
+const CACHE_NAME = 'kanjithai-cache-v9'; // v9: fixed light/dark region palette on the prefecture map
 
 /**
  * Store a response in this version's cache, first evicting older entries for
