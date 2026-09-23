@@ -4,9 +4,11 @@
  */
 
 /* Map Card ----------------------------------------------------------------
-   Fixed cartographic palette, independent of the 6 themes: white land on
-   blue water in every theme and mode (user requirement). The seasonal accent
-   appears only on the card's top edge and in interaction states. */
+   Cartographic palette: pale land on blue water in every theme and mode.
+   Each region carries a soft theme-accent tint (--region-base, mixed into
+   white) so the 8 地方 are distinguishable while the land still reads as
+   land; interaction states deepen to --region-tint, and the seasonal accent
+   also frames the card's top edge. */
 
 .pref-map-wrap {
   position: relative;
@@ -36,7 +38,7 @@
 }
 
 .pref-map-svg path {
-  fill: #ffffff;
+  fill: var(--region-base, #ffffff);
   stroke: #9db4c8;
   stroke-width: 0.5;
   cursor: pointer;
@@ -45,17 +47,18 @@
               opacity var(--transition-fast);
 }
 
-/* Region identity colors: --region-fill for legend swatches, --region-tint
-   (stronger, mixed into white) for map hover/selection. Plain var() fallback
-   comes first for browsers without color-mix(). */
-.pref-region-0 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 85%, #ffffff); --region-tint: var(--region-fill); }
-.pref-region-1 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 75%, #ffffff); --region-tint: var(--region-fill); }
-.pref-region-2 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 65%, #ffffff); --region-tint: var(--region-fill); }
-.pref-region-3 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 55%, #ffffff); --region-tint: var(--region-fill); }
-.pref-region-4 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-tint: var(--region-fill); }
-.pref-region-5 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 38%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 45%, #ffffff); }
-.pref-region-6 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 31%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 40%, #ffffff); }
-.pref-region-7 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 24%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 36%, #ffffff); }
+/* Region identity colors: --region-base (soft, mixed into white) for the
+   default map fill and legend swatches; --region-tint (stronger) for
+   hover/selection; --region-fill for detail-page badges. Plain var()
+   fallbacks come first for browsers without color-mix(). */
+.pref-region-0 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 85%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 52%, #ffffff); }
+.pref-region-1 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 75%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 46%, #ffffff); }
+.pref-region-2 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 65%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 40%, #ffffff); }
+.pref-region-3 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 55%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 34%, #ffffff); }
+.pref-region-4 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-tint: var(--region-fill); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 28%, #ffffff); }
+.pref-region-5 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 38%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 45%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 22%, #ffffff); }
+.pref-region-6 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 31%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 40%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 16%, #ffffff); }
+.pref-region-7 { --region-fill: var(--color-accent); --region-fill: color-mix(in srgb, var(--color-accent) 24%, #ffffff); --region-tint: color-mix(in srgb, var(--color-accent) 36%, #ffffff); --region-base: var(--color-accent); --region-base: color-mix(in srgb, var(--color-accent) 10%, #ffffff); }
 
 /* Hover / keyboard focus / region selection: prefecture highlight only —
    coastline stroke + region tint, never a rectangular outline. */
@@ -70,6 +73,108 @@
 
 .pref-map-svg .pref-path.pref-path-dim {
   opacity: 0.25;
+}
+
+/* Zoom Controls (top-right of the map card) ------------------------------- */
+
+.pref-map-controls {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.pref-zoom-region {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  padding: 6px 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.pref-zoom-region-label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.pref-zoom-select {
+  max-width: 170px;
+  padding: 5px 8px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-thai);
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.pref-zoom-select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.pref-zoom-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.pref-zoom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: border-color var(--transition-fast),
+              background-color var(--transition-fast),
+              color var(--transition-fast);
+}
+
+.pref-zoom-btn:hover,
+.pref-zoom-btn:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-surface-hover);
+}
+
+.pref-zoom-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.pref-zoom-sep {
+  width: 1px;
+  height: 20px;
+  margin: 0 2px;
+  background: var(--color-border);
 }
 
 .pref-map-note {
@@ -172,7 +277,7 @@
   height: 12px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
-  background: var(--region-fill);
+  background: var(--region-base, var(--region-fill));
   flex-shrink: 0;
 }
 
@@ -249,7 +354,7 @@
   height: 14px;
   border-radius: 4px;
   border: 1px solid var(--color-border);
-  background: var(--region-fill);
+  background: var(--region-base, var(--region-fill));
   flex-shrink: 0;
 }
 
@@ -712,7 +817,8 @@
   .pref-legend-chip,
   .pref-list-item,
   .pref-kanji-link,
-  .pref-nav-btn {
+  .pref-nav-btn,
+  .pref-zoom-btn {
     transition: none;
   }
 
@@ -732,6 +838,30 @@
 @media (max-width: 640px) {
   .pref-map-wrap {
     padding: var(--spacing-sm);
+  }
+
+  .pref-map-controls {
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
+  }
+
+  .pref-zoom-region {
+    padding: 4px 6px;
+  }
+
+  .pref-zoom-region-label {
+    font-size: 0.65rem;
+  }
+
+  .pref-zoom-select {
+    max-width: 128px;
+    font-size: var(--font-size-xs);
+  }
+
+  .pref-zoom-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
   }
 
   .pref-filter-row {

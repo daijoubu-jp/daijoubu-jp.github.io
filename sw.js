@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v7'; // v7: cache-first versioned data; no HTTP-cache bypass
+const CACHE_NAME = 'kanjithai-cache-v8'; // v8: prefecture map zoom controls + region tinting
 
 /**
  * Store a response in this version's cache, first evicting older entries for

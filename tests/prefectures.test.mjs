@@ -9,7 +9,18 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { REGIONS, REGION_INDEX, buildMapSvg } from '../assets/js/prefectures-map.js';
+import {
+  REGIONS,
+  REGION_INDEX,
+  buildMapSvg,
+  MIN_SCALE,
+  parseViewBox,
+  formatViewBox,
+  zoomViewBox,
+  panViewBoxY,
+  fitRegionViewBox,
+  buildMapControlsHtml
+} from '../assets/js/prefectures-map.js';
 import { findPrefecture, uniqueKanji, formatPopulation, formatArea } from '../assets/js/prefecture-detail.js';
 
 const { prefectures } = JSON.parse(
@@ -159,4 +170,99 @@ test('prefectures pages declare data-page, css link, and nav entry', () => {
   const navEntry = /<li><a href="\.\.\/knowledge\/jp-prefectures\.html">แผนที่ 47 จังหวัด \(都道府県\)<\/a><\/li>/;
   assert.match(mapHtml, navEntry, 'map page missing prefectures nav entry at knowledge depth');
   assert.match(detailHtml, navEntry, 'detail page missing prefectures nav entry at knowledge depth');
+});
+
+/* Zoom math ---------------------------------------------------------------- */
+
+const BASE = { x: 0, y: 0, w: 384.24, h: 395.47 };
+
+test('parseViewBox and formatViewBox round-trip and reject malformed input', () => {
+  assert.deepEqual(parseViewBox('0 0 384.24 395.47'), { x: 0, y: 0, w: 384.24, h: 395.47 });
+  assert.deepEqual(parseViewBox('10,20 30,40'), { x: 10, y: 20, w: 30, h: 40 });
+  assert.equal(parseViewBox('0 0 10'), null);
+  assert.equal(parseViewBox('0 0 abc 10'), null);
+  assert.equal(parseViewBox('0 0 -5 10'), null);
+  assert.equal(formatViewBox({ x: 1.005, y: 2.999, w: 384.2399, h: 10.001 }), '1 3 384.24 10');
+  const live = parseViewBox(mapData.viewBox);
+  assert.ok(live, 'live prefectures-map.json viewBox must parse');
+  assert.equal(formatViewBox(live), mapData.viewBox);
+});
+
+test('zoomViewBox zooms about the view center and clamps at both limits', () => {
+  const zoomedIn = zoomViewBox(BASE, BASE, 0.5);
+  assert.equal(zoomedIn.w, BASE.w * 0.5);
+  assert.equal(zoomedIn.h, BASE.h * 0.5);
+  assert.ok(Math.abs((zoomedIn.x + zoomedIn.w / 2) - BASE.w / 2) < 1e-9, 'center preserved');
+
+  const overZoomed = zoomViewBox(BASE, BASE, 0.01);
+  assert.equal(overZoomed.w, BASE.w * MIN_SCALE, 'never zooms past MIN_SCALE');
+
+  const overZoomedOut = zoomViewBox({ x: 100, y: 100, w: BASE.w * 0.2, h: BASE.h * 0.2 }, BASE, 10);
+  assert.deepEqual(overZoomedOut, { ...BASE }, 'never zooms out past the base viewBox');
+
+  // Zooming in near a corner clamps the view fully inside the base rect.
+  const corner = zoomViewBox({ x: 0, y: 0, w: BASE.w * 0.3, h: BASE.h * 0.3 }, BASE, 0.5);
+  assert.ok(corner.x >= 0 && corner.y >= 0);
+  assert.ok(corner.x + corner.w <= BASE.w + 1e-9);
+  assert.ok(corner.y + corner.h <= BASE.h + 1e-9);
+});
+
+test('panViewBoxY shifts by a fraction of view height and clamps at the edges', () => {
+  const zoomed = { x: 100, y: 100, w: BASE.w * 0.2, h: BASE.h * 0.2 };
+  const down = panViewBoxY(zoomed, BASE, 0.35);
+  assert.ok(down.y > zoomed.y);
+  assert.equal(down.w, zoomed.w, 'pan never resizes');
+
+  const atTop = panViewBoxY({ x: 100, y: 0, w: BASE.w * 0.2, h: BASE.h * 0.2 }, BASE, -0.35);
+  assert.equal(atTop.y, 0, 'clamped at the top edge');
+
+  const atBottom = panViewBoxY({ x: 100, y: BASE.h - BASE.h * 0.2, w: BASE.w * 0.2, h: BASE.h * 0.2 }, BASE, 0.35);
+  assert.ok(Math.abs(atBottom.y + atBottom.h - BASE.h) < 1e-9, 'clamped at the bottom edge');
+});
+
+test('fitRegionViewBox contains the bounds, keeps the base aspect, and clamps', () => {
+  const bounds = { x: 200, y: 40, width: 80, height: 120 };
+  const view = fitRegionViewBox(bounds, BASE);
+  assert.ok(view.x <= bounds.x && view.y <= bounds.y);
+  assert.ok(view.x + view.w >= bounds.x + bounds.width);
+  assert.ok(view.y + view.h >= bounds.y + bounds.height);
+  assert.ok(Math.abs(view.w / view.h - BASE.w / BASE.h) < 1e-9, 'aspect ratio preserved');
+  assert.ok(view.w <= BASE.w && view.h <= BASE.h);
+  assert.ok(Math.abs((view.x + view.w / 2) - (bounds.x + bounds.width / 2)) < 1e-9 ||
+            view.x === 0 || Math.abs(view.x + view.w - BASE.w) < 1e-9, 'centered unless clamped');
+
+  const tiny = fitRegionViewBox({ x: 50, y: 50, width: 1, height: 1 }, BASE);
+  assert.equal(tiny.w, BASE.w * MIN_SCALE, 'tiny regions clamp at MIN_SCALE');
+
+  const whole = fitRegionViewBox({ x: 0, y: 0, width: BASE.w, height: BASE.h }, BASE);
+  assert.deepEqual(whole, { ...BASE }, 'full-country bounds fit back to the base viewBox');
+});
+
+test('buildMapControlsHtml renders the region select and five zoom buttons', () => {
+  const html = buildMapControlsHtml();
+  assert.match(html, /class="pref-map-controls"/);
+  assert.equal((html.match(/<option /g) || []).length, 9, 'all + 8 regions');
+  assert.match(html, /<option value="">[^<]+<\/option>/, 'default option has a label');
+  assert.match(html, /<option value="0">[^<]+北海道<\/option>/);
+  assert.match(html, /<option value="7">[^<]+九州・沖縄<\/option>/);
+  assert.ok(!html.includes('<option value="0"><span'), 'options must not nest markup');
+  for (const id of ['pref-region-zoom', 'pref-zoom-in', 'pref-zoom-out', 'pref-zoom-reset', 'pref-pan-up', 'pref-pan-down']) {
+    assert.ok(html.includes(`id="${id}"`), `controls missing #${id}`);
+  }
+  assert.equal((html.match(/<button /g) || []).length, 5);
+  assert.equal((html.match(/aria-label="/g) || []).length, 7, 'group + select + 5 buttons all labelled');
+});
+
+test('prefectures.css colorizes all 8 regions via --region-base on the default fill', () => {
+  const css = readFileSync(fileURLToPath(new URL('../assets/css/prefectures.css', import.meta.url)), 'utf8');
+  assert.match(css, /\.pref-map-svg path \{\s*fill: var\(--region-base, #ffffff\);/);
+  for (let i = 0; i < 8; i++) {
+    const rule = new RegExp(`\\.pref-region-${i} \\{[^}]*--region-base: color-mix\\(in srgb, var\\(--color-accent\\) (\\d+)%`);
+    const match = css.match(rule);
+    assert.ok(match, `region ${i} missing --region-base color-mix`);
+    if (i > 0) {
+      const prev = Number(css.match(new RegExp(`\\.pref-region-${i - 1} \\{[^}]*--region-base: color-mix\\(in srgb, var\\(--color-accent\\) (\\d+)%`))[1]);
+      assert.ok(Number(match[1]) < prev, `region ${i} tint must be softer than region ${i - 1}`);
+    }
+  }
 });

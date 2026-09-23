@@ -1,7 +1,8 @@
 /**
  * prefectures-map.js
  * Interactive 47-prefecture map of Japan (都道府県 - Todōfuken) with region
- * legend filters, text search, hover/focus tooltip, and per-prefecture links.
+ * legend filters, text search, hover/focus tooltip, per-prefecture links, and
+ * viewBox-based zoom (region presets, in/out, reset, vertical pan).
  */
 
 export const REGIONS = ['北海道地方', '東北地方', '関東地方', '中部地方', '近畿地方', '中国地方', '四国地方', '九州・沖縄地方'];
@@ -76,9 +77,128 @@ ${paths}
 }
 
 /**
+ * Maximum zoom-in depth: the viewport never shrinks below this fraction of
+ * the base viewBox (≈12.5x). Scale 1 means the whole country is visible.
+ */
+export const MIN_SCALE = 0.08;
+
+/**
+ * Parses an SVG viewBox string into a rect.
+ * @param {string} str e.g. "0 0 384.24 395.47"
+ * @returns {{x: number, y: number, w: number, h: number}|null} null when malformed.
+ */
+export function parseViewBox(str) {
+  const parts = String(str).trim().split(/[\s,]+/).map(Number);
+  if (parts.length !== 4 || parts.some((n) => !Number.isFinite(n))) return null;
+  const [x, y, w, h] = parts;
+  if (w <= 0 || h <= 0) return null;
+  return { x, y, w, h };
+}
+
+/**
+ * Serializes a viewBox rect, rounded to 2 decimals.
+ * @param {{x: number, y: number, w: number, h: number}} v
+ * @returns {string}
+ */
+export function formatViewBox(v) {
+  const r = (n) => Math.round(n * 100) / 100;
+  return `${r(v.x)} ${r(v.y)} ${r(v.w)} ${r(v.h)}`;
+}
+
+/**
+ * Places a viewport of size w*h centered on (cx, cy), clamped so it stays
+ * fully inside the base rect (never wider/taller than the base).
+ * @param {{x: number, y: number, w: number, h: number}} base
+ * @param {number} w
+ * @param {number} h
+ * @param {number} cx
+ * @param {number} cy
+ * @returns {{x: number, y: number, w: number, h: number}}
+ */
+function placeView(base, w, h, cx, cy) {
+  const vw = Math.min(w, base.w);
+  const vh = Math.min(h, base.h);
+  let x = cx - vw / 2;
+  let y = cy - vh / 2;
+  x = Math.min(Math.max(x, base.x), base.x + base.w - vw);
+  y = Math.min(Math.max(y, base.y), base.y + base.h - vh);
+  return { x, y, w: vw, h: vh };
+}
+
+/**
+ * Zooms a viewBox about its own center, preserving the base aspect ratio.
+ * @param {{x: number, y: number, w: number, h: number}} view current viewport
+ * @param {{x: number, y: number, w: number, h: number}} base full-country viewport
+ * @param {number} factor multiplier on viewport size (<1 zooms in, >1 zooms out)
+ * @returns {{x: number, y: number, w: number, h: number}} clamped inside [MIN_SCALE, 1] of base
+ */
+export function zoomViewBox(view, base, factor) {
+  const scale = view.w / base.w;
+  const next = Math.min(Math.max(scale * factor, MIN_SCALE), 1);
+  const w = base.w * next;
+  const h = base.h * next;
+  return placeView(base, w, h, view.x + view.w / 2, view.y + view.h / 2);
+}
+
+/**
+ * Pans a viewBox vertically by a fraction of its own height.
+ * @param {{x: number, y: number, w: number, h: number}} view
+ * @param {{x: number, y: number, w: number, h: number}} base
+ * @param {number} dyRatio positive moves the view down (content moves up)
+ * @returns {{x: number, y: number, w: number, h: number}} clamped inside base
+ */
+export function panViewBoxY(view, base, dyRatio) {
+  return placeView(base, view.w, view.h, view.x + view.w / 2, view.y + view.h / 2 + view.h * dyRatio);
+}
+
+/**
+ * Fits a region bounding box into the viewport, padded and aspect-preserved.
+ * @param {{x: number, y: number, width: number, height: number}} bounds DOMRect-like (e.g. SVGPathElement.getBBox())
+ * @param {{x: number, y: number, w: number, h: number}} base
+ * @returns {{x: number, y: number, w: number, h: number}}
+ */
+export function fitRegionViewBox(bounds, base) {
+  const padding = 1.16; // 8% breathing room around the region
+  const scale = Math.max((bounds.width * padding) / base.w, (bounds.height * padding) / base.h);
+  const next = Math.min(Math.max(scale, MIN_SCALE), 1);
+  const w = base.w * next;
+  const h = base.h * next;
+  return placeView(base, w, h, bounds.x + bounds.width / 2, bounds.y + bounds.height / 2);
+}
+
+/**
+ * Builds the top-right zoom control cluster markup (pure, no DOM access).
+ * Region options reuse REGIONS/REGION_TH so labels match the legend chips.
+ * @returns {string} HTML for `.pref-map-controls`
+ */
+export function buildMapControlsHtml() {
+  const options = ['<option value="">ทั้งหมด</option>', ...REGIONS.map((region, i) => {
+    const shortJa = region.replace(/地方$/, '');
+    return `<option value="${i}">${REGION_TH[i]} ${shortJa}</option>`;
+  })].join('\n        ');
+  return `<div class="pref-map-controls" role="group" aria-label="ซุมและมุมมองแผนที่">
+    <label class="pref-zoom-region">
+      <span class="pref-zoom-region-label"><i class="fa-solid fa-map-location-dot"></i> ซุมตามภูมิภาค</span>
+      <select id="pref-region-zoom" class="pref-zoom-select" aria-label="ซุมเข้ าภูมิภาค">
+        ${options}
+      </select>
+    </label>
+    <div class="pref-zoom-buttons">
+      <button type="button" class="pref-zoom-btn" id="pref-zoom-in" aria-label="ซุมเข้ า" title="ซุมเข้ า"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+      <button type="button" class="pref-zoom-btn" id="pref-zoom-out" aria-label="ซุมออก" title="ซุมออก"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+      <button type="button" class="pref-zoom-btn" id="pref-zoom-reset" aria-label="รีเซ็ ตมุมมอง" title="รีเซ็ ตมุมมอง"><i class="fa-solid fa-rotate-left"></i></button>
+      <span class="pref-zoom-sep" aria-hidden="true"></span>
+      <button type="button" class="pref-zoom-btn" id="pref-pan-up" aria-label="เลื่ อนแผนที่ขึ้ นบน" title="เลื่ อนขึ้ นบน"><i class="fa-solid fa-chevron-up"></i></button>
+      <button type="button" class="pref-zoom-btn" id="pref-pan-down" aria-label="เลื่ อนแผนที่ลงล่าง" title="เลื่ อนลงล่าง"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+  </div>`;
+}
+
+/**
  * Initializes the prefectures map page: loads both JSON datasets, renders the
  * SVG map, wires tooltip/hover/click/keyboard interactions, region legend
- * filter chips, and the text filter over both map and list.
+ * filter chips, the text filter over both map and list, and the zoom
+ * controls (region presets, in/out, reset, vertical pan).
  */
 export function initPrefecturesMap() {
   const mapContainer = document.getElementById('pref-map-container');
@@ -238,6 +358,86 @@ export function initPrefecturesMap() {
         goToPrefecture(path.dataset.slug);
       }
     });
+
+    /* Zoom controls (top-right of the map card) -------------------------- */
+    const baseVB = parseViewBox(svg.getAttribute('viewBox'));
+    if (mapWrap && baseVB) {
+      mapWrap.insertAdjacentHTML('afterbegin', buildMapControlsHtml());
+      const zoomSelect = document.getElementById('pref-region-zoom');
+      let view = { ...baseVB };
+      let tweenId = null;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      /**
+       * Moves the viewport to `next`, tweening the viewBox attribute unless
+       * the user prefers reduced motion. A new command cancels any in-flight
+       * tween so rapid clicks stay responsive.
+       */
+      function setView(next) {
+        view = next;
+        if (tweenId !== null) {
+          cancelAnimationFrame(tweenId);
+          tweenId = null;
+        }
+        if (reduceMotion.matches) {
+          svg.setAttribute('viewBox', formatViewBox(view));
+          return;
+        }
+        const from = parseViewBox(svg.getAttribute('viewBox')) || { ...view };
+        const to = view;
+        const start = performance.now();
+        const duration = 320;
+        const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+        const step = (now) => {
+          const t = Math.min((now - start) / duration, 1);
+          const k = ease(t);
+          svg.setAttribute('viewBox', formatViewBox({
+            x: from.x + (to.x - from.x) * k,
+            y: from.y + (to.y - from.y) * k,
+            w: from.w + (to.w - from.w) * k,
+            h: from.h + (to.h - from.h) * k
+          }));
+          tweenId = t < 1 ? requestAnimationFrame(step) : null;
+        };
+        tweenId = requestAnimationFrame(step);
+      }
+
+      const ZOOM_STEP = 0.6;
+      const PAN_STEP = 0.35;
+      document.getElementById('pref-zoom-in').addEventListener('click', () => setView(zoomViewBox(view, baseVB, ZOOM_STEP)));
+      document.getElementById('pref-zoom-out').addEventListener('click', () => setView(zoomViewBox(view, baseVB, 1 / ZOOM_STEP)));
+      document.getElementById('pref-zoom-reset').addEventListener('click', () => {
+        if (zoomSelect) zoomSelect.value = '';
+        setView({ ...baseVB });
+      });
+      document.getElementById('pref-pan-up').addEventListener('click', () => setView(panViewBoxY(view, baseVB, -PAN_STEP)));
+      document.getElementById('pref-pan-down').addEventListener('click', () => setView(panViewBoxY(view, baseVB, PAN_STEP)));
+
+      if (zoomSelect) {
+        zoomSelect.addEventListener('change', () => {
+          if (zoomSelect.value === '') {
+            setView({ ...baseVB });
+            return;
+          }
+          let bounds = null;
+          svg.querySelectorAll(`.pref-region-${Number(zoomSelect.value)}`).forEach((p) => {
+            const b = p.getBBox();
+            if (!b.width && !b.height) return;
+            if (!bounds) {
+              bounds = { x: b.x, y: b.y, width: b.width, height: b.height };
+              return;
+            }
+            const maxX = Math.max(bounds.x + bounds.width, b.x + b.width);
+            const maxY = Math.max(bounds.y + bounds.height, b.y + b.height);
+            bounds.x = Math.min(bounds.x, b.x);
+            bounds.y = Math.min(bounds.y, b.y);
+            bounds.width = maxX - bounds.x;
+            bounds.height = maxY - bounds.y;
+          });
+          if (bounds) setView(fitRegionViewBox(bounds, baseVB));
+        });
+      }
+    }
 
     applyFilters();
   }).catch((err) => {
