@@ -81,3 +81,33 @@ test('isRoundComplete only when every valid compound is selected', () => {
   assert.equal(isRoundComplete([0], [0, 4]), false);
   assert.equal(isRoundComplete([], [0]), false);
 });
+
+// startGame() draws 400 rounds in one burst, so decoy selection must stay O(count)
+// against the full ~17.8k-word dataset. This pins the behavioural contract of the
+// probing implementation without timing it (which would be flaky in CI).
+test('pickDecoyIndices scales to a large pool without losing its guarantees', () => {
+  const words = [];
+  for (let i = 0; i < 5000; i += 1) {
+    // every 10th entry carries a Thai gloss; 山 appears in every 50th surface
+    words.push([`語${i}${i % 50 === 0 ? '山' : ''}`, 'よみ', `gloss${i}`,
+                i % 10 === 0 ? `ไทย${i}` : '']);
+  }
+  const big = { words, byKanji: { 山: [] } };
+
+  const draws = [];
+  for (let round = 0; round < 400; round += 1) {
+    draws.push(pickDecoyIndices(big, '山', 6, seededRng(round + 1)));
+  }
+
+  for (const decoys of draws) {
+    assert.equal(decoys.length, 6, 'every round needs 6 decoys');
+    assert.equal(new Set(decoys).size, 6, 'decoys must be distinct');
+    for (const index of decoys) {
+      assert.ok(!words[index][0].includes('山'), 'a decoy must not contain the target kanji');
+    }
+  }
+
+  // With ~500 Thai-glossed candidates available, all decoys should be glossed.
+  assert.ok(draws.every(decoys => decoys.every(i => words[i][3] !== '')),
+    'decoys should prefer compounds that have a Thai gloss');
+});

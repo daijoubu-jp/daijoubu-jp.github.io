@@ -30,6 +30,13 @@ export function pickValidIndices(data, kanji, count, rng = Math.random) {
 
 /**
  * Indices of compounds that do NOT contain the target kanji, prioritizing those with Thai meanings.
+ *
+ * startGame() builds 400 rounds in one synchronous burst, so this runs 400
+ * times per difficulty band against a ~17.8k-word dataset. Materialising and
+ * shuffling the full index array per call cost ~360 ms of main-thread time and
+ * froze the UI on band selection. The word pool is split once per dataset and
+ * cached; each call then draws by random probing, which is O(count).
+ *
  * @param {{ words: string[][] }} data
  * @param {string} kanji
  * @param {number} count
@@ -39,27 +46,71 @@ export function pickValidIndices(data, kanji, count, rng = Math.random) {
 export function pickDecoyIndices(data, kanji, count, rng = Math.random) {
   const targetCount = Math.max(0, count);
   if (targetCount === 0) return [];
-  const all = Array.from({ length: data.words.length }, (_unused, i) => i);
-  const shuffled = shuffle(all, rng);
+
+  const words = data.words || [];
+  if (words.length === 0) return [];
+
+  const { preferred, fallback } = decoyPool(data);
   const decoys = [];
-  const fallback = [];
 
-  for (const index of shuffled) {
-    const entry = data.words[index];
-    if (!entry || entry[0].includes(kanji)) continue;
-    if (entry[3]) {
-      decoys.push(index);
-      if (decoys.length >= targetCount) return decoys;
-    } else if (decoys.length + fallback.length < targetCount * 2) {
-      fallback.push(index);
-    }
-  }
-
-  for (const index of fallback) {
-    if (decoys.length >= targetCount) break;
-    decoys.push(index);
+  // Draw from Thai-glossed compounds first, then from the rest, exactly as the
+  // previous shuffled-scan version did.
+  drawFrom(preferred, words, kanji, targetCount, rng, decoys);
+  if (decoys.length < targetCount) {
+    drawFrom(fallback, words, kanji, targetCount, rng, decoys);
   }
   return decoys;
+}
+
+/** Cache of the decoy word pool, keyed on the words array identity. */
+let poolCache = { source: null, preferred: [], fallback: [] };
+
+/**
+ * Split every compound index into Thai-glossed and glossless buckets, once.
+ * @param {{ words: string[][] }} data
+ * @returns {{ preferred: number[], fallback: number[] }}
+ */
+function decoyPool(data) {
+  if (poolCache.source === data.words) return poolCache;
+
+  const preferred = [];
+  const fallback = [];
+  const words = data.words || [];
+  for (let i = 0; i < words.length; i += 1) {
+    const entry = words[i];
+    if (!entry) continue;
+    if (entry[3]) preferred.push(i);
+    else fallback.push(i);
+  }
+
+  poolCache = { source: data.words, preferred, fallback };
+  return poolCache;
+}
+
+/**
+ * Draw up to `need` distinct indices from `pool` by random probing, skipping
+ * entries that contain the target kanji or were already drawn.
+ * @param {number[]} pool
+ * @param {string[][]} words
+ * @param {string} kanji
+ * @param {number} need
+ * @param {() => number} rng
+ * @param {number[]} out accumulates results
+ */
+function drawFrom(pool, words, kanji, need, rng, out) {
+  if (pool.length === 0) return;
+
+  const taken = new Set(out);
+  // Bounded so a pool that is almost entirely target-bearing cannot spin.
+  const maxTries = Math.max(32, need * 24);
+  for (let tries = 0; out.length < need && tries < maxTries; tries += 1) {
+    const index = pool[Math.floor(rng() * pool.length)];
+    if (taken.has(index)) continue;
+    const entry = words[index];
+    if (!entry || entry[0].includes(kanji)) continue;
+    taken.add(index);
+    out.push(index);
+  }
 }
 
 /**
