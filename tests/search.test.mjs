@@ -66,10 +66,21 @@ test('createPromiseCache resets after a rejection so the next get retries', asyn
   assert.equal(calls, 2);
 });
 
-test('romajiToHiragana converts basic romaji', () => {
+test('romajiToHiragana converts basic romaji, sokuon, nn/n\', and Kunrei-shiki', () => {
   assert.equal(romajiToHiragana('kanji'), 'かんじ');
   assert.equal(romajiToHiragana('sakura'), 'さくら');
   assert.equal(romajiToHiragana('ai'), 'あい');
+  assert.equal(romajiToHiragana('gakkou'), 'がっこう');
+  assert.equal(romajiToHiragana('kippu'), 'きっぷ');
+  assert.equal(romajiToHiragana('zasshi'), 'ざっし');
+  assert.equal(romajiToHiragana('matcha'), 'まっちゃ');
+  assert.equal(romajiToHiragana('maccha'), 'まっちゃ');
+  assert.equal(romajiToHiragana('mittsu'), 'みっつ');
+  assert.equal(romajiToHiragana('onna'), 'おんな');
+  assert.equal(romajiToHiragana('annai'), 'あんない');
+  assert.equal(romajiToHiragana("tan'i"), 'たんい');
+  assert.equal(romajiToHiragana('honn'), 'ほん');
+  assert.equal(romajiToHiragana('syasin'), 'しゃしん');
   assert.equal(romajiToHiragana(''), '');
 });
 

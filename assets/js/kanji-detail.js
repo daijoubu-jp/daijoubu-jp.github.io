@@ -7,7 +7,7 @@
  * grid guidelines, TTS audio, furigana toggle, and Anki export.
  */
 
-import { getKanji, getKanjiByCodepoint, loadKanjiData } from './search.js';
+import { getKanji, getKanjiByCodepoint, loadKanjiData, loadCompoundsData } from './search.js';
 import { isFavorite, addFavorite, removeFavorite, copyToClipboard } from './storage.js';
 import { speakJapanese as speakJapaneseShared } from './tts.js';
 
@@ -616,45 +616,99 @@ function formatVocabWord(word) {
   }).join('');
 }
 
-function renderExamples(kanji) {
+/**
+ * Select up to `maxCount` supplementary compounds for `kanjiChar` from
+ * `compounds.min.json`, deduplicated against `curatedExamples` and sorted
+ * with Thai-glossed entries first.
+ * @param {string} kanjiChar
+ * @param {Array<{ word: string }>} [curatedExamples=[]]
+ * @param {{ words?: string[][], byKanji?: Record<string, number[]> } | null} [compoundsData=null]
+ * @param {number} [maxCount=8]
+ * @returns {Array<{ word: string, reading: string, meaning_en: string, meaning_th: string }>}
+ */
+export function selectSupplementaryCompounds(kanjiChar, curatedExamples = [], compoundsData = null, maxCount = 8) {
+  if (!kanjiChar || !compoundsData || !compoundsData.byKanji || !compoundsData.words) return [];
+  const indices = compoundsData.byKanji[kanjiChar] || [];
+  if (indices.length === 0) return [];
+
+  const seenWords = new Set((curatedExamples || []).map(ex => ex.word));
+  const candidates = [];
+
+  for (const idx of indices) {
+    const tuple = compoundsData.words[idx];
+    if (!tuple) continue;
+    const [word, reading, meaning_en = '', meaning_th = ''] = tuple;
+    if (!word || seenWords.has(word)) continue;
+    seenWords.add(word);
+    candidates.push({ word, reading: reading || '', meaning_en, meaning_th });
+  }
+
+  candidates.sort((a, b) => {
+    const aHasTh = a.meaning_th ? 1 : 0;
+    const bHasTh = b.meaning_th ? 1 : 0;
+    return bHasTh - aHasTh;
+  });
+
+  return candidates.slice(0, Math.max(0, maxCount));
+}
+
+function renderVocabItemHtml(ex) {
+  const speechWord = ex.reading ? ex.reading.split('/')[0].trim() : ex.word;
+  return `
+    <div class="vocab-item">
+      <div class="vocab-jp">
+        <span class="vocab-word">
+          ${formatVocabWord(ex.word)}
+          <button type="button" class="audio-btn" data-tts="${speechWord}" title="ฟังเสียงอ่านคำศัพท์ ${ex.word}" aria-label="ฟังเสียงอ่าน ${ex.word}">🔊</button>
+        </span>
+        <span class="vocab-reading">${ex.reading || ''}</span>
+      </div>
+      <div class="vocab-meaning">
+        <div class="vocab-meaning-th">${ex.meaning_th || ''}</div>
+        <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">${ex.meaning_en || ''}</div>
+      </div>
+      ${ex.sentence_ja ? `
+        <div class="vocab-sentence">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px;">
+            <span class="vocab-sentence-label">例文:</span>
+            <button type="button" class="audio-btn" data-tts="${ex.sentence_ja}" title="ฟังเสียงอ่านประโยคตัวอย่าง" aria-label="ฟังเสียงประโยค" style="font-size: 0.8rem; gap: 4px;">🔊 ฟังประโยค</button>
+          </div>
+          <div class="vocab-sentence-ja">${ex.sentence_ruby || ex.sentence_ja}</div>
+          <div class="vocab-sentence-th">${ex.sentence_th || ''}</div>
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+async function renderExamples(kanji) {
   const container = document.getElementById('detail-examples');
   if (!container) return;
 
-  if (!kanji.examples || kanji.examples.length === 0) {
+  const curated = Array.isArray(kanji.examples) ? kanji.examples : [];
+
+  if (curated.length > 0) {
+    container.innerHTML = `<div class="vocab-list">${curated.map(renderVocabItemHtml).join('')}</div>`;
+  }
+
+  let supplementary = [];
+  try {
+    const compoundsData = await loadCompoundsData();
+    supplementary = selectSupplementaryCompounds(kanji.kanji, curated, compoundsData, 8);
+    kanji._supplementaryExamples = supplementary;
+  } catch {
+    supplementary = [];
+  }
+
+  const allItems = [...curated, ...supplementary];
+  if (allItems.length === 0) {
     container.innerHTML = `<p style="color: var(--color-text-muted); font-size: var(--font-size-sm);">ไม่มีข้อมูลคำศัพท์ตัวอย่าง</p>`;
     return;
   }
 
   container.innerHTML = `
     <div class="vocab-list">
-      ${kanji.examples.map(ex => {
-        const speechWord = ex.reading ? ex.reading.split('/')[0].trim() : ex.word;
-        return `
-          <div class="vocab-item">
-            <div class="vocab-jp">
-              <span class="vocab-word">
-                ${formatVocabWord(ex.word)}
-                <button type="button" class="audio-btn" data-tts="${speechWord}" title="ฟังเสียงอ่านคำศัพท์ ${ex.word}" aria-label="ฟังเสียงอ่าน ${ex.word}">🔊</button>
-              </span>
-              <span class="vocab-reading">${ex.reading}</span>
-            </div>
-            <div class="vocab-meaning">
-              <div class="vocab-meaning-th">${ex.meaning_th || ''}</div>
-              <div style="font-size: var(--font-size-xs); color: var(--color-text-muted);">${ex.meaning_en || ''}</div>
-            </div>
-            ${ex.sentence_ja ? `
-              <div class="vocab-sentence">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px;">
-                  <span class="vocab-sentence-label">例文:</span>
-                  <button type="button" class="audio-btn" data-tts="${ex.sentence_ja}" title="ฟังเสียงอ่านประโยคตัวอย่าง" aria-label="ฟังเสียงประโยค" style="font-size: 0.8rem; gap: 4px;">🔊 ฟังประโยค</button>
-                </div>
-                <div class="vocab-sentence-ja">${ex.sentence_ruby || ex.sentence_ja}</div>
-                <div class="vocab-sentence-th">${ex.sentence_th || ''}</div>
-              </div>
-            ` : ''}
-          </div>
-        `;
-      }).join('')}
+      ${allItems.map(renderVocabItemHtml).join('')}
     </div>
   `;
 }
@@ -992,7 +1046,8 @@ function initAnkiExport(kanji) {
     const jlpt = kanji.jlpt ? `N${kanji.jlpt}` : '-';
     const radical = `${kanji.radicalChar || ''} (#${kanji.radical || '-'})`;
     
-    const vocabLines = (kanji.examples || []).slice(0, 3).map(e => 
+    const combinedExamples = [...(kanji.examples || []), ...(kanji._supplementaryExamples || [])];
+    const vocabLines = combinedExamples.slice(0, 3).map(e => 
       `• ${e.word}【${e.reading}】: ${e.meaning_th || e.meaning_en}`
     ).join('\n');
 

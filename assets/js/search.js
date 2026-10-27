@@ -33,7 +33,7 @@ export function createPromiseCache(loader) {
  * Bump this (e.g. YYYYMMDD or a build timestamp) whenever data/*.json is
  * regenerated — one edit invalidates all data caches instead of four.
  */
-const DATA_VERSION = '20260917';
+const DATA_VERSION = '20261019';
 
 const kanjiDataCache = createPromiseCache(async () => {
   // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)
@@ -116,6 +116,26 @@ export async function loadCompoundsData() {
   }
 }
 
+const erasCache = createPromiseCache(async () => {
+  const dataUrl = new URL(`../../data/eras.json?v=${DATA_VERSION}`, import.meta.url).href;
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  return res.json();
+});
+
+/**
+ * Load the Japanese historical periods and Gengo dataset.
+ * @returns {Promise<{ periods: Array<object>, gengo: Array<object> }>}
+ */
+export async function loadErasData() {
+  try {
+    return await erasCache.get();
+  } catch (err) {
+    console.error('Fatal: Failed to load eras.json. Did you forget to run scripts/compile_content.py?', err);
+    return { periods: [], gengo: [] };
+  }
+}
+
 /**
  * Check if a character is a CJK Kanji.
  */
@@ -137,46 +157,62 @@ export function isThai(str) {
   return /[\u0E00-\u0E7F]/.test(str);
 }
 
+const ROMAJI_MAP = {
+  'kya': 'きゃ', 'kyu': 'きゅ', 'kyo': 'きょ',
+  'sha': 'しゃ', 'shu': 'しゅ', 'sho': 'しょ',
+  'sya': 'しゃ', 'syu': 'しゅ', 'syo': 'しょ',
+  'cha': 'ちゃ', 'chu': 'ちゅ', 'cho': 'ちょ',
+  'tya': 'ちゃ', 'tyu': 'ちゅ', 'tyo': 'ちょ',
+  'nya': 'にゃ', 'nyu': 'にゅ', 'nyo': 'にょ',
+  'hya': 'ひゃ', 'hyu': 'ひゅ', 'hyo': 'ひょ',
+  'mya': 'みゃ', 'myu': 'みゅ', 'myo': 'みょ',
+  'rya': 'りゃ', 'ryu': 'りゅ', 'ryo': 'りょ',
+  'gya': 'ぎゃ', 'gyu': 'ぎゅ', 'gyo': 'ぎょ',
+  'ja': 'じゃ', 'ju': 'じゅ', 'jo': 'じょ',
+  'jya': 'じゃ', 'jyu': 'じゅ', 'jyo': 'じょ',
+  'zya': 'じゃ', 'zyu': 'じゅ', 'zyo': 'じょ',
+  'bya': 'びゃ', 'byu': 'びゅ', 'byo': 'びょ',
+  'pya': 'ぴゃ', 'pyu': 'ぴゅ', 'pyo': 'ぴょ',
+  'shi': 'し', 'chi': 'ち', 'tsu': 'つ', 'fu': 'ふ',
+  'si': 'し', 'ti': 'ち', 'tu': 'つ', 'hu': 'ふ',
+  'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ',
+  'sa': 'さ', 'su': 'す', 'se': 'せ', 'so': 'そ',
+  'ta': 'た', 'te': 'て', 'to': 'と',
+  'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の',
+  'ha': 'は', 'hi': 'ひ', 'he': 'へ', 'ho': 'ほ',
+  'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も',
+  'ya': 'や', 'yu': 'ゆ', 'yo': 'よ',
+  'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ',
+  'wa': 'わ', 'wo': 'を', "n'": 'ん', 'n': 'ん',
+  'ga': 'が', 'gi': 'ぎ', 'gu': 'ぐ', 'ge': 'げ', 'go': 'ご',
+  'za': 'ざ', 'ji': 'じ', 'zi': 'じ', 'zu': 'ず', 'ze': 'ぜ', 'zo': 'ぞ',
+  'da': 'だ', 'di': 'ぢ', 'du': 'づ', 'de': 'で', 'do': 'ど',
+  'ba': 'ば', 'bi': 'び', 'bu': 'ぶ', 'be': 'べ', 'bo': 'ぼ',
+  'pa': 'ぱ', 'pi': 'ぴ', 'pu': 'ぷ', 'pe': 'ぺ', 'po': 'ぽ',
+  'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お'
+};
+
+const ROMAJI_REGEX = new RegExp(
+  Object.keys(ROMAJI_MAP)
+    .sort((a, b) => b.length - a.length)
+    .map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('|'),
+  'g'
+);
+
 /**
- * Convert Romaji string to Hiragana.
+ * Convert Romaji string to Hiragana (supports sokuon double consonants, nn/n', and Hepburn/Kunrei).
+ * @param {string} str
+ * @returns {string}
  */
 export function romajiToHiragana(str) {
   if (!str) return '';
-  const map = {
-    'kya': 'きゃ', 'kyu': 'きゅ', 'kyo': 'きょ',
-    'sha': 'しゃ', 'shu': 'しゅ', 'sho': 'しょ',
-    'cha': 'ちゃ', 'chu': 'ちゅ', 'cho': 'ちょ',
-    'nya': 'にゃ', 'nyu': 'にゅ', 'nyo': 'にょ',
-    'hya': 'ひゃ', 'hyu': 'ひゅ', 'hyo': 'ひょ',
-    'mya': 'みゃ', 'myu': 'みゅ', 'myo': 'みょ',
-    'rya': 'りゃ', 'ryu': 'りゅ', 'ryo': 'りょ',
-    'gya': 'ぎゃ', 'gyu': 'ぎゅ', 'gyo': 'ぎょ',
-    'ja': 'じゃ', 'ju': 'じゅ', 'jo': 'じょ',
-    'bya': 'びゃ', 'byu': 'びゅ', 'byo': 'びょ',
-    'pya': 'ぴゃ', 'pyu': 'ぴゅ', 'pyo': 'ぴょ',
-    'shi': 'し', 'chi': 'ち', 'tsu': 'つ', 'fu': 'ふ',
-    'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ',
-    'sa': 'さ', 'su': 'す', 'se': 'せ', 'so': 'そ',
-    'ta': 'た', 'te': 'て', 'to': 'と',
-    'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の',
-    'ha': 'は', 'hi': 'ひ', 'he': 'へ', 'ho': 'ほ',
-    'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も',
-    'ya': 'や', 'yu': 'ゆ', 'yo': 'よ',
-    'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ',
-    'wa': 'わ', 'wo': 'を', 'nn': 'ん', 'n': 'ん',
-    'ga': 'が', 'gi': 'ぎ', 'gu': 'ぐ', 'ge': 'げ', 'go': 'ご',
-    'za': 'ざ', 'ji': 'じ', 'zu': 'ず', 'ze': 'ぜ', 'zo': 'ぞ',
-    'da': 'だ', 'di': 'ぢ', 'du': 'づ', 'de': 'で', 'do': 'ど',
-    'ba': 'ば', 'bi': 'び', 'bu': 'ぶ', 'be': 'べ', 'bo': 'ぼ',
-    'pa': 'ぱ', 'pi': 'ぴ', 'pu': 'ぷ', 'pe': 'ぺ', 'po': 'ぽ',
-    'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お'
-  };
-
-  let res = str.toLowerCase();
-  for (const [rom, kana] of Object.entries(map)) {
-    res = res.replaceAll(rom, kana);
-  }
-  return res;
+  return str
+    .toLowerCase()
+    .replace(/tch/g, 'っch')
+    .replace(/([kgsztdhbpmrjcwflv])\1/g, 'っ$1')
+    .replace(/nn(?![aiueoy])/g, 'ん')
+    .replace(ROMAJI_REGEX, match => ROMAJI_MAP[match]);
 }
 
 /**
