@@ -8,6 +8,7 @@ import assert from 'node:assert/strict';
 import {
   pickValidIndices,
   pickDecoyIndices,
+  maskCompoundSurface,
   buildRound,
   makeRounds,
   isRoundComplete,
@@ -23,18 +24,19 @@ function seededRng(seed) {
 
 const DATA = {
   words: [
-    ['日本', 'にほん', 'Japan'],
-    ['一人', 'ひとり', 'one person'],
-    ['山道', 'やまみち', 'mountain road'],
-    ['花見', 'はなみ', 'flower viewing'],
-    ['木曜日', 'もくようび', 'Thursday'],
+    ['日本', 'にほん', 'Japan', 'ญี่ปุ่น'],
+    ['一人', 'ひとり', 'one person', 'คนเดียว'],
+    ['山道', 'やまみち', 'mountain road', ''],
+    ['花見', 'はなみ', 'flower viewing', 'ชมดอกไม้'],
+    ['木曜日', 'もくようび', 'Thursday', ''],
   ],
   byKanji: { 日: [0, 4], 人: [1], 山: [2], 花: [3], 木: [4] },
 };
 
-test('pickValidIndices returns compounds containing the target kanji', () => {
+test('pickValidIndices returns compounds containing the target kanji and prioritizes Thai meanings', () => {
   const indices = pickValidIndices(DATA, '日', 5, seededRng(1));
   assert.equal(indices.length, 2);
+  assert.equal(indices[0], 0); // '日本' has Thai meaning
   assert.ok(indices.every(i => DATA.words[i][0].includes('日')));
 });
 
@@ -43,6 +45,14 @@ test('pickDecoyIndices returns compounds without the target kanji', () => {
   assert.equal(indices.length, 3);
   assert.equal(new Set(indices).size, 3);
   assert.ok(indices.every(i => !DATA.words[i][0].includes('人')));
+});
+
+test('maskCompoundSurface masks target kanji in valid words and one slot in decoys', () => {
+  assert.equal(maskCompoundSurface('火山', '山'), '火□');
+  assert.equal(maskCompoundSurface('日曜日', '日'), '□曜□');
+  const decoyMasked = maskCompoundSurface('電車', '山', () => 0.8);
+  assert.equal(decoyMasked, '電□');
+  assert.ok(decoyMasked.includes('□'));
 });
 
 test('buildRound mixes unique valid and decoy tiles', () => {

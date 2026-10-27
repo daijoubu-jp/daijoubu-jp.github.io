@@ -72,3 +72,55 @@ export function isComplete(selected, components) {
   const set = new Set(selected);
   return components.every((component) => set.has(component));
 }
+
+export const RADICAL_VARIANT_GLOSS_TH = {
+  '⺅': 'คน (亻)',
+  '𠆢': 'หลังคา/คน',
+  '⺌': 'เล็ก/แสง',
+  '⺹': 'ชรา (耂)',
+  '⺾': 'หญ้า/พืช (艹)',
+  '⻏': 'เมือง/เนิน (阝)',
+  '⻖': 'เนิน/กำแพง (阝)',
+  '氵': 'น้ำ (水)',
+  '扌': 'มือ (手)',
+  '忄': 'หัวใจ (心)',
+  '灬': 'ไฟ (火)',
+  '礻': 'เทพ/พิธี (示)',
+  '衤': 'เสื้อผ้า (衣)',
+  '犭': 'สัตว์สี่เท้า (犬)',
+  '刂': 'มีด/ดาบ (刀)',
+  '罒': 'ตาข่าย (网)',
+  '辶': 'เดิน/ทาง (辶)',
+  '宀': 'หลังคาบ้าน',
+  '冖': 'ผ้าคลุม',
+  '冫': 'น้ำแข็ง',
+  '广': 'อาคาร/หลังคา',
+  '疒': 'โรคภัย',
+  '彳': 'ก้าวเดิน',
+  '彡': 'ลวดลาย/ขน',
+  '攵': 'เคาะ/ตี',
+  '攵': 'เคาะ/ตี',
+  '囗': 'ล้อมรอบ',
+  '門': 'ประตู',
+};
+
+/**
+ * Look up a short Thai gloss for a component character using radical variant
+ * fallbacks and the search index meaning map.
+ * @param {string} component
+ * @param {Map<string, string> | Record<string, string>} [meaningMap]
+ * @returns {string}
+ */
+export function getComponentGloss(component, meaningMap = null) {
+  if (!component) return '';
+  if (RADICAL_VARIANT_GLOSS_TH[component]) {
+    return RADICAL_VARIANT_GLOSS_TH[component];
+  }
+  if (meaningMap) {
+    if (typeof meaningMap.get === 'function') {
+      return meaningMap.get(component) || '';
+    }
+    return meaningMap[component] || '';
+  }
+  return '';
+}

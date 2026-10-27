@@ -6,7 +6,7 @@
  */
 
 import { BANDS, filterPool } from './time-attack-core.js';
-import { makePuzzles, isComplete } from './kanji-in-kanji-core.js';
+import { makePuzzles, isComplete, getComponentGloss } from './kanji-in-kanji-core.js';
 import { loadSearchIndex, loadKanjiComponents } from '../search.js';
 import { getGameResult, saveGameResult } from '../storage.js';
 import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
@@ -30,6 +30,9 @@ export async function initKanjiInKanji() {
   const bandsEl = document.getElementById('kik-bands');
   const tilesEl = document.getElementById('kik-tiles');
   const kanjiEl = document.getElementById('kik-kanji');
+  const meaningEl = document.getElementById('kik-meaning');
+  const progressEl = document.getElementById('kik-progress');
+  const slotsEl = document.getElementById('kik-slots');
   const scoreEl = document.getElementById('kik-score');
   const timeEl = document.getElementById('kik-time');
   const timerFill = document.getElementById('kik-timer-fill');
@@ -45,6 +48,12 @@ export async function initKanjiInKanji() {
   const [index, components] = await Promise.all([loadSearchIndex(), loadKanjiComponents()]);
   const entries = components.entries || {};
   const pool = components.pool || [];
+  const kanjiMeaningMap = new Map(
+    index.map((entry) => [
+      entry.kanji,
+      (entry.meanings_th && entry.meanings_th[0]) || (entry.meanings_en && entry.meanings_en[0]) || '',
+    ])
+  );
 
   const bands = BANDS
     .map((band) => ({
@@ -83,10 +92,30 @@ export async function initKanjiInKanji() {
     return state.puzzles[state.index % state.puzzles.length];
   }
 
+  function renderSlots(puzzle) {
+    const found = [...state.selected];
+    const total = puzzle.components.length;
+    if (progressEl) {
+      progressEl.textContent = `พบแล้ว ${found.length} / ${total} ชิ้น`;
+    }
+    if (slotsEl) {
+      slotsEl.innerHTML = puzzle.components.map((_c, idx) => {
+        const char = found[idx];
+        return char
+          ? `<span class="kik-slot is-filled" lang="ja">${char}</span>`
+          : `<span class="kik-slot" aria-hidden="true">?</span>`;
+      }).join('');
+    }
+  }
+
   function renderPuzzle() {
     const puzzle = currentPuzzle();
     state.selected = new Set();
     kanjiEl.textContent = puzzle.kanji;
+    if (meaningEl) {
+      meaningEl.textContent = kanjiMeaningMap.get(puzzle.kanji) || '';
+    }
+    renderSlots(puzzle);
     feedbackEl.textContent = '';
     feedbackEl.classList.remove('is-complete', 'is-wrong');
 
@@ -108,7 +137,9 @@ export async function initKanjiInKanji() {
     if (puzzle.components.includes(component)) {
       state.selected.add(component);
       tile.classList.add('selected');
-      feedbackEl.textContent = '';
+      renderSlots(puzzle);
+      const gloss = getComponentGloss(component, kanjiMeaningMap);
+      feedbackEl.textContent = gloss ? `✓ ${component} (${gloss})` : `✓ ${component}`;
       feedbackEl.classList.remove('is-wrong');
 
       if (isComplete([...state.selected], puzzle.components)) {
@@ -128,7 +159,7 @@ export async function initKanjiInKanji() {
     // Wrong tile: brief red flash and a small time penalty.
     state.locked = true;
     tile.classList.add('wrong');
-    feedbackEl.textContent = 'ไม่ใช่ส่วนประกอบ';
+    feedbackEl.textContent = `✗ ${component} ไม่ใช่ส่วนประกอบของ ${puzzle.kanji}`;
     feedbackEl.classList.add('is-wrong');
     state.endAt -= WRONG_PENALTY_MS;
     playWrong();

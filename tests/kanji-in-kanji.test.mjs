@@ -10,6 +10,7 @@ import {
   buildPuzzle,
   makePuzzles,
   isComplete,
+  getComponentGloss,
 } from '../assets/js/games/kanji-in-kanji-core.js';
 
 function seededRng(seed) {
@@ -22,11 +23,11 @@ function seededRng(seed) {
 
 const ENTRIES = {
   明: ['日', '月'],
-  語: ['言', '口', '五', '一'],
+  語: ['言', '口', '五'],
   森: ['木', '林'],
 };
 
-const POOL = ['木', '口', '日', '月', '言', '五', '一', '林', '氵', '心', '大'];
+const POOL = ['木', '口', '日', '月', '言', '五', '林', '氵', '心', '大'];
 
 test('pickDecoys returns distinct components not in the answer', () => {
   const decoys = pickDecoys(POOL, ['日', '月'], 3, seededRng(1));
@@ -44,8 +45,8 @@ test('buildPuzzle yields unique tiles covering the real components', () => {
 });
 
 test('buildPuzzle degrades when the pool is small', () => {
-  const puzzle = buildPuzzle('語', ENTRIES['語'], ['言', '口', '五', '一', '心'], 3, seededRng(3));
-  assert.deepEqual(puzzle.tiles.length, 5);
+  const puzzle = buildPuzzle('語', ENTRIES['語'], ['言', '口', '五', '心'], 3, seededRng(3));
+  assert.deepEqual(puzzle.tiles.length, 4);
   assert.ok(puzzle.tiles.includes('心'));
 });
 
@@ -59,4 +60,11 @@ test('isComplete only when every real component is selected', () => {
   assert.equal(isComplete(['日', '月'], ENTRIES['明']), true);
   assert.equal(isComplete(['日'], ENTRIES['明']), false);
   assert.equal(isComplete([], ENTRIES['明']), false);
+});
+
+test('getComponentGloss resolves radical variant glosses and dictionary map entries', () => {
+  const map = new Map([['言', 'คำพูด'], ['日', 'พระอาทิตย์']]);
+  assert.equal(getComponentGloss('⺅', map), 'คน (亻)');
+  assert.equal(getComponentGloss('言', map), 'คำพูด');
+  assert.equal(getComponentGloss('未知', map), '');
 });

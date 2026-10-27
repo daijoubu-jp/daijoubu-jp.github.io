@@ -12,16 +12,13 @@ const html = readFileSync(
   'utf8'
 );
 
-test('games hub exposes two live games', () => {
-  assert.equal((html.match(/class="hub-card"/g) || []).length, 2);
+test('games hub exposes all four live games', () => {
+  assert.equal((html.match(/class="hub-card"/g) || []).length, 4);
   assert.match(html, /href="time-attack.html" class="hub-card"/);
+  assert.match(html, /href="kanji-in-kanji.html" class="hub-card"/);
+  assert.match(html, /href="quick-compound.html" class="hub-card"/);
   assert.match(html, /href="kanji-wordle.html" class="hub-card"/);
-});
-
-test('games hub parks Kanji in Kanji and Quick Compound pending rule rework', () => {
-  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 2);
-  assert.equal((html.match(/badge-coming-soon/g) || []).length, 2);
-  assert.match(html, /กำลังปรับปรุงกติกา/);
+  assert.equal((html.match(/class="hub-card disabled"/g) || []).length, 0);
 });
 
 test('games hub titles are present', () => {

@@ -6,7 +6,7 @@
  */
 
 import { BANDS, filterPool } from './time-attack-core.js';
-import { makeRounds, isRoundComplete } from './quick-compound-core.js';
+import { makeRounds, isRoundComplete, maskCompoundSurface } from './quick-compound-core.js';
 import { loadSearchIndex, loadCompoundsData } from '../search.js';
 import { getGameResult, saveGameResult } from '../storage.js';
 import { initSoundToggle, playCorrect, playWrong, playWin } from './audio.js';
@@ -31,6 +31,8 @@ export async function initQuickCompound() {
   const bandsEl = document.getElementById('qc-bands');
   const wordsEl = document.getElementById('qc-words');
   const kanjiEl = document.getElementById('qc-kanji');
+  const meaningEl = document.getElementById('qc-meaning');
+  const progressEl = document.getElementById('qc-progress');
   const scoreEl = document.getElementById('qc-score');
   const timeEl = document.getElementById('qc-time');
   const timerFill = document.getElementById('qc-timer-fill');
@@ -44,6 +46,12 @@ export async function initQuickCompound() {
   let state = null;
 
   const [index, data] = await Promise.all([loadSearchIndex(), loadCompoundsData()]);
+  const kanjiMeaningMap = new Map(
+    index.map((entry) => [
+      entry.kanji,
+      (entry.meanings_th && entry.meanings_th[0]) || (entry.meanings_en && entry.meanings_en[0]) || '',
+    ])
+  );
 
   const bands = BANDS
     .map((band) => ({
@@ -82,18 +90,31 @@ export async function initQuickCompound() {
     return state.rounds[state.index % state.rounds.length];
   }
 
+  function updateProgress(round) {
+    if (progressEl) {
+      progressEl.textContent = `พบแล้ว ${state.selected.size} / ${round.valid.length} คำ`;
+    }
+  }
+
   function renderRound() {
     const round = currentRound();
     state.selected = new Set();
     kanjiEl.textContent = round.kanji;
+    if (meaningEl) {
+      meaningEl.textContent = kanjiMeaningMap.get(round.kanji) || '';
+    }
+    updateProgress(round);
     feedbackEl.textContent = '';
     feedbackEl.classList.remove('is-complete', 'is-wrong');
 
     wordsEl.innerHTML = round.tiles.map((wordIndex) => {
-      const [surface, reading] = data.words[wordIndex];
-      return `<button type="button" class="qc-word" data-index="${wordIndex}">
-        <span class="qc-word-surface">${surface}</span>
+      const [surface, reading, glossEn, glossTh] = data.words[wordIndex];
+      const masked = maskCompoundSurface(surface, round.kanji);
+      const clue = glossTh || glossEn || '';
+      return `<button type="button" class="qc-word" data-index="${wordIndex}" data-full="${surface}">
+        <span class="qc-word-surface">${masked}</span>
         <span class="qc-word-reading">${reading}</span>
+        <span class="qc-word-meaning">${clue}</span>
       </button>`;
     }).join('');
 
@@ -113,7 +134,10 @@ export async function initQuickCompound() {
     if (round.valid.includes(wordIndex)) {
       state.selected.add(wordIndex);
       btn.classList.add('selected');
-      feedbackEl.textContent = `${surface} (${reading}) — ${glossTh || glossEn}`;
+      const surfaceEl = btn.querySelector('.qc-word-surface');
+      if (surfaceEl) surfaceEl.textContent = surface;
+      updateProgress(round);
+      feedbackEl.textContent = `✓ ${surface} (${reading}) — ${glossTh || glossEn}`;
       feedbackEl.classList.remove('is-wrong');
 
       if (isRoundComplete([...state.selected], round.valid)) {
@@ -132,7 +156,7 @@ export async function initQuickCompound() {
 
     state.locked = true;
     btn.classList.add('wrong');
-    feedbackEl.textContent = `คำนี้ไม่มีคันจิ ${round.kanji}`;
+    feedbackEl.textContent = `✗ ${surface} (${reading}) ไม่มีคันจิ ${round.kanji}`;
     feedbackEl.classList.add('is-wrong');
     state.endAt -= WRONG_PENALTY_MS;
     playWrong();

@@ -8,7 +8,7 @@
 import { shuffle } from './time-attack-core.js';
 
 /**
- * Indices of compounds that contain the target kanji.
+ * Indices of compounds that contain the target kanji, prioritizing those with Thai meanings.
  * @param {{ words: string[][], byKanji: Record<string, number[]> }} data
  * @param {string} kanji
  * @param {number} count
@@ -17,11 +17,19 @@ import { shuffle } from './time-attack-core.js';
  */
 export function pickValidIndices(data, kanji, count, rng = Math.random) {
   const indices = data.byKanji[kanji] || [];
-  return shuffle(indices, rng).slice(0, Math.max(0, count));
+  const withThai = [];
+  const withoutThai = [];
+  for (const idx of indices) {
+    const word = data.words[idx];
+    if (word && word[3]) withThai.push(idx);
+    else withoutThai.push(idx);
+  }
+  const ordered = [...shuffle(withThai, rng), ...shuffle(withoutThai, rng)];
+  return ordered.slice(0, Math.max(0, count));
 }
 
 /**
- * Indices of compounds that do NOT contain the target kanji.
+ * Indices of compounds that do NOT contain the target kanji, prioritizing those with Thai meanings.
  * @param {{ words: string[][] }} data
  * @param {string} kanji
  * @param {number} count
@@ -29,14 +37,50 @@ export function pickValidIndices(data, kanji, count, rng = Math.random) {
  * @returns {number[]}
  */
 export function pickDecoyIndices(data, kanji, count, rng = Math.random) {
+  const targetCount = Math.max(0, count);
+  if (targetCount === 0) return [];
   const all = Array.from({ length: data.words.length }, (_unused, i) => i);
+  const shuffled = shuffle(all, rng);
   const decoys = [];
-  for (const index of shuffle(all, rng)) {
-    if (data.words[index][0].includes(kanji)) continue;
+  const fallback = [];
+
+  for (const index of shuffled) {
+    const entry = data.words[index];
+    if (!entry || entry[0].includes(kanji)) continue;
+    if (entry[3]) {
+      decoys.push(index);
+      if (decoys.length >= targetCount) return decoys;
+    } else if (decoys.length + fallback.length < targetCount * 2) {
+      fallback.push(index);
+    }
+  }
+
+  for (const index of fallback) {
+    if (decoys.length >= targetCount) break;
     decoys.push(index);
-    if (decoys.length >= count) break;
   }
   return decoys;
+}
+
+/**
+ * Mask a compound surface with '□' so players cannot simply spot the target kanji visually.
+ * - Valid compounds: replaces all occurrences of `targetKanji` with '□'.
+ * - Decoy compounds: replaces one character (selected via `rng`) with '□'.
+ * @param {string} surface
+ * @param {string} targetKanji
+ * @param {() => number} [rng=Math.random]
+ * @returns {string}
+ */
+export function maskCompoundSurface(surface, targetKanji, rng = Math.random) {
+  if (!surface) return '';
+  const chars = Array.from(surface);
+  if (chars.includes(targetKanji)) {
+    return chars.map((ch) => (ch === targetKanji ? '□' : ch)).join('');
+  }
+  if (chars.length === 0) return '';
+  const idx = Math.min(chars.length - 1, Math.max(0, Math.floor(rng() * chars.length)));
+  chars[idx] = '□';
+  return chars.join('');
 }
 
 /**
