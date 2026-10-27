@@ -204,7 +204,10 @@ button.nav-link {
     z-index: 100;
   }
 
-  .nav-dropdown:hover .dropdown-menu {
+  /* Keyboard parity: :hover alone left the desktop dropdowns unreachable by
+     keyboard, because main.js only toggles menus when innerWidth <= 768. */
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: perspective(600px) rotateX(0deg);
@@ -292,7 +295,8 @@ button.nav-link {
     z-index: 110;
   }
 
-  .nav-dropdown-submenu:hover > .dropdown-sub-menu {
+  .nav-dropdown-submenu:hover > .dropdown-sub-menu,
+  .nav-dropdown-submenu:focus-within > .dropdown-sub-menu {
     opacity: 1;
     visibility: visible;
     transform: perspective(600px) rotateY(0deg);

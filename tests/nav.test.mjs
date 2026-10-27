@@ -107,3 +107,24 @@ test('every page uses the current header classes, not the pre-refactor ones', ()
     assert.match(html, /class="nav-brand-title"/, `${rel}: brand title must use .nav-brand-title`);
   }
 });
+
+// Desktop dropdowns are hover-only in CSS, and main.js gates its click/Enter
+// toggle behind `innerWidth <= 768`. Without :focus-within the menus are
+// unreachable by keyboard on desktop, so the hover rule must always be paired.
+test('desktop dropdown rules expose a keyboard path (:focus-within)', () => {
+  const css = readFileSync(join(root, 'assets/css/components.css'), 'utf8');
+
+  const pairs = [
+    ['.nav-dropdown:hover .dropdown-menu', '.nav-dropdown:focus-within .dropdown-menu'],
+    ['.nav-dropdown-submenu:hover > .dropdown-sub-menu',
+     '.nav-dropdown-submenu:focus-within > .dropdown-sub-menu'],
+  ];
+
+  for (const [hover, focus] of pairs) {
+    assert.ok(css.includes(hover), `components.css: lost the hover rule "${hover}"`);
+    assert.ok(
+      css.includes(focus),
+      `components.css: "${focus}" is missing, so keyboard users cannot open desktop dropdowns`
+    );
+  }
+});
