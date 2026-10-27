@@ -4,7 +4,9 @@
    ========================================================================== */
 
 /* Google Fonts removed - now in HTML */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+/* Font Awesome is loaded non-blocking by every page's own <link>, so importing
+   it here as well would block the critical rendering path twice. */
 
 /* --- CSS Reset --- */
 *, *::before, *::after {
