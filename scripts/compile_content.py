@@ -15,6 +15,34 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
+# Every file this script writes. --check uses this list to tell "data/ is stale
+# relative to content/" apart from "data/ is in sync but not committed yet".
+GENERATED_DATA_FILES = (
+    "vocabulary.json",
+    "fuhyo-special-readings.json",
+    "kanji.min.json",
+    "compounds.min.json",
+    "prefectures.json",
+    "eras.json",
+    "search-index.min.json",
+)
+
+
+def data_digest():
+    """sha256 of every generated data file, None when the file is absent."""
+    import hashlib
+
+    digests = {}
+    for name in GENERATED_DATA_FILES:
+        path = os.path.join(DATA_DIR, name)
+        if not os.path.exists(path):
+            digests[name] = None
+            continue
+        with open(path, "rb") as f:
+            digests[name] = hashlib.sha256(f.read()).hexdigest()
+    return digests
+
+
 
 def furigana_to_ruby(text):
     if not text:
@@ -875,6 +903,7 @@ def compile_eras():
 
 def main():
     check_mode = "--check" in sys.argv[1:]
+    before = data_digest() if check_mode else None
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
     compile_vocabulary()
     compile_special_readings()
@@ -895,16 +924,40 @@ def main():
     print("✨ Compilation complete! Production JSON files are updated.")
 
     if check_mode:
-        # Same contract as CI: after compiling, data/ must match git HEAD.
         import subprocess
 
-        drift = subprocess.run(
-            ["git", "diff", "--quiet", "--", "data/"], check=False)
-        if drift.returncode != 0:
-            print("❌ --check: generated data was out of date; it has now "
-                  "been regenerated. Commit the diff (or it fails CI).")
+        after = data_digest()
+        stale = [name for name in GENERATED_DATA_FILES
+                 if (before or {}).get(name) != after.get(name)]
+        modified = subprocess.run(
+            ["git", "diff", "--name-only", "--", "data/"],
+            capture_output=True, text=True, check=False).stdout.split()
+        untracked = subprocess.run(
+            ["git", "ls-files", "--others", "--exclude-standard", "--", "data/"],
+            capture_output=True, text=True, check=False).stdout.split()
+
+        if stale:
+            print("❌ --check: data/ was stale relative to content/ and has now been "
+                  "regenerated. Recompile and commit these files:")
+            for name in stale:
+                print(f"   - data/{name}")
             sys.exit(1)
-        print("✅ --check: data/ was already in sync with markdown (matches CI).")
+
+        if untracked:
+            print("❌ --check: generated files are not tracked by git, so the "
+                  "`git diff -- data/` gate cannot see them:")
+            for path in untracked:
+                print(f"   - {path}")
+            sys.exit(1)
+
+        if modified:
+            print("❌ --check: data/ is in sync with content/ but differs from HEAD "
+                  "(uncommitted). CI fails on this; commit the data files.")
+            for path in modified:
+                print(f"   - {path}")
+            sys.exit(1)
+
+        print("✅ --check: data/ is in sync with content/ and committed (matches CI).")
 
 
 if __name__ == "__main__":

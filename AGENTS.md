@@ -34,6 +34,10 @@ Thai-language kanji dictionary for learners. Static site, no runtime framework, 
   into the markdown and never overwrites existing entries.
 - After editing markdown, run `python3 scripts/compile_content.py` and commit the regenerated data in the same commit.
 - CI fails if generated data is out of date (`git diff --exit-code -- data/`).
+- `--check` separates three failure modes and exits 1 on each: **stale** data (regeneration
+  changed bytes), **untracked** generated files (invisible to `git diff`), and **in-sync but
+  uncommitted** data (correct locally, fatal in CI). Only the first is a content bug; the
+  other two mean "commit the data".
 
 ## Rules
 
