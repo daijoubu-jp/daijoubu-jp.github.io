@@ -18,6 +18,7 @@
   --color-text-inverse: #FFFFFF;
   
   --color-accent: #C2410C;
+  --color-link: #C2410C;
   --color-accent-hover: #9A3412;
   --color-accent-light: #FFEDD5;
   --color-accent-2: #CA8A04;
@@ -49,6 +50,7 @@
   --color-text-inverse: #1A120E;
   
   --color-accent: #EA580C;
+  --color-link: #EA580C;
   --color-accent-hover: #F97316;
   --color-accent-light: rgba(234, 88, 12, 0.25);
   --color-accent-2: #F59E0B;

@@ -17,6 +17,8 @@
   --color-text-inverse: #FFFFFF;
   
   --color-accent: #D946EF;
+  /* --color-accent fails 4.5:1 on the light background. */
+  --color-link: #C013DA;
   --color-accent-hover: #C026D3;
   --color-accent-light: #FAE8FF;
   --color-accent-2: #0284C7;
@@ -49,6 +51,7 @@
   --color-text-inverse: #0A0A16;
   
   --color-accent: #EC4899;
+  --color-link: #EC4899;
   --color-accent-hover: #DB2777;
   --color-accent-light: rgba(236, 72, 153, 0.25);
   --color-accent-2: #06B6D4;

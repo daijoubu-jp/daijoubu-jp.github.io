@@ -18,6 +18,8 @@
   --color-text-inverse: #FFFFFF;
   
   --color-accent: #E86F88;
+  /* --color-accent fails 4.5:1 on --color-bg, so text links use a darker sibling. */
+  --color-link: #DD284D;
   --color-accent-hover: #D4546F;
   --color-accent-light: #FFDDE6;
   --color-accent-2: #6EA888;
@@ -49,6 +51,7 @@
   --color-text-inverse: #1E1218;
   
   --color-accent: #FF7597;
+  --color-link: #FF7597;
   --color-accent-hover: #FF94AF;
   --color-accent-light: rgba(255, 117, 151, 0.25);
   --color-accent-2: #84CC16;

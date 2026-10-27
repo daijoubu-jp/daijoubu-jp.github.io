@@ -158,7 +158,7 @@ p {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-link, var(--color-accent));
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   transition: color var(--transition-fast);
