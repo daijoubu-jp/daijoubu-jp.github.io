@@ -32,8 +32,11 @@ export function createPromiseCache(loader) {
  * Single cache-busting stamp shared by every generated data file.
  * Bump this (e.g. YYYYMMDD or a build timestamp) whenever data/*.json is
  * regenerated — one edit invalidates all data caches instead of four.
+ *
+ * sw.js serves everything under /data/ cache-first, so a URL that omits this
+ * stamp is pinned in the visitor's cache forever. Every data fetch must use it.
  */
-const DATA_VERSION = '20261019';
+export const DATA_VERSION = '20261027';
 
 const kanjiDataCache = createPromiseCache(async () => {
   // 🚀 Load the optimized, minified bundle (1 HTTP request instead of 12)

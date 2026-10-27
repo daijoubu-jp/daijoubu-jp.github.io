@@ -7,8 +7,9 @@
 
 import { REGION_INDEX } from './prefectures-map.js';
 import { isSpeechSupported, speakJapanese } from './tts.js';
+import { DATA_VERSION } from './search.js';
 
-const PREFECTURES_URL = new URL('../../data/prefectures.json', import.meta.url).href;
+const PREFECTURES_URL = new URL(`../../data/prefectures.json?v=${DATA_VERSION}`, import.meta.url).href;
 
 const jsonPromiseCache = new Map();
 function fetchJsonCached(url) {

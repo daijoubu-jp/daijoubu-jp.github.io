@@ -176,14 +176,14 @@
 
   <script type="module" src="../assets/js/main.js"></script>
   <script type="module">
-    import { romajiToHiragana } from '../assets/js/search.js';
+    import { romajiToHiragana, DATA_VERSION } from '../assets/js/search.js';
 
     document.addEventListener('DOMContentLoaded', async () => {
       const grid = document.getElementById('special-readings-grid');
       const input = document.getElementById('special-filter-input');
 
       try {
-        const res = await fetch('../data/fuhyo-special-readings.json');
+        const res = await fetch(`../data/fuhyo-special-readings.json?v=${DATA_VERSION}`);
         const items = await res.json();
 
         function render(list) {

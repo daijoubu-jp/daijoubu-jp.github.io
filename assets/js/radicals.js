@@ -9,6 +9,8 @@
  * - Quick links to browse.html?radical=X
  */
 
+import { DATA_VERSION } from './search.js';
+
 let cachedRadicals = null;
 let currentStroke = 'all';
 let currentPosition = 'all';
@@ -17,7 +19,7 @@ let searchQuery = '';
 export async function loadRadicalsData() {
   if (cachedRadicals) return cachedRadicals;
   try {
-    const dataUrl = new URL('../../data/radicals.json?v=1788411000', import.meta.url).href;
+    const dataUrl = new URL(`../../data/radicals.json?v=${DATA_VERSION}`, import.meta.url).href;
     const res = await fetch(dataUrl);
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     cachedRadicals = await res.json();

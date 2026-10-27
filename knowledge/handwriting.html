@@ -224,10 +224,12 @@
   <!-- Scripts -->
   <script type="module" src="../assets/js/main.js"></script>
   <script type="module">
+    import { DATA_VERSION } from '../assets/js/search.js';
+
     document.addEventListener('DOMContentLoaded', async () => {
       const container = document.getElementById('handwriting-rules-container');
       try {
-        const res = await fetch('../data/handwriting-rules.json');
+        const res = await fetch(`../data/handwriting-rules.json?v=${DATA_VERSION}`);
         const rules = await res.json();
 
         container.innerHTML = rules.map(rule => `

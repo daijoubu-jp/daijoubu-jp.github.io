@@ -5,13 +5,15 @@
  * viewBox-based zoom (region presets, in/out, reset, vertical pan).
  */
 
+import { DATA_VERSION } from './search.js';
+
 export const REGIONS = ['北海道地方', '東北地方', '関東地方', '中部地方', '近畿地方', '中国地方', '四国地方', '九州・沖縄地方'];
 export const REGION_INDEX = Object.fromEntries(REGIONS.map((r, i) => [r, i]));
 
 const REGION_TH = ['ฮกไกโด', 'โทโฮกุ', 'คันโต', 'ชูบุ', 'คันไซ', 'ชูโกกุ', 'ชิโกกุ', 'คิวชู・โอกินาวา'];
 
-const PREFECTURES_MAP_URL = new URL('../../data/prefectures-map.json', import.meta.url).href;
-const PREFECTURES_URL = new URL('../../data/prefectures.json', import.meta.url).href;
+const PREFECTURES_MAP_URL = new URL(`../../data/prefectures-map.json?v=${DATA_VERSION}`, import.meta.url).href;
+const PREFECTURES_URL = new URL(`../../data/prefectures.json?v=${DATA_VERSION}`, import.meta.url).href;
 
 /**
  * Fetches JSON once per URL and caches the promise; a failed request is
