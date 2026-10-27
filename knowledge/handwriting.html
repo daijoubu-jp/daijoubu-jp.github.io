@@ -226,7 +226,7 @@
   <script type="module">
     import { DATA_VERSION } from '../assets/js/search.js';
 
-    document.addEventListener('DOMContentLoaded', async () => {
+    const initHandwritingRules = async () => {
       const container = document.getElementById('handwriting-rules-container');
       try {
         const res = await fetch(`../data/handwriting-rules.json?v=${DATA_VERSION}`);
@@ -268,7 +268,14 @@
       } catch (err) {
         container.innerHTML = '<div style="color: red; text-align: center;">ไม่สามารถโหลดข้อมูลคู่มือลายมือได้</div>';
       }
-    });
+    };
+
+    // A deferred module can evaluate after DOMContentLoaded has already fired.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initHandwritingRules);
+    } else {
+      initHandwritingRules();
+    }
   </script>
 </body>
 </html>

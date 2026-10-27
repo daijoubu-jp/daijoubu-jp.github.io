@@ -178,7 +178,7 @@
   <script type="module">
     import { romajiToHiragana, DATA_VERSION } from '../assets/js/search.js';
 
-    document.addEventListener('DOMContentLoaded', async () => {
+    const initSpecialReadings = async () => {
       const grid = document.getElementById('special-readings-grid');
       const input = document.getElementById('special-filter-input');
 
@@ -236,7 +236,14 @@
       } catch (err) {
         grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: red;">ไม่สามารถโหลดข้อมูลคำอ่านพิเศษได้</div>';
       }
-    });
+    };
+
+    // A deferred module can evaluate after DOMContentLoaded has already fired.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSpecialReadings);
+    } else {
+      initSpecialReadings();
+    }
   </script>
 </body>
 </html>
