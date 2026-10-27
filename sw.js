@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanjithai-cache-v9'; // v9: fixed light/dark region palette on the prefecture map
+const CACHE_NAME = 'kanjithai-cache-v10'; // v10: compound bridge, reworked games, and eras of Japan
 
 /**
  * Store a response in this version's cache, first evicting older entries for
