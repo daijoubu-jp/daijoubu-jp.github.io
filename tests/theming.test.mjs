@@ -7,9 +7,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 
@@ -54,5 +54,23 @@ test('every HTML page loads base, components and all six theme stylesheets', () 
       /<link\s+rel="manifest"\s+href="(?:\.\.\/)?manifest\.json"\s*\/?>/,
       `${rel}: missing manifest.json link`
     );
+  }
+});
+
+test('every page icon link resolves (inline data URI or an existing file)', () => {
+  const files = htmlFiles(root);
+  assert.ok(files.length >= 20, `expected 20+ HTML pages, found ${files.length}`);
+
+  for (const file of files) {
+    const html = readFileSync(file, 'utf8');
+    const rel = file.slice(root.length);
+    const match = html.match(/<link\s+rel="icon"[^>]*href="([^"]+)"/);
+    assert.ok(match, `${rel}: no <link rel="icon"> found`);
+
+    const href = match[1];
+    if (href.startsWith('data:')) continue;
+
+    const target = resolve(dirname(file), href.split('?')[0]);
+    assert.ok(existsSync(target), `${rel}: icon href points at a missing file (${href})`);
   }
 });
