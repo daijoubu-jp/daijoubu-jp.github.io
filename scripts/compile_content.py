@@ -716,6 +716,163 @@ def compile_prefectures():
     return []
 
 
+ERAS_DIR = os.path.join(CONTENT_DIR, "eras")
+ERAS_OUT = os.path.join(DATA_DIR, "eras.json")
+PERIOD_REQUIRED_FIELDS = (
+    "order", "slug", "name_ja", "name_hira", "name_romaji", "name_th",
+    "macro_era", "macro_era_ja", "macro_era_th", "start_year", "end_year",
+    "year_label", "capital", "etymology_th", "summary_th", "kanji_milestone_th",
+)
+GENGO_REQUIRED_FIELDS = (
+    "order", "id", "name_ja", "name_hira", "name_romaji", "name_th",
+    "start_year", "end_year", "period_slug", "is_modern", "source_classic", "meaning_th",
+)
+
+
+def parse_eras_sections(fpath, required_fields, has_highlights, errors):
+    rel_path = os.path.relpath(fpath, BASE_DIR)
+    if not os.path.exists(fpath):
+        errors.append(f"{rel_path}: file not found")
+        return []
+
+    with open(fpath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    items = []
+    for sec in re.split(r"\n##\s+", "\n" + content)[1:]:
+        lines = sec.strip().split("\n")
+        if not lines:
+            continue
+        heading = lines[0].strip()
+        entry = {"highlights": []} if has_highlights else {}
+        in_highlights = False
+
+        for line in lines[1:]:
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("### "):
+                sub = stripped[4:].strip()
+                if has_highlights and sub == "Highlights":
+                    in_highlights = True
+                else:
+                    errors.append(f"{rel_path} ({heading}): unexpected subsection {sub!r}")
+                continue
+            if in_highlights:
+                if stripped.startswith("- "):
+                    entry["highlights"].append(stripped[2:].strip())
+                else:
+                    errors.append(f"{rel_path} ({heading}): bad highlight item {stripped!r}")
+                continue
+
+            k, v = parse_key_value_line(line)
+            if k is None:
+                errors.append(f"{rel_path} ({heading}): unrecognized line {stripped!r}")
+            elif k not in required_fields:
+                errors.append(f"{rel_path} ({heading}): unknown key {k!r}")
+            elif k in entry:
+                errors.append(f"{rel_path} ({heading}): duplicate key {k!r}")
+            else:
+                entry[k] = v
+
+        if entry.get("name_ja") != heading:
+            errors.append(f"{rel_path}: heading {heading!r} does not match name_ja {entry.get('name_ja')!r}")
+
+        for req in required_fields:
+            if not entry.get(req):
+                errors.append(f"{rel_path} ({heading}): missing required field {req!r}")
+
+        if has_highlights and len(entry.get("highlights", [])) < 2:
+            errors.append(f"{rel_path} ({heading}): needs >= 2 highlights")
+
+        items.append(entry)
+
+    return items
+
+
+def compile_eras():
+    """Compile content/eras/periods.md and content/eras/gengo.md into data/eras.json."""
+    if not os.path.exists(ERAS_DIR):
+        print("⚠️ content/eras not found, skipping.")
+        return []
+
+    errors = []
+    raw_periods = parse_eras_sections(
+        os.path.join(ERAS_DIR, "periods.md"), PERIOD_REQUIRED_FIELDS, True, errors
+    )
+    raw_gengo = parse_eras_sections(
+        os.path.join(ERAS_DIR, "gengo.md"), GENGO_REQUIRED_FIELDS, False, errors
+    )
+    if errors:
+        return errors
+
+    periods = []
+    seen_slugs = set()
+    for p in sorted(raw_periods, key=lambda x: int(x["order"])):
+        slug = p["slug"]
+        if slug in seen_slugs:
+            errors.append(f"content/eras/periods.md: duplicate slug {slug!r}")
+        seen_slugs.add(slug)
+        end_val = None if p["end_year"] == "present" else int(p["end_year"])
+        periods.append({
+            "order": int(p["order"]),
+            "slug": slug,
+            "name_ja": p["name_ja"],
+            "name_hira": p["name_hira"],
+            "name_romaji": p["name_romaji"],
+            "name_th": p["name_th"],
+            "macro_era": p["macro_era"],
+            "macro_era_ja": p["macro_era_ja"],
+            "macro_era_th": p["macro_era_th"],
+            "start_year": int(p["start_year"]),
+            "end_year": end_val,
+            "year_label": p["year_label"],
+            "capital": p["capital"],
+            "etymology_th": p["etymology_th"],
+            "summary_th": p["summary_th"],
+            "kanji_milestone_th": p["kanji_milestone_th"],
+            "highlights": p["highlights"],
+        })
+
+    gengo = []
+    seen_ids = set()
+    for g in sorted(raw_gengo, key=lambda x: int(x["order"])):
+        gid = g["id"]
+        if gid in seen_ids:
+            errors.append(f"content/eras/gengo.md: duplicate id {gid!r}")
+        seen_ids.add(gid)
+        if g["period_slug"] not in seen_slugs:
+            errors.append(f"content/eras/gengo.md ({gid}): unknown period_slug {g['period_slug']!r}")
+        end_val = None if g["end_year"] == "present" else int(g["end_year"])
+        gengo.append({
+            "order": int(g["order"]),
+            "id": gid,
+            "name_ja": g["name_ja"],
+            "name_hira": g["name_hira"],
+            "name_romaji": g["name_romaji"],
+            "name_th": g["name_th"],
+            "start_year": int(g["start_year"]),
+            "end_year": end_val,
+            "period_slug": g["period_slug"],
+            "is_modern": g["is_modern"].lower() == "yes",
+            "source_classic": g["source_classic"],
+            "meaning_th": g["meaning_th"],
+        })
+
+    if len(periods) != 15:
+        errors.append(f"expected 15 historical periods, found {len(periods)}")
+    if len(gengo) < 15:
+        errors.append(f"expected >= 15 gengo entries, found {len(gengo)}")
+    if errors:
+        return errors
+
+    with open(ERAS_OUT, "w", encoding="utf-8") as f:
+        json.dump({"periods": periods, "gengo": gengo}, f, ensure_ascii=False, separators=(",", ":"))
+
+    print(f"  ✅ Compiled {len(periods)} periods and {len(gengo)} gengo to {ERAS_OUT}")
+    return []
+
+
 def main():
     check_mode = "--check" in sys.argv[1:]
     print("⚙️ Starting Content Compilation (Markdown -> JSON)...")
@@ -724,6 +881,7 @@ def main():
     errors = compile_kanji() or []
     errors += compile_compounds()
     errors += compile_prefectures()
+    errors += compile_eras()
 
     if errors:
         print(f"\n❌ Validation failed with {len(errors)} issue(s). Data files were NOT written:")

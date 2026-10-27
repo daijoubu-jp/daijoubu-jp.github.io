@@ -7,8 +7,6 @@
 import { initTheme } from './theme.js';
 import { loadSearchIndex, searchKanjiIndex, getDailyKanjiFromIndex } from './search.js';
 import { getRecentSearches, addRecentSearch, getFavorites } from './storage.js';
-import { initBrowsePage } from './browse.js';
-import { initDetailPage } from './kanji-detail.js';
 
 export function getSiteRoot() {
   const isSubdir = window.location.pathname.includes('/browse/') ||
@@ -40,8 +38,10 @@ async function startApp() {
   if (pageType === 'home') {
     await initHomePage();
   } else if (pageType === 'browse') {
+    const { initBrowsePage } = await import('./browse.js');
     await initBrowsePage();
   } else if (pageType === 'detail') {
+    const { initDetailPage } = await import('./kanji-detail.js');
     await initDetailPage();
   } else if (pageType === 'vocabulary') {
     const { initVocabularyPage } = await import('./vocabulary.js');
@@ -73,6 +73,9 @@ async function startApp() {
   } else if (pageType === 'prefecture-detail') {
     const { initPrefectureDetail } = await import('./prefecture-detail.js');
     initPrefectureDetail();
+  } else if (pageType === 'knowledge-eras') {
+    const { initErasPage } = await import('./eras.js');
+    await initErasPage();
   } else if (pageType === 'favorites') {
     window.location.replace(`${getSiteRoot()}browse/index.html?preset=favorites`);
   }
