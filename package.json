@@ -6,6 +6,7 @@
   "description": "Dev tooling for the Daijoubu JP Kanji Dictionary static site.",
   "scripts": {
     "test": "node --test",
-    "content:watch": "python3 scripts/watch_content.py"
+    "content:watch": "python3 scripts/watch_content.py",
+    "studio": "cargo run --manifest-path studio/Cargo.toml"
   }
 }

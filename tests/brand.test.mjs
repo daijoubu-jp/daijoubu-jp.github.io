@@ -13,7 +13,7 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 
 function htmlFiles(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    if (entry.name === '.git' || entry.name === 'node_modules') return [];
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'studio') return [];
     const full = join(dir, entry.name);
     return entry.isDirectory() ? htmlFiles(full) : (entry.name.endsWith('.html') ? [full] : []);
   });

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daijoubu JP Content Studio | Rust Database Authoring Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Thai+Looped:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="studio-header">
+    <div class="brand">
+      <div class="brand-logo">漢</div>
+      <div>
+        <div class="brand-title">Daijoubu JP Content Studio <span class="rust-badge">🦀 Rust Engine</span></div>
+        <div class="brand-sub">ระบบจัดการฐานข้อมูล Markdown ต้นฉบับ (Single Source of Truth)</div>
+      </div>
+    </div>
+
+    <nav class="category-tabs" id="category-tabs" aria-label="Content Categories">
+      <button type="button" class="cat-tab active" data-cat="kanji">
+        <span class="cat-ja">漢字</span> คันจิ <span class="cat-count" id="count-kanji">…</span>
+      </button>
+      <button type="button" class="cat-tab" data-cat="compounds">
+        <span class="cat-ja">熟語</span> คำประสม <span class="cat-count" id="count-compounds">…</span>
+      </button>
+      <button type="button" class="cat-tab" data-cat="vocabulary">
+        <span class="cat-ja">語彙</span> คำศัพท์หมวดหมู่ <span class="cat-count" id="count-vocabulary">…</span>
+      </button>
+      <button type="button" class="cat-tab" data-cat="special-readings">
+        <span class="cat-ja">付表</span> คำอ่านพิเศษ <span class="cat-count" id="count-special-readings">…</span>
+      </button>
+      <button type="button" class="cat-tab" data-cat="prefectures">
+        <span class="cat-ja">都道府県</span> 47 จังหวัด <span class="cat-count" id="count-prefectures">…</span>
+      </button>
+      <button type="button" class="cat-tab" data-cat="eras">
+        <span class="cat-ja">時代・年号</span> ยุคสมัย <span class="cat-count" id="count-eras">…</span>
+      </button>
+    </nav>
+
+    <div class="header-actions">
+      <label class="auto-compile-toggle" title="รัน python3 scripts/compile_content.py อัตโนมัติทุกครั้งที่กดบันทึก">
+        <input type="checkbox" id="auto-compile-check" checked>
+        <span>Auto-Compile ตอนบันทึก</span>
+      </label>
+      <button type="button" class="btn btn-secondary" id="btn-compile-now" title="รัน compile_content.py เพื่ออัปเดตไฟล์ JSON ใน data/">
+        ⚙️ Compile to JSON
+      </button>
+      <span class="status-pill" id="compile-status-pill">พร้อมใช้งาน</span>
+    </div>
+  </header>
+
+  <!-- Main 3-Pane Studio Workspace -->
+  <div class="studio-workspace">
+    <!-- Left Sidebar: Search, Filters & Entry List -->
+    <aside class="sidebar-pane">
+      <div class="sidebar-controls">
+        <div class="search-row">
+          <input type="search" id="sidebar-search" class="input" placeholder="ค้นหาตัวอักษร, คำอ่าน, ความหมายไทย/อังกฤษ...">
+          <button type="button" class="btn btn-primary btn-sm" id="btn-new-entry" title="เพิ่มรายการใหม่">+ เพิ่ม</button>
+        </div>
+        <div class="filter-row" id="sidebar-filters"></div>
+      </div>
+
+      <div class="sidebar-stats-bar">
+        <span id="list-summary-text">กำลังโหลด...</span>
+        <div class="pagination-mini">
+          <button type="button" class="btn-icon" id="btn-prev-page" title="หน้าก่อนหน้า">◀</button>
+          <span id="page-indicator">1 / 1</span>
+          <button type="button" class="btn-icon" id="btn-next-page" title="หน้าถัดไป">▶</button>
+        </div>
+      </div>
+
+      <div class="entry-list" id="entry-list" role="listbox" aria-label="รายการข้อมูล"></div>
+    </aside>
+
+    <!-- Center Pane: Structured Editor Form -->
+    <main class="editor-pane">
+      <div class="editor-toolbar" id="editor-toolbar">
+        <div class="editor-title-group">
+          <h1 class="editor-heading" id="editor-heading">เลือกรายการทางซ้ายเพื่อแก้ไข</h1>
+          <span class="editor-filepath" id="editor-filepath"></span>
+        </div>
+        <div class="editor-actions">
+          <button type="button" class="btn btn-secondary" id="btn-save-next" title="บันทึกและเลื่อนไปยังรายการถัดไปในคิว (เหมาะสำหรับแปลต่อเนื่อง)">
+            💾 บันทึก & ถัดไป (Alt+Enter)
+          </button>
+          <button type="button" class="btn btn-primary" id="btn-save-entry" title="บันทึกลงไฟล์ Markdown (Ctrl+S)">
+            💾 บันทึก (Ctrl+S)
+          </button>
+        </div>
+      </div>
+
+      <div class="editor-body" id="editor-body">
+        <div class="empty-editor-state">
+          <div class="empty-icon">📖</div>
+          <p>เลือกรายการจากแถบด้านซ้าย หรือกด <strong>+ เพิ่ม</strong> เพื่อสร้างรายการใหม่</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Inspector: Live Preview, KanjiVG & Compiler Log -->
+    <aside class="inspector-pane">
+      <div class="inspector-section" id="kanjivg-card" hidden>
+        <div class="inspector-header">
+          <h3>พู่กันลำดับขีด (KanjiVG)</h3>
+          <a id="live-site-link" href="#" target="_blank" rel="noopener" class="inspector-link">เปิดในเว็บพจนานุกรม ↗</a>
+        </div>
+        <div class="kanjivg-preview-box" id="kanjivg-preview-box"></div>
+      </div>
+
+      <div class="inspector-section">
+        <div class="inspector-header">
+          <h3>ตัวอย่าง Markdown ที่จะบันทึก</h3>
+          <span class="badge-clean">markdownlint-clean</span>
+        </div>
+        <pre class="markdown-preview" id="markdown-preview"></pre>
+      </div>
+
+      <div class="inspector-section">
+        <div class="inspector-header">
+          <h3>ผลลัพธ์ Compiler (`compile_content.py`)</h3>
+        </div>
+        <pre class="compiler-log" id="compiler-log">พร้อมสำหรับการบันทึกและคอมไพล์...</pre>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="studio-toast" hidden></div>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>

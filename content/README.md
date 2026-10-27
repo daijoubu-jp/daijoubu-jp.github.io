@@ -6,13 +6,17 @@ files in `data/` — they are generated and CI fails if they drift from the mark
 ## Workflow
 
 ```bash
+npm run studio                       # launch Rust Content Studio at http://127.0.0.1:4000
 python3 scripts/compile_content.py   # content/ -> data/ (Python 3.12+)
 npm run content:watch                # recompile automatically on save
 npm test                             # JS/data tests
 ```
 
-After editing, run the compiler and commit the regenerated `data/` files in the
-same commit.
+You can edit `content/*.md` via the **Rust Content Studio** (`npm run studio`), which
+provides structured forms, 214 Kangxi radical selection, live `<ruby>` furigana
+preview, missing-data queues, and automatic `compile_content.py` syncing on save.
+If editing markdown files manually, run the compiler afterward and commit the
+regenerated `data/` files in the same commit.
 
 ## Directory layout
 

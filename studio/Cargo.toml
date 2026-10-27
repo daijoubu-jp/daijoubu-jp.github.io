@@ -1,0 +1,10 @@
+[package]
+name = "daijoubu-studio"
+version = "0.1.0"
+edition = "2021"
+description = "Local Content Studio for authoring and compiling Daijoubu JP Markdown content"
+publish = false
+
+[[bin]]
+name = "daijoubu-studio"
+path = "src/main.rs"

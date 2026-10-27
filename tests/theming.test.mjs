@@ -15,7 +15,7 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 
 function htmlFiles(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    if (entry.name === '.git' || entry.name === 'node_modules') return [];
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'studio') return [];
     const full = join(dir, entry.name);
     return entry.isDirectory() ? htmlFiles(full) : (entry.name.endsWith('.html') ? [full] : []);
   });
@@ -48,5 +48,11 @@ test('every HTML page loads base, components and all six theme stylesheets', () 
         `${rel}: missing stylesheet link for ${sheet}`
       );
     }
+
+    assert.match(
+      html,
+      /<link\s+rel="manifest"\s+href="(?:\.\.\/)?manifest\.json"\s*\/?>/,
+      `${rel}: missing manifest.json link`
+    );
   }
 });
