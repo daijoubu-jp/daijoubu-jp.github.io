@@ -46,3 +46,64 @@ test('mobile nav handler wires the toggle buttons', () => {
   const main = readFileSync(join(root, 'assets/js/main.js'), 'utf8');
   assert.match(main, /querySelectorAll\('a, button\.nav-dropdown-toggle'\)/);
 });
+
+// The header is duplicated on every page and only exists as markup, so a page
+// can silently ship a stale copy: the pre-refactor brand classes (.brand-logo,
+// .brand-title, .header-inner, ...) have zero CSS rules and the plain
+// .nav-menu-toggle class has none either, which collapsed the hamburger to an
+// 18x6 px sliver on the one page that used it. Layout is not asserted here --
+// only that every page asks for the classes the stylesheet actually defines and
+// that the toggle is the container's first child, so flex ordering matches.
+const LEGACY_HEADER_CLASSES = [
+  'header-inner',
+  'brand-logo',
+  'brand-seal',
+  'brand-title',
+  'brand-text',
+  'brand-subtitle',
+];
+
+test('every page uses the current header classes, not the pre-refactor ones', () => {
+  const files = htmlFiles(root);
+  assert.ok(files.length >= 24, `expected 24+ pages, found ${files.length}`);
+
+  for (const file of files) {
+    const html = readFileSync(file, 'utf8');
+    const rel = file.slice(root.length);
+
+    // Compare whole class tokens: a substring test would flag nav-brand-logo
+    // as an offender for brand-logo.
+    const classTokens = new Set(
+      [...html.matchAll(/class="([^"]*)"/g)].flatMap((m) => m[1].split(/\s+/)).filter(Boolean)
+    );
+
+    for (const legacy of LEGACY_HEADER_CLASSES) {
+      assert.ok(
+        !classTokens.has(legacy),
+        `${rel}: uses the pre-refactor class "${legacy}" which has no CSS rules`
+      );
+    }
+
+    assert.equal(
+      (html.match(/class="nav-menu-toggle"/g) || []).length,
+      0,
+      `${rel}: uses "nav-menu-toggle" instead of the styled "nav-menu-toggle-btn"`
+    );
+
+    // Structure check: inside the header, with comments stripped (pages differ in
+    // whether they annotate the toggle), the hamburger must be the container's
+    // first element child so mobile flex ordering keeps it at the left edge.
+    const header = html.match(/<header class="site-header">[\s\S]*?<\/header>/);
+    assert.ok(header, `${rel}: no <header class="site-header"> block found`);
+    const headerMarkup = header[0].replace(/<!--[\s\S]*?-->/g, '');
+
+    assert.match(
+      headerMarkup,
+      /<div class="container">\s*<button[^>]*class="nav-menu-toggle-btn"[^>]*id="nav-menu-toggle-btn"/,
+      `${rel}: the hamburger must be the first child of .container so it keeps 44x44 at the left edge on mobile`
+    );
+
+    assert.match(html, /class="nav-brand"/, `${rel}: brand block must use .nav-brand`);
+    assert.match(html, /class="nav-brand-title"/, `${rel}: brand title must use .nav-brand-title`);
+  }
+});
