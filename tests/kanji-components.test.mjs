@@ -37,9 +37,14 @@ test('the decoy pool contains every used component', () => {
   }
 });
 
-test('known decompositions are correct', () => {
+test('known decompositions are correct and exclude raw stroke primitives', () => {
   assert.ok(entries['語'].includes('言'));
   assert.ok(entries['語'].includes('口'));
+  assert.ok(entries['語'].includes('五'));
+  assert.ok(!entries['語'].includes('一'), 'redundant 一 should be pruned from 語');
   assert.ok(entries['明'].includes('日'));
   assert.ok(entries['明'].includes('月'));
+  for (const raw of ['ノ', 'ハ', 'マ', 'ユ', 'ヨ', '丶', '亅', '｜']) {
+    assert.ok(!pool.includes(raw), `raw stroke primitive ${raw} should not be in pool`);
+  }
 });

@@ -47,6 +47,29 @@ def read_source(path):
         return response.read()
 
 
+RAW_STROKES = {"ノ", "ハ", "マ", "ユ", "ヨ", "丶", "亅", "｜"}
+CONTAINS_ICHI = {
+    "五", "言", "立", "音", "王", "土", "士", "大", "正", "生", "青", "赤",
+    "車", "金", "雨", "里", "黒", "豆", "西", "酉", "頁", "馬", "高", "魚",
+    "鳥", "鹿", "麦", "麻", "黄", "甘", "世", "井", "元", "亘", "亜", "耳",
+    "臣", "至", "舌", "血", "行", "衣", "見", "角", "谷", "豕", "貝", "走",
+    "足", "身", "辛", "辰", "長", "門", "非", "面", "革", "韋", "韭", "食",
+    "首", "香", "骨",
+}
+
+
+def clean_components(components):
+    """Strip raw stroke/katakana primitives and redundant single-stroke 一."""
+    filtered = [c for c in components if c not in RAW_STROKES]
+    if (
+        "一" in filtered
+        and any(c in CONTAINS_ICHI for c in filtered)
+        and len(filtered) - 1 >= 2
+    ):
+        filtered = [c for c in filtered if c != "一"]
+    return filtered
+
+
 def parse(raw):
     text = gzip.decompress(raw).decode("utf-8")
     decompositions = {}
@@ -72,23 +95,34 @@ def parse(raw):
 def main():
     parser = argparse.ArgumentParser(description="Build data/kanji-components.min.json.")
     parser.add_argument("--source", help="Path to a local kradfile-u.gz instead of downloading.")
+    parser.add_argument(
+        "--clean-existing",
+        action="store_true",
+        help="Re-filter the existing data/kanji-components.min.json offline without re-downloading.",
+    )
     args = parser.parse_args()
 
-    raw = read_source(args.source)
-    digest = hashlib.sha256(raw).hexdigest()
-    print(f"   sha256: {digest}")
-    if digest != EXPECTED_SHA256:
-        print("   ⚠️  sha256 differs from the recorded source; output may change.")
-
     dataset = load_dataset()
-    dataset_set = set(dataset)
-    decompositions = parse(raw)
+
+    if args.clean_existing:
+        with open(OUT, "r", encoding="utf-8") as f:
+            decompositions = json.load(f).get("entries", {})
+    else:
+        raw = read_source(args.source)
+        digest = hashlib.sha256(raw).hexdigest()
+        print(f"   sha256: {digest}")
+        if digest != EXPECTED_SHA256:
+            print("   ⚠️  sha256 differs from the recorded source; output may change.")
+        decompositions = parse(raw)
 
     entries = {}
     pool = set()
     for kanji in dataset:
-        components = decompositions.get(kanji)
-        if not components or len(components) < 2:
+        raw_comps = decompositions.get(kanji)
+        if not raw_comps:
+            continue
+        components = clean_components(raw_comps)
+        if len(components) < 2:
             continue
         entries[kanji] = components
         pool.update(components)
