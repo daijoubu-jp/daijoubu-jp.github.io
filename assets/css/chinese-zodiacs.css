@@ -526,7 +526,7 @@
   border-left: 4px solid var(--color-accent);
 }
 
-.zi-info-box h4 {
+.zi-info-box h3 {
   font-size: var(--font-size-sm);
   font-weight: 700;
   color: var(--color-accent);

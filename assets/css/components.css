@@ -1315,6 +1315,8 @@ input[type="search"]::-ms-reveal {
   font-size: var(--font-size-kanji-hero);
   color: var(--color-kanji-display);
   line-height: 1;
+  /* The glyph is an <h1>; zero the UA margin so the card box is unchanged. */
+  margin-top: 0;
   margin-bottom: var(--spacing-md);
 }
 

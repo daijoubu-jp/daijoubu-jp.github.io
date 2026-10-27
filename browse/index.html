@@ -136,6 +136,7 @@
 
   <!-- Main Content Layout -->
   <main class="main-content">
+    <h1 class="sr-only">ค้นหาและกรองตัวอักษรคันจิ (常用漢字)</h1>
     <div class="container">
       
       <!-- Mobile Filter Toggle Bar (Hamburger ☰) -->
@@ -251,9 +252,9 @@
           <div class="filter-group">
             <div class="filter-group-title">5. จำนวนขีด (画数 / Strokes)</div>
             <div style="display: flex; align-items: center; gap: 8px; margin-top: 6px;">
-              <input type="number" id="filter-stroke-min" min="1" max="33" placeholder="1" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
+              <input type="number" id="filter-stroke-min" aria-label="จำนวนขีดต่ำสุด" min="1" max="33" placeholder="1" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
               <span>ถึง</span>
-              <input type="number" id="filter-stroke-max" min="1" max="33" placeholder="33" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
+              <input type="number" id="filter-stroke-max" aria-label="จำนวนขีดสูงสุด" min="1" max="33" placeholder="33" style="width: 60px; padding: 4px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); text-align: center;">
               <span style="font-size: var(--font-size-xs); color: var(--color-text-muted);">ขีด</span>
             </div>
           </div>
@@ -261,7 +262,7 @@
           <!-- 6. Radical Filter (部首) -->
           <div class="filter-group">
             <div class="filter-group-title">6. หมวดอักษร (部首 / Radicals)</div>
-            <select id="filter-radical" style="width: 100%; padding: 6px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font-size: var(--font-size-sm); margin-top: 6px;">
+            <select id="filter-radical" aria-label="กรองตามหมวดอักษร (部首)" style="width: 100%; padding: 6px 8px; border-radius: var(--border-radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font-size: var(--font-size-sm); margin-top: 6px;">
               <option value="">ทั้งหมด (All 214 Radicals)</option>
               <!-- Dynamically populated / Key Kangxi Radicals -->
               <option value="1">1. 一 (หนึ่ง - 1 ขีด)</option>
@@ -499,6 +500,7 @@
               <input 
                 type="search" 
                 id="browse-search-input" 
+                aria-label="ค้นหาคันจิ เสียงอ่าน หรือความหมาย"
                 class="search-input" 
                 placeholder="พิมพ์คันจิ, เสียงอ่าน (あい / ai), ความหมายไทย (รัก), หรืออังกฤษ (love) เพื่อกรองทันที..."
                 autocomplete="off"
